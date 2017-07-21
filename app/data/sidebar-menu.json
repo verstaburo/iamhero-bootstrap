@@ -1,0 +1,30 @@
+[{
+  "text": "Summary",
+  "active": true,
+  "path": "#"
+}, {
+  "text": "Skills",
+  "path": "#"
+}, {
+  "text": "Talents",
+  "path": "#",
+  "disabled": true
+}, {
+  "text": "Laguages",
+  "path": "#"
+}, {
+  "text": "Resume",
+  "path": "#"
+}, {
+  "text": "Services",
+  "path": "#"
+}, {
+  "text": "Interest",
+  "path": "#"
+}, {
+  "text": "My social activities",
+  "path": "#"
+}, {
+  "text": "Cases",
+  "path": "#"
+}]

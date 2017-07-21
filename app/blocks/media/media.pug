@@ -1,0 +1,7 @@
+mixin media(img, heading)
+  +b.media&attributes(attributes)
+    .media-left
+      img(src='assets/images/'+img).img-circle.media-object
+    .media-body
+      h4.media-heading= heading
+      block

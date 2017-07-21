@@ -1,0 +1,10 @@
+.bg-image {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+
+  img {
+    @include fill-img();
+  }
+}

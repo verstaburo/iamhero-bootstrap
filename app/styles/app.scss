@@ -1,8 +1,13 @@
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 @import 'helpers/mixins'; // Миксины
 @import 'helpers/fonts'; // Шрифты
 @import 'helpers/variables'; // Переменные
-//@import 'helpers/basics'; // Основные общие стили
+@import 'libs/bootstrap-sass/bootstrap';
 @import '../blocks/**/*';
 @import '../components/**/*';
 @import '../pages/**/*';
+
+body {
+  font-family: $font-main;
+  font-weight: 300;
+  color: #374851;
+}
