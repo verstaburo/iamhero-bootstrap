@@ -33,60 +33,139 @@
             </ul>
         </div>
     </header>
-    <main class="page" role="main">
-        <div class="page__top-bg page__top-bg_dark">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-offset-1 col-lg-9">
-                        <div class="profile-header">
-                            <div class="media media-white">
-                                <div class="media-left">
-                                    <img class="img-circle media-object" src="assets/images/profile-edit/avatar-small.jpg" />
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">Name Surname</h4>Vocation</div>
+    <main class="page profile-edit" role="main">
+        <div class="page__top-bg page__top-bg_dark"></div>
+        <div class="page__decoration"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="profile-header profile-edit__header">
+                        <div class="media media-white">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/profile-edit/avatar-small.jpg" />
                             </div>
-                            <button class="btn btn-success">Change background picture/video</button>
+                            <div class="media-body">
+                                <h4 class="media-heading">Name Surname</h4>Vocation</div>
+                        </div>
+                        <button class="btn btn-success">Change background picture/video</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="list-group sidebar-menu profile-edit__sidebar-menu">
+                        <li class="list-group-item sidebar-menu-item sidebar-menu-item-active">
+                            <a href="#">Summary</a>
+                        </li>
+                        <li class="list-group-item sidebar-menu-item">
+                            <a href="#">Skills</a>
+                        </li>
+                        <li class="list-group-item sidebar-menu-item sidebar-menu-item-disabled">
+                            <a href="#">Talents</a>
+                        </li>
+                        <li class="list-group-item sidebar-menu-item">
+                            <a href="#">Laguages</a>
+                        </li>
+                        <li class="list-group-item sidebar-menu-item">
+                            <a href="#">Resume</a>
+                        </li>
+                        <li class="list-group-item sidebar-menu-item">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="list-group-item sidebar-menu-item">
+                            <a href="#">Interest</a>
+                        </li>
+                        <li class="list-group-item sidebar-menu-item">
+                            <a href="#">My social activities</a>
+                        </li>
+                        <li class="list-group-item sidebar-menu-item">
+                            <a href="#">Cases</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-secondary sidebar-menu-button">Preview</button>
+                </div>
+                <div class="col-lg-9 page-decoration__plates">
+                    <div class="plate plate_no-padding plate_flex">
+                        <div class="bg-image plate__avatar">
+                            <img src="assets/images/profile-edit/avatar-big.jpg" />
+                            <button class="btn btn-success plate__avatar-button">Change profile picture</button>
+                        </div>
+                        <div class="plate__info-col">
+                            <div class="logo plate__logo">
+                                <svg><use xlink:href="assets/images/icon.svg#icon_logo"></use></svg>
+                            </div>
+                            <form class="plate__hero-form">
+                                <input class="form-control form-control-border-bottom form-control-border-big plate__header" type="text" placeholder="Name Surname" />
+                                <input class="form-control form-control-border-bottom font-larger" type="text" placeholder="Vocation/position" />
+                                <input class="form-control form-control-border-bottom font-large" type="text" placeholder="Lacation" />
+                                <textarea class="form-control" rows="5">A few words about yourself</textarea>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-lg-offset-1">
-                        <ul class="list-group sidebar-menu">
-                            <li class="list-group-item sidebar-menu-item sidebar-menu-item-active">
-                                <a href="#">Summary</a>
-                            </li>
-                            <li class="list-group-item sidebar-menu-item">
-                                <a href="#">Skills</a>
-                            </li>
-                            <li class="list-group-item sidebar-menu-item sidebar-menu-item-disabled">
-                                <a href="#">Talents</a>
-                            </li>
-                            <li class="list-group-item sidebar-menu-item">
-                                <a href="#">Laguages</a>
-                            </li>
-                            <li class="list-group-item sidebar-menu-item">
-                                <a href="#">Resume</a>
-                            </li>
-                            <li class="list-group-item sidebar-menu-item">
-                                <a href="#">Services</a>
-                            </li>
-                            <li class="list-group-item sidebar-menu-item">
-                                <a href="#">Interest</a>
-                            </li>
-                            <li class="list-group-item sidebar-menu-item">
-                                <a href="#">My social activities</a>
-                            </li>
-                            <li class="list-group-item sidebar-menu-item">
-                                <a href="#">Cases</a>
-                            </li>
-                        </ul>
-                        <button class="btn btn-secondary sidebar-menu-button">Preview</button>
+                    <div class="plate">
+                        <h2 class="plate__header">Professional Skills</h2>
+                        <p>The list of my professional skills which describes my strongest sides</p>
+                        <div class="rangeslider-wrap plate__rangeslider-label">
+                            <div class="rangeslider-wrap__header">
+                                <h4>Graphic design</h4>
+                                <h4 class="rangeslider-wrap__output"></h4>
+                            </div>
+                            <div class="rangeslider-wrap__controls">
+                                <INPUT class="rangeslider_color_lightgreen" type="range" min="0" max="100" step="1" value="50"></INPUT>
+                                <div class="rangeslider-wrap__icon-close">
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rangeslider-wrap plate__rangeslider-label">
+                            <div class="rangeslider-wrap__header">
+                                <h4>Web Design</h4>
+                                <h4 class="rangeslider-wrap__output"></h4>
+                            </div>
+                            <div class="rangeslider-wrap__controls">
+                                <INPUT class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50"></INPUT>
+                                <div class="rangeslider-wrap__icon-close">
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rangeslider-wrap plate__rangeslider-label">
+                            <div class="rangeslider-wrap__header">
+                                <h4>Illustration</h4>
+                                <h4 class="rangeslider-wrap__output"></h4>
+                            </div>
+                            <div class="rangeslider-wrap__controls">
+                                <INPUT class="rangeslider_color_blue" type="range" min="0" max="100" step="1" value="50"></INPUT>
+                                <div class="rangeslider-wrap__icon-close">
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rangeslider-wrap plate__rangeslider-label">
+                            <div class="rangeslider-wrap__header">
+                                <h4>Video Editing</h4>
+                                <h4 class="rangeslider-wrap__output"></h4>
+                            </div>
+                            <div class="rangeslider-wrap__controls">
+                                <INPUT class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50"></INPUT>
+                                <div class="rangeslider-wrap__icon-close">
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="plate"></div>
+                    <div class="plate"></div>
+                    <div class="plate"></div>
+                    <div class="plate"></div>
+                    <div class="plate"></div>
+                    <div class="plate"></div>
+                    <div class="plate"></div>
+                    <div class="plate"></div>
                 </div>
             </div>
         </div>
-        <div class="page__main-bg"></div>
     </main>
     <script src="assets/scripts/libs/bootstrap.min.js"></script>
+    <script src="assets/scripts/libs/rangeslider.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 
