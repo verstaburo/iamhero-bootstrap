@@ -1,3 +1,43 @@
-.rangesliders {
+.rangeslider-wrap {
   display: block;
+
+  &:hover {
+
+    .rangeslider-wrap__icon-close {
+      opacity: 1;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 35px;
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rangeslider {
+      flex-grow: 1;
+      margin-right: 18px;
+    }
+  }
+
+  &__icon-close {
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      stroke: $color-grey;
+    }
+  }
 }

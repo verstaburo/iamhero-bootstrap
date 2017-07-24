@@ -9,6 +9,9 @@ $font-second: 'Open Sans', sans-serif; // Дополнительный шриф�
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
+$color-orange: #ffb540;
+$color-blue: #25edff;
+$color-red: #fc6a78;
 $color-border:           #c9d0d6;
 $color-lightgreen:       #25ffc4;
 $color-grey:             #96aebd;
@@ -73,8 +76,8 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
-$headings-line-height:    1.1 !default;
+$headings-font-weight:    100 !default;
+$headings-line-height:    1.2em !default;
 $headings-color:          inherit !default;
 
 

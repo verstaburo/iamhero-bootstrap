@@ -1,3 +1,12 @@
-mixin rangesliders()
-  +b.rangesliders&attributes(attributes)
-    block
+include ../../blocks/rangeslider/rangeslider
+include ../../blocks/icon/icons
+
+mixin rangeslider-label(label, color)
+  +b.rangeslider-wrap&attributes(attributes)
+    +e.header
+      h4= label
+      +e.H4.output
+    +e.controls
+      +rangeslider(class='rangeslider_color_'+color)
+      +e.icon-close
+        +icon('close')

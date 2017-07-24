@@ -14,12 +14,43 @@
     }
   }
 
+  &_color {
+
+    &_lightgreen {
+
+      & + .rangeslider > .rangeslider__fill {
+        background-color: $color-lightgreen;
+      }
+    }
+
+    &_orange {
+
+      & + .rangeslider > .rangeslider__fill {
+        background-color: $color-orange;
+      }
+    }
+
+    &_blue {
+
+      & + .rangeslider > .rangeslider__fill {
+        background-color: $color-blue;
+      }
+    }
+
+    &_red {
+
+      & + .rangeslider > .rangeslider__fill {
+        background-color: $color-red;
+      }
+    }
+  }
+
   &__fill {
     position: absolute;
     height: 8px;
     left: -1px;
     top: -1px;
-    background-color: $color-lightgreen;
+    background-color: $color-grey;
     border-radius: 4px;
     cursor: pointer;
   }

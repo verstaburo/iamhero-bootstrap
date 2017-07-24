@@ -2,7 +2,7 @@ include ../../blocks/plate/plate
 include ../../blocks/logo/logo
 include ../../blocks/input/input
 include ../../blocks/textarea/textarea
-include ../../blocks/rangeslider/rangeslider
+include ../rangesliders/rangesliders
 
 mixin avatar-plate
   +plate._no-padding._flex
@@ -19,4 +19,7 @@ mixin skills-plate
   +plate
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
-    +rangeslider
+    +rangeslider-label('Graphic design', 'lightgreen').__rangeslider-label
+    +rangeslider-label('Web Design', 'orange').__rangeslider-label
+    +rangeslider-label('Illustration', 'blue').__rangeslider-label
+    +rangeslider-label('Video Editing', 'red').__rangeslider-label
