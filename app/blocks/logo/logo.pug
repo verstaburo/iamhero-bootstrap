@@ -1,5 +1,9 @@
 include ../icon/icons
 
-mixin logo()
-  +b.A(href='#').logo&attributes(attributes)
-    +icon('logo')
+mixin logo(noLink)
+  if noLink
+    +b.logo&attributes(attributes)
+      +icon('logo')
+  else
+    +b.A(href='#').logo&attributes(attributes)
+      +icon('logo')

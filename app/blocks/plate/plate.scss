@@ -1,9 +1,68 @@
+.plate-container {
+  width: 1040px;
+  padding-left: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .plate {
-  display: block;
   padding: 60px 65px;
   background-color: #fff;
+  margin-top: 35px;
+
+  &_flex {
+    display: flex;
+  }
 
   &_no-padding {
     padding: 0;
+  }
+
+  &__avatar {
+    width: 450px;
+    height: 450px;
+    cursor: pointer;
+  }
+
+  &__avatar-button {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+
+  &__header {
+    font-size: 53px;
+    line-height: 1.2em;
+    letter-spacing: -.04em;
+    font-weight: 100;
+    margin: 0;
+  }
+
+  &__info-col {
+    display: flex;
+    flex-direction: column;
+    padding: 33px 25px 33px 60px;
+  }
+
+  &__logo {
+    margin-left: auto;
+  }
+
+  &__hero-form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .font-larger {
+      margin-top: 10px;
+    }
+
+    .font-large {
+      margin-top: 5px;
+    }
+
+    textarea {
+      margin-top: auto;
+    }
   }
 }

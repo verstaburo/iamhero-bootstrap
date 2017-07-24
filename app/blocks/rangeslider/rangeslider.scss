@@ -1,0 +1,38 @@
+.rangeslider {
+  display: block;
+  height: 8px;
+  border: 1px solid #c1c8cf;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  touch-action: pan-y;
+
+  &:hover, &:active {
+
+    .rangeslider__handle {
+      opacity: 1;
+    }
+  }
+
+  &__fill {
+    position: absolute;
+    height: 8px;
+    left: -1px;
+    top: -1px;
+    background-color: $color-lightgreen;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  &__handle {
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    width: 24px;
+    height: 36px;
+    background-image: url('../images/profile-edit/slider-handler.png');
+    background-repeat: no-repeat;
+    transition: opacity .25s ease-in-out;
+    opacity: 0;
+  }
+}

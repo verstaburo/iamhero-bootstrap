@@ -1,3 +1,14 @@
 .profile-edit {
   display: block;
+  padding-top: 35px;
+
+  &__sidebar-menu {
+    margin-top: 35px;
+    margin-left: 37px;
+    margin-bottom: 20px;
+  }
+
+  &__plates {
+    margin-top: -585px;
+  }
 }

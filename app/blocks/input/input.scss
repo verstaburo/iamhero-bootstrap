@@ -1,0 +1,21 @@
+.form-control {
+
+  &-border-bottom {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    border-bottom: 1px solid $color-border;
+    box-shadow: none;
+    padding: 0;
+
+    &:focus {
+      box-shadow: none;
+      border-color: $color-lightgreen;
+    }
+  }
+
+  &-border-big {
+    border-width: 2px;
+  }
+}

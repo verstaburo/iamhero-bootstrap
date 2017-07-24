@@ -2,6 +2,17 @@
 // Typography
 // --------------------------------------------------
 
+.font-medium {
+  font-size: $font-size-medium !important;
+}
+
+.font-large {
+  font-size: $font-size-large !important;
+}
+
+.font-larger {
+  font-size: $font-size-larger !important;
+}
 
 // Headings
 // -------------------------
@@ -56,7 +67,9 @@ h6, .h6 { font-size: $font-size-h6; }
 // -------------------------
 
 p {
+  font-family: $font-second;
   margin: 0 0 ($line-height-computed / 2);
+  line-height: 1.2em;
 }
 
 .lead {

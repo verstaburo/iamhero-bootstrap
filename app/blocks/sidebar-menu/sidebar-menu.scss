@@ -1,14 +1,9 @@
 .sidebar-menu {
   display: block;
-  padding-left: 54px;
-  padding-top: 45px;
-  padding-bottom: 20px;
 
   &-item {
-    font-family: $font-second;
     padding-left: 25px;
     color: #fff;
-    font-weight: 400;
     font-size: 18px;
 
     &::before {
@@ -23,7 +18,6 @@
     }
 
     &-active {
-      font-family: $font-main;
       font-weight: 500;
 
       &::before {

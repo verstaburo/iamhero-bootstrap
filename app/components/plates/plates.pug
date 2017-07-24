@@ -1,0 +1,22 @@
+include ../../blocks/plate/plate
+include ../../blocks/logo/logo
+include ../../blocks/input/input
+include ../../blocks/textarea/textarea
+include ../../blocks/rangeslider/rangeslider
+
+mixin avatar-plate
+  +plate._no-padding._flex
+    +plate-avatar
+    +e.info-col
+      +logo(true).__logo
+      +e.FORM.hero-form
+        +input('Name Surname').form-control-border-bottom.form-control-border-big.__header
+        +input('Vocation/position').form-control-border-bottom.font-larger
+        +input('Lacation').form-control-border-bottom.font-large
+        +textarea(5) A few words about yourself
+
+mixin skills-plate
+  +plate
+    +e.H2.header Professional Skills
+    p The list of my professional skills which describes my strongest sides
+    +rangeslider
