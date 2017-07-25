@@ -1,0 +1,10 @@
+include ../icon/icons
+
+mixin button-dropdown(title, data)
+  +b.btn-group.btn-select&attributes(attributes)
+    button(type='button', data-toggle="dropdown", aria-haspopup="true",   aria-expanded="false").form-control.dropdown-toggle= title
+      +icon('caret')
+    ul.dropdown-menu
+      each item in data
+        li
+          a(href='#')= item

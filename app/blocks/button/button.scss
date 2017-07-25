@@ -4,13 +4,18 @@
     position: relative;
     padding-left: 45px;
 
-    &::before {
-      content: '\002b';
+    &::before, &::after {
+      content: '';
       position: absolute;
       left: 14px;
-      top: 0;
-      line-height: 1;
-      font-size: 32px;
+      top: 17px;
+      height: 2px;
+      width: 22px;
+      background-color: #fff;
+    }
+
+    &::after {
+      transform: rotate(90deg);
     }
   }
 

@@ -1,0 +1,44 @@
+.service {
+  display: block;
+  text-align: center;
+  max-width: 245px;
+  cursor: pointer;
+
+  &:hover {
+
+    .service__icon_close {
+      opacity: 1;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 33px;
+    height: 33px;
+    display: block;
+    margin-left: 13px;
+    margin-right: 13px;
+    fill: transparent;
+    stroke: #c3424f;
+
+    &_close {
+      width: 18px;
+      height: 18px;
+      stroke: $color-grey;
+      transition: opacity .25s ease-in-out;
+      opacity: 0;
+    }
+  }
+
+  &__description {
+    margin-top: 10px;
+    font-family: $font-second;
+    font-size: 15px;
+    letter-spacing: -.04em;
+    padding-right: 15px;
+  }
+}

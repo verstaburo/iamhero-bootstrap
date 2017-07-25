@@ -1,3 +1,6 @@
 mixin button(tag)
   +b(tag || 'button').btn&attributes(attributes)
     block
+
+mixin button-add-new(title, tag)
+  +b(tag || 'button').btn.btn-default.btn-add&attributes(attributes)= 'Add new '+title

@@ -5,8 +5,8 @@ mixin plate
   +b.plate&attributes(attributes)
     block
 
-mixin plate-avatar
-  +bg-image('profile-edit/avatar-big.jpg').__avatar&attributes(attributes)
+mixin plate-avatar(src)
+  +bg-image(src).__avatar&attributes(attributes)
     +button.btn-success.plate__avatar-button Change profile picture
 
 mixin plate-container

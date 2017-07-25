@@ -10,3 +10,8 @@ mixin rangeslider-label(label, color)
       +rangeslider(class='rangeslider_color_'+color)
       +e.icon-close
         +icon('close')
+
+mixin rangeslider-nolabel(color)
+  +b.rangeslider-wrap&attributes(attributes)
+    +e.SPAN.output._nolabel
+    +rangeslider(class='rangeslider_color_'+color)

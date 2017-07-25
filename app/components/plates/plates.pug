@@ -2,11 +2,15 @@ include ../../blocks/plate/plate
 include ../../blocks/logo/logo
 include ../../blocks/input/input
 include ../../blocks/textarea/textarea
+include ../../blocks/label/label
 include ../rangesliders/rangesliders
+include ../input-group/input-group
+include ../../blocks/button-dropdown/button-dropdown
+include ../../blocks/service/service
 
 mixin avatar-plate
   +plate._no-padding._flex
-    +plate-avatar
+    +plate-avatar('profile-edit/avatar-placeholder.jpg')
     +e.info-col
       +logo(true).__logo
       +e.FORM.hero-form
@@ -19,7 +23,67 @@ mixin skills-plate
   +plate
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
-    +rangeslider-label('Graphic design', 'lightgreen').__rangeslider-label
-    +rangeslider-label('Web Design', 'orange').__rangeslider-label
-    +rangeslider-label('Illustration', 'blue').__rangeslider-label
-    +rangeslider-label('Video Editing', 'red').__rangeslider-label
+    +rangeslider-label('Graphic design', 'lightgreen').__top-50
+    +rangeslider-label('Web Design', 'orange').__top-50
+    +rangeslider-label('Illustration', 'blue').__top-50
+    +rangeslider-label('Video Editing', 'red').__top-50
+    +input-group-add('Write another', 'skill').__top-50
+
+mixin talents-plate
+  +plate
+    +e.H2.header Talents
+    p The list of my professional skills which describes my strongest sides
+    +e.tag-container.__top-50
+      +label-close() Singing
+      +label-close() Dancing
+      +label-close() Song writing
+      +label-close() Drawing amazing landscapes
+    +input-group-add('Write another', 'talent').__top-50
+
+mixin language-heading
+  +e.lang-row
+    +e.lang-col
+      h5 Language
+    +e.lang-col
+      h5 Reading
+    +e.lang-col
+      h5 Speaking
+    +e.lang-col
+      h5 Writing
+    +e.lang-col
+      h5 Understanding
+
+mixin language-sliders(title, color)
+  +e.lang-row
+    +e.lang-col
+      h4.font-weight-medium= title
+    - for(var i=0;i<4;i++)
+      +e.lang-col
+        +rangeslider-nolabel(color)
+
+mixin languages-plate
+  +plate
+    +e.H2.header Languages
+    +language-heading
+    +language-sliders('Russian', 'red')
+    +language-sliders('English', 'orange')
+    +e.lang-controls.__top-30
+      +button-dropdown('Select', ['value1', 'value2'])
+      span or
+      +input('write another')
+      +button-add-new('language')
+
+mixin resume-plate
+  +plate
+    +e.H2.header Resume
+    p Here is my professional goals in informative and simple timeline
+
+mixin services-plate
+  +plate
+    +e.H2.header Services
+    +e.service-container.__top-40
+      +service('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
+      +service('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
+      +service('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
+    +button-dropdown('Select', ['value1', 'value2']).__top-40.__service-select
+    +input-group-add('write about service', 'service').__top-20

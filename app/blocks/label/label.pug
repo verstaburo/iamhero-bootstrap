@@ -1,0 +1,11 @@
+include ../icon/icons
+
+mixin label
+  +b.SPAN.label&attributes(attributes)
+    block
+
+mixin label-close
+  +label.label-default.label-thin.label-larger.label-close&attributes(attributes)
+    block
+    span.label-close-icon
+      +icon('close')

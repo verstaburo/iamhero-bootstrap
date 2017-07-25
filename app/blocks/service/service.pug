@@ -1,0 +1,10 @@
+include ../icon/icons
+
+mixin service(icon, title)
+  +b.service&attributes(attributes)
+    +e.heading
+      +icon(icon).icon
+      h4.font-weight-medium= title
+      +icon('close').icon._close
+    +e.P.description
+      block

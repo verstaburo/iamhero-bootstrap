@@ -1,0 +1,21 @@
+.btn-select {
+
+  .dropdown-toggle {
+    padding-right: 40px;
+    position: relative;
+    color: $color-grey;
+    text-align: left;
+
+    svg {
+      width: 14px;
+      height: 7px;
+      display: block;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 14px;
+      stroke: $color-grey;
+      fill: transparent;
+    }
+  }
+}
