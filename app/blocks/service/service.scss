@@ -1,8 +1,11 @@
 .service {
   display: block;
-  text-align: center;
-  max-width: 245px;
   cursor: pointer;
+
+  @media (min-width: 1024px) {
+    max-width: 245px;
+    text-align: center;
+  }
 
   &:hover {
 
@@ -25,12 +28,21 @@
     fill: transparent;
     stroke: #c3424f;
 
+    @media (max-width: 1024px) {
+      margin-left: 0;
+    }
+
     &_close {
       width: 18px;
       height: 18px;
       stroke: $color-grey;
       transition: opacity .25s ease-in-out;
       opacity: 0;
+
+      @media (max-width: 1024px) {
+        opacity: 1;
+        margin-left: auto;
+      }
     }
   }
 

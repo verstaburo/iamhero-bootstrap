@@ -9,7 +9,7 @@ include ../../blocks/button-dropdown/button-dropdown
 include ../../blocks/service/service
 
 mixin avatar-plate
-  +plate._no-padding._flex
+  +plate._no-padding._flex._tablet-column
     +plate-avatar('profile-edit/avatar-placeholder.jpg')
     +e.info-col
       +logo(true).__logo
@@ -20,7 +20,7 @@ mixin avatar-plate
         +textarea('5') A few words about yourself
 
 mixin avatar-plate-static
-  +plate._no-padding._flex
+  +plate._no-padding._flex._tablet-column
     +plate-avatar-static('profile-edit/avatar-big.jpg')
     +e.info-col
       +logo(true).__logo
@@ -138,3 +138,11 @@ mixin services-plate
       +service('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
     +button-dropdown('Select', ['value1', 'value2']).__top-40.__service-select
     +input-group-add('write about service', 'service').__top-20
+
+mixin services-plate-static
+  +plate
+    +e.H2.header Services
+    +e.service-container.__top-40
+      +service-static('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
+      +service-static('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
+      +service-static('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section

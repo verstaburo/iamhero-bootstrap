@@ -26,8 +26,13 @@
 
   &-nav {
 
-    &-right-auto {
-      margin-right: auto !important;
+    &-sign-up {
+      margin-left: auto !important;
+
+      @media (min-width: 1280px) {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+      }
     }
   }
 }

@@ -3,34 +3,35 @@ include ../../components/header/header
 include ../../components/profile-header/profile-header
 include ../../blocks/button/button
 include ../../blocks/page/page
+include ../../blocks/bg-image/bg-image
 include ../../blocks/sidebar-menu/sidebar-menu
 include ../../components/plates/plates
 
 block head
   - var pageTitle = 'I Am Hero - Profile'
 
-  block content
-    +header
-    +page.profile-edit
-      +page-top-bg._dark
-      +page-decoration
-      .container
-        .row
-          .col-lg-12
-            +profile-header-static
-          .col-lg-3
-            -
-              var sidebarMenu = getData('sidebar-menu')
-              sidebarMenu[2].disabled = false
-            +sidebar-menu(sidebarMenu)._static.profile-edit__sidebar-menu
-          .col-lg-9.page-decoration__plates
-            +avatar-plate-static
-            +skills-plate-static
-            +talents-plate-static
-            +languages-plate-static
-            +resume-plate
-            +services-plate
-            +plate
-            +plate
-            +plate
-            +plate
+block content
+  +header
+  +page.profile-edit
+    +bg-image('profile-edit/background.jpg').__top-bg
+    +page-decoration
+    .container
+      .row
+        .col-lg-12
+          +profile-header-static
+        .col-lg-3.hidden-md.hidden-sm.hidden-xs
+          -
+            var sidebarMenu = getData('sidebar-menu')
+            sidebarMenu[2].disabled = false
+          +sidebar-menu(sidebarMenu)._static.profile-edit__sidebar-menu
+        .col-lg-9.page-decoration__plates
+          +avatar-plate-static
+          +skills-plate-static
+          +talents-plate-static
+          +languages-plate-static
+          +resume-plate
+          +services-plate-static
+          +plate
+          +plate
+          +plate
+          +plate

@@ -72,5 +72,9 @@
     background-repeat: no-repeat;
     transition: opacity .25s ease-in-out;
     opacity: 0;
+
+    @media (max-width: 1024px) {
+      opacity: 1;
+    }
   }
 }

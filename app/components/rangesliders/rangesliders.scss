@@ -30,6 +30,10 @@
       flex-grow: 1;
       flex-shrink: 0;
       width: 100%;
+
+      @media (max-width: 1024px) {
+        width: auto;
+      }
     }
 
     .rangeslider-wrap__icon-close {
@@ -44,6 +48,10 @@
     cursor: pointer;
     opacity: 0;
     transition: opacity .25s ease-in-out;
+
+    @media (max-width: 640px) {
+      opacity: 1;
+    }
 
     svg {
       display: block;
