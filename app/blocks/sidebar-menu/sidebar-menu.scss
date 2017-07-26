@@ -1,6 +1,13 @@
 .sidebar-menu {
   display: block;
 
+  &_static {
+
+    .sidebar-menu-item::before {
+      content: none;
+    }
+  }
+
   &-item {
     padding-left: 25px;
     color: #fff;

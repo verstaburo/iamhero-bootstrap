@@ -4,6 +4,10 @@ mixin label
   +b.SPAN.label&attributes(attributes)
     block
 
+mixin label-default
+  +label.label-default.label-thin.label-larger&attributes(attributes)
+    block
+
 mixin label-close
   +label.label-default.label-thin.label-larger.label-close&attributes(attributes)
     block

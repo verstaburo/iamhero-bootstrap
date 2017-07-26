@@ -5,3 +5,7 @@ mixin profile-header()
   +b.profile-header&attributes(attributes)
     +media('profile-edit/avatar-small.jpg', 'Name Surname').media-white Vocation
     +button().btn-success Change background picture/video
+
+mixin profile-header-static()
+  +b.profile-header&attributes(attributes)
+    +media('profile-edit/avatar-small.jpg', 'Mark Marthell').media-white singer
