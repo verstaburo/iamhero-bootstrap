@@ -39,7 +39,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="profile-header profile-edit__header">
+                    <div class="profile-header">
                         <div class="media media-white">
                             <div class="media-left">
                                 <img class="img-circle media-object" src="assets/images/profile-edit/avatar-small.jpg" />
@@ -85,7 +85,7 @@
                 <div class="col-lg-9 page-decoration__plates">
                     <div class="plate plate_no-padding plate_flex">
                         <div class="bg-image plate__avatar">
-                            <img src="assets/images/profile-edit/avatar-big.jpg" />
+                            <img src="assets/images/profile-edit/avatar-placeholder.jpg" />
                             <button class="btn btn-success plate__avatar-button">Change profile picture</button>
                         </div>
                         <div class="plate__info-col">
@@ -103,59 +103,241 @@
                     <div class="plate">
                         <h2 class="plate__header">Professional Skills</h2>
                         <p>The list of my professional skills which describes my strongest sides</p>
-                        <div class="rangeslider-wrap plate__rangeslider-label">
+                        <div class="rangeslider-wrap plate__top-50">
                             <div class="rangeslider-wrap__header">
                                 <h4>Graphic design</h4>
                                 <h4 class="rangeslider-wrap__output"></h4>
                             </div>
                             <div class="rangeslider-wrap__controls">
-                                <INPUT class="rangeslider_color_lightgreen" type="range" min="0" max="100" step="1" value="50"></INPUT>
+                                <input class="rangeslider_color_lightgreen" type="range" min="0" max="100" step="1" value="50" />
                                 <div class="rangeslider-wrap__icon-close">
                                     <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </div>
                             </div>
                         </div>
-                        <div class="rangeslider-wrap plate__rangeslider-label">
+                        <div class="rangeslider-wrap plate__top-50">
                             <div class="rangeslider-wrap__header">
                                 <h4>Web Design</h4>
                                 <h4 class="rangeslider-wrap__output"></h4>
                             </div>
                             <div class="rangeslider-wrap__controls">
-                                <INPUT class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50"></INPUT>
+                                <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
                                 <div class="rangeslider-wrap__icon-close">
                                     <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </div>
                             </div>
                         </div>
-                        <div class="rangeslider-wrap plate__rangeslider-label">
+                        <div class="rangeslider-wrap plate__top-50">
                             <div class="rangeslider-wrap__header">
                                 <h4>Illustration</h4>
                                 <h4 class="rangeslider-wrap__output"></h4>
                             </div>
                             <div class="rangeslider-wrap__controls">
-                                <INPUT class="rangeslider_color_blue" type="range" min="0" max="100" step="1" value="50"></INPUT>
+                                <input class="rangeslider_color_blue" type="range" min="0" max="100" step="1" value="50" />
                                 <div class="rangeslider-wrap__icon-close">
                                     <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </div>
                             </div>
                         </div>
-                        <div class="rangeslider-wrap plate__rangeslider-label">
+                        <div class="rangeslider-wrap plate__top-50">
                             <div class="rangeslider-wrap__header">
                                 <h4>Video Editing</h4>
                                 <h4 class="rangeslider-wrap__output"></h4>
                             </div>
                             <div class="rangeslider-wrap__controls">
-                                <INPUT class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50"></INPUT>
+                                <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
                                 <div class="rangeslider-wrap__icon-close">
                                     <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </div>
                             </div>
                         </div>
+                        <div class="input-group plate__top-50">
+                            <input class="form-control" type="text" placeholder="Write another" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-add">Add new skill</button>
+                            </span>
+                        </div>
                     </div>
-                    <div class="plate"></div>
-                    <div class="plate"></div>
-                    <div class="plate"></div>
-                    <div class="plate"></div>
+                    <div class="plate">
+                        <h2 class="plate__header">Talents</h2>
+                        <p>The list of my professional skills which describes my strongest sides</p>
+                        <div class="plate__tag-container plate__top-50">
+                            <span class="label label-default label-thin label-larger label-close">Singing
+                                <span class="label-close-icon">
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </span>
+                            </span>
+                            <span class="label label-default label-thin label-larger label-close">Dancing
+                                <span class="label-close-icon">
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </span>
+                            </span>
+                            <span class="label label-default label-thin label-larger label-close">Song writing
+                                <span class="label-close-icon">
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </span>
+                            </span>
+                            <span class="label label-default label-thin label-larger label-close">Drawing amazing landscapes
+                                <span class="label-close-icon">
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="input-group plate__top-50">
+                            <input class="form-control" type="text" placeholder="Write another" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-add">Add new talent</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="plate">
+                        <h2 class="plate__header">Languages</h2>
+                        <div class="plate__lang-row">
+                            <div class="plate__lang-col">
+                                <h5>Language</h5>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h5>Reading</h5>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h5>Speaking</h5>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h5>Writing</h5>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h5>Understanding</h5>
+                            </div>
+                        </div>
+                        <div class="plate__lang-row">
+                            <div class="plate__lang-col">
+                                <h4 class="font-weight-medium">Russian</h4>
+                            </div>
+                            <div class="plate__lang-col">
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plate__lang-row">
+                            <div class="plate__lang-col">
+                                <h4 class="font-weight-medium">English</h4>
+                            </div>
+                            <div class="plate__lang-col">
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plate__lang-controls plate__top-30">
+                            <div class="btn-group btn-select">
+                                <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">value1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">value2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span>or</span>
+                            <input class="form-control" type="text" placeholder="write another" />
+                            <button class="btn btn-default btn-add">Add new language</button>
+                        </div>
+                    </div>
+                    <div class="plate">
+                        <h2 class="plate__header">Resume</h2>
+                        <p>Here is my professional goals in informative and simple timeline</p>
+                    </div>
+                    <div class="plate">
+                        <h2 class="plate__header">Services</h2>
+                        <div class="plate__service-container plate__top-40">
+                            <div class="service">
+                                <div class="service__heading">
+                                    <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_palette"></use></svg>
+                                    <h4 class="font-weight-medium">Graphic design</h4>
+                                    <svg class="service__icon service__icon_close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                                <p class="service__description">Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                            </div>
+                            <div class="service">
+                                <div class="service__heading">
+                                    <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_tape"></use></svg>
+                                    <h4 class="font-weight-medium">Video editing</h4>
+                                    <svg class="service__icon service__icon_close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                                <p class="service__description">Adobe premier and After Effect mastery. Video filiming, color correction and Post production</p>
+                            </div>
+                            <div class="service">
+                                <div class="service__heading">
+                                    <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_brush"></use></svg>
+                                    <h4 class="font-weight-medium">Illustration</h4>
+                                    <svg class="service__icon service__icon_close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                                <p class="service__description">Drawing illustration and graphical images in various styles. Look for more in cases section</p>
+                            </div>
+                        </div>
+                        <div class="btn-group btn-select plate__top-40 plate__service-select">
+                            <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select
+                                <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">value1</a>
+                                </li>
+                                <li>
+                                    <a href="#">value2</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input-group plate__top-20">
+                            <input class="form-control" type="text" placeholder="write about service" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-default btn-add">Add new service</button>
+                            </span>
+                        </div>
+                    </div>
                     <div class="plate"></div>
                     <div class="plate"></div>
                     <div class="plate"></div>
