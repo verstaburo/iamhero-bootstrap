@@ -5,6 +5,7 @@ include ../../blocks/textarea/textarea
 include ../../blocks/label/label
 include ../rangesliders/rangesliders
 include ../input-group/input-group
+include ../timeline/timeline
 include ../../blocks/button-dropdown/button-dropdown
 include ../../blocks/service/service
 
@@ -128,6 +129,40 @@ mixin resume-plate
   +plate
     +e.H2.header Resume
     p Here is my professional goals in informative and simple timeline
+    +timeline.__top-60
+      +e.years
+        +e.P.year 2017
+        +e.P.year 2016
+        +e.P.year 2015
+      +e.items
+        +e.holder
+        +timeline-item.__item
+          +timeline-item-header('work', '17/06/2016 — 17/06/2018')._red
+          h4 DEZI Design
+          p Stated o work as a junior Designer at DEZI
+        +timeline-item.__item
+          +timeline-item-header('education', '17/02/2016 — 17/06/2016')._lightgreen
+          h4 Univercity Of Creative art Rocherster Great Britain
+          p Graduated as a grapchic design bachelor
+        +timeline-item.__item
+          +timeline-item-header('AWARDS AND CERTIFICATES', '17/02/2016')._violet
+          h4 Proficiency in economics by ALAP
+          p This sertificate gives me and ooportunity to work in financial sector for 2 years using my new knowledges in macroeconomy processes.
+          +e.A(href='#').control
+            +icon('search')
+            p Show document
+          +e.A(href='#').control
+            +icon('save')
+        +timeline-item.__item
+          +timeline-item-header('work', '17/02/2015 — 17/06/2016')._red
+          h4 McDonalds Berlin
+          p Stated work at local McDonalds restaurant as a cashier
+        +timeline-item.__item
+          +timeline-item-header('EDUCATION', '17/02/2016 — 17/06/2016')._lightgreen
+          h4 Univercity Of Creative art Rocherster Great Britain
+          p Graduated as a grapchic design bachelor
+    +button-add-new('point').__left.__top-30
+
 
 mixin services-plate
   +plate

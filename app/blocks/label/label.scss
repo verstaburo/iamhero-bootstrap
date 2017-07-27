@@ -1,6 +1,14 @@
 .label {
   display: inline-block;
 
+  &-tag {
+    padding-bottom: .2rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: $font-second;
+    font-weight: 400;
+  }
+
   &-thin {
     font-weight: 100;
   }
@@ -13,22 +21,6 @@
   &-close {
     padding-right: 40px;
     position: relative;
-  }
-
-  &-bg {
-
-    &-lightgreen {
-      background-color: $color-lightgreen;
-      color: #191e28;
-    }
-
-    &-red {
-      color: #c3424f;
-    }
-
-    &-violet {
-      color: #5d45d8;
-    }
   }
 
   &-close-icon {

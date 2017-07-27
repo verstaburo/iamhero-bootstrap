@@ -2,6 +2,10 @@
 
   &__top {
 
+    &-60 {
+      margin-top: 60px;
+    }
+
     &-50 {
       margin-top: 50px;
     }
@@ -86,5 +90,10 @@
   &__service-select {
     display: block;
     max-width: 74%;
+  }
+
+  &__left {
+    display: block;
+    margin-left: auto;
   }
 }
