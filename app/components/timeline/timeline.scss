@@ -49,6 +49,12 @@
     align-items: center;
     text-decoration: underline;
     text-decoration-color: $color-lightgreen;
+    transition: color .25s ease-in-out;
+
+    &:hover {
+      color: #0a0a0b;
+      text-decoration-color: $color-lightgreen;
+    }
 
     p {
       margin-bottom: 0;

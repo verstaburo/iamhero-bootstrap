@@ -2,7 +2,7 @@ include ../icon/icons
 include ../icon-close/icon-close
 
 mixin service(icon, title)
-  +b.service&attributes(attributes)
+  +b.service._edit&attributes(attributes)
     +e.heading
       +icon(icon).icon
       h4.font-weight-medium= title

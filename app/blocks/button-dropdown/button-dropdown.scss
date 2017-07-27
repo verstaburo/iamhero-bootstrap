@@ -1,5 +1,12 @@
 .btn-select {
 
+  &.open {
+
+    .dropdown-toggle > svg {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+  }
+
   .dropdown-toggle {
     padding-right: 40px;
     position: relative;
@@ -16,6 +23,7 @@
       right: 14px;
       stroke: $color-grey;
       fill: transparent;
+      transition: transform .25s ease-in-out;
     }
   }
 }

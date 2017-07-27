@@ -8,6 +8,7 @@ include ../input-group/input-group
 include ../timeline/timeline
 include ../../blocks/button-dropdown/button-dropdown
 include ../../blocks/service/service
+include ../../blocks/thumbnail/thumbnail
 
 mixin avatar-plate
   +plate._no-padding._flex._tablet-column
@@ -125,7 +126,7 @@ mixin languages-plate-static
     +language-sliders-static('English', 'lightgreen')
     +language-sliders-static('German', 'blue')
 
-mixin resume-plate
+mixin resume-plate(edit)
   +plate
     +e.H2.header Resume
     p Here is my professional goals in informative and simple timeline
@@ -137,22 +138,32 @@ mixin resume-plate
       +e.items
         +e.holder
         +timeline-item.__item
-          +timeline-item-header('work', '17/06/2016 — 17/06/2018')._red
+          if edit
+            +timeline-item-header-edit('work', '17/06/2016 — 17/06/2018')._red
+          else
+            +timeline-item-header('work', '17/06/2016 — 17/06/2018')._red
           h4 DEZI Design
           p Stated o work as a junior Designer at DEZI
         +timeline-item.__item
-          +timeline-item-header('education', '17/02/2016 — 17/06/2016')._lightgreen
+          if edit
+            +timeline-item-header-edit('education', '17/02/2016 — 17/06/2016')._lightgreen
+          else
+            +timeline-item-header('education', '17/02/2016 — 17/06/2016')._lightgreen
           h4 Univercity Of Creative art Rocherster Great Britain
           p Graduated as a grapchic design bachelor
         +timeline-item.__item
-          +timeline-item-header('AWARDS AND CERTIFICATES', '17/02/2016')._violet
+          if edit
+            +timeline-item-header-edit('AWARDS AND CERTIFICATES', '17/02/2016')._violet
+          else
+            +timeline-item-header('AWARDS AND CERTIFICATES', '17/02/2016')._violet
           h4 Proficiency in economics by ALAP
           p This sertificate gives me and ooportunity to work in financial sector for 2 years using my new knowledges in macroeconomy processes.
-          +e.A(href='#').control
-            +icon('search')
-            p Show document
-          +e.A(href='#').control
-            +icon('save')
+          if edit
+            +e.A(href='#').control
+              +icon('search')
+              p Show document
+            +e.A(href='#').control
+              +icon('save')
         +timeline-item.__item
           +timeline-item-header('work', '17/02/2015 — 17/06/2016')._red
           h4 McDonalds Berlin
@@ -161,7 +172,8 @@ mixin resume-plate
           +timeline-item-header('EDUCATION', '17/02/2016 — 17/06/2016')._lightgreen
           h4 Univercity Of Creative art Rocherster Great Britain
           p Graduated as a grapchic design bachelor
-    +button-add-new('point').__left.__top-30
+    if edit
+      +button-add-new('point').__left.__top-30
 
 
 mixin services-plate
@@ -181,3 +193,21 @@ mixin services-plate-static
       +service-static('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
       +service-static('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
       +service-static('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
+
+mixin interests-plate(edit)
+  +plate
+    +e.H2.header Interests
+    .row.plate__top-60
+      .col-lg-4
+        +thumbnail-interests('profile-edit/design.jpg', 'Graphic design')
+      .col-lg-4
+        +thumbnail-interests('profile-edit/travel.jpg', 'Travel')
+      .col-lg-4
+        +thumbnail-interests('profile-edit/chess.jpg', 'Chess')
+      .col-lg-4
+        +thumbnail-interests('profile-edit/car.jpg', 'Car sketching')
+      .col-lg-4
+        +thumbnail-interests('profile-edit/food-review.jpg', 'Street food review')
+    if edit
+      +input-group-upload('Write another', 'image').__top-20
+      +input-group-add('write about interest', 'interest').__top-20

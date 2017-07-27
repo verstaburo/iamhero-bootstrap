@@ -7,6 +7,12 @@ mixin input-group-add(placeholder, button)
     span.input-group-btn
       +button-add-new(button)
 
+mixin input-group-upload(placeholder, button)
+  +input-group&attributes(attributes)
+    +input(placeholder=placeholder)
+    span.input-group-btn
+      .btn.btn-upload= 'Upload '+button
+
 mixin input-group
   +b.input-group&attributes(attributes)
     block

@@ -35,16 +35,17 @@
   z-index: $zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
   float: left;
-  min-width: 160px;
+  width: 100%;
   padding: 5px 0;
   margin: 2px 0 0; // override default ul
   list-style: none;
+  overflow: hidden;
   font-size: $font-size-base;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   background-color: $dropdown-bg;
   border: 1px solid $dropdown-fallback-border; // IE8 fallback
   border: 1px solid $dropdown-border;
-  border-radius: $border-radius-base;
+  border-radius: 20px;
   @include box-shadow(0 6px 12px rgba(0,0,0,.175));
   background-clip: padding-box;
 
@@ -64,11 +65,11 @@
   // Links within the dropdown menu
   > li > a {
     display: block;
-    padding: 3px 20px;
+    padding: 10px 20px;
     clear: both;
     font-weight: normal;
     line-height: $line-height-base;
-    color: $dropdown-link-color;
+    color: inherit;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
   }
 }

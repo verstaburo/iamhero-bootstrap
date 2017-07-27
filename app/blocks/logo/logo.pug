@@ -3,7 +3,7 @@ include ../icon/icons
 mixin logo(noLink)
   if noLink
     +b.logo&attributes(attributes)
-      +icon('logo')
+      img(src='assets/images/icon/iamhero_logo_grey.svg').img-responsive
   else
     +b.A(href='#').logo&attributes(attributes)
-      +icon('logo')
+      img(src='assets/images/icon/iamhero_logo_grey.svg').img-responsive
