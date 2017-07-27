@@ -1,6 +1,7 @@
 .service {
   display: block;
   cursor: pointer;
+  flex-shrink: 0;
 
   @media (min-width: 1024px) {
     max-width: 245px;
@@ -9,7 +10,7 @@
 
   &:hover {
 
-    .service__icon_close {
+    .service__close {
       opacity: 1;
     }
   }
@@ -31,18 +32,15 @@
     @media (max-width: 1024px) {
       margin-left: 0;
     }
+  }
 
-    &_close {
-      width: 18px;
-      height: 18px;
-      stroke: $color-grey;
-      transition: opacity .25s ease-in-out;
-      opacity: 0;
+  &__close {
+    opacity: 0;
+    margin-left: 13px;
 
-      @media (max-width: 1024px) {
-        opacity: 1;
-        margin-left: auto;
-      }
+    @media (max-width: 1024px) {
+      opacity: 1;
+      margin-left: auto;
     }
   }
 

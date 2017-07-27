@@ -22,42 +22,21 @@
   }
 
   &__controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: relative;
+    margin-top: 15px;
 
-    .rangeslider {
-      flex-grow: 1;
-      flex-shrink: 0;
-      width: 100%;
-
-      @media (max-width: 1024px) {
-        width: auto;
-      }
-    }
-
-    .rangeslider-wrap__icon-close {
-      margin-left: 18px;
-      flex-shrink: 0;
+    .icon-close {
+      position: absolute;
+      top: -5px;
+      right: -30px;
     }
   }
 
   &__icon-close {
-    height: 18px;
-    width: 18px;
-    cursor: pointer;
     opacity: 0;
-    transition: opacity .25s ease-in-out;
 
     @media (max-width: 640px) {
       opacity: 1;
-    }
-
-    svg {
-      display: block;
-      width: 100%;
-      height: 100%;
-      stroke: $color-grey;
     }
   }
 

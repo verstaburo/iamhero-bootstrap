@@ -1,5 +1,5 @@
 include ../../blocks/rangeslider/rangeslider
-include ../../blocks/icon/icons
+include ../../blocks/icon-close/icon-close
 
 mixin rangeslider-label(label, color)
   +b.rangeslider-wrap&attributes(attributes)
@@ -8,8 +8,7 @@ mixin rangeslider-label(label, color)
       +e.H4.output
     +e.controls
       +rangeslider(class='rangeslider_color_'+color)
-      +e.icon-close
-        +icon('close')
+      +icon-close().rangeslider-wrap__icon-close
 
 mixin rangeslider-label-static(label, color)
   +b.rangeslider-wrap&attributes(attributes)

@@ -1,6 +1,10 @@
-include ../icon/icons
+include ../icon-close/icon-close
 
 mixin label
+  +b.SPAN.label&attributes(attributes)
+    block
+
+mixin label-small
   +b.SPAN.label&attributes(attributes)
     block
 
@@ -11,5 +15,4 @@ mixin label-default
 mixin label-close
   +label.label-default.label-thin.label-larger.label-close&attributes(attributes)
     block
-    span.label-close-icon
-      +icon('close')
+    +icon-close.label-close-icon

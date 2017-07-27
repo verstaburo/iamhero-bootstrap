@@ -1,11 +1,12 @@
 include ../icon/icons
+include ../icon-close/icon-close
 
 mixin service(icon, title)
   +b.service&attributes(attributes)
     +e.heading
       +icon(icon).icon
       h4.font-weight-medium= title
-      +icon('close').icon._close
+      +icon-close.__close
     +e.P.description
       block
 
