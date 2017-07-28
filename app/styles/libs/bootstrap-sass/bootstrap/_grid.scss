@@ -26,6 +26,12 @@
   @media (min-width: 1440px) {
     width: 1330px;
   }
+
+  &-big {
+    @media (min-width: 1920px) {
+      width: 1610px;
+    }
+  }
 }
 
 

@@ -1,0 +1,12 @@
+mixin footer-menu()
+  +b.UL.footer-menu&attributes(attributes)
+    block
+
+mixin footer-menu-item()
+  +e.LI.item
+    a(href='#')
+      block
+
+mixin footer-menu-heading()
+  +e.LI.item._heading
+    block

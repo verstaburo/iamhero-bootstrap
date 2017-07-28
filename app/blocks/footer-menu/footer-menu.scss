@@ -1,0 +1,27 @@
+.footer-menu {
+  display: block;
+  padding: 0;
+
+  &__item {
+    font-family: $font-second;
+    font-weight: 400;
+    color: #394a5e;
+    font-size: 22px;
+    list-style: none;
+
+    &_heading {
+      color: #a8b3bf;
+      font-weight: 700;
+      font-size: 25px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:not(:first-child) {
+      margin-top: 35px;
+    }
+  }
+}

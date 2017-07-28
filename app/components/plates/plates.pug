@@ -211,3 +211,15 @@ mixin interests-plate(edit)
     if edit
       +input-group-upload('Write another', 'image').__top-20
       +input-group-add('write about interest', 'interest').__top-20
+
+mixin video-plate
+  +plate._relative._fixed-height
+    +bg-image('profile-edit/video-placeholder.jpg').__video-placeholder
+    +e.header-container
+      +e.H2.header._white Video Represent
+      +button().btn-default.btn-add Upload new video
+
+mixin cases-plate
+  //- +cases
+    +plate
+      +e.H2.header Cases

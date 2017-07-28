@@ -1,0 +1,42 @@
+include ../../blocks/logo/logo
+include ../../blocks/footer-menu/footer-menu
+include ../../blocks/social/social
+
+mixin footer()
+  +b.FOOTER.footer&attributes(attributes)
+    .container.container-big
+      .row
+        .col-lg-2
+          +logo._big
+        .col-lg-2
+          +footer-menu
+            +footer-menu-heading Information
+            +footer-menu-item About amhero
+            +footer-menu-item Help & Support
+            +footer-menu-item Jobs
+            +footer-menu-item Join The — iamhero
+        .col-lg-2
+          +footer-menu
+            +footer-menu-heading Employer
+            +footer-menu-item Hire the Heros
+            +footer-menu-item Help Create Company Page
+            +footer-menu-item Post a Job
+            +footer-menu-item Pricing
+            +footer-menu-item Terms & Conditions
+            +footer-menu-item Privacy Policy
+        .col-lg-2
+          +footer-menu
+            +footer-menu-heading I am hero
+            +footer-menu-item Functions
+            +footer-menu-item Resume
+            +footer-menu-item Pricing
+            +footer-menu-item Terms & Conditions
+            +footer-menu-item Privacy Policy
+        .col-lg-4
+          +footer-menu
+            +footer-menu-heading Social
+          +social.__social
+            +social-item('facebook-social')
+            +social-item('twitter-social')
+            +social-item('youtube-social')
+            +social-item('instagram')._insta
