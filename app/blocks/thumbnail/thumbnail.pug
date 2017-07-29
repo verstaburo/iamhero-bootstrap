@@ -1,6 +1,30 @@
-mixin thumbnail-interests(img, title)
-  .thumbnail
-    img(src='assets/images/'+img)
-    .caption
+include ../../blocks/icon-close/icon-close
+
+mixin thumbnail
+  .thumbnail&attributes(attributes)
+    block
+
+mixin thumbnail-img(src)
+  img(src='assets/images/'+src)&attributes(attributes)
+
+mixin thumbnail-content()
+  .caption&attributes(attributes)
+    block
+
+mixin thumbnail-tags
+  .thumbnail-tag-container&attributes(attributes)
+    block
+
+mixin thumbnail-case-controls
+  .thumbnail-controls&attributes(attributes)
+    .thumbnail-controls-item
+      img(src='assets/images/icon/edit.png')
+    .thumbnail-controls-item
+      +icon-close.icon-close_white
+
+mixin thumbnail-interests(src, title)
+  +thumbnail&attributes(attributes)
+    +thumbnail-img(src)
+    +thumbnail-content()
       h4.font-weight-medium= title
       p Website, logo and company identity graphical design. Print, pre-print, digital design

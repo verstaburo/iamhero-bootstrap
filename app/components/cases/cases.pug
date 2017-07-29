@@ -1,3 +1,85 @@
-mixin cases()
+include ../plates/plates
+include ../../blocks/thumbnail/thumbnail
+include ../../blocks/label/label
+include ../../blocks/button/button
+
+mixin cases(edit)
   +b.cases&attributes(attributes)
-    block
+    +plate
+      +e.header-container
+        +e.H2.header Cases
+        +e.head-filters
+          +label-default-medium All
+          +label-default-medium Graphics
+          +label-default-medium Interior
+          +label-default-medium Illustration
+      if edit
+        +button-add-new('case').__top-50.__left
+    .row
+      .col-lg-4
+        +thumbnail.thumbnail-case
+          if edit
+            +thumbnail-case-controls
+          +thumbnail-img('profile-edit/cases/1.jpg')
+          +thumbnail-content
+            h3 Information Anomalies
+            p Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.
+          +thumbnail-tags
+            +label-case-tag Design
+            +label-case-tag Illustration
+            +label-case-tag Art-directing
+        +thumbnail.thumbnail-case
+          if edit
+            +thumbnail-case-controls
+          +thumbnail-img('profile-edit/cases/2.jpg')
+          +thumbnail-content
+            h3 Winter In Squares
+            p A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an
+          +thumbnail-tags
+            +label-case-tag Pre-Production
+            +label-case-tag Retouching
+      .col-lg-4
+        +thumbnail.thumbnail-case
+          if edit
+            +thumbnail-case-controls
+          +thumbnail-img('profile-edit/cases/2.jpg')
+          +thumbnail-content
+            h3 Winter In Squares
+            p A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an
+          +thumbnail-tags
+            +label-case-tag Pre-Production
+            +label-case-tag Retouching
+        +thumbnail.thumbnail-case
+          if edit
+            +thumbnail-case-controls
+          +thumbnail-img('profile-edit/cases/4.jpg')
+          +thumbnail-content
+            h3 Lorod Company Identity
+            p Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.
+          +thumbnail-tags
+            +label-case-tag Design
+            +label-case-tag Illustration
+            +label-case-tag Art-directing
+      .col-lg-4
+        +thumbnail.thumbnail-case
+          if edit
+            +thumbnail-case-controls
+          +thumbnail-img('profile-edit/cases/3.jpg')
+          +thumbnail-content
+            h3 Ripple Support Network
+            p Ripple wanted to create a lightning fast response system to address help for students, recently living on their own. Pearl created the strategy, product, brand, and system that makes getting support on the phone one click away.
+          +thumbnail-tags
+            +label-case-tag Design
+            +label-case-tag Illustration
+            +label-case-tag Art-directing
+
+        +thumbnail.thumbnail-case
+          if edit
+            +thumbnail-case-controls
+          +thumbnail-img('profile-edit/cases/5.jpg')
+          +thumbnail-content
+            h3 Opera
+            p A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink
+          +thumbnail-tags
+            +label-case-tag Pre-Production
+            +label-case-tag Retouching

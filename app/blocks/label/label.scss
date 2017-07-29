@@ -2,7 +2,6 @@
   display: inline-block;
 
   &-tag {
-    padding-bottom: .2rem;
     font-size: 12px;
     text-transform: uppercase;
     font-family: $font-second;
@@ -13,9 +12,26 @@
     font-weight: 100;
   }
 
+  &-font-light {
+    font-weight: 300;
+  }
+
+  &-font-black {
+    color: #000;
+  }
+
   &-larger {
     font-size: $font-size-larger;
     padding: 5px 20px 6px;
+  }
+
+  &-medium {
+    font-size: 16px;
+    padding: .38em .97em;
+  }
+
+  &-bg-grey {
+    background-color: #e2eaf0;
   }
 
   &-close {

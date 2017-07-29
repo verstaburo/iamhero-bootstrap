@@ -4,7 +4,7 @@
 
 .label {
   display: inline;
-  padding: .2em .6em .3em;
+  padding: .2em .6em .2em;
   font-size: 100%;
   font-weight: 400;
   line-height: 1;
@@ -16,10 +16,6 @@
   border: 1px solid transparent;
   transition: background-color .25s ease-in-out;
   cursor: default;
-
-  &:hover {
-    background-color: $color-lightgreen;
-  }
 
   // [converter] extracted a& to a.label
 
@@ -52,6 +48,10 @@ a.label {
   background-color: #fff;
   border-color: #d9d9d9;
   color: inherit;
+
+  &:hover {
+    background-color: $color-lightgreen;
+  }
 }
 
 .label-primary {

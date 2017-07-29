@@ -5,4 +5,8 @@
   stroke: $color-grey;
   transition: opacity .25s ease-in-out;
   cursor: pointer;
+
+  &_white {
+    stroke: #fff;
+  }
 }
