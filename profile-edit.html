@@ -18,7 +18,7 @@
     <header class="navbar navbar-white">
         <div class="container-fluid">
             <a class="logo" href="#">
-                <img class="img-responsive" src="assets/images/icon/iamhero_logo_grey.svg" />
+                <img src="assets/images/icon/iamhero_logo_grey.svg" />
             </a>
             <p class="navbar-text navbar-text-left-auto hidden-md hidden-sm hidden-xs">Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!</p>
             <ul class="nav navbar-nav navbar-nav-sign-up">
@@ -47,6 +47,11 @@
                             <div class="media-body">
                                 <h4 class="media-heading">Name Surname</h4>Vocation</div>
                         </div>
+                        <label class="switch switch_transparent">
+                            <input type="hidden" />
+                            <span class="switch__item active">Full version</span>
+                            <span class="switch__item">Print version</span>
+                        </label>
                         <button class="btn btn-success">Change background picture/video</button>
                     </div>
                 </div>
@@ -90,7 +95,7 @@
                         </div>
                         <div class="plate__info-col">
                             <div class="logo plate__logo">
-                                <img class="img-responsive" src="assets/images/icon/iamhero_logo_grey.svg" />
+                                <img src="assets/images/icon/iamhero_logo_grey.svg" />
                             </div>
                             <form class="plate__hero-form">
                                 <input class="form-control form-control-border-bottom form-control-border-big plate__header" type="text" placeholder="Name Surname" />
@@ -461,12 +466,282 @@
                         </div>
                     </div>
                     <div class="plate"></div>
-                    <div class="plate"></div>
-                    <div class="plate"></div>
+                    <div class="plate plate_relative plate_fixed-height">
+                        <div class="bg-image plate__video-placeholder">
+                            <img src="assets/images/profile-edit/video-placeholder.jpg" />
+                        </div>
+                        <div class="plate__header-container">
+                            <h2 class="plate__header plate__header_white">Video Represent</h2>
+                            <button class="btn btn-default btn-add">Upload new video</button>
+                        </div>
+                    </div>
+                    <div class="cases">
+                        <div class="plate">
+                            <div class="plate__header-container">
+                                <h2 class="plate__header">Cases</h2>
+                                <div class="plate__head-filters">
+                                    <span class="label label-default label-thin label-medium">All</span>
+                                    <span class="label label-default label-thin label-medium">Graphics</span>
+                                    <span class="label label-default label-thin label-medium">Interior</span>
+                                    <span class="label label-default label-thin label-medium">Illustration</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-default btn-add plate__top-50 plate__left">Add new case</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/profile-edit/cases/1.jpg" />
+                                    <div class="caption">
+                                        <h3>Information Anomalies</h3>
+                                        <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
+                                    </div>
+                                </div>
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    <div class="caption">
+                                        <h3>Winter In Squares</h3>
+                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
+                                            occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    <div class="caption">
+                                        <h3>Winter In Squares</h3>
+                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
+                                            occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/profile-edit/cases/4.jpg" />
+                                    <div class="caption">
+                                        <h3>Lorod Company Identity</h3>
+                                        <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/profile-edit/cases/3.jpg" />
+                                    <div class="caption">
+                                        <h3>Ripple Support Network</h3>
+                                        <p>Ripple wanted to create a lightning fast response system to address help for students, recently living on their own. Pearl created the strategy, product, brand, and system that makes getting support on the phone
+                                            one click away.</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
+                                    </div>
+                                </div>
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/profile-edit/cases/5.jpg" />
+                                    <div class="caption">
+                                        <h3>Opera</h3>
+                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="get-started">
+            <div class="container container-big">
+                <div class="row">
+                    <h1>Get started now!
+                        <span class="get-started__lightgreen">For Free</span>
+                    </h1>
+                    <h3>Over 500 000 heroes can’t be wrong...</h3>
+                </div>
+                <div class="get-started__inputs row">
+                    <div class="get-started__input-item get-started__input-item_switcher">
+                        <label class="switch switch_big">
+                            <input type="hidden" />
+                            <span class="switch__item active">Job seeker</span>
+                            <span class="switch__item">Employer</span>
+                        </label>
+                    </div>
+                    <div class="get-started__input-item">
+                        <input class="form-control" type="text" placeholder="Full name" />
+                    </div>
+                    <div class="get-started__input-item">
+                        <input class="form-control" type="text" placeholder="E-mail adress" />
+                    </div>
+                    <div class="get-started__input-item">
+                        <input class="form-control" type="text" placeholder="Create password" />
+                    </div>
+                    <div class="get-started__input-item get-started__input-item_small">
+                        <button class="btn btn-secondary">Continue</button>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer class="footer">
+        <div class="container container-big">
+            <div class="row">
+                <div class="col-lg-2">
+                    <a class="logo logo_big" href="#">
+                        <img src="assets/images/icon/iamhero_logo_grey.svg" />
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Information</li>
+                        <li class="footer-menu__item">
+                            <a href="#">About amhero</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Help & Support</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Join The — iamhero</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Employer</li>
+                        <li class="footer-menu__item">
+                            <a href="#">Hire the Heros</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Help Create Company Page</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Post a Job</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">I am hero</li>
+                        <li class="footer-menu__item">
+                            <a href="#">Functions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Resume</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Social</li>
+                    </ul>
+                    <div class="social footer__social">
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_facebook-social"></use></svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_twitter-social"></use></svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_youtube-social"></use></svg>
+                        </a>
+                        <a class="social__item social__item_insta" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="assets/scripts/libs/bootstrap.min.js"></script>
     <script src="assets/scripts/libs/rangeslider.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
