@@ -1,0 +1,50 @@
+.get-started {
+  display: block;
+  padding-top: 70px;
+  padding-bottom: 120px;
+  background-image: linear-gradient(to left, rgba(27, 32, 45, 1) 0%, rgba(70, 93, 117, 1) 100%, rgba(70, 93, 117, 1) 100%);
+  color: #fff;
+
+  &__lightgreen {
+    color: $color-lightgreen;
+  }
+
+  h3 {
+    font-size: 33px;
+  }
+
+  &__inputs {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__input-item {
+    margin-top: 30px;
+    flex-basis: 20%;
+
+    &_small {
+      flex-basis: 10%;
+    }
+
+    &_switcher {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 30vw;
+        left: calc(-30vw - 20px);
+        top: 20px;
+        height: 14px;
+        background-color: #1451ff;
+      }
+
+      @media (max-width: 1920px) {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

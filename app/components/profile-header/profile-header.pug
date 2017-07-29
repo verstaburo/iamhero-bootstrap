@@ -1,11 +1,14 @@
 include ../../blocks/button/button
 include ../../blocks/media/media
+include ../../blocks/switch/switch
 
 mixin profile-header()
   +b.profile-header&attributes(attributes)
     +media('profile-edit/avatar-small.jpg', 'Name Surname').media-white.hidden-sm.hidden-xs Vocation
+    +switch('Full version', 'Print version')._transparent
     +button().btn-success Change background picture/video
 
 mixin profile-header-static()
   +b.profile-header&attributes(attributes)
     +media('profile-edit/avatar-small.jpg', 'Mark Marthell').media-white.hidden-sm.hidden-xs singer
+    +switch('Full version', 'Short version')._transparent

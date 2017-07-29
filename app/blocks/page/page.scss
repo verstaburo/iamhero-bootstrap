@@ -9,6 +9,8 @@
     width: 100%;
     height: 720px;
     background-color: #191d21;
+    z-index: -1;
+    pointer-events: none;
 
     &::after {
       content: '';
@@ -17,7 +19,7 @@
       height: 100%;
       left: 0;
       top: 0;
-      background-image: linear-gradient(84deg, rgba(24, 30, 41, 1) 0%, rgba(24, 30, 41, .5) 25%, rgba(29, 33, 40, 0) 50%, rgba(39, 39, 39, 0) 100%);
+      background-image: linear-gradient(84deg, rgba(24, 30, 41, 1) 0%, rgba(24, 30, 41, .5) 52%, rgba(39, 39, 39, 0) 100%);
     }
   }
 
@@ -30,5 +32,7 @@
     background-image: url('../images/profile-edit/decoration.jpg');
     opacity: .24;
     background-repeat: repeat;
+    z-index: -1;
+    pointer-events: none;
   }
 }

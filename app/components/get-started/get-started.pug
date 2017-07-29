@@ -1,0 +1,23 @@
+include ../../blocks/input/input
+include ../../blocks/button/button
+include ../../blocks/input/input
+include ../../blocks/switch/switch
+
+mixin get-started()
+  +b.get-started&attributes(attributes)
+    .container.container-big
+      .row
+        h1 Get started now!
+          +e.SPAN.lightgreen For Free
+        h3 Over 500 000 heroes can’t be wrong...
+      +e.inputs.row
+        +e.input-item._switcher
+          +switch('Job seeker', 'Employer')._big
+        +e.input-item
+          +input('Full name')
+        +e.input-item
+          +input('E-mail adress')
+        +e.input-item
+          +input('Create password')
+        +e.input-item._small
+          +button.btn-secondary Continue

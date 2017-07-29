@@ -1,0 +1,5 @@
+mixin switch(first, second)
+  +b.LABEL.switch&attributes(attributes)
+    input(type='hidden')
+    +e.SPAN.item.active= first
+    +e.SPAN.item= second
