@@ -22,14 +22,14 @@ block content
     +page-decoration
     .container
       .row
-        .col-lg-12
+        .col-xl-14.col-xl-offset-1.col-xs-15
           +profile-header-static
-        .col-lg-3.hidden-md.hidden-sm.hidden-xs
+        .col-xl-offset-1.col-xl-3.col-md-3.hidden-sm.hidden-xs
           -
             var sidebarMenu = getData('sidebar-menu')
             sidebarMenu[2].disabled = false
           +sidebar-menu(sidebarMenu)._static.profile-edit__sidebar-menu
-        .col-lg-9.page-decoration__plates
+        .col-xl-10.col-md-12.page-decoration__plates
           +avatar-plate-static
           +skills-plate-static
           +talents-plate-static

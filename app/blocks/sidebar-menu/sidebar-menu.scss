@@ -36,8 +36,8 @@
         height: 3px;
         background-color: #25ffc4;
         position: absolute;
-        width: 30vw;
-        left: -31vw;
+        width: 50vw;
+        left: calc(-50vw - 10px);
         top: 20px;
       }
     }

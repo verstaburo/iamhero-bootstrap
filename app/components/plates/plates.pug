@@ -179,34 +179,40 @@ mixin resume-plate(edit)
 mixin services-plate
   +plate
     +e.H2.header Services
-    +e.service-container.__top-40
-      +service('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
-      +service('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
-      +service('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
+    +e.top-40.row
+      .col-lg-5
+        +service('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
+      .col-lg-5
+        +service('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
+      .col-lg-5
+        +service('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
     +button-dropdown('Select', ['value1', 'value2']).__top-40.__service-select
     +input-group-add('write about service', 'service').__top-20
 
 mixin services-plate-static
   +plate
     +e.H2.header Services
-    +e.service-container.__top-40
-      +service-static('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
-      +service-static('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
-      +service-static('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
+    +e.top-40.row
+      .col-sm-5
+        +service-static('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
+      .col-sm-5
+        +service-static('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
+      .col-sm-5
+        +service-static('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
 
 mixin interests-plate(edit)
   +plate
     +e.H2.header Interests
     .row.plate__top-60
-      .col-lg-4
+      .col-lg-5
         +thumbnail-interests('profile-edit/design.jpg', 'Graphic design')
-      .col-lg-4
+      .col-lg-5
         +thumbnail-interests('profile-edit/travel.jpg', 'Travel')
-      .col-lg-4
+      .col-lg-5
         +thumbnail-interests('profile-edit/chess.jpg', 'Chess')
-      .col-lg-4
+      .col-lg-5
         +thumbnail-interests('profile-edit/car.jpg', 'Car sketching')
-      .col-lg-4
+      .col-lg-5
         +thumbnail-interests('profile-edit/food-review.jpg', 'Street food review')
     if edit
       +input-group-upload('Write another', 'image').__top-20
@@ -218,8 +224,3 @@ mixin video-plate
     +e.header-container
       +e.H2.header._white Video Represent
       +button().btn-default.btn-add Upload new video
-
-mixin cases-plate
-  //- +cases
-    +plate
-      +e.H2.header Cases

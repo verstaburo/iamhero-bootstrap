@@ -4,8 +4,11 @@
 
   &__sidebar-menu {
     margin-top: 35px;
-    margin-left: 37px;
     margin-bottom: 20px;
+
+    @media (min-width: $screen-lg-min) {
+      margin-left: 37px;
+    }
   }
 
   &__plates {

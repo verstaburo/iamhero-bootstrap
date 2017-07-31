@@ -15,22 +15,20 @@
 
   @include clearfix;
 
-  @media (min-width: 1024px) {
-    width: 970px;
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
   }
 
-  @media (min-width: 1280px) {
-    width: 1210px;
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
   }
 
-  @media (min-width: 1440px) {
-    width: 1330px;
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
   }
 
-  &-big {
-    @media (min-width: 1920px) {
-      width: 1610px;
-    }
+  @media (min-width: $screen-xl-min) {
+    width: $container-xl;
   }
 }
 
@@ -96,4 +94,11 @@
 
 @media (min-width: $screen-lg-min) {
   @include make-grid(lg);
+}
+
+// Extra Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+@media (min-width: $screen-xl-min) {
+  @include make-grid(xl);
 }

@@ -1,37 +1,28 @@
-.navbar {
+.header {
   font-size: 18px;
+  background-color: #fff;
 
-  &-white {
-    background-color: #fff;
+  &__logo {
+    margin-right: auto;
   }
 
-  .container-fluid {
+  &__content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    &::before {
-      content: none;
-    }
   }
 
-  &-text {
+  &__text {
     font-size: 17px;
     color: #747f8b;
-
-    &-left-auto {
-      margin-left: auto !important;
-    }
+    letter-spacing: -.04em;
   }
 
-  &-nav {
+  &__nav {
+    margin-left: 45px;
 
-    &-sign-up {
-      margin-left: auto !important;
-
-      @media (min-width: 1280px) {
-        margin-left: 0 !important;
-        margin-right: auto !important;
+    &_push-right {
+      @media (min-width: $screen-lg) {
+        margin-left: auto;
       }
     }
   }
