@@ -1,0 +1,27 @@
+include ../../node_modules/bemto.pug/bemto
+include ../blocks/page/page
+include ../components/header/header
+include ../components/footer/footer
+include ../components/get-started/get-started
+
+doctype html
+html(lang='en')
+  include head
+  body
+    +header()
+    +page.profile-edit
+      block background
+      +page-decoration
+      .container
+        .row
+          .col-xl-14.col-xl-offset-1.col-xs-15
+            block profile-header
+          .col-xl-offset-1.col-xl-3.col-md-3.hidden-sm.hidden-xs
+            block sidebar-menu
+          .col-xl-10.col-md-12
+            block content
+      +get-started
+    +footer
+    script(src='assets/scripts/libs/bootstrap.min.js')
+    script(src='assets/scripts/libs/rangeslider.min.js')
+    script(src='assets/scripts/app.min.js')

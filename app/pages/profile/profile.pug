@@ -1,44 +1,32 @@
-extends ../../layouts/default
-include ../../components/header/header
+extends ../../layouts/profile
 include ../../components/profile-header/profile-header
-include ../../blocks/button/button
-include ../../blocks/page/page
-include ../../blocks/bg-image/bg-image
 include ../../blocks/sidebar-menu/sidebar-menu
-include ../../blocks/social/social
-include ../../blocks/footer-menu/footer-menu
 include ../../components/plates/plates
-include ../../components/footer/footer
 include ../../components/cases/cases
-include ../../components/get-started/get-started
 
 block head
   - var pageTitle = 'I Am Hero - Profile'
 
+block background
+  +bg-image('profile-edit/background.jpg').__top-bg
+
+block profile-header
+  +profile-header-static
+
+block sidebar-menu
+  -
+    var sidebarMenu = getData('sidebar-menu')
+    sidebarMenu[2].disabled = false
+  +sidebar-menu(sidebarMenu)._static.profile-edit__sidebar-menu
+
 block content
-  +header
-  +page.profile-edit
-    +bg-image('profile-edit/background.jpg').__top-bg
-    +page-decoration
-    .container
-      .row
-        .col-xl-14.col-xl-offset-1.col-xs-15
-          +profile-header-static
-        .col-xl-offset-1.col-xl-3.col-md-3.hidden-sm.hidden-xs
-          -
-            var sidebarMenu = getData('sidebar-menu')
-            sidebarMenu[2].disabled = false
-          +sidebar-menu(sidebarMenu)._static.profile-edit__sidebar-menu
-        .col-xl-10.col-md-12.page-decoration__plates
-          +avatar-plate-static
-          +skills-plate-static
-          +talents-plate-static
-          +languages-plate-static
-          +resume-plate
-          +services-plate-static
-          +interests-plate
-          +plate
-          +plate
-          +cases
-    +get-started
-  +footer
+  +avatar-plate-static
+  +skills-plate-static
+  +talents-plate-static
+  +languages-plate-static
+  +resume-plate
+  +services-plate-static
+  +interests-plate
+  +plate
+  +plate
+  +cases

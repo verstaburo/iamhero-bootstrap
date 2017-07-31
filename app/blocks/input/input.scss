@@ -18,4 +18,27 @@
   &-border-big {
     border-width: 2px;
   }
+
+  &-transparent {
+    background-color: transparent;
+  }
+
+  &-text-white {
+    color: #fff;
+
+    &:hover {
+      border-color: #fff;
+
+      &::placeholder {
+        color: $color-grey;
+      }
+    }
+
+    &:focus {
+
+      &::placeholder {
+        color: $color-grey;
+      }
+    }
+  }
 }

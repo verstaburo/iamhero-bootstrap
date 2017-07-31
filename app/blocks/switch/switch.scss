@@ -5,20 +5,28 @@
   padding: 2px;
 
   &__item {
-    line-height: 1.375;
     display: inline-block;
     border-radius: 50px;
     padding-left: 12px;
     padding-right: 12px;
-    color: #fff;
     cursor: pointer;
-    transition: color .25s ease-in-out, background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+    line-height: 1.375;
 
     &.active {
       background-color: #fff;
-      color: #000;
-      text-decoration: none !important;
+
+      .switch__text {
+        color: #000;
+      }
     }
+  }
+
+  &__text {
+    display: inline-block;
+    line-height: 1.2em;
+    color: #fff;
+    transition: color .25s ease-in-out, border-color .25s ease-in-out;
   }
 
   &_transparent {
@@ -36,11 +44,23 @@
     font-weight: 500;
 
     .switch__item {
-      line-height: 2;
       padding-left: 28px;
       padding-right: 28px;
-      text-decoration: underline;
-      text-decoration-color: $color-lightgreen;
+      line-height: 2;
+
+      &:not(.active) {
+
+        &:hover {
+
+          .switch__text {
+            color: $color-lightgreen;
+          }
+        }
+
+        .switch__text {
+          border-bottom: 1px solid $color-lightgreen;
+        }
+      }
     }
   }
 }

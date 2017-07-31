@@ -1,41 +1,31 @@
-extends ../../layouts/default
-include ../../components/header/header
+extends ../../layouts/profile
 include ../../components/profile-header/profile-header
-include ../../blocks/button/button
-include ../../blocks/page/page
 include ../../blocks/sidebar-menu/sidebar-menu
-include ../../blocks/switch/switch
 include ../../components/plates/plates
-include ../../components/footer/footer
 include ../../components/cases/cases
-include ../../components/get-started/get-started
 
 
 block head
   - var pageTitle = 'I Am Hero - Profile edit'
 
+block background
+  +page-top-bg
+
+block profile-header
+  +profile-header
+
+block sidebar-menu
+  +sidebar-menu(getData('sidebar-menu')).profile-edit__sidebar-menu
+  +button.btn-secondary.sidebar-menu-button Preview
+
 block content
-  +header
-  +page.profile-edit
-    +page-top-bg
-    +page-decoration
-    .container
-      .row
-        .col-lg-12
-          +profile-header
-        .col-lg-3.hidden-md.hidden-sm.hidden-xs
-          +sidebar-menu(getData('sidebar-menu')).profile-edit__sidebar-menu
-          +button.btn-secondary.sidebar-menu-button Preview
-        .col-lg-9.page-decoration__plates
-          +avatar-plate
-          +skills-plate
-          +talents-plate
-          +languages-plate
-          +resume-plate(true)
-          +services-plate(true)
-          +interests-plate(true)
-          +plate
-          +video-plate
-          +cases(true)
-    +get-started
-  +footer
+  +avatar-plate
+  +skills-plate
+  +talents-plate
+  +languages-plate
+  +resume-plate(true)
+  +services-plate(true)
+  +interests-plate(true)
+  +plate
+  +video-plate
+  +cases(true)
