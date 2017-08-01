@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -15,18 +15,18 @@
 </head>
 
 <body>
-    <header class="navbar navbar-white">
-        <div class="container-fluid">
-            <a class="logo" href="#">
+    <header class="header">
+        <div class="header__content container-fluid">
+            <a class="logo header__logo" href="#">
                 <img src="assets/images/icon/iamhero_logo_grey.svg" />
             </a>
-            <p class="navbar-text navbar-text-left-auto hidden-md hidden-sm hidden-xs">Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!</p>
-            <ul class="nav navbar-nav navbar-nav-sign-up">
+            <span class="header__text hidden-sm hidden-xs">Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!</span>
+            <ul class="nav header__nav">
                 <li>
                     <a class="nav-link nav-link-bordered" href="#">Sign up now</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav">
+            <ul class="nav header__nav header__nav_push-right">
                 <li>
                     <a class="nav-link" href="#">Login</a>
                 </li>
@@ -40,7 +40,7 @@
         <div class="page__decoration"></div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xl-14 col-xl-offset-1 col-xs-15">
                     <div class="profile-header">
                         <div class="media media-white hidden-sm hidden-xs">
                             <div class="media-left">
@@ -51,12 +51,16 @@
                         </div>
                         <label class="switch switch_transparent">
                             <input type="hidden" />
-                            <span class="switch__item active">Full version</span>
-                            <span class="switch__item">Short version</span>
+                            <span class="switch__item active">
+                                <span class="switch__text">Full version</span>
+                            </span>
+                            <span class="switch__item">
+                                <span class="switch__text">Short version</span>
+                            </span>
                         </label>
                     </div>
                 </div>
-                <div class="col-lg-3 hidden-md hidden-sm hidden-xs">
+                <div class="col-xl-offset-1 col-xl-3 col-md-3 hidden-sm hidden-xs">
                     <ul class="list-group sidebar-menu sidebar-menu_static profile-edit__sidebar-menu">
                         <li class="list-group-item sidebar-menu-item sidebar-menu-item-active">
                             <a href="#">Summary</a>
@@ -87,7 +91,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-9 page-decoration__plates">
+                <div class="col-xl-10 col-md-12">
                     <div class="plate plate_no-padding plate_flex plate_tablet-column">
                         <div class="bg-image plate__avatar">
                             <img src="assets/images/profile-edit/avatar-big.jpg" />
@@ -323,34 +327,40 @@
                     </div>
                     <div class="plate">
                         <h2 class="plate__header">Services</h2>
-                        <div class="plate__service-container plate__top-40">
-                            <div class="service">
-                                <div class="service__heading">
-                                    <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_palette"></use></svg>
-                                    <h4 class="font-weight-medium">Graphic design</h4>
+                        <div class="plate__top-40 row">
+                            <div class="col-sm-5">
+                                <div class="service">
+                                    <div class="service__heading">
+                                        <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_palette"></use></svg>
+                                        <h4 class="font-weight-medium">Graphic design</h4>
+                                    </div>
+                                    <p class="service__description">Website, logo and company identity graphical design. Print, pre-print, digital design</p>
                                 </div>
-                                <p class="service__description">Website, logo and company identity graphical design. Print, pre-print, digital design</p>
                             </div>
-                            <div class="service">
-                                <div class="service__heading">
-                                    <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_tape"></use></svg>
-                                    <h4 class="font-weight-medium">Video editing</h4>
+                            <div class="col-sm-5">
+                                <div class="service">
+                                    <div class="service__heading">
+                                        <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_tape"></use></svg>
+                                        <h4 class="font-weight-medium">Video editing</h4>
+                                    </div>
+                                    <p class="service__description">Adobe premier and After Effect mastery. Video filiming, color correction and Post production</p>
                                 </div>
-                                <p class="service__description">Adobe premier and After Effect mastery. Video filiming, color correction and Post production</p>
                             </div>
-                            <div class="service">
-                                <div class="service__heading">
-                                    <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_brush"></use></svg>
-                                    <h4 class="font-weight-medium">Illustration</h4>
+                            <div class="col-sm-5">
+                                <div class="service">
+                                    <div class="service__heading">
+                                        <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_brush"></use></svg>
+                                        <h4 class="font-weight-medium">Illustration</h4>
+                                    </div>
+                                    <p class="service__description">Drawing illustration and graphical images in various styles. Look for more in cases section</p>
                                 </div>
-                                <p class="service__description">Drawing illustration and graphical images in various styles. Look for more in cases section</p>
                             </div>
                         </div>
                     </div>
                     <div class="plate">
                         <h2 class="plate__header">Interests</h2>
                         <div class="row plate__top-60">
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="thumbnail">
                                     <img src="assets/images/profile-edit/design.jpg" />
                                     <div class="caption">
@@ -359,7 +369,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="thumbnail">
                                     <img src="assets/images/profile-edit/travel.jpg" />
                                     <div class="caption">
@@ -368,7 +378,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="thumbnail">
                                     <img src="assets/images/profile-edit/chess.jpg" />
                                     <div class="caption">
@@ -377,7 +387,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="thumbnail">
                                     <img src="assets/images/profile-edit/car.jpg" />
                                     <div class="caption">
@@ -386,7 +396,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="thumbnail">
                                     <img src="assets/images/profile-edit/food-review.jpg" />
                                     <div class="caption">
@@ -412,7 +422,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="thumbnail thumbnail-case">
                                     <img src="assets/images/profile-edit/cases/1.jpg" />
                                     <div class="caption">
@@ -438,7 +448,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="thumbnail thumbnail-case">
                                     <img src="assets/images/profile-edit/cases/2.jpg" />
                                     <div class="caption">
@@ -464,7 +474,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-5">
                                 <div class="thumbnail thumbnail-case">
                                     <img src="assets/images/profile-edit/cases/3.jpg" />
                                     <div class="caption">
@@ -507,18 +517,22 @@
                     <div class="get-started__input-item get-started__input-item_switcher">
                         <label class="switch switch_big">
                             <input type="hidden" />
-                            <span class="switch__item active">Job seeker</span>
-                            <span class="switch__item">Employer</span>
+                            <span class="switch__item active">
+                                <span class="switch__text">Job seeker</span>
+                            </span>
+                            <span class="switch__item">
+                                <span class="switch__text">Employer</span>
+                            </span>
                         </label>
                     </div>
                     <div class="get-started__input-item">
-                        <input class="form-control" type="text" placeholder="Full name" />
+                        <input class="form-control form-control-text-white form-control-transparent form-control-border-gradient" type="text" placeholder="Full name" />
                     </div>
                     <div class="get-started__input-item">
-                        <input class="form-control" type="text" placeholder="E-mail adress" />
+                        <input class="form-control form-control-text-white form-control-transparent form-control-border-gradient" type="text" placeholder="E-mail adress" />
                     </div>
                     <div class="get-started__input-item">
-                        <input class="form-control" type="text" placeholder="Create password" />
+                        <input class="form-control form-control-text-white form-control-transparent form-control-border-gradient" type="text" placeholder="Create password" />
                     </div>
                     <div class="get-started__input-item get-started__input-item_small">
                         <button class="btn btn-secondary">Continue</button>
