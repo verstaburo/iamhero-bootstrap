@@ -1,5 +1,32 @@
 .thumbnail {
 
+  &-interests {
+    @media (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+      flex-direction: row;
+
+      img {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .caption {
+        padding: 0 30px;
+
+        h4 {
+          margin-top: 0;
+        }
+      }
+    }
+
+    @media (max-width: $screen-xs) {
+
+      .caption {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
   &-case {
     background-color: #fff;
     margin-bottom: 0;

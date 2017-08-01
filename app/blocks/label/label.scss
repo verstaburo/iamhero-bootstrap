@@ -1,5 +1,4 @@
 .label {
-  display: inline-block;
 
   &-tag {
     font-size: 12px;
@@ -22,7 +21,7 @@
 
   &-larger {
     font-size: $font-size-larger;
-    padding: 5px 20px 6px;
+    padding: 8px 16px 9px;
   }
 
   &-medium {

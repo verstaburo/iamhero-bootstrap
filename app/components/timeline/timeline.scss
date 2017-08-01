@@ -20,6 +20,11 @@
 
   &__years {
     width: 45px;
+    flex-shrink: 0;
+
+    @media (max-width: $screen-xs) {
+      display: none;
+    }
   }
 
   &__year {
@@ -30,7 +35,7 @@
   }
 
   &__holder {
-    height: 915px;
+    height: 100%;
     width: 8px;
     border: 1px solid #c1c8cf;
     border-radius: 4px;
@@ -42,6 +47,10 @@
 
 .timeline-item {
   padding-left: 60px;
+
+  @media (max-width: $screen-xs) {
+    padding-left: 30px;
+  }
 
   &__control {
     color: inherit;
@@ -77,6 +86,11 @@
     align-items: center;
     position: relative;
 
+    @media (max-width: $screen-xs) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -85,13 +99,19 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
+
+      @media (max-width: $screen-xs) {
+        left: -30px;
+      }
     }
 
     &::after {
-      content: '.............';
-      position: absolute;
-      left: -47px;
-      top: -4px;
+      @media (min-width: $screen-xs-min) {
+        content: '.............';
+        position: absolute;
+        left: -47px;
+        top: -4px;
+      }
     }
 
     &_lightgreen {
@@ -117,11 +137,16 @@
     }
   }
 
-  &__date {
-    margin: 0;
-  }
-
   &__left-8 {
     margin-left: 8px;
+  }
+
+  &__date {
+    margin-bottom: 0;
+
+    @media (max-width: $screen-xs) {
+      margin-top: 10px;
+      margin-left: 0;
+    }
   }
 }

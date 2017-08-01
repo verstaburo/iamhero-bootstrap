@@ -3,9 +3,10 @@
 // --------------------------------------------------
 
 .label {
-  display: inline;
-  padding: .2em .6em .2em;
+  display: inline-block;
+  padding: .2em .6em;
   font-size: 100%;
+  letter-spacing: -.04em;
   font-weight: 400;
   line-height: 1;
   color: $label-color;

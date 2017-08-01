@@ -9,7 +9,7 @@
 
   &:hover, &:active {
 
-    .rangeslider__handle {
+    & > .rangeslider__handle {
       opacity: 1;
     }
   }
@@ -18,6 +18,10 @@
 
     & + .rangeslider {
       pointer-events: none;
+
+      & > .rangeslider__handle {
+        display: none;
+      }
     }
   }
 

@@ -5,7 +5,8 @@
 
 // Mixin and adjust the regular image class
 .thumbnail {
-  display: block;
+  display: flex;
+  flex-direction: column;
   // padding: $thumbnail-padding;
   margin-bottom: 30px;
   line-height: $line-height-base;

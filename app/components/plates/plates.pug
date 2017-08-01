@@ -28,28 +28,28 @@ mixin avatar-plate-static
       +logo(true).__logo
       +e.hero-form
         h2 Mark Marthell
-        h4 Los Angeles, USA
-        h3 Singer, Producer, Interpreneur
+        h5 Los Angeles, USA
+        h4 Singer, Producer, Interpreneur
         p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
 
 mixin skills-plate
   +plate
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
-    +rangeslider-label('Graphic design', 'lightgreen').__top-50
-    +rangeslider-label('Web Design', 'orange').__top-50
-    +rangeslider-label('Illustration', 'blue').__top-50
-    +rangeslider-label('Video Editing', 'red').__top-50
-    +input-group-add('Write another', 'skill').__top-50
+    +rangeslider-label('Graphic design', 'lightgreen').__top-60
+    +rangeslider-label('Web Design', 'orange').__top-60
+    +rangeslider-label('Illustration', 'blue').__top-60
+    +rangeslider-label('Video Editing', 'red').__top-60
+    +input-group-add('Write another', 'skill').__top-60
 
 mixin skills-plate-static
   +plate
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
-    +rangeslider-label-static('Graphic design', 'lightgreen').__top-50
-    +rangeslider-label-static('Web Design', 'orange').__top-50
-    +rangeslider-label-static('Illustration', 'blue').__top-50
-    +rangeslider-label-static('Video Editing', 'red').__top-50
+    +rangeslider-label-static('Graphic design', 'lightgreen').__top-60
+    +rangeslider-label-static('Web Design', 'orange').__top-60
+    +rangeslider-label-static('Illustration', 'blue').__top-60
+    +rangeslider-label-static('Video Editing', 'red').__top-60
 
 mixin talents-plate
   +plate
@@ -78,7 +78,7 @@ mixin talents-plate-static
       +label-default() Education specialist
 
 mixin language-heading
-  +e.lang-row
+  +e.lang-row.hidden-xs
     +e.lang-col
       h5 Language
     +e.lang-col
@@ -91,19 +91,25 @@ mixin language-heading
       h5 Understanding
 
 mixin language-sliders(title, color)
+  -
+    var langSkills = ['Reading', 'Speaking', 'Writing', 'Understanding']
   +e.lang-row
     +e.lang-col
       h4.font-weight-medium= title
-    - for(var i=0;i<4;i++)
+    each item in langSkills
       +e.lang-col
+        h4.hidden-md.hidden-lg.hidden-xl= item
         +rangeslider-nolabel(color)
 
 mixin language-sliders-static(title, color)
+  -
+    var langSkills = ['Reading', 'Speaking', 'Writing', 'Understanding']
   +e.lang-row
     +e.lang-col
       h4.font-weight-medium= title
-    - for(var i=0;i<4;i++)
+    each item in langSkills
       +e.lang-col
+        h4.visible-xs= item
         +rangeslider-nolabel-static(color)
 
 mixin languages-plate
@@ -180,11 +186,11 @@ mixin services-plate
   +plate
     +e.H2.header Services
     +e.top-40.row
-      .col-lg-5
+      +e.service.col-lg-5
         +service('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
-      .col-lg-5
+      +e.service.col-lg-5
         +service('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
-      .col-lg-5
+      +e.service.col-lg-5
         +service('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
     +button-dropdown('Select', ['value1', 'value2']).__top-40.__service-select
     +input-group-add('write about service', 'service').__top-20
@@ -193,26 +199,26 @@ mixin services-plate-static
   +plate
     +e.H2.header Services
     +e.top-40.row
-      .col-sm-5
+      +e.service.col-sm-5
         +service-static('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
-      .col-sm-5
+      +e.service.col-sm-5
         +service-static('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
-      .col-sm-5
+      +e.service.col-sm-5
         +service-static('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
 
 mixin interests-plate(edit)
   +plate
     +e.H2.header Interests
     .row.plate__top-60
-      .col-lg-5
+      .col-sm-5.col-xs-15
         +thumbnail-interests('profile-edit/design.jpg', 'Graphic design')
-      .col-lg-5
+      .col-sm-5.col-xs-15
         +thumbnail-interests('profile-edit/travel.jpg', 'Travel')
-      .col-lg-5
+      .col-sm-5.col-xs-15
         +thumbnail-interests('profile-edit/chess.jpg', 'Chess')
-      .col-lg-5
+      .col-sm-5.col-xs-15
         +thumbnail-interests('profile-edit/car.jpg', 'Car sketching')
-      .col-lg-5
+      .col-sm-5.col-xs-15
         +thumbnail-interests('profile-edit/food-review.jpg', 'Street food review')
     if edit
       +input-group-upload('Write another', 'image').__top-20

@@ -1,7 +1,11 @@
 .plate {
-  padding: 60px 65px;
+  padding: 60px 60px 80px;
   background-color: #fff;
   margin-top: 35px;
+
+  &:first-child {
+    margin-top: 23px;
+  }
 
   @media (max-width: 1024px) {
     padding-left: 35px;
@@ -32,87 +36,5 @@
 
   &_fixed-height {
     height: 650px;
-  }
-
-  &__avatar {
-    flex-shrink: 0;
-    width: 43%;
-    height: 450px;
-
-    @media (max-width: 1024px) {
-      width: 100%;
-      height: 600px;
-    }
-
-    @media (max-width: 640px) {
-      height: 280px;
-    }
-  }
-
-  &__avatar-button {
-    position: relative;
-    margin-top: 25px;
-    margin-left: 25px;
-  }
-
-  &__header {
-    font-size: 53px;
-    line-height: 1.2em;
-    letter-spacing: -.04em;
-    font-weight: 100;
-    margin: 0;
-
-    &_white {
-      color: #fff;
-    }
-  }
-
-  &__info-col {
-    display: flex;
-    flex-direction: column;
-    padding: 33px 25px 33px 60px;
-
-    @media (max-width: 1024px) {
-      padding-left: 35px;
-    }
-
-    @media (max-width: 640px) {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
-
-  &__logo {
-    margin-left: auto;
-  }
-
-  &__hero-form {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-
-    h2 {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .font-larger, h4 {
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-
-    .font-large, h3 {
-      margin-top: 5px;
-      margin-bottom: 0;
-    }
-
-    textarea, p {
-      margin-top: auto;
-      margin-bottom: 0;
-
-      @media (max-width: 1024px) {
-        margin-top: 80px;
-      }
-    }
   }
 }

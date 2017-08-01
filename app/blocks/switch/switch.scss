@@ -3,6 +3,7 @@
   border-radius: 50px;
   border: 1px solid white;
   padding: 2px;
+  user-select: none;
 
   &__item {
     display: inline-block;

@@ -12,6 +12,7 @@
     padding-left: 25px;
     color: #fff;
     font-size: 18px;
+    letter-spacing: -.04em;
 
     &::before {
       position: absolute;
@@ -24,6 +25,14 @@
       -webkit-font-smoothing: antialiased;
     }
 
+    a {
+      transition: color .25s ease-in-out;
+
+      &:hover {
+        color: $color-lightgreen;
+      }
+    }
+
     &-active {
       font-weight: 500;
 
@@ -33,12 +42,12 @@
 
       &::after {
         content: '';
-        height: 3px;
+        height: 4px;
         background-color: #25ffc4;
         position: absolute;
         width: 50vw;
         left: calc(-50vw - 10px);
-        top: 20px;
+        top: 18px;
       }
     }
 
