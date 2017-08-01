@@ -2,8 +2,22 @@
 
   &.open {
 
-    .dropdown-toggle > svg {
-      transform: translateY(-50%) rotate(-180deg);
+    .dropdown-toggle {
+      border-color: $color-lightgreen;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-color: transparent;
+    }
+  }
+
+  &:hover, &.open {
+
+    .dropdown-toggle {
+      color: $text-color;
+
+      > svg {
+        stroke: $color-lightgreen;
+      }
     }
   }
 
@@ -14,16 +28,17 @@
     text-align: left;
 
     svg {
-      width: 14px;
-      height: 7px;
+      width: 18px;
+      height: 10px;
       display: block;
       position: absolute;
       transform: translateY(-50%);
       top: 50%;
       right: 14px;
+      stroke-width: 2px;
       stroke: $color-grey;
       fill: transparent;
-      transition: transform .25s ease-in-out;
+      transition: stroke .25s ease-in-out;
     }
   }
 }
