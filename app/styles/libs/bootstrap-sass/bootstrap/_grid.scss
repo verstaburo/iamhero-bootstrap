@@ -15,12 +15,12 @@
 
   @include clearfix;
 
-  @media (min-width: $screen-sm-min) {
-    width: $container-sm;
-  }
-
   @media (min-width: $screen-md-min) {
     width: $container-md;
+  }
+
+  @media (min-width: $screen-xm-min) {
+    width: $container-xm;
   }
 
   @media (min-width: $screen-lg-min) {
@@ -85,6 +85,15 @@
 
 @media (min-width: $screen-md-min) {
   @include make-grid(md);
+}
+
+
+// Large Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $screen-xm-min) {
+  @include make-grid(xm);
 }
 
 

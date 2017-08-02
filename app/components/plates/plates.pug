@@ -78,7 +78,7 @@ mixin talents-plate-static
       +label-default() Education specialist
 
 mixin language-heading
-  +e.lang-row.hidden-xs
+  +e.lang-row.hidden-xs.hidden-sm
     +e.lang-col
       h5 Language
     +e.lang-col
@@ -98,7 +98,7 @@ mixin language-sliders(title, color)
       h4.font-weight-medium= title
     each item in langSkills
       +e.lang-col
-        h4.hidden-md.hidden-lg.hidden-xl= item
+        h4.visible-xs.visible-sm= item
         +rangeslider-nolabel(color)
 
 mixin language-sliders-static(title, color)
@@ -109,7 +109,7 @@ mixin language-sliders-static(title, color)
       h4.font-weight-medium= title
     each item in langSkills
       +e.lang-col
-        h4.visible-xs= item
+        h4.visible-xs.visible-sm= item
         +rangeslider-nolabel-static(color)
 
 mixin languages-plate
@@ -186,11 +186,11 @@ mixin services-plate
   +plate
     +e.H2.header Services
     +e.top-40.row
-      +e.service.col-lg-5
+      +e.service.col-md-8
         +service('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
-      +e.service.col-lg-5
+      +e.service.col-md-8
         +service('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
-      +e.service.col-lg-5
+      +e.service.col-md-8
         +service('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
     +button-dropdown('Select', ['value1', 'value2']).__top-40.__service-select
     +input-group-add('write about service', 'service').__top-20
@@ -199,26 +199,26 @@ mixin services-plate-static
   +plate
     +e.H2.header Services
     +e.top-40.row
-      +e.service.col-sm-5
+      +e.service.col-md-8
         +service-static('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
-      +e.service.col-sm-5
+      +e.service.col-md-8
         +service-static('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
-      +e.service.col-sm-5
+      +e.service.col-md-8
         +service-static('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
 
 mixin interests-plate(edit)
   +plate
     +e.H2.header Interests
     .row.plate__top-60
-      .col-sm-5.col-xs-15
+      .col-md-8.col-xs-24
         +thumbnail-interests('profile-edit/design.jpg', 'Graphic design')
-      .col-sm-5.col-xs-15
+      .col-md-8.col-xs-24
         +thumbnail-interests('profile-edit/travel.jpg', 'Travel')
-      .col-sm-5.col-xs-15
+      .col-md-8.col-xs-24
         +thumbnail-interests('profile-edit/chess.jpg', 'Chess')
-      .col-sm-5.col-xs-15
+      .col-md-8.col-xs-24
         +thumbnail-interests('profile-edit/car.jpg', 'Car sketching')
-      .col-sm-5.col-xs-15
+      .col-md-8.col-xs-24
         +thumbnail-interests('profile-edit/food-review.jpg', 'Street food review')
     if edit
       +input-group-upload('Write another', 'image').__top-20

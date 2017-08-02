@@ -22,7 +22,7 @@
     width: 45px;
     flex-shrink: 0;
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs-max) {
       display: none;
     }
   }
@@ -48,7 +48,7 @@
 .timeline-item {
   padding-left: 60px;
 
-  @media (max-width: $screen-xs) {
+  @media (max-width: $screen-xs-max) {
     padding-left: 30px;
   }
 
@@ -86,7 +86,7 @@
     align-items: center;
     position: relative;
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs-max) {
       align-items: flex-start;
       flex-direction: column;
     }
@@ -100,13 +100,13 @@
       height: 10px;
       border-radius: 50%;
 
-      @media (max-width: $screen-xs) {
+      @media (max-width: $screen-xs-max) {
         left: -30px;
       }
     }
 
     &::after {
-      @media (min-width: $screen-xs-min) {
+      @media (min-width: $screen-sm-min) {
         content: '.............';
         position: absolute;
         left: -47px;
@@ -144,7 +144,7 @@
   &__date {
     margin-bottom: 0;
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs-max) {
       margin-top: 10px;
       margin-left: 0;
     }

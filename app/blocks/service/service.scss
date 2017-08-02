@@ -3,7 +3,7 @@
   cursor: pointer;
   flex-shrink: 0;
 
-  @media (min-width: 1024px) {
+  @media (min-width: $screen-md-min) {
     text-align: center;
   }
 
@@ -31,7 +31,7 @@
     fill: transparent;
     stroke: #c3424f;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $screen-md-min) {
       margin-left: 0;
     }
   }
@@ -40,7 +40,7 @@
     opacity: 0;
     margin-left: 13px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $screen-md-min) {
       opacity: 1;
       margin-left: auto;
     }

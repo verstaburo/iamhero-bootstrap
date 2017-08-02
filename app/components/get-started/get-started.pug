@@ -5,19 +5,18 @@ include ../../blocks/switch/switch
 
 mixin get-started()
   +b.get-started&attributes(attributes)
-    .container.container-big
-      .row
-        h1 Get started now!
-          +e.SPAN.lightgreen For Free
-        h3 Over 500 000 heroes can’t be wrong...
-      +e.inputs.row
-        +e.input-item._switcher
+    .container
+      +e.H1.heading Get started now!
+        +e.SPAN.heading_colored For Free
+      +e.H3.subheading Over 500 000 heroes can’t be wrong...
+      form.row
+        +e.switcher.col-lg-5.col-xm-6.col-xm-offset-0.col-md-offset-4.col-md-8.col-sm-12.__input
           +switch('Job seeker', 'Employer')._big
-        +e.input-item
-          +input('Full name').form-control-text-white.form-control-transparent.form-control-border-gradient
-        +e.input-item
-          +input('E-mail adress').form-control-text-white.form-control-transparent.form-control-border-gradient
-        +e.input-item
-          +input('Create password').form-control-text-white.form-control-transparent.form-control-border-gradient
-        +e.input-item._small
+        +e.input.col-lg-5.col-xm-6.col-md-8.col-sm-12
+          +input('Full name').form-control-secondary
+        +e.input.col-lg-5.col-xm-6.col-xm-offset-0.col-md-offset-4.col-md-8.col-sm-12
+          +input('E-mail adress').form-control-secondary
+        +e.input.col-lg-5.col-xm-6.col-md-8.col-sm-12
+          +input('Create password').form-control-secondary
+        +e.input.col-lg-4.col-xm-6.col-xm-offset-0.col-md-offset-4.col-md-16.col-xs-24
           +button.btn-secondary Continue

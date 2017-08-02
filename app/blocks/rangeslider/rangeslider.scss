@@ -77,7 +77,7 @@
     transition: opacity .25s ease-in-out;
     opacity: 0;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $screen-sm-max) {
       opacity: 1;
     }
   }

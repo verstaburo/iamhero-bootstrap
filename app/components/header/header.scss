@@ -20,12 +20,12 @@
   &__nav {
     margin-left: 45px;
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs-max) {
       margin-left: 10px;
     }
 
     &_push-right {
-      @media (min-width: $screen-lg) {
+      @media (min-width: $screen-xm-max) {
         margin-left: auto;
       }
     }

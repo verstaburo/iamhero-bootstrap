@@ -1,7 +1,7 @@
 .thumbnail {
 
   &-interests {
-    @media (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       flex-direction: row;
 
       img {
@@ -18,7 +18,7 @@
       }
     }
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs-max) {
 
       .caption {
         padding-left: 0;

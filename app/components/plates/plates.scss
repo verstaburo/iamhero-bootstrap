@@ -28,11 +28,11 @@
     width: 100%;
     height: 280px;
 
-    @media (min-width: $screen-xs-min) {
+    @media (min-width: $screen-sm-min) {
       height: 600px;
     }
 
-    @media (min-width: $screen-sm-min) {
+    @media (min-width: $screen-md-min) {
       width: 43.3%;
       height: 450px;
     }
@@ -46,6 +46,10 @@
 
   &__header {
     margin: 0;
+    font-size: 53px;
+    line-height: 1.2em;
+    letter-spacing: -.04em;
+    font-weight: 100;
 
     &_white {
       color: #fff;
@@ -57,11 +61,11 @@
     flex-direction: column;
     padding: 35px 30px 70px 60px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: $screen-sm-max) {
       padding-left: 35px;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: $screen-xs-max) {
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -75,10 +79,6 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-
-    @media (min-width: $screen-xs) {
-      margin-top: -13px;
-    }
 
     h2 {
       margin-top: 0;
@@ -137,12 +137,12 @@
     }
 
     &:nth-child(3) {
-      @media (max-width: $screen-xs-max) {
+      @media (max-width: $screen-sm-max) {
         margin-top: 40px;
       }
 
       &::before {
-        @media (max-width: $screen-xs-max) {
+        @media (max-width: $screen-sm-max) {
           content: '';
           position: absolute;
           left: 0;
@@ -155,11 +155,11 @@
       }
     }
 
-    @media (max-width: $screen-xs-max) {
+    @media (max-width: $screen-sm-max) {
       flex-direction: column;
     }
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs-max) {
       padding-top: 40px;
       padding-bottom: 0;
     }
@@ -177,18 +177,18 @@
     .visible-xs {
       margin-bottom: 30px;
 
-      @media (max-width: $screen-xs) {
+      @media (max-width: $screen-xs-max) {
         margin-bottom: 10px;
       }
     }
 
-    @media (max-width: $screen-xs-max) {
+    @media (max-width: $screen-sm-max) {
       margin-bottom: 35px;
       flex-direction: column;
       align-items: flex-start;
     }
 
-    @media (max-width: $screen-xs) {
+    @media (max-width: $screen-xs-max) {
       margin-bottom: 80px;
 
       &:first-child {
@@ -211,7 +211,7 @@
   &__service {
 
     &:not(:first-child) {
-      @media (max-width: $screen-xs) {
+      @media (max-width: $screen-xs-max) {
         margin-top: 58px;
       }
 

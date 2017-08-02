@@ -29,6 +29,10 @@
     padding-left: 45px;
     padding-right: 45px;
 
+    @media (max-width: $screen-xs-max) {
+      font-size: 14px;
+    }
+
     &:hover {
       background-color: $color-lightgreen;
       color: #1b202d;

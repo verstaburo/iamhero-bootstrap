@@ -19,12 +19,18 @@
     border-width: 2px;
   }
 
-  &-transparent {
+  &-secondary {
     background-color: transparent;
-  }
-
-  &-text-white {
+    border-color: #8898a3;
     color: #fff;
+    font-size: 20px;
+    padding-bottom: 10px;
+
+    @media (max-width: $screen-xs-max) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      font-size: 14px;
+    }
 
     &:hover {
       border-color: #fff;
