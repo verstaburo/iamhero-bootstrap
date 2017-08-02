@@ -261,8 +261,15 @@
   padding: 0;
   margin-bottom: 0;
   display: flex;
-  background-color: #27363e;
+  background-image: linear-gradient(to right, rgba(27, 40, 47, 1) 0%, rgba(55, 72, 81, 1) 100%);
   height: 76px;
+
+  @media (max-width: $screen-xs-max) {
+    width: 35px;
+    height: auto;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
 
   &__item {
     padding: 0;
@@ -271,10 +278,19 @@
     width: 80px;
     transition: all .25s ease-in-out;
 
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+      height: 50px;
+    }
+
     a {
       display: block;
       height: 100%;
       padding: 23px;
+
+      @media (max-width: $screen-xs-max) {
+        padding: 15px 8px;
+      }
     }
 
     &.active {
@@ -282,6 +298,14 @@
       margin-top: -8px;
       width: 95px;
       height: calc(100% + 8px);
+
+      @media (max-width: $screen-xs-max) {
+        height: 55px;
+        margin-top: 0;
+        margin-left: -7px;
+        padding-left: 7px;
+        width: calc(100% + 7px);
+      }
 
       .social-header__icon {
         fill: $text-color;
@@ -306,13 +330,27 @@
       stroke: #a4bac6;
     }
   }
+}
 
-  + .tab-content {
-    background-color: #fff;
-    min-height: 700px;
+.social-content {
+  background-color: #fff;
+  min-height: 700px;
 
-    .plate {
-      margin-top: 0;
+  @media (max-width: $screen-xs-max) {
+    flex-grow: 1;
+  }
+
+  .plate {
+    margin-top: 0;
+  }
+
+  &__img {
+    margin-top: 50px;
+    height: 210px;
+    border: 1px solid #ccc;
+
+    &_big {
+      height: 470px;
     }
   }
 }

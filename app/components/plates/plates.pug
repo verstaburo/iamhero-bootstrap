@@ -5,6 +5,7 @@ include ../../blocks/textarea/textarea
 include ../../blocks/label/label
 include ../../blocks/icon/icons
 include ../../blocks/tabs/tabs
+include ../../blocks/view-in/view-in
 include ../rangesliders/rangesliders
 include ../input-group/input-group
 include ../timeline/timeline
@@ -234,7 +235,7 @@ mixin video-plate
       +button().btn-default.btn-add Upload new video
 
 mixin social-plate
-  +plate._no-padding._relative
+  +plate._no-padding._relative._mobile-flex
     +tabs.social-header
       +tab('instagram').social-header__item.active
         +icon('instagram', true).social-header__icon.social-header__icon_insta
@@ -244,24 +245,68 @@ mixin social-plate
         +icon('youtube', true).social-header__icon
       +tab('pinterest').social-header__item
         +icon('pinterest', true).social-header__icon
-    +tab-content
+    +tab-content.social-content
       +tab-pane.active.in#instagram
         +plate
           +e.H2.header Instagram
           .row
-            +col-sm-24
-            +col-sm-24
+            .col-md-12.col-xs-24
+              +bg-image('profile-edit/social/1.jpg').social-content__img.social-content__img_big
+            .col-md-12.col-xs-24
               .row
                 .col-sm-12
+                  +bg-image('profile-edit/social/2.jpg').social-content__img
                 .col-sm-12
+                  +bg-image('profile-edit/social/3.jpg').social-content__img
                 .col-sm-12
+                  +bg-image('profile-edit/social/4.jpg').social-content__img
                 .col-sm-12
+                  +view-in('instagram')._insta.social-content__img Instagram
       +tab-pane#facebook
         +plate
           +e.H2.header Facebook
+          .row
+            .col-md-12.col-xs-24
+              +bg-image('profile-edit/social/1.jpg').social-content__img.social-content__img_big
+            .col-md-12.col-xs-24
+              .row
+                .col-sm-12
+                  +bg-image('profile-edit/social/2.jpg').social-content__img
+                .col-sm-12
+                  +bg-image('profile-edit/social/3.jpg').social-content__img
+                .col-sm-12
+                  +bg-image('profile-edit/social/4.jpg').social-content__img
+                .col-sm-12
+                  +view-in('facebook').social-content__img Facebook
       +tab-pane#youtube
         +plate
           +e.H2.header Youtube
+          .row
+            .col-md-12.col-xs-24
+              +bg-image('profile-edit/social/1.jpg').social-content__img.social-content__img_big
+            .col-md-12.col-xs-24
+              .row
+                .col-sm-12
+                  +bg-image('profile-edit/social/2.jpg').social-content__img
+                .col-sm-12
+                  +bg-image('profile-edit/social/3.jpg').social-content__img
+                .col-sm-12
+                  +bg-image('profile-edit/social/4.jpg').social-content__img
+                .col-sm-12
+                  +view-in('youtube').social-content__img Youtube
       +tab-pane#pinterest
         +plate
           +e.H2.header Pinterest
+          .row
+            .col-md-12.col-xs-24
+              +bg-image('profile-edit/social/1.jpg').social-content__img.social-content__img_big
+            .col-md-12.col-xs-24
+              .row
+                .col-sm-12
+                  +bg-image('profile-edit/social/2.jpg').social-content__img
+                .col-sm-12
+                  +bg-image('profile-edit/social/3.jpg').social-content__img
+                .col-sm-12
+                  +bg-image('profile-edit/social/4.jpg').social-content__img
+                .col-sm-12
+                  +view-in('pinterest').social-content__img Pinterest

@@ -1,0 +1,7 @@
+include ../icon/icons
+
+mixin view-in(icon)
+  +b.A(href='#').view-in&attributes(attributes)
+    +icon(icon).__icon.
+    +e.SPAN.text View in <br>
+      block

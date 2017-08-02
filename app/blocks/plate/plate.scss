@@ -24,6 +24,12 @@
     padding: 0 !important;
   }
 
+  &_mobile-flex {
+    @media (max-width: $screen-xs-max) {
+      display: flex;
+    }
+  }
+
   &_tablet-column {
     @media (max-width: 1024px) {
       flex-direction: column;

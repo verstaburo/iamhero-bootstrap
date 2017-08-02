@@ -30,6 +30,18 @@
   @media (min-width: $screen-xl-min) {
     width: $container-xl;
   }
+
+  &-mobile-padded {
+    @media (max-width: $screen-sm-max) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
 }
 
 
