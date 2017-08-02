@@ -1,0 +1,16 @@
+mixin tabs
+  ul(role='tablist')&attributes(attributes)
+    block
+
+mixin tab(href)
+  li(role='presentation')&attributes(attributes)
+    a(data-toggle='tab', role='tab', href='#'+href, aria-controls=href)
+      block
+
+mixin tab-content
+  .tab-content
+    block
+
+mixin tab-pane
+  .tab-pane.fade(role='tabpanel')&attributes(attributes)
+    block

@@ -3,6 +3,8 @@ include ../../blocks/logo/logo
 include ../../blocks/input/input
 include ../../blocks/textarea/textarea
 include ../../blocks/label/label
+include ../../blocks/icon/icons
+include ../../blocks/tabs/tabs
 include ../rangesliders/rangesliders
 include ../input-group/input-group
 include ../timeline/timeline
@@ -230,3 +232,36 @@ mixin video-plate
     +e.header-container
       +e.H2.header._white Video Represent
       +button().btn-default.btn-add Upload new video
+
+mixin social-plate
+  +plate._no-padding._relative
+    +tabs.social-header
+      +tab('instagram').social-header__item.active
+        +icon('instagram', true).social-header__icon.social-header__icon_insta
+      +tab('facebook').social-header__item
+        +icon('facebook', true).social-header__icon
+      +tab('youtube').social-header__item
+        +icon('youtube', true).social-header__icon
+      +tab('pinterest').social-header__item
+        +icon('pinterest', true).social-header__icon
+    +tab-content
+      +tab-pane.active.in#instagram
+        +plate
+          +e.H2.header Instagram
+          .row
+            +col-sm-24
+            +col-sm-24
+              .row
+                .col-sm-12
+                .col-sm-12
+                .col-sm-12
+                .col-sm-12
+      +tab-pane#facebook
+        +plate
+          +e.H2.header Facebook
+      +tab-pane#youtube
+        +plate
+          +e.H2.header Youtube
+      +tab-pane#pinterest
+        +plate
+          +e.H2.header Pinterest
