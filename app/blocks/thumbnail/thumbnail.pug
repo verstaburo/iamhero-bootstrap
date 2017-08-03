@@ -1,4 +1,5 @@
 include ../../blocks/icon-close/icon-close
+include ../../blocks/bg-image/bg-image
 
 mixin thumbnail
   .thumbnail&attributes(attributes)
@@ -15,12 +16,15 @@ mixin thumbnail-tags
   .thumbnail-tag-container&attributes(attributes)
     block
 
-mixin thumbnail-case-controls
+mixin thumbnail-case-controls()
   .thumbnail-controls&attributes(attributes)
     .thumbnail-controls-item
       img(src='assets/images/icon/edit.png')
     .thumbnail-controls-item
       +icon-close.icon-close_white
+
+mixin thumbnail-case-img(src)
+  +bg-image(src).thumbnail-case-img&attributes(attributes)
 
 mixin thumbnail-interests(src, title)
   +thumbnail.thumbnail-interests&attributes(attributes)

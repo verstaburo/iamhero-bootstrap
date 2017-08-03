@@ -27,6 +27,10 @@
     }
   }
 
+  &-case-img {
+    height: 315px;
+  }
+
   &-case {
     background-color: #fff;
     margin-bottom: 0;
@@ -38,15 +42,13 @@
       transition: color .25 ease-in-out;
     }
 
-    img {
-      object-fit: cover;
-      transition: transform .4s ease-in-out;
-    }
-
     &:hover {
 
-      img {
-        transform: scale(1.05);
+      .thumbnail-case-img {
+
+        img {
+          transform: scale(1.05);
+        }
       }
 
       h3, p {

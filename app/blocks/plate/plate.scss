@@ -3,10 +3,6 @@
   background-color: #fff;
   margin-top: 35px;
 
-  &:first-child {
-    margin-top: 23px;
-  }
-
   @media (max-width: 1024px) {
     padding-left: 35px;
     padding-right: 35px;
@@ -38,6 +34,10 @@
 
   &_relative {
     position: relative;
+  }
+
+  &_first {
+    margin-top: 23px;
   }
 
   &_fixed-height {

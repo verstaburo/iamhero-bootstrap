@@ -53,6 +53,7 @@
     "gulp-stylelint": "^3.9.0",
     "gulp-svg-symbols": "^2.0.2",
     "gulp-watch": "^4.3.11",
+    "isotope-layout": "^3.0.4",
     "jade-get-data": "^1.0.1",
     "object-fit-images": "^3.2.3",
     "postcss-discard-comments": "^2.0.4",

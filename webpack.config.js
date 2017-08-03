@@ -27,6 +27,12 @@ module.exports = (watch = false) => ({
       },
     ],
   },
+  resolve: {
+    alias: {
+      masonry: 'masonry-layout',
+      isotope: 'isotope-layout',
+    },
+  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {

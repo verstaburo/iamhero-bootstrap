@@ -15,7 +15,7 @@ include ../../blocks/service/service
 include ../../blocks/thumbnail/thumbnail
 
 mixin avatar-plate
-  +plate._no-padding._flex._tablet-column
+  +plate._no-padding._flex._tablet-column._first
     +plate-avatar('profile-edit/avatar-placeholder.jpg')
     +e.info-col
       +logo(true).__logo
@@ -26,7 +26,7 @@ mixin avatar-plate
         +textarea('5') A few words about yourself
 
 mixin avatar-plate-static
-  +plate._no-padding._flex._tablet-column
+  +plate._no-padding._flex._tablet-column._first
     +plate-avatar-static('profile-edit/avatar-big.jpg')
     +e.info-col
       +logo(true).__logo
