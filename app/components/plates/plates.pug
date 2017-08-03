@@ -6,6 +6,7 @@ include ../../blocks/label/label
 include ../../blocks/icon/icons
 include ../../blocks/tabs/tabs
 include ../../blocks/view-in/view-in
+include ../../blocks/play-video/play-video
 include ../rangesliders/rangesliders
 include ../input-group/input-group
 include ../timeline/timeline
@@ -184,7 +185,6 @@ mixin resume-plate(edit)
     if edit
       +button-add-new('point').__left.__top-30
 
-
 mixin services-plate
   +plate
     +e.H2.header Services
@@ -233,6 +233,13 @@ mixin video-plate
     +e.header-container
       +e.H2.header._white Video Represent
       +button().btn-default.btn-add Upload new video
+
+mixin video-plate-static
+  +plate._no-padding._relative._fixed-height
+    iframe(id="ytplayer", type="text/html", src="https://www.youtube.com/embed/dREKkAk628I?enablejsapi=1&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3", frameborder="0", allowfullscreen).plate__video
+    +e.video-placeholder._overlay
+      +e.H2.header._white Video represent
+      +play-video.__top-40
 
 mixin social-plate
   +plate._no-padding._relative._mobile-flex

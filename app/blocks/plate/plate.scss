@@ -42,5 +42,13 @@
 
   &_fixed-height {
     height: 650px;
+
+    @media (max-width: $screen-sm-max) {
+      height: 375px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      height: 175px;
+    }
   }
 }

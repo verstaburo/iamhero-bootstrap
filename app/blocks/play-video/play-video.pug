@@ -1,0 +1,9 @@
+mixin video-svg-border
+  +e.SVG(width="110" height="110" viewBox="0 0 110 110")&attributes(attributes)
+    circle(cx="55", cy="55", r="51", fill="none", stroke="#25ffc4" stroke-width="8" stroke-dasharray="160.14" stroke-dashoffset="320.28")
+
+mixin play-video()
+  +b.play-video&attributes(attributes)
+    +video-svg-border.left
+    +video-svg-border.right
+    +e.SPAN.text <b>click to play</b>
