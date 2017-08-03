@@ -92,7 +92,7 @@
                     <button class="btn btn-secondary sidebar-menu-button">Preview</button>
                 </div>
                 <div class="col-xl-16 col-xm-19 col-xs-24">
-                    <div class="plate plate_no-padding plate_flex plate_tablet-column">
+                    <div class="plate plate_no-padding plate_flex plate_tablet-column plate_first">
                         <div class="bg-image plate__avatar">
                             <img src="assets/images/profile-edit/avatar-placeholder.jpg" />
                             <button class="btn btn-success plate__avatar-button">Change profile picture</button>
@@ -498,16 +498,16 @@
                             <div class="plate__header-container">
                                 <h2 class="plate__header">Cases</h2>
                                 <div class="plate__head-filters">
-                                    <span class="label label-default label-thin label-medium">All</span>
-                                    <span class="label label-default label-thin label-medium">Graphics</span>
-                                    <span class="label label-default label-thin label-medium">Interior</span>
-                                    <span class="label label-default label-thin label-medium">Illustration</span>
+                                    <span class="label label-default label-thin label-medium" data-filter="*">All</span>
+                                    <span class="label label-default label-thin label-medium" data-filter=".design">Design</span>
+                                    <span class="label label-default label-thin label-medium" data-filter=".illustration">Illustration</span>
+                                    <span class="label label-default label-thin label-medium" data-filter=".retouching">Retouching</span>
                                 </div>
                             </div>
                             <button class="btn btn-default btn-add plate__top-50 plate__left">Add new case</button>
                         </div>
-                        <div class="row">
-                            <div class="col-md-8 col-sm-12">
+                        <div class="row isotope">
+                            <div class="col-md-8 col-sm-12 isotope-item design illustration">
                                 <div class="thumbnail thumbnail-case">
                                     <div class="thumbnail-controls">
                                         <div class="thumbnail-controls-item">
@@ -517,7 +517,9 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </div>
                                     </div>
-                                    <img src="assets/images/profile-edit/cases/1.jpg" />
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/1.jpg" />
+                                    </div>
                                     <div class="caption">
                                         <h3>Information Anomalies</h3>
                                         <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
@@ -528,6 +530,8 @@
                                         <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item retouching">
                                 <div class="thumbnail thumbnail-case">
                                     <div class="thumbnail-controls">
                                         <div class="thumbnail-controls-item">
@@ -537,7 +541,9 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </div>
                                     </div>
-                                    <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    </div>
                                     <div class="caption">
                                         <h3>Winter In Squares</h3>
                                         <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
@@ -549,7 +555,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8 col-sm-12">
+                            <div class="col-md-8 col-sm-12 isotope-item design illustration">
                                 <div class="thumbnail thumbnail-case">
                                     <div class="thumbnail-controls">
                                         <div class="thumbnail-controls-item">
@@ -559,49 +565,9 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </div>
                                     </div>
-                                    <img src="assets/images/profile-edit/cases/2.jpg" />
-                                    <div class="caption">
-                                        <h3>Winter In Squares</h3>
-                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
-                                            occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/3.jpg" />
                                     </div>
-                                    <div class="thumbnail-tag-container">
-                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
-                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
-                                    </div>
-                                </div>
-                                <div class="thumbnail thumbnail-case">
-                                    <div class="thumbnail-controls">
-                                        <div class="thumbnail-controls-item">
-                                            <img src="assets/images/icon/edit.png" />
-                                        </div>
-                                        <div class="thumbnail-controls-item">
-                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                                        </div>
-                                    </div>
-                                    <img src="assets/images/profile-edit/cases/4.jpg" />
-                                    <div class="caption">
-                                        <h3>Lorod Company Identity</h3>
-                                        <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
-                                    </div>
-                                    <div class="thumbnail-tag-container">
-                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
-                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
-                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-8 col-sm-12">
-                                <div class="thumbnail thumbnail-case">
-                                    <div class="thumbnail-controls">
-                                        <div class="thumbnail-controls-item">
-                                            <img src="assets/images/icon/edit.png" />
-                                        </div>
-                                        <div class="thumbnail-controls-item">
-                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                                        </div>
-                                    </div>
-                                    <img src="assets/images/profile-edit/cases/3.jpg" />
                                     <div class="caption">
                                         <h3>Ripple Support Network</h3>
                                         <p>Ripple wanted to create a lightning fast response system to address help for students, recently living on their own. Pearl created the strategy, product, brand, and system that makes getting support on the phone
@@ -613,6 +579,8 @@
                                         <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item retouching">
                                 <div class="thumbnail thumbnail-case">
                                     <div class="thumbnail-controls">
                                         <div class="thumbnail-controls-item">
@@ -622,7 +590,33 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </div>
                                     </div>
-                                    <img src="assets/images/profile-edit/cases/5.jpg" />
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Winter In Squares</h3>
+                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
+                                            occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item retouching">
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/5.jpg" />
+                                    </div>
                                     <div class="caption">
                                         <h3>Opera</h3>
                                         <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink</p>
@@ -630,6 +624,30 @@
                                     <div class="thumbnail-tag-container">
                                         <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
                                         <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item design illustration">
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/4.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Lorod Company Identity</h3>
+                                        <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
                                     </div>
                                 </div>
                             </div>

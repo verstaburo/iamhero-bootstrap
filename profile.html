@@ -92,7 +92,7 @@
                     </ul>
                 </div>
                 <div class="col-xl-16 col-xm-19 col-xs-24">
-                    <div class="plate plate_no-padding plate_flex plate_tablet-column">
+                    <div class="plate plate_no-padding plate_flex plate_tablet-column plate_first">
                         <div class="bg-image plate__avatar">
                             <img src="assets/images/profile-edit/avatar-big.jpg" />
                         </div>
@@ -597,23 +597,41 @@
                             </div>
                         </div>
                     </div>
-                    <div class="plate"></div>
+                    <div class="plate plate_no-padding plate_relative plate_fixed-height">
+                        <iframe class="plate__video" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/dREKkAk628I?enablejsapi=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        <div class="plate__video-placeholder plate__video-placeholder_overlay">
+                            <h2 class="plate__header plate__header_white">Video represent</h2>
+                            <div class="play-video plate__top-40">
+                                <svg class="play-video__left" width="110" height="110" viewBox="0 0 110 110">
+                                    <circle cx="55" cy="55" r="51" fill="none" stroke="#25ffc4" stroke-width="8" stroke-dasharray="160.14" stroke-dashoffset="320.28"></circle>
+                                </svg>
+                                <svg class="play-video__right" width="110" height="110" viewBox="0 0 110 110">
+                                    <circle cx="55" cy="55" r="51" fill="none" stroke="#25ffc4" stroke-width="8" stroke-dasharray="160.14" stroke-dashoffset="320.28"></circle>
+                                </svg>
+                                <span class="play-video__text">
+                                    <b>click to play</b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="cases">
                         <div class="plate">
                             <div class="plate__header-container">
                                 <h2 class="plate__header">Cases</h2>
                                 <div class="plate__head-filters">
-                                    <span class="label label-default label-thin label-medium">All</span>
-                                    <span class="label label-default label-thin label-medium">Graphics</span>
-                                    <span class="label label-default label-thin label-medium">Interior</span>
-                                    <span class="label label-default label-thin label-medium">Illustration</span>
+                                    <span class="label label-default label-thin label-medium" data-filter="*">All</span>
+                                    <span class="label label-default label-thin label-medium" data-filter=".design">Design</span>
+                                    <span class="label label-default label-thin label-medium" data-filter=".illustration">Illustration</span>
+                                    <span class="label label-default label-thin label-medium" data-filter=".retouching">Retouching</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-8 col-sm-12">
+                        <div class="row isotope">
+                            <div class="col-md-8 col-sm-12 isotope-item design illustration">
                                 <div class="thumbnail thumbnail-case">
-                                    <img src="assets/images/profile-edit/cases/1.jpg" />
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/1.jpg" />
+                                    </div>
                                     <div class="caption">
                                         <h3>Information Anomalies</h3>
                                         <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
@@ -624,8 +642,12 @@
                                         <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item retouching">
                                 <div class="thumbnail thumbnail-case">
-                                    <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    </div>
                                     <div class="caption">
                                         <h3>Winter In Squares</h3>
                                         <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
@@ -637,35 +659,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-8 col-sm-12">
+                            <div class="col-md-8 col-sm-12 isotope-item design illustration">
                                 <div class="thumbnail thumbnail-case">
-                                    <img src="assets/images/profile-edit/cases/2.jpg" />
-                                    <div class="caption">
-                                        <h3>Winter In Squares</h3>
-                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
-                                            occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/3.jpg" />
                                     </div>
-                                    <div class="thumbnail-tag-container">
-                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
-                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
-                                    </div>
-                                </div>
-                                <div class="thumbnail thumbnail-case">
-                                    <img src="assets/images/profile-edit/cases/4.jpg" />
-                                    <div class="caption">
-                                        <h3>Lorod Company Identity</h3>
-                                        <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
-                                    </div>
-                                    <div class="thumbnail-tag-container">
-                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
-                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
-                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-8 col-sm-12">
-                                <div class="thumbnail thumbnail-case">
-                                    <img src="assets/images/profile-edit/cases/3.jpg" />
                                     <div class="caption">
                                         <h3>Ripple Support Network</h3>
                                         <p>Ripple wanted to create a lightning fast response system to address help for students, recently living on their own. Pearl created the strategy, product, brand, and system that makes getting support on the phone
@@ -677,8 +675,28 @@
                                         <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item retouching">
                                 <div class="thumbnail thumbnail-case">
-                                    <img src="assets/images/profile-edit/cases/5.jpg" />
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Winter In Squares</h3>
+                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
+                                            occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item retouching">
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/5.jpg" />
+                                    </div>
                                     <div class="caption">
                                         <h3>Opera</h3>
                                         <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink</p>
@@ -686,6 +704,22 @@
                                     <div class="thumbnail-tag-container">
                                         <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
                                         <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item design illustration">
+                                <div class="thumbnail thumbnail-case">
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/4.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Lorod Company Identity</h3>
+                                        <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
                                     </div>
                                 </div>
                             </div>
