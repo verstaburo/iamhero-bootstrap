@@ -270,15 +270,15 @@
                         </div>
                         <div class="plate__lang-controls plate__top-30">
                             <div class="btn-group btn-select">
-                                <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select
-                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                </button>
+                                <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                                <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                <input class="btn-select-control" type="hidden" value="" />
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a href="#">value1</a>
+                                        <a class="btn-select-item" href="#">value1</a>
                                     </li>
                                     <li>
-                                        <a href="#">value2</a>
+                                        <a class="btn-select-item" href="#">value2</a>
                                     </li>
                                 </ul>
                             </div>
@@ -402,15 +402,15 @@
                             </div>
                         </div>
                         <div class="btn-group btn-select plate__top-40 plate__service-select">
-                            <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select
-                                <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                            </button>
+                            <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                            <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                            <input class="btn-select-control" type="hidden" value="" />
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">value1</a>
+                                    <a class="btn-select-item" href="#">value1</a>
                                 </li>
                                 <li>
-                                    <a href="#">value2</a>
+                                    <a class="btn-select-item" href="#">value2</a>
                                 </li>
                             </ul>
                         </div>
@@ -498,10 +498,29 @@
                             <div class="plate__header-container">
                                 <h2 class="plate__header">Cases</h2>
                                 <div class="plate__head-filters">
-                                    <span class="label label-default label-thin label-medium" data-filter="*">All</span>
-                                    <span class="label label-default label-thin label-medium" data-filter=".design">Design</span>
-                                    <span class="label label-default label-thin label-medium" data-filter=".illustration">Illustration</span>
-                                    <span class="label label-default label-thin label-medium" data-filter=".retouching">Retouching</span>
+                                    <span class="label label-default label-thin label-medium hidden-xs" data-filter="*">All</span>
+                                    <span class="label label-default label-thin label-medium hidden-xs" data-filter=".design">Design</span>
+                                    <span class="label label-default label-thin label-medium hidden-xs" data-filter=".illustration">Illustration</span>
+                                    <span class="label label-default label-thin label-medium hidden-xs" data-filter=".retouching">Retouching</span>
+                                    <div class="btn-group btn-select visible-xs">
+                                        <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+                                        <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                        <input class="btn-select-control" type="hidden" value="" />
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="btn-select-item" href="#" data-filter="*">All</a>
+                                            </li>
+                                            <li>
+                                                <a class="btn-select-item" href="#" data-filter=".design">Design</a>
+                                            </li>
+                                            <li>
+                                                <a class="btn-select-item" href="#" data-filter=".illustration">Illustration</a>
+                                            </li>
+                                            <li>
+                                                <a class="btn-select-item" href="#" data-filter=".retouching">Retouching</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                             <button class="btn btn-default btn-add plate__top-50 plate__left">Add new case</button>
@@ -698,7 +717,7 @@
                         <img src="assets/images/icon/iamhero_logo_grey.svg" />
                     </a>
                 </div>
-                <div class="col-xl-5 col-lg-5 col-xm-6 col-md-8 col-sm-12 col-xs-24">
+                <div class="footer__text-menu col-xl-5 col-lg-5 col-xm-6 col-md-8 col-sm-12 col-xs-24">
                     <ul class="footer-menu">
                         <li class="footer-menu__item footer-menu__item_heading">Information</li>
                         <li class="footer-menu__item">
@@ -715,7 +734,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xl-5 col-lg-5 col-xm-7 col-md-8 col-sm-12 col-xs-24">
+                <div class="footer__text-menu col-xl-5 col-lg-5 col-xm-7 col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
                     <ul class="footer-menu">
                         <li class="footer-menu__item footer-menu__item_heading">Employer</li>
                         <li class="footer-menu__item">
@@ -738,7 +757,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xl-4 col-lg-5 col-xm-7 col-md-8 col-sm-12 col-xs-24">
+                <div class="footer__text-menu col-xl-4 col-lg-5 col-xm-7 col-md-8 col-sm-12 col-xs-24">
                     <ul class="footer-menu">
                         <li class="footer-menu__item footer-menu__item_heading">I am hero</li>
                         <li class="footer-menu__item">
@@ -758,7 +777,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-xl-6 col-xl-offset-1 col-lg-4 col-lg-offset-0 col-xm-20 col-xm-offset-4 col-md-24 col-sm-12 col-xs-24">
+                <div class="footer__social-wrap col-xl-6 col-xl-offset-1 col-lg-4 col-lg-offset-0 col-xm-20 col-xm-offset-4 col-md-24 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
                     <ul class="footer-menu">
                         <li class="footer-menu__item footer-menu__item_heading">Social</li>
                     </ul>
