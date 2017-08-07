@@ -24,5 +24,4 @@ export default () => {
   $selector.on('input', function () {
     valueOutput($(this));
   });
-
 };

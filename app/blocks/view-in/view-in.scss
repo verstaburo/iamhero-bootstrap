@@ -8,9 +8,11 @@
   color: inherit;
   font-weight: 100;
   text-align: center;
+  transition: background-color .25s ease-in-out;
 
   &:hover {
     text-decoration: none;
+    background-color: lighten($body-bg, 5%);
   }
 
   &_insta {

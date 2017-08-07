@@ -23,6 +23,7 @@
   }
 
   &__icon {
+    flex-shrink: 0;
     width: 33px;
     height: 33px;
     display: block;
@@ -51,9 +52,5 @@
     font-family: $font-second;
     font-size: 15px;
     letter-spacing: -.04em;
-
-    @media (min-width: $screen-sm-min) {
-      padding-right: 15px;
-    }
   }
 }

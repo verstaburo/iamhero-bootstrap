@@ -2,12 +2,16 @@
   position: relative;
   display: block;
 
+  &_profile {
+    padding-top: 35px;
+  }
+
   &__top-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 720px;
+    height: 770px;
     background-color: #191d21;
     z-index: -1;
     pointer-events: none;
@@ -16,7 +20,7 @@
       content: '';
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: 770px;
       left: 0;
       top: 0;
       background-image: linear-gradient(84deg, rgba(24, 30, 41, 1) 0%, rgba(24, 30, 41, .5) 52%, rgba(39, 39, 39, 0) 100%);
@@ -24,15 +28,39 @@
   }
 
   &__decoration {
-    position: absolute;
-    top: 720px;
+    position: fixed;
+    top: 770px;
     left: 0;
     width: 100%;
-    height: calc(100% - 720px);
+    height: calc(100% - 770px);
     background-image: url('../images/profile-edit/decoration.jpg');
     opacity: .24;
     background-repeat: repeat;
     z-index: -1;
     pointer-events: none;
+  }
+
+  &__sidebar-wrap {
+    margin-left: 25px;
+
+    @media (min-width: $screen-lg-min) {
+      margin-left: 60px;
+    }
+
+    @media (min-width: $screen-xl-min) {
+      margin-left: 7.8%;
+    }
+  }
+
+  &__sidebar-menu {
+    margin-bottom: 20px;
+    transition: top .25s ease-in-out;
+    display: none;
+
+    @media (min-width: $screen-xm-min) {
+      display: block;
+      position: fixed;
+      top: 175px;
+    }
   }
 }

@@ -5,15 +5,16 @@ mixin thumbnail
   .thumbnail&attributes(attributes)
     block
 
-mixin thumbnail-img(src)
-  img(src='assets/images/'+src)&attributes(attributes)
-
 mixin thumbnail-content()
   .caption&attributes(attributes)
     block
 
 mixin thumbnail-tags
   .thumbnail-tag-container&attributes(attributes)
+    block
+
+mixin thumbnail-img(src)
+  +bg-image(src).thumbnail-img&attributes(attributes)
     block
 
 mixin thumbnail-case-controls()

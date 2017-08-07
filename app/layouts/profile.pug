@@ -9,16 +9,16 @@ html(lang='en')
   include head
   body
     +header()
-    +page.profile-edit
+    +page._profile
       block background
       +page-decoration
       .container
         .row
           .col-xl-23.col-xl-offset-1.col-xs-24
             block profile-header
-          .col-xl-4.col-xl-offset-1.col-xm-5.hidden-md.hidden-sm.hidden-xs
+          +e.sidebar-wrap
             block sidebar-menu
-          .col-xl-16.col-xm-19.col-xs-24
+          .col-xl-16.col-xm-19.col-xm-offset-5.col-xs-24
             block content
       +get-started
     +footer

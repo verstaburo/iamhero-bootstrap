@@ -2,6 +2,7 @@
   display: block;
   padding-top: 85px;
   padding-bottom: 90px;
+  background-color: $body-bg;
 
   @media (max-width: $screen-md-max) {
     padding-top: 60px;
