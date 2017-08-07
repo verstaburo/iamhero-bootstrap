@@ -1,5 +1,20 @@
 .btn-select {
 
+  > svg {
+    width: 18px;
+    height: 10px;
+    display: block;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 14px;
+    stroke-width: 2px;
+    stroke: $color-grey;
+    fill: transparent;
+    transition: stroke .25s ease-in-out;
+    pointer-events: none;
+  }
+
   &.open {
 
     .dropdown-toggle {
@@ -14,11 +29,15 @@
 
     .dropdown-toggle {
       color: $text-color;
-
-      > svg {
-        stroke: $color-lightgreen;
-      }
     }
+
+    > svg {
+      stroke: $color-lightgreen;
+    }
+  }
+
+  &-control {
+    display: none;
   }
 
   .dropdown-toggle {
@@ -26,19 +45,5 @@
     position: relative;
     color: $color-grey;
     text-align: left;
-
-    svg {
-      width: 18px;
-      height: 10px;
-      display: block;
-      position: absolute;
-      transform: translateY(-50%);
-      top: 50%;
-      right: 14px;
-      stroke-width: 2px;
-      stroke: $color-grey;
-      fill: transparent;
-      transition: stroke .25s ease-in-out;
-    }
   }
 }

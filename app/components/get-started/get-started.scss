@@ -13,6 +13,11 @@
     text-align: left;
   }
 
+  @media (max-width: $screen-xs-max) {
+    padding-top: 30px;
+    padding-bottom: 65px;
+  }
+
   &__heading {
     @media (max-width: $screen-xs-max) {
       font-size: 35px;
@@ -54,9 +59,21 @@
       content: '';
       width: 30vw;
       left: calc(-30vw - 20px);
-      top: 20px;
+      top: 18px;
       height: 14px;
       background-color: #1451ff;
+
+      @media (max-width: $screen-sm-max) {
+        left: calc(-30vw);
+        height: 12px;
+        top: 19px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        top: 16px;
+        height: 8px;
+        left: calc(-30vw + 7px);
+      }
     }
   }
 

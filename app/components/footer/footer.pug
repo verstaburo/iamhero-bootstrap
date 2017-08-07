@@ -8,14 +8,14 @@ mixin footer()
       .row
         +e.logo-wrap.col-xl-3.col-lg-5.col-xm-4.col-xs-24
           +logo._big._inline
-        .col-xl-5.col-lg-5.col-xm-6.col-md-8.col-sm-12.col-xs-24
+        +e.text-menu.col-xl-5.col-lg-5.col-xm-6.col-md-8.col-sm-12.col-xs-24
           +footer-menu
             +footer-menu-heading Information
             +footer-menu-item About amhero
             +footer-menu-item Help & Support
             +footer-menu-item Jobs
             +footer-menu-item Join The — iamhero
-        .col-xl-5.col-lg-5.col-xm-7.col-md-8.col-sm-12.col-xs-24
+        +e.text-menu.col-xl-5.col-lg-5.col-xm-7.col-md-8.col-md-offset-0.col-sm-10.col-sm-offset-2.col-xs-24
           +footer-menu
             +footer-menu-heading Employer
             +footer-menu-item Hire the Heros
@@ -24,7 +24,7 @@ mixin footer()
             +footer-menu-item Pricing
             +footer-menu-item Terms & Conditions
             +footer-menu-item Privacy Policy
-        .col-xl-4.col-lg-5.col-xm-7.col-md-8.col-sm-12.col-xs-24
+        +e.text-menu.col-xl-4.col-lg-5.col-xm-7.col-md-8.col-sm-12.col-xs-24
           +footer-menu
             +footer-menu-heading I am hero
             +footer-menu-item Functions
@@ -32,7 +32,7 @@ mixin footer()
             +footer-menu-item Pricing
             +footer-menu-item Terms & Conditions
             +footer-menu-item Privacy Policy
-        .col-xl-6.col-xl-offset-1.col-lg-4.col-lg-offset-0.col-xm-20.col-xm-offset-4.col-md-24.col-sm-12.col-xs-24
+        +e.social-wrap.col-xl-6.col-xl-offset-1.col-lg-4.col-lg-offset-0.col-xm-20.col-xm-offset-4.col-md-24.col-md-offset-0.col-sm-10.col-sm-offset-2.col-xs-24
           +footer-menu
             +footer-menu-heading Social
           +social.__social

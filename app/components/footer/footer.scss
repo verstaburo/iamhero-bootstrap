@@ -3,6 +3,52 @@
   padding-top: 85px;
   padding-bottom: 90px;
 
+  @media (max-width: $screen-md-max) {
+    padding-top: 60px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 45px;
+  }
+
+  &__logo-wrap {
+    @media (max-width: $screen-md-max) {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text-menu {
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__social-wrap {
+    @media (max-width: $screen-xm-max) {
+      margin-top: 35px;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      max-width: 200px;
+    }
+  }
+
   &__social {
     margin-top: 40px;
   }

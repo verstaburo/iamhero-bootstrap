@@ -4,6 +4,7 @@ import rangeSliderInit from '../blocks/rangeslider/rangeslider';
 import switchInit from '../blocks/switch/switch';
 import videoPlay from '../components/plates/video-play';
 import isotopeInit from './common/isotope';
+import buttonDropdown from '../blocks/button-dropdown/button-dropdown';
 
 // eslint-disable-next-line
 $(() => {
@@ -13,4 +14,5 @@ $(() => {
   switchInit();
   videoPlay();
   isotopeInit();
+  buttonDropdown();
 });

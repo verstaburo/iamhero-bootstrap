@@ -68,7 +68,7 @@ h2, .h2 {
   font-size: $font-size-h2;
 
   @media (max-width: $screen-xs-max) {
-    font-size: 46px;
+    font-size: 46px !important;
   }
 }
 h3, .h3 { font-size: $font-size-h3; }

@@ -3,17 +3,24 @@
   padding: 0;
 
   &__item {
-    font-family: $font-second;
-    font-weight: 400;
     color: #394a5e;
     font-size: 22px;
     list-style: none;
     letter-spacing: -.04em;
 
+    @media (max-width: $screen-xs-max) {
+      font-size: 17px;
+    }
+
     &_heading {
       color: #a8b3bf;
       font-weight: 700;
       font-size: 25px;
+      letter-spacing: -.04em;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 19px;
+      }
     }
 
     a {
@@ -22,7 +29,11 @@
     }
 
     &:not(:first-child) {
-      margin-top: 35px;
+      margin-top: 20px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 14px;
+      }
     }
   }
 }

@@ -3,8 +3,20 @@ include ../icon/icons
 mixin button-dropdown(title, data)
   +b.btn-group.btn-select&attributes(attributes)
     button(type='button', data-toggle="dropdown", aria-haspopup="true",   aria-expanded="false").form-control.dropdown-toggle= title
-      +icon('caret')
+    +icon('caret')
+    input(type='hidden', value='').btn-select-control
     ul.dropdown-menu
       each item in data
-        li
-          a(href='#')= item
+        +button-select-item(item)
+
+mixin button-select-item(item)
+  li
+    a(href='#').btn-select-item&attributes(attributes)= item
+
+mixin button-dropdown-custom(title)
+  +b.btn-group.btn-select&attributes(attributes)
+    button(type='button', data-toggle="dropdown", aria-haspopup="true",   aria-expanded="false").form-control.dropdown-toggle= title
+    +icon('caret')
+    input(type='hidden', value='').btn-select-control
+    ul.dropdown-menu
+      block
