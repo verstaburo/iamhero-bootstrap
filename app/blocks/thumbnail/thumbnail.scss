@@ -48,12 +48,16 @@
       transition: color .25 ease-in-out;
     }
 
+    .thumbnail-case-img > img {
+      transition: transform 1.8s ease;
+    }
+
     &:hover {
 
       .thumbnail-case-img {
 
         img {
-          transform: scale(1.05);
+          transform: scale(1.07);
         }
       }
 
