@@ -8,10 +8,7 @@ export default () => {
   });
 
   sr.reveal('.sr-skill', 100);
-
   sr.reveal('.sr-lang', 100);
-
   sr.reveal('.sr-service', 100);
-
   sr.reveal('.sr-case', 100);
 };
