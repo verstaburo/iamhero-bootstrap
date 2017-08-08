@@ -1,4 +1,4 @@
-import 'sticky-kit/dist/sticky-kit';
+// import 'sticky-kit/dist/sticky-kit';
 import svg4everybody from 'svg4everybody';
 import objectFitImages from 'object-fit-images';
 import rangeSliderInit from '../blocks/rangeslider/rangeslider';

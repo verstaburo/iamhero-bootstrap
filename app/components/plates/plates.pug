@@ -15,7 +15,7 @@ include ../../blocks/service/service
 include ../../blocks/thumbnail/thumbnail
 
 mixin avatar-plate
-  +plate._no-padding._flex._tablet-column._first
+  +plate._no-padding._flex._tablet-column._first#summary
     +plate-avatar('profile-edit/avatar-placeholder.jpg')
     +e.info-col
       +logo(true).__logo
@@ -26,7 +26,7 @@ mixin avatar-plate
         +textarea('5') A few words about yourself
 
 mixin avatar-plate-static
-  +plate._no-padding._flex._tablet-column._first
+  +plate._no-padding._flex._tablet-column._first#summary
     +plate-avatar-static('profile-edit/avatar-big.jpg')
     +e.info-col
       +logo(true).__logo
@@ -37,7 +37,7 @@ mixin avatar-plate-static
         p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
 
 mixin skills-plate
-  +plate
+  +plate#skills
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
     +rangeslider-label('Graphic design', 'lightgreen').__top-60
@@ -47,7 +47,7 @@ mixin skills-plate
     +input-group-add('Write another', 'skill').__top-60
 
 mixin skills-plate-static
-  +plate
+  +plate#skills
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
     +rangeslider-label-static('Graphic design', 'lightgreen').__top-60
@@ -56,7 +56,7 @@ mixin skills-plate-static
     +rangeslider-label-static('Video Editing', 'red').__top-60
 
 mixin talents-plate
-  +plate
+  +plate#talents
     +e.H2.header Talents
     p The list of my professional skills which describes my strongest sides
     +e.tag-container.__top-50
@@ -67,7 +67,7 @@ mixin talents-plate
     +input-group-add('Write another', 'talent').__top-50
 
 mixin talents-plate-static
-  +plate
+  +plate#talents
     +e.H2.header Talents
     p The list of my professional skills which describes my strongest sides
     +e.tag-container.__top-50
@@ -117,7 +117,7 @@ mixin language-sliders-static(title, color)
         +rangeslider-nolabel-static(color)
 
 mixin languages-plate
-  +plate
+  +plate#languages
     +e.H2.header Languages
     +language-heading
     +language-sliders('Russian', 'red')
@@ -129,7 +129,7 @@ mixin languages-plate
       +button-add-new('language')
 
 mixin languages-plate-static
-  +plate
+  +plate#languages
     +e.H2.header Languages
     +language-heading
     +language-sliders-static('Russian', 'red')
@@ -137,7 +137,7 @@ mixin languages-plate-static
     +language-sliders-static('German', 'blue')
 
 mixin resume-plate(edit)
-  +plate
+  +plate#resume
     +e.H2.header Resume
     p Here is my professional goals in informative and simple timeline
     +timeline.__top-60
@@ -186,7 +186,7 @@ mixin resume-plate(edit)
       +button-add-new('point').__left.__top-30
 
 mixin services-plate
-  +plate
+  +plate#services
     +e.H2.header Services
     +e.top-40.row
       +e.service.col-md-8
@@ -199,7 +199,7 @@ mixin services-plate
     +input-group-add('write about service', 'service').__top-20
 
 mixin services-plate-static
-  +plate
+  +plate#services
     +e.H2.header Services
     +e.top-40.row
       +e.service.col-md-8
@@ -210,7 +210,7 @@ mixin services-plate-static
         +service-static('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
 
 mixin interests-plate(edit)
-  +plate
+  +plate#interest
     +e.H2.header Interests
     .row.plate__top-60
       .col-md-8.col-xs-24
@@ -242,7 +242,7 @@ mixin video-plate-static
       +play-video.__top-40
 
 mixin social-plate
-  +plate._no-padding._relative._mobile-flex
+  +plate._no-padding._relative._mobile-flex#activities
     +tabs.social-header
       +tab('instagram').social-header__item.active
         +icon('instagram', true).social-header__icon.social-header__icon_insta
