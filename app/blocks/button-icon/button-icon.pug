@@ -1,0 +1,12 @@
+include ../icon/icons
+
+mixin button-icon(type)
+  +b(type||'button').button-icon.btn&attributes(attributes)
+    block
+
+mixin button-icon-text
+  +e.SPAN.text&attributes(attributes)
+    block
+
+mixin button-icon-item(icon)
+  +icon(icon).__item&attributes(attributes)

@@ -1,0 +1,19 @@
+.button-icon {
+
+  &__item {
+    width: 20px;
+    height: 15px;
+
+    &_white {
+      fill: #fff;
+    }
+
+    &_after {
+      margin-left: 10px;
+    }
+
+    &_before {
+      margin-right: 10px;
+    }
+  }
+}

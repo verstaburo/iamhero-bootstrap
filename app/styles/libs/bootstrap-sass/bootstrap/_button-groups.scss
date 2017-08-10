@@ -6,7 +6,8 @@
 .btn-group,
 .btn-group-vertical {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
   vertical-align: middle; // match .btn alignment given font-size hack above
   > .btn {
     position: relative;

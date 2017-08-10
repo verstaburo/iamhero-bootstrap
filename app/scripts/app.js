@@ -8,6 +8,7 @@ import isotopeInit from './common/isotope';
 import buttonDropdown from '../blocks/button-dropdown/button-dropdown';
 import stickyNavbar from '../blocks/sidebar-menu/sidebar-menu';
 import scrollRevealInit from './common/scrollreveal';
+import upload from '../blocks/upload/upload';
 
 // eslint-disable-next-line
 $(() => {
@@ -20,4 +21,5 @@ $(() => {
   buttonDropdown();
   stickyNavbar();
   scrollRevealInit();
+  upload();
 });

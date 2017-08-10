@@ -1,6 +1,11 @@
 .header {
   font-size: 18px;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 
   &__logo {
     margin-right: auto;

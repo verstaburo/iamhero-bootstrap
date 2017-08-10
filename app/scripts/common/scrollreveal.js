@@ -2,13 +2,13 @@ import ScrollReveal from 'scrollreveal';
 /*eslint-disable*/
 export default () => {
   window.sr = ScrollReveal({
-    origin: 'bottom',
     distance: '55px',
-    opacity: 0.5,
+    viewFactor: 0.5,
   });
 
-  sr.reveal('.sr-skill', 100);
-  sr.reveal('.sr-lang', 100);
-  sr.reveal('.sr-service', 100);
-  sr.reveal('.sr-case', 100);
+  if(!$('.sr-animate').length) {
+    return
+  }
+
+  sr.reveal('.sr-animate');
 };

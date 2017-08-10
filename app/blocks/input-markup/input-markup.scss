@@ -1,0 +1,53 @@
+.input-markup {
+  display: flex;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &_vertical {
+      flex-direction: column;
+
+      & > :not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+
+    &_grow {
+      flex-grow: 1;
+    }
+
+    &_divide {
+
+      &_half {
+        flex-basis: 50%;
+      }
+    }
+
+    &_push {
+
+      &_right {
+        margin-left: auto;
+      }
+    }
+
+    &_content {
+
+      &_bottom {
+        align-items: flex-end;
+      }
+    }
+
+    &_margin {
+
+      &_left {
+        margin-left: 20px;
+      }
+
+      &_both {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

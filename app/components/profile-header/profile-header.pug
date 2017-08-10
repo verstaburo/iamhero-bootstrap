@@ -1,12 +1,17 @@
 include ../../blocks/button/button
 include ../../blocks/media/media
 include ../../blocks/switch/switch
+include ../../blocks/button-icon/button-icon
+include ../../blocks/upload/upload
 
 mixin profile-header()
   +b.profile-header&attributes(attributes)
     +media('profile-edit/avatar-small.jpg', 'Name Surname').media-white.hidden-xs.hidden-sm Vocation
     +switch('Full version', 'Print version')._transparent
-    +button().btn-success Change background picture/video
+    +upload
+      +button-icon().btn-success
+        +button-icon-text Change background picture/video
+        +button-icon-item('camera')._white._after
 
 mixin profile-header-static()
   +b.profile-header&attributes(attributes)

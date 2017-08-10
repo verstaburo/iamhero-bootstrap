@@ -7,12 +7,26 @@ include ../../blocks/icon/icons
 include ../../blocks/tabs/tabs
 include ../../blocks/view-in/view-in
 include ../../blocks/play-video/play-video
+include ../../blocks/bg-image/bg-image
+include ../../blocks/button/button
+include ../../blocks/upload/upload
 include ../rangesliders/rangesliders
 include ../input-group/input-group
 include ../timeline/timeline
 include ../../blocks/button-dropdown/button-dropdown
 include ../../blocks/service/service
 include ../../blocks/thumbnail/thumbnail
+include ../../blocks/input-markup/input-markup
+
+mixin plate-avatar(src)
+  +bg-image(src).__avatar&attributes(attributes)
+    +upload.plate__avatar-button
+      +button-icon.btn-success
+        +button-icon-item('camera')._white._before
+        +button-icon-text Change profile picture
+
+mixin plate-avatar-static(src)
+  +bg-image(src).__avatar&attributes(attributes)
 
 mixin avatar-plate
   +plate._no-padding._flex._tablet-column._first#summary
@@ -23,7 +37,7 @@ mixin avatar-plate
         +input('Name Surname').form-control-border-bottom.form-control-border-big.__header
         +input('Vocation/position').form-control-border-bottom.font-larger
         +input('Lacation').form-control-border-bottom.font-large
-        +textarea('5') A few words about yourself
+        +textarea('5').form-control-area-static A few words about yourself
 
 mixin avatar-plate-static
   +plate._no-padding._flex._tablet-column._first#summary
@@ -40,20 +54,24 @@ mixin skills-plate
   +plate#skills
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
-    +rangeslider-label('Graphic design', 'lightgreen').__top-60.sr-skill
-    +rangeslider-label('Web Design', 'orange').__top-60.sr-skill
-    +rangeslider-label('Illustration', 'blue').__top-60.sr-skill
-    +rangeslider-label('Video Editing', 'red').__top-60.sr-skill
-    +input-group-add('Write another', 'skill').__top-60
+    +rangeslider-label('Graphic design', 'lightgreen').__top-60.sr-animate
+    +rangeslider-label('Web Design', 'orange').__top-60.sr-animate
+    +rangeslider-label('Illustration', 'blue').__top-60.sr-animate
+    +rangeslider-label('Video Editing', 'red').__top-60.sr-animate
+    +input-markup.__top-60
+      +input-markup-item._grow
+        +input('Write another')
+      +input-markup-item._margin_left
+        +button-add-new('skill')
 
 mixin skills-plate-static
   +plate#skills
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
-    +rangeslider-label-static('Graphic design', 'lightgreen').__top-60.sr-skill
-    +rangeslider-label-static('Web Design', 'orange').__top-60.sr-skill
-    +rangeslider-label-static('Illustration', 'blue').__top-60.sr-skill
-    +rangeslider-label-static('Video Editing', 'red').__top-60.sr-skill
+    +rangeslider-label-static('Graphic design', 'lightgreen').__top-60.sr-animate
+    +rangeslider-label-static('Web Design', 'orange').__top-60.sr-animate
+    +rangeslider-label-static('Illustration', 'blue').__top-60.sr-animate
+    +rangeslider-label-static('Video Editing', 'red').__top-60.sr-animate
 
 mixin talents-plate
   +plate#talents
@@ -64,7 +82,11 @@ mixin talents-plate
       +label-close() Dancing
       +label-close() Song writing
       +label-close() Drawing amazing landscapes
-    +input-group-add('Write another', 'talent').__top-50
+    +input-markup.__top-50
+      +input-markup-item._grow
+        +input('Write another')
+      +input-markup-item._margin_left
+        +button-add-new('talent')
 
 mixin talents-plate-static
   +plate#talents
@@ -97,7 +119,7 @@ mixin language-heading
 mixin language-sliders(title, color)
   -
     var langSkills = ['Reading', 'Speaking', 'Writing', 'Understanding']
-  +e.lang-row.sr-lang
+  +e.lang-row.sr-animate
     +e.lang-col
       h4.font-weight-medium= title
     each item in langSkills
@@ -108,7 +130,7 @@ mixin language-sliders(title, color)
 mixin language-sliders-static(title, color)
   -
     var langSkills = ['Reading', 'Speaking', 'Writing', 'Understanding']
-  +e.lang-row.sr-lang
+  +e.lang-row.sr-animate
     +e.lang-col
       h4.font-weight-medium= title
     each item in langSkills
@@ -122,11 +144,15 @@ mixin languages-plate
     +language-heading
     +language-sliders('Russian', 'red')
     +language-sliders('English', 'orange')
-    +e.lang-controls.__top-30
-      +button-dropdown('Select', ['value1', 'value2'])
-      span or
-      +input('write another')
-      +button-add-new('language')
+    +input-markup.__top-30
+      +input-markup-item._grow._divide_half
+        +button-dropdown('Select', ['value1', 'value2'])
+      +input-markup-item._margin_both
+        span or
+      +input-markup-item._grow._divide_half
+        +input('write another')
+      +input-markup-item._margin_left
+        +button-add-new('language')
 
 mixin languages-plate-static
   +plate#languages
@@ -183,7 +209,8 @@ mixin resume-plate(edit)
           h4 Univercity Of Creative art Rocherster Great Britain
           p Graduated as a grapchic design bachelor
     if edit
-      +button-add-new('point').__left.__top-30
+      +input-markup.__top-30
+        +button-add-new('point').__item_push_right
 
 mixin services-plate
   +plate#services
@@ -195,19 +222,23 @@ mixin services-plate
         +service('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
       +e.service.col-md-8
         +service('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
-    +button-dropdown('Select', ['value1', 'value2']).__top-40.__service-select
-    +input-group-add('write about service', 'service').__top-20
+    +input-markup.__top-40
+      +input-markup-item._vertical._grow
+        +button-dropdown('Select', ['value1', 'value2'])
+        +input('write about service')
+      +input-markup-item._margin_left._content_bottom
+        +button-add-new('service')
 
 mixin services-plate-static
   +plate#services
     +e.H2.header Services
     +e.top-40.row
       +e.service.col-md-8
-        +service-static('palette', 'Graphic design').sr-service Website, logo and company identity graphical design. Print, pre-print, digital design
+        +service-static('palette', 'Graphic design').sr-animate Website, logo and company identity graphical design. Print, pre-print, digital design
       +e.service.col-md-8
-        +service-static('tape', 'Video editing').sr-service Adobe premier and After Effect mastery. Video filiming, color correction and Post production
+        +service-static('tape', 'Video editing').sr-animate Adobe premier and After Effect mastery. Video filiming, color correction and Post production
       +e.service.col-md-8
-        +service-static('brush', 'Illustration').sr-service Drawing illustration and graphical images in various styles. Look for more in cases section
+        +service-static('brush', 'Illustration').sr-animate Drawing illustration and graphical images in various styles. Look for more in cases section
 
 mixin interests-plate(edit)
   +plate#interest

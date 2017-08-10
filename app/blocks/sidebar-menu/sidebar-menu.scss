@@ -8,8 +8,11 @@
     }
   }
 
-  &-item {
+  li {
     list-style-type: none;
+  }
+
+  &-item {
     position: relative;
     color: #fff;
     font-size: 18px;
@@ -73,6 +76,6 @@
   }
 
   &-button {
-    margin-left: 45px;
+    margin-top: 40px;
   }
 }
