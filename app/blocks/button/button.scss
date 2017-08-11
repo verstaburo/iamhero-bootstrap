@@ -1,24 +1,5 @@
 .btn {
 
-  &-add {
-    position: relative;
-    padding-left: 45px;
-
-    &::before, &::after {
-      content: '';
-      position: absolute;
-      left: 14px;
-      top: 17px;
-      height: 2px;
-      width: 22px;
-      background-color: #fff;
-    }
-
-    &::after {
-      transform: rotate(90deg);
-    }
-  }
-
   &-secondary {
     border-width: 3px;
     border-color: $color-lightgreen;
@@ -44,8 +25,17 @@
     }
   }
 
-  &-upload {
+  &-grey {
     background-color: #e0e9ef;
     color: $color-grey;
+
+    &:hover, &:focus {
+      background-color: darken(#e0e9ef, 5%);
+      color: $color-grey;
+    }
+  }
+
+  &-block {
+    display: block;
   }
 }

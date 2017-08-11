@@ -2,6 +2,8 @@ include ../plates/plates
 include ../../blocks/thumbnail/thumbnail
 include ../../blocks/label/label
 include ../../blocks/button/button
+include ../../blocks/input-markup/input-markup
+include ../../blocks/button-icon/button-icon
 include ../../blocks/button-dropdown/button-dropdown
 
 mixin cases(edit)
@@ -10,7 +12,7 @@ mixin cases(edit)
       +e.header-container
         +e.H2.header Cases
         +e.head-filters
-          +label-default-medium(data-filter='*').hidden-xs All
+          +label-default-medium(data-filter='*').hidden-xs.active All
           +label-default-medium(data-filter='.design').hidden-xs Design
           +label-default-medium(data-filter='.illustration').hidden-xs Illustration
           +label-default-medium(data-filter='.retouching').hidden-xs Retouching
@@ -20,7 +22,11 @@ mixin cases(edit)
             +button-select-item('Illustration')(data-filter='.illustration')
             +button-select-item('Retouching')(data-filter='.retouching')
       if edit
-        +button-add-new('case').__top-50.__left
+        +input-markup.__top-30
+          +input-markup-item._push_right
+            +button-icon.btn-default
+              +button-icon-item('plus')._stroke_white._big
+              +button-icon-text Add new case
     .row.isotope
       .col-md-8.col-sm-12.isotope-item.design.illustration
         +thumbnail.thumbnail-case.sr-animate

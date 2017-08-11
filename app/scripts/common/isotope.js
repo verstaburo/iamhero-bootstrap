@@ -20,6 +20,18 @@ export default () => {
 
   filtersElem.addEventListener('click', function (event) {
 
+    if (!filtersElem) {
+      return;
+    }
+
+    const filters = filtersElem.children;
+
+    for (let i = 0; i < filters.length; i++) {
+      filters[i].classList.remove('active');
+    }
+
+    event.target.classList.add('active');
+
     var filterValue = event.target.getAttribute('data-filter');
 
     if (!filterValue) {

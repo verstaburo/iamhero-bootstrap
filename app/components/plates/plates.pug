@@ -10,6 +10,7 @@ include ../../blocks/play-video/play-video
 include ../../blocks/bg-image/bg-image
 include ../../blocks/button/button
 include ../../blocks/upload/upload
+include ../../blocks/icon-close/icon-close
 include ../rangesliders/rangesliders
 include ../input-group/input-group
 include ../timeline/timeline
@@ -29,7 +30,7 @@ mixin plate-avatar-static(src)
   +bg-image(src).__avatar&attributes(attributes)
 
 mixin avatar-plate
-  +plate._no-padding._flex._tablet-column._first#summary
+  +plate._no-padding._flex._tablet-column#summary
     +plate-avatar('profile-edit/avatar-placeholder.jpg')
     +e.info-col
       +logo(true).__logo
@@ -40,7 +41,7 @@ mixin avatar-plate
         +textarea('5').form-control-area-static A few words about yourself
 
 mixin avatar-plate-static
-  +plate._no-padding._flex._tablet-column._first#summary
+  +plate._no-padding._flex._tablet-column#summary
     +plate-avatar-static('profile-edit/avatar-big.jpg')
     +e.info-col
       +logo(true).__logo
@@ -62,7 +63,9 @@ mixin skills-plate
       +input-markup-item._grow
         +input('Write another')
       +input-markup-item._margin_left
-        +button-add-new('skill')
+        +button-icon.btn-default
+          +button-icon-item('plus')._stroke_white._big
+          +button-icon-text Add new skill
 
 mixin skills-plate-static
   +plate#skills
@@ -86,7 +89,9 @@ mixin talents-plate
       +input-markup-item._grow
         +input('Write another')
       +input-markup-item._margin_left
-        +button-add-new('talent')
+        +button-icon.btn-default
+          +button-icon-item('plus')._stroke_white._big
+          +button-icon-text Add new talent
 
 mixin talents-plate-static
   +plate#talents
@@ -152,7 +157,9 @@ mixin languages-plate
       +input-markup-item._grow._divide_half
         +input('write another')
       +input-markup-item._margin_left
-        +button-add-new('language')
+        +button-icon.btn-default
+          +button-icon-item('plus')._stroke_white._big
+          +button-icon-text Add new language
 
 mixin languages-plate-static
   +plate#languages
@@ -210,24 +217,28 @@ mixin resume-plate(edit)
           p Graduated as a grapchic design bachelor
     if edit
       +input-markup.__top-30
-        +button-add-new('point').__item_push_right
+        +button-icon.__item_push_right.btn-default
+          +button-icon-item('plus')._stroke_white._big
+          +button-icon-text Add new point
 
 mixin services-plate
   +plate#services
     +e.H2.header Services
     +e.top-40.row
       +e.service.col-md-8
-        +service('palette', 'Graphic design') Website, logo and company identity graphical design. Print, pre-print, digital design
+        +service('palette', 'Graphic design').sr-animate Website, logo and company identity graphical design. Print, pre-print, digital design
       +e.service.col-md-8
-        +service('tape', 'Video editing') Adobe premier and After Effect mastery. Video filiming, color correction and Post production
+        +service('tape', 'Video editing').sr-animate Adobe premier and After Effect mastery. Video filiming, color correction and Post production
       +e.service.col-md-8
-        +service('brush', 'Illustration') Drawing illustration and graphical images in various styles. Look for more in cases section
+        +service('brush', 'Illustration').sr-animate Drawing illustration and graphical images in various styles. Look for more in cases section
     +input-markup.__top-40
       +input-markup-item._vertical._grow
         +button-dropdown('Select', ['value1', 'value2'])
         +input('write about service')
       +input-markup-item._margin_left._content_bottom
-        +button-add-new('service')
+        +button-icon.__item_push_right.btn-default
+          +button-icon-item('plus')._stroke_white._big
+          +button-icon-text Add new service
 
 mixin services-plate-static
   +plate#services
@@ -255,15 +266,29 @@ mixin interests-plate(edit)
       .col-md-8.col-xs-24
         +thumbnail-interests('profile-edit/food-review.jpg', 'Street food review')
     if edit
-      +input-group-upload('Write another', 'image').__top-20
-      +input-group-add('write about interest', 'interest').__top-20
+      +input-markup.__top-20
+        +input-markup-item._grow
+          +input('Write another')
+        +input-markup-item._margin_left._w_24p
+          +button-icon.btn-grey.btn-block
+            +button-icon-item('picture')._grey
+            +button-icon-text Upload image
+      +input-markup.__top-20
+        +input-markup-item._grow
+          +input('write about interest')
+        +input-markup-item._margin_left._w_24p
+          +button-icon.__item_push_right.btn-default.btn-block
+            +button-icon-item('plus')._stroke_white._big
+            +button-icon-text Add new interest
 
 mixin video-plate
   +plate._relative._fixed-height
     +bg-image('profile-edit/video-placeholder.jpg').__video-placeholder
     +e.header-container
       +e.H2.header._white Video Represent
-      +button().btn-default.btn-add Upload new video
+      +button-icon.__item_push_right.btn-default
+        +button-icon-item('plus')._stroke_white._big
+        +button-icon-text Upload new video
 
 mixin video-plate-static
   +plate._no-padding._relative._fixed-height
@@ -271,6 +296,64 @@ mixin video-plate-static
     +e.video-placeholder._overlay
       +e.H2.header._white Video represent
       +play-video.__top-40
+
+mixin social-plate-static
+  +plate._no-padding._relative._mobile-flex#activities
+    +tabs.social-header
+      +tab('instagram').social-header__item.active
+        +icon('instagram', true).social-header__icon.social-header__icon_insta
+      +tab('facebook').social-header__item
+        +icon('facebook', true).social-header__icon
+      +tab('youtube').social-header__item
+        +icon('youtube', true).social-header__icon
+      +tab('pinterest').social-header__item
+        +icon('pinterest', true).social-header__icon
+      li.social-header__item.social-header__item_push_right.social-header__item_flexible
+        +button-icon.__item_push_right.btn-success.social-header__button
+          +button-icon-item('plus')._stroke_white._big
+          +button-icon-text Add new social tab
+
+    +tab-content.social-content
+      +tab-pane.active.in#instagram
+        +plate
+          h2 Instagram
+            +icon-close.social-content__close
+          p Link your profile with Instagram and upload photos!
+          +input-markup
+            +input-markup-item._push_right
+              +button-icon.btn-default
+                +button-icon-item('plus')._stroke_white._big
+                +button-icon-text Connect to Instagram
+      +tab-pane#facebook
+        +plate
+          h2 Facebook
+            +icon-close.social-content__close
+          p Link your profile with Instagram and upload photos!
+          +input-markup
+            +input-markup-item._push_right
+              +button-icon.btn-default
+                +button-icon-item('plus')._stroke_white._big
+                +button-icon-text Connect to Facebook
+      +tab-pane#youtube
+        +plate
+          h2 Youtube
+            +icon-close.social-content__close
+          p Link your profile with Instagram and upload photos!
+          +input-markup
+            +input-markup-item._push_right
+              +button-icon.btn-default
+                +button-icon-item('plus')._stroke_white._big
+                +button-icon-text Connect to Youtube
+      +tab-pane#pinterest
+        +plate
+          h2 Pinterest
+            +icon-close.social-content__close
+          p Link your profile with Instagram and upload photos!
+          +input-markup
+            +input-markup-item._push_right
+              +button-icon.btn-default
+                +button-icon-item('plus')._stroke_white._big
+                +button-icon-text Connect to Pinterest
 
 mixin social-plate
   +plate._no-padding._relative._mobile-flex#activities

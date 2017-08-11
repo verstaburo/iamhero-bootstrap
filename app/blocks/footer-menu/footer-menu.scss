@@ -3,7 +3,6 @@
   padding: 0;
 
   &__item {
-    color: #394a5e;
     font-size: 22px;
     list-style: none;
     letter-spacing: -.04em;
@@ -24,8 +23,13 @@
     }
 
     a {
-      color: inherit;
+      color: #394a5e;
       text-decoration: none;
+      transition: color .25s ease-in-out;
+
+      &:hover {
+        color: lighten(#394a5e, 20%);
+      }
     }
 
     &:not(:first-child) {

@@ -5,6 +5,13 @@
     display: flex;
     align-items: center;
 
+    &_w {
+
+      &_24p {
+        flex-basis: 24%;
+      }
+    }
+
     &_vertical {
       flex-direction: column;
 

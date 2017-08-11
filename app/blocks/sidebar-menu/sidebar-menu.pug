@@ -1,13 +1,18 @@
+include ../icon/icons
+
 mixin sidebar-menu(data)
   +b.UL.sidebar-menu&attributes(attributes)
     each item in data
       if item.active
-        li(role='navigation').sidebar-menu-item.active
+        +e.LI.item.active
+          +icon('eye').__icon
           a(href=item.path)= item.text
       else if item.disabled
-        li(role='navigation').sidebar-menu-item.disabled
+        +e.LI.item.disabled
+          +icon('eye-disabled').__icon
           a(href=item.path)= item.text
       else
-        li(role='navigation').sidebar-menu-item
+        +e.LI.item
+          +icon('eye').__icon
           a(href=item.path)= item.text
     block
