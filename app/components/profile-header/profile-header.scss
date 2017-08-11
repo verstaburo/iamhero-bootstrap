@@ -4,10 +4,27 @@
   justify-content: space-between;
   min-height: 28px;
 
+  @media (max-width: $screen-xs-max) {
+    flex-direction: column;
+
+    .switch {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      font-size: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
   .switch {
-    position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
+    @media (min-width: $screen-md-min) {
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+    }
   }
 
   .media {

@@ -14,10 +14,11 @@ mixin timeline-item-header-edit(label, date)
   +e.header&attributes(attributes)
     +label.label-tag= label
     +e.P.date.__left-8= date
-    +e.header-icon.__left-8
-      img(src='assets/images/icon/edit.png')
-    +e.header-icon.__left-8
-      +icon-close
+    +e.edits
+      +e.header-icon.__left-8
+        img(src='assets/images/icon/edit.png')
+      +e.header-icon.__left-8
+        +icon-close
 
 mixin timeline-item-header(label, date)
   +e.header&attributes(attributes)

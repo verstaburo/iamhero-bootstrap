@@ -149,14 +149,14 @@ mixin languages-plate
     +language-heading
     +language-sliders('Russian', 'red')
     +language-sliders('English', 'orange')
-    +input-markup.__top-30
-      +input-markup-item._grow._divide_half
+    +input-markup._tablet_wrap.__top-30
+      +input-markup-item._grow._divide_40p
         +button-dropdown('Select', ['value1', 'value2'])
       +input-markup-item._margin_both
         span or
-      +input-markup-item._grow._divide_half
+      +input-markup-item._grow._divide_40p
         +input('write another')
-      +input-markup-item._margin_left
+      +input-markup-item._margin_left._tablet_full._tablet_right
         +button-icon.btn-default
           +button-icon-item('plus')._stroke_white._big
           +button-icon-text Add new language
@@ -267,26 +267,25 @@ mixin interests-plate(edit)
         +thumbnail-interests('profile-edit/food-review.jpg', 'Street food review')
     if edit
       +input-markup.__top-20
-        +input-markup-item._grow
+        +input-markup-item._grow._vertical
           +input('Write another')
-        +input-markup-item._margin_left._w_24p
+          +input('write about interest')
+        +input-markup-item._vertical._margin_left
           +button-icon.btn-grey.btn-block
             +button-icon-item('picture')._grey
             +button-icon-text Upload image
-      +input-markup.__top-20
-        +input-markup-item._grow
-          +input('write about interest')
-        +input-markup-item._margin_left._w_24p
           +button-icon.__item_push_right.btn-default.btn-block
             +button-icon-item('plus')._stroke_white._big
             +button-icon-text Add new interest
 
+
+
 mixin video-plate
   +plate._relative._fixed-height
     +bg-image('profile-edit/video-placeholder.jpg').__video-placeholder
-    +e.header-container
-      +e.H2.header._white Video Represent
-      +button-icon(data-toggle="modal", data-target="#videoModal").__item_push_right.btn-default
+    +e.header-container._tablet_column
+      +e.H2.header._white._mobile-smaller Video Represent
+      +button-icon(data-toggle="modal", data-target="#videoModal").btn-default
         +button-icon-item('plus')._stroke_white._big
         +button-icon-text Upload video
 
@@ -294,7 +293,7 @@ mixin video-plate-static
   +plate._no-padding._relative._fixed-height
     iframe(id="ytplayer", type="text/html", src="https://www.youtube.com/embed/dREKkAk628I?enablejsapi=1&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3", frameborder="0", allowfullscreen).plate__video
     +e.video-placeholder._overlay
-      +e.H2.header._white Video represent
+      +e.H2.header._white._mobile-smaller Video represent
       +play-video.__top-40
 
 mixin social-plate-static
@@ -308,7 +307,7 @@ mixin social-plate-static
         +icon('youtube', true).social-header__icon
       +tab('pinterest').social-header__item
         +icon('pinterest', true).social-header__icon
-      li.social-header__item.social-header__item_push_right.social-header__item_flexible
+      li.social-header__item.social-header__item_push_right.social-header__item_flexible.social-header__item_mobile-first
         +button-icon.__item_push_right.btn-success.social-header__button
           +button-icon-item('plus')._stroke_white._big
           +button-icon-text Add new social tab
