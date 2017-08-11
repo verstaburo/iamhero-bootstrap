@@ -40,7 +40,7 @@
         <div class="page__decoration"></div>
         <div class="container">
             <div class="row">
-                <div class="col-xl-23 col-xl-offset-1 col-xs-24">
+                <div class="col-xl-20 col-xl-offset-1 col-xs-24">
                     <div class="profile-header">
                         <div class="media media-white hidden-xs hidden-sm">
                             <div class="media-left">
@@ -62,37 +62,46 @@
                 </div>
                 <div class="page__sidebar-wrap col-xl-offset-1 col-xl-4 col-xm-5 hidden-md hidden-sm hidden-xs">
                     <ul class="sidebar-menu sidebar-menu_static page__sidebar-menu">
-                        <li class="sidebar-menu-item active" role="navigation">
+                        <li class="sidebar-menu__item active">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#summary">Summary</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#skills">Skills</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#talents">Talents</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#languages">Languages</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#resume">Resume</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#services">Services</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#interest">Interest</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#activities">My social activities</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#cases">Cases</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xl-16 col-xm-19 col-xs-24">
-                    <div class="plate plate_no-padding plate_flex plate_tablet-column plate_first" id="summary">
+                    <div class="plate plate_no-padding plate_flex plate_tablet-column" id="summary">
                         <div class="bg-image plate__avatar">
                             <img src="assets/images/profile-edit/avatar-big.jpg" />
                         </div>
@@ -610,7 +619,7 @@
                     <div class="plate plate_no-padding plate_relative plate_fixed-height">
                         <iframe class="plate__video" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/dREKkAk628I?enablejsapi=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
                         <div class="plate__video-placeholder plate__video-placeholder_overlay">
-                            <h2 class="plate__header plate__header_white">Video represent</h2>
+                            <h2 class="plate__header plate__header_white plate__header_mobile-smaller">Video represent</h2>
                             <div class="play-video plate__top-40">
                                 <svg class="play-video__left" width="110" height="110" viewBox="0 0 110 110">
                                     <circle cx="55" cy="55" r="51" fill="none" stroke="#25ffc4" stroke-width="8" stroke-dasharray="160.14" stroke-dashoffset="320.28"></circle>
@@ -629,7 +638,7 @@
                             <div class="plate__header-container">
                                 <h2 class="plate__header">Cases</h2>
                                 <div class="plate__head-filters">
-                                    <span class="label label-default label-thin label-medium hidden-xs" data-filter="*">All</span>
+                                    <span class="label label-default label-thin label-medium hidden-xs active" data-filter="*">All</span>
                                     <span class="label label-default label-thin label-medium hidden-xs" data-filter=".design">Design</span>
                                     <span class="label label-default label-thin label-medium hidden-xs" data-filter=".illustration">Illustration</span>
                                     <span class="label label-default label-thin label-medium hidden-xs" data-filter=".retouching">Retouching</span>
@@ -776,13 +785,22 @@
                         </label>
                     </div>
                     <div class="get-started__input col-lg-5 col-xm-6 col-md-8 col-sm-12">
-                        <input class="form-control form-control-secondary" type="text" placeholder="Full name" />
+                        <label>
+                            <input class="form-control form-control-secondary" type="name" placeholder="Full name" />
+                            <span class="errortext"></span>
+                        </label>
                     </div>
                     <div class="get-started__input col-lg-5 col-xm-6 col-xm-offset-0 col-md-offset-4 col-md-8 col-sm-12">
-                        <input class="form-control form-control-secondary" type="text" placeholder="E-mail adress" />
+                        <label class="validated">
+                            <input class="form-control form-control-secondary" type="email" placeholder="E-mail adress" />
+                            <span class="errortext"></span>
+                        </label>
                     </div>
                     <div class="get-started__input col-lg-5 col-xm-6 col-md-8 col-sm-12">
-                        <input class="form-control form-control-secondary" type="text" placeholder="Create password" />
+                        <label class="error">
+                            <input class="form-control form-control-secondary" type="password" placeholder="Create password" />
+                            <span class="errortext">Password must be at least 8 symbols long</span>
+                        </label>
                     </div>
                     <div class="get-started__input col-lg-4 col-xm-6 col-xm-offset-0 col-md-offset-4 col-md-16 col-xs-24">
                         <button class="btn btn-secondary">Continue</button>

@@ -38,7 +38,7 @@
         <div class="page__decoration"></div>
         <div class="container">
             <div class="row">
-                <div class="col-xl-23 col-xl-offset-1 col-xs-24">
+                <div class="col-xl-20 col-xl-offset-1 col-xs-24">
                     <div class="profile-header">
                         <div class="media media-white hidden-xs hidden-sm">
                             <div class="media-left">
@@ -67,40 +67,49 @@
                 </div>
                 <div class="page__sidebar-wrap col-xl-offset-1 col-xl-4 col-xm-5 hidden-md hidden-sm hidden-xs">
                     <ul class="sidebar-menu page__sidebar-menu">
-                        <li class="sidebar-menu-item active" role="navigation">
+                        <li class="sidebar-menu__item active">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#summary">Summary</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#skills">Skills</a>
                         </li>
-                        <li class="sidebar-menu-item disabled" role="navigation">
+                        <li class="sidebar-menu__item disabled">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-disabled"></use></svg>
                             <a href="#talents">Talents</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#languages">Languages</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#resume">Resume</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#services">Services</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#interest">Interest</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#activities">My social activities</a>
                         </li>
-                        <li class="sidebar-menu-item" role="navigation">
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
                             <a href="#cases">Cases</a>
                         </li>
                         <li>
-                            <button class="btn btn-secondary sidebar-menu-button">Preview</button>
+                            <button class="btn sidebar-menu__button btn-secondary">Preview</button>
                         </li>
                     </ul>
                 </div>
                 <div class="col-xl-16 col-xm-19 col-xs-24">
-                    <div class="plate plate_no-padding plate_flex plate_tablet-column plate_first" id="summary">
+                    <div class="plate plate_no-padding plate_flex plate_tablet-column" id="summary">
                         <div class="bg-image plate__avatar">
                             <img src="assets/images/profile-edit/avatar-placeholder.jpg" />
                             <div class="upload plate__avatar-button">
@@ -111,7 +120,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="plate__info-col">
+                        <div class="plate__info-col plate__info-col_form">
                             <div class="logo plate__logo">
                                 <img src="assets/images/icon/iamhero_logo_grey.svg" />
                             </div>
@@ -171,7 +180,10 @@
                                 <input class="form-control" type="text" placeholder="Write another" />
                             </div>
                             <div class="input-markup__item input-markup__item_margin_left">
-                                <button class="btn btn-default btn-add">Add new skill</button>
+                                <button class="button-icon btn btn-default">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new skill</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -197,7 +209,10 @@
                                 <input class="form-control" type="text" placeholder="Write another" />
                             </div>
                             <div class="input-markup__item input-markup__item_margin_left">
-                                <button class="btn btn-default btn-add">Add new talent</button>
+                                <button class="button-icon btn btn-default">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new talent</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -286,8 +301,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="input-markup plate__top-30">
-                            <div class="input-markup__item input-markup__item_grow input-markup__item_divide_half">
+                        <div class="input-markup input-markup_tablet_wrap plate__top-30">
+                            <div class="input-markup__item input-markup__item_grow input-markup__item_divide_40p">
                                 <div class="btn-group btn-select">
                                     <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
                                     <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
@@ -305,11 +320,14 @@
                             <div class="input-markup__item input-markup__item_margin_both">
                                 <span>or</span>
                             </div>
-                            <div class="input-markup__item input-markup__item_grow input-markup__item_divide_half">
+                            <div class="input-markup__item input-markup__item_grow input-markup__item_divide_40p">
                                 <input class="form-control" type="text" placeholder="write another" />
                             </div>
-                            <div class="input-markup__item input-markup__item_margin_left">
-                                <button class="btn btn-default btn-add">Add new language</button>
+                            <div class="input-markup__item input-markup__item_margin_left input-markup__item_tablet_full input-markup__item_tablet_right">
+                                <button class="button-icon btn btn-default">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new language</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -328,11 +346,13 @@
                                     <div class="timeline-item__header timeline-item__header_red">
                                         <span class="label label-tag">work</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/06/2016 — 17/06/2018</p>
-                                        <div class="timeline-item__header-icon timeline-item__left-8">
-                                            <img src="assets/images/icon/edit.png" />
-                                        </div>
-                                        <div class="timeline-item__header-icon timeline-item__left-8">
-                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        <div class="timeline-item__edits">
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <img src="assets/images/icon/edit.png" />
+                                            </div>
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <h4>DEZI Design</h4>
@@ -342,11 +362,13 @@
                                     <div class="timeline-item__header timeline-item__header_lightgreen">
                                         <span class="label label-tag">education</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2016 — 17/06/2016</p>
-                                        <div class="timeline-item__header-icon timeline-item__left-8">
-                                            <img src="assets/images/icon/edit.png" />
-                                        </div>
-                                        <div class="timeline-item__header-icon timeline-item__left-8">
-                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        <div class="timeline-item__edits">
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <img src="assets/images/icon/edit.png" />
+                                            </div>
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <h4>Univercity Of Creative art Rocherster Great Britain</h4>
@@ -356,11 +378,13 @@
                                     <div class="timeline-item__header timeline-item__header_violet">
                                         <span class="label label-tag">AWARDS AND CERTIFICATES</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2016</p>
-                                        <div class="timeline-item__header-icon timeline-item__left-8">
-                                            <img src="assets/images/icon/edit.png" />
-                                        </div>
-                                        <div class="timeline-item__header-icon timeline-item__left-8">
-                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        <div class="timeline-item__edits">
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <img src="assets/images/icon/edit.png" />
+                                            </div>
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </div>
                                         </div>
                                     </div>
                                     <h4>Proficiency in economics by ALAP</h4>
@@ -392,14 +416,17 @@
                             </div>
                         </div>
                         <div class="input-markup plate__top-30">
-                            <button class="btn btn-default btn-add input-markup__item input-markup__item_push_right">Add new point</button>
+                            <button class="button-icon btn input-markup__item input-markup__item_push_right btn-default">
+                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                <span class="button-icon__text">Add new point</span>
+                            </button>
                         </div>
                     </div>
                     <div class="plate" id="services">
                         <h2 class="plate__header">Services</h2>
                         <div class="plate__top-40 row">
                             <div class="plate__service col-md-8">
-                                <div class="service service_edit">
+                                <div class="service service_edit sr-animate">
                                     <div class="service__heading">
                                         <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_palette"></use></svg>
                                         <h4 class="font-weight-medium">Graphic design</h4>
@@ -409,7 +436,7 @@
                                 </div>
                             </div>
                             <div class="plate__service col-md-8">
-                                <div class="service service_edit">
+                                <div class="service service_edit sr-animate">
                                     <div class="service__heading">
                                         <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_tape"></use></svg>
                                         <h4 class="font-weight-medium">Video editing</h4>
@@ -419,7 +446,7 @@
                                 </div>
                             </div>
                             <div class="plate__service col-md-8">
-                                <div class="service service_edit">
+                                <div class="service service_edit sr-animate">
                                     <div class="service__heading">
                                         <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_brush"></use></svg>
                                         <h4 class="font-weight-medium">Illustration</h4>
@@ -447,7 +474,10 @@
                                 <input class="form-control" type="text" placeholder="write about service" />
                             </div>
                             <div class="input-markup__item input-markup__item_margin_left input-markup__item_content_bottom">
-                                <button class="btn btn-default btn-add">Add new service</button>
+                                <button class="button-icon btn input-markup__item input-markup__item_push_right btn-default">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new service</span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -510,27 +540,129 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="input-group plate__top-20">
-                            <input class="form-control" type="text" placeholder="Write another" />
-                            <span class="input-group-btn">
-                                <div class="btn btn-upload">Upload image</div>
-                            </span>
-                        </div>
-                        <div class="input-group plate__top-20">
-                            <input class="form-control" type="text" placeholder="write about interest" />
-                            <span class="input-group-btn">
-                                <button class="btn btn-default btn-add">Add new interest</button>
-                            </span>
+                        <div class="input-markup plate__top-20">
+                            <div class="input-markup__item input-markup__item_grow input-markup__item_vertical">
+                                <input class="form-control" type="text" placeholder="Write another" />
+                                <input class="form-control" type="text" placeholder="write about interest" />
+                            </div>
+                            <div class="input-markup__item input-markup__item_vertical input-markup__item_margin_left">
+                                <button class="button-icon btn btn-grey btn-block">
+                                    <svg class="button-icon__item button-icon__item_grey"><use xlink:href="assets/images/icon.svg#icon_picture"></use></svg>
+                                    <span class="button-icon__text">Upload image</span>
+                                </button>
+                                <button class="button-icon btn input-markup__item input-markup__item_push_right btn-default btn-block">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new interest</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="plate"></div>
+                    <div class="plate plate_no-padding plate_relative plate_mobile-flex" id="activities">
+                        <ul class="social-header" role="tablist">
+                            <li class="social-header__item active" role="presentation">
+                                <a data-toggle="tab" role="tab" href="#instagram" aria-controls="instagram">
+                                    <svg class="social-header__icon social-header__icon_insta"><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-header__item" role="presentation">
+                                <a data-toggle="tab" role="tab" href="#facebook" aria-controls="facebook">
+                                    <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_facebook"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-header__item" role="presentation">
+                                <a data-toggle="tab" role="tab" href="#youtube" aria-controls="youtube">
+                                    <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_youtube"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-header__item" role="presentation">
+                                <a data-toggle="tab" role="tab" href="#pinterest" aria-controls="pinterest">
+                                    <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_pinterest"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-header__item social-header__item_push_right social-header__item_flexible social-header__item_mobile-first">
+                                <button class="button-icon btn plate__item plate__item_push_right btn-success social-header__button">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new social tab</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content social-content">
+                            <div class="tab-pane fade active in" role="tabpanel" id="instagram">
+                                <div class="plate">
+                                    <h2>Instagram
+                                        <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </h2>
+                                    <p>Link your profile with Instagram and upload photos!</p>
+                                    <div class="input-markup">
+                                        <div class="input-markup__item input-markup__item_push_right">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Instagram</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="facebook">
+                                <div class="plate">
+                                    <h2>Facebook
+                                        <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </h2>
+                                    <p>Link your profile with Instagram and upload photos!</p>
+                                    <div class="input-markup">
+                                        <div class="input-markup__item input-markup__item_push_right">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Facebook</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="youtube">
+                                <div class="plate">
+                                    <h2>Youtube
+                                        <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </h2>
+                                    <p>Link your profile with Instagram and upload photos!</p>
+                                    <div class="input-markup">
+                                        <div class="input-markup__item input-markup__item_push_right">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Youtube</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="pinterest">
+                                <div class="plate">
+                                    <h2>Pinterest
+                                        <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </h2>
+                                    <p>Link your profile with Instagram and upload photos!</p>
+                                    <div class="input-markup">
+                                        <div class="input-markup__item input-markup__item_push_right">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Pinterest</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="plate plate_relative plate_fixed-height">
                         <div class="bg-image plate__video-placeholder">
                             <img src="assets/images/profile-edit/video-placeholder.jpg" />
                         </div>
-                        <div class="plate__header-container">
-                            <h2 class="plate__header plate__header_white">Video Represent</h2>
-                            <button class="btn btn-default btn-add">Upload new video</button>
+                        <div class="plate__header-container plate__header-container_tablet_column">
+                            <h2 class="plate__header plate__header_white plate__header_mobile-smaller">Video Represent</h2>
+                            <button class="button-icon btn btn-default" data-toggle="modal" data-target="#videoModal">
+                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                <span class="button-icon__text">Upload video</span>
+                            </button>
                         </div>
                     </div>
                     <div class="cases" id="cases">
@@ -538,7 +670,7 @@
                             <div class="plate__header-container">
                                 <h2 class="plate__header">Cases</h2>
                                 <div class="plate__head-filters">
-                                    <span class="label label-default label-thin label-medium hidden-xs" data-filter="*">All</span>
+                                    <span class="label label-default label-thin label-medium hidden-xs active" data-filter="*">All</span>
                                     <span class="label label-default label-thin label-medium hidden-xs" data-filter=".design">Design</span>
                                     <span class="label label-default label-thin label-medium hidden-xs" data-filter=".illustration">Illustration</span>
                                     <span class="label label-default label-thin label-medium hidden-xs" data-filter=".retouching">Retouching</span>
@@ -563,7 +695,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-default btn-add plate__top-50 plate__left">Add new case</button>
+                            <div class="input-markup plate__top-30">
+                                <div class="input-markup__item input-markup__item_push_right">
+                                    <button class="button-icon btn btn-default">
+                                        <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                        <span class="button-icon__text">Add new case</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="row isotope">
                             <div class="col-md-8 col-sm-12 isotope-item design illustration">
@@ -734,13 +873,22 @@
                         </label>
                     </div>
                     <div class="get-started__input col-lg-5 col-xm-6 col-md-8 col-sm-12">
-                        <input class="form-control form-control-secondary" type="text" placeholder="Full name" />
+                        <label>
+                            <input class="form-control form-control-secondary" type="name" placeholder="Full name" />
+                            <span class="errortext"></span>
+                        </label>
                     </div>
                     <div class="get-started__input col-lg-5 col-xm-6 col-xm-offset-0 col-md-offset-4 col-md-8 col-sm-12">
-                        <input class="form-control form-control-secondary" type="text" placeholder="E-mail adress" />
+                        <label class="validated">
+                            <input class="form-control form-control-secondary" type="email" placeholder="E-mail adress" />
+                            <span class="errortext"></span>
+                        </label>
                     </div>
                     <div class="get-started__input col-lg-5 col-xm-6 col-md-8 col-sm-12">
-                        <input class="form-control form-control-secondary" type="text" placeholder="Create password" />
+                        <label class="error">
+                            <input class="form-control form-control-secondary" type="password" placeholder="Create password" />
+                            <span class="errortext">Password must be at least 8 symbols long</span>
+                        </label>
                     </div>
                     <div class="get-started__input col-lg-4 col-xm-6 col-xm-offset-0 col-md-offset-4 col-md-16 col-xs-24">
                         <button class="btn btn-secondary">Continue</button>
@@ -839,6 +987,37 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="videoModal">
+        <div class="container">
+            <div class="col-xl-16 col-xm-offset-5 col-xm-19 col-xs-24">
+                <div class="plate plate_modal plate_relative">
+                    <h2 class="plate__header">Upload video represent
+                        <svg class="icon-close modal-close" data-dismiss="modal"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                    </h2>
+                    <div class="input-markup plate__top-50">
+                        <div class="input-markup__item input-markup__item_grow">
+                            <input class="form-control" type="text" placeholder="Write URL" />
+                        </div>
+                        <div class="input-markup__item input-markup__item_margin_both">
+                            <span>or</span>
+                        </div>
+                        <div class="input-markup__item">
+                            <button class="button-icon btn btn-grey">
+                                <svg class="button-icon__item button-icon__item_grey button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_cloud"></use></svg>
+                                <span class="button-icon__text">Upload</span>
+                            </button>
+                        </div>
+                        <div class="input-markup__item input-markup__item_margin_left">
+                            <button class="button-icon btn btn-default">
+                                <svg class="button-icon__item button-icon__item_grey button-icon__item_big button-icon__item_stroke_white"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                <span class="button-icon__text">Add video</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/scripts/libs/bootstrap.min.js"></script>
     <script src="assets/scripts/libs/rangeslider.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
