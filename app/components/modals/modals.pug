@@ -1,0 +1,22 @@
+include ../../blocks/modal/modal
+include ../../blocks/input/input
+include ../../blocks/input-markup/input-markup
+include ../../blocks/button-icon/button-icon
+
+mixin video-modal
+  +modal#videoModal
+    +e.H2.header Upload video represent
+      +modal-close
+    +input-markup.__top-50
+      +input-markup-item._grow
+        +input('Write URL')
+      +input-markup-item._margin_both
+        span or
+      +input-markup-item
+        +button-icon.btn-grey
+          +button-icon-item('cloud')._grey._big
+          +button-icon-text Upload
+      +input-markup-item._margin_left
+        +button-icon.btn-default
+          +button-icon-item('plus')._grey._big._stroke_white
+          +button-icon-text Add video

@@ -1,0 +1,14 @@
+include ../icon/icons
+include ../button-icon/button-icon
+
+mixin upload-area()
+  +b.upload-area&attributes(attributes)
+    +icon('cloud-thin').__icon
+    +e.SPAN.text
+      block
+
+mixin upload-area-image
+  +b.upload-area-image&attributes(attributes)
+    +button-icon.btn-grey
+      +button-icon-item('picture')._grey
+      +button-icon-text Upload preview image

@@ -32,7 +32,7 @@ mixin plate-avatar-static(src)
 mixin avatar-plate
   +plate._no-padding._flex._tablet-column#summary
     +plate-avatar('profile-edit/avatar-placeholder.jpg')
-    +e.info-col
+    +e.info-col._form
       +logo(true).__logo
       +e.FORM.hero-form
         +input('Name Surname').form-control-border-bottom.form-control-border-big.__header
@@ -286,9 +286,9 @@ mixin video-plate
     +bg-image('profile-edit/video-placeholder.jpg').__video-placeholder
     +e.header-container
       +e.H2.header._white Video Represent
-      +button-icon.__item_push_right.btn-default
+      +button-icon(data-toggle="modal", data-target="#videoModal").__item_push_right.btn-default
         +button-icon-item('plus')._stroke_white._big
-        +button-icon-text Upload new video
+        +button-icon-text Upload video
 
 mixin video-plate-static
   +plate._no-padding._relative._fixed-height

@@ -1,7 +1,15 @@
 extends ../../layouts/default
+include ../../blocks/upload-area/upload-area
+include ../../blocks/button-icon/button-icon
+include ../../blocks/radio/radio
 
 block head
   - var pageTitle = 'Versta Project Template'
 
 block content
   +b.index
+    +upload-area Drug and drop files (max 100 mb)
+    +upload-area-image
+    +radio(true, 'test') education
+    +radio(false, 'test') education
+    +radio(false, 'test') education

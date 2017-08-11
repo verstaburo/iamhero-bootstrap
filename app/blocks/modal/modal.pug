@@ -1,0 +1,12 @@
+include ../icon-close/icon-close
+include ../plate/plate
+
+mixin modal
+  .modal.fade&attributes(attributes)
+    .container
+      .col-xl-16.col-xm-offset-5.col-xm-19.col-xs-24
+        +plate._modal._relative
+          block
+
+mixin modal-close
+  +icon-close(data-dismiss="modal").modal-close
