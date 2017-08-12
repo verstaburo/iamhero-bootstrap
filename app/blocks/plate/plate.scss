@@ -3,17 +3,16 @@
   background-color: #fff;
   margin-top: 35px;
 
+  &_modal {
+    padding: 40px 60px 65px;
+  }
+
   @media (max-width: 1024px) {
     padding: 60px 35px;
   }
 
   @media (max-width: 640px) {
     padding: 50px 20px;
-  }
-
-  &_modal {
-    padding: 40px 60px 65px;
-    margin-top: 25vh;
   }
 
   &_flex {

@@ -5,6 +5,10 @@
   background-image: linear-gradient(to left, rgba(27, 32, 45, 1) 0%, rgba(70, 93, 117, 1) 100%, rgba(70, 93, 117, 1) 100%);
   color: #fff;
 
+  form {
+    label { width: 100%; }
+  }
+
   @media (max-width: $screen-md-max) {
     text-align: center;
   }

@@ -1,22 +1,106 @@
-include ../../blocks/modal/modal
 include ../../blocks/input/input
+include ../../blocks/textarea/textarea
 include ../../blocks/input-markup/input-markup
 include ../../blocks/button-icon/button-icon
+include ../../blocks/radio/radio
+include ../../blocks/label/label
+include ../../blocks/icon-close/icon-close
+include ../../blocks/plate/plate
+include ../../blocks/upload-area/upload-area
+include ../../blocks/button-dropdown/button-dropdown
+
+
+mixin modal
+  .modal.fade&attributes(attributes)
+    .container
+      .row
+        .col-xl-16.col-xm-offset-5.col-xm-19.col-xs-24.modal-area
+          +plate._modal._relative
+            block
+
+mixin modal-close
+  +icon-close(data-dismiss="modal").modal-close
+
 
 mixin video-modal
   +modal#videoModal
     +e.H2.header Upload video represent
-      +modal-close
-    +input-markup.__top-50
-      +input-markup-item._grow
-        +input('Write URL')
-      +input-markup-item._margin_both
-        span or
-      +input-markup-item
-        +button-icon.btn-grey
-          +button-icon-item('cloud')._grey._big
-          +button-icon-text Upload
-      +input-markup-item._margin_left
-        +button-icon.btn-default
-          +button-icon-item('plus')._grey._big._stroke_white
-          +button-icon-text Add video
+    +modal-close
+    +b.FORM.modal-form.__top-50
+      +input-markup
+        +input-markup-item._grow
+          +input('Write URL')
+        +input-markup-item._margin_both
+          span or
+        +input-markup-item
+          +button-icon.btn-grey
+            +button-icon-item('cloud')._grey._big
+            +button-icon-text Upload
+        +input-markup-item._margin_left
+          +button-icon.btn-default
+            +button-icon-item('plus')._grey._big._stroke_white
+            +button-icon-text Add video
+
+mixin case-modal
+  +modal#caseModal
+    +e.H2.header New case
+      +label.label-thin.label-medium.label-bg-grey.label-font-standart Graphic
+    +modal-close
+    +b.FORM.modal-form.plate__top-30
+      +e.wrap
+        +e.inputs
+          +input('Header')
+          +textarea(3)(placeholder='Short description').plate__top-30.form-control-area-static
+          +e.tags.plate__top-30
+            +e.SPAN.text Tags:
+            +label-case-tag-close Design
+            +label-case-tag-close Illustration
+            +label-case-tag-close Art-directing
+          +input-markup.plate__top-20
+            +input-markup-item._divide_40p._grow
+              +button-dropdown('Select', ['value1', 'value2'])
+            +input-markup-item._margin_both
+              span or
+            +input-markup-item._divide_40p._grow
+              +input('write another')
+            +input-markup-item._margin_left
+              +button-icon.btn-grey
+                +button-icon-item('plus')._big._stroke_grey
+                +button-icon-text Add tag
+        +e.upload._big
+          +upload-area-image
+      +input-markup.plate__top-50
+        +input-markup-item._push_right
+          +button-icon.btn-default
+            +button-icon-item('plus')._stroke_white._big
+            +button-icon-text Add case
+
+mixin resume-modal
+  +modal#resumeModal
+    +e.H2.header New timeline point
+    +modal-close
+    +b.FORM.modal-form.plate__top-30
+      +e.SPAN.text Select category:
+      +radio(true, 'test') Education
+      +radio('', 'test') Awards and certificates
+      +radio('', 'test') Work
+      +e.wrap.plate__top-30
+        +e.inputs
+          +input-markup.__datepick
+            +input-markup-item
+              span From
+            +input-markup-item._divide_40p._margin_left
+              +select-date
+            +input-markup-item._margin_both
+              span to
+            +input-markup-item._divide_40p
+              +select-date
+          +input('Header').plate__top-40
+          +textarea(4)(placeholder='Description').form-control-area-static.plate__top-40
+        +e.upload
+          +upload-area Drug and drop files (max 100 mb)
+      +input-markup.plate__top-40
+        +input-markup-item._push_right
+          +button-icon.btn-default
+            +button-icon-item('plus')._stroke_white._big
+            +button-icon-text Add point

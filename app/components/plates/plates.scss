@@ -51,6 +51,11 @@
     letter-spacing: -.04em;
     font-weight: 100;
 
+    .label {
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+
     &_white {
       color: #fff;
     }
@@ -449,6 +454,20 @@
 
   @media (max-width: $screen-xs-max) {
     flex-grow: 1;
+  }
+
+  .button-icon__text {
+    @media (max-width: $screen-xs-max) {
+      width: 68px;
+      overflow: hidden;
+      display: inline-block;
+    }
+  }
+
+  h2 {
+    @media (max-width: $screen-xs-max) {
+      font-size: 36px !important;
+    }
   }
 
   .plate {

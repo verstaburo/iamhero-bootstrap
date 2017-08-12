@@ -47,3 +47,37 @@
     text-align: left;
   }
 }
+
+.select-group {
+  display: flex;
+
+  @media (max-width: $screen-xs-max) {
+    flex-direction: column;
+  }
+
+  &__item {
+    @media (max-width: $screen-xs-max) {
+      margin-top: 10px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+
+      &:not(:first-child) {
+
+        .form-control {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-left: none;
+        }
+      }
+
+      &:not(:last-child) {
+
+        .form-control {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+  }
+}

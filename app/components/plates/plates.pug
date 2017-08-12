@@ -217,7 +217,7 @@ mixin resume-plate(edit)
           p Graduated as a grapchic design bachelor
     if edit
       +input-markup.__top-30
-        +button-icon.__item_push_right.btn-default
+        +button-icon(data-toggle="modal", data-target="#resumeModal").__item_push_right.btn-default
           +button-icon-item('plus')._stroke_white._big
           +button-icon-text Add new point
 

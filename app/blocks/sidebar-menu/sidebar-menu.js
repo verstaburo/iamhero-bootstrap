@@ -6,13 +6,13 @@ export default () => {
   const el = $('.sidebar-menu');
 
   const stickyInit = () => {
-    const elHidden = $(window).width() < 1280;
 
-    if (elHidden || !el.length) {
+    if ($(window).width() < 1280 || !el.length) {
+      el.trigger('sticky_kit:detach');
       return;
     }
 
-    el.trigger('sticky_kit:detach');
+    // el.trigger('sticky_kit:detach');
     el.stick_in_parent({
       offset_top: 100,
       parent: '.row',

@@ -19,8 +19,13 @@ mixin label-default-medium
 mixin label-close
   +label.label-default.label-thin.label-larger.label-close&attributes(attributes)
     block
-    +icon-close.label-close-icon
+    +icon-close
 
 mixin label-case-tag
   +label.label-bg-grey.label-font-light.label-font-black&attributes(attributes)
     block
+
+mixin label-case-tag-close
+  +label.label-bg-grey.label-font-light.label-font-black.label-close.label-close-small&attributes(attributes)
+    block
+    +icon-close

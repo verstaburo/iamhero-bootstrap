@@ -20,3 +20,9 @@ mixin button-dropdown-custom(title)
     input(type='hidden', value='').btn-select-control
     ul.dropdown-menu
       block
+
+mixin select-date
+  +b.select-group
+    +button-dropdown('21', ['01', '02', '03']).__item
+    +button-dropdown('September', ['value1', ['value2']]).__item
+    +button-dropdown('2018', ['value1', ['value2']]).__item
