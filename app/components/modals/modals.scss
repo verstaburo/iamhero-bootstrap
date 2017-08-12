@@ -1,0 +1,82 @@
+.modal-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  .plate__header {
+    @media (max-width: $screen-xs-max) {
+      font-size: 34px !important;
+    }
+  }
+}
+
+.modal-form {
+
+  &__tags {
+
+    .label {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+
+    @media (max-width: $screen-sm-max) {
+      flex-direction: column;
+    }
+  }
+
+  &__inputs {
+    flex-grow: 1;
+  }
+
+  &__upload {
+    margin-left: 55px;
+    flex-basis: 22%;
+
+    @media (max-width: $screen-sm-max) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    &_big {
+      flex-basis: 34%;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-medium;
+    margin-right: 10px;
+  }
+
+  .radio {
+    margin-top: 10px;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      margin-left: 10px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      margin-left: 25px;
+    }
+  }
+
+  &__datepick {
+    @media (max-width: $screen-xm-max) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .input-markup__item {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+}
