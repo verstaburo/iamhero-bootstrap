@@ -24,9 +24,7 @@ mixin cases(edit)
       if edit
         +input-markup.__top-30
           +input-markup-item._push_right
-            +button-icon(data-toggle="modal", data-target="#caseModal").btn-default
-              +button-icon-item('plus')._stroke_white._big
-              +button-icon-text Add new case
+            +button-add(data-toggle="modal", data-target="#caseModal") Add new case
     .row.isotope
       .col-md-8.col-sm-12.isotope-item.design.illustration
         +thumbnail.thumbnail-case.sr-animate

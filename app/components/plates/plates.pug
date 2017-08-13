@@ -12,7 +12,6 @@ include ../../blocks/button/button
 include ../../blocks/upload/upload
 include ../../blocks/icon-close/icon-close
 include ../rangesliders/rangesliders
-include ../input-group/input-group
 include ../timeline/timeline
 include ../../blocks/button-dropdown/button-dropdown
 include ../../blocks/service/service
@@ -63,9 +62,7 @@ mixin skills-plate
       +input-markup-item._grow
         +input('Write another')
       +input-markup-item._margin_left
-        +button-icon.btn-default
-          +button-icon-item('plus')._stroke_white._big
-          +button-icon-text Add new skill
+        +button-add Add new skill
 
 mixin skills-plate-static
   +plate#skills
@@ -89,9 +86,7 @@ mixin talents-plate
       +input-markup-item._grow
         +input('Write another')
       +input-markup-item._margin_left
-        +button-icon.btn-default
-          +button-icon-item('plus')._stroke_white._big
-          +button-icon-text Add new talent
+        +button-add Add new talent
 
 mixin talents-plate-static
   +plate#talents
@@ -157,9 +152,7 @@ mixin languages-plate
       +input-markup-item._grow._divide_40p
         +input('write another')
       +input-markup-item._margin_left._tablet_full._tablet_right
-        +button-icon.btn-default
-          +button-icon-item('plus')._stroke_white._big
-          +button-icon-text Add new language
+        +button-add Add new language
 
 mixin languages-plate-static
   +plate#languages
@@ -217,9 +210,7 @@ mixin resume-plate(edit)
           p Graduated as a grapchic design bachelor
     if edit
       +input-markup.__top-30
-        +button-icon(data-toggle="modal", data-target="#resumeModal").__item_push_right.btn-default
-          +button-icon-item('plus')._stroke_white._big
-          +button-icon-text Add new point
+        +button-add(data-toggle="modal", data-target="#resumeModal").__item_push_right Add new point
 
 mixin services-plate
   +plate#services
@@ -236,9 +227,7 @@ mixin services-plate
         +button-dropdown('Select', ['value1', 'value2'])
         +input('write about service')
       +input-markup-item._margin_left._content_bottom
-        +button-icon.__item_push_right.btn-default
-          +button-icon-item('plus')._stroke_white._big
-          +button-icon-text Add new service
+        +button-add.__item_push_right Add new service
 
 mixin services-plate-static
   +plate#services
@@ -274,9 +263,7 @@ mixin interests-plate(edit)
           +button-icon.btn-grey.btn-block
             +button-icon-item('picture')._grey
             +button-icon-text Upload image
-          +button-icon.__item_push_right.btn-default.btn-block
-            +button-icon-item('plus')._stroke_white._big
-            +button-icon-text Add new interest
+          +button-add.__item_push_right.btn-block Add new interest
 
 
 
@@ -285,9 +272,7 @@ mixin video-plate
     +bg-image('profile-edit/video-placeholder.jpg').__video-placeholder
     +e.header-container._tablet_column
       +e.H2.header._white._mobile-smaller Video Represent
-      +button-icon(data-toggle="modal", data-target="#videoModal").btn-default
-        +button-icon-item('plus')._stroke_white._big
-        +button-icon-text Upload video
+      +button-add(data-toggle="modal", data-target="#videoModal") Upload video
 
 mixin video-plate-static
   +plate._no-padding._relative._fixed-height
@@ -320,9 +305,7 @@ mixin social-plate-static
           p Link your profile with Instagram and upload photos!
           +input-markup
             +input-markup-item._push_right
-              +button-icon.btn-default
-                +button-icon-item('plus')._stroke_white._big
-                +button-icon-text Connect to Instagram
+              +button-add Connect to Instagram
       +tab-pane#facebook
         +plate
           h2 Facebook
@@ -330,9 +313,7 @@ mixin social-plate-static
           p Link your profile with Instagram and upload photos!
           +input-markup
             +input-markup-item._push_right
-              +button-icon.btn-default
-                +button-icon-item('plus')._stroke_white._big
-                +button-icon-text Connect to Facebook
+              +button-add Connect to Facebook
       +tab-pane#youtube
         +plate
           h2 Youtube
@@ -340,9 +321,7 @@ mixin social-plate-static
           p Link your profile with Instagram and upload photos!
           +input-markup
             +input-markup-item._push_right
-              +button-icon.btn-default
-                +button-icon-item('plus')._stroke_white._big
-                +button-icon-text Connect to Youtube
+              +button-add Connect to Youtube
       +tab-pane#pinterest
         +plate
           h2 Pinterest
@@ -350,9 +329,7 @@ mixin social-plate-static
           p Link your profile with Instagram and upload photos!
           +input-markup
             +input-markup-item._push_right
-              +button-icon.btn-default
-                +button-icon-item('plus')._stroke_white._big
-                +button-icon-text Connect to Pinterest
+              +button-add Connect to Pinterest
 
 mixin social-plate
   +plate._no-padding._relative._mobile-flex#activities

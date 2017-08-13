@@ -1,12 +1,15 @@
 .inner-sidebar {
   background-image: linear-gradient(to bottom, #465d75 0%, #1b202d 100%);
   display: block;
+  position: fixed;
+  top: 55px;
   width: 55px;
   min-height: 100vh;
   height: 100%;
   padding-left: 0;
   margin-bottom: 0;
   padding-top: 40px;
+  transform: translate3d(0, 0, 0);
 
   &__item {
     position: relative;
