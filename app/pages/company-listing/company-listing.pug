@@ -1,8 +1,10 @@
 extends ../../layouts/default
 include ../../blocks/inner-sidebar/inner-sidebar
+include ../../components/inner-header/inner-header
 
 block head
   - var pageTitle = 'Company listing - I Am Hero'
 
 block content
+  +inner-header
   +inner-sidebar

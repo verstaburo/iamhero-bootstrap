@@ -1,5 +1,5 @@
 .inner-sidebar {
-  background-image: linear-gradient(to bottom, #465d75 0%, #1b202d 100%);
+  background-image: linear-gradient(to bottom, #465d75 0%, #242c3b 100%);
   display: block;
   position: fixed;
   top: 55px;
@@ -16,12 +16,27 @@
     list-style-type: none;
     transition: background-color .25s ease-in-out;
 
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: calc(100% - 7px);
+      border-left: 55px solid transparent;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      transition: border-color .25s ease-in-out;
+    }
+
     &:not(:first-child) {
       margin-top: 25px;
     }
 
     &:hover {
       background-color: #3a4d62;
+
+      &::after {
+        border-left-color: #2e3d4e;
+      }
 
       .inner-sidebar__icon {
         stroke: #fff;
@@ -35,6 +50,10 @@
 
     &.active {
       background-color: #fff;
+
+      &::after {
+        border-left-color: #2e3d4e;
+      }
 
       .inner-sidebar__icon {
         stroke: #3b4d62;

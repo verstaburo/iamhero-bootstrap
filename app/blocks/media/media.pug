@@ -5,3 +5,12 @@ mixin media(img, heading)
     .media-body
       h4.media-heading= heading
       block
+
+
+mixin media-secondary(img, heading)
+  +b.media-secondary&attributes(attributes)
+    .media-left
+      img(src='assets/images/'+img).img-circle.media-object
+    .media-body
+      h4.media-heading= heading
+      block

@@ -12,4 +12,25 @@
   &-body {
     font-size: 18px;
   }
+
+  &-secondary {
+
+    .media-object {
+      width: 33px;
+      height: 33px;
+    }
+
+    .media-heading {
+      font-size: 16px;
+      letter-spacing: -.04em;
+      margin-bottom: 0;
+      color: #fff;
+    }
+
+    .media-body {
+      font-size: 12px;
+      letter-spacing: -.04em;
+      color: #8c98ae;
+    }
+  }
 }

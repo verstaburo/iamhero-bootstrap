@@ -1,3 +1,22 @@
+include ../../blocks/logo/logo
+include ../../blocks/search/search
+include ../../blocks/media/media
+
 mixin inner-header()
-  +b.inner-header&attributes(attributes)
-    block
+  +b.HEADER.inner-header&attributes(attributes)
+    .row
+      +e.column.col-md-2
+        +e.A(href='#').logo
+          +icon('logo-white')
+      +e.column._no-gap.col-md-10
+        +search._dark
+      +e.column.col-md-4
+      +e.column._no-gap._hover._hover_dark.col-md-1
+        +e.BUTTON.notification
+          +icon('header-notification')
+          +e.SPAN.notification-badge 1
+      +e.column._hover._hover_dark.col-md-4
+        +media-secondary('user/user.png', 'Eugene Sheeleen') Dezi Design Agency
+        +icon('caret-bold').__caret
+      +e.column._hover._hover_yellow._no-gap.col-md-3
+        +e.A(href='#').promo Buy packages
