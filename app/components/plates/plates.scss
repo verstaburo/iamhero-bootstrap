@@ -452,6 +452,16 @@
 .social-content {
   background-color: #fff;
 
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  [class^='col'] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   @media (max-width: $screen-xs-max) {
     flex-grow: 1;
   }
@@ -475,12 +485,16 @@
   }
 
   &__img {
-    margin-top: 50px;
+    margin-top: 30px;
     height: 210px;
     border: 1px solid #ccc;
 
     &_big {
-      height: 470px;
+      height: 450px;
+
+      @media (max-width: $screen-xs-max) {
+        height: 210px;
+      }
     }
   }
 

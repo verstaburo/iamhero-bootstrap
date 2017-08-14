@@ -3,8 +3,9 @@
 
   &_static {
 
-    .sidebar-menu-item::before {
-      content: none;
+    .sidebar-menu__icon {
+      opacity: 0;
+      pointer-events: none;
     }
   }
 
