@@ -9,13 +9,93 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;amp;subset=cyrillic" rel="stylesheet">
     <link href="assets/styles/app.min.css" rel="stylesheet">
     <script src="assets/scripts/libs/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="company-listing"></div>
+    <header class="inner-header">
+        <div class="row">
+            <div class="inner-header__column col-md-2">
+                <a class="inner-header__logo" href="#">
+                    <svg><use xlink:href="assets/images/icon.svg#icon_logo-white"></use></svg>
+                </a>
+            </div>
+            <div class="inner-header__column inner-header__column_no-gap col-md-10">
+                <label class="search search_dark">
+                    <input class="search__input" type="text" placeholder="Search for heroes..." />
+                    <button class="search__icon" type="submit">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+                    </button>
+                </label>
+            </div>
+            <div class="inner-header__column col-md-4"></div>
+            <div class="inner-header__column inner-header__column_no-gap inner-header__column_hover inner-header__column_hover_dark col-md-1">
+                <button class="inner-header__notification">
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    <span class="inner-header__notification-badge">1</span>
+                </button>
+            </div>
+            <div class="inner-header__column inner-header__column_hover inner-header__column_hover_dark col-md-4">
+                <div class="media-secondary">
+                    <div class="media-left">
+                        <img class="img-circle media-object" src="assets/images/user/user.png" />
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Eugene Sheeleen</h4>Dezi Design Agency</div>
+                </div>
+                <svg class="inner-header__caret"><use xlink:href="assets/images/icon.svg#icon_caret-bold"></use></svg>
+            </div>
+            <div class="inner-header__column inner-header__column_hover inner-header__column_hover_yellow inner-header__column_no-gap col-md-3">
+                <a class="inner-header__promo" href="#">Buy packages</a>
+            </div>
+        </div>
+    </header>
+    <ul class="inner-sidebar">
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-dashboard"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Dashboard</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-messages"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Messages</span>
+            <span class="inner-sidebar__badge">1</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Search</span>
+        </li>
+        <li class="inner-sidebar__item active">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Shortlists</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Job Offers</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-statistics"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Stats</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Settings</span>
+        </li>
+    </ul>
     <script src="assets/scripts/libs/bootstrap.min.js"></script>
     <script src="assets/scripts/libs/rangeslider.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
