@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I Am Hero - Profile edit</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content container-fluid">
+            <a class="logo header__logo" href="#">
+                <img src="assets/images/icon/iamhero_logo_grey.svg" />
+            </a>
+            <span class="header__text hidden-md hidden-sm hidden-xs">Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!</span>
+            <ul class="nav header__nav">
+                <li>
+                    <a class="nav-link nav-link-bordered" href="#">Sign up now</a>
+                </li>
+            </ul>
+            <ul class="nav header__nav header__nav_push-right">
+                <li>
+                    <a class="nav-link" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="page page_profile" role="main">
+        <div class="page__top-bg"></div>
+        <div class="page__decoration"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-20 col-xl-offset-1 col-xs-24">
+                    <div class="profile-header">
+                        <div class="media media-white hidden-xs hidden-sm">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/profile-edit/avatar-small.jpg" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Name Surname</h4>Vocation</div>
+                        </div>
+                        <label class="switch switch_transparent">
+                            <input type="hidden" />
+                            <span class="switch__item active">
+                                <span class="switch__text">Full version</span>
+                            </span>
+                            <span class="switch__item">
+                                <span class="switch__text">Print version</span>
+                            </span>
+                        </label>
+                        <div class="upload">
+                            <input class="upload__input" type="file" />
+                            <button class="button-icon btn btn-success">
+                                <span class="button-icon__text">Change background picture/video</span>
+                                <svg class="button-icon__item button-icon__item_white button-icon__item_after"><use xlink:href="assets/images/icon.svg#icon_camera"></use></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__sidebar-wrap col-xl-offset-1 col-xl-4 col-xm-5 hidden-md hidden-sm hidden-xs">
+                    <ul class="sidebar-menu page__sidebar-menu">
+                        <li class="sidebar-menu__item active">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                            <a href="#summary">Summary</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="sidebar-menu__item disabled">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-disabled"></use></svg>
+                            <a href="#talents">Talents</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                            <a href="#languages">Languages</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                            <a href="#resume">Resume</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                            <a href="#interest">Interest</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                            <a href="#activities">My social activities</a>
+                        </li>
+                        <li class="sidebar-menu__item">
+                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                            <a href="#cases">Cases</a>
+                        </li>
+                        <li>
+                            <button class="btn sidebar-menu__button btn-secondary">Preview</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-16 col-xm-19 col-xs-24">
+                    <div class="plate plate_no-padding plate_flex plate_tablet-column" id="summary">
+                        <div class="bg-image plate__avatar">
+                            <img src="assets/images/profile-edit/avatar-placeholder.jpg" />
+                            <div class="upload plate__avatar-button">
+                                <input class="upload__input" type="file" />
+                                <button class="button-icon btn btn-success">
+                                    <svg class="button-icon__item button-icon__item_white button-icon__item_before"><use xlink:href="assets/images/icon.svg#icon_camera"></use></svg>
+                                    <span class="button-icon__text">Change profile picture</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="plate__info-col plate__info-col_form">
+                            <div class="logo plate__logo">
+                                <img src="assets/images/icon/iamhero_logo_grey.svg" />
+                            </div>
+                            <form class="plate__hero-form">
+                                <input class="form-control form-control-border-bottom form-control-border-big plate__header" type="text" placeholder="Name Surname" />
+                                <input class="form-control form-control-border-bottom font-larger" type="text" placeholder="Vocation/position" />
+                                <input class="form-control form-control-border-bottom font-large" type="text" placeholder="Lacation" />
+                                <textarea class="form-control form-control-area-static" rows="5">A few words about yourself</textarea>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="plate" id="skills">
+                        <h2 class="plate__header">Professional Skills</h2>
+                        <p>The list of my professional skills which describes my strongest sides</p>
+                        <div class="rangeslider-wrap plate__top-60 sr-animate">
+                            <div class="rangeslider-wrap__header">
+                                <h4>Graphic design</h4>
+                                <h4 class="rangeslider-wrap__output"></h4>
+                            </div>
+                            <div class="rangeslider-wrap__controls">
+                                <input class="rangeslider_color_lightgreen" type="range" min="0" max="100" step="1" value="50" />
+                                <svg class="icon-close rangeslider-wrap__icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </div>
+                        </div>
+                        <div class="rangeslider-wrap plate__top-60 sr-animate">
+                            <div class="rangeslider-wrap__header">
+                                <h4>Web Design</h4>
+                                <h4 class="rangeslider-wrap__output"></h4>
+                            </div>
+                            <div class="rangeslider-wrap__controls">
+                                <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                <svg class="icon-close rangeslider-wrap__icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </div>
+                        </div>
+                        <div class="rangeslider-wrap plate__top-60 sr-animate">
+                            <div class="rangeslider-wrap__header">
+                                <h4>Illustration</h4>
+                                <h4 class="rangeslider-wrap__output"></h4>
+                            </div>
+                            <div class="rangeslider-wrap__controls">
+                                <input class="rangeslider_color_blue" type="range" min="0" max="100" step="1" value="50" />
+                                <svg class="icon-close rangeslider-wrap__icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </div>
+                        </div>
+                        <div class="rangeslider-wrap plate__top-60 sr-animate">
+                            <div class="rangeslider-wrap__header">
+                                <h4>Video Editing</h4>
+                                <h4 class="rangeslider-wrap__output"></h4>
+                            </div>
+                            <div class="rangeslider-wrap__controls">
+                                <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                <svg class="icon-close rangeslider-wrap__icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </div>
+                        </div>
+                        <div class="input-markup plate__top-60">
+                            <div class="input-markup__item input-markup__item_grow">
+                                <input class="form-control" type="text" placeholder="Write another" />
+                            </div>
+                            <div class="input-markup__item input-markup__item_margin_left">
+                                <button class="button-icon btn btn-default">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new skill</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plate" id="talents">
+                        <h2 class="plate__header">Talents</h2>
+                        <p>The list of my professional skills which describes my strongest sides</p>
+                        <div class="plate__tag-container plate__top-50">
+                            <span class="label label-default label-thin label-larger label-close">Singing
+                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </span>
+                            <span class="label label-default label-thin label-larger label-close">Dancing
+                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </span>
+                            <span class="label label-default label-thin label-larger label-close">Song writing
+                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </span>
+                            <span class="label label-default label-thin label-larger label-close">Drawing amazing landscapes
+                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </span>
+                        </div>
+                        <div class="input-markup plate__top-50">
+                            <div class="input-markup__item input-markup__item_grow">
+                                <input class="form-control" type="text" placeholder="Write another" />
+                            </div>
+                            <div class="input-markup__item input-markup__item_margin_left">
+                                <button class="button-icon btn btn-default">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new talent</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plate" id="languages">
+                        <h2 class="plate__header">Languages</h2>
+                        <div class="plate__lang-row hidden-xs hidden-sm">
+                            <div class="plate__lang-col">
+                                <h5>Language</h5>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h5>Reading</h5>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h5>Speaking</h5>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h5>Writing</h5>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h5>Understanding</h5>
+                            </div>
+                        </div>
+                        <div class="plate__lang-row sr-animate">
+                            <div class="plate__lang-col">
+                                <h4 class="font-weight-medium">Russian</h4>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h4 class="visible-xs visible-sm">Reading</h4>
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h4 class="visible-xs visible-sm">Speaking</h4>
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h4 class="visible-xs visible-sm">Writing</h4>
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h4 class="visible-xs visible-sm">Understanding</h4>
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plate__lang-row sr-animate">
+                            <div class="plate__lang-col">
+                                <h4 class="font-weight-medium">English</h4>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h4 class="visible-xs visible-sm">Reading</h4>
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h4 class="visible-xs visible-sm">Speaking</h4>
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h4 class="visible-xs visible-sm">Writing</h4>
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                            <div class="plate__lang-col">
+                                <h4 class="visible-xs visible-sm">Understanding</h4>
+                                <div class="rangeslider-wrap">
+                                    <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                    <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-markup input-markup_tablet_wrap plate__top-30">
+                            <div class="input-markup__item input-markup__item_grow input-markup__item_divide_40p">
+                                <div class="btn-group btn-select">
+                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                    <input class="btn-select-control" type="hidden" value="" />
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="btn-select-item" href="#">value1</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn-select-item" href="#">value2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input-markup__item input-markup__item_margin_both">
+                                <span>or</span>
+                            </div>
+                            <div class="input-markup__item input-markup__item_grow input-markup__item_divide_40p">
+                                <input class="form-control" type="text" placeholder="write another" />
+                            </div>
+                            <div class="input-markup__item input-markup__item_margin_left input-markup__item_tablet_full input-markup__item_tablet_right">
+                                <button class="button-icon btn btn-default">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new language</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plate" id="resume">
+                        <h2 class="plate__header">Resume</h2>
+                        <p>Here is my professional goals in informative and simple timeline</p>
+                        <div class="timeline plate__top-60">
+                            <div class="timeline__years">
+                                <p class="timeline__year">2017</p>
+                                <p class="timeline__year">2016</p>
+                                <p class="timeline__year">2015</p>
+                            </div>
+                            <div class="timeline__items">
+                                <div class="timeline__holder"></div>
+                                <div class="timeline-item timeline__item">
+                                    <div class="timeline-item__header timeline-item__header_red">
+                                        <span class="label label-tag">work</span>
+                                        <p class="timeline-item__date timeline-item__left-8">17/06/2016 — 17/06/2018</p>
+                                        <div class="timeline-item__edits">
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <img src="assets/images/icon/edit.png" />
+                                            </div>
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4>DEZI Design</h4>
+                                    <p>Stated o work as a junior Designer at DEZI</p>
+                                </div>
+                                <div class="timeline-item timeline__item">
+                                    <div class="timeline-item__header timeline-item__header_lightgreen">
+                                        <span class="label label-tag">education</span>
+                                        <p class="timeline-item__date timeline-item__left-8">17/02/2016 — 17/06/2016</p>
+                                        <div class="timeline-item__edits">
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <img src="assets/images/icon/edit.png" />
+                                            </div>
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4>Univercity Of Creative art Rocherster Great Britain</h4>
+                                    <p>Graduated as a grapchic design bachelor</p>
+                                </div>
+                                <div class="timeline-item timeline__item">
+                                    <div class="timeline-item__header timeline-item__header_violet">
+                                        <span class="label label-tag">AWARDS AND CERTIFICATES</span>
+                                        <p class="timeline-item__date timeline-item__left-8">17/02/2016</p>
+                                        <div class="timeline-item__edits">
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <img src="assets/images/icon/edit.png" />
+                                            </div>
+                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h4>Proficiency in economics by ALAP</h4>
+                                    <p>This sertificate gives me and ooportunity to work in financial sector for 2 years using my new knowledges in macroeconomy processes.</p>
+                                    <a class="timeline-item__control" href="#">
+                                        <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+                                        <p>Show document</p>
+                                    </a>
+                                    <a class="timeline-item__control" href="#">
+                                        <svg><use xlink:href="assets/images/icon.svg#icon_save"></use></svg>
+                                    </a>
+                                </div>
+                                <div class="timeline-item timeline__item">
+                                    <div class="timeline-item__header timeline-item__header_red">
+                                        <span class="label label-tag">work</span>
+                                        <p class="timeline-item__date timeline-item__left-8">17/02/2015 — 17/06/2016</p>
+                                    </div>
+                                    <h4>McDonalds Berlin</h4>
+                                    <p>Stated work at local McDonalds restaurant as a cashier</p>
+                                </div>
+                                <div class="timeline-item timeline__item">
+                                    <div class="timeline-item__header timeline-item__header_lightgreen">
+                                        <span class="label label-tag">EDUCATION</span>
+                                        <p class="timeline-item__date timeline-item__left-8">17/02/2016 — 17/06/2016</p>
+                                    </div>
+                                    <h4>Univercity Of Creative art Rocherster Great Britain</h4>
+                                    <p>Graduated as a grapchic design bachelor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-markup plate__top-30">
+                            <button class="button-icon btn btn-default input-markup__item input-markup__item_push_right" data-toggle="modal" data-target="#resumeModal">
+                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                <span class="button-icon__text">Add new point</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="plate" id="services">
+                        <h2 class="plate__header">Services</h2>
+                        <div class="plate__top-40 row">
+                            <div class="plate__service col-md-8">
+                                <div class="service service_edit sr-animate">
+                                    <div class="service__heading">
+                                        <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_palette"></use></svg>
+                                        <h4 class="font-weight-medium">Graphic design</h4>
+                                        <svg class="icon-close service__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </div>
+                                    <p class="service__description">Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                </div>
+                            </div>
+                            <div class="plate__service col-md-8">
+                                <div class="service service_edit sr-animate">
+                                    <div class="service__heading">
+                                        <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_tape"></use></svg>
+                                        <h4 class="font-weight-medium">Video editing</h4>
+                                        <svg class="icon-close service__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </div>
+                                    <p class="service__description">Adobe premier and After Effect mastery. Video filiming, color correction and Post production</p>
+                                </div>
+                            </div>
+                            <div class="plate__service col-md-8">
+                                <div class="service service_edit sr-animate">
+                                    <div class="service__heading">
+                                        <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_brush"></use></svg>
+                                        <h4 class="font-weight-medium">Illustration</h4>
+                                        <svg class="icon-close service__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </div>
+                                    <p class="service__description">Drawing illustration and graphical images in various styles. Look for more in cases section</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-markup plate__top-40">
+                            <div class="input-markup__item input-markup__item_vertical input-markup__item_grow">
+                                <div class="btn-group btn-select">
+                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                    <input class="btn-select-control" type="hidden" value="" />
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="btn-select-item" href="#">value1</a>
+                                        </li>
+                                        <li>
+                                            <a class="btn-select-item" href="#">value2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <input class="form-control" type="text" placeholder="write about service" />
+                            </div>
+                            <div class="input-markup__item input-markup__item_margin_left input-markup__item_content_bottom">
+                                <button class="button-icon btn btn-default input-markup__item input-markup__item_push_right">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new service</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plate" id="interest">
+                        <h2 class="plate__header">Interests</h2>
+                        <div class="row plate__top-60">
+                            <div class="col-md-8 col-xs-24">
+                                <div class="thumbnail thumbnail-interests">
+                                    <div class="bg-image thumbnail-img">
+                                        <img src="assets/images/profile-edit/design.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h4 class="font-weight-medium">Graphic design</h4>
+                                        <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-xs-24">
+                                <div class="thumbnail thumbnail-interests">
+                                    <div class="bg-image thumbnail-img">
+                                        <img src="assets/images/profile-edit/travel.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h4 class="font-weight-medium">Travel</h4>
+                                        <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-xs-24">
+                                <div class="thumbnail thumbnail-interests">
+                                    <div class="bg-image thumbnail-img">
+                                        <img src="assets/images/profile-edit/chess.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h4 class="font-weight-medium">Chess</h4>
+                                        <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-xs-24">
+                                <div class="thumbnail thumbnail-interests">
+                                    <div class="bg-image thumbnail-img">
+                                        <img src="assets/images/profile-edit/car.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h4 class="font-weight-medium">Car sketching</h4>
+                                        <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-xs-24">
+                                <div class="thumbnail thumbnail-interests">
+                                    <div class="bg-image thumbnail-img">
+                                        <img src="assets/images/profile-edit/food-review.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h4 class="font-weight-medium">Street food review</h4>
+                                        <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-markup plate__top-20">
+                            <div class="input-markup__item input-markup__item_grow input-markup__item_vertical">
+                                <input class="form-control" type="text" placeholder="Write another" />
+                                <input class="form-control" type="text" placeholder="write about interest" />
+                            </div>
+                            <div class="input-markup__item input-markup__item_vertical input-markup__item_margin_left">
+                                <button class="button-icon btn btn-grey btn-block">
+                                    <svg class="button-icon__item button-icon__item_grey"><use xlink:href="assets/images/icon.svg#icon_picture"></use></svg>
+                                    <span class="button-icon__text">Upload image</span>
+                                </button>
+                                <button class="button-icon btn btn-default input-markup__item input-markup__item_push_right btn-block">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new interest</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plate plate_no-padding plate_relative plate_mobile-flex" id="activities">
+                        <ul class="social-header" role="tablist">
+                            <li class="social-header__item active" role="presentation">
+                                <a data-toggle="tab" role="tab" href="#instagram" aria-controls="instagram">
+                                    <svg class="social-header__icon social-header__icon_insta"><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-header__item" role="presentation">
+                                <a data-toggle="tab" role="tab" href="#facebook" aria-controls="facebook">
+                                    <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_facebook"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-header__item" role="presentation">
+                                <a data-toggle="tab" role="tab" href="#youtube" aria-controls="youtube">
+                                    <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_youtube"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-header__item" role="presentation">
+                                <a data-toggle="tab" role="tab" href="#pinterest" aria-controls="pinterest">
+                                    <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_pinterest"></use></svg>
+                                </a>
+                            </li>
+                            <li class="social-header__item social-header__item_push_right social-header__item_flexible social-header__item_mobile-first">
+                                <button class="button-icon btn plate__item plate__item_push_right btn-success social-header__button">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new social tab</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content social-content">
+                            <div class="tab-pane fade active in" role="tabpanel" id="instagram">
+                                <div class="plate">
+                                    <h2>Instagram
+                                        <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </h2>
+                                    <p>Link your profile with Instagram and upload photos!</p>
+                                    <div class="input-markup">
+                                        <div class="input-markup__item input-markup__item_push_right">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Instagram</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="facebook">
+                                <div class="plate">
+                                    <h2>Facebook
+                                        <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </h2>
+                                    <p>Link your profile with Instagram and upload photos!</p>
+                                    <div class="input-markup">
+                                        <div class="input-markup__item input-markup__item_push_right">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Facebook</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="youtube">
+                                <div class="plate">
+                                    <h2>Youtube
+                                        <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </h2>
+                                    <p>Link your profile with Instagram and upload photos!</p>
+                                    <div class="input-markup">
+                                        <div class="input-markup__item input-markup__item_push_right">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Youtube</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="pinterest">
+                                <div class="plate">
+                                    <h2>Pinterest
+                                        <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </h2>
+                                    <p>Link your profile with Instagram and upload photos!</p>
+                                    <div class="input-markup">
+                                        <div class="input-markup__item input-markup__item_push_right">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Pinterest</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plate plate_relative plate_fixed-height">
+                        <div class="bg-image plate__video-placeholder">
+                            <img src="assets/images/profile-edit/video-placeholder.jpg" />
+                        </div>
+                        <div class="plate__header-container plate__header-container_tablet_column">
+                            <h2 class="plate__header plate__header_white plate__header_mobile-smaller">Video Represent</h2>
+                            <button class="button-icon btn btn-default" data-toggle="modal" data-target="#videoModal">
+                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                <span class="button-icon__text">Upload video</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cases" id="cases">
+                        <div class="plate">
+                            <div class="plate__header-container">
+                                <h2 class="plate__header">Cases</h2>
+                                <div class="plate__head-filters">
+                                    <span class="label label-default label-thin label-medium hidden-xs active" data-filter="*">All</span>
+                                    <span class="label label-default label-thin label-medium hidden-xs" data-filter=".design">Design</span>
+                                    <span class="label label-default label-thin label-medium hidden-xs" data-filter=".illustration">Illustration</span>
+                                    <span class="label label-default label-thin label-medium hidden-xs" data-filter=".retouching">Retouching</span>
+                                    <div class="btn-group btn-select visible-xs">
+                                        <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+                                        <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                        <input class="btn-select-control" type="hidden" value="" />
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="btn-select-item" href="#" data-filter="*">All</a>
+                                            </li>
+                                            <li>
+                                                <a class="btn-select-item" href="#" data-filter=".design">Design</a>
+                                            </li>
+                                            <li>
+                                                <a class="btn-select-item" href="#" data-filter=".illustration">Illustration</a>
+                                            </li>
+                                            <li>
+                                                <a class="btn-select-item" href="#" data-filter=".retouching">Retouching</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-markup plate__top-30">
+                                <div class="input-markup__item input-markup__item_push_right">
+                                    <button class="button-icon btn btn-default" data-toggle="modal" data-target="#caseModal">
+                                        <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                        <span class="button-icon__text">Add new case</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row isotope">
+                            <div class="col-md-8 col-sm-12 isotope-item design illustration">
+                                <div class="thumbnail thumbnail-case sr-animate">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/1.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Information Anomalies</h3>
+                                        <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item retouching">
+                                <div class="thumbnail thumbnail-case sr-animate">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Winter In Squares</h3>
+                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
+                                            occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item design illustration">
+                                <div class="thumbnail thumbnail-case sr-animate">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/3.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Ripple Support Network</h3>
+                                        <p>Ripple wanted to create a lightning fast response system to address help for students, recently living on their own. Pearl created the strategy, product, brand, and system that makes getting support on the phone
+                                            one click away.</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item retouching">
+                                <div class="thumbnail thumbnail-case sr-animate">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/2.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Winter In Squares</h3>
+                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
+                                            occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item retouching">
+                                <div class="thumbnail thumbnail-case sr-animate">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/5.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Opera</h3>
+                                        <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Pre-Production</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Retouching</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-12 isotope-item design illustration">
+                                <div class="thumbnail thumbnail-case sr-animate">
+                                    <div class="thumbnail-controls">
+                                        <div class="thumbnail-controls-item">
+                                            <img src="assets/images/icon/edit.png" />
+                                        </div>
+                                        <div class="thumbnail-controls-item">
+                                            <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </div>
+                                    </div>
+                                    <div class="bg-image thumbnail-case-img">
+                                        <img src="assets/images/profile-edit/cases/4.jpg" />
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Lorod Company Identity</h3>
+                                        <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
+                                    </div>
+                                    <div class="thumbnail-tag-container">
+                                        <span class="label label-bg-grey label-font-light label-font-black">Design</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Illustration</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black">Art-directing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="get-started">
+            <div class="container container-mobile-padded">
+                <h1 class="get-started__heading">Get started now!
+                    <span class="get-started__heading get-started__heading_colored">For Free</span>
+                </h1>
+                <h3 class="get-started__subheading">Over 500 000 heroes can’t be wrong...</h3>
+                <form class="row">
+                    <div class="get-started__switcher col-lg-5 col-xm-6 col-xm-offset-0 col-md-offset-4 col-md-8 col-sm-12 get-started__input">
+                        <label class="switch switch_big">
+                            <input type="hidden" />
+                            <span class="switch__item active">
+                                <span class="switch__text">Job seeker</span>
+                            </span>
+                            <span class="switch__item">
+                                <span class="switch__text">Employer</span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="get-started__input col-lg-5 col-xm-6 col-md-8 col-sm-12">
+                        <label>
+                            <input class="form-control form-control-secondary" type="name" placeholder="Full name" />
+                            <span class="errortext"></span>
+                        </label>
+                    </div>
+                    <div class="get-started__input col-lg-5 col-xm-6 col-xm-offset-0 col-md-offset-4 col-md-8 col-sm-12">
+                        <label class="validated">
+                            <input class="form-control form-control-secondary" type="email" placeholder="E-mail adress" />
+                            <span class="errortext"></span>
+                        </label>
+                    </div>
+                    <div class="get-started__input col-lg-5 col-xm-6 col-md-8 col-sm-12">
+                        <label class="error">
+                            <input class="form-control form-control-secondary" type="password" placeholder="Create password" />
+                            <span class="errortext">Password must be at least 8 symbols long</span>
+                        </label>
+                    </div>
+                    <div class="get-started__input col-lg-4 col-xm-6 col-xm-offset-0 col-md-offset-4 col-md-16 col-xs-24">
+                        <button class="btn btn-secondary">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container container-mobile-padded">
+            <div class="row">
+                <div class="footer__logo-wrap col-xl-3 col-lg-5 col-xm-4 col-xs-24">
+                    <a class="logo logo_big logo_inline" href="#">
+                        <img src="assets/images/icon/iamhero_logo_grey.svg" />
+                    </a>
+                </div>
+                <div class="footer__text-menu col-xl-5 col-lg-5 col-xm-6 col-md-8 col-sm-12 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Information</li>
+                        <li class="footer-menu__item">
+                            <a href="#">About amhero</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Help & Support</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Join The — iamhero</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__text-menu col-xl-5 col-lg-5 col-xm-7 col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Employer</li>
+                        <li class="footer-menu__item">
+                            <a href="#">Hire the Heros</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Create Company Page</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Post a Job</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__text-menu col-xl-4 col-lg-5 col-xm-7 col-md-8 col-sm-12 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">I am hero</li>
+                        <li class="footer-menu__item">
+                            <a href="#">Functions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Resume</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social-wrap col-xl-6 col-xl-offset-1 col-lg-4 col-lg-offset-0 col-xm-20 col-xm-offset-4 col-md-24 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Social</li>
+                    </ul>
+                    <div class="social footer__social">
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_facebook-social"></use></svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_twitter-social"></use></svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_youtube-social"></use></svg>
+                        </a>
+                        <a class="social__item social__item_insta" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="videoModal">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-16 col-xm-offset-5 col-xm-19 col-xs-24 modal-area">
+                    <div class="plate plate_modal plate_relative">
+                        <h2 class="plate__header">Upload video represent</h2>
+                        <svg class="icon-close modal-close" data-dismiss="modal"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        <form class="modal-form plate__top-50">
+                            <div class="input-markup">
+                                <div class="input-markup__item input-markup__item_grow">
+                                    <input class="form-control" type="text" placeholder="Write URL" />
+                                </div>
+                                <div class="input-markup__item input-markup__item_margin_both">
+                                    <span>or</span>
+                                </div>
+                                <div class="input-markup__item">
+                                    <button class="button-icon btn btn-grey">
+                                        <svg class="button-icon__item button-icon__item_grey button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_cloud"></use></svg>
+                                        <span class="button-icon__text">Upload</span>
+                                    </button>
+                                </div>
+                                <div class="input-markup__item input-markup__item_margin_left">
+                                    <button class="button-icon btn btn-default">
+                                        <svg class="button-icon__item button-icon__item_grey button-icon__item_big button-icon__item_stroke_white"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                        <span class="button-icon__text">Add video</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="caseModal">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-16 col-xm-offset-5 col-xm-19 col-xs-24 modal-area">
+                    <div class="plate plate_modal plate_relative">
+                        <h2 class="plate__header">New case
+                            <span class="label label-thin label-medium label-bg-grey label-font-standart">Graphic</span>
+                        </h2>
+                        <svg class="icon-close modal-close" data-dismiss="modal"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        <form class="modal-form plate__top-30">
+                            <div class="modal-form__wrap">
+                                <div class="modal-form__inputs">
+                                    <input class="form-control" type="text" placeholder="Header" />
+                                    <textarea class="form-control plate__top-30 form-control-area-static" rows="3" placeholder="Short description"></textarea>
+                                    <div class="modal-form__tags plate__top-30">
+                                        <span class="modal-form__text">Tags:</span>
+                                        <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small">Design
+                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </span>
+                                        <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small">Illustration
+                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </span>
+                                        <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small">Art-directing
+                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </span>
+                                    </div>
+                                    <div class="input-markup plate__top-20">
+                                        <div class="input-markup__item input-markup__item_divide_40p input-markup__item_grow">
+                                            <div class="btn-group btn-select">
+                                                <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
+                                                <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                                <input class="btn-select-control" type="hidden" value="" />
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="btn-select-item" href="#">value1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="btn-select-item" href="#">value2</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="input-markup__item input-markup__item_margin_both">
+                                            <span>or</span>
+                                        </div>
+                                        <div class="input-markup__item input-markup__item_divide_40p input-markup__item_grow">
+                                            <input class="form-control" type="text" placeholder="write another" />
+                                        </div>
+                                        <div class="input-markup__item input-markup__item_margin_left">
+                                            <button class="button-icon btn btn-grey">
+                                                <svg class="button-icon__item button-icon__item_big button-icon__item_stroke_grey"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Add tag</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-form__upload modal-form__upload_big">
+                                    <div class="upload-area-image">
+                                        <button class="button-icon btn btn-grey">
+                                            <svg class="button-icon__item button-icon__item_grey"><use xlink:href="assets/images/icon.svg#icon_picture"></use></svg>
+                                            <span class="button-icon__text">Upload preview image</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-markup plate__top-50">
+                                <div class="input-markup__item input-markup__item_push_right">
+                                    <button class="button-icon btn btn-default">
+                                        <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                        <span class="button-icon__text">Add case</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="resumeModal">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-16 col-xm-offset-5 col-xm-19 col-xs-24 modal-area">
+                    <div class="plate plate_modal plate_relative">
+                        <h2 class="plate__header">New timeline point</h2>
+                        <svg class="icon-close modal-close" data-dismiss="modal"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        <form class="modal-form plate__top-30">
+                            <span class="modal-form__text">Select category:</span>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="test" value="" checked="checked" />
+                                <span class="radio__box"></span>
+                                <span class="radio__text">Education</span>
+                            </label>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="test" value="" />
+                                <span class="radio__box"></span>
+                                <span class="radio__text">Awards and certificates</span>
+                            </label>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="test" value="" />
+                                <span class="radio__box"></span>
+                                <span class="radio__text">Work</span>
+                            </label>
+                            <div class="modal-form__wrap plate__top-30">
+                                <div class="modal-form__inputs">
+                                    <div class="input-markup modal-form__datepick">
+                                        <div class="input-markup__item">
+                                            <span>From</span>
+                                        </div>
+                                        <div class="input-markup__item input-markup__item_divide_40p input-markup__item_margin_left">
+                                            <div class="select-group">
+                                                <div class="btn-group btn-select select-group__item">
+                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">21</button>
+                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                                    <input class="btn-select-control" type="hidden" value="" />
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">03</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-group btn-select select-group__item">
+                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">September</button>
+                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                                    <input class="btn-select-control" type="hidden" value="" />
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">value1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">value2</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-group btn-select select-group__item">
+                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2018</button>
+                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                                    <input class="btn-select-control" type="hidden" value="" />
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">value1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">value2</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-markup__item input-markup__item_margin_both">
+                                            <span>to</span>
+                                        </div>
+                                        <div class="input-markup__item input-markup__item_divide_40p">
+                                            <div class="select-group">
+                                                <div class="btn-group btn-select select-group__item">
+                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">21</button>
+                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                                    <input class="btn-select-control" type="hidden" value="" />
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">01</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">02</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">03</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-group btn-select select-group__item">
+                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">September</button>
+                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                                    <input class="btn-select-control" type="hidden" value="" />
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">value1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">value2</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="btn-group btn-select select-group__item">
+                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2018</button>
+                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
+                                                    <input class="btn-select-control" type="hidden" value="" />
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">value1</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="btn-select-item" href="#">value2</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input class="form-control plate__top-40" type="text" placeholder="Header" />
+                                    <textarea class="form-control form-control-area-static plate__top-40" rows="4" placeholder="Description"></textarea>
+                                </div>
+                                <div class="modal-form__upload">
+                                    <div class="upload-area">
+                                        <svg class="upload-area__icon"><use xlink:href="assets/images/icon.svg#icon_cloud-thin"></use></svg>
+                                        <span class="upload-area__text">Drug and drop files (max 100 mb)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-markup plate__top-40">
+                                <div class="input-markup__item input-markup__item_push_right">
+                                    <button class="button-icon btn btn-default">
+                                        <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                        <span class="button-icon__text">Add point</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/scripts/libs/bootstrap.min.js"></script>
+    <script src="assets/scripts/libs/rangeslider.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>
