@@ -7,6 +7,7 @@
   background-image: linear-gradient(to right, #465e75 0%, #344357 100%);
   transform: translateZ(0);
   color: #fff;
+  z-index: 5;
 
   &__column, .row {
     height: 100%;

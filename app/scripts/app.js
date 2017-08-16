@@ -9,6 +9,7 @@ import buttonDropdown from '../blocks/button-dropdown/button-dropdown';
 import stickyNavbar from '../blocks/sidebar-menu/sidebar-menu';
 import scrollRevealInit from './common/scrollreveal';
 import upload from '../blocks/upload/upload';
+import companyCard from '../blocks/company-card/company-card';
 
 // eslint-disable-next-line
 $(() => {
@@ -22,4 +23,5 @@ $(() => {
   stickyNavbar();
   scrollRevealInit();
   upload();
+  companyCard();
 });

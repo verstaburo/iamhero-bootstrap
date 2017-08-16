@@ -1,13 +1,144 @@
 .company-card {
-  display: flex;
-  background-color: #fff;
-  max-height: 160px;
+  min-height: 160px;
+  max-width: 875px;
+  padding-bottom: 55px;
+  position: relative;
+  transition: box-shadow .25s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 32.66px 13.34px rgba(28, 40, 57, .34);
+    z-index: 1;
+
+    .company-card__footer {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &__full-image {
+    height: 0;
+    transition: height .5s ease-in-out;
+    width: 100%;
+  }
+
+  &__wrap {
+    display: flex;
+    background-color: #fff;
+  }
 
   &__logo {
-    width: 165px;
+    flex-basis: 165px;
+    flex-shrink: 0;
   }
 
   &__content {
     padding: 25px 35px 25px 55px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  &__branch {
+    font-size: 17px;
+    letter-spacing: -.04em;
+  }
+
+  &__location {
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 30px;
+    letter-spacing: -.04em;
+  }
+
+  &__text {
+    max-height: 32px;
+    transition: max-height .25s ease-in-out;
+    overflow-y: hidden;
+    margin-bottom: 0;
+    margin-top: 13px;
+  }
+
+  &__footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    background-color: #35475a;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease-in-out;
+  }
+
+  &__toggle-btn {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: -.04em;
+    display: flex;
+    align-items: center;
+    outline: none;
+
+    svg {
+      width: 25px;
+      height: 15px;
+      stroke: $color-yellow;
+      margin-right: 12px;
+      fill: transparent;
+    }
+
+    &.js-company-less {
+      display: none;
+    }
+  }
+
+  &__link {
+    background-color: #283649;
+    transition: background-color .25s ease-in-out, color .25s ease-in-out;
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: -.04em;
+    padding-left: 18px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &:hover {
+      background-color: $color-yellow;
+      color: #263446;
+
+      svg {
+        stroke: #3b4d62;
+      }
+    }
+
+    svg {
+      width: 19px;
+      height: 4px;
+      fill: transparent;
+      stroke: $color-yellow;
+      transition: stroke .25s ease-in-out;
+      margin-right: 20px;
+    }
+  }
+
+  &_expanded {
+
+    .company-card__full-image {
+      height: 255px;
+    }
+
+    .company-card__text {
+      max-height: 100%;
+    }
   }
 }

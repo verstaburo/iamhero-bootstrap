@@ -47,13 +47,12 @@ textarea {
 // Links
 
 a {
-  color: $link-color;
+  color: inherit;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: $link-hover-color;
-    text-decoration: $link-hover-decoration;
+    text-decoration: inherit;
   }
 
   &:focus {

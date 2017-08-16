@@ -2,6 +2,8 @@ extends ../../layouts/inner-page
 include ../../blocks/inner-sidebar/inner-sidebar
 include ../../blocks/button-dropdown/button-dropdown
 include ../../blocks/checkbox/checkbox
+include ../../blocks/company-card/company-card
+include ../../blocks/page/page
 include ../../components/inner-header/inner-header
 include ../../components/aside-filter/aside-filter
 include ../../components/top-filter/top-filter
@@ -28,3 +30,14 @@ block aside-filter
 
 
 block content
+  +page._inner-big._faded
+    +company-card('1', 'BS Company', 'Luxury alloy wheels')
+    +company-card('2', 'Freedom Agency', 'Freedom Agency')
+    +company-card('3', 'Maxdino', 'Advertisement agency')
+    +company-card('4', 'Trade Plus', 'Advertising')
+    +company-card('5', 'Monkey Logo designer Needed', 'Graphic design studio')
+    +company-card('6', 'Arbo tech', 'Design agency')
+    +company-card('3', 'Maxdino', 'Advertisement agency')
+    +company-card('4', 'Trade Plus', 'Advertising')
+    +company-card('5', 'Monkey Logo designer Needed', 'Graphic design studio')
+    +company-card('5', 'Monkey Logo designer Needed', 'Graphic design studio')
