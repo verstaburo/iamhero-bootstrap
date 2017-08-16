@@ -1,0 +1,13 @@
+.company-card {
+  display: flex;
+  background-color: #fff;
+  max-height: 160px;
+
+  &__logo {
+    width: 165px;
+  }
+
+  &__content {
+    padding: 25px 35px 25px 55px;
+  }
+}

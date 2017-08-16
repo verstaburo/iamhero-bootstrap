@@ -1,0 +1,57 @@
+.aside-filter {
+  position: fixed;
+  transform: translateZ(0);
+  top: 110px;
+  left: 55px;
+  width: 335px;
+  height: 100%;
+  background-color: #fff;
+
+  &__item {
+    padding-left: 55px;
+    padding-right: 55px;
+    border-top: 1px solid grey;
+
+    &:first-child {
+      padding-top: 60px;
+      border-top: none;
+    }
+  }
+
+  .checkbox, .btn-select {
+
+    &:not(:first-of-type) {
+      margin-top: 22px;
+    }
+  }
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #263240;
+    margin-bottom: 25px;
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__heading-icon {
+    width: 27px;
+    height: 27px;
+    fill: transparent;
+    stroke: $color-yellow;
+    margin-right: 14px;
+  }
+
+  &__subheading {
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #263240;
+  }
+}

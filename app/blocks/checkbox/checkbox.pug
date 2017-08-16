@@ -1,0 +1,10 @@
+include ../icon/icons
+
+mixin checkbox(checked, name)
+  +b.LABEL.checkbox&attributes(attributes)
+    +e.INPUT(type='checkbox' value='' name=name||'', checked=false||checked).input
+    +e.SPAN.box
+      +icon('check').__icon
+    if block
+      +e.SPAN.text
+        block

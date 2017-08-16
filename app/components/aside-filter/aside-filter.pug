@@ -1,0 +1,15 @@
+include ../../blocks/icon/icons
+
+mixin aside-filter()
+  +b.ASIDE.aside-filter&attributes(attributes)
+    block
+
+mixin aside-filter-item
+  +e.item&attributes(attributes)
+    block
+
+mixin aside-filter-heading(icon)
+  +e.heading&attributes(attributes)
+    +icon(icon).__heading-icon
+    h4
+      block

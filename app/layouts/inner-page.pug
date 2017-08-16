@@ -1,0 +1,22 @@
+include ../../node_modules/bemto.pug/bemto
+include ../blocks/page/page
+include ../blocks/inner-sidebar/inner-sidebar
+include ../components/inner-header/inner-header
+//- include ../components/footer/footer
+//- include ../components/get-started/get-started
+
+doctype html
+html(lang='en')
+  include head
+  body
+    +inner-header
+    +inner-sidebar
+    block top-filter
+    block aside-filter
+    +page
+      block background
+      block content
+
+    script(src='assets/scripts/libs/bootstrap.min.js')
+    script(src='assets/scripts/libs/rangeslider.min.js')
+    script(src='assets/scripts/app.min.js')

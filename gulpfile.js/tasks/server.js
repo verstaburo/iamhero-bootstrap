@@ -7,6 +7,7 @@ const bs = browserSync('server');
 gulp.task('server', () => {
   bs.init({
     open: true,
+    notify: false,
     reloadOnRestart: true,
     port: 3000,
     snippetOptions: {
