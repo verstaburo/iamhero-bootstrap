@@ -1,0 +1,10 @@
+include ../play-video/play-video
+
+mixin company-video()
+  +b.company-video&attributes(attributes)
+    +e.controls
+      +play-video-small.__play
+      +e.SPAN.text Company video represent
+    iframe(src="https://www.youtube.com/embed/6bvsgq1qDag?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen).company-video__item
+
+    block

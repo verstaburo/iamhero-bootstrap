@@ -1,0 +1,17 @@
+extends ../../layouts/inner-page
+include ../../blocks/page/page
+include ../../blocks/bg-image/bg-image
+include ../../components/company-profile-card/company-profile-card
+include ../../blocks/company-menu/company-menu
+
+block head
+  - var pageTitle = 'I Am Hero - Company profile awards'
+
+block content
+  +page._inner-standart
+    +bg-image('company-profile-awards/bg.jpg').__top-bg._small._overlay_blue._inner
+    +e.company.container
+      .row
+        .col-md-offset-3.col-md-18
+          +company-profile-card
+          +company-menu.__company-menu

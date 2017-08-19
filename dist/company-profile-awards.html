@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I Am Hero - Company profile awards</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="inner-header">
+        <div class="row">
+            <div class="inner-header__column col-md-2">
+                <a class="inner-header__logo" href="#">
+                    <svg><use xlink:href="assets/images/icon.svg#icon_logo-white"></use></svg>
+                </a>
+            </div>
+            <div class="inner-header__column inner-header__column_no-gap col-md-10">
+                <label class="search search_dark">
+                    <input class="search__input" type="text" placeholder="Search for heroes..." />
+                    <button class="search__icon" type="submit">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+                    </button>
+                </label>
+            </div>
+            <div class="inner-header__column col-md-4"></div>
+            <div class="inner-header__column inner-header__column_no-gap inner-header__column_hover inner-header__column_hover_dark col-md-1">
+                <button class="inner-header__notification">
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    <span class="inner-header__notification-badge">1</span>
+                </button>
+            </div>
+            <div class="inner-header__column inner-header__column_hover inner-header__column_hover_dark col-md-4">
+                <div class="media-secondary">
+                    <div class="media-left">
+                        <img class="img-circle media-object" src="assets/images/user/user.png" />
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Eugene Sheeleen</h4>Dezi Design Agency</div>
+                </div>
+                <svg class="inner-header__caret"><use xlink:href="assets/images/icon.svg#icon_caret-bold"></use></svg>
+            </div>
+            <div class="inner-header__column inner-header__column_hover inner-header__column_hover_yellow inner-header__column_no-gap col-md-3">
+                <a class="inner-header__promo" href="#">Buy packages</a>
+            </div>
+        </div>
+    </header>
+    <ul class="inner-sidebar">
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-dashboard"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Dashboard</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-messages"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Messages</span>
+            <span class="inner-sidebar__badge">1</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Search</span>
+        </li>
+        <li class="inner-sidebar__item active">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Shortlists</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Job Offers</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-statistics"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Stats</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a class="inner-sidebar__link" href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Settings</span>
+        </li>
+    </ul>
+    <main class="page page_inner-standart" role="main">
+        <div class="bg-image page__top-bg page__top-bg_small page__top-bg_overlay_blue page__top-bg_inner">
+            <img src="assets/images/company-profile-awards/bg.jpg" />
+        </div>
+        <div class="page__company container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-18">
+                    <div class="company-profile-card">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bg-image company-profile-card__logo">
+                                    <img src="assets/images/company-profile-awards/logo.jpg" />
+                                </div>
+                                <div class="company-video company-profile-card__video">
+                                    <div class="company-video__controls">
+                                        <div class="play-video-small company-video__play"></div>
+                                        <span class="company-video__text">Company video represent</span>
+                                    </div>
+                                    <iframe class="company-video__item" src="https://www.youtube.com/embed/6bvsgq1qDag?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-18">
+                                <div class="company-profile-card__header">
+                                    <h2>VOSSEN</h2>
+                                    <a class="company-profile-card__website" href="#">www.vossenwheels.com</a>
+                                </div>
+                                <h4>Quality alloy car wheels</h4>
+                                <h5>Los Angeles, USA</h5>
+                                <div class="company-profile-card__text">
+                                    <p>Vossen is dedicated to providing quality wheels and lifestyle products for those who value excellence.</p>
+                                    <p>Our brand aims to reflect a passion for ingenuity and a desire to impact not only the automotive world, but culture at large.</p>
+                                    <p>At Vossen, we place a high emphasis on design. Like our customers, we value the time and work that goes into creating and manufacturing products that are innovative and aesthetically pleasing. A commitment to providing
+                                        our customers with the best has positioned Vossen at the forefront of our industry. From our events to our</p>
+                                </div>
+                                <a class="company-profile-card__icon-item" href="#">
+                                    <svg class="company-profile-card__icon"><use xlink:href="assets/images/icon.svg#icon_logo"></use></svg>
+                                    <b>25</b>Heroes</a>
+                                <a class="company-profile-card__icon-item" href="#">
+                                    <svg class="company-profile-card__icon"><use xlink:href="assets/images/icon.svg#icon_person"></use></svg>
+                                    <b>267</b>Total Employes</a>
+                                <a class="company-profile-card__icon-item" href="#">
+                                    <svg class="company-profile-card__icon"><use xlink:href="assets/images/icon.svg#icon_bag"></use></svg>
+                                    <b>5</b>Vacancies</a>
+                            </div>
+                        </div>
+                        <div class="company-profile-card__map">
+                            <div class="map" id="map"></div>
+                        </div>
+                    </div>
+                    <div class="company-menu page__company-menu">
+                        <ul class="company-menu__nav" role="tablist">
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="##phylosophy" aria-controls="#phylosophy">Phylosophy</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="##vacancies" aria-controls="#vacancies">Vacancies</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="##stats" aria-controls="#stats">Stats</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="##branch" aria-controls="#branch">Branch</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="##contacts" aria-controls="#contacts">Contacts</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="##gallery" aria-controls="#gallery">Gallery</a>
+                            </li>
+                            <li class="active" role="presentation">
+                                <a data-toggle="tab" role="tab" href="##awards" aria-controls="#awards">Awards</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="##social" aria-controls="#social">Social</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content company-menu__content">
+                            <div class="tab-pane fade" role="tabpanel" id="phylosophy"></div>
+                            <div class="tab-pane fade" role="tabpanel" id="vacancies"></div>
+                            <div class="tab-pane fade" role="tabpanel" id="stats"></div>
+                            <div class="tab-pane fade" role="tabpanel" id="branch"></div>
+                            <div class="tab-pane fade" role="tabpanel" id="contacts"></div>
+                            <div class="tab-pane fade" role="tabpanel" id="gallery"></div>
+                            <div class="tab-pane fade active in" role="tabpanel" id="awards">
+                                <span class="company-menu__title">AWARDS</span>
+                                <a class="award company-menu__card" href="#">
+                                    <span class="bg-image award__img">
+                                        <img src="assets/images/company-profile-awards/award1.jpg" />
+                                    </span>
+                                    <span class="award__badge">new</span>
+                                    <span class="award__content">
+                                        <h3 class="award__title">Red Dot Award</h3>
+                                        <span class="award__year">2017</span>
+                                        <p class="award__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere
+                                            with his roommate Jason Germain and a few close friends in 1999.</p>
+                                    </span>
+                                </a>
+                                <a class="award company-menu__card" href="#">
+                                    <span class="bg-image award__img">
+                                        <img src="assets/images/company-profile-awards/award2.jpg" />
+                                    </span>
+                                    <span class="award__content">
+                                        <h3 class="award__title">IDA</h3>
+                                        <span class="award__year">2016</span>
+                                        <p class="award__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere
+                                            with his roommate Jason Germain and a few close friends in 1999.</p>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="social"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/scripts/libs/bootstrap.min.js"></script>
+    <script src="assets/scripts/libs/rangeslider.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>

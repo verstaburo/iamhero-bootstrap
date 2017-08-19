@@ -1,0 +1,65 @@
+.company-menu {
+  display: block;
+  background-color: #fff;
+  border: 1px solid rgb(236, 242, 244);
+  box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .06);
+
+  &__nav {
+    padding-left: 65px;
+    padding-right: 65px;
+    margin: 0;
+    font-size: 0;
+    margin-top: -1px;
+    border-bottom: 1px solid #ecf2f4;
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+
+      &:not(:first-of-type) {
+        margin-left: 25px;
+      }
+
+      a {
+        padding-left: 8px;
+        padding-right: 8px;
+        font-weight: 100;
+        letter-spacing: -.04em;
+        display: block;
+        font-size: 16px;
+        line-height: 3.125;
+        color: #36464f;
+        transition: color .25s ease-in-out, background-color .25s ease-in-out;
+
+        &:hover {
+          color: #fff;
+          background-color: #3a4d61;
+        }
+      }
+      /* stylelint-disable */
+      &.active {
+
+        a {
+          color: #fff;
+          background-color: #3a4d61;
+        }
+      }
+      /* stylelint-enable */
+    }
+  }
+
+  &__content {
+    padding: 60px 65px;
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+  }
+
+  &__card {
+    margin-top: 45px;
+  }
+}

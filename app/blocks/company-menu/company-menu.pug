@@ -1,0 +1,26 @@
+include ../tabs/tabs
+include ../award/award
+
+mixin company-menu()
+  +b.company-menu&attributes(attributes)
+    +tabs.company-menu__nav
+      +tab('#phylosophy') Phylosophy
+      +tab('#vacancies') Vacancies
+      +tab('#stats') Stats
+      +tab('#branch') Branch
+      +tab('#contacts') Contacts
+      +tab('#gallery') Gallery
+      +tab('#awards').active Awards
+      +tab('#social') Social
+    +tab-content.company-menu__content
+      +tab-pane#phylosophy
+      +tab-pane#vacancies
+      +tab-pane#stats
+      +tab-pane#branch
+      +tab-pane#contacts
+      +tab-pane#gallery
+      +tab-pane.active.in#awards
+        +e.SPAN.title AWARDS
+        +award('award1', 'Red Dot Award', '2017', true).__card
+        +award('award2', 'IDA', '2016').__card
+      +tab-pane#social

@@ -45,3 +45,24 @@
     color: $color-lightgreen;
   }
 }
+
+.play-video-small {
+  position: relative;
+  width: 75px;
+  height: 37px;
+  border: 4px solid $color-lightgreen;
+  border-radius: 16.5px;
+  transition: background-color .25s ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%);
+    left: calc(50% + 4.25px);
+    top: calc(50% - 8.5px);
+    border-top: 8.5px solid transparent;
+    border-bottom: 8.5px solid transparent;
+    border-left: 20px solid #fff;
+    transition: border-left-color .25s ease-in-out;
+  }
+}

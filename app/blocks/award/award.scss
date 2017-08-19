@@ -1,0 +1,47 @@
+.award {
+  display: flex;
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #e7ebee;
+  box-shadow: 2.298px 1.928px 6px 0 rgba(7, 14, 19, .07);
+
+  &__img {
+    flex-basis: 190px;
+    flex-shrink: 0;
+  }
+
+  &__content {
+    padding: 25px 35px 40px 25px;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #e2553e;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: -.04em;
+    text-transform: uppercase;
+    line-height: 1.375;
+    padding-left: 7px;
+    padding-right: 10px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  &__year {
+    margin-top: 17px;
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: -.04em;
+  }
+
+  &__text {
+    margin-top: 20px;
+  }
+}

@@ -10,6 +10,8 @@ import stickyNavbar from '../blocks/sidebar-menu/sidebar-menu';
 import scrollRevealInit from './common/scrollreveal';
 import upload from '../blocks/upload/upload';
 import companyCard from '../blocks/company-card/company-card';
+import companyVideo from '../blocks/company-video/company-video';
+import map from '../blocks/map/map';
 
 // eslint-disable-next-line
 $(() => {
@@ -24,4 +26,6 @@ $(() => {
   scrollRevealInit();
   upload();
   companyCard();
+  companyVideo();
+  map();
 });

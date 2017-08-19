@@ -1,0 +1,88 @@
+.company-profile-card {
+  display: block;
+  background-color: #fff;
+  padding: 65px 65px 0;
+  border: 1px solid rgb(236, 242, 244);
+  box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .06);
+
+  &__logo {
+    height: 265px;
+  }
+
+  &__video {
+    margin-top: 60px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  h3 {
+    margin-top: 15px;
+  }
+
+  &__website {
+    font-size: 16px;
+    letter-spacing: -.04em;
+    font-weight: 100;
+  }
+
+  &__text {
+    margin-top: 60px;
+    margin-bottom: 50px;
+
+    p {
+      margin-bottom: 0;
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__icon-item {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: $font-second;
+
+    svg {
+      width: 25px;
+      height: 20px;
+      fill: $color-lightgreen;
+      margin-right: 10px;
+    }
+
+    b {
+      margin-right: 5px;
+    }
+
+    &:not(:first-of-type) {
+      margin-left: 45px;
+    }
+  }
+
+  &__map {
+    height: 185px;
+    position: relative;
+
+    &::after {
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to bottom, #fff 0%, transparent 50%);
+    }
+  }
+}
