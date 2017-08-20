@@ -1,9 +1,14 @@
 .company-card {
   min-height: 160px;
   max-width: 875px;
-  padding-bottom: 55px;
   position: relative;
   transition: box-shadow .25s ease-in-out;
+  display: block;
+
+  &_bordered {
+    border: 1px solid #e7ebee;
+    box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .06);
+  }
 
   &:hover {
     box-shadow: 0 0 32.66px 13.34px rgba(28, 40, 57, .34);
@@ -62,9 +67,6 @@
   }
 
   &__footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     padding-left: 30px;
     display: flex;
     justify-content: space-between;

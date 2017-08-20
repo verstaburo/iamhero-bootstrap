@@ -1,5 +1,6 @@
 include ../tabs/tabs
 include ../award/award
+include ../company-card/company-card
 
 mixin company-menu()
   +b.company-menu&attributes(attributes)
@@ -12,15 +13,25 @@ mixin company-menu()
       +tab('#gallery') Gallery
       +tab('#awards').active Awards
       +tab('#social') Social
-    +tab-content.company-menu__content
-      +tab-pane#phylosophy
-      +tab-pane#vacancies
-      +tab-pane#stats
-      +tab-pane#branch
-      +tab-pane#contacts
-      +tab-pane#gallery
-      +tab-pane.active.in#awards
+    +tab-content
+      +tab-pane.company-menu__content.company-menu__content_faded#phylosophy
+        +e.SPAN.title History
+        p Established with the intent to provide a superior product, today Vossen holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our commitment to excellence, extends into every facet of what we do. From engineering to design and manufacturing, Vossen is redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the world, our customers have come to expect nothing less than sheer quality and innovation.
+        +bg-image('company-profile-awards/history.jpg').__image
+        +e.SPAN.title Inpiration
+        p Established with the intent to provide a superior product, today Vossen holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our commitment to excellence, extends into every facet of what we do. From engineering to design and manufacturing, Vossen is redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the world, our customers have come to expect nothing less than sheer quality and innovation.
+
+      +tab-pane.company-menu__content#vacancies
+        +e.SPAN.title Vacancies
+        +vacancy('vacancy1', 'Graphic Designer').__card
+        +vacancy('vacancy2', 'BBDO Moscow').__card
+        +vacancy('vacancy3', 'Aspire Logo designer Needed').__card
+      +tab-pane.company-menu__content#stats
+      +tab-pane.company-menu__content#branch
+      +tab-pane.company-menu__content#contacts
+      +tab-pane.company-menu__content#gallery
+      +tab-pane.company-menu__content.active.in#awards
         +e.SPAN.title AWARDS
         +award('award1', 'Red Dot Award', '2017', true).__card
         +award('award2', 'IDA', '2016').__card
-      +tab-pane#social
+      +tab-pane.company-menu__content#social

@@ -50,16 +50,41 @@
 
   &__content {
     padding: 60px 65px;
+    position: relative;
+
+    &_faded {
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, transparent 0%, #e7ebee 70%);
+      }
+    }
   }
 
   &__title {
+    display: block;
     font-size: 35px;
     font-weight: 100;
     letter-spacing: -.04em;
     text-transform: uppercase;
+    margin-bottom: 30px;
   }
 
   &__card {
-    margin-top: 45px;
+
+    &:not(:first-of-type) {
+      margin-top: 45px;
+    }
+  }
+
+  &__image {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    height: 630px;
   }
 }
