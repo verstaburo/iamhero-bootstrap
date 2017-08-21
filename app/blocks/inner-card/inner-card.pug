@@ -1,3 +1,62 @@
-mixin inner-card()
-  +b.inner-card&attributes(attributes)
+include ../bg-image/bg-image
+include ../icon/icon
+
+mixin inner-card(tag)
+  +b(tag||'div').inner-card&attributes(attributes)
     block
+
+mixin inner-card-wrap
+  +e.wrap&attributes(attributes)
+    block
+
+mixin inner-card-image(img)
+  +bg-image('company-profile/'+img).__image&attributes(attributes)
+
+mixin inner-card-text-content
+  +e.text-content&attributes(attributes)
+    block
+
+mixin inner-card-title
+  +e.H3.title&attributes(attributes)
+    block
+
+mixin inner-card-tags
+  +e.tags&attributes(attributes)
+    block
+
+mixin inner-card-subtitle
+  +e.SPAN.subtitle&attributes(attributes)
+    block
+
+mixin inner-card-text
+  +e.P.text&attributes(attributes)
+    block
+
+mixin inner-card-footer
+  +e.footer&attributes(attributes)
+    +e.BUTTON.toggle-btn.js-card-more
+      +icon('plus-border')
+      | Show more
+    +e.BUTTON.toggle-btn.js-card-less
+      +icon('minus-border')
+      | Show less
+    block
+
+mixin inner-card-button(icon, tag)
+  +e(tag||'button').button&attributes(attributes)
+    +icon(icon)
+    block
+
+
+mixin company-card(img, title, branch)
+  +inner-card('a')
+    +inner-card-image('company-card-full.jpg')._full
+    +inner-card-wrap
+      +inner-card-tags
+      +inner-card-text-content
+        +inner-card-title= title
+        +inner-card-subtitle= branch
+        +inner-card-subtitle._thin._inline Los Angeles, USA
+        +inner-card-text Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
+    +inner-card-footer
+      +inner-card-button('dots', 'a')._push_right Open company profile
