@@ -7,6 +7,10 @@
   height: 100%;
   background-color: #fff;
 
+  @media (max-width: $screen-sm-max) {
+    left: 0;
+  }
+
   &__item {
     padding-left: 55px;
     padding-right: 55px;

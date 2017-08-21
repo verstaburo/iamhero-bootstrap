@@ -12,6 +12,7 @@ import upload from '../blocks/upload/upload';
 import companyCard from '../blocks/company-card/company-card';
 import companyVideo from '../blocks/company-video/company-video';
 import map from '../blocks/map/map';
+import innerHeader from '../components/inner-header/inner-header';
 
 // eslint-disable-next-line
 $(() => {
@@ -28,4 +29,5 @@ $(() => {
   companyCard();
   companyVideo();
   map();
+  innerHeader();
 });

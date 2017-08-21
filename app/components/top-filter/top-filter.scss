@@ -11,4 +11,8 @@
   height: 55px;
   transform: translateZ(0);
   z-index: 4;
+
+  @media (max-width: $screen-sm-max) {
+    left: 0;
+  }
 }

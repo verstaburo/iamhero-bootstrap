@@ -4,6 +4,12 @@
   height: 100%;
   padding-right: 55px;
   position: relative;
+  background-color: transparent;
+  transition: background-color .25s ease-in-out;
+
+  &:hover, &:focus {
+    background-color: #242f3e;
+  }
 
   &_dark {
     background-image: linear-gradient(to right, #2e3d4e 0%, #1c2430 100%);

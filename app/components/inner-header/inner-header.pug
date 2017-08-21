@@ -2,21 +2,60 @@ include ../../blocks/logo/logo
 include ../../blocks/search/search
 include ../../blocks/media/media
 
+mixin notify-item
+  +e.A(href='#').notify-item&attributes(attributes)
+    +media-secondary('user/user.png', 'Marchello Mutti') sent you a message
+    +e.notify-item-type
+      +icon('header-message')
+      span 17 min ago
+
+mixin notify-item-secondary
+  +e.A(href='#').notify-item&attributes(attributes)
+    +media-secondary('user/user2.png', 'Jean Michianty') Accepted your job attend
+    +e.notify-item-type
+      +icon('menu-offers')
+      span 05:07
+
 mixin inner-header()
   +b.HEADER.inner-header&attributes(attributes)
-    .row
-      +e.column.col-md-2
-        +e.A(href='#').logo
-          +icon('logo-white')
-      +e.column._no-gap.col-md-10
-        +search._dark
-      +e.column.col-md-4
-      +e.column._no-gap._hover._hover_dark.col-md-1
-        +e.BUTTON.notification
+    +e.col.__logo
+      a(href='#')
+        +icon('logo-white')
+    +e.col.__search
+      +search._dark
+    +e.col.__search-btn
+      +icon('header-search')
+    +e.notify-wrap
+      +e.col._dropdown._hover._hover_dark.__notification
+        button
           +icon('header-notification')
           +e.SPAN.notification-badge 1
-      +e.column._hover._hover_dark.col-md-4
+        +e.dropdown-content
+          +notify-item
+          +notify-item-secondary
+          +notify-item
+          +notify-item
+          +notify-item
+          +e.A(href='#').notify-item._padded
+            +e.SPAN.notify-link Open all notifications
+            +icon('header-notification')
+      +e.col._dropdown._hover._hover_dark.__user
         +media-secondary('user/user.png', 'Eugene Sheeleen') Dezi Design Agency
-        +icon('caret-bold').__caret
-      +e.column._hover._hover_yellow._no-gap.col-md-3
-        +e.A(href='#').promo Buy packages
+        +icon('caret-bold')
+        +e.dropdown-content
+          +e.A(href='#').user-nav
+            +e.B.user-nav-badge current
+            +icon('header-hero')
+            | Hero Account
+          +e.A(href='#').user-nav.active
+            +e.B.user-nav-badge current
+            +icon('menu-offers')
+            | Dezi Design agency
+          +e.A(href='#').user-nav
+            +e.B.user-nav-badge current
+            +icon('menu-offers')
+            | Esdesign studio
+    +e.col._hover._hover_yellow.__promo
+      +e.A(href='#') Buy packages
+    +e.col.__burger
+      +icon('header-burger')
