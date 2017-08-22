@@ -10,26 +10,12 @@ form {
 
   label {
     position: relative;
+  }
 
-    &.error > input, &.error > textarea {
-      border-color: #e64418;
-    }
+  .has-error, .has-success, .has-warning {
 
-    &.validated > input, &.validated > textarea {
-      border-color: #39d3a9;
-    }
-
-    .errortext {
-      position: absolute;
-      letter-spacing: -.04em;
-      font-weight: 700;
-      color: #df4116;
-      font-size: 14px;
-      width: 85%;
-      top: 105%;
-      text-align: right;
-      right: 18px;
-      line-height: 1.2em;
+    .help-block {
+      opacity: 1;
     }
   }
 }
@@ -475,7 +461,7 @@ input[type="search"] {
   @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
 }
 .has-error {
-  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+  @include form-control-validation(#df4116, $state-danger-text, $state-danger-bg);
 }
 
 // Reposition feedback icon if input has visible label above
@@ -494,11 +480,20 @@ input[type="search"] {
 //
 // Apply to any element you wish to create light text for placement immediately
 // below a form control. Use for general help, formatting, or instructional text.
-
 .help-block {
-  display: block; // account for any element using help-block
-  margin-top: 5px;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 3px;
+  letter-spacing: -.04em;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: right;
+  line-height: 1.2em;
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
   color: lighten($text-color, 25%); // lighten the text some for contrast
 }
 

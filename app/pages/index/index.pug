@@ -1,4 +1,5 @@
 extends ../../layouts/default
+include ../../blocks/select/select
 
 block head
   - var pageTitle = 'Versta Project Template'
@@ -14,3 +15,4 @@ block content
     +demo-link('Profile3x2_edit3', 'profile-edit')
     +demo-link('Company listing', 'company-listing')
     +demo-link('Company profile2 awards', 'company-profile-awards')
+    //- +select([{value: 1, text: '1'}, {value: 2, text: '2'}, {value: 3, text: '3'}], 'Name')

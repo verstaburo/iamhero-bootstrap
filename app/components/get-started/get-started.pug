@@ -15,14 +15,14 @@ mixin get-started()
         +e.input.col-lg-5.col-xm-6.col-md-8.col-sm-12
           label
             +input('Full name', 'name').form-control-secondary
-            span.errortext
-        +e.input.col-lg-5.col-xm-6.col-xm-offset-0.col-md-offset-4.col-md-8.col-sm-12
-          label.validated
+            span.help-block
+        +e.input.col-lg-5.col-xm-6.col-xm-offset-0.col-md-offset-4.col-md-8.col-sm-12.has-success
+          label
             +input('E-mail adress', 'email').form-control-secondary
-            span.errortext
-        +e.input.col-lg-5.col-xm-6.col-md-8.col-sm-12
-          label.error
+            span.help-block
+        +e.input.col-lg-5.col-xm-6.col-md-8.col-sm-12.has-error
+          label
             +input('Create password', 'password').form-control-secondary
-            span.errortext Password must be at least 8 symbols long
+            span.help-block Password must be at least 8 symbols long
         +e.input.col-lg-4.col-xm-6.col-xm-offset-0.col-md-offset-4.col-md-16.col-xs-24
           +button.btn-secondary Continue

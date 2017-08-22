@@ -201,11 +201,17 @@ mixin resume-plate(edit)
             +e.A(href='#').control
               +icon('save')
         +timeline-item.__item
-          +timeline-item-header('work', '17/02/2015 — 17/06/2016')._red
+          if edit
+            +timeline-item-header-edit('work', '17/02/2015 — 17/06/2016')._red
+          else
+            +timeline-item-header('work', '17/02/2015 — 17/06/2016')._red
           h4 McDonalds Berlin
           p Stated work at local McDonalds restaurant as a cashier
         +timeline-item.__item
-          +timeline-item-header('EDUCATION', '17/02/2016 — 17/06/2016')._lightgreen
+          if edit
+            +timeline-item-header-edit('EDUCATION', '17/02/2016 — 17/06/2016')._lightgreen
+          else
+            +timeline-item-header('EDUCATION', '17/02/2016 — 17/06/2016')._lightgreen
           h4 Univercity Of Creative art Rocherster Great Britain
           p Graduated as a grapchic design bachelor
     if edit

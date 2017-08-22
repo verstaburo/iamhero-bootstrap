@@ -20,7 +20,7 @@ mixin thumbnail-img(src)
 mixin thumbnail-case-controls()
   .thumbnail-controls&attributes(attributes)
     .thumbnail-controls-item
-      img(src='assets/images/icon/edit.png')
+      +icon('pencil', true).icon-edit
     .thumbnail-controls-item
       +icon-close.icon-close_white
 

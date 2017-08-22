@@ -10,6 +10,9 @@ module.exports = (watch = false) => ({
     filename: 'app.min.js',
     path: path.resolve('./dist/assets/scripts/'),
   },
+  externals: {
+    jquery: 'jQuery',
+  },
   watch,
   devtool: isDebug ? 'cheap-module-inline-source-map' : false,
   module: {

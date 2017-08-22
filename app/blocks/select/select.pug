@@ -1,0 +1,6 @@
+mixin select(data, placeholder, select2)
+  +b.SELECT(placeholder=placeholder||'', class=select2||'js-select')&attributes(attributes)
+    if placeholder
+      option(value='')= placeholder
+    each option in data
+      option(value=option.value)= option.text

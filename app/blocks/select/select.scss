@@ -1,0 +1,32 @@
+select {
+  display: none;
+}
+
+.selectize {
+
+  &__input {
+    position: relative;
+    border: 1px solid #39464f;
+    border-radius: 25px;
+    padding: 5px;
+
+    input {
+      font-size: 16px;
+      letter-spacing: -.04em;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__caret {
+    position: absolute;
+    fill: transparent;
+    stroke: black;
+    width: 10px;
+    height: 7px;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 8px;
+  }
+}
