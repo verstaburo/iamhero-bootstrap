@@ -1,11 +1,12 @@
 .nav {
 
   &-link {
+    display: block;
     color: #688595;
     border-bottom: 7px solid transparent;
 
-    &-bordered {
-      border-color: $color-lightgreen;
+    &-border-success {
+      border-color: $brand-success;
     }
   }
 }

@@ -62,12 +62,12 @@
         &:hover {
 
           .switch__text {
-            color: $color-lightgreen;
+            color: $brand-success;
           }
         }
 
         .switch__text {
-          border-bottom: 1px solid $color-lightgreen;
+          border-bottom: 1px solid $brand-success;
         }
       }
     }

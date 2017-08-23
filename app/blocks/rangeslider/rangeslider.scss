@@ -30,28 +30,28 @@
     &_lightgreen {
 
       & + .rangeslider > .rangeslider__fill {
-        background-color: $color-lightgreen;
+        background-color: $brand-success;
       }
     }
 
     &_orange {
 
       & + .rangeslider > .rangeslider__fill {
-        background-color: $color-orange;
+        background-color: $orange;
       }
     }
 
     &_blue {
 
       & + .rangeslider > .rangeslider__fill {
-        background-color: $color-blue;
+        background-color: $blue;
       }
     }
 
     &_red {
 
       & + .rangeslider > .rangeslider__fill {
-        background-color: $color-red;
+        background-color: $red;
       }
     }
   }
@@ -61,7 +61,7 @@
     height: 8px;
     left: -1px;
     top: -1px;
-    background-color: $color-grey;
+    background-color: $gray;
     border-radius: 4px;
     cursor: pointer;
   }

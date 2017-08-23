@@ -25,10 +25,9 @@ html {
 }
 
 body {
-  font-family: $font-main;
+  font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  font-weight: 300;
   color: $text-color;
   background-color: $body-bg;
 }
@@ -47,12 +46,13 @@ textarea {
 // Links
 
 a {
-  color: inherit;
+  color: $link-color;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    text-decoration: inherit;
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
   }
 
   &:focus {

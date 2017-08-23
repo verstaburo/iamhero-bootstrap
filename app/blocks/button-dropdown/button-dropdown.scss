@@ -9,7 +9,7 @@
     top: 50%;
     right: 14px;
     stroke-width: 2px;
-    stroke: $color-grey;
+    stroke: $gray;
     fill: transparent;
     transition: stroke .25s ease-in-out;
     pointer-events: none;
@@ -18,7 +18,7 @@
   &.open {
 
     .dropdown-toggle {
-      border-color: $color-lightgreen;
+      border-color: $brand-success;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
       border-bottom-color: transparent;
@@ -32,7 +32,7 @@
     }
 
     > svg {
-      stroke: $color-lightgreen;
+      stroke: $brand-success;
     }
   }
 
@@ -43,7 +43,7 @@
   .dropdown-toggle {
     padding-right: 40px;
     position: relative;
-    color: $color-grey;
+    color: $gray;
     text-align: left;
   }
 }

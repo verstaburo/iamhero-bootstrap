@@ -3,20 +3,16 @@
 // --------------------------------------------------
 
 .label {
-  display: inline-block;
-  padding: .2em .6em;
-  font-size: 100%;
-  letter-spacing: -.04em;
-  font-weight: 400;
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
   line-height: 1;
   color: $label-color;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 20px;
-  border: 1px solid transparent;
-  transition: background-color .25s ease-in-out;
-  cursor: default;
+  border-radius: .25em;
 
   // [converter] extracted a& to a.label
 
@@ -46,13 +42,7 @@ a.label {
 // Contextual variations (linked labels get darker on :hover)
 
 .label-default {
-  background-color: #fff;
-  border-color: #d9d9d9;
-  color: inherit;
-
-  &:hover {
-    background-color: $color-lightgreen;
-  }
+  @include label-variant($label-default-bg);
 }
 
 .label-primary {

@@ -11,7 +11,7 @@
   &__item {
     display: inline-block;
     padding: 13px;
-    border: 3px solid $color-lightgreen;
+    border: 3px solid $brand-success;
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -27,7 +27,7 @@
     }
 
     &:hover {
-      background-color: $color-lightgreen;
+      background-color: $brand-success;
     }
 
     svg {

@@ -29,7 +29,7 @@
     justify-content: center;
     width: 16px;
     height: 16px;
-    border: 1px solid $color-grey;
+    border: 1px solid $gray;
     transition: background-color .25s ease-in-out;
     border-radius: 50%;
 
@@ -37,7 +37,7 @@
       content: '';
       width: 10px;
       height: 10px;
-      background-color: $color-grey;
+      background-color: $gray;
       transform: scale(0);
       transition: transform .25s ease-in-out;
       border-radius: 50%;
@@ -45,7 +45,7 @@
   }
 
   &__text {
-    color: $color-grey;
+    color: $gray;
     display: inline-block;
     margin-left: 9px;
     font-size: 16px;

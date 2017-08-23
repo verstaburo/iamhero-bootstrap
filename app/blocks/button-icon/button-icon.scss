@@ -6,7 +6,7 @@
     vertical-align: middle;
 
     &_grey {
-      fill: $color-grey;
+      fill: $gray;
     }
 
     &_stroke {
@@ -16,7 +16,7 @@
       }
 
       &_grey {
-        stroke: $color-grey;
+        stroke: $gray;
       }
     }
 

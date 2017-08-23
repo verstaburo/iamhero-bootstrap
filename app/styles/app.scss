@@ -1,7 +1,52 @@
 @import 'helpers/mixins'; // Миксины
 @import 'helpers/fonts'; // Шрифты
 @import 'libs/bootstrap-sass/bootstrap';
+@import 'helpers/bs-mixins';
 @import '../blocks/**/*';
 @import '../components/**/*';
 @import '../pages/**/*';
-@import '../../node_modules/selectize/dist/css/selectize';
+// @import '../../node_modules/selectize/dist/css/selectize';
+
+body {
+  font-weight: 300;
+}
+
+a {
+  transition: all .25s ease-in-out;
+}
+
+label {
+  font-weight: inherit;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.help-block {
+  position: absolute;
+  letter-spacing: -.04em;
+  font-weight: 700;
+  color: #df4116;
+  font-size: 14px;
+  width: 85%;
+  top: 105%;
+  text-align: right;
+  right: 18px;
+  line-height: 1.2em;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -.04em;
+}
+
+p {
+  font-family: $font-family-open-sans;
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+:focus {
+  outline: none !important;
+}

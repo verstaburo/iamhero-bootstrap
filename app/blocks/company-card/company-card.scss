@@ -91,7 +91,7 @@
     svg {
       width: 25px;
       height: 15px;
-      stroke: $color-yellow;
+      stroke: $brand-warning;
       margin-right: 12px;
       fill: transparent;
     }
@@ -114,7 +114,7 @@
     height: 100%;
 
     &:hover {
-      background-color: $color-yellow;
+      background-color: $brand-warning;
       color: #263446;
 
       svg {
@@ -126,7 +126,7 @@
       width: 19px;
       height: 4px;
       fill: transparent;
-      stroke: $color-yellow;
+      stroke: $brand-warning;
       transition: stroke .25s ease-in-out;
       margin-right: 20px;
     }

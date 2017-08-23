@@ -9,11 +9,11 @@
     .company-video__text {
       color: #203040;
       background-image: none;
-      background-color: $color-lightgreen;
+      background-color: $brand-success;
     }
 
     .company-video__play {
-      background-color: $color-lightgreen;
+      background-color: $brand-success;
 
       &::after {
         border-left-color: #203040;
@@ -39,7 +39,7 @@
   }
 
   &__text {
-    font-family: $font-second;
+    font-family: $font-family-second;
     font-size: 12px;
     font-weight: 600;
     color: #fff;

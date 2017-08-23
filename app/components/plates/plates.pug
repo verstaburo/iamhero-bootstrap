@@ -21,7 +21,7 @@ include ../../blocks/input-markup/input-markup
 mixin plate-avatar(src)
   +bg-image(src).__avatar&attributes(attributes)
     +upload.plate__avatar-button
-      +button-icon.btn-success
+      +button-icon.btn-success-transparent
         +button-icon-item('camera')._white._before
         +button-icon-text Change profile picture
 
@@ -34,9 +34,9 @@ mixin avatar-plate
     +e.info-col._form
       +logo(true).__logo
       +e.FORM.hero-form
-        +input('Name Surname').form-control-border-bottom.form-control-border-big.__header
-        +input('Vocation/position').form-control-border-bottom.font-larger
-        +input('Lacation').form-control-border-bottom.font-large
+        +input('Name Surname').form-control-border-bottom.form-control-border-big.form-control-big.__header
+        +input('Vocation/position').form-control-border-bottom.form-control-small
+        +input('Lacation').form-control-border-bottom.form-control-smaller
         +textarea('5').form-control-area-static A few words about yourself
 
 mixin avatar-plate-static
@@ -93,15 +93,15 @@ mixin talents-plate-static
     +e.H2.header Talents
     p The list of my professional skills which describes my strongest sides
     +e.tag-container.__top-50
-      +label-default() Singing
-      +label-default() Dancing
-      +label-default() Song writing
-      +label-default() Drawing amazing landscapes
-      +label-default() Photography
-      +label-default() Lomogpraphy
-      +label-default() Tattoo
-      +label-default() Computer gaming
-      +label-default() Education specialist
+      +label-talents Singing
+      +label-talents Dancing
+      +label-talents Song writing
+      +label-talents Drawing amazing landscapes
+      +label-talents Photography
+      +label-talents Lomogpraphy
+      +label-talents Tattoo
+      +label-talents Computer gaming
+      +label-talents Education specialist
 
 mixin language-heading
   +e.lang-row.hidden-xs.hidden-sm
@@ -299,7 +299,7 @@ mixin social-plate-static
       +tab('pinterest').social-header__item
         +icon('pinterest', true).social-header__icon
       li.social-header__item.social-header__item_push_right.social-header__item_flexible.social-header__item_mobile-first
-        +button-icon.__item_push_right.btn-success.social-header__button
+        +button-icon.__item_push_right.btn-success-transparent.social-header__button
           +button-icon-item('plus')._stroke_white._big
           +button-icon-text Add new social tab
 

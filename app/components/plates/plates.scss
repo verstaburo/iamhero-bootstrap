@@ -100,7 +100,7 @@
       margin-bottom: 0;
     }
 
-    .font-larger {
+    .form-control-small {
       margin-top: 5px;
     }
 
@@ -312,8 +312,8 @@
       }
 
       &.active {
-        background-color: $color-lightgreen;
-        border-color: $color-lightgreen;
+        background-color: $brand-success;
+        border-color: $brand-success;
       }
     }
 

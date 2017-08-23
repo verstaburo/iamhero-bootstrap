@@ -1,17 +1,58 @@
 .form-control {
+  transition: all .25s ease-in-out;
+  font-size: 16px;
+  padding: 10px 16px 7px;
+
+  &::placeholder {
+    transition: color .25s ease-in-out;
+  }
+
+  &:hover {
+    border-color: #39464f;
+
+    &::placeholder {
+      color: #39464f;
+    }
+  }
+
+  &:focus, {
+    box-shadow: none;
+
+    .has-success &, .has-error & {
+      box-shadow: none;
+    }
+  }
+
+  &-area-static {
+    resize: none;
+  }
+
+  &-big {
+    height: 65px;
+  }
+
+  &-small {
+    height: 32px;
+    font-size: 22px;
+  }
+
+  &-smaller {
+    height: 30px;
+    font-size: 20px;
+  }
 
   &-border-bottom {
     border-top: none;
     border-left: none;
     border-right: none;
     border-radius: 0;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 1px solid #c9d0d6;
     box-shadow: none;
     padding: 0;
 
     &:focus {
       box-shadow: none;
-      border-color: $color-lightgreen;
+      border-color: $brand-success;
     }
   }
 
@@ -20,13 +61,15 @@
   }
 
   &-secondary {
+    height: 50px;
     background-color: transparent;
     border-color: #8898a3;
     color: #fff;
     font-size: 20px;
-    padding-bottom: 10px;
+    padding: 10px 15px;
 
     @media (max-width: $screen-xs-max) {
+      height: 38px;
       padding-top: 8px;
       padding-bottom: 8px;
       font-size: 14px;
@@ -36,14 +79,14 @@
       border-color: #fff;
 
       &::placeholder {
-        color: $color-grey;
+        color: $gray;
       }
     }
 
     &:focus {
 
       &::placeholder {
-        color: $color-grey;
+        color: $gray;
       }
     }
   }

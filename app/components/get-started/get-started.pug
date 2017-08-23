@@ -10,19 +10,19 @@ mixin get-started()
         +e.SPAN.heading_colored For Free
       +e.H3.subheading Over 500 000 heroes can’t be wrong...
       form.row
-        +e.switcher.col-lg-5.col-xm-6.col-xm-offset-0.col-md-offset-4.col-md-8.col-sm-12.__input
+        +e.switcher.col-xl-5.col-lg-6.col-lg-offset-0.col-md-offset-4.col-md-8.col-sm-12.__input
           +switch('Job seeker', 'Employer')._big
-        +e.input.col-lg-5.col-xm-6.col-md-8.col-sm-12
+        +e.input.col-xl-5.col-lg-6.col-md-8.col-sm-12
           label
             +input('Full name', 'name').form-control-secondary
             span.help-block
-        +e.input.col-lg-5.col-xm-6.col-xm-offset-0.col-md-offset-4.col-md-8.col-sm-12.has-success
+        +e.input.col-xl-5.col-lg-6.col-lg-offset-0.col-md-offset-4.col-md-8.col-sm-12.has-success
           label
             +input('E-mail adress', 'email').form-control-secondary
             span.help-block
-        +e.input.col-lg-5.col-xm-6.col-md-8.col-sm-12.has-error
+        +e.input.col-xl-5.col-lg-6.col-md-8.col-sm-12.has-error
           label
             +input('Create password', 'password').form-control-secondary
             span.help-block Password must be at least 8 symbols long
-        +e.input.col-lg-4.col-xm-6.col-xm-offset-0.col-md-offset-4.col-md-16.col-xs-24
+        +e.input.col-xl-4.col-lg-6.col-lg-offset-0.col-md-offset-4.col-md-16.col-xs-24
           +button.btn-secondary Continue

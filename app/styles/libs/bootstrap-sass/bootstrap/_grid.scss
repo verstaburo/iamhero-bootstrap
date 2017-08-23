@@ -8,39 +8,16 @@
 // Set the container width, and override it for fixed navbars in media queries.
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  @include container-fixed;
 
-  @include clearfix;
-
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
   @media (min-width: $screen-md-min) {
     width: $container-md;
   }
-
-  @media (min-width: $screen-xm-min) {
-    width: $container-xm;
-  }
-
   @media (min-width: $screen-lg-min) {
     width: $container-lg;
-  }
-
-  @media (min-width: $screen-xl-min) {
-    width: $container-xl;
-  }
-
-  &-mobile-padded {
-    @media (max-width: $screen-sm-max) {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    @media (max-width: $screen-xs-max) {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
   }
 }
 
@@ -60,9 +37,7 @@
 // Rows contain and clear the floats of your columns.
 
 .row {
-  margin-left: -25px;
-  margin-right: -25px;
-  @include clearfix;
+  @include make-row;
 }
 
 
@@ -100,26 +75,10 @@
 }
 
 
-// Large Medium grid
-//
-// Columns, offsets, pushes, and pulls for the desktop device range.
-
-@media (min-width: $screen-xm-min) {
-  @include make-grid(xm);
-}
-
-
 // Large grid
 //
 // Columns, offsets, pushes, and pulls for the large desktop device range.
 
 @media (min-width: $screen-lg-min) {
   @include make-grid(lg);
-}
-
-// Extra Large grid
-//
-// Columns, offsets, pushes, and pulls for the large desktop device range.
-@media (min-width: $screen-xl-min) {
-  @include make-grid(xl);
 }

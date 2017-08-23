@@ -67,7 +67,7 @@
     width: 18px;
     height: 18px;
     cursor: pointer;
-    fill: $color-grey;
+    fill: $gray;
   }
 
   &__edits {
@@ -85,12 +85,12 @@
     display: inline-flex;
     align-items: center;
     text-decoration: underline;
-    text-decoration-color: $color-lightgreen;
+    text-decoration-color: $brand-success;
     transition: color .25s ease-in-out;
 
     &:hover {
       color: #0a0a0b;
-      text-decoration-color: $color-lightgreen;
+      text-decoration-color: $brand-success;
     }
 
     p {
@@ -101,7 +101,7 @@
       width: 18px;
       height: 18px;
       margin-right: 7px;
-      fill: $color-grey;
+      fill: $gray;
     }
 
     &:not(:first-of-type) {
@@ -146,7 +146,7 @@
 
       &::before, .label {
         color: #191e28;
-        background-color: $color-lightgreen;
+        background-color: $brand-success;
       }
     }
 

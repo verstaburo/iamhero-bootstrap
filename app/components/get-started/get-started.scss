@@ -28,7 +28,7 @@
     }
 
     &_colored {
-      color: $color-lightgreen;
+      color: $brand-success;
 
       @media (max-width: $screen-sm-max) {
         display: block;
@@ -40,7 +40,7 @@
     font-size: 33px;
     margin-bottom: 30px;
 
-    @media (min-width: $screen-xm-min) {
+    @media (min-width: $screen-lg-min) {
       margin-bottom: 60px;
     }
 
@@ -53,7 +53,7 @@
   &__switcher {
     position: relative;
 
-    @media (min-width: $screen-xm-min) and (max-width: $screen-xm-max) {
+    @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
       float: none;
       margin-bottom: 40px;
     }

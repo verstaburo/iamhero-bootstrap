@@ -6,19 +6,6 @@
 // Normalize non-controls
 //
 // Restyle and baseline non-control form elements.
-form {
-
-  label {
-    position: relative;
-  }
-
-  .has-error, .has-success, .has-warning {
-
-    .help-block {
-      opacity: 1;
-    }
-  }
-}
 
 fieldset {
   padding: 0;
@@ -45,6 +32,8 @@ legend {
 label {
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 
@@ -60,16 +49,16 @@ input[type="search"] {
 }
 
 // Position radios and checkboxes better
-// input[type="radio"],
-// input[type="checkbox"] {
-//   margin: 4px 0 0;
-//   margin-top: 1px \9; // IE8-9
-//   line-height: normal;
-// }
-//
-// input[type="file"] {
-//   display: block;
-// }
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9; // IE8-9
+  line-height: normal;
+}
+
+input[type="file"] {
+  display: block;
+}
 
 // Make range inputs behave like textual form controls
 input[type="range"] {
@@ -125,39 +114,20 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  padding: 10px 16px 7px;
-  font-size: 16px;
+  height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: $padding-base-vertical $padding-base-horizontal;
+  font-size: $font-size-base;
   line-height: $line-height-base;
   color: $input-color;
   background-color: $input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid $color-grey;
-  border-radius: 25px; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+  border: 1px solid $input-border;
+  border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
   @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
-  @include transition(all .25s);
-
-  &:hover {
-    border-color: #39464f;
-
-    &::placeholder {
-      color: $text-color;
-    }
-  }
-
-  &-area-static {
-    resize: none;
-  }
+  @include transition(border-color ease-in-out .15s, box-shadow ease-in-out .15s);
 
   // Customize the `:focus` state to imitate native WebKit styles.
-  // @include form-control-focus;
-  &:focus {
-    border-color: $color-lightgreen;
-    outline: 0;
-
-    &::placeholder {
-      color: $text-color;
-    }
-  }
+  @include form-control-focus;
 
   // Placeholder
   @include placeholder;
@@ -251,83 +221,82 @@ input[type="search"] {
 //
 // Indent the labels to position radios/checkboxes as hanging controls.
 
-// .radio,
-// .checkbox {
-//   position: relative;
-//   display: block;
-//   margin-top: 10px;
-//   margin-bottom: 10px;
-//
-//   label {
-//     min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
-//     padding-left: 20px;
-//     margin-bottom: 0;
-//     font-weight: normal;
-//     cursor: pointer;
-//   }
-// }
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
-// .radio input[type="radio"],
-// .radio-inline input[type="radio"],
-// .checkbox input[type="checkbox"],
-// .checkbox-inline input[type="checkbox"] {
-//   position: absolute;
-//   margin-left: -20px;
-//   margin-top: 4px \9;
-// }
+  label {
+    min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px \9;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
+}
+
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px; // space out consecutive inline controls
+}
+
+// Apply same disabled cursor tweak as for inputs
+// Some special care is needed because <label>s don't inherit their parent's `cursor`.
 //
-// .radio + .radio,
-// .checkbox + .checkbox {
-//   margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
-// }
-//
-// // Radios and checkboxes on same line
-// .radio-inline,
-// .checkbox-inline {
-//   position: relative;
-//   display: inline-block;
-//   padding-left: 20px;
-//   margin-bottom: 0;
-//   vertical-align: middle;
-//   font-weight: normal;
-//   cursor: pointer;
-// }
-// .radio-inline + .radio-inline,
-// .checkbox-inline + .checkbox-inline {
-//   margin-top: 0;
-//   margin-left: 10px; // space out consecutive inline controls
-// }
-//
-// // Apply same disabled cursor tweak as for inputs
-// // Some special care is needed because <label>s don't inherit their parent's `cursor`.
-// //
-// // Note: Neither radios nor checkboxes can be readonly.
-// input[type="radio"],
-// input[type="checkbox"] {
-//   &[disabled],
-//   &.disabled,
-//   fieldset[disabled] & {
-//     cursor: $cursor-disabled;
-//   }
-// }
-// // These classes are used directly on <label>s
-// .radio-inline,
-// .checkbox-inline {
-//   &.disabled,
-//   fieldset[disabled] & {
-//     cursor: $cursor-disabled;
-//   }
-// }
-// // These classes are used on elements with <label> descendants
-// .radio,
-// .checkbox {
-//   &.disabled,
-//   fieldset[disabled] & {
-//     label {
-//       cursor: $cursor-disabled;
-//     }
-//   }
-// }
+// Note: Neither radios nor checkboxes can be readonly.
+input[type="radio"],
+input[type="checkbox"] {
+  &[disabled],
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+}
+// These classes are used directly on <label>s
+.radio-inline,
+.checkbox-inline {
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+}
+// These classes are used on elements with <label> descendants
+.radio,
+.checkbox {
+  &.disabled,
+  fieldset[disabled] & {
+    label {
+      cursor: $cursor-disabled;
+    }
+  }
+}
 
 
 // Static form control text
@@ -461,7 +430,7 @@ input[type="search"] {
   @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
 }
 .has-error {
-  @include form-control-validation(#df4116, $state-danger-text, $state-danger-bg);
+  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
 }
 
 // Reposition feedback icon if input has visible label above
@@ -480,20 +449,11 @@ input[type="search"] {
 //
 // Apply to any element you wish to create light text for placement immediately
 // below a form control. Use for general help, formatting, or instructional text.
+
 .help-block {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 0 20px;
-  margin-top: 3px;
-  letter-spacing: -.04em;
-  font-weight: 700;
-  font-size: 14px;
-  text-align: right;
-  line-height: 1.2em;
-  opacity: 0;
-  transition: opacity .25s ease-in-out;
+  display: block; // account for any element using help-block
+  margin-top: 5px;
+  margin-bottom: 10px;
   color: lighten($text-color, 25%); // lighten the text some for contrast
 }
 

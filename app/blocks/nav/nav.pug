@@ -3,6 +3,6 @@ mixin nav(data)
     each item in data
       li
         if item.bordered
-          a(href='#').nav-link.nav-link-bordered= item.text
+          a(href='#').nav-link.nav-link-border-success= item.text
         else
           a(href='#').nav-link= item.text

@@ -19,14 +19,14 @@
 
     .view-in__icon {
       fill: transparent;
-      stroke: $color-lightgreen;
+      stroke: $brand-success;
     }
   }
 
   &__icon {
     width: 45px;
     height: 45px;
-    fill: $color-lightgreen;
+    fill: $brand-success;
   }
 
   &__text {

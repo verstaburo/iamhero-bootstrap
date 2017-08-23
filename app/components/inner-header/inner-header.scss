@@ -14,7 +14,7 @@
     flex-basis: 54%;
     transition: opacity .25s ease-in-out !important;
 
-    @media (max-width: $screen-xm-max) {
+    @media (max-width: $screen-lg-max) {
       flex-basis: auto;
       flex-grow: 1;
     }
@@ -242,7 +242,7 @@
     font-size: 16px;
 
     &:hover {
-      background-color: $color-yellow;
+      background-color: $brand-warning;
       color: $text-color;
 
       & > svg {
@@ -251,7 +251,7 @@
     }
 
     &.active {
-      background-color: $color-yellow;
+      background-color: $brand-warning;
       color: $text-color;
 
       & > svg {
@@ -268,7 +268,7 @@
       width: 32px;
       height: 25px;
       fill: transparent;
-      stroke: $color-yellow;
+      stroke: $brand-warning;
       transition: stroke .25s ease-in-out;
     }
   }
@@ -317,7 +317,7 @@
       width: 20px;
       height: 20px;
       fill: transparent;
-      stroke: $color-yellow;
+      stroke: $brand-warning;
     }
 
     & > span {
@@ -329,10 +329,10 @@
   &__notify-link {
     font-size: 16px;
     letter-spacing: -.04em;
-    border-bottom: 1px solid $color-yellow;
+    border-bottom: 1px solid $brand-warning;
 
     & + svg {
-      fill: $color-yellow;
+      fill: $brand-warning;
       width: 15px;
       height: 15px;
     }
@@ -352,7 +352,7 @@
     }
 
     svg {
-      fill: $color-yellow;
+      fill: $brand-warning;
       width: 100%;
       height: 100%;
     }
@@ -366,7 +366,7 @@
     svg {
       width: 100%;
       height: 100%;
-      fill: $color-yellow;
+      fill: $brand-warning;
     }
 
     @media (min-width: $screen-sm-min) {

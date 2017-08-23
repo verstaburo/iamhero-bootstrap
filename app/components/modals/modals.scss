@@ -47,7 +47,7 @@
   }
 
   &__text {
-    font-size: $font-size-medium;
+    font-size: 16px;
     margin-right: 10px;
   }
 
@@ -68,7 +68,7 @@
   }
 
   &__datepick {
-    @media (max-width: $screen-xm-max) {
+    @media (max-width: $screen-lg-max) {
       flex-direction: column;
       align-items: flex-start;
 

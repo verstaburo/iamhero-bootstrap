@@ -1,4 +1,9 @@
 .thumbnail {
+  margin-bottom: 30px;
+
+  &-border-none {
+    border: none;
+  }
 
   &-interests {
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
@@ -113,7 +118,7 @@
       }
 
       &:hover {
-        background-color: $color-lightgreen;
+        background-color: $brand-success;
 
         .icon-close {
           stroke: black;
