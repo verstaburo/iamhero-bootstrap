@@ -2,7 +2,7 @@ extends ../../layouts/default
 include ../../blocks/select/select
 
 block head
-  - var pageTitle = 'Versta Project Template'
+  - var pageTitle = 'I Am Hero - Demo page'
 
 block content
   mixin demo-link(title, path)
@@ -14,5 +14,5 @@ block content
     +demo-link('Profile3x2', 'profile')
     +demo-link('Profile3x2_edit3', 'profile-edit')
     +demo-link('Company listing', 'company-listing')
-    +demo-link('Company profile2 awards', 'company-profile-awards')
+    +demo-link('Company profile2', 'company-profile')
     //- +select([{value: 1, text: '1'}, {value: 2, text: '2'}, {value: 3, text: '3'}], 'Name')

@@ -52,6 +52,10 @@
     padding: 60px 65px;
     position: relative;
 
+    &_padding-big-bottom {
+      padding: 0 0 110px;
+    }
+
     &_faded {
 
       &::after {
@@ -73,6 +77,11 @@
     letter-spacing: -.04em;
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    &_margin {
+      margin-top: 85px;
+      margin-bottom: 50px;
+    }
   }
 
   &__card {
@@ -86,5 +95,72 @@
     margin-top: 35px;
     margin-bottom: 35px;
     height: 630px;
+  }
+
+  &__row {
+    display: flex;
+  }
+
+  &__col-half {
+    flex-basis: 50%;
+    padding-left: 65px;
+    padding-right: 65px;
+
+    &:first-child {
+      border-right: 1px solid #ecf2f4;
+    }
+  }
+
+  &__address {
+    padding-bottom: 30px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 155px;
+      height: 1px;
+      background-color: #ecf2f4;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+
+    &_link {
+      border-bottom: 1px solid $brand-warning;
+    }
+
+    &_indent {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__contact-form {
+
+    .btn {
+      margin-top: 20px;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 75px;
+    border-bottom: 1px solid #e1e9ec;
+
+    &_padded {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .company-menu__title {
+      margin-bottom: 0;
+    }
   }
 }

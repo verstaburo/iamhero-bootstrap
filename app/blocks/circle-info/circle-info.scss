@@ -1,0 +1,36 @@
+.circle-info {
+  display: flex;
+  align-items: center;
+
+  &__header {
+    font-size: 26px;
+    letter-spacing: -.04em;
+    font-weight: 100;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__link {
+    margin-top: 3px;
+    border-bottom: 1px solid $brand-warning;
+    font-weight: 400;
+    font-family: $font-family-open-sans;
+  }
+
+  &__circle {
+    width: 105px;
+    height: 105px;
+    border: 10px solid $brand-warning;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 63px;
+    line-height: 85px;
+    font-weight: 100;
+    margin-left: 25px;
+    flex-shrink: 0;
+  }
+}

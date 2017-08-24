@@ -23,6 +23,13 @@
     }
   }
 
+  &-warning {
+
+    &:focus {
+      border-color: $brand-warning;
+    }
+  }
+
   &-area-static {
     resize: none;
   }

@@ -1,3 +1,155 @@
 .inner-card {
+  min-height: 160px;
+  position: relative;
+  transition: box-shadow .25s ease-in-out;
   display: block;
+
+  .js-card-less {
+    display: none;
+  }
+
+  &_border {
+    border: 1px solid #e7ebee;
+  }
+
+  &_shadow {
+    box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .06);
+  }
+
+  &:hover {
+    box-shadow: 0 0 32.66px 13.34px rgba(28, 40, 57, .34);
+    z-index: 1;
+
+    .inner-card__footer {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &__full-image {
+    height: 0;
+    transition: height .5s ease-in-out;
+    width: 100%;
+  }
+
+  &__text-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrap {
+    display: flex;
+    background-color: #fff;
+  }
+
+  &__image {
+    flex-basis: 165px;
+    flex-shrink: 0;
+
+    &_big {
+      flex-basis: 195px;
+    }
+  }
+
+  &__text-content {
+    padding: 15px 35px 25px 55px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    font-size: 17px;
+    letter-spacing: -.04em;
+
+    &_thin {
+      font-weight: 100;
+    }
+
+    &_inline {
+      margin-left: 15px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+
+  &__footer {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+    background-color: #35475a;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .25s ease-in-out;
+  }
+
+  &__toggle-btn {
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: -.04em;
+    display: flex;
+    align-items: center;
+    outline: none;
+
+    svg {
+      width: 25px;
+      height: 15px;
+      stroke: $brand-warning;
+      margin-right: 12px;
+      fill: transparent;
+    }
+
+    &.js-company-less {
+      display: none;
+    }
+  }
+
+  &__button {
+    background-color: #283649;
+    transition: background-color .25s ease-in-out, color .25s ease-in-out;
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: -.04em;
+    padding-left: 18px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &:hover {
+      background-color: $brand-warning;
+      color: #263446;
+
+      svg {
+        stroke: #3b4d62;
+      }
+    }
+
+    svg {
+      width: 19px;
+      height: 4px;
+      fill: transparent;
+      stroke: $brand-warning;
+      transition: stroke .25s ease-in-out;
+      margin-right: 20px;
+    }
+  }
+
+  &_expanded {
+
+    .inner-card__full-image {
+      height: 255px;
+    }
+  }
 }

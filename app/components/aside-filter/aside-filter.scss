@@ -1,6 +1,7 @@
 .aside-filter {
   position: fixed;
   transform: translateZ(0);
+  z-index: 3;
   top: 110px;
   left: 55px;
   width: 335px;

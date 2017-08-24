@@ -9,7 +9,7 @@ import isotopeInit from './common/isotope';
 import stickyNavbar from '../blocks/sidebar-menu/sidebar-menu';
 import scrollRevealInit from './common/scrollreveal';
 import upload from '../blocks/upload/upload';
-import companyCard from '../blocks/company-card/company-card';
+import innerCard from '../blocks/inner-card/inner-card';
 import companyVideo from '../blocks/company-video/company-video';
 import map from '../blocks/map/map';
 import innerHeader from '../components/inner-header/inner-header';
@@ -26,7 +26,7 @@ $(() => {
   stickyNavbar();
   scrollRevealInit();
   upload();
-  companyCard();
+  innerCard();
   companyVideo();
   map();
   innerHeader();

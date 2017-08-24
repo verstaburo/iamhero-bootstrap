@@ -1,7 +1,8 @@
 include ../tabs/tabs
-include ../award/award
-include ../company-card/company-card
-
+include ../inner-card/inner-card
+include ../textarea/textarea
+include ../button/button
+include ../circle-info/circle-info
 mixin company-menu()
   +b.company-menu&attributes(attributes)
     +tabs.company-menu__nav
@@ -11,7 +12,7 @@ mixin company-menu()
       +tab('#branch') Branch
       +tab('#contacts') Contacts
       +tab('#gallery') Gallery
-      +tab('#awards').active Awards
+      +tab('#awards') Awards
       +tab('#social') Social
     +tab-content
       +tab-pane.company-menu__content.company-menu__content_faded#phylosophy
@@ -23,15 +24,63 @@ mixin company-menu()
 
       +tab-pane.company-menu__content#vacancies
         +e.SPAN.title Vacancies
-        +vacancy('vacancy1', 'Graphic Designer').__card
-        +vacancy('vacancy2', 'BBDO Moscow').__card
-        +vacancy('vacancy3', 'Aspire Logo designer Needed').__card
-      +tab-pane.company-menu__content#stats
+        +vacancy('vacancy1.jpg', 'Graphic Designer').__card
+        +vacancy('vacancy2.jpg', 'BBDO Moscow').__card
+        +vacancy('vacancy3.jpg', 'Aspire Logo designer Needed').__card
+
+      +tab-pane.company-menu__content.company-menu__content_padding-big-bottom.active.in#stats
+        +e.list-item._padded
+          +e.SPAN.title STATS
+          +circle-info
+        +e.list-item
+          +e.P.text.font-weight-semibold Profile views
+          +e.P.text.font-weight-semibold 654
+        +e.list-item
+          +e.P.text.font-weight-semibold Opened vacancies
+          +e.P.text.font-weight-semibold 3
+        +e.list-item
+          +e.P.text.font-weight-semibold Overal amount of vacancies
+          +e.P.text.font-weight-semibold 21
+        +e.list-item
+          +e.P.text.font-weight-semibold Time spent on iamhero.io
+          +e.P.text.font-weight-semibold 2 years 3 months 21 day
+        +e.list-item
+          +e.P.text.font-weight-semibold Heroes employed
+          +e.P.text.font-weight-semibold 13
+
       +tab-pane.company-menu__content#branch
-      +tab-pane.company-menu__content#contacts
+
+      +tab-pane.company-menu__content.company-menu__content_padding-big-bottom#contacts
+        +e.row
+          +e.col-half
+            +e.SPAN.title._margin Contacts
+            +e.P.text.__address.font-weight-semibold Vossen Headquarters Brexton Street 1567, Downtown, Los Angeles, USA
+            +e.SPAN.title._margin Departments
+            +e.P.text._indent.font-weight-semibold General Inquiries
+              +e.A(href='mailto:#').text._link info@bscompanywheels.com
+            +e.P.text._indent.font-weight-semibold Dealer Inquiries
+              +e.A(href='mailto:#').text._link dealer@bscompanywheels.com
+            +e.P.text._indent.font-weight-semibold Warranty Inquiries
+              +e.A(href='mailto:#').text._link warranty@bscompanywheels.com
+            +e.SPAN.title._margin CELLURAL
+            +e.P.text._indent.font-weight-semibold TOLL FREE:
+              +e.A(href='tel:#').text 1-888-463-7778
+            +e.P.text._indent.font-weight-semibold TEL:
+              +e.A(href='tel:#').text 1-305-463-7778
+            +e.P.text._indent.font-weight-semibold FAX:
+              +e.A(href='tel:#').text 1-305-489-297
+
+          +e.col-half
+            +e.SPAN.title._margin Drop the line
+            +e.FORM.contact-form
+              +textarea('5')(placeholder='Text here').form-control-area-static.form-control-warning
+              +button.btn-secondary-warning.btn-block Send Message
+
       +tab-pane.company-menu__content#gallery
-      +tab-pane.company-menu__content.active.in#awards
+
+      +tab-pane.company-menu__content#awards
         +e.SPAN.title AWARDS
-        +award('award1', 'Red Dot Award', '2017', true).__card
-        +award('award2', 'IDA', '2016').__card
+        +award('award1.jpg', 'Red Dot Award', '2017', true).__card
+        +award('award2.jpg', 'IDA', '2016').__card
+
       +tab-pane.company-menu__content#social

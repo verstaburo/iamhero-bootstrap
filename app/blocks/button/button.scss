@@ -37,6 +37,24 @@
     }
   }
 
+  &-secondary-warning {
+    border-width: 3px;
+    border-color: $brand-warning;
+    font-size: 20px;
+    background-color: transparent;
+    color: #263240;
+    padding: 10px 45px;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      background-color: $brand-warning;
+      color: #263240;
+    }
+  }
+
   &-grey {
     background-color: #e0e9ef;
     color: $gray;

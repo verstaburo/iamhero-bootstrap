@@ -55,19 +55,11 @@
       left: 55px;
     }
 
-    &_small {
-      height: 515px;
-    }
-
     &_overlay_blue {
 
       &::after {
         background-image: none;
         background-color: rgba(#263140, .35);
-      }
-
-      img {
-        mix-blend-mode: hard-light;
       }
     }
   }

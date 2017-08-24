@@ -1,13 +1,13 @@
 extends ../../layouts/inner-page
 include ../../blocks/button-dropdown/button-dropdown
 include ../../blocks/checkbox/checkbox
-include ../../blocks/company-card/company-card
+include ../../blocks/inner-card/inner-card
 include ../../blocks/page/page
 include ../../components/aside-filter/aside-filter
 include ../../components/top-filter/top-filter
 
 block head
-  - var pageTitle = 'Company listing - I Am Hero'
+  - var pageTitle = 'I Am Hero - Company listing'
 
 block top-filter
   +top-filter
@@ -29,13 +29,13 @@ block content
   +page._inner-big._faded
     .row
       .col-sm-20
-        +company-card('1', 'BS Company', 'Luxury alloy wheels')
-        +company-card('2', 'Freedom Agency', 'Freedom Agency')
-        +company-card('3', 'Maxdino', 'Advertisement agency')
-        +company-card('4', 'Trade Plus', 'Advertising')
-        +company-card('5', 'Monkey Logo designer Needed', 'Graphic design studio')
-        +company-card('6', 'Arbo tech', 'Design agency')
-        +company-card('3', 'Maxdino', 'Advertisement agency')
-        +company-card('4', 'Trade Plus', 'Advertising')
-        +company-card('5', 'Monkey Logo designer Needed', 'Graphic design studio')
-        +company-card('5', 'Monkey Logo designer Needed', 'Graphic design studio')
+        +company('1.jpg', 'BS Company', 'Luxury alloy wheels')
+        +company('2.jpg', 'Freedom Agency', 'Freedom Agency')
+        +company('3.jpg', 'Maxdino', 'Advertisement agency')
+        +company('4.jpg', 'Trade Plus', 'Advertising')
+        +company('5.jpg', 'Monkey Logo designer Needed', 'Graphic design studio')
+        +company('6.jpg', 'Arbo tech', 'Design agency')
+        +company('3.jpg', 'Maxdino', 'Advertisement agency')
+        +company('4.jpg', 'Trade Plus', 'Advertising')
+        +company('5.jpg', 'Monkey Logo designer Needed', 'Graphic design studio')
+        +company('5.jpg', 'Monkey Logo designer Needed', 'Graphic design studio')
