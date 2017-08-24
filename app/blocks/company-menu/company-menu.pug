@@ -3,17 +3,18 @@ include ../inner-card/inner-card
 include ../textarea/textarea
 include ../button/button
 include ../circle-info/circle-info
+
 mixin company-menu()
   +b.company-menu&attributes(attributes)
     +tabs.company-menu__nav
-      +tab('#phylosophy') Phylosophy
-      +tab('#vacancies') Vacancies
-      +tab('#stats') Stats
-      +tab('#branch') Branch
-      +tab('#contacts') Contacts
-      +tab('#gallery') Gallery
-      +tab('#awards') Awards
-      +tab('#social') Social
+      +tab('phylosophy') Phylosophy
+      +tab('vacancies') Vacancies
+      +tab('stats') Stats
+      +tab('branch') Branch
+      +tab('contacts') Contacts
+      +tab('gallery') Gallery
+      +tab('awards') Awards
+      +tab('social') Social
     +tab-content
       +tab-pane.company-menu__content.company-menu__content_faded#phylosophy
         +e.SPAN.title History
@@ -28,7 +29,7 @@ mixin company-menu()
         +vacancy('vacancy2.jpg', 'BBDO Moscow').__card
         +vacancy('vacancy3.jpg', 'Aspire Logo designer Needed').__card
 
-      +tab-pane.company-menu__content.company-menu__content_padding-big-bottom.active.in#stats
+      +tab-pane.company-menu__content.company-menu__content_padding-big-bottom#stats
         +e.list-item._padded
           +e.SPAN.title STATS
           +circle-info
@@ -48,7 +49,12 @@ mixin company-menu()
           +e.P.text.font-weight-semibold Heroes employed
           +e.P.text.font-weight-semibold 13
 
-      +tab-pane.company-menu__content#branch
+      +tab-pane.company-menu__content.company-menu__content_padding-none#branch
+        +e.row
+          +e.col-side
+            +e.SPAN.title BRANCH
+          +e.col-content
+            +e.branch-map#map-branch
 
       +tab-pane.company-menu__content.company-menu__content_padding-big-bottom#contacts
         +e.row

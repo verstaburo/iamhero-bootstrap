@@ -7,7 +7,6 @@ export default () => {
   const select2 = $('.js-select2');
 
   if (!select.length && !select2.length) {
-    console.log('obj');
     return;
   }
 
