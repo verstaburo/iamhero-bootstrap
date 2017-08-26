@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I Am Hero - Company profile</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="inner-header">
+        <div class="inner-header__col inner-header__logo">
+            <a href="#">
+                <svg><use xlink:href="assets/images/icon.svg#icon_logo-white"></use></svg>
+            </a>
+        </div>
+        <div class="inner-header__col inner-header__search">
+            <label class="search search_dark">
+                <input class="search__input" type="text" placeholder="Search for heroes..." />
+                <button class="search__icon" type="submit">
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+                </button>
+            </label>
+        </div>
+        <div class="inner-header__col inner-header__search-btn">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+        </div>
+        <div class="inner-header__notify-wrap">
+            <div class="inner-header__col inner-header__col_dropdown inner-header__col_hover inner-header__col_hover_dark inner-header__notification">
+                <button>
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    <span class="inner-header__notification-badge">1</span>
+                </button>
+                <div class="inner-header__dropdown-content">
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user2.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Jean Michianty</h4>Accepted your job attend</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+                            <span>05:07</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item inner-header__notify-item_padded" href="#">
+                        <span class="inner-header__notify-link">Open all notifications</span>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="inner-header__col inner-header__col_dropdown inner-header__col_hover inner-header__col_hover_dark inner-header__user">
+                <div class="media-secondary">
+                    <div class="media-left">
+                        <img class="img-circle media-object" src="assets/images/user/user.png" />
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Eugene Sheeleen</h4>Dezi Design Agency</div>
+                </div>
+                <svg><use xlink:href="assets/images/icon.svg#icon_caret-bold"></use></svg>
+                <div class="inner-header__dropdown-content">
+                    <a class="inner-header__user-nav" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-hero"></use></svg>Hero Account</a>
+                    <a class="inner-header__user-nav active" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>Dezi Design agency</a>
+                    <a class="inner-header__user-nav" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>Esdesign studio</a>
+                </div>
+            </div>
+        </div>
+        <div class="inner-header__col inner-header__col_hover inner-header__col_hover_yellow inner-header__promo">
+            <a href="#">Buy packages</a>
+        </div>
+        <div class="inner-header__col inner-header__burger">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-burger"></use></svg>
+        </div>
+    </header>
+    <ul class="inner-sidebar">
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-dashboard"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Dashboard</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-messages"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Messages</span>
+            <span class="inner-sidebar__badge">1</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Search</span>
+        </li>
+        <li class="inner-sidebar__item active">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Shortlists</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Job Offers</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-statistics"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Stats</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Settings</span>
+        </li>
+    </ul>
+    <main class="page page_inner-standart" role="main">
+        <div class="bg-image page__top-bg page__top-bg_overlay_blue page__top-bg_inner">
+            <img src="assets/images/company-profile/bg.jpg" />
+        </div>
+        <div class="page__company container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-18">
+                    <div class="company-profile-card">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bg-image company-profile-card__logo">
+                                    <img src="assets/images/company-profile/1.jpg" />
+                                </div>
+                                <div class="company-video company-profile-card__video">
+                                    <div class="company-video__controls">
+                                        <div class="play-video-small company-video__play"></div>
+                                        <span class="company-video__text">Company video represent</span>
+                                    </div>
+                                    <iframe class="company-video__item" src="https://www.youtube.com/embed/6bvsgq1qDag?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-md-18">
+                                <div class="company-profile-card__header">
+                                    <h2>BS COMPANY</h2>
+                                    <a class="company-profile-card__website" href="#">www.bswheels.com</a>
+                                </div>
+                                <h4>Quality alloy car wheels</h4>
+                                <h5>Los Angeles, USA</h5>
+                                <div class="company-profile-card__text">
+                                    <p>Vossen is dedicated to providing quality wheels and lifestyle products for those who value excellence.</p>
+                                    <p>Our brand aims to reflect a passion for ingenuity and a desire to impact not only the automotive world, but culture at large.</p>
+                                    <p>At Vossen, we place a high emphasis on design. Like our customers, we value the time and work that goes into creating and manufacturing products that are innovative and aesthetically pleasing. A commitment to providing
+                                        our customers with the best has positioned Vossen at the forefront of our industry. From our events to our</p>
+                                </div>
+                                <a class="company-profile-card__icon-item" href="#">
+                                    <svg class="company-profile-card__icon"><use xlink:href="assets/images/icon.svg#icon_logo"></use></svg>
+                                    <b>25</b>Heroes</a>
+                                <a class="company-profile-card__icon-item" href="#">
+                                    <svg class="company-profile-card__icon"><use xlink:href="assets/images/icon.svg#icon_person"></use></svg>
+                                    <b>267</b>Total Employes</a>
+                                <a class="company-profile-card__icon-item" href="#">
+                                    <svg class="company-profile-card__icon"><use xlink:href="assets/images/icon.svg#icon_bag"></use></svg>
+                                    <b>5</b>Vacancies</a>
+                            </div>
+                        </div>
+                        <div class="company-profile-card__map">
+                            <div class="map" id="map"></div>
+                        </div>
+                    </div>
+                    <div class="company-menu page__company-menu">
+                        <ul class="company-menu__nav" role="tablist">
+                            <li class="active" role="presentation">
+                                <a data-toggle="tab" role="tab" href="#phylosophy" aria-controls="phylosophy">Phylosophy</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="#vacancies" aria-controls="vacancies">Vacancies</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="#stats" aria-controls="stats">Stats</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="#branch" aria-controls="branch">Branch</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="#contacts" aria-controls="contacts">Contacts</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="#gallery" aria-controls="gallery">Gallery</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="#awards" aria-controls="awards">Awards</a>
+                            </li>
+                            <li role="presentation">
+                                <a data-toggle="tab" role="tab" href="#social" aria-controls="social">Social</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade company-menu__content company-menu__content_faded active in" role="tabpanel" id="phylosophy">
+                                <span class="company-menu__title">History</span>
+                                <p>Established with the intent to provide a superior product, today Vossen holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our commitment to excellence, extends into every facet of
+                                    what we do. From engineering to design and manufacturing, Vossen is redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the
+                                    world, our customers have come to expect nothing less than sheer quality and innovation.</p>
+                                <div class="bg-image company-menu__image">
+                                    <img src="assets/images/company-profile/history.jpg" />
+                                </div>
+                                <span class="company-menu__title">Inpiration</span>
+                                <p>Established with the intent to provide a superior product, today Vossen holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our commitment to excellence, extends into every facet of
+                                    what we do. From engineering to design and manufacturing, Vossen is redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the
+                                    world, our customers have come to expect nothing less than sheer quality and innovation.</p>
+                            </div>
+                            <div class="tab-pane fade company-menu__content" role="tabpanel" id="vacancies">
+                                <span class="company-menu__title">Vacancies</span>
+                                <a class="inner-card inner-card_border inner-card_shadow company-menu__card" href="#">
+                                    <span class="inner-card__wrap">
+                                        <span class="bg-image inner-card__image">
+                                            <img src="assets/images/company-profile/vacancy1.jpg" />
+                                        </span>
+                                        <span class="inner-card__text-wrap">
+                                            <span class="inner-card__tags"></span>
+                                            <span class="inner-card__text-content">
+                                                <h3 class="inner-card__title">Graphic Designer</h3>
+                                                <span class="inner-card__subtitle">Designer</span>
+                                                <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
+                                                <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band
+                                                    Downhere with his roommate Jason Germain and a few close friends in 1999.</p>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a class="inner-card inner-card_border inner-card_shadow company-menu__card" href="#">
+                                    <span class="inner-card__wrap">
+                                        <span class="bg-image inner-card__image">
+                                            <img src="assets/images/company-profile/vacancy2.jpg" />
+                                        </span>
+                                        <span class="inner-card__text-wrap">
+                                            <span class="inner-card__tags"></span>
+                                            <span class="inner-card__text-content">
+                                                <h3 class="inner-card__title">BBDO Moscow</h3>
+                                                <span class="inner-card__subtitle">Designer</span>
+                                                <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
+                                                <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band
+                                                    Downhere with his roommate Jason Germain and a few close friends in 1999.</p>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a class="inner-card inner-card_border inner-card_shadow company-menu__card" href="#">
+                                    <span class="inner-card__wrap">
+                                        <span class="bg-image inner-card__image">
+                                            <img src="assets/images/company-profile/vacancy3.jpg" />
+                                        </span>
+                                        <span class="inner-card__text-wrap">
+                                            <span class="inner-card__tags"></span>
+                                            <span class="inner-card__text-content">
+                                                <h3 class="inner-card__title">Aspire Logo designer Needed</h3>
+                                                <span class="inner-card__subtitle">Designer</span>
+                                                <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
+                                                <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band
+                                                    Downhere with his roommate Jason Germain and a few close friends in 1999.</p>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="tab-pane fade company-menu__content company-menu__content_padding-big-bottom" role="tabpanel" id="stats">
+                                <div class="company-menu__list-item company-menu__list-item_padded">
+                                    <span class="company-menu__title">STATS</span>
+                                    <div class="circle-info">
+                                        <div class="circle-info__text">
+                                            <span class="circle-info__header">Opened vacancies</span>
+                                            <a class="circle-info__link" href="#">Open vacancies</a>
+                                        </div>
+                                        <span class="circle-info__circle">4</span>
+                                    </div>
+                                </div>
+                                <div class="company-menu__list-item">
+                                    <p class="company-menu__text font-weight-semibold">Profile views</p>
+                                    <p class="company-menu__text font-weight-semibold">654</p>
+                                </div>
+                                <div class="company-menu__list-item">
+                                    <p class="company-menu__text font-weight-semibold">Opened vacancies</p>
+                                    <p class="company-menu__text font-weight-semibold">3</p>
+                                </div>
+                                <div class="company-menu__list-item">
+                                    <p class="company-menu__text font-weight-semibold">Overal amount of vacancies</p>
+                                    <p class="company-menu__text font-weight-semibold">21</p>
+                                </div>
+                                <div class="company-menu__list-item">
+                                    <p class="company-menu__text font-weight-semibold">Time spent on iamhero.io</p>
+                                    <p class="company-menu__text font-weight-semibold">2 years 3 months 21 day</p>
+                                </div>
+                                <div class="company-menu__list-item">
+                                    <p class="company-menu__text font-weight-semibold">Heroes employed</p>
+                                    <p class="company-menu__text font-weight-semibold">13</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade company-menu__content company-menu__content_padding-none" role="tabpanel" id="branch">
+                                <div class="company-menu__row">
+                                    <div class="company-menu__col-side">
+                                        <span class="company-menu__title">BRANCH</span>
+                                    </div>
+                                    <div class="company-menu__col-content">
+                                        <div class="company-menu__branch-map" id="map-branch"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade company-menu__content company-menu__content_padding-big-bottom" role="tabpanel" id="contacts">
+                                <div class="company-menu__row">
+                                    <div class="company-menu__col-half">
+                                        <span class="company-menu__title company-menu__title_margin">Contacts</span>
+                                        <p class="company-menu__text company-menu__address font-weight-semibold">Vossen Headquarters Brexton Street 1567, Downtown, Los Angeles, USA</p>
+                                        <span class="company-menu__title company-menu__title_margin">Departments</span>
+                                        <p class="company-menu__text company-menu__text_indent font-weight-semibold">General Inquiries
+                                            <a class="company-menu__text company-menu__text_link" href="mailto:#">info@bscompanywheels.com</a>
+                                        </p>
+                                        <p class="company-menu__text company-menu__text_indent font-weight-semibold">Dealer Inquiries
+                                            <a class="company-menu__text company-menu__text_link" href="mailto:#">dealer@bscompanywheels.com</a>
+                                        </p>
+                                        <p class="company-menu__text company-menu__text_indent font-weight-semibold">Warranty Inquiries
+                                            <a class="company-menu__text company-menu__text_link" href="mailto:#">warranty@bscompanywheels.com</a>
+                                        </p>
+                                        <span class="company-menu__title company-menu__title_margin">CELLURAL</span>
+                                        <p class="company-menu__text company-menu__text_indent font-weight-semibold">TOLL FREE:
+                                            <a class="company-menu__text" href="tel:#">1-888-463-7778</a>
+                                        </p>
+                                        <p class="company-menu__text company-menu__text_indent font-weight-semibold">TEL:
+                                            <a class="company-menu__text" href="tel:#">1-305-463-7778</a>
+                                        </p>
+                                        <p class="company-menu__text company-menu__text_indent font-weight-semibold">FAX:
+                                            <a class="company-menu__text" href="tel:#">1-305-489-297</a>
+                                        </p>
+                                    </div>
+                                    <div class="company-menu__col-half">
+                                        <span class="company-menu__title company-menu__title_margin">Drop the line</span>
+                                        <form class="company-menu__contact-form">
+                                            <textarea class="form-control form-control-area-static form-control-warning" rows="5" placeholder="Text here"></textarea>
+                                            <button class="btn btn-secondary-warning btn-block">Send Message</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade company-menu__content company-menu__content_padding-none" role="tabpanel" id="gallery">
+                                <div class="company-menu__row">
+                                    <div class="company-menu__col-side">
+                                        <span class="company-menu__title">gallery</span>
+                                        <ul class="company-menu__tabs" role="tablist">
+                                            <li class="active" role="presentation">
+                                                <a data-toggle="tab" role="tab" href="#gallery-picture" aria-controls="gallery-picture">Picture gallery</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a data-toggle="tab" role="tab" href="#videos" aria-controls="videos">Video gallery</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content company-menu__col-content company-menu__col-content_padded">
+                                        <div class="tab-pane fade active in" role="tabpanel" id="gallery-picture">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo1.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo2.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo3.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo4.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo5.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo6.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo7.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo8.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo9.jpg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" role="tabpanel" id="videos">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo1.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo2.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo3.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo4.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo5.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo6.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo7.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo8.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="bg-image company-menu__photo">
+                                                        <img src="assets/images/company-profile/photo9.jpg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade company-menu__content" role="tabpanel" id="awards">
+                                <span class="company-menu__title">AWARDS</span>
+                                <a class="inner-card inner-card_border inner-card_shadow company-menu__card" href="#">
+                                    <span class="inner-card__wrap">
+                                        <span class="bg-image inner-card__image inner-card__image_big">
+                                            <img src="assets/images/company-profile/award1.jpg" />
+                                        </span>
+                                        <span class="inner-card__text-wrap">
+                                            <span class="inner-card__tags"></span>
+                                            <span class="inner-card__text-content inner-card__text-content_small">
+                                                <h3 class="inner-card__title">Red Dot Award</h3>
+                                                <span class="inner-card__subtitle inner-card__subtitle_thin">2017</span>
+                                                <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band
+                                                    Downhere with his roommate Jason Germain and a few close friends in 1999.</p>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                                <a class="inner-card inner-card_border inner-card_shadow company-menu__card" href="#">
+                                    <span class="inner-card__wrap">
+                                        <span class="bg-image inner-card__image inner-card__image_big">
+                                            <img src="assets/images/company-profile/award2.jpg" />
+                                        </span>
+                                        <span class="inner-card__text-wrap">
+                                            <span class="inner-card__tags"></span>
+                                            <span class="inner-card__text-content inner-card__text-content_small">
+                                                <h3 class="inner-card__title">IDA</h3>
+                                                <span class="inner-card__subtitle inner-card__subtitle_thin">2016</span>
+                                                <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band
+                                                    Downhere with his roommate Jason Germain and a few close friends in 1999.</p>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="tab-pane fade company-menu__content company-menu__content_padding-none" role="tabpanel" id="social">
+                                <div class="company-menu__row">
+                                    <div class="company-menu__col-side">
+                                        <span class="company-menu__title">social</span>
+                                        <ul class="company-menu__tabs" role="tablist">
+                                            <li role="presentation">
+                                                <a data-toggle="tab" role="tab" href="#facebook" aria-controls="facebook">Facebook</a>
+                                            </li>
+                                            <li class="active" role="presentation">
+                                                <a data-toggle="tab" role="tab" href="#youtube" aria-controls="youtube">Youtube</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a data-toggle="tab" role="tab" href="#twitter" aria-controls="twitter">Twitter</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a data-toggle="tab" role="tab" href="#instagram" aria-controls="instagram">Instagram</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a data-toggle="tab" role="tab" href="#dribble" aria-controls="dribble">Dribble</a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a data-toggle="tab" role="tab" href="#behance" aria-controls="behance">Behance</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content company-menu__col-content company-menu__col-content_padded">
+                                        <div class="tab-pane fade active in" role="tabpanel" id="facebook"></div>
+                                        <div class="tab-pane fade active in" role="tabpanel" id="youtube">
+                                            <div class="video-item company-menu__social-video">
+                                                <div class="video-item__container">
+                                                    <iframe src="https://www.youtube.com/embed/S1LbZjGGiPo?rel=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                                                </div>
+                                                <div class="video-item__info">
+                                                    <span class="video-item__title">Bs wheels</span>
+                                                    <div class="video-item__views">
+                                                        <svg><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>145 786</div>
+                                                </div>
+                                            </div>
+                                            <div class="video-item company-menu__social-video">
+                                                <div class="video-item__container">
+                                                    <iframe src="https://www.youtube.com/embed/S1LbZjGGiPo?rel=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                                                </div>
+                                                <div class="video-item__info">
+                                                    <span class="video-item__title">Bs wheels</span>
+                                                    <div class="video-item__views">
+                                                        <svg><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>145 786</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade active in" role="tabpanel" id="twitter"></div>
+                                        <div class="tab-pane fade active in" role="tabpanel" id="instagram"></div>
+                                        <div class="tab-pane fade active in" role="tabpanel" id="dribble"></div>
+                                        <div class="tab-pane fade active in" role="tabpanel" id="behance"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/scripts/libs/bootstrap.min.js"></script>
+    <script src="assets/scripts/libs/rangeslider.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>
