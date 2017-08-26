@@ -120,11 +120,20 @@
     flex-shrink: 0;
     border-right: 1px solid #ecf2f4;
     padding-top: 85px;
+
+    .company-menu__title {
+      padding-left: 70px;
+    }
   }
 
   &__col-content {
     padding-top: 85px;
     flex-grow: 1;
+
+    &_padded {
+      padding-left: 70px;
+      padding-right: 70px;
+    }
   }
 
   &__branch-map {
@@ -192,6 +201,41 @@
 
     .company-menu__title {
       margin-bottom: 0;
+    }
+  }
+
+  &__photo {
+    height: 215px;
+    margin-bottom: 50px;
+  }
+
+  &__tabs {
+
+    li.active {
+
+      & > a {
+        background-color: #e9eff4;
+      }
+    }
+
+    a {
+      display: block;
+      font-weight: 700;
+      letter-spacing: -.04em;
+      font-size: 18px;
+      padding: 15px 20px 15px 70px;
+      transition: background-color .25s ease-in-out;
+
+      &:hover {
+        background-color: #e9eff4;
+      }
+    }
+  }
+
+  &__social-video {
+
+    &:not(:first-of-type) {
+      margin-top: 70px;
     }
   }
 }

@@ -41,7 +41,6 @@ export default () => {
         zoom: 7,
         center: branchCenter,
         scrollwheel: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
       });
       var image = {
         url: 'assets/images/icon/map-figure.svg',

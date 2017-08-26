@@ -3,11 +3,13 @@ include ../inner-card/inner-card
 include ../textarea/textarea
 include ../button/button
 include ../circle-info/circle-info
+include ../bg-image/bg-image
+include ../video-item/video-item
 
 mixin company-menu()
   +b.company-menu&attributes(attributes)
     +tabs.company-menu__nav
-      +tab('phylosophy') Phylosophy
+      +tab('phylosophy').active Phylosophy
       +tab('vacancies') Vacancies
       +tab('stats') Stats
       +tab('branch') Branch
@@ -16,10 +18,10 @@ mixin company-menu()
       +tab('awards') Awards
       +tab('social') Social
     +tab-content
-      +tab-pane.company-menu__content.company-menu__content_faded#phylosophy
+      +tab-pane.company-menu__content.company-menu__content_faded.active.in#phylosophy
         +e.SPAN.title History
         p Established with the intent to provide a superior product, today Vossen holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our commitment to excellence, extends into every facet of what we do. From engineering to design and manufacturing, Vossen is redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the world, our customers have come to expect nothing less than sheer quality and innovation.
-        +bg-image('company-profile-awards/history.jpg').__image
+        +bg-image('company-profile/history.jpg').__image
         +e.SPAN.title Inpiration
         p Established with the intent to provide a superior product, today Vossen holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our commitment to excellence, extends into every facet of what we do. From engineering to design and manufacturing, Vossen is redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the world, our customers have come to expect nothing less than sheer quality and innovation.
 
@@ -82,11 +84,82 @@ mixin company-menu()
               +textarea('5')(placeholder='Text here').form-control-area-static.form-control-warning
               +button.btn-secondary-warning.btn-block Send Message
 
-      +tab-pane.company-menu__content#gallery
+      +tab-pane.company-menu__content.company-menu__content_padding-none#gallery
+        +e.row
+          +e.col-side
+            +e.SPAN.title gallery
+            +tabs.company-menu__tabs
+              +tab('gallery-picture').active Picture gallery
+              +tab('videos') Video gallery
+          +tab-content.company-menu__col-content.company-menu__col-content_padded
+            +tab-pane.active.in#gallery-picture
+              .row
+                .col-md-8
+                  +bg-image('company-profile/photo1.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo2.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo3.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo4.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo5.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo6.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo7.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo8.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo9.jpg').__photo
+            +tab-pane#videos
+              .row
+                .col-md-8
+                  +bg-image('company-profile/photo1.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo2.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo3.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo4.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo5.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo6.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo7.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo8.jpg').__photo
+                .col-md-8
+                  +bg-image('company-profile/photo9.jpg').__photo
 
       +tab-pane.company-menu__content#awards
         +e.SPAN.title AWARDS
         +award('award1.jpg', 'Red Dot Award', '2017', true).__card
         +award('award2.jpg', 'IDA', '2016').__card
 
-      +tab-pane.company-menu__content#social
+      +tab-pane.company-menu__content.company-menu__content_padding-none#social
+        +e.row
+          +e.col-side
+            +e.SPAN.title social
+            +tabs.company-menu__tabs
+              +tab('facebook') Facebook
+              +tab('youtube').active Youtube
+              +tab('twitter') Twitter
+              +tab('instagram') Instagram
+              +tab('dribble') Dribble
+              +tab('behance') Behance
+          +tab-content.company-menu__col-content.company-menu__col-content_padded
+            +tab-pane.active.in#facebook
+            +tab-pane.active.in#youtube
+              +video-item.__social-video
+                iframe(src="https://www.youtube.com/embed/S1LbZjGGiPo?rel=0&amp;showinfo=0", frameborder="0" allowfullscreen)
+              +video-item.__social-video
+                iframe(src="https://www.youtube.com/embed/S1LbZjGGiPo?rel=0&amp;showinfo=0", frameborder="0" allowfullscreen)
+            +tab-pane.active.in#twitter
+            +tab-pane.active.in#instagram
+            +tab-pane.active.in#dribble
+            +tab-pane.active.in#behance
+
+
+

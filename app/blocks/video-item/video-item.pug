@@ -1,0 +1,12 @@
+include ../icon/icons
+
+mixin video-item
+  +b.video-item&attributes(attributes)
+    +e.container
+      block
+    +e.info
+      +e.SPAN.title Bs wheels
+      +e.views
+        +icon('eye-fill')
+        | 145 786
+
