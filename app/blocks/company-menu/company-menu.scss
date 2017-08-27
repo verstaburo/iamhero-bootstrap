@@ -10,14 +10,35 @@
     margin: 0;
     font-size: 0;
     margin-top: -1px;
+    margin-left: -1px;
     border-bottom: 1px solid #ecf2f4;
+
+    @media (max-width: $screen-sm-max) {
+      padding-left: 30px;
+      padding-right: 30px;
+      border: none;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: -13.5px;
+      margin-right: -13.5px;
+    }
 
     li {
       list-style-type: none;
       display: inline-block;
 
+      @media (max-width: $screen-xs-max) {
+        margin-left: 12.5px;
+        margin-right: 12.5px;
+      }
+
       &:not(:first-of-type) {
-        margin-left: 25px;
+        @media (min-width: $screen-sm-min) {
+          margin-left: 25px;
+        }
       }
 
       a {
@@ -30,6 +51,10 @@
         line-height: 3.125;
         color: #36464f;
         transition: color .25s ease-in-out, background-color .25s ease-in-out;
+
+        @media (max-width: $screen-xs-max) {
+          line-height: 2.5;
+        }
 
         &:hover {
           color: #fff;
@@ -52,8 +77,20 @@
     padding: 60px 65px;
     position: relative;
 
+    @media (max-width: $screen-sm-max) {
+      padding: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 15px;
+    }
+
     &_padding-big-bottom {
       padding: 0 0 110px;
+
+      @media (max-width: $screen-sm-max) {
+        padding-bottom: 55px;
+      }
     }
 
     &_padding-none {
@@ -85,6 +122,15 @@
     &_margin {
       margin-top: 85px;
       margin-bottom: 50px;
+
+      @media (max-width: $screen-sm-max) {
+        margin-top: 40px;
+        margin-bottom: 25px;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 30px;
     }
   }
 
@@ -103,6 +149,10 @@
 
   &__row {
     display: flex;
+
+    @media (max-width: $screen-sm-max) {
+      flex-direction: column;
+    }
   }
 
   &__col-half {
@@ -111,7 +161,20 @@
     padding-right: 65px;
 
     &:first-child {
-      border-right: 1px solid #ecf2f4;
+      @media (min-width: $screen-md-min) {
+        border-right: 1px solid #ecf2f4;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      flex-basis: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
@@ -123,6 +186,14 @@
 
     .company-menu__title {
       padding-left: 70px;
+
+      @media (max-width: $screen-sm-max) {
+        padding-left: 30px;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding-top: 30px;
     }
   }
 
@@ -133,6 +204,32 @@
     &_padded {
       padding-left: 70px;
       padding-right: 70px;
+    }
+
+    &_faded {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, .6) 0%, #fff 45%);
+
+        @media (max-width: $screen-md-max) {
+          height: 20%;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          height: 13%;
+        }
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding: 30px;
     }
   }
 
@@ -164,6 +261,10 @@
       height: 1px;
       background-color: #ecf2f4;
     }
+
+    @media (max-width: $screen-sm-max) {
+      padding-bottom: 15px;
+    }
   }
 
   &__text {
@@ -177,6 +278,10 @@
 
     &_indent {
       margin-bottom: 25px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 14px;
     }
   }
 
@@ -197,16 +302,37 @@
     &_padded {
       padding-top: 50px;
       padding-bottom: 50px;
+
+      @media (max-width: $screen-sm-max) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     .company-menu__title {
       margin-bottom: 0;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
   &__photo {
     height: 215px;
     margin-bottom: 50px;
+
+    @media (max-width: $screen-xs-max) {
+      height: 180px;
+    }
   }
 
   &__tabs {
@@ -229,6 +355,10 @@
       &:hover {
         background-color: #e9eff4;
       }
+
+      @media (max-width: $screen-sm-max) {
+        padding-left: 30px;
+      }
     }
   }
 
@@ -236,6 +366,12 @@
 
     &:not(:first-of-type) {
       margin-top: 70px;
+    }
+  }
+
+  &__circle-info {
+    @media (max-width: $screen-xs-max) {
+      margin-top: 20px;
     }
   }
 }

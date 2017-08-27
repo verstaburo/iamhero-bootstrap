@@ -9,6 +9,10 @@
   &_inner-standart {
     margin-top: 55px;
     margin-left: 55px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-left: 0;
+    }
   }
 
   &_inner-big {
@@ -53,6 +57,10 @@
     &_inner {
       top: 55px;
       left: 55px;
+
+      @media (max-width: $screen-md-max) {
+        left: 0;
+      }
     }
 
     &_overlay_blue {
@@ -85,6 +93,14 @@
 
   &__company {
     padding-top: 270px;
+
+    @media (max-width: $screen-lg-max) {
+      padding-top: 135px;
+    }
+
+    @media (max-width: $screen-md-max) {
+      padding-top: 50px;
+    }
   }
 
   &__sidebar-menu {

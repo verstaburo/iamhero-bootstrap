@@ -34,7 +34,7 @@ mixin company-menu()
       +tab-pane.company-menu__content.company-menu__content_padding-big-bottom#stats
         +e.list-item._padded
           +e.SPAN.title STATS
-          +circle-info
+          +circle-info.__circle-info
         +e.list-item
           +e.P.text.font-weight-semibold Profile views
           +e.P.text.font-weight-semibold 654
@@ -91,26 +91,26 @@ mixin company-menu()
             +tabs.company-menu__tabs
               +tab('gallery-picture').active Picture gallery
               +tab('videos') Video gallery
-          +tab-content.company-menu__col-content.company-menu__col-content_padded
+          +tab-content.company-menu__col-content.company-menu__col-content_padded.company-menu__col-content_faded
             +tab-pane.active.in#gallery-picture
               .row
-                .col-md-8
+                .col-lg-8.col-sm-12
                   +bg-image('company-profile/photo1.jpg').__photo
-                .col-md-8
+                .col-lg-8.col-sm-12
                   +bg-image('company-profile/photo2.jpg').__photo
-                .col-md-8
+                .col-lg-8.col-sm-12
                   +bg-image('company-profile/photo3.jpg').__photo
-                .col-md-8
+                .col-lg-8.col-sm-12
                   +bg-image('company-profile/photo4.jpg').__photo
-                .col-md-8
+                .col-lg-8.col-sm-12
                   +bg-image('company-profile/photo5.jpg').__photo
-                .col-md-8
+                .col-lg-8.col-sm-12
                   +bg-image('company-profile/photo6.jpg').__photo
-                .col-md-8
+                .col-lg-8.col-sm-12
                   +bg-image('company-profile/photo7.jpg').__photo
-                .col-md-8
+                .col-lg-8.col-sm-12
                   +bg-image('company-profile/photo8.jpg').__photo
-                .col-md-8
+                .col-lg-8.col-sm-12
                   +bg-image('company-profile/photo9.jpg').__photo
             +tab-pane#videos
               .row

@@ -6,10 +6,10 @@ include ../../blocks/map/map
 mixin company-profile-card()
   +b.company-profile-card&attributes(attributes)
     .row
-      .col-md-6
+      .col-sm-6.col-xs-18.col-xs-offset-3.col-sm-offset-0
         +bg-image('company-profile/1.jpg').__logo
         +company-video.__video
-      .col-md-18
+      .col-sm-18.col-xs-24
         +e.header
           h2 BS COMPANY
           +e.A(href='#').website www.bswheels.com
@@ -19,14 +19,19 @@ mixin company-profile-card()
           p Vossen is dedicated to providing quality wheels and lifestyle products for those who value excellence.
           p Our brand aims to reflect a passion for ingenuity and a desire to impact not only the automotive world, but culture at large.
           p At Vossen, we place a high emphasis on design. Like our customers, we value the time and work that goes into creating and manufacturing products that are innovative and aesthetically pleasing. A commitment to providing our customers with the best has positioned Vossen at the forefront of our industry. From our events to our
-        +e.A(href='#').icon-item
-          +icon('logo').__icon
-          <b>25</b>Heroes
-        +e.A(href='#').icon-item
-          +icon('person').__icon
-          <b>267</b>Total Employes
-        +e.A(href='#').icon-item
-          +icon('bag').__icon
-          <b>5</b>Vacancies
+        +e.icon-items
+          +e.A(href='#').icon-item
+            +icon('logo').__icon
+            <b>25</b>Heroes
+          +e.A(href='#').icon-item
+            +icon('person').__icon
+            <b>267</b>Total Employes
+          +e.A(href='#').icon-item
+            +icon('bag').__icon
+            <b>5</b>Vacancies
     +e.map
       +map
+      +e.SPAN.fullmap
+        +icon('location')
+        | view full map
+
