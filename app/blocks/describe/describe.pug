@@ -1,0 +1,29 @@
+include ../bg-image/bg-image
+include ../icon/icons
+
+mixin describe()
+  +b.describe&attributes(attributes)
+    block
+
+mixin describe-text
+  +e.P.text&attributes(attributes)
+    block
+
+mixin describe-subtitle
+  +e.H4.subtitle&attributes(attributes)
+    block
+
+mixin describe-text-container
+  +e.text-container&attributes(attributes)
+    block
+
+mixin describe-link-more
+  +e.A(href='#').more
+    +icon('arrow-down-rounded')
+
+mixin describe-apps
+  +e.apps
+    a(href='#')
+      img(src='assets/images/dashboard/google-play.jpg').img-responsive
+    a(href='#')
+      img(src='assets/images/dashboard/app-store.jpg').img-responsive

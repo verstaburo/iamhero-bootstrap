@@ -1,0 +1,10 @@
+mixin news-item(img)
+  +b.A(href='#').news-item&attributes(attributes).bg-image
+    img(src='assets/images/'+img)
+    +e.text-container
+      block
+      +e.SPAN.text._small._color-warning 27 / 12 / 2016
+
+mixin news-item-text
+  +e.SPAN.text._indented&attributes(attributes)
+    block

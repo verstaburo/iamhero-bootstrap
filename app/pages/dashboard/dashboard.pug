@@ -1,0 +1,35 @@
+extends ../../layouts/inner-page
+include ../../blocks/page/page
+include ../../blocks/bg-image/bg-image
+include ../../blocks/describe/describe
+include ../../blocks/fast-forward/fast-forward
+include ../../blocks/news-item/news-item
+
+block head
+  - var pageTitle = 'I Am Hero - Dashboard'
+
+block content
+  +page._inner-standart
+    +e.dashboard.container
+      .row
+        .col-xxl-offset-3.col-xxl-18.col-xl-offset-0.col-xs-24
+          +fast-forward
+          +describe._text-white._bottom-smaller
+            +e.IMG(src='assets/images/dashboard/dark-bg.jpg').__bg
+            +describe-text-container
+              h2 I am Hero Blasts the worlds famous annual Startup workshop!
+              +describe-text._faded Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
+              +describe-link-more
+          +describe._bordered
+            +e.IMG(src='assets/images/dashboard/app-bg.jpg').__bg
+            +describe-text-container
+              h2 I am Hero App
+              +describe-subtitle Now we really ready to go!
+              +describe-text We’ve made our fresh and brand new application with all the functions available on our service. Stay in touch, be mobile and become a hero Every day. no matter where you are!
+              +describe-apps
+          +news-item('dashboard/news1.jpg')
+            +news-item-text Students on Iamhero. You are hero already, and we know it
+          +news-item('dashboard/news2.jpg')
+            +news-item-text We are starting to work in Italy headhunting workers worldwide!
+          +news-item('dashboard/news3.jpg')
+            +news-item-text S7 Airlines headhunting through Iamhero. 1500 positions right now

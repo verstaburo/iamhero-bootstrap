@@ -1,0 +1,15 @@
+include ../icon/icons
+
+mixin fast-forward()
+  +b.fast-forward&attributes(attributes)
+    +e.SPAN.heading Fast forward:
+    +e.controls
+      +e.item
+        +icon('plus-rounded')
+        a(href='#').h6 Create new job request
+      +e.item
+        +icon('header-search')
+        a(href='#').h6 Create new job request
+      +e.item
+        +icon('pencil-2')
+        a(href='#').h6 Create new job request

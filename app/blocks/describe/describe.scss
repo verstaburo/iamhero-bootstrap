@@ -1,0 +1,80 @@
+.describe {
+  display: block;
+  padding: 50px 60px 60px;
+  position: relative;
+  overflow: hidden;
+
+  &_text-white {
+    color: #fff;
+  }
+
+  &_bottom-smaller {
+    padding-bottom: 25px;
+  }
+
+  &_bordered {
+    border: 1px solid #e1e9ec;
+    box-shadow: 1.231px 1.576px 3px 0px rgba(54, 70, 90, 0.24);
+  }
+
+  &__text-container {
+    width: 50%;
+  }
+
+  &__bg {
+    @include fill-img();
+
+    z-index: -1;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+
+    &_faded {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        bottom: 0;
+        left: 0;
+        // background-image: linear-gradient(to bottom, );
+      }
+    }
+  }
+
+  &__more {
+    display: inline-block;
+    margin-top: 35px;
+
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: $brand-warning;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__apps {
+    margin-top: 35px;
+
+    a {
+      display: inline-block;
+
+      &:not(:first-child) {
+        margin-left: 12px;
+      }
+    }
+  }
+}
