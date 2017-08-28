@@ -9,7 +9,7 @@
     background-color: rgba(37, 255, 196, .22);
 
     &:hover {
-      background-color: rgba(0, 241, 176, .22);
+      background-color: rgba(37, 255, 196, .5);
     }
   }
 
@@ -67,5 +67,9 @@
 
   &-block {
     display: block;
+  }
+
+  &-color-inherit {
+    color: inherit;
   }
 }

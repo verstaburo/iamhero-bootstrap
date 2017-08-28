@@ -1,6 +1,7 @@
 extends ../../layouts/profile
 include ../../components/profile-header/profile-header
 include ../../blocks/sidebar-menu/sidebar-menu
+include ../../blocks/media/media
 include ../../components/plates/plates
 include ../../components/cases/cases
 include ../../components/modals/modals
@@ -16,8 +17,10 @@ block profile-header
   +profile-header
 
 block sidebar-menu
-  +sidebar-menu(getData('sidebar-menu')).__sidebar-menu
-    +button.__button.btn-secondary Preview
+  +sidebar-wrap
+    +media('profile-edit/avatar-small.jpg', 'Name Surname').__media Vocation
+    +sidebar-menu(getData('sidebar-menu')).__menu
+      +button.__button.btn-secondary.btn-color-inherit Preview
 
 block content
   +avatar-plate

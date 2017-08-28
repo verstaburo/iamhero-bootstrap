@@ -1,6 +1,7 @@
 extends ../../layouts/profile
 include ../../components/profile-header/profile-header
 include ../../blocks/sidebar-menu/sidebar-menu
+include ../../blocks/media/media
 include ../../components/plates/plates
 include ../../components/cases/cases
 
@@ -17,7 +18,9 @@ block sidebar-menu
   -
     var sidebarMenu = getData('sidebar-menu')
     sidebarMenu[2].disabled = false
-  +sidebar-menu(sidebarMenu)._static.__sidebar-menu
+  +sidebar-wrap
+    +media('profile-edit/avatar-small.jpg', 'Mark Marthell').media-white.__media singer
+    +sidebar-menu(sidebarMenu)._static.__menu
 
 block content
   +avatar-plate-static

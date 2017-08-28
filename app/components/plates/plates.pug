@@ -78,10 +78,10 @@ mixin talents-plate
     +e.H2.header Talents
     p The list of my professional skills which describes my strongest sides
     +e.tag-container.__top-50
-      +label-close() Singing
-      +label-close() Dancing
-      +label-close() Song writing
-      +label-close() Drawing amazing landscapes
+      +label-talents-close Singing
+      +label-talents-close Dancing
+      +label-talents-close Song writing
+      +label-talents-close Drawing amazing landscapes
     +input-markup.__top-50
       +input-markup-item._grow
         +input('Write another')
@@ -122,6 +122,8 @@ mixin language-sliders(title, color)
   +e.lang-row.sr-animate
     +e.lang-col
       h4.font-weight-medium= title
+      +e.A(href='#').lang-close
+        +icon-close
     each item in langSkills
       +e.lang-col
         h4.visible-xs.visible-sm= item
@@ -173,41 +175,40 @@ mixin resume-plate(edit)
         +e.P.year 2015
       +e.items
         +e.holder
-        +timeline-item.__item
+        +timeline-item.__item.sr-animate
           if edit
             +timeline-item-header-edit('work', '17/06/2016 — 17/06/2018')._red
           else
             +timeline-item-header('work', '17/06/2016 — 17/06/2018')._red
           h4 DEZI Design
           p Stated o work as a junior Designer at DEZI
-        +timeline-item.__item
+        +timeline-item.__item.sr-animate
           if edit
             +timeline-item-header-edit('education', '17/02/2016 — 17/06/2016')._lightgreen
           else
             +timeline-item-header('education', '17/02/2016 — 17/06/2016')._lightgreen
           h4 Univercity Of Creative art Rocherster Great Britain
           p Graduated as a grapchic design bachelor
-        +timeline-item.__item
+        +timeline-item.__item.sr-animate
           if edit
             +timeline-item-header-edit('AWARDS AND CERTIFICATES', '17/02/2016')._violet
           else
             +timeline-item-header('AWARDS AND CERTIFICATES', '17/02/2016')._violet
           h4 Proficiency in economics by ALAP
           p This sertificate gives me and ooportunity to work in financial sector for 2 years using my new knowledges in macroeconomy processes.
-          if edit
-            +e.A(href='#').control
-              +icon('search')
-              p Show document
-            +e.A(href='#').control
-              +icon('save')
-        +timeline-item.__item
+          +e.A(href='#').control
+            +icon('search')
+            p Show document
+          +e.A(href='#').control
+            +icon('save')
+        +timeline-item.__item.sr-animate
           if edit
             +timeline-item-header-edit('work', '17/02/2015 — 17/06/2016')._red
           else
             +timeline-item-header('work', '17/02/2015 — 17/06/2016')._red
           h4 McDonalds Berlin
           p Stated work at local McDonalds restaurant as a cashier
-        +timeline-item.__item
+        +timeline-item.__item.sr-animate
           if edit
             +timeline-item-header-edit('EDUCATION', '17/02/2016 — 17/06/2016')._lightgreen
           else

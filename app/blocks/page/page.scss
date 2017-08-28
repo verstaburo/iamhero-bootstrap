@@ -72,22 +72,8 @@
     }
   }
 
-  // &__decoration {
-  //   position: fixed;
-  //   top: 770px;
-  //   left: 0;
-  //   width: 100%;
-  //   height: calc(100% - 770px);
-  //   background-image: url('../images/profile-edit/decoration.jpg');
-  //   opacity: .24;
-  //   background-repeat: repeat;
-  //   z-index: -1;
-  //   pointer-events: none;
-  //   transform: translate3d(0, 0, 0);
-  // }
-
   &__sidebar-wrap {
-    margin-top: 30px;
+    margin-top: 35px;
     position: static;
   }
 
@@ -100,16 +86,6 @@
 
     @media (max-width: $screen-md-max) {
       padding-top: 50px;
-    }
-  }
-
-  &__sidebar-menu {
-    transform: translate3d(0, 0, 0);
-    transition: all .25s ease-in-out;
-
-    @media (min-width: $screen-lg-min) {
-      margin-left: 35px;
-      margin-bottom: 80px;
     }
   }
 

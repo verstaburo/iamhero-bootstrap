@@ -12,14 +12,15 @@ mixin label-talents
   +label.label-default.label-rounded.label-bordered.label-larger.label-hover-success&attributes(attributes)
     block
 
+mixin label-talents-close
+  +label.label-default.label-rounded.label-bordered.label-larger.label-hover-success.label-close&attributes(attributes)
+    block
+    a(href='#')
+      +icon-close
+
 mixin label-default-medium
   +label.label-default.label-rounded.label-bordered.label-hover-success.label-medium&attributes(attributes)
     block
-
-mixin label-close
-  +label.label-default.label-thin.label-larger.label-close&attributes(attributes)
-    block
-    +icon-close
 
 mixin label-case-tag
   +label.label-bg-grey.label-font-light.label-font-black.label-rounded.label-font-standart&attributes(attributes)

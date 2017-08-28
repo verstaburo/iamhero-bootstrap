@@ -23,6 +23,17 @@
     }
   }
 
+  &__lang-close {
+    position: absolute;
+    right: -30px;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+
+    @media (max-width: $screen-sm-max) {
+      right: 0;
+    }
+  }
+
   &__avatar {
     flex-shrink: 0;
     width: 100%;
@@ -50,6 +61,10 @@
     line-height: 1.2em;
     letter-spacing: -.04em;
     font-weight: 100;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 46px;
+    }
 
     .label {
       vertical-align: middle;
@@ -143,6 +158,13 @@
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 25px;
+
+    &:hover {
+
+      .plate__lang-close {
+        opacity: 1;
+      }
+    }
 
     &:not(:first-of-type)::after {
       content: '';

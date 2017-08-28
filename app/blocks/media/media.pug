@@ -1,9 +1,9 @@
 mixin media(img, heading)
-  +b.media&attributes(attributes)
+  +b.media.media-vertical&attributes(attributes)
     .media-left
       img(src='assets/images/'+img).img-circle.media-object
     .media-body
-      h4.media-heading= heading
+      h5.media-heading.font-weight-medium= heading
       block
 
 

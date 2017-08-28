@@ -1,7 +1,11 @@
 .sidebar-menu {
-  padding: 0;
+  padding-left: 0;
 
   &_static {
+
+    .sidebar-menu__item {
+      padding-left: 0;
+    }
 
     .sidebar-menu__icon {
       opacity: 0;
@@ -16,33 +20,25 @@
   &__icon {
     width: 16px;
     height: 12px;
-    fill: #fff;
-    margin-right: 5px;
+    fill: #688595;
+    margin-right: 2px;
     transition: fill .25s ease-in-out;
   }
 
   &__item {
     position: relative;
-    color: #fff;
-    font-size: 18px;
+    color: #688595;
+    font-size: 17px;
     letter-spacing: -.04em;
-    padding: 9.5px 0;
+    padding: 8px 0 8px 20px;
     transition: all .25s ease-in-out;
 
     a {
-      transition: color .25s ease-in-out;
       color: inherit;
       padding: 0 !important;
 
       &:hover {
-        background-color: transparent !important;
-        color: $brand-success;
-        text-decoration: none;
-      }
-
-      &:focus {
-        background-color: transparent;
-        text-decoration: none;
+        color: #1a2226;
       }
     }
 
@@ -59,8 +55,8 @@
         background-color: #25ffc4;
         position: absolute;
         width: 50vw;
-        left: calc(-50vw - 10px);
-        top: 18px;
+        left: calc(-50vw + 2px);
+        top: 16px;
       }
     }
 
@@ -76,5 +72,21 @@
 
   &__button {
     margin-top: 40px;
+    margin-left: 20px;
+  }
+}
+
+.sidebar-wrap {
+  background-color: #fff;
+  padding: 0 15px 30px;
+
+  &__media {
+    position: relative;
+    top: -25px;
+    padding-left: 10px;
+  }
+
+  &__menu {
+    margin-top: -10px;
   }
 }

@@ -1,8 +1,8 @@
-mixin nav(data)
+mixin nav-success(data)
   +b.UL.nav&attributes(attributes)
     each item in data
       li
         if item.bordered
-          a(href='#').nav-link.nav-link-border-success= item.text
+          a(href='#').nav-link.nav-link-border-success.nav-link-hover-success= item.text
         else
-          a(href='#').nav-link= item.text
+          a(href='#').nav-link.nav-link-hover-success= item.text

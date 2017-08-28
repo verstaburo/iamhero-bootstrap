@@ -3,7 +3,7 @@ import { debounce } from 'throttle-debounce';
 /*eslint-disable*/
 
 export default () => {
-  const el = $('.sidebar-menu');
+  const el = $('.sidebar-wrap');
 
   const stickyInit = () => {
 

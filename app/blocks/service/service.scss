@@ -20,6 +20,7 @@
   &__heading {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__icon {
@@ -48,8 +49,9 @@
   }
 
   &__description {
+    font-family: $font-family-museo-sans;
+    font-weight: 300;
     margin-top: 10px;
-    font-family: $font-family-second;
     font-size: 15px;
     letter-spacing: -.04em;
   }

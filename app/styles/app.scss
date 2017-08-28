@@ -43,6 +43,12 @@ label {
   line-height: 1.2em;
 }
 
+h2, .h2 {
+  @media (max-width: $screen-xs-max) {
+    font-size: 46px;
+  }
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   letter-spacing: -.04em;
 }

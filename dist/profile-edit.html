@@ -22,12 +22,12 @@
             <span class="header__text hidden-md hidden-sm hidden-xs">Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!</span>
             <ul class="nav header__nav">
                 <li>
-                    <a class="nav-link nav-link-border-success" href="#">Sign up now</a>
+                    <a class="nav-link nav-link-border-success nav-link-hover-success" href="#">Sign up now</a>
                 </li>
             </ul>
             <ul class="nav header__nav header__nav_push-right">
                 <li>
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link nav-link-hover-success" href="#">Login</a>
                 </li>
             </ul>
         </div>
@@ -38,13 +38,6 @@
             <div class="row">
                 <div class="col-xxl-20 col-xxl-offset-1 col-xs-24">
                     <div class="profile-header">
-                        <div class="media media-white hidden-xs hidden-sm">
-                            <div class="media-left">
-                                <img class="img-circle media-object" src="assets/images/profile-edit/avatar-small.jpg" />
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Name Surname</h4>Vocation</div>
-                        </div>
                         <label class="switch switch_transparent">
                             <input type="hidden" />
                             <span class="switch__item active">
@@ -54,7 +47,7 @@
                                 <span class="switch__text">Print version</span>
                             </span>
                         </label>
-                        <div class="upload">
+                        <div class="upload profile-header__upload">
                             <input class="upload__input" type="file" />
                             <button class="button-icon btn btn-success-transparent">
                                 <span class="button-icon__text">Change background picture/video</span>
@@ -64,47 +57,56 @@
                     </div>
                 </div>
                 <div class="page__sidebar-wrap col-xxl-offset-1 col-xxl-4 col-lg-5 hidden-md hidden-sm hidden-xs">
-                    <ul class="sidebar-menu page__sidebar-menu">
-                        <li class="sidebar-menu__item active">
-                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
-                            <a href="#summary">Summary</a>
-                        </li>
-                        <li class="sidebar-menu__item">
-                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
-                            <a href="#skills">Skills</a>
-                        </li>
-                        <li class="sidebar-menu__item disabled">
-                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-disabled"></use></svg>
-                            <a href="#talents">Talents</a>
-                        </li>
-                        <li class="sidebar-menu__item">
-                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
-                            <a href="#languages">Languages</a>
-                        </li>
-                        <li class="sidebar-menu__item">
-                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
-                            <a href="#resume">Resume</a>
-                        </li>
-                        <li class="sidebar-menu__item">
-                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="sidebar-menu__item">
-                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
-                            <a href="#interest">Interest</a>
-                        </li>
-                        <li class="sidebar-menu__item">
-                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
-                            <a href="#activities">My social activities</a>
-                        </li>
-                        <li class="sidebar-menu__item">
-                            <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
-                            <a href="#cases">Cases</a>
-                        </li>
-                        <li>
-                            <button class="btn sidebar-menu__button btn-secondary">Preview</button>
-                        </li>
-                    </ul>
+                    <div class="sidebar-wrap">
+                        <div class="media media-vertical sidebar-wrap__media">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/profile-edit/avatar-small.jpg" />
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading font-weight-medium">Name Surname</h5>Vocation</div>
+                        </div>
+                        <ul class="sidebar-menu sidebar-wrap__menu">
+                            <li class="sidebar-menu__item active">
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <a href="#summary">Summary</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <a href="#skills">Skills</a>
+                            </li>
+                            <li class="sidebar-menu__item disabled">
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-disabled"></use></svg>
+                                <a href="#talents">Talents</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <a href="#languages">Languages</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <a href="#resume">Resume</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <a href="#interest">Interest</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <a href="#activities">My social activities</a>
+                            </li>
+                            <li class="sidebar-menu__item">
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <a href="#cases">Cases</a>
+                            </li>
+                            <li>
+                                <button class="btn sidebar-menu__button btn-secondary btn-color-inherit">Preview</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-xxl-16 col-lg-19 col-xs-24">
                     <div class="plate plate_no-padding plate_flex plate_tablet-column" id="summary">
@@ -189,17 +191,25 @@
                         <h2 class="plate__header">Talents</h2>
                         <p>The list of my professional skills which describes my strongest sides</p>
                         <div class="plate__tag-container plate__top-50">
-                            <span class="label label-default label-thin label-larger label-close">Singing
-                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            <span class="label label-default label-rounded label-bordered label-larger label-hover-success label-close">Singing
+                                <a href="#">
+                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
                             </span>
-                            <span class="label label-default label-thin label-larger label-close">Dancing
-                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            <span class="label label-default label-rounded label-bordered label-larger label-hover-success label-close">Dancing
+                                <a href="#">
+                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
                             </span>
-                            <span class="label label-default label-thin label-larger label-close">Song writing
-                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            <span class="label label-default label-rounded label-bordered label-larger label-hover-success label-close">Song writing
+                                <a href="#">
+                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
                             </span>
-                            <span class="label label-default label-thin label-larger label-close">Drawing amazing landscapes
-                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            <span class="label label-default label-rounded label-bordered label-larger label-hover-success label-close">Drawing amazing landscapes
+                                <a href="#">
+                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
                             </span>
                         </div>
                         <div class="input-markup plate__top-50">
@@ -236,6 +246,9 @@
                         <div class="plate__lang-row sr-animate">
                             <div class="plate__lang-col">
                                 <h4 class="font-weight-medium">Russian</h4>
+                                <a class="plate__lang-close" href="#">
+                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
                             </div>
                             <div class="plate__lang-col">
                                 <h4 class="visible-xs visible-sm">Reading</h4>
@@ -269,6 +282,9 @@
                         <div class="plate__lang-row sr-animate">
                             <div class="plate__lang-col">
                                 <h4 class="font-weight-medium">English</h4>
+                                <a class="plate__lang-close" href="#">
+                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
                             </div>
                             <div class="plate__lang-col">
                                 <h4 class="visible-xs visible-sm">Reading</h4>
@@ -340,7 +356,7 @@
                             </div>
                             <div class="timeline__items">
                                 <div class="timeline__holder"></div>
-                                <div class="timeline-item timeline__item">
+                                <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_red">
                                         <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">work</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/06/2016 — 17/06/2018</p>
@@ -356,7 +372,7 @@
                                     <h4>DEZI Design</h4>
                                     <p>Stated o work as a junior Designer at DEZI</p>
                                 </div>
-                                <div class="timeline-item timeline__item">
+                                <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_lightgreen">
                                         <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">education</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2016 — 17/06/2016</p>
@@ -372,7 +388,7 @@
                                     <h4>Univercity Of Creative art Rocherster Great Britain</h4>
                                     <p>Graduated as a grapchic design bachelor</p>
                                 </div>
-                                <div class="timeline-item timeline__item">
+                                <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_violet">
                                         <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">AWARDS AND CERTIFICATES</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2016</p>
@@ -395,7 +411,7 @@
                                         <svg><use xlink:href="assets/images/icon.svg#icon_save"></use></svg>
                                     </a>
                                 </div>
-                                <div class="timeline-item timeline__item">
+                                <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_red">
                                         <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">work</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2015 — 17/06/2016</p>
@@ -411,7 +427,7 @@
                                     <h4>McDonalds Berlin</h4>
                                     <p>Stated work at local McDonalds restaurant as a cashier</p>
                                 </div>
-                                <div class="timeline-item timeline__item">
+                                <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_lightgreen">
                                         <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">EDUCATION</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2016 — 17/06/2016</p>

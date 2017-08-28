@@ -16,3 +16,7 @@ mixin sidebar-menu(data)
           +icon('eye').__icon
           a(href=item.path)= item.text
     block
+
+mixin sidebar-wrap
+  +b.sidebar-wrap&attributes(attributes)
+    block

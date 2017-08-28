@@ -6,14 +6,14 @@ include ../../blocks/upload/upload
 
 mixin profile-header()
   +b.profile-header&attributes(attributes)
-    +media('profile-edit/avatar-small.jpg', 'Name Surname').media-white.hidden-xs.hidden-sm Vocation
+    //- +media('profile-edit/avatar-small.jpg', 'Name Surname').media-white.hidden-xs.hidden-sm Vocation
     +switch('Full version', 'Print version')._transparent
-    +upload
+    +upload.__upload
       +button-icon().btn-success-transparent
         +button-icon-text Change background picture/video
         +button-icon-item('camera')._white._after
 
 mixin profile-header-static()
-  +b.profile-header&attributes(attributes)
-    +media('profile-edit/avatar-small.jpg', 'Mark Marthell').media-white.hidden-xs.hidden-sm singer
+  +b.profile-header._static&attributes(attributes)
+    //- +media('profile-edit/avatar-small.jpg', 'Mark Marthell').media-white.hidden-xs.hidden-sm singer
     +switch('Full version', 'Short version')._transparent
