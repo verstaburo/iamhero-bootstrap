@@ -5,15 +5,15 @@ mixin sidebar-menu(data)
     each item in data
       if item.active
         +e.LI.item.active
-          +icon('eye').__icon
+          +icon('eye-fill').__icon
           a(href=item.path)= item.text
       else if item.disabled
         +e.LI.item.disabled
-          +icon('eye-disabled').__icon
+          +icon('eye-fill-disabled').__icon
           a(href=item.path)= item.text
       else
         +e.LI.item
-          +icon('eye').__icon
+          +icon('eye-fill').__icon
           a(href=item.path)= item.text
     block
 

@@ -9,7 +9,7 @@
 
   &:hover, &:active {
 
-    & > .rangeslider__handle {
+    & > .rangeslider__fill::after {
       opacity: 1;
     }
   }
@@ -19,7 +19,7 @@
     & + .rangeslider {
       pointer-events: none;
 
-      & > .rangeslider__handle {
+      & > .rangeslider__fill::after {
         display: none;
       }
     }
@@ -59,26 +59,29 @@
   &__fill {
     position: absolute;
     height: 8px;
-    left: -1px;
     top: -1px;
     background-color: $gray;
     border-radius: 4px;
     cursor: pointer;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 24px;
+      right: -11px;
+      top: 8px;
+      height: 36px;
+      background-image: url('../images/profile-edit/slider-handler.png');
+      transition: opacity .25s ease-in-out;
+      opacity: 0;
+
+      @media (max-width: $screen-sm-max) {
+        opacity: 1;
+      }
+    }
   }
 
   &__handle {
-    cursor: pointer;
     position: absolute;
-    top: 7px;
-    width: 24px;
-    height: 36px;
-    background-image: url('../images/profile-edit/slider-handler.png');
-    background-repeat: no-repeat;
-    transition: opacity .25s ease-in-out;
-    opacity: 0;
-
-    @media (max-width: $screen-sm-max) {
-      opacity: 1;
-    }
   }
 }

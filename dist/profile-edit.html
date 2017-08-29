@@ -67,39 +67,39 @@
                         </div>
                         <ul class="sidebar-menu sidebar-wrap__menu">
                             <li class="sidebar-menu__item active">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
                                 <a href="#summary">Summary</a>
                             </li>
                             <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
                                 <a href="#skills">Skills</a>
                             </li>
                             <li class="sidebar-menu__item disabled">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-disabled"></use></svg>
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill-disabled"></use></svg>
                                 <a href="#talents">Talents</a>
                             </li>
                             <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
                                 <a href="#languages">Languages</a>
                             </li>
                             <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
                                 <a href="#resume">Resume</a>
                             </li>
                             <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
                                 <a href="#services">Services</a>
                             </li>
                             <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
                                 <a href="#interest">Interest</a>
                             </li>
                             <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
                                 <a href="#activities">My social activities</a>
                             </li>
                             <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye"></use></svg>
+                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
                                 <a href="#cases">Cases</a>
                             </li>
                             <li>
@@ -317,19 +317,11 @@
                         </div>
                         <div class="input-markup input-markup_tablet_wrap plate__top-30">
                             <div class="input-markup__item input-markup__item_grow input-markup__item_divide_40p">
-                                <div class="btn-group btn-select">
-                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
-                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                    <input class="btn-select-control" type="hidden" value="" />
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="btn-select-item" href="#">value1</a>
-                                        </li>
-                                        <li>
-                                            <a class="btn-select-item" href="#">value2</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <select class="js-select" placeholder="Select">
+                                    <option value="">Select</option>
+                                    <option value="en">English</option>
+                                    <option value="ru">Русский</option>
+                                </select>
                             </div>
                             <div class="input-markup__item input-markup__item_margin_both">
                                 <span>or</span>
@@ -358,15 +350,15 @@
                                 <div class="timeline__holder"></div>
                                 <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_red">
-                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">work</span>
+                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">work</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/06/2016 — 17/06/2018</p>
                                         <div class="timeline-item__edits">
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
-                                            </div>
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            </a>
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <h4>DEZI Design</h4>
@@ -374,15 +366,15 @@
                                 </div>
                                 <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_lightgreen">
-                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">education</span>
+                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">education</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2016 — 17/06/2016</p>
                                         <div class="timeline-item__edits">
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
-                                            </div>
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            </a>
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <h4>Univercity Of Creative art Rocherster Great Britain</h4>
@@ -390,15 +382,15 @@
                                 </div>
                                 <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_violet">
-                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">AWARDS AND CERTIFICATES</span>
+                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">AWARDS AND CERTIFICATES</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2016</p>
                                         <div class="timeline-item__edits">
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
-                                            </div>
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            </a>
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <h4>Proficiency in economics by ALAP</h4>
@@ -413,15 +405,15 @@
                                 </div>
                                 <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_red">
-                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">work</span>
+                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">work</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2015 — 17/06/2016</p>
                                         <div class="timeline-item__edits">
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
-                                            </div>
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            </a>
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <h4>McDonalds Berlin</h4>
@@ -429,15 +421,15 @@
                                 </div>
                                 <div class="timeline-item timeline__item sr-animate">
                                     <div class="timeline-item__header timeline-item__header_lightgreen">
-                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white">EDUCATION</span>
+                                        <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">EDUCATION</span>
                                         <p class="timeline-item__date timeline-item__left-8">17/02/2016 — 17/06/2016</p>
                                         <div class="timeline-item__edits">
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
-                                            </div>
-                                            <div class="timeline-item__header-icon timeline-item__left-8">
+                                            </a>
+                                            <a class="timeline-item__left-8" href="#">
                                                 <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <h4>Univercity Of Creative art Rocherster Great Britain</h4>
@@ -460,7 +452,9 @@
                                     <div class="service__heading">
                                         <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_palette"></use></svg>
                                         <h4 class="font-weight-medium">Graphic design</h4>
-                                        <svg class="icon-close service__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        <a class="service__close" href="#">
+                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </a>
                                     </div>
                                     <p class="service__description">Website, logo and company identity graphical design. Print, pre-print, digital design</p>
                                 </div>
@@ -470,7 +464,9 @@
                                     <div class="service__heading">
                                         <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_tape"></use></svg>
                                         <h4 class="font-weight-medium">Video editing</h4>
-                                        <svg class="icon-close service__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        <a class="service__close" href="#">
+                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </a>
                                     </div>
                                     <p class="service__description">Adobe premier and After Effect mastery. Video filiming, color correction and Post production</p>
                                 </div>
@@ -480,7 +476,9 @@
                                     <div class="service__heading">
                                         <svg class="service__icon"><use xlink:href="assets/images/icon.svg#icon_brush"></use></svg>
                                         <h4 class="font-weight-medium">Illustration</h4>
-                                        <svg class="icon-close service__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        <a class="service__close" href="#">
+                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </a>
                                     </div>
                                     <p class="service__description">Drawing illustration and graphical images in various styles. Look for more in cases section</p>
                                 </div>
@@ -488,19 +486,12 @@
                         </div>
                         <div class="input-markup plate__top-40">
                             <div class="input-markup__item input-markup__item_vertical input-markup__item_grow">
-                                <div class="btn-group btn-select">
-                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
-                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                    <input class="btn-select-control" type="hidden" value="" />
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="btn-select-item" href="#">value1</a>
-                                        </li>
-                                        <li>
-                                            <a class="btn-select-item" href="#">value2</a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <select class="js-select" placeholder="Select">
+                                    <option value="">Select</option>
+                                    <option value="design">Design</option>
+                                    <option value="video">Video editing</option>
+                                    <option value="illustration">Illustration</option>
+                                </select>
                                 <input class="form-control" type="text" placeholder="write about service" />
                             </div>
                             <div class="input-markup__item input-markup__item_margin_left input-markup__item_content_bottom">
@@ -704,25 +695,12 @@
                                     <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs" data-filter=".design">Design</span>
                                     <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs" data-filter=".illustration">Illustration</span>
                                     <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs" data-filter=".retouching">Retouching</span>
-                                    <div class="btn-group btn-select visible-xs">
-                                        <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
-                                        <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                        <input class="btn-select-control" type="hidden" value="" />
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="btn-select-item" href="#" data-filter="*">All</a>
-                                            </li>
-                                            <li>
-                                                <a class="btn-select-item" href="#" data-filter=".design">Design</a>
-                                            </li>
-                                            <li>
-                                                <a class="btn-select-item" href="#" data-filter=".illustration">Illustration</a>
-                                            </li>
-                                            <li>
-                                                <a class="btn-select-item" href="#" data-filter=".retouching">Retouching</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <select class="js-select js-case-filter" placeholder="">
+                                        <option value="*">All</option>
+                                        <option value=".design">Design</option>
+                                        <option value=".illustration">Illustration</option>
+                                        <option value=".retouching">Retouching</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="input-markup plate__top-30">
@@ -1020,7 +998,7 @@
     <div class="modal fade" id="videoModal">
         <div class="container">
             <div class="row">
-                <div class="col-xl-16 col-xm-offset-5 col-xm-19 col-xs-24 modal-area">
+                <div class="col-xxl-16 col-lg-offset-5 col-lg-19 col-xs-24 modal-area">
                     <div class="plate plate_modal plate_relative">
                         <h2 class="plate__header">Upload video represent</h2>
                         <svg class="icon-close modal-close" data-dismiss="modal"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
@@ -1054,10 +1032,10 @@
     <div class="modal fade" id="caseModal">
         <div class="container">
             <div class="row">
-                <div class="col-xl-16 col-xm-offset-5 col-xm-19 col-xs-24 modal-area">
+                <div class="col-xxl-16 col-lg-offset-5 col-lg-19 col-xs-24 modal-area">
                     <div class="plate plate_modal plate_relative">
                         <h2 class="plate__header">New case
-                            <span class="label label-thin label-medium label-bg-grey label-font-standart">Graphic</span>
+                            <span class="label label-thin label-medium label-bg-grey label-font-standart label-rounded">Graphic</span>
                         </h2>
                         <svg class="icon-close modal-close" data-dismiss="modal"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                         <form class="modal-form plate__top-30">
@@ -1067,31 +1045,30 @@
                                     <textarea class="form-control plate__top-30 form-control-area-static" rows="3" placeholder="Short description"></textarea>
                                     <div class="modal-form__tags plate__top-30">
                                         <span class="modal-form__text">Tags:</span>
-                                        <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small">Design
-                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small label-rounded">Design
+                                            <a href="#">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
                                         </span>
-                                        <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small">Illustration
-                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small label-rounded">Illustration
+                                            <a href="#">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
                                         </span>
-                                        <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small">Art-directing
-                                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small label-rounded">Art-directing
+                                            <a href="#">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
                                         </span>
                                     </div>
                                     <div class="input-markup plate__top-20">
                                         <div class="input-markup__item input-markup__item_divide_40p input-markup__item_grow">
-                                            <div class="btn-group btn-select">
-                                                <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select</button>
-                                                <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                                <input class="btn-select-control" type="hidden" value="" />
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a class="btn-select-item" href="#">value1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="btn-select-item" href="#">value2</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            <select class="js-select" placeholder="Select">
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
                                         </div>
                                         <div class="input-markup__item input-markup__item_margin_both">
                                             <span>or</span>
@@ -1133,7 +1110,7 @@
     <div class="modal fade" id="resumeModal">
         <div class="container">
             <div class="row">
-                <div class="col-xl-16 col-xm-offset-5 col-xm-19 col-xs-24 modal-area">
+                <div class="col-xxl-16 col-lg-offset-5 col-lg-19 col-xs-24 modal-area">
                     <div class="plate plate_modal plate_relative">
                         <h2 class="plate__header">New timeline point</h2>
                         <svg class="icon-close modal-close" data-dismiss="modal"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
@@ -1162,48 +1139,24 @@
                                         </div>
                                         <div class="input-markup__item input-markup__item_divide_40p input-markup__item_margin_left">
                                             <div class="select-group">
-                                                <div class="btn-group btn-select select-group__item">
-                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">21</button>
-                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                                    <input class="btn-select-control" type="hidden" value="" />
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">01</a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">02</a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">03</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="btn-group btn-select select-group__item">
-                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">September</button>
-                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                                    <input class="btn-select-control" type="hidden" value="" />
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">value1</a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">value2</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="btn-group btn-select select-group__item">
-                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2018</button>
-                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                                    <input class="btn-select-control" type="hidden" value="" />
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">value1</a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">value2</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                                <select class="js-select select-group__item" placeholder="21">
+                                                    <option value="">21</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <select class="js-select select-group__item select-group__item_wide" placeholder="September">
+                                                    <option value="">September</option>
+                                                    <option value="feb">January</option>
+                                                    <option value="feb">February</option>
+                                                    <option value="mar">March</option>
+                                                </select>
+                                                <select class="js-select select-group__item" placeholder="2018">
+                                                    <option value="">2018</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="input-markup__item input-markup__item_margin_both">
@@ -1211,48 +1164,24 @@
                                         </div>
                                         <div class="input-markup__item input-markup__item_divide_40p">
                                             <div class="select-group">
-                                                <div class="btn-group btn-select select-group__item">
-                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">21</button>
-                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                                    <input class="btn-select-control" type="hidden" value="" />
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">01</a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">02</a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">03</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="btn-group btn-select select-group__item">
-                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">September</button>
-                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                                    <input class="btn-select-control" type="hidden" value="" />
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">value1</a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">value2</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="btn-group btn-select select-group__item">
-                                                    <button class="form-control dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">2018</button>
-                                                    <svg><use xlink:href="assets/images/icon.svg#icon_caret"></use></svg>
-                                                    <input class="btn-select-control" type="hidden" value="" />
-                                                    <ul class="dropdown-menu">
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">value1</a>
-                                                        </li>
-                                                        <li>
-                                                            <a class="btn-select-item" href="#">value2</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                                <select class="js-select select-group__item" placeholder="21">
+                                                    <option value="">21</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <select class="js-select select-group__item select-group__item_wide" placeholder="September">
+                                                    <option value="">September</option>
+                                                    <option value="feb">January</option>
+                                                    <option value="feb">February</option>
+                                                    <option value="mar">March</option>
+                                                </select>
+                                                <select class="js-select select-group__item" placeholder="2018">
+                                                    <option value="">2018</option>
+                                                    <option value="2015">2015</option>
+                                                    <option value="2016">2016</option>
+                                                    <option value="2017">2017</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>

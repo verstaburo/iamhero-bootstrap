@@ -7,14 +7,14 @@ include ../../blocks/label/label
 include ../../blocks/icon-close/icon-close
 include ../../blocks/plate/plate
 include ../../blocks/upload-area/upload-area
-include ../../blocks/button-dropdown/button-dropdown
+include ../../blocks/select/select
 
 
 mixin modal
   .modal.fade&attributes(attributes)
     .container
       .row
-        .col-xl-16.col-xm-offset-5.col-xm-19.col-xs-24.modal-area
+        .col-xxl-16.col-lg-offset-5.col-lg-19.col-xs-24.modal-area
           +plate._modal._relative
             block
 
@@ -44,7 +44,7 @@ mixin video-modal
 mixin case-modal
   +modal#caseModal
     +e.H2.header New case
-      +label.label-thin.label-medium.label-bg-grey.label-font-standart Graphic
+      +label.label-thin.label-medium.label-bg-grey.label-font-standart.label-rounded Graphic
     +modal-close
     +b.FORM.modal-form.plate__top-30
       +e.wrap
@@ -58,7 +58,7 @@ mixin case-modal
             +label-case-tag-close Art-directing
           +input-markup.plate__top-20
             +input-markup-item._divide_40p._grow
-              +button-dropdown('Select', ['value1', 'value2'])
+              +select([{value: '1', text: '1'}, {value: '2', text: '2'}, {value: '3', text: '3'}], 'Select')
             +input-markup-item._margin_both
               span or
             +input-markup-item._divide_40p._grow

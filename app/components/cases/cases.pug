@@ -4,7 +4,7 @@ include ../../blocks/label/label
 include ../../blocks/button/button
 include ../../blocks/input-markup/input-markup
 include ../../blocks/button-icon/button-icon
-include ../../blocks/button-dropdown/button-dropdown
+include ../../blocks/select/select
 
 mixin cases(edit)
   +b.cases#cases&attributes(attributes)
@@ -16,11 +16,7 @@ mixin cases(edit)
           +label-default-medium(data-filter='.design').hidden-xs Design
           +label-default-medium(data-filter='.illustration').hidden-xs Illustration
           +label-default-medium(data-filter='.retouching').hidden-xs Retouching
-          +button-dropdown-custom('All').visible-xs
-            +button-select-item('All')(data-filter='*')
-            +button-select-item('Design')(data-filter='.design')
-            +button-select-item('Illustration')(data-filter='.illustration')
-            +button-select-item('Retouching')(data-filter='.retouching')
+          +select([{value: '*', text: 'All'},{value: '.design', text: 'Design'},{value: '.illustration', text: 'Illustration'},{value: '.retouching', text: 'Retouching'}]).js-case-filter
       if edit
         +input-markup.__top-30
           +input-markup-item._push_right

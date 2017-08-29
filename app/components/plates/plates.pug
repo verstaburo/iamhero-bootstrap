@@ -13,10 +13,10 @@ include ../../blocks/upload/upload
 include ../../blocks/icon-close/icon-close
 include ../rangesliders/rangesliders
 include ../timeline/timeline
-include ../../blocks/button-dropdown/button-dropdown
 include ../../blocks/service/service
 include ../../blocks/thumbnail/thumbnail
 include ../../blocks/input-markup/input-markup
+include ../../blocks/select/select
 
 mixin plate-avatar(src)
   +bg-image(src).__avatar&attributes(attributes)
@@ -148,7 +148,7 @@ mixin languages-plate
     +language-sliders('English', 'orange')
     +input-markup._tablet_wrap.__top-30
       +input-markup-item._grow._divide_40p
-        +button-dropdown('Select', ['value1', 'value2'])
+        +select([{value: 'en', text: 'English'}, {value: 'ru', text: 'Русский'}], 'Select')
       +input-markup-item._margin_both
         span or
       +input-markup-item._grow._divide_40p
@@ -167,7 +167,12 @@ mixin languages-plate-static
 mixin resume-plate(edit)
   +plate#resume
     +e.H2.header Resume
-    p Here is my professional goals in informative and simple timeline
+    if edit
+      p Here is my professional goals in informative and simple timeline
+    else
+      +e.lang-show-container
+        p Here is my professional goals in informative and simple timeline
+        +timeline-show
     +timeline.__top-60
       +e.years
         +e.P.year 2017
@@ -231,7 +236,7 @@ mixin services-plate
         +service('brush', 'Illustration').sr-animate Drawing illustration and graphical images in various styles. Look for more in cases section
     +input-markup.__top-40
       +input-markup-item._vertical._grow
-        +button-dropdown('Select', ['value1', 'value2'])
+        +select([{value: 'design', text: 'Design'}, {value: 'video', text: 'Video editing'}, {value: 'illustration', text: 'Illustration'}], 'Select')
         +input('write about service')
       +input-markup-item._margin_left._content_bottom
         +button-add.__item_push_right Add new service

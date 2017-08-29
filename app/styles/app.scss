@@ -20,6 +20,10 @@ ol, ul {
   padding: 0;
 }
 
+a.label:hover {
+  color: inherit;
+}
+
 li {
   list-style-type: none;
 }

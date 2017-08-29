@@ -12,15 +12,28 @@ mixin timeline-item
 
 mixin timeline-item-header-edit(label, date)
   +e.header&attributes(attributes)
-    +label.label-rounded.label-uppercase.label-font-second.label-font-regular.label-font-white= label
+    +label.label-rounded.label-uppercase.label-font-second.label-font-regular.label-font-white.label-smaller= label
     +e.P.date.__left-8= date
     +e.edits
-      +e.header-icon.__left-8
+      +e.A(href='#').__left-8
         +icon('pencil').icon-edit
-      +e.header-icon.__left-8
+      +e.A(href='#').__left-8
         +icon-close
 
 mixin timeline-item-header(label, date)
   +e.header&attributes(attributes)
-    +label.label-rounded.label-uppercase.label-font-second.label-font-regular.label-font-white= label
+    +label.label-rounded.label-uppercase.label-font-second.label-font-regular.label-font-white.label-smaller= label
     +e.P.date.__left-8= date
+
+mixin timeline-show
+  +e.show-controls&attributes(attributes)
+    p Show:
+    +label.label-rounded.label-uppercase.label-font-second.label-font-regular.label-smaller.label-success.label-hover-border-red.label-show-small
+      +icon('eye-fill')
+      | education
+    +label.label-rounded.label-uppercase.label-font-second.label-font-regular.label-smaller.label-hover-border-red.label-show-small.label-show-disabled
+      +icon('eye-fill-disabled')
+      | AWARDS AND CERTIFICATES
+    +label.label-rounded.label-uppercase.label-font-second.label-font-regular.label-smaller.label-hover-border-red.label-show-small.label-show-disabled
+      +icon('eye-fill-disabled')
+      | WORK

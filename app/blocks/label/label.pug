@@ -27,6 +27,7 @@ mixin label-case-tag
     block
 
 mixin label-case-tag-close
-  +label.label-bg-grey.label-font-light.label-font-black.label-close.label-close-small&attributes(attributes)
+  +label.label-bg-grey.label-font-light.label-font-black.label-close.label-close-small.label-rounded&attributes(attributes)
     block
-    +icon-close
+    a(href='#')
+      +icon-close

@@ -6,7 +6,8 @@ mixin service(icon, title)
     +e.heading
       +icon(icon).icon
       h4.font-weight-medium= title
-      +icon-close.service__close
+      +e.A(href='#').close
+        +icon-close
     +e.P.description
       block
 
@@ -14,6 +15,6 @@ mixin service-static(icon, title)
   +b.service&attributes(attributes)
     +e.heading
       +icon(icon).icon
-      h4.font-weight-medium= title
+      h4.font-weight-medium=title
     +e.P.description
       block

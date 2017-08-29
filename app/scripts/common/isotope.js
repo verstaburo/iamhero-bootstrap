@@ -24,6 +24,14 @@ export default () => {
       return;
     }
 
+    var selectMobile = document.querySelector('.js-case-filter');
+
+    selectMobile.onchange = function () {
+      iso.arrange({
+        filter: selectMobile.value,
+      });
+    }
+
     const filters = filtersElem.children;
 
     for (let i = 0; i < filters.length; i++) {
@@ -34,7 +42,7 @@ export default () => {
 
     var filterValue = event.target.getAttribute('data-filter');
 
-    if (!filterValue) {
+    if(!filterValue) {
       return;
     }
 

@@ -1,5 +1,5 @@
 extends ../../layouts/inner-page
-include ../../blocks/button-dropdown/button-dropdown
+//- include ../../blocks/button-dropdown/button-dropdown
 include ../../blocks/checkbox/checkbox
 include ../../blocks/inner-card/inner-card
 include ../../blocks/page/page
@@ -16,8 +16,8 @@ block aside-filter
   +aside-filter
     +aside-filter-item
       +aside-filter-heading('menu-search') filter
-      +button-dropdown('Working field', ['value1', 'value2'])
-      +button-dropdown('Location', ['value1', 'value2'])
+      //- +button-dropdown('Working field', ['value1', 'value2'])
+      //- +button-dropdown('Location', ['value1', 'value2'])
       +e.SPAN.subheading Amount of Employees:
       +checkbox('true') 1-10
       +checkbox('true') 11-100
