@@ -34,10 +34,10 @@ mixin avatar-plate
     +e.info-col._form
       +logo(true).__logo
       +e.FORM.hero-form
-        +input('Name Surname').form-control-border-bottom.form-control-border-big.form-control-big.__header
+        +input('Name Surname').form-control-border-bottom.form-control-border-big.form-control-big.__header._small
         +input('Vocation/position').form-control-border-bottom.form-control-small
         +input('Lacation').form-control-border-bottom.form-control-smaller
-        +textarea('5').form-control-area-static A few words about yourself
+        +textarea('5')(placeholder='A few words about yourself').form-control-area-static
 
 mixin avatar-plate-static
   +plate._no-padding._flex._tablet-column#summary
@@ -45,7 +45,7 @@ mixin avatar-plate-static
     +e.info-col
       +logo(true).__logo
       +e.hero-form
-        h2 Mark Marthell
+        +e.H2.header._small Mark Marthell
         h5 Los Angeles, USA
         h4 Singer, Producer, Interpreneur
         p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
@@ -304,10 +304,10 @@ mixin social-plate-static
         +icon('youtube', true).social-header__icon
       +tab('pinterest').social-header__item
         +icon('pinterest', true).social-header__icon
-      li.social-header__item.social-header__item_push_right.social-header__item_flexible.social-header__item_mobile-first
-        +button-icon.__item_push_right.btn-success-transparent.social-header__button
-          +button-icon-item('plus')._stroke_white._big
-          +button-icon-text Add new social tab
+      //- li.social-header__item.social-header__item_push_right.social-header__item_flexible.social-header__item_mobile-first
+      //-   +button-icon.__item_push_right.btn-success-transparent.social-header__button
+      //-     +button-icon-item('plus')._stroke_white._big
+      //-     +button-icon-text Add new social tab
 
     +tab-content.social-content
       +tab-pane.active.in#instagram
@@ -359,17 +359,17 @@ mixin social-plate
         +plate
           +e.H2.header Instagram
           .row
-            .col-md-12.col-xs-24
+            .col-sm-12.col-xs-24
               +bg-image('profile-edit/social/1.jpg').social-content__img.social-content__img_big
-            .col-md-12.col-xs-24
+            .col-sm-12.col-xs-24
               .row
-                .col-sm-12
+                .col-sm-12.col-xs-24
                   +bg-image('profile-edit/social/2.jpg').social-content__img
-                .col-sm-12
+                .col-sm-12.col-xs-24
                   +bg-image('profile-edit/social/3.jpg').social-content__img
-                .col-sm-12
+                .col-sm-12.col-xs-24
                   +bg-image('profile-edit/social/4.jpg').social-content__img
-                .col-sm-12
+                .col-sm-12.col-xs-24
                   +view-in('instagram')._insta.social-content__img Instagram
       +tab-pane#facebook
         +plate

@@ -23,7 +23,10 @@
   &__heading {
     display: flex;
     align-items: center;
-    justify-content: center;
+
+    @media (min-width: $screen-md-min) {
+      justify-content: center;
+    }
   }
 
   &__icon {

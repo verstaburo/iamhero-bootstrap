@@ -12,6 +12,9 @@
   }
 
   &-interests {
+    display: flex;
+    flex-direction: column;
+
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       flex-direction: row;
 
