@@ -21,23 +21,17 @@
     margin-top: auto;
   }
 
-  &__text {
-    font-weight: 100;
+  h3 {
+    margin-top: 0;
     font-size: 27px;
-    letter-spacing: -.04em;
-    display: block;
     color: #fff;
+    margin-bottom: 30px;
+  }
 
-    &_small {
-      font-size: 12px;
-    }
-
-    &_color-warning {
-      color: $brand-warning;
-    }
-
-    &_indented {
-      margin-bottom: 30px;
-    }
+  &__time {
+    font-size: 12px;
+    color: $brand-warning;
+    letter-spacing: -.04em;
+    font-weight: 100;
   }
 }

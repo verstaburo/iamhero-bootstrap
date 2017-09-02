@@ -4,8 +4,29 @@
   position: relative;
   overflow: hidden;
 
+  &_faded {
+
+    p {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        background-image: linear-gradient(to bottom, rgba(#000a23, .2) 0%, #000a23 100%);
+      }
+    }
+  }
+
   &_text-white {
     color: #fff;
+
+    p {
+      color: #f3f3f3;
+    }
   }
 
   &_bottom-smaller {
@@ -18,40 +39,27 @@
   }
 
   &__text-container {
-    width: 50%;
+    width: 42%;
+
+    p {
+      font-size: 16px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 25px;
+    }
   }
 
   &__bg {
     @include fill-img();
 
     z-index: -1;
-  }
-
-  h2 {
-    margin-top: 0;
-    margin-bottom: 50px;
-  }
-
-  &__subtitle {
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
-
-  &__text {
-
-    &_faded {
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 20%;
-        bottom: 0;
-        left: 0;
-        // background-image: linear-gradient(to bottom, );
-      }
-    }
   }
 
   &__more {

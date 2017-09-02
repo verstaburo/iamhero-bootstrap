@@ -26,9 +26,9 @@ export default () => {
       });
     }
 
-    initSmallMap()
+    initSmallMap();
 
-    function initializeBranchMap() {
+    function initBranchMap() {
       const mapBranchElement = document.getElementById('map-branch');
       if (!mapBranchElement) {
         return;
@@ -37,12 +37,12 @@ export default () => {
         lat: 48.7297424,
         lng: 5.8553172,
       };
-      var mapBranch = new google.maps.Map(mapBranchElement, {
+      const mapBranch = new google.maps.Map(mapBranchElement, {
         zoom: 7,
         center: branchCenter,
         scrollwheel: false,
       });
-      var image = {
+      const image = {
         url: 'assets/images/icon/map-figure.svg',
         // This marker is 20 pixels wide by 32 pixels high.
         size: new google.maps.Size(52, 71),
@@ -52,7 +52,7 @@ export default () => {
         anchor: new google.maps.Point(26, 71)
       };
       // eslint-disable-next-line
-      var luxemburg = new google.maps.Marker({
+      const luxemburg = new google.maps.Marker({
         position: {
           lat: 49.6075838,
           lng: 6.0658304,
@@ -61,7 +61,7 @@ export default () => {
         map: mapBranch,
       });
       // eslint-disable-next-line
-      var troyes = new google.maps.Marker({
+      const troyes = new google.maps.Marker({
         position: {
           lat: 48.2955989,
           lng: 4.0845315,
@@ -70,7 +70,7 @@ export default () => {
         map: mapBranch,
       });
       // eslint-disable-next-line
-      var karlsruhe = new google.maps.Marker({
+      const karlsruhe = new google.maps.Marker({
         position: {
           lat: 49.0054691,
           lng: 8.4050689,
@@ -80,13 +80,12 @@ export default () => {
       });
     }
 
-    initializeBranchMap()
+    initBranchMap();
 
     $('a[href="#branch"]').click(function() {
       setTimeout(function() {
-        initializeBranchMap();
+        initBranchMap();
       }, 200);
-      console.log('obj');
     });
   }).catch(f => f);
 };
