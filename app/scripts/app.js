@@ -1,6 +1,4 @@
-// import 'sticky-kit/dist/sticky-kit';
-import svg4everybody from 'svg4everybody';
-import objectFitImages from 'object-fit-images';
+/* eslint-disable*/
 import rangeSliderInit from '../blocks/rangeslider/rangeslider';
 import switchInit from '../blocks/switch/switch';
 import videoPlay from '../components/plates/video-play';
@@ -13,7 +11,7 @@ import companyVideo from '../blocks/company-video/company-video';
 import map from '../blocks/map/map';
 import innerHeader from '../components/inner-header/inner-header';
 import select from '../blocks/select/select';
-// eslint-disable-next-line
+
 $(() => {
   objectFitImages();
   svg4everybody();

@@ -1,7 +1,4 @@
 /*eslint-disable*/
-import Isotope from 'isotope-layout';
-
-
 export default () => {
   const el = document.querySelector('.isotope');
 

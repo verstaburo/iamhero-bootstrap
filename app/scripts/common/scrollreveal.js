@@ -1,4 +1,3 @@
-import ScrollReveal from 'scrollreveal';
 /*eslint-disable*/
 export default () => {
   window.sr = ScrollReveal({

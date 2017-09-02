@@ -1,6 +1,4 @@
-import Selectize from 'selectize';
 /*eslint-disable*/
-
 export default () => {
 
   const select = $('.js-select');
