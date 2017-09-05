@@ -338,11 +338,12 @@
   &__tabs {
 
     li.active {
-
+// stylelint-disable
       & > a {
         background-color: #e9eff4;
       }
     }
+// stylelint-enable
 
     a {
       display: block;

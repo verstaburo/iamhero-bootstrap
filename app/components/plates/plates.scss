@@ -96,14 +96,6 @@
     letter-spacing: -.04em;
     font-weight: 100;
 
-    &_small {
-      font-size: 44px;
-
-      @media (max-width: $screen-xs-max) {
-        font-size: 38px;
-      }
-    }
-
     @media (max-width: $screen-xs-max) {
       font-size: 46px;
     }
@@ -152,10 +144,16 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    width: 100%;
 
     h2 {
       margin-top: 0;
       margin-bottom: 0;
+    }
+
+    .form-control-border-big {
+      height: auto;
+      padding: 5px 0;
     }
 
     .form-control-small {
@@ -473,12 +471,12 @@
     &_flexible {
       width: auto;
     }
-
+// stylelint-disable
     a[role='tab'] {
       display: block;
       height: 100%;
       padding: 23px;
-
+// stylelint-enable
       @media (max-width: $screen-xs-max) {
         padding: 15px 8px;
       }

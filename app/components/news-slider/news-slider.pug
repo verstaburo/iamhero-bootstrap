@@ -1,0 +1,19 @@
+include ../../blocks/slider/slider
+include ../../blocks/news-item/news-item
+
+mixin news-slider()
+  +slider.news-slider&attributes(attributes)
+    block nav
+      +slider-nav
+    +slider-item
+      +news-item('dashboard/news1.jpg') Students on Iamhero. You are hero already, and we know it
+    +slider-item
+      +news-item('dashboard/news2.jpg') We are starting to work in Italy headhunting workers worldwide!
+    +slider-item
+      +news-item('dashboard/news3.jpg') S7 Airlines headhunting through Iamhero. 1500 positions right now
+    +slider-item
+      +news-item('dashboard/news1.jpg') Students on Iamhero. You are hero already, and we know it
+    +slider-item
+      +news-item('dashboard/news2.jpg') We are starting to work in Italy headhunting workers worldwide!
+    +slider-item
+      +news-item('dashboard/news3.jpg') S7 Airlines headhunting through Iamhero. 1500 positions right now

@@ -11,6 +11,9 @@ import companyVideo from '../blocks/company-video/company-video';
 import map from '../blocks/map/map';
 import innerHeader from '../components/inner-header/inner-header';
 import select from '../blocks/select/select';
+import newsSlider from '../components/news-slider/news-slider';
+import heroSlider from '../components/hero-slider/hero-slider';
+import fitText from './common/fitText';
 
 $(() => {
   objectFitImages();
@@ -27,4 +30,7 @@ $(() => {
   map();
   innerHeader();
   select();
+  newsSlider();
+  heroSlider();
+  fitText();
 });

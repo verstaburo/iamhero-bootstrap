@@ -2,6 +2,7 @@
 @import 'helpers/fonts'; // Шрифты
 @import 'libs/bootstrap-sass/bootstrap';
 @import 'helpers/bs-mixins';
+@import 'libs/swiper/swiper';
 @import '../blocks/**/*';
 @import '../components/**/*';
 @import '../pages/**/*';
@@ -19,10 +20,11 @@ ol, ul {
   margin: 0;
   padding: 0;
 }
-
+// stylelint-disable
 a.label:hover {
   color: inherit;
 }
+// stylelint-enable
 
 li {
   list-style-type: none;

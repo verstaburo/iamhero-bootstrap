@@ -1,0 +1,38 @@
+.hero-card {
+  display: block;
+  border: 1px solid #e1e9ec;
+  box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .24);
+
+  &__image {
+    height: 235px;
+  }
+
+  &__text {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 23px 60px 15px 20px;
+    height: 210px;
+
+    h4 {
+      padding-right: 30%;
+      font-weight: 500;
+    }
+
+    p {
+      font-weight: 500;
+      font-family: $font-family-museo-sans;
+      margin-top: auto;
+      margin-bottom: 0;
+// stylelint-disable
+      &.text-grey {
+        color: #84959f;
+      }
+
+      &.text-success {
+        margin-top: 20px;
+        letter-spacing: -.04em;
+      }
+    }
+  }
+}

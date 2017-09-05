@@ -1,0 +1,7 @@
+include ../bg-image/bg-image
+
+mixin hero-card(img)
+  +b.A(href='#').hero-card&attributes(attributes)
+    +bg-image(img).__image
+    +e.text
+      block
