@@ -3,8 +3,11 @@ include ../../blocks/page/page
 include ../../blocks/bg-image/bg-image
 include ../../blocks/describe/describe
 include ../../blocks/fast-forward/fast-forward
+include ../../blocks/rangeslider/rangeslider
 include ../../components/news-slider/news-slider
 include ../../components/hero-slider/hero-slider
+include ../../components/activity-plate/activity-plate
+include ../../components/rate-form/rate-form
 
 block head
   - var pageTitle = 'I Am Hero - Dashboard'
@@ -13,6 +16,7 @@ block content
   +page._inner-standart._dashboard
     +e.col-left
       +fast-forward
+      +activity-plate.__card
       +describe._text-white._bottom-smaller._faded.__card
         +e.IMG(src='assets/images/dashboard/dark-bg.jpg').__bg
         +describe-text-container
@@ -31,4 +35,6 @@ block content
       +e.H2.header Suggested heroes
       +hero-slider.__card
       +e.H2.header I am Hero Survey
+      h3 Please rate Your Experience using iamhero.io! From complete and absolute zero to mindblowing, spectacular happiness!
+      +rate-form
     +e.col-right

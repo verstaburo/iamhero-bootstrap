@@ -1,0 +1,8 @@
+include ../../components/rangesliders/rangesliders
+include ../../blocks/button/button
+
+mixin rate-form()
+  +b.FORM.rate-form&attributes(attributes)
+    +rangeslider-gradient
+    +button.btn-secondary-warning.__button Send your opinion
+    block

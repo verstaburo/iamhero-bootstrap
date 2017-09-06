@@ -84,4 +84,41 @@
   &__handle {
     position: absolute;
   }
+
+  &_gradient {
+
+    & + .rangeslider {
+      border-color: $brand-warning;
+      background-color: $brand-warning;
+
+      .rangeslider__fill {
+        background-image: linear-gradient(to left, #1b202d 0%, #465d75 55%, #59bba0 100%);
+
+        &::after {
+          content: none;
+        }
+      }
+
+      .rangeslider__handle {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: $brand-warning;
+        top: -8px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          right: -2px;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: #2b364c;
+          opacity: .28;
+          z-index: -1;
+        }
+      }
+    }
+  }
 }

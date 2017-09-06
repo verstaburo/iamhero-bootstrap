@@ -27,3 +27,11 @@ mixin rangeslider-nolabel-static(color)
   +b.rangeslider-wrap&attributes(attributes)
     +e.SPAN.output._nolabel
     +rangeslider(class='rangeslider_static rangeslider_color_'+color)
+
+mixin rangeslider-gradient
+  +b.rangeslider-wrap&attributes(attributes)
+    +e.meter
+      span 0
+      span 10
+    +e.SPAN.output-custom
+    +rangeslider-custom('0', '10', '0.05', '7.45').rangeslider_gradient

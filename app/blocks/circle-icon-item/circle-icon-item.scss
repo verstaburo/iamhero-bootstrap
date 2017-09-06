@@ -1,3 +1,38 @@
 .circle-icon-item {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h6 {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+
+  &__circle {
+    transform: rotate(-65deg);
+  }
+
+  &__count-wrap {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    top: -3px;
+    transform: translateX(-50%);
+    left: 50%;
+    fill: none;
+    stroke: #5e6e7f;
+  }
+
+  &__count {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 48%;
+    font-size: 21px;
+    letter-spacing: -.04em;
+  }
 }

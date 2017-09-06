@@ -14,9 +14,17 @@ export default () => {
   });
 
   function valueOutput(el) {
-    var output = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output');
     var value = el.val();
-    output.html(value+'%');
+    var output = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output');
+    if (output.length) {
+      output.html(value+'%');
+    }
+    var outputCustom = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-custom');
+    if (outputCustom.length) {
+      outputCustom.html(value);
+      var handlerPosition = outputCustom.siblings('.rangeslider').find('.rangeslider__handle').css('left');
+      outputCustom.css('left', handlerPosition);
+    }
   }
 
   valueOutput($selector);

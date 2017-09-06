@@ -1,0 +1,11 @@
+include ../../blocks/circle-icon-item/circle-icon-item
+
+mixin activity-plate()
+  +b.activity-plate&attributes(attributes)
+    +e.TIME.time 5 minutes ago
+    +e.text
+      h2 Recent Activity
+      p Here’s what happened since your last visit. Besides the fact that we missed you a lot
+    +circle-icon-item('eye-thin', '156').__item Company profile views
+    +circle-icon-item('messages-thin', '2').__item Private Messages
+    +circle-icon-item('heroes-thin', '893').__item New Heroes for you
