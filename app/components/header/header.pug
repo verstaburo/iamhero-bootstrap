@@ -4,7 +4,8 @@ include ../../blocks/nav/nav
 mixin header()
   +b.HEADER.header&attributes(attributes)
     +e.content.container-fluid
-        +logo().__logo
+        +logo()
+        +e.BUTTON.burger
         +e.SPAN.text.hidden-md.hidden-sm.hidden-xs Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!
         +nav-success([{text: 'Sign up now', bordered: true}]).__nav
         +nav-success([{text: 'Login'}]).__nav._push-right

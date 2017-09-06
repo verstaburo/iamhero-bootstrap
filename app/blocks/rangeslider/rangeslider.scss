@@ -71,9 +71,10 @@
       right: -11px;
       top: 8px;
       height: 36px;
-      background-image: url('../images/profile-edit/slider-handler.png');
+      background-image: url('../images/icon/slider-handler.svg');
       transition: opacity .25s ease-in-out;
       opacity: 0;
+      z-index: 1;
 
       @media (max-width: $screen-sm-max) {
         opacity: 1;

@@ -14,10 +14,12 @@ import select from '../blocks/select/select';
 import newsSlider from '../components/news-slider/news-slider';
 import heroSlider from '../components/hero-slider/hero-slider';
 import fitText from './common/fitText';
+import header from '../components/header/header'
 
 $(() => {
   objectFitImages();
   svg4everybody();
+  header();
   rangeSliderInit();
   switchInit();
   videoPlay();

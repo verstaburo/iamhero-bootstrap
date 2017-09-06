@@ -24,6 +24,10 @@ ol, ul {
 a.label:hover {
   color: inherit;
 }
+
+input[type='range'] {
+  display: none;
+}
 // stylelint-enable
 
 li {
