@@ -16,9 +16,10 @@
 <body>
     <header class="header">
         <div class="header__content container-fluid">
-            <a class="logo header__logo" href="#">
+            <a class="logo" href="#">
                 <img src="assets/images/icon/iamhero_logo_grey.svg" />
             </a>
+            <button class="header__burger"></button>
             <span class="header__text hidden-md hidden-sm hidden-xs">Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!</span>
             <ul class="nav header__nav">
                 <li>
@@ -56,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="page__sidebar-wrap col-xxl-offset-1 col-xxl-4 col-lg-5 hidden-md hidden-sm hidden-xs">
+                <div class="page__sidebar-wrap col-xxl-offset-1 col-xxl-4 col-lg-5">
                     <div class="sidebar-wrap">
                         <div class="media media-vertical sidebar-wrap__media">
                             <div class="media-left">
@@ -125,10 +126,10 @@
                                 <img src="assets/images/icon/iamhero_logo_grey.svg" />
                             </div>
                             <form class="plate__hero-form">
-                                <input class="form-control form-control-border-bottom form-control-border-big form-control-big plate__header" type="text" placeholder="Name Surname" />
+                                <input class="form-control form-control-border-bottom form-control-border-big plate__header responsive-font" type="text" placeholder="Name Surname" />
                                 <input class="form-control form-control-border-bottom form-control-small" type="text" placeholder="Vocation/position" />
                                 <input class="form-control form-control-border-bottom form-control-smaller" type="text" placeholder="Lacation" />
-                                <textarea class="form-control form-control-area-static" rows="5">A few words about yourself</textarea>
+                                <textarea class="form-control form-control-area-static form-control-border-straight" rows="5" placeholder="A few words about yourself"></textarea>
                             </form>
                         </div>
                     </div>
@@ -599,12 +600,6 @@
                                 <a data-toggle="tab" role="tab" href="#pinterest" aria-controls="pinterest">
                                     <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_pinterest"></use></svg>
                                 </a>
-                            </li>
-                            <li class="social-header__item social-header__item_push_right social-header__item_flexible social-header__item_mobile-first">
-                                <button class="button-icon btn plate__item plate__item_push_right btn-success-transparent social-header__button">
-                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
-                                    <span class="button-icon__text">Add new social tab</span>
-                                </button>
                             </li>
                         </ul>
                         <div class="tab-content social-content">
@@ -1210,7 +1205,15 @@
         </div>
     </div>
     <script src="assets/scripts/libs/bootstrap.min.js"></script>
+    <script src="assets/scripts/libs/bluebird.min.js"></script>
+    <script src="assets/scripts/libs/svg4everybody.min.js"></script>
+    <script src="assets/scripts/libs/ofi.min.js"></script>
+    <script src="assets/scripts/libs/sticky-kit.min.js"></script>
     <script src="assets/scripts/libs/rangeslider.min.js"></script>
+    <script src="assets/scripts/libs/swiper.jquery.min.js"></script>
+    <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
+    <script src="assets/scripts/libs/scrollreveal.min.js"></script>
+    <script src="assets/scripts/libs/selectize.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

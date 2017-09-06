@@ -183,81 +183,279 @@
             <span class="inner-sidebar__hint">Settings</span>
         </li>
     </ul>
-    <main class="page page_inner-standart" role="main">
-        <div class="page__dashboard container">
-            <div class="row">
-                <div class="col-xxl-offset-3 col-xxl-18 col-xl-offset-0 col-xs-24">
-                    <div class="fast-forward">
-                        <span class="fast-forward__heading">Fast forward:</span>
-                        <div class="fast-forward__controls">
-                            <div class="fast-forward__item">
-                                <svg><use xlink:href="assets/images/icon.svg#icon_plus-rounded"></use></svg>
-                                <a class="h6" href="#">Create new job request</a>
-                            </div>
-                            <div class="fast-forward__item">
-                                <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
-                                <a class="h6" href="#">Create new job request</a>
-                            </div>
-                            <div class="fast-forward__item">
-                                <svg><use xlink:href="assets/images/icon.svg#icon_pencil-2"></use></svg>
-                                <a class="h6" href="#">Create new job request</a>
-                            </div>
-                        </div>
+    <main class="page page_inner-standart page_dashboard" role="main">
+        <div class="page__col-left">
+            <div class="fast-forward">
+                <span class="fast-forward__heading">Fast forward:</span>
+                <div class="fast-forward__controls">
+                    <div class="fast-forward__item">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_plus-rounded"></use></svg>
+                        <a class="h6" href="#">Create new job request</a>
                     </div>
-                    <div class="describe describe_text-white describe_bottom-smaller">
-                        <img class="describe__bg" src="assets/images/dashboard/dark-bg.jpg" alt="" role="presentation" />
-                        <div class="describe__text-container">
-                            <h2>I am Hero Blasts the worlds famous annual Startup workshop!</h2>
-                            <p class="describe__text describe__text_faded">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
-                                roommate Jason Germain and a few close friends in 1999.</p>
-                            <a class="describe__more" href="#">
-                                <svg><use xlink:href="assets/images/icon.svg#icon_arrow-down-rounded"></use></svg>
-                            </a>
-                        </div>
+                    <div class="fast-forward__item">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+                        <a class="h6" href="#">Create new job request</a>
                     </div>
-                    <div class="describe describe_bordered">
-                        <img class="describe__bg" src="assets/images/dashboard/app-bg.jpg" alt="" role="presentation" />
-                        <div class="describe__text-container">
-                            <h2>I am Hero App</h2>
-                            <h4 class="describe__subtitle">Now we really ready to go!</h4>
-                            <p class="describe__text">We’ve made our fresh and brand new application with all the functions available on our service. Stay in touch, be mobile and become a hero Every day. no matter where you are!</p>
-                            <div class="describe__apps">
-                                <a href="#">
-                                    <img class="img-responsive" src="assets/images/dashboard/google-play.jpg" />
-                                </a>
-                                <a href="#">
-                                    <img class="img-responsive" src="assets/images/dashboard/app-store.jpg" />
-                                </a>
-                            </div>
-                        </div>
+                    <div class="fast-forward__item">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_pencil-2"></use></svg>
+                        <a class="h6" href="#">Create new job request</a>
                     </div>
-                    <a class="news-item bg-image" href="#">
-                        <img src="assets/images/dashboard/news1.jpg" />
-                        <span class="news-item__text-container">
-                            <span class="news-item__text news-item__text_indented">Students on Iamhero. You are hero already, and we know it</span>
-                            <span class="news-item__text news-item__text_small news-item__text_color-warning">27 / 12 / 2016</span>
-                        </span>
+                </div>
+            </div>
+            <div class="activity-plate page__card">
+                <time class="activity-plate__time">5 minutes ago</time>
+                <div class="activity-plate__text">
+                    <h2>Recent Activity</h2>
+                    <p>Here’s what happened since your last visit. Besides the fact that we missed you a lot</p>
+                </div>
+                <div class="circle-icon-item activity-plate__item">
+                    <div class="circle-icon-item__count-wrap">
+                        <svg class="circle-icon-item__circle" width="80" height="80" viewBox="0 0 80 80">
+                            <circle cx="40" cy="40" r="38.5" fill="none" stroke="#ffc425" stroke-width="3" stroke-dasharray="241.78" stroke-dashoffset="36.267"></circle>
+                        </svg>
+                        <svg class="circle-icon-item__icon"><use xlink:href="assets/images/icon.svg#icon_eye-thin"></use></svg>
+                        <span class="circle-icon-item__count font-weight-medium">156</span>
+                    </div>
+                    <h6 class="font-weight-medium">Company profile views</h6>
+                </div>
+                <div class="circle-icon-item activity-plate__item">
+                    <div class="circle-icon-item__count-wrap">
+                        <svg class="circle-icon-item__circle" width="80" height="80" viewBox="0 0 80 80">
+                            <circle cx="40" cy="40" r="38.5" fill="none" stroke="#ffc425" stroke-width="3" stroke-dasharray="241.78" stroke-dashoffset="36.267"></circle>
+                        </svg>
+                        <svg class="circle-icon-item__icon"><use xlink:href="assets/images/icon.svg#icon_messages-thin"></use></svg>
+                        <span class="circle-icon-item__count font-weight-medium">2</span>
+                    </div>
+                    <h6 class="font-weight-medium">Private Messages</h6>
+                </div>
+                <div class="circle-icon-item activity-plate__item">
+                    <div class="circle-icon-item__count-wrap">
+                        <svg class="circle-icon-item__circle" width="80" height="80" viewBox="0 0 80 80">
+                            <circle cx="40" cy="40" r="38.5" fill="none" stroke="#ffc425" stroke-width="3" stroke-dasharray="241.78" stroke-dashoffset="36.267"></circle>
+                        </svg>
+                        <svg class="circle-icon-item__icon"><use xlink:href="assets/images/icon.svg#icon_heroes-thin"></use></svg>
+                        <span class="circle-icon-item__count font-weight-medium">893</span>
+                    </div>
+                    <h6 class="font-weight-medium">New Heroes for you</h6>
+                </div>
+            </div>
+            <div class="describe describe_text-white describe_bottom-smaller describe_faded page__card">
+                <img class="describe__bg" src="assets/images/dashboard/dark-bg.jpg" alt="" role="presentation" />
+                <div class="describe__text-container">
+                    <h2>I am Hero Blasts the worlds famous annual Startup workshop!</h2>
+                    <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
+                        Jason Germain and a few close friends in 1999.</p>
+                </div>
+                <a class="describe__more" href="#">
+                    <svg><use xlink:href="assets/images/icon.svg#icon_arrow-down-rounded"></use></svg>
+                </a>
+            </div>
+            <div class="describe describe_bordered page__card">
+                <img class="describe__bg" src="assets/images/dashboard/app-bg.jpg" alt="" role="presentation" />
+                <div class="describe__text-container">
+                    <h2>I am Hero App</h2>
+                    <h4>Now we really ready to go!</h4>
+                    <p>We’ve made our fresh and brand new application with all the functions available on our service. Stay in touch, be mobile and become a hero Every day. no matter where you are!</p>
+                </div>
+                <div class="describe__apps">
+                    <a href="#">
+                        <img class="img-responsive" src="assets/images/dashboard/google-play.jpg" />
                     </a>
-                    <a class="news-item bg-image" href="#">
-                        <img src="assets/images/dashboard/news2.jpg" />
-                        <span class="news-item__text-container">
-                            <span class="news-item__text news-item__text_indented">We are starting to work in Italy headhunting workers worldwide!</span>
-                            <span class="news-item__text news-item__text_small news-item__text_color-warning">27 / 12 / 2016</span>
-                        </span>
-                    </a>
-                    <a class="news-item bg-image" href="#">
-                        <img src="assets/images/dashboard/news3.jpg" />
-                        <span class="news-item__text-container">
-                            <span class="news-item__text news-item__text_indented">S7 Airlines headhunting through Iamhero. 1500 positions right now</span>
-                            <span class="news-item__text news-item__text_small news-item__text_color-warning">27 / 12 / 2016</span>
-                        </span>
+                    <a href="#">
+                        <img class="img-responsive" src="assets/images/dashboard/app-store.jpg" />
                     </a>
                 </div>
             </div>
+            <h2 class="page__header">News</h2>
+            <div class="slider swiper-container news-slider page__card">
+                <div class="swiper-wrapper">
+                    <svg class="slider__control"><use xlink:href="assets/images/icon.svg#icon_slider-control"></use></svg>
+                    <svg class="slider__control slider__control_next"><use xlink:href="assets/images/icon.svg#icon_slider-control"></use></svg>
+                    <div class="swiper-slide">
+                        <a class="news-item bg-image" href="#">
+                            <img src="assets/images/dashboard/news1.jpg" />
+                            <span class="news-item__text-container">
+                                <h3>Students on Iamhero. You are hero already, and we know it</h3>
+                                <time class="news-item__time">27 / 12 / 2016</time>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="news-item bg-image" href="#">
+                            <img src="assets/images/dashboard/news2.jpg" />
+                            <span class="news-item__text-container">
+                                <h3>We are starting to work in Italy headhunting workers worldwide!</h3>
+                                <time class="news-item__time">27 / 12 / 2016</time>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="news-item bg-image" href="#">
+                            <img src="assets/images/dashboard/news3.jpg" />
+                            <span class="news-item__text-container">
+                                <h3>S7 Airlines headhunting through Iamhero. 1500 positions right now</h3>
+                                <time class="news-item__time">27 / 12 / 2016</time>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="news-item bg-image" href="#">
+                            <img src="assets/images/dashboard/news1.jpg" />
+                            <span class="news-item__text-container">
+                                <h3>Students on Iamhero. You are hero already, and we know it</h3>
+                                <time class="news-item__time">27 / 12 / 2016</time>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="news-item bg-image" href="#">
+                            <img src="assets/images/dashboard/news2.jpg" />
+                            <span class="news-item__text-container">
+                                <h3>We are starting to work in Italy headhunting workers worldwide!</h3>
+                                <time class="news-item__time">27 / 12 / 2016</time>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="news-item bg-image" href="#">
+                            <img src="assets/images/dashboard/news3.jpg" />
+                            <span class="news-item__text-container">
+                                <h3>S7 Airlines headhunting through Iamhero. 1500 positions right now</h3>
+                                <time class="news-item__time">27 / 12 / 2016</time>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="page__header">Suggested heroes</h2>
+            <div class="slider swiper-container hero-slider page__card">
+                <div class="swiper-wrapper">
+                    <svg class="slider__control"><use xlink:href="assets/images/icon.svg#icon_slider-control"></use></svg>
+                    <svg class="slider__control slider__control_next"><use xlink:href="assets/images/icon.svg#icon_slider-control"></use></svg>
+                    <div class="swiper-slide">
+                        <a class="hero-card" href="#">
+                            <span class="bg-image hero-card__image">
+                                <img src="assets/images/dashboard/hero1.jpg" />
+                            </span>
+                            <span class="hero-card__text">
+                                <h4>Alexander Salikov</h4>
+                                <p class="text-grey">Fashion photographer, videoblogger, graphic designer</p>
+                                <p class="text-success">Orlando, USA</p>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="hero-card" href="#">
+                            <span class="bg-image hero-card__image">
+                                <img src="assets/images/dashboard/hero2.jpg" />
+                            </span>
+                            <span class="hero-card__text">
+                                <h4>Emanuel Gatio</h4>
+                                <p class="text-grey">Actor, Producer, Movie director</p>
+                                <p class="text-success">Los Angeles, USA</p>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="hero-card" href="#">
+                            <span class="bg-image hero-card__image">
+                                <img src="assets/images/dashboard/hero3.jpg" />
+                            </span>
+                            <span class="hero-card__text">
+                                <h4>Ariana Stelis</h4>
+                                <p class="text-grey">Singer, Producer</p>
+                                <p class="text-success">NY, USA</p>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="hero-card" href="#">
+                            <span class="bg-image hero-card__image">
+                                <img src="assets/images/dashboard/hero4.jpg" />
+                            </span>
+                            <span class="hero-card__text">
+                                <h4>Gordon Riva</h4>
+                                <p class="text-grey">Chief, TV Star</p>
+                                <p class="text-success">London, United Kingdom</p>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="hero-card" href="#">
+                            <span class="bg-image hero-card__image">
+                                <img src="assets/images/dashboard/hero1.jpg" />
+                            </span>
+                            <span class="hero-card__text">
+                                <h4>Alexander Salikov</h4>
+                                <p class="text-grey">Fashion photographer, videoblogger, graphic designer</p>
+                                <p class="text-success">Orlando, USA</p>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="hero-card" href="#">
+                            <span class="bg-image hero-card__image">
+                                <img src="assets/images/dashboard/hero2.jpg" />
+                            </span>
+                            <span class="hero-card__text">
+                                <h4>Emanuel Gatio</h4>
+                                <p class="text-grey">Actor, Producer, Movie director</p>
+                                <p class="text-success">Los Angeles, USA</p>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="hero-card" href="#">
+                            <span class="bg-image hero-card__image">
+                                <img src="assets/images/dashboard/hero3.jpg" />
+                            </span>
+                            <span class="hero-card__text">
+                                <h4>Ariana Stelis</h4>
+                                <p class="text-grey">Singer, Producer</p>
+                                <p class="text-success">NY, USA</p>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a class="hero-card" href="#">
+                            <span class="bg-image hero-card__image">
+                                <img src="assets/images/dashboard/hero4.jpg" />
+                            </span>
+                            <span class="hero-card__text">
+                                <h4>Gordon Riva</h4>
+                                <p class="text-grey">Chief, TV Star</p>
+                                <p class="text-success">London, United Kingdom</p>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="page__header">I am Hero Survey</h2>
+            <h3>Please rate Your Experience using iamhero.io! From complete and absolute zero to mindblowing, spectacular happiness!</h3>
+            <form class="rate-form">
+                <div class="rangeslider-wrap">
+                    <div class="rangeslider-wrap__meter">
+                        <span>0</span>
+                        <span>10</span>
+                    </div>
+                    <span class="rangeslider-wrap__output-custom"></span>
+                    <input class="rangeslider_gradient" type="range" min="0" max="10" step="0.05" value="7.45" />
+                </div>
+                <button class="btn btn-secondary-warning rate-form__button">Send your opinion</button>
+            </form>
         </div>
+        <div class="page__col-right"></div>
     </main>
     <script src="assets/scripts/libs/bootstrap.min.js"></script>
+    <script src="assets/scripts/libs/bluebird.min.js"></script>
+    <script src="assets/scripts/libs/svg4everybody.min.js"></script>
+    <script src="assets/scripts/libs/ofi.min.js"></script>
+    <script src="assets/scripts/libs/sticky-kit.min.js"></script>
     <script src="assets/scripts/libs/rangeslider.min.js"></script>
+    <script src="assets/scripts/libs/swiper.jquery.min.js"></script>
+    <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
+    <script src="assets/scripts/libs/scrollreveal.min.js"></script>
+    <script src="assets/scripts/libs/selectize.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

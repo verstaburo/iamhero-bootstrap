@@ -16,9 +16,10 @@
 <body>
     <header class="header">
         <div class="header__content container-fluid">
-            <a class="logo header__logo" href="#">
+            <a class="logo" href="#">
                 <img src="assets/images/icon/iamhero_logo_grey.svg" />
             </a>
+            <button class="header__burger"></button>
             <span class="header__text hidden-md hidden-sm hidden-xs">Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!</span>
             <ul class="nav header__nav">
                 <li>
@@ -51,7 +52,7 @@
                         </label>
                     </div>
                 </div>
-                <div class="page__sidebar-wrap col-xxl-offset-1 col-xxl-4 col-lg-5 hidden-md hidden-sm hidden-xs">
+                <div class="page__sidebar-wrap col-xxl-offset-1 col-xxl-4 col-lg-5">
                     <div class="sidebar-wrap">
                         <div class="media media-vertical media-white sidebar-wrap__media">
                             <div class="media-left">
@@ -110,7 +111,7 @@
                                 <img src="assets/images/icon/iamhero_logo_grey.svg" />
                             </div>
                             <div class="plate__hero-form">
-                                <h2>Mark Marthell</h2>
+                                <h2 class="plate__header">Mark Marthell</h2>
                                 <h5>Los Angeles, USA</h5>
                                 <h4>Singer, Producer, Interpreneur</h4>
                                 <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
@@ -484,29 +485,29 @@
                                 <div class="plate">
                                     <h2 class="plate__header">Instagram</h2>
                                     <div class="row">
-                                        <div class="col-md-12 col-xs-24">
+                                        <div class="col-sm-12 col-xs-24">
                                             <div class="bg-image social-content__img social-content__img social-content__img_big">
                                                 <img src="assets/images/profile-edit/social/1.jpg" />
                                             </div>
                                         </div>
-                                        <div class="col-md-12 col-xs-24">
+                                        <div class="col-sm-12 col-xs-24">
                                             <div class="row">
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-12 col-xs-24">
                                                     <div class="bg-image social-content__img">
                                                         <img src="assets/images/profile-edit/social/2.jpg" />
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-12 col-xs-24">
                                                     <div class="bg-image social-content__img">
                                                         <img src="assets/images/profile-edit/social/3.jpg" />
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-12 col-xs-24">
                                                     <div class="bg-image social-content__img">
                                                         <img src="assets/images/profile-edit/social/4.jpg" />
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-12">
+                                                <div class="col-sm-12 col-xs-24">
                                                     <a class="view-in view-in_insta social-content__img" href="#">
                                                         <svg class="view-in__icon"><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
                                                         <span class="view-in__text">View in
@@ -905,7 +906,15 @@
         </div>
     </footer>
     <script src="assets/scripts/libs/bootstrap.min.js"></script>
+    <script src="assets/scripts/libs/bluebird.min.js"></script>
+    <script src="assets/scripts/libs/svg4everybody.min.js"></script>
+    <script src="assets/scripts/libs/ofi.min.js"></script>
+    <script src="assets/scripts/libs/sticky-kit.min.js"></script>
     <script src="assets/scripts/libs/rangeslider.min.js"></script>
+    <script src="assets/scripts/libs/swiper.jquery.min.js"></script>
+    <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
+    <script src="assets/scripts/libs/scrollreveal.min.js"></script>
+    <script src="assets/scripts/libs/selectize.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 
