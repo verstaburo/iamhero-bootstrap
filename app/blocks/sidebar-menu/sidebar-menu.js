@@ -23,7 +23,7 @@ export default () => {
   const scrollSpyInit = () => {
     // Cache selectors
     var topMenu = $(".sidebar-menu");
-    if ($(window).width() < 1280 || !topMenu.length) {
+    if (!topMenu.length) {
       return;
     }
 
@@ -43,7 +43,7 @@ export default () => {
     // so we can get a fancy scroll animation
     menuItems.click(function(e) {
       var href = $(this).attr("href"),
-        offsetTop = href === "#" ? 0 : $(href).offset().top - 100;
+        offsetTop = href === "#" ? 0 : $(window).width()>1280 ? $(href).offset().top - 100 : $(href).offset().top - 57;
       $('html, body').stop().animate({
         scrollTop: offsetTop
       }, 500);
@@ -76,4 +76,10 @@ export default () => {
 
   scrollSpyInit();
   $(window).resize(debounce(300, false, scrollSpyInit));
+
+  $(document).on('click', '.sidebar-menu__item', function() {
+    if ($(window).width() < 1280) {
+      $('.sidebar-wrap, .header__burger').removeClass('active');
+    }
+  });
 };

@@ -1,9 +1,8 @@
 include ../../node_modules/bemto.pug/bemto
 include ../blocks/page/page
+include ../blocks/to-top/to-top
 include ../blocks/inner-sidebar/inner-sidebar
 include ../components/inner-header/inner-header
-//- include ../components/footer/footer
-//- include ../components/get-started/get-started
 
 doctype html
 html(lang='en')
@@ -14,5 +13,5 @@ html(lang='en')
     block top-filter
     block aside-filter
     block content
-
+    +to-top
     include scripts

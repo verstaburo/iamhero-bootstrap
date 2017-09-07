@@ -15,11 +15,13 @@ import newsSlider from '../components/news-slider/news-slider';
 import heroSlider from '../components/hero-slider/hero-slider';
 import fitText from './common/fitText';
 import header from '../components/header/header'
+import toTop from '../blocks/to-top/to-top'
 
 $(() => {
   objectFitImages();
   svg4everybody();
   header();
+  toTop();
   rangeSliderInit();
   switchInit();
   videoPlay();

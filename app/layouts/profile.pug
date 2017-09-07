@@ -1,5 +1,6 @@
 include ../../node_modules/bemto.pug/bemto
 include ../blocks/page/page
+include ../blocks/to-top/to-top
 include ../components/header/header
 include ../components/footer/footer
 include ../components/get-started/get-started
@@ -11,7 +12,6 @@ html(lang='en')
     +header()
     +page._profile
       block background
-      //- +page-decoration
       .container
         .row
           .col-xxl-20.col-xxl-offset-1.col-xs-24
@@ -22,5 +22,6 @@ html(lang='en')
             block content
       +get-started
     +footer
+    +to-top
     block modals
     include scripts
