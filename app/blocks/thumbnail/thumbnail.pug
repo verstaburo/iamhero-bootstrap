@@ -17,11 +17,14 @@ mixin thumbnail-img(src)
   +bg-image(src).thumbnail-img&attributes(attributes)
     block
 
+mixin thumbnail-case-link-popup
+  a(href='#', data-toggle='modal', data-target='#openCase').thumbnail-link-popup
+
 mixin thumbnail-case-controls()
   .thumbnail-controls&attributes(attributes)
-    .thumbnail-controls-item
+    a(href='#').thumbnail-controls-item
       +icon('pencil', true).icon-edit
-    .thumbnail-controls-item
+    a(href='#').thumbnail-controls-item
       +icon-close.icon-close_white
 
 mixin thumbnail-case-img(src)

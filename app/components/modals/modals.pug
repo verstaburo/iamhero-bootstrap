@@ -8,6 +8,7 @@ include ../../blocks/icon-close/icon-close
 include ../../blocks/plate/plate
 include ../../blocks/upload-area/upload-area
 include ../../blocks/select/select
+include ../../blocks/bg-image/bg-image
 
 
 mixin modal
@@ -100,3 +101,13 @@ mixin resume-modal
       +input-markup.plate__top-40
         +input-markup-item._push_right
           +button-add Add point
+
+mixin case-open-modal
+  +modal#openCase
+    +modal-close
+    +e.H2.header Winter In Squares
+      +label.label-thin.label-medium.label-bg-grey.label-font-standart.label-rounded Pre-production
+      +label.label-thin.label-medium.label-bg-grey.label-font-standart.label-rounded Retouching
+    +e.P.modal-text A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an allthrough romantic view. Meanwhile the world is changing, but nature romanticism is nowadays again our hidden shelter where the mind escapes from the upheavals of the reality. Locations: Germany, from the coast to the Alps.
+    +bg-image('profile-edit/cases/big-1.jpg').__case-big-img
+    +bg-image('profile-edit/cases/big-2.jpg').__case-big-img
