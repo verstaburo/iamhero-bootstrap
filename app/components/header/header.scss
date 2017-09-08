@@ -22,52 +22,63 @@
   &__burger {
     border: none;
     padding: 0;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
     margin-left: 40px;
     margin-right: auto;
-    position: relative;
-    width: 29px;
-    height: 2px;
-    background-color: #688595;
-    transition: background-color .25s ease-in-out;
 
-    @media (min-width: $screen-lg-min) {
-      display: none;
+    &.active {
+
+      button {
+        background-color: transparent;
+
+        &::before {
+          transform: rotate(45deg);
+          top: 0;
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+          bottom: 0;
+        }
+      }
     }
 
-    @media (max-width: $screen-xs-max) {
-      margin-left: 20px;
-    }
-
-    &::before, &::after {
-      position: absolute;
-      left: 0;
-      content: '';
-      display: block;
+    button {
+      border: none;
+      padding: 0;
+      position: relative;
       width: 29px;
       height: 2px;
       background-color: #688595;
-      transition: transform .25s ease-in-out, top .25s ease-in-out, bottom .25s ease-in-out;
-    }
+      transition: background-color .25s ease-in-out;
 
-    &::before {
-      top: -12px;
-    }
+      @media (min-width: $screen-lg-min) {
+        display: none;
+      }
 
-    &::after {
-      bottom: -12px;
-    }
+      @media (max-width: $screen-xs-max) {
+        margin-left: 20px;
+      }
 
-    &.active {
-      background-color: transparent;
+      &::before, &::after {
+        position: absolute;
+        left: 0;
+        content: '';
+        display: block;
+        width: 29px;
+        height: 2px;
+        background-color: #688595;
+        transition: transform .25s ease-in-out, top .25s ease-in-out, bottom .25s ease-in-out;
+      }
 
       &::before {
-        transform: rotate(45deg);
-        top: 0;
+        top: -12px;
       }
 
       &::after {
-        transform: rotate(-45deg);
-        bottom: 0;
+        bottom: -12px;
       }
     }
   }
