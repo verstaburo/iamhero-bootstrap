@@ -28,6 +28,14 @@
     margin-left: 40px;
     margin-right: auto;
 
+    @media (min-width: $screen-lg-min) {
+      display: none;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: 20px;
+    }
+
     &.active {
 
       button {
@@ -53,14 +61,6 @@
       height: 2px;
       background-color: #688595;
       transition: background-color .25s ease-in-out;
-
-      @media (min-width: $screen-lg-min) {
-        display: none;
-      }
-
-      @media (max-width: $screen-xs-max) {
-        margin-left: 20px;
-      }
 
       &::before, &::after {
         position: absolute;
