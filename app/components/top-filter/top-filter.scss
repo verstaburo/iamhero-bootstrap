@@ -15,4 +15,11 @@
   @media (max-width: $screen-sm-max) {
     left: 0;
   }
+
+  &__item {
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
 }

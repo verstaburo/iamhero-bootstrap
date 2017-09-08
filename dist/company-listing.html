@@ -183,43 +183,80 @@
             <span class="inner-sidebar__hint">Settings</span>
         </li>
     </ul>
-    <div class="top-filter"></div>
+    <div class="top-filter">
+        <span class="label label-transparent label-border-white label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded top-filter__item">
+            <a href="#">
+                <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+            </a>Graphic designer</span>
+        <span class="label label-transparent label-border-white label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded top-filter__item">
+            <a href="#">
+                <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+            </a>Riga</span>
+        <span class="label label-transparent label-border-white label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded top-filter__item">
+            <a href="#">
+                <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+            </a>Design</span>
+        <span class="label label-transparent label-rounded label-medium label-close label-bg-dark label-font-white label-close-rounded label-close-warning label-close-hover-warning top-filter__item">
+            <a href="#">
+                <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+            </a>Clear all search criteria</span>
+        <button class="btn btn-secondary-warning-small top-filter__item">Save search</button>
+    </div>
     <aside class="aside-filter">
         <div class="aside-filter__item">
             <div class="aside-filter__heading">
                 <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
                 <h4>filter</h4>
             </div>
+            <select class="js-select select select_big select_warning aside-filter__input" placeholder="Working field">
+                <option value="">Working field</option>
+                <option value="1">Designer 2200</option>
+                <option value="2">Main office manager</option>
+                <option value="3">Search 31</option>
+                <option value="4">Rage</option>
+                <option value="5">Project management</option>
+                <option value="6">Graphic designer</option>
+                <option value="7">Graphic designer</option>
+                <option value="8">Graphic designer</option>
+                <option value="9">Graphic designer</option>
+                <option value="10">Graphic designer</option>
+            </select>
+            <select class="js-select select select_big select_warning aside-filter__input" placeholder="Location">
+                <option value="">Location</option>
+                <option value="us">USA</option>
+                <option value="ru">Russia</option>
+                <option value="lv">Latvia</option>
+            </select>
             <span class="aside-filter__subheading">Amount of Employees:</span>
-            <label class="checkbox">
+            <label class="checkbox aside-filter__input">
                 <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
                 <span class="checkbox__box">
                     <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
                 </span>
                 <span class="checkbox__text">1-10</span>
             </label>
-            <label class="checkbox">
+            <label class="checkbox aside-filter__input">
                 <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
                 <span class="checkbox__box">
                     <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
                 </span>
                 <span class="checkbox__text">11-100</span>
             </label>
-            <label class="checkbox">
+            <label class="checkbox aside-filter__input">
                 <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
                 <span class="checkbox__box">
                     <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
                 </span>
                 <span class="checkbox__text">101-1000</span>
             </label>
-            <label class="checkbox">
+            <label class="checkbox aside-filter__input">
                 <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
                 <span class="checkbox__box">
                     <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
                 </span>
                 <span class="checkbox__text">1000-10 0000</span>
             </label>
-            <label class="checkbox">
+            <label class="checkbox aside-filter__input">
                 <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
                 <span class="checkbox__box">
                     <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>

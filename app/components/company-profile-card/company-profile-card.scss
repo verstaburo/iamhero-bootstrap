@@ -146,14 +146,19 @@
     cursor: pointer;
     z-index: 4;
     font-weight: 600;
+    transition: background-color .25s ease-in-out;
 
     svg {
-      width: 15px;
-      height: 24px;
+      width: 10px;
+      height: 16px;
       fill: $brand-success;
       position: absolute;
       left: 10px;
       top: 5px;
+    }
+
+    &:hover {
+      background-color: #203040;
     }
   }
 }

@@ -30,6 +30,11 @@ input[type='range'] {
 }
 // stylelint-enable
 
+.checkbox, .radio {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 li {
   list-style-type: none;
 }

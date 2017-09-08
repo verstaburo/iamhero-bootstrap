@@ -3,10 +3,15 @@
   width: 18px;
   height: 18px;
   stroke: $gray;
-  transition: opacity .25s ease-in-out;
+  transition: opacity .25s ease-in-out, stroke .25s ease-in-out;
   cursor: pointer;
 
   &_white {
     stroke: #fff;
+  }
+
+  &_small {
+    width: 10px;
+    height: 10px;
   }
 }

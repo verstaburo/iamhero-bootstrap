@@ -23,7 +23,7 @@
     }
   }
 
-  .checkbox, .btn-select {
+  &__input {
 
     &:not(:first-of-type) {
       margin-top: 22px;

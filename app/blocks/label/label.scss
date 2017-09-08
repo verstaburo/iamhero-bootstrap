@@ -58,6 +58,10 @@
     border-color: #d9d9d9;
   }
 
+  &-border-white {
+    border-color: #fff;
+  }
+
   &-uppercase {
     text-transform: uppercase;
   }
@@ -106,10 +110,18 @@
   &-medium {
     font-size: 16px;
     padding: .38em .97em;
+
+    &.label-close a {
+      right: 8px;
+    }
   }
 
   &-bg-grey {
     background-color: #e2eaf0;
+  }
+
+  &-bg-dark {
+    background-color: #7c8b97;
   }
 
   &-close {
@@ -122,6 +134,7 @@
       transform: translateY(-50%);
       top: 50%;
       right: 14px;
+      transition: background-color .25s ease-in-out;
     }
 
     &-small {
@@ -136,6 +149,39 @@
           width: 100%;
           height: 100%;
         }
+      }
+    }
+  }
+
+  &-close-bg-white {
+
+    a {
+      background-color: #fff;
+    }
+  }
+
+  &-close-rounded {
+
+    a {
+      border-radius: 50%;
+      padding: 4px;
+    }
+  }
+
+  &-close-warning {
+
+    a > svg {
+      stroke: $brand-warning;
+    }
+  }
+
+  &-close-hover-warning {
+
+    a:hover {
+      background-color: $brand-warning;
+
+      svg {
+        stroke: #263240;
       }
     }
   }
