@@ -1,1 +1,8 @@
-last 2 versions
+chrome>=57
+firefox>=50
+safari>=9
+ie>=11
+edge>=12
+opera>=45
+iOS>=8
+and_chr>=59
