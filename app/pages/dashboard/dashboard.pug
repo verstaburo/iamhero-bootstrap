@@ -8,6 +8,8 @@ include ../../components/news-slider/news-slider
 include ../../components/hero-slider/hero-slider
 include ../../components/activity-plate/activity-plate
 include ../../components/rate-form/rate-form
+include ../../components/info-sidebar/info-sidebar
+include ../../components/get-started/get-started
 
 block head
   - var pageTitle = 'I Am Hero - Dashboard'
@@ -37,4 +39,6 @@ block content
       +e.H2.header I am Hero Survey
       h3 Please rate Your Experience using iamhero.io! From complete and absolute zero to mindblowing, spectacular happiness!
       +rate-form
-    +e.col-right
+    +info-sidebar.__col-right
+  +get-started
+  +footer

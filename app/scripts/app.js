@@ -1,4 +1,3 @@
-/* eslint-disable*/
 import rangeSliderInit from '../blocks/rangeslider/rangeslider';
 import switchInit from '../blocks/switch/switch';
 import videoPlay from '../components/plates/video-play';
@@ -14,9 +13,12 @@ import select from '../blocks/select/select';
 import newsSlider from '../components/news-slider/news-slider';
 import heroSlider from '../components/hero-slider/hero-slider';
 import fitText from './common/fitText';
-import header from '../components/header/header'
-import toTop from '../blocks/to-top/to-top'
+import header from '../components/header/header';
+import toTop from '../blocks/to-top/to-top';
+import jsProgress from '../blocks/js-progress/js-progress';
+import activityMeter from '../blocks/activity-meter/activity-meter';
 
+/* eslint-disable*/
 $(() => {
   objectFitImages();
   svg4everybody();
@@ -37,4 +39,6 @@ $(() => {
   newsSlider();
   heroSlider();
   fitText();
+  jsProgress();
+  activityMeter();
 });

@@ -1,0 +1,7 @@
+mixin js-progress(value)
+  +b.js-progress&attributes(attributes)
+    +e.SVG(width='112', height='112', viewBox='0 0 112 112').circle
+      circle(cx='56', cy='56', r='52', fill='none', stroke='#e1e9ec', stroke-width='8')
+      +e.CIRCLE(cx='56', cy='56', r='52', fill='none', stroke='#ffc425', stroke-width='8', stroke-dashoffset="326.56", stroke-dasharray="326.56").value
+    +e.INPUT(type='hidden', value=value).control
+    +e.SPAN.output

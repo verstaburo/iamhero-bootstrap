@@ -1,0 +1,64 @@
+include ../../blocks/icon/icons
+include ../../blocks/js-progress/js-progress
+include ../../blocks/activity-meter/activity-meter
+include ../../blocks/label/label
+//- include ../../blocks/rangesliders/rangesliders
+
+mixin info-sidebar()
+  +b.info-sidebar&attributes(attributes)
+    +e.section
+      +e.heading
+        h3 Quick stats
+        +e.A(href='#').icon-link
+          +icon('pencil-edit')
+          | edit profile
+      +e.stat-item
+        +e.stat-item-text
+          h5 Account effectivness Ratio
+          p That means that 75% of your page visitors stay on it longer than 25 seconds. Heroes are interested in you. Keep it up
+        +js-progress('75')
+      h5 Profile complete
+    +e.section._meter
+      +e.heading._white
+        h3 Month activity meter
+        +e.A(href='#').icon-link
+          +icon('boost')
+          | BOOST ME UP
+      +activity-meter
+      p This graph is based on overall company profile view per day and shows amount of unique visitors
+    +e.section._padding-side-none
+      +e.heading._padded_sides
+        h3 Recent searches
+        +e.A(href='#').icon-link
+          +icon('search')
+          | view saved
+      +e.list-item
+        +label.label-rounded.label-bg-grey.label-text-black.label-medium.font-weight-medium Designer
+        +label.label-rounded.label-bg-grey.label-text-black.label-medium.font-weight-medium Riga
+        +label.label-rounded.label-bg-grey.label-text-black.label-medium.font-weight-medium Full time
+        +e.B.list-item-text._smaller._value._push_right 89
+        +e.A(href='#').list-search.btn.btn-secondary-warning Search again
+      +e.list-item
+        +label.label-rounded.label-bg-grey.label-text-black.label-medium.font-weight-medium Graphic Designer
+        +e.B.list-item-text._smaller._value._push_right 3658
+        +e.A(href='#').list-search.btn.btn-secondary-warning Search again
+      +e.list-item
+        +label.label-rounded.label-bg-grey.label-text-black.label-medium.font-weight-medium Web Designer
+        +e.B.list-item-text._smaller._value._push_right 9000
+        +e.A(href='#').list-search.btn.btn-secondary-warning Search again
+    +e.section._padding-side-none
+      +e.heading._padded_sides
+        h3 Shortlists
+        +e.A(href='#').icon-link
+          +icon('shortlist')
+          | VIEW ALL
+          b 15
+      +e.list-item
+        +e.list-item-text Graphic and Web Designer
+        +e.list-item-text._smaller._push_right 89
+      +e.list-item
+        +e.list-item-text Barista
+        +e.list-item-text._smaller._push_right 7
+      +e.list-item
+        +e.list-item-text Photographer
+        +e.list-item-text._smaller._push_right 11
