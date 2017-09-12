@@ -444,8 +444,220 @@
                 <button class="btn btn-secondary-warning rate-form__button">Send your opinion</button>
             </form>
         </div>
-        <div class="page__col-right"></div>
+        <div class="info-sidebar page__col-right">
+            <div class="info-sidebar__section">
+                <div class="info-sidebar__heading">
+                    <h3>Quick stats</h3>
+                    <a class="info-sidebar__icon-link" href="#">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_pencil-edit"></use></svg>edit profile</a>
+                </div>
+                <div class="info-sidebar__stat-item">
+                    <div class="info-sidebar__stat-item-text">
+                        <h5>Account effectivness Ratio</h5>
+                        <p>That means that 75% of your page visitors stay on it longer than 25 seconds. Heroes are interested in you. Keep it up</p>
+                    </div>
+                    <div class="js-progress">
+                        <svg class="js-progress__circle" width="112" height="112" viewBox="0 0 112 112">
+                            <circle cx="56" cy="56" r="52" fill="none" stroke="#e1e9ec" stroke-width="8"></circle>
+                            <circle class="js-progress__value" cx="56" cy="56" r="52" fill="none" stroke="#ffc425" stroke-width="8" stroke-dashoffset="326.56" stroke-dasharray="326.56"></circle>
+                        </svg>
+                        <input class="js-progress__control" type="hidden" value="75" />
+                        <span class="js-progress__output"></span>
+                    </div>
+                </div>
+                <h5>Profile complete</h5>
+            </div>
+            <div class="info-sidebar__section info-sidebar__section_meter">
+                <div class="info-sidebar__heading info-sidebar__heading_white">
+                    <h3>Month activity meter</h3>
+                    <a class="info-sidebar__icon-link" href="#">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_boost"></use></svg>BOOST ME UP</a>
+                </div>
+                <div class="activity-meter"></div>
+                <p>This graph is based on overall company profile view per day and shows amount of unique visitors</p>
+            </div>
+            <div class="info-sidebar__section info-sidebar__section_padding-side-none">
+                <div class="info-sidebar__heading info-sidebar__heading_padded_sides">
+                    <h3>Recent searches</h3>
+                    <a class="info-sidebar__icon-link" href="#">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>view saved</a>
+                </div>
+                <div class="info-sidebar__list-item">
+                    <span class="label label-rounded label-bg-grey label-text-black label-medium font-weight-medium">Designer</span>
+                    <span class="label label-rounded label-bg-grey label-text-black label-medium font-weight-medium">Riga</span>
+                    <span class="label label-rounded label-bg-grey label-text-black label-medium font-weight-medium">Full time</span>
+                    <b class="info-sidebar__list-item-text info-sidebar__list-item-text_smaller info-sidebar__list-item-text_value info-sidebar__list-item-text_push_right">89</b>
+                    <a class="info-sidebar__list-search btn btn-secondary-warning" href="#">Search again</a>
+                </div>
+                <div class="info-sidebar__list-item">
+                    <span class="label label-rounded label-bg-grey label-text-black label-medium font-weight-medium">Graphic Designer</span>
+                    <b class="info-sidebar__list-item-text info-sidebar__list-item-text_smaller info-sidebar__list-item-text_value info-sidebar__list-item-text_push_right">3658</b>
+                    <a class="info-sidebar__list-search btn btn-secondary-warning" href="#">Search again</a>
+                </div>
+                <div class="info-sidebar__list-item">
+                    <span class="label label-rounded label-bg-grey label-text-black label-medium font-weight-medium">Web Designer</span>
+                    <b class="info-sidebar__list-item-text info-sidebar__list-item-text_smaller info-sidebar__list-item-text_value info-sidebar__list-item-text_push_right">9000</b>
+                    <a class="info-sidebar__list-search btn btn-secondary-warning" href="#">Search again</a>
+                </div>
+            </div>
+            <div class="info-sidebar__section info-sidebar__section_padding-side-none">
+                <div class="info-sidebar__heading info-sidebar__heading_padded_sides">
+                    <h3>Shortlists</h3>
+                    <a class="info-sidebar__icon-link" href="#">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_shortlist"></use></svg>VIEW ALL
+                        <b>15</b>
+                    </a>
+                </div>
+                <div class="info-sidebar__list-item">
+                    <div class="info-sidebar__list-item-text">Graphic and Web Designer</div>
+                    <div class="info-sidebar__list-item-text info-sidebar__list-item-text_smaller info-sidebar__list-item-text_push_right">89</div>
+                </div>
+                <div class="info-sidebar__list-item">
+                    <div class="info-sidebar__list-item-text">Barista</div>
+                    <div class="info-sidebar__list-item-text info-sidebar__list-item-text_smaller info-sidebar__list-item-text_push_right">7</div>
+                </div>
+                <div class="info-sidebar__list-item">
+                    <div class="info-sidebar__list-item-text">Photographer</div>
+                    <div class="info-sidebar__list-item-text info-sidebar__list-item-text_smaller info-sidebar__list-item-text_push_right">11</div>
+                </div>
+            </div>
+        </div>
     </main>
+    <div class="get-started">
+        <div class="container container-mobile-padded">
+            <h1 class="get-started__heading">Get started now!
+                <span class="get-started__heading get-started__heading_colored">For Free</span>
+            </h1>
+            <h3 class="get-started__subheading">Over 500 000 heroes can’t be wrong...</h3>
+            <form class="row">
+                <div class="get-started__switcher col-xl-5 col-lg-6 col-lg-offset-0 col-md-offset-4 col-md-8 col-sm-12 get-started__input">
+                    <label class="switch switch_big">
+                        <input type="hidden" />
+                        <span class="switch__item active">
+                            <span class="switch__text">Job seeker</span>
+                        </span>
+                        <span class="switch__item">
+                            <span class="switch__text">Employer</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="get-started__input col-xl-5 col-lg-6 col-md-8 col-sm-12">
+                    <label>
+                        <input class="form-control form-control-secondary" type="name" placeholder="Full name" />
+                        <span class="help-block"></span>
+                    </label>
+                </div>
+                <div class="get-started__input col-xl-5 col-lg-6 col-lg-offset-0 col-md-offset-4 col-md-8 col-sm-12 has-success">
+                    <label>
+                        <input class="form-control form-control-secondary" type="email" placeholder="E-mail adress" />
+                        <span class="help-block"></span>
+                    </label>
+                </div>
+                <div class="get-started__input col-xl-5 col-lg-6 col-md-8 col-sm-12 has-error">
+                    <label>
+                        <input class="form-control form-control-secondary" type="password" placeholder="Create password" />
+                        <span class="help-block">Password must be at least 8 symbols long</span>
+                    </label>
+                </div>
+                <div class="get-started__input col-xl-4 col-lg-6 col-lg-offset-0 col-md-offset-4 col-md-16 col-xs-24">
+                    <button class="btn btn-secondary">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container container-mobile-padded">
+            <div class="row">
+                <div class="footer__logo-wrap col-xxl-3 col-xl-5 col-lg-4 col-xs-24">
+                    <a class="logo logo_big logo_inline" href="#">
+                        <img src="assets/images/icon/iamhero_logo_grey.svg" />
+                    </a>
+                </div>
+                <div class="footer__text-menu col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-12 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Information</li>
+                        <li class="footer-menu__item">
+                            <a href="#">About amhero</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Help & Support</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Join The — iamhero</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__text-menu col-xxl-5 col-xl-5 col-lg-7 col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Employer</li>
+                        <li class="footer-menu__item">
+                            <a href="#">Hire the Heros</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Create Company Page</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Post a Job</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__text-menu col-xxl-4 col-xl-5 col-lg-7 col-md-8 col-sm-12 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">I am hero</li>
+                        <li class="footer-menu__item">
+                            <a href="#">Functions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Resume</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social-wrap col-xxl-6 col-xxl-offset-1 col-xl-4 col-xl-offset-0 col-lg-20 col-lg-offset-4 col-md-24 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Social</li>
+                    </ul>
+                    <div class="social footer__social">
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_facebook-social"></use></svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_twitter-social"></use></svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_youtube-social"></use></svg>
+                        </a>
+                        <a class="social__item social__item_insta" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="to-top" href="#">
+        <svg><use xlink:href="assets/images/icon.svg#icon_arrow-down-rounded"></use></svg>
+    </a>
     <script src="assets/scripts/libs/bootstrap.min.js"></script>
     <script src="assets/scripts/libs/bluebird.min.js"></script>
     <script src="assets/scripts/libs/svg4everybody.min.js"></script>
@@ -456,6 +668,7 @@
     <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
+    <script src="assets/scripts/libs/chartist.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 
