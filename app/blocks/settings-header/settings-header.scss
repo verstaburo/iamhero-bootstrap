@@ -1,0 +1,29 @@
+.settings-header {
+  padding: 20px 50px;
+  background-image: linear-gradient(to left, #1b202d 0%, #465d75 55%, #59bba0 100%);
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 33px;
+    height: 23px;
+    fill: none;
+    stroke: $brand-warning;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 27px;
+    color: #fff;
+    letter-spacing: -.04em;
+    margin-right: auto;
+  }
+
+  &__info-text {
+    font-weight: 100;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: -.04em;
+    margin-right: 40px;
+  }
+}

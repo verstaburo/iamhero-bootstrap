@@ -1,0 +1,17 @@
+include ../icon/icons
+
+mixin pagination()
+  +b.pagination&attributes(attributes)
+    +e.A(href='#').end.disabled
+      +icon('pagination-end-left')
+    +e.A(href='#').next
+      +icon('pagination-left')
+    +e.bar
+      +e.A(href='#').item.active 1
+      - for(var i=2;i<9;i++)
+        +e.A(href='#').item= i
+    +e.A(href='#').next._right
+      +icon('pagination-left')
+    +e.A(href='#').end._right
+      +icon('pagination-end-left')
+    block

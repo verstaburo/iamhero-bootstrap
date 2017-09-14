@@ -1,0 +1,13 @@
+include ../icon/icons
+include ../button/button
+
+mixin settings-header
+  +b.settings-header&attributes(attributes)
+    +icon('gears').__icon
+    block
+    +e.SPAN.info-text Your account main Settings
+    +button('a')(href='#').btn-secondary-warning.btn-secondary-warning-medium.btn-font-white.font-weight-medium Buy Contact Packages
+
+mixin settings-header-text
+  +e.H3.text&attributes(attributes)
+    block

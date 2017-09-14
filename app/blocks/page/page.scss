@@ -21,6 +21,10 @@
     padding-left: 440px;
   }
 
+  &_inner-medium {
+    padding: 43px 55px 90px 440px;
+  }
+
   &_faded {
 
     &::after {
@@ -152,6 +156,10 @@
 
   &__card {
     margin-top: 50px;
+  }
+
+  &__section {
+    margin-top: 40px;
   }
 
   &__header {

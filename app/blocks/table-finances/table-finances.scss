@@ -1,0 +1,94 @@
+.table-finances {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: #fff;
+
+  table {
+    margin-bottom: 0;
+  }
+
+  thead {
+
+    th {
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
+  &__text-warning {
+    color: $brand-warning;
+  }
+
+  &__col {
+
+    &_date {
+      width: 17%;
+    }
+
+    &_cost {
+      width: 17%;
+    }
+
+    &_price {
+      width: 25%;
+    }
+
+    &_text {
+
+      &_center {
+        text-align: center;
+      }
+
+      &_right {
+        text-align: right;
+      }
+    }
+
+    &_first {
+      padding-left: 45px !important;
+
+      @media (max-width: $screen-xl-max) {
+        padding-left: 30px !important;
+      }
+    }
+
+    &_last {
+      padding-right: 60px !important;
+
+      @media (max-width: $screen-xl-max) {
+        padding-right: 30px !important;
+      }
+    }
+  }
+
+  th, td {
+    border-bottom: 1px solid #e1e9ec !important;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -.04em;
+  }
+
+  &__download-link {
+    display: inline-flex;
+    align-items: center;
+
+    & > svg {
+      width: 8px;
+      height: 8px;
+      fill: $brand-warning;
+      margin-right: 15px;
+    }
+
+    & > span {
+      color: #96a9b3;
+      border-bottom: 1px solid $brand-warning;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}

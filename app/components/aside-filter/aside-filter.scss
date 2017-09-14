@@ -8,6 +8,10 @@
   height: 100%;
   background-color: #fff;
 
+  &_top-none {
+    top: 55px;
+  }
+
   @media (max-width: $screen-sm-max) {
     left: 0;
   }
@@ -15,11 +19,40 @@
   &__item {
     padding-left: 55px;
     padding-right: 55px;
-    border-top: 1px solid grey;
 
     &:first-child {
       padding-top: 60px;
       border-top: none;
+    }
+  }
+
+  &__menu {
+
+    a {
+      display: block;
+      padding: 20px 55px;
+      color: #263240;
+      font-size: 18px;
+      font-weight: 700;
+      transition: background-color .25s ease-in-out;
+      border-top: 1px solid #e1e9ec;
+
+      &:last-child {
+        border-bottom: 1px solid #e1e9ec;
+      }
+
+      &:hover {
+        background-color: #e9eff4;
+      }
+      // stylelint-disable
+      &.active {
+        background-color: #e9eff4;
+      // stylelint-enable
+
+        &:hover {
+          background-color: darken(#e9eff4, 5%);
+        }
+      }
     }
   }
 
@@ -58,5 +91,9 @@
     font-size: 18px;
     font-weight: 700;
     color: #263240;
+  }
+
+  &__btn-edit {
+    margin-top: 40px;
   }
 }
