@@ -1,3 +1,23 @@
-mixin top-filter()
+include ../../blocks/label/label
+include ../../blocks/button/button
+include ../../blocks/icon-close/icon-close
+
+mixin top-filter
   +b.top-filter&attributes(attributes)
-    block
+    +label.label-transparent.label-border-white.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.top-filter__item
+      a(href='#')
+        +icon-close.icon-close_small
+      | Graphic designer
+    +label.label-transparent.label-border-white.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.top-filter__item
+      a(href='#')
+        +icon-close.icon-close_small
+      | Riga
+    +label.label-transparent.label-border-white.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.top-filter__item
+      a(href='#')
+        +icon-close.icon-close_small
+      | Design
+    +label.label-transparent.label-rounded.label-medium.label-close.label-bg-dark.label-font-white.label-close-rounded.label-close-warning.label-close-hover-warning.top-filter__item
+      a(href='#')
+        +icon-close.icon-close_small
+      | Clear all search criteria
+    +button.btn-secondary-warning-small.top-filter__item Save search

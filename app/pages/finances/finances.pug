@@ -10,15 +10,14 @@ block head
 
 block aside-filter
   +aside-filter._top-none
-    +aside-filter-item
+    +aside-filter-item._no-side
       +aside-filter-heading('menu-settings') Settings
-    +e.menu
-      a(href='#') Heroes to suggest
-      a(href='#') Account settings
-      a(href='#').active Finances
-      a(href='#') Notification options
-      a(href='#') Invite Friends
-    +aside-filter-item
+      +e.menu
+        a(href='#') Heroes to suggest
+        a(href='#') Account settings
+        a(href='#').active Finances
+        a(href='#') Notification options
+        a(href='#') Invite Friends
       +button.btn-secondary-warning.btn-secondary-warning-medium.font-weight-medium.aside-filter__btn-edit Edit company page
 
 block content

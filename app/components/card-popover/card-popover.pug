@@ -1,0 +1,41 @@
+include ../../blocks/icon/icons
+include ../../blocks/input/input
+include ../../blocks/button/button
+
+mixin card-popover()
+  +b.card-popover&attributes(attributes)
+    block
+
+mixin card-popover-buy
+  +card-popover&attributes(attributes)
+    +e.section
+      h5 Buy Contact
+    +e.section._medium._dark
+      +icon('menu-shortlists').__description-icon
+      +e.SPAN.description You should add Hero to any existing or new Shortlist, please choose an option below
+    +e.section._big._bordered
+      +input('New shortlist name').form-control-small.form-control-font-standart
+      +button.btn-secondary-warning-small.__inline-btn Save
+    +e.section._list
+      h5 Existing shortlists:
+      +e.list
+        +e.A(href='#').list-item Designer 2200
+          +e.SPAN.list-item-value 45
+        +e.A(href='#').list-item Main office manager
+          +e.SPAN.list-item-value 12
+        +e.A(href='#').list-item Search 31
+          +e.SPAN.list-item-value 4
+        +e.A(href='#').list-item Rage
+          +e.SPAN.list-item-value 1
+        +e.A(href='#').list-item Project management
+          +e.SPAN.list-item-value 45
+        +e.A(href='#').list-item Designer 2200
+          +e.SPAN.list-item-value 45
+        +e.A(href='#').list-item Main office manager
+          +e.SPAN.list-item-value 12
+        +e.A(href='#').list-item Search 31
+          +e.SPAN.list-item-value 4
+        +e.A(href='#').list-item Rage
+          +e.SPAN.list-item-value 1
+        +e.A(href='#').list-item Project management
+          +e.SPAN.list-item-value 45

@@ -17,12 +17,22 @@
   }
 
   &__item {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 40px 55px;
+    border-top: 1px solid #d8dfe6;
 
     &:first-child {
       padding-top: 60px;
       border-top: none;
+    }
+
+    &_no-side {
+      padding-left: 0;
+      padding-right: 0;
+
+      .aside-filter__heading {
+        padding-left: 55px;
+        padding-right: 55px;
+      }
     }
   }
 
@@ -95,5 +105,40 @@
 
   &__btn-edit {
     margin-top: 40px;
+    margin-left: 55px;
+  }
+
+  &__quick-link {
+    padding: 15px 55px;
+    display: flex;
+    justify-content: space-between;
+    color: #263240;
+    font-size: 16px;
+    font-family: $font-family-open-sans;
+    font-weight: 400;
+    transition: background-color .25s ease-in-out;
+
+    & > svg {
+      width: 16px;
+      height: 16px;
+      margin-left: 10px;
+      fill: $brand-warning;
+      flex-shrink: 0;
+      opacity: 0;
+      transition: opacity .25s ease-in-out;
+    }
+
+    & > &-value {
+      font-weight: 600;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background-color: #e9eff4;
+
+      & > svg {
+        opacity: 1;
+      }
+    }
   }
 }

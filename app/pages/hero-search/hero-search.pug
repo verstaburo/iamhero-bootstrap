@@ -1,0 +1,49 @@
+extends ../../layouts/inner-page
+include ../../blocks/page/page
+include ../../blocks/select/select
+include ../../blocks/inner-card/inner-card
+include ../../components/top-filter/top-filter
+include ../../components/aside-filter/aside-filter
+
+block head
+  - var pageTitle = 'I Am Hero - Hero search'
+
+block top-filter
+  +top-filter
+
+block aside-filter
+  +aside-filter
+    +aside-filter-item
+      +aside-filter-heading('menu-search') filter
+      +select([{value: '1', text: 'Designer 2200'}, {value: '2', text: 'Main office manager'}, {value: '3', text: 'Search 31'}, {value: '4', text: 'Rage'}, {value: '5', text: 'Project management'}, {value: '6', text: 'Graphic designer'}, {value: '7', text: 'Graphic designer'}, {value: '8', text: 'Graphic designer'}, {value: '9', text: 'Graphic designer'}, {value: '10', text: 'Graphic designer'}], 'Job type')._big._warning.__input
+      +select([{value: 'us', text: 'USA'}, {value: 'ru', text: 'Russia'}, {value: 'lv', text: 'Latvia'}], 'Location')._big._warning.__input
+      +select([{value: 'us', text: 'USA'}, {value: 'ru', text: 'Russia'}, {value: 'lv', text: 'Latvia'}], 'Location')._big._warning.__input
+    +aside-filter-item._no-side
+      +aside-filter-heading('saved') saved searches
+      +aside-filter-search-item Designer 2200
+      +aside-filter-search-item Main office manager
+      +aside-filter-search-item Search 31
+      +aside-filter-search-item Rage
+      +aside-filter-search-item Project management
+    +aside-filter-item._no-side
+      +aside-filter-heading('menu-shortlists') SHORTLISTS
+      +aside-filter-shortlist-item('45') Designer 2200
+      +aside-filter-shortlist-item('12') Main office manager
+      +aside-filter-shortlist-item('4') Search 31
+      +aside-filter-shortlist-item('1') Rage
+      +aside-filter-shortlist-item('22') Project management
+
+block content
+  +page._inner-big._faded
+    .row
+      .col-xs-24
+        +hero('1.jpg', 'David Allandu', 'Singer, Producer, Interpreneur')
+        +hero('2.jpg', 'Alan Maier', 'Tv star')
+        +hero('3.jpg', 'Jamelia Freeman', 'Tv star')
+        +hero('4.jpg', 'Katy Moon', 'Tv star')
+        +hero('5.jpg', 'Adelina Mauer', 'Singer, Producer, Interpreneur')
+        +hero('6.jpg', 'Laura Benneton', 'Tv star')
+        +hero('7.jpg', 'James Malovich', 'Tv star')
+        +hero('8.svg', 'Andriano Colleti', 'Tv star')
+        +hero('9.jpg', 'Alexandr Benua', 'Singer, Producer, Interpreneur')
+        +hero('10.jpg', 'Jeremy Clarckson', 'Tv star')

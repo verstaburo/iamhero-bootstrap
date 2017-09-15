@@ -1,0 +1,96 @@
+.card-popover {
+  display: block;
+  box-shadow: 0 0 70px 29px rgba(28, 40, 57, .23);
+  width: 400px;
+  text-align: left;
+  background-color: #fff;
+
+  &__section {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+
+    &_medium {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &_big {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &_dark {
+      background-color: #334152;
+      color: #fff;
+    }
+
+    &_bordered {
+      border-bottom: 1px solid #c8cfd4;
+    }
+
+    &_list {
+      padding-top: 17px;
+      padding-right: 7px;
+      flex-direction: column;
+    }
+
+    h5 {
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -.04em;
+  }
+
+  &__description-icon {
+    flex-shrink: 0;
+    margin-right: 15px;
+    width: 22px;
+    height: 28px;
+    fill: none;
+    stroke: $brand-warning;
+  }
+
+  &__inline-btn {
+    margin-left: 10px;
+  }
+
+  &__list {
+    max-height: 190px;
+    overflow-y: auto;
+    color: #263240;
+    padding-right: 20px;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: #bccbd6;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &-value {
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+}

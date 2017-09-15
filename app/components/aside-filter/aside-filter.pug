@@ -8,6 +8,16 @@ mixin aside-filter-item
   +e.item&attributes(attributes)
     block
 
+mixin aside-filter-search-item
+  +e.A(href='#').quick-link&attributes(attributes)
+    block
+    +icon('search')
+
+mixin aside-filter-shortlist-item(value)
+  +e.A(href='#').quick-link&attributes(attributes)
+    block
+    +e.SPAN.quick-link-value= value
+
 mixin aside-filter-heading(icon)
   +e.heading&attributes(attributes)
     +icon(icon).__heading-icon
