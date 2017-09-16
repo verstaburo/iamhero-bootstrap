@@ -1,20 +1,19 @@
-include ../icon/icons
 include ../icon-close/icon-close
 
-mixin service(icon, title)
+mixin service(img, title)
   +b.service._edit&attributes(attributes)
     +e.heading
-      +icon(icon).icon
+      +e.IMG(src='assets/images/profile-edit/services/'+img+'.svg').icon
       h4.font-weight-medium= title
       +e.A(href='#').close
         +icon-close
     +e.P.description
       block
 
-mixin service-static(icon, title)
+mixin service-static(img, title)
   +b.service&attributes(attributes)
     +e.heading
-      +icon(icon).icon
+      +e.IMG(src='assets/images/profile-edit/services/'+img+'.svg').icon
       h4.font-weight-medium=title
     +e.P.description
       block

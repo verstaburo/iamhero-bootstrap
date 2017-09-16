@@ -1,22 +1,22 @@
 include ../../blocks/rangeslider/rangeslider
 include ../../blocks/icon-close/icon-close
 
-mixin rangeslider-label(label, color)
+mixin rangeslider-label(label, color, value)
   +b.rangeslider-wrap&attributes(attributes)
     +e.header
       h4= label
       +e.H4.output
     +e.controls
-      +rangeslider(class='rangeslider_color_'+color)
+      +rangeslider-custom('0', '100', '1', value||'50')(class='rangeslider_color_'+color)
       +icon-close().rangeslider-wrap__icon-close
 
-mixin rangeslider-label-static(label, color)
+mixin rangeslider-label-static(label, color, value)
   +b.rangeslider-wrap&attributes(attributes)
     +e.header
       h4= label
       +e.H4.output
     +e.controls
-      +rangeslider(class='rangeslider_static rangeslider_color_'+color)
+      +rangeslider-custom('0', '100', '1', value||'50')(class='rangeslider_color_'+color)
 
 mixin rangeslider-nolabel(color)
   +b.rangeslider-wrap&attributes(attributes)

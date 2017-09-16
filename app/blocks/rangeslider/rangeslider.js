@@ -17,7 +17,7 @@ export default () => {
     var value = el.val();
     var output = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output');
     if (output.length) {
-      output.html(value+'%');
+      output.html(value + '%');
     }
     var outputCustom = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-custom');
     if (outputCustom.length) {
@@ -27,9 +27,11 @@ export default () => {
     }
   }
 
-  valueOutput($selector);
+  $selector.each(function() {
+    valueOutput($(this));
+  })
 
-  $selector.on('input', function () {
+  $selector.on('input', function() {
     valueOutput($(this));
   });
 };

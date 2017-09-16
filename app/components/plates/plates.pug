@@ -54,10 +54,10 @@ mixin skills-plate
   +plate#skills
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
-    +rangeslider-label('Graphic design', 'lightgreen').__top-60.sr-animate
-    +rangeslider-label('Web Design', 'orange').__top-60.sr-animate
-    +rangeslider-label('Illustration', 'blue').__top-60.sr-animate
-    +rangeslider-label('Video Editing', 'red').__top-60.sr-animate
+    +rangeslider-label('Graphic design', 'lightgreen', '60').__top-60.sr-animate
+    +rangeslider-label('Web Design', 'orange', '40').__top-60.sr-animate
+    +rangeslider-label('Illustration', 'blue', '40').__top-60.sr-animate
+    +rangeslider-label('Video Editing', 'red', '80').__top-60.sr-animate
     +input-markup.__top-60
       +input-markup-item._grow
         +input('Write another')
@@ -257,15 +257,30 @@ mixin interests-plate(edit)
     +e.H2.header Interests
     .row.plate__top-60
       .col-md-8.col-xs-24
-        +thumbnail-interests('profile-edit/design.jpg', 'Graphic design')
+        if edit
+          +thumbnail-interests-edit('profile-edit/design.jpg', 'Graphic design')
+        else
+          +thumbnail-interests('profile-edit/design.jpg', 'Graphic design')
       .col-md-8.col-xs-24
-        +thumbnail-interests('profile-edit/travel.jpg', 'Travel')
+        if edit
+          +thumbnail-interests-edit('profile-edit/travel.jpg', 'Travel')
+        else
+          +thumbnail-interests('profile-edit/travel.jpg', 'Travel')
       .col-md-8.col-xs-24
-        +thumbnail-interests('profile-edit/chess.jpg', 'Chess')
+        if edit
+          +thumbnail-interests-edit('profile-edit/chess.jpg', 'Chess')
+        else
+          +thumbnail-interests('profile-edit/chess.jpg', 'Chess')
       .col-md-8.col-xs-24
-        +thumbnail-interests('profile-edit/car.jpg', 'Car sketching')
+        if edit
+          +thumbnail-interests-edit('profile-edit/car.jpg', 'Car sketching')
+        else
+          +thumbnail-interests('profile-edit/car.jpg', 'Car sketching')
       .col-md-8.col-xs-24
-        +thumbnail-interests('profile-edit/food-review.jpg', 'Street food review')
+        if edit
+          +thumbnail-interests-edit('profile-edit/food-review.jpg', 'Street food review')
+        else
+          +thumbnail-interests('profile-edit/food-review.jpg', 'Street food review')
     if edit
       +input-markup.__top-20
         +input-markup-item._grow._vertical

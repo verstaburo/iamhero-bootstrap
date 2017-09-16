@@ -21,9 +21,37 @@
     letter-spacing: -.04em;
   }
 
+  &-edit {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    a {
+      display: inline-block;
+
+      &:not(:last-of-type) {
+        margin-right: 9px;
+      }
+
+      svg {
+        width: 18px;
+        height: 18px;
+        fill: #96aebd;
+      }
+    }
+  }
+
   &-interests {
     display: flex;
     flex-direction: column;
+
+    .caption {
+
+      h4 {
+        position: relative;
+        padding-right: 50px;
+      }
+    }
 
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       flex-direction: row;
@@ -129,7 +157,7 @@
       vertical-align: middle;
       padding: 8px 9px;
 
-      & > .icon-edit {
+      .icon-edit {
         width: 18px;
         height: 18px;
         fill: #fff;
