@@ -9,6 +9,7 @@ include ../../blocks/plate/plate
 include ../../blocks/upload-area/upload-area
 include ../../blocks/select/select
 include ../../blocks/bg-image/bg-image
+include ../../blocks/upload/upload
 
 
 mixin modal
@@ -97,7 +98,8 @@ mixin resume-modal
           +input('Header').plate__top-40
           +textarea(4)(placeholder='Description').form-control-area-static.plate__top-40
         +e.upload
-          +upload-area Drug and drop files (max 100 mb)
+          +upload
+            +upload-area Drug and drop files (max 100 mb)
       +input-markup.plate__top-40
         +input-markup-item._push_right
           +button-add Add point

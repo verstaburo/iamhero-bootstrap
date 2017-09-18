@@ -295,14 +295,14 @@ mixin interests-plate(edit)
 
 
 mixin video-plate
-  +plate._relative._fixed-height
+  +plate._relative._ratio-container
     +bg-image('profile-edit/video-placeholder.jpg').__video-placeholder
     +e.header-container._tablet_column
       +e.H2.header._white._mobile-smaller Video Represent
       +button-add(data-toggle="modal", data-target="#videoModal") Upload video
 
 mixin video-plate-static
-  +plate._no-padding._relative._fixed-height
+  +plate._relative._ratio-container
     iframe(id="ytplayer", type="text/html", src="https://www.youtube.com/embed/dREKkAk628I?enablejsapi=1&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3", frameborder="0", allowfullscreen).plate__video
     +e.video-placeholder._overlay
       +e.H2.header._white._mobile-smaller Video represent
