@@ -1,0 +1,24 @@
+extends ../../layouts/inner-page
+include ../../components/aside-filter/aside-filter
+include ../../components/messages/messages
+include ../../blocks/page/page
+include ../../blocks/dialogue/dialogue
+
+block head
+  - var pageTitle = 'I Am Hero - Messages'
+
+block aside-filter
+  +aside-filter._top-none
+    +dialogue('1', 'Alex Dungen')
+    +dialogue('2', 'Valery Eniston').active
+    +dialogue('3', 'Maria Sanchez')
+    +dialogue('4', 'Elly Pery', true)._grey
+    +dialogue('5', 'Emannuella Lim')
+    +dialogue('6', 'Mia Nuaros')
+    +dialogue('7', 'Paula Walker')
+    +dialogue('8', 'Klarisa Stark')
+    +dialogue('9', 'Ryan Mauyer')
+
+block content
+  +page._inner-medium
+    +messages

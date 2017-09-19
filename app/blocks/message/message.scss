@@ -1,0 +1,74 @@
+.message {
+  display: flex;
+  align-items: center;
+
+  &_padded {
+    padding-left: 75px;
+  }
+
+  &_self {
+    justify-content: flex-end;
+
+    .message__text {
+      background-color: $brand-warning;
+    }
+  }
+
+  &__avatar {
+    flex-basis: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 15px;
+  }
+
+  &__text {
+    background-color: #fff;
+    padding: 17px 20px 15px;
+    font-size: 24px;
+    font-weight: 500;
+    max-width: 60%;
+
+    &_small {
+      padding: 30px 20px;
+      font-size: 19px;
+    }
+  }
+
+  &__time {
+    font-weight: 500;
+    color: #a9b8c1;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  &__download-text {
+    margin-left: 20px;
+    color: #7194a8;
+    border-bottom: 1px solid $brand-warning;
+  }
+
+  &__delete {
+    margin-left: 20px;
+    display: inline-block;
+  }
+
+  &__download-link {
+    flex-basis: 60px;
+    height: 60px;
+    background-color: $brand-warning;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .25s ease-in-out;
+
+    &:hover {
+      background-color: darken($brand-warning, 10%);
+    }
+
+    svg {
+      fill: #fff;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

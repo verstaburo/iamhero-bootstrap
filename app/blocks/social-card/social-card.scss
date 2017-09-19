@@ -1,0 +1,27 @@
+.social-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #fff;
+  transition: background-color .25s ease-in-out;
+
+  &:hover {
+    background-color: $brand-warning;
+
+    p {
+      color: #fff;
+    }
+  }
+
+  p {
+    color: #a1b3c1;
+    transition: color .25s ease-in-out;
+    font-size: 16px;
+  }
+
+  img {
+    width: auto;
+    height: 95px;
+  }
+}

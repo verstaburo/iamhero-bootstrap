@@ -1,0 +1,47 @@
+include ../../blocks/message/message
+include ../../blocks/icon-close/icon-close
+
+mixin messages()
+  +b.messages&attributes(attributes)
+    +message.__item
+      +message-avatar
+      +message-text Look Closely. At This point i am pretty  Tired!
+      +message-time
+
+    +message._padded.__item
+      +message-text Huh!?
+      +message-time
+
+    +message._self.__item
+      +message-time
+      +message-text So you think. That’s Woth it?
+      a(href='#').message__delete
+        +icon-close
+
+    +message.__item
+      +message-avatar
+      +message-text That doesn’t matter. Look
+      +message-time
+
+    +message._padded.__item
+      +message-text._small In May 2015, the Trump Foundation donated $10,000 to Project Veritas. Donald Trump later cited an O’Keefe video depicting democrats advocating incitement of violence at Trump rallies.<br><br>The Intercept reports O’Keefe is the subject of a million-dollar lawsuit that alleges he broke local and federal wiretapping laws in a sting operation on Democracy Partners, dubbed as “modern-day Watergate burglars.”<br><br>The lawsuit claims O’Keefe and his organization infiltrated a Democratic consulting firm under false pretenses, secretly recorded conversations and published heavily edited footage of the conversations.
+      +message-time
+
+    +message-file.__item
+
+    +e.input-container
+      +e.quickbar
+        +e.A(href='#').quickbar-link
+          +icon('search')
+          | Search
+        +e.A(href='#').quickbar-link
+          +icon('video')
+          | Start Video Chat
+        +e.A(href='#').quickbar-link
+          +icon('add-file')
+          | Add File
+      +e.inputbar
+        +e.SPAN.placeholder Your message here...
+        +e.input-area(contenteditable='true')
+        +e.A(href='#').input-btn
+          +icon('spaceship')

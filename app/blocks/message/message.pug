@@ -1,0 +1,25 @@
+include ../bg-image/bg-image
+include ../icon/icons
+
+mixin message()
+  +b.message&attributes(attributes)
+    block
+
+mixin message-avatar
+  +bg-image('messages/2.jpg').__avatar&attributes(attributes)
+
+mixin message-text
+  +e.text&attributes(attributes)
+    block
+
+mixin message-time
+  +e.TIME.time&attributes(attributes)
+    | 13:50
+
+mixin message-file
+  +message._padded&attributes(attributes)
+    +message-text
+      | File:
+      +e.SPAN.download-text Investigation.pdf
+    +e.A(href='#').download-link
+      +icon('arrow-down')

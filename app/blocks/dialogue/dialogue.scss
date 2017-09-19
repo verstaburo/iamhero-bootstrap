@@ -1,0 +1,74 @@
+.dialogue {
+  display: flex;
+  padding: 15px 20px;
+  height: 90px;
+  background-color: #fff;
+  position: relative;
+  transition: none;
+
+  &::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    pointer-events: none;
+    background-image: linear-gradient(to right, transparent 0%, #fff 50%);
+  }
+
+  &.active, &:hover {
+    background-color: #e9eff4;
+
+    &::after {
+      background-image: linear-gradient(to right, transparent 0%, #e9eff4 50%);
+    }
+  }
+
+  &_grey {
+    background-color: #f2f5f9;
+
+    &::after {
+      background-image: linear-gradient(to right, transparent 0%, #f2f5f9 50%);
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    font-weight: 600;
+    color: #fff;
+    background-color: #e2553e;
+    padding: 1px 5px;
+    margin: 0;
+  }
+
+  &__image {
+    flex-basis: 60px;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__name {
+    font-size: 16px;
+  }
+
+  &__company {
+    font-weight: 500;
+    color: #b9ccd7;
+  }
+
+  &__message {
+    margin-top: auto;
+    color: #88a0ad;
+    font-weight: 500;
+  }
+}

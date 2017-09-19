@@ -1,0 +1,11 @@
+include ../bg-image/bg-image
+
+mixin dialogue(img, name, badge)
+  +b.A(href='#').dialogue&attributes(attributes)
+    if badge
+      +e.P.badge 1
+    +bg-image('messages/'+img+'.jpg').__image
+    +e.info
+      +e.B.name= name
+      +e.SPAN.company Grand Tour Host
+      +e.SPAN.message Ok, Lets be honest, we finally got

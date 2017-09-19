@@ -1,0 +1,42 @@
+extends ../../layouts/inner-page
+include ../../blocks/page/page
+include ../../blocks/select/select
+include ../../blocks/inner-card/inner-card
+include ../../components/top-filter/top-filter
+include ../../components/aside-filter/aside-filter
+
+block head
+  - var pageTitle = 'I Am Hero - Job listing'
+
+block top-filter
+  +top-filter
+
+block aside-filter
+  +aside-filter
+    +aside-filter-item
+      +aside-filter-heading('menu-search') filter
+      +select([{value: '1', text: 'Designer 2200'}, {value: '2', text: 'Main office manager'}, {value: '3', text: 'Search 31'}, {value: '4', text: 'Rage'}, {value: '5', text: 'Project management'}, {value: '6', text: 'Graphic designer'}, {value: '7', text: 'Graphic designer'}, {value: '8', text: 'Graphic designer'}, {value: '9', text: 'Graphic designer'}, {value: '10', text: 'Graphic designer'}], 'Job type')._big._warning.__input
+      +select([{value: 'us', text: 'USA'}, {value: 'ru', text: 'Russia'}, {value: 'lv', text: 'Latvia'}], 'Location')._big._warning.__input
+      +select([{value: 'us', text: 'USA'}, {value: 'ru', text: 'Russia'}, {value: 'lv', text: 'Latvia'}], 'Location')._big._warning.__input
+    +aside-filter-item._no-side
+      +aside-filter-heading('saved') saved searches
+      +aside-filter-search-item Designer 2200
+      +aside-filter-search-item Main office manager
+      +aside-filter-search-item Search 31
+      +aside-filter-search-item Rage
+      +aside-filter-search-item Project management
+
+block content
+  +page._inner-big._faded
+    .row
+      .col-xs-24
+        +company('1.jpg', 'Industrial Designer at BS Company', 'Designer')
+        +company('2.jpg', 'Freedom Agency', 'Designer')
+        +company('3.jpg', 'Maxdino', 'Designer')
+        +company('4.jpg', 'Trade Plus', 'Designer')
+        +company('5.jpg', 'Monkey Logo designer Needed', 'Designer')
+        +company('6.jpg', 'Arbo tech Logo designer Needed', 'Designer')
+        +company('3.jpg', 'Maxdino', 'Designer')
+        +company('4.jpg', 'Trade Plus', 'Designer')
+        +company('5.jpg', 'Monkey Logo designer Needed', 'Designer')
+        +company('5.jpg', 'Monkey Logo designer Needed', 'Designer')

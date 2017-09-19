@@ -1,12 +1,13 @@
 extends ../../layouts/inner-page
 include ../../blocks/page/page
-include ../../blocks/table-finances/table-finances
 include ../../blocks/settings-header/settings-header
 include ../../blocks/button/button
+include ../../blocks/social-card/social-card
 include ../../components/aside-filter/aside-filter
+include ../../components/invitation/invitation
 
 block head
-  - var pageTitle = 'I Am Hero - Finances'
+  - var pageTitle = 'I Am Hero - Invite friends'
 
 block aside-filter
   +aside-filter._top-none
@@ -15,16 +16,23 @@ block aside-filter
       +e.menu
         a(href='#') Heroes to suggest
         a(href='#') Account settings
-        a(href='#').active Finances
+        a(href='#') Finances
         a(href='#') Notification options
-        a(href='#') Invite Friends
+        a(href='#').active Invite Friends
       +button.btn-secondary-warning.btn-secondary-warning-medium.font-weight-medium.aside-filter__btn-edit Edit company page
 
 block content
   +page._inner-medium
     +settings-header
-      +settings-header-icon('gears')
-      +settings-header-text finances
-      +settings-header-info-text Your account main Settings
-      +settings-header-button Buy Contact Packages
-    +table-finances.__section
+      +settings-header-icon('user-star')
+      +settings-header-text INVITE FRIENDS
+      +settings-header-info-text You can choose what to be notified about
+      +settings-header-button Open notifications
+    +e.section.row
+      .col-sm-8
+        +social-card('google-contacts')
+      .col-sm-8
+        +social-card('facebook')
+      .col-sm-8
+        +social-card('linkedin')
+    +invitation.__section

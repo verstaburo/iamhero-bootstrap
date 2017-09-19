@@ -1,0 +1,11 @@
+include ../../blocks/input/input
+include ../../blocks/button/button
+
+mixin invitation()
+  +b.invitation&attributes(attributes)
+    h4 Direct invitation
+    p Write down your frind E-mail adress and send invitation to join iamhero.io. You can also add multiple E-mail adresses separating them with coma “,”
+    +e.FORM.form
+      +input('Your friend E-mail adress').form-control-warning
+      +button.btn-secondary-warning Send invitation
+    block

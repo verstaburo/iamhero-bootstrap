@@ -17,6 +17,7 @@ import header from '../components/header/header';
 import toTop from '../blocks/to-top/to-top';
 import jsProgress from '../blocks/js-progress/js-progress';
 import activityMeter from '../blocks/activity-meter/activity-meter';
+import messages from '../components/messages/messages';
 
 /* eslint-disable*/
 $(() => {
@@ -41,4 +42,5 @@ $(() => {
   fitText();
   jsProgress();
   activityMeter();
+  messages();
 });

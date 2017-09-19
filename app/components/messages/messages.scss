@@ -1,0 +1,79 @@
+.messages {
+  display: flex;
+  align-items: flex-end;
+
+  &__item {
+    margin-top: 20px;
+  }
+
+  &__input-container {
+    position: fixed;
+    bottom: 0;
+    left: 390px;
+    width: calc(100% - 390px);
+    border: 1px solid #e5e9ec;
+  }
+
+  &__quickbar {
+    background-color: #eff3f6;
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+
+  &__quickbar-link {
+    margin-left: 25px;
+    color: #80909d;
+    font-weight: 500;
+
+    svg {
+      margin-top: 2px;
+      width: 14px;
+      height: 12px;
+      fill: $brand-warning;
+      margin-right: 5px;
+    }
+  }
+
+  &__inputbar {
+    display: flex;
+    background-color: #fff;
+    max-width: 100%;
+    position: relative;
+  }
+
+  &__input-area {
+    flex-grow: 1;
+    padding: 20px;
+    max-width: 95%;
+    max-height: 190px;
+    overflow-y: auto;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 1;
+  }
+
+  &__input-btn {
+    flex-shrink: 0;
+    flex-basis: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 23px;
+      height: 23px;
+      fill: $brand-warning;
+    }
+  }
+
+  &__placeholder {
+    color: #afbcc6;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    pointer-events: none;
+    user-select: none;
+  }
+}
