@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>I Am Hero - Invite friends</title>
+    <title>I Am Hero - Account settings</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
@@ -191,48 +191,54 @@
             </div>
             <div class="aside-filter__menu">
                 <a href="#">Heroes to suggest</a>
-                <a href="#">Account settings</a>
+                <a class="active" href="#">Account settings</a>
                 <a href="#">Finances</a>
                 <a href="#">Notification options</a>
-                <a class="active" href="#">Invite Friends</a>
+                <a href="#">Invite Friends</a>
             </div>
             <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-edit">Edit company page</button>
         </div>
     </aside>
     <main class="page page_inner-medium" role="main">
         <div class="settings-header">
-            <svg class="settings-header__icon"><use xlink:href="assets/images/icon.svg#icon_user-star"></use></svg>
-            <h3 class="settings-header__text">INVITE FRIENDS</h3>
-            <span class="settings-header__info-text">You can choose what to be notified about</span>
-            <a class="btn btn-secondary-warning btn-secondary-warning-medium btn-font-white font-weight-medium" href="#">Open notifications</a>
+            <svg class="settings-header__icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
+            <h3 class="settings-header__text">ACCOUNT SETTINGS</h3>
+            <span class="settings-header__info-text">Your account main Settings</span>
+            <a class="btn btn-secondary-warning btn-secondary-warning-medium btn-font-white font-weight-medium" href="#">Save</a>
         </div>
-        <div class="page__section row">
-            <div class="col-sm-8">
-                <a class="social-card" href="#">
-                    <p>Invite from:</p>
-                    <img src="assets/images/invite-friends/google-contacts.png" />
-                </a>
+        <div class="page__section">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="inner-plate">
+                        <h4 class="inner-plate__heading">PERSONAL PAGE URL</h4>
+                        <p class="inner-plate__subheading">This is the URL of your perosnal company page.</p>
+                        <form class="inner-plate__form">
+                            <input class="form-control form-control-warning" type="text" placeholder="iamhero.io/GoogleInc" />
+                            <button class="btn btn-secondary-warning">Save</button>
+                        </form>
+                    </div>
+                    <div class="inner-plate page__section">
+                        <h4 class="inner-plate__heading">E-MAIL ADRESS</h4>
+                        <p class="inner-plate__subheading">this e-mail has been asociated with your account. You can change it any time</p>
+                        <div class="inner-plate__form inner-plate__form_between">
+                            <p class="inner-plate__value-text">esdesign.lv@gmail.com</p>
+                            <button class="btn btn-secondary-warning">Change</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="inner-plate">
+                        <h4 class="inner-plate__heading">PASSWORD</h4>
+                        <p class="inner-plate__subheading">This is your global account password. You can change it any time</p>
+                        <form class="inner-plate__form inner-plate__form_vertical">
+                            <input class="form-control form-control-warning" type="text" placeholder="Old pasword" />
+                            <input class="form-control form-control-warning" type="text" placeholder="New Password" />
+                            <input class="form-control form-control-warning" type="text" placeholder="New Password one more time" />
+                            <button class="btn btn-secondary-warning">Change password</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-8">
-                <a class="social-card" href="#">
-                    <p>Invite from:</p>
-                    <img src="assets/images/invite-friends/facebook.png" />
-                </a>
-            </div>
-            <div class="col-sm-8">
-                <a class="social-card" href="#">
-                    <p>Invite from:</p>
-                    <img src="assets/images/invite-friends/linkedin.png" />
-                </a>
-            </div>
-        </div>
-        <div class="inner-plate page__section">
-            <h4 class="inner-plate__heading">Direct invitation</h4>
-            <p class="inner-plate__subheading">Write down your frind E-mail adress and send invitation to join iamhero.io. You can also add multiple E-mail adresses separating them with coma “,”</p>
-            <form class="inner-plate__form inner-plate__form_margin_more">
-                <input class="form-control form-control-warning" type="text" placeholder="Your friend E-mail adress" />
-                <button class="btn btn-secondary-warning">Send invitation</button>
-            </form>
         </div>
     </main>
     <a class="to-top" href="#">

@@ -84,3 +84,29 @@ p {
 :focus {
   outline: none !important;
 }
+
+.input-group-addon {
+  font-family: $font-family-open-sans;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  right: 15px;
+  transform: translateY(-50%);
+  top: 50%;
+  color: $brand-warning;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  width: auto;
+}
+
+.form-group {
+  position: relative;
+
+  &-with-addon {
+
+    .form-control {
+      padding-right: 30px;
+    }
+  }
+}

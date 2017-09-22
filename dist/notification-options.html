@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>I Am Hero - Invite friends</title>
+    <title>I Am Hero - Notification options</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
@@ -193,46 +193,62 @@
                 <a href="#">Heroes to suggest</a>
                 <a href="#">Account settings</a>
                 <a href="#">Finances</a>
-                <a href="#">Notification options</a>
-                <a class="active" href="#">Invite Friends</a>
+                <a class="active" href="#">Notification options</a>
+                <a href="#">Invite Friends</a>
             </div>
             <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-edit">Edit company page</button>
         </div>
     </aside>
     <main class="page page_inner-medium" role="main">
         <div class="settings-header">
-            <svg class="settings-header__icon"><use xlink:href="assets/images/icon.svg#icon_user-star"></use></svg>
-            <h3 class="settings-header__text">INVITE FRIENDS</h3>
+            <svg class="settings-header__icon"><use xlink:href="assets/images/icon.svg#icon_bell"></use></svg>
+            <h3 class="settings-header__text">NOTIFICATION OPTIONS</h3>
             <span class="settings-header__info-text">You can choose what to be notified about</span>
             <a class="btn btn-secondary-warning btn-secondary-warning-medium btn-font-white font-weight-medium" href="#">Open notifications</a>
         </div>
-        <div class="page__section row">
-            <div class="col-sm-8">
-                <a class="social-card" href="#">
-                    <p>Invite from:</p>
-                    <img src="assets/images/invite-friends/google-contacts.png" />
-                </a>
-            </div>
-            <div class="col-sm-8">
-                <a class="social-card" href="#">
-                    <p>Invite from:</p>
-                    <img src="assets/images/invite-friends/facebook.png" />
-                </a>
-            </div>
-            <div class="col-sm-8">
-                <a class="social-card" href="#">
-                    <p>Invite from:</p>
-                    <img src="assets/images/invite-friends/linkedin.png" />
-                </a>
-            </div>
-        </div>
-        <div class="inner-plate page__section">
-            <h4 class="inner-plate__heading">Direct invitation</h4>
-            <p class="inner-plate__subheading">Write down your frind E-mail adress and send invitation to join iamhero.io. You can also add multiple E-mail adresses separating them with coma “,”</p>
-            <form class="inner-plate__form inner-plate__form_margin_more">
-                <input class="form-control form-control-warning" type="text" placeholder="Your friend E-mail adress" />
-                <button class="btn btn-secondary-warning">Send invitation</button>
-            </form>
+        <div class="inner-plate page__section notification-options">
+            <label class="checkbox checkbox_margin_more notification-options__item">
+                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
+                <span class="checkbox__box">
+                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                </span>
+                <span class="checkbox__text">New message from employer</span>
+            </label>
+            <label class="checkbox checkbox_margin_more notification-options__item">
+                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
+                <span class="checkbox__box">
+                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                </span>
+                <span class="checkbox__text">New suggested jobs</span>
+            </label>
+            <label class="checkbox checkbox_margin_more notification-options__item">
+                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
+                <span class="checkbox__box">
+                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                </span>
+                <span class="checkbox__text">Statistic update</span>
+            </label>
+            <label class="checkbox checkbox_margin_more notification-options__item">
+                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
+                <span class="checkbox__box">
+                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                </span>
+                <span class="checkbox__text">Someone viewed my profile</span>
+            </label>
+            <label class="checkbox checkbox_margin_more notification-options__item">
+                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
+                <span class="checkbox__box">
+                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                </span>
+                <span class="checkbox__text">Notify me about profile imporvement suggestions</span>
+            </label>
+            <label class="checkbox checkbox_margin_more notification-options__item">
+                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
+                <span class="checkbox__box">
+                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                </span>
+                <span class="checkbox__text">Friend joined Iamhero</span>
+            </label>
         </div>
     </main>
     <a class="to-top" href="#">

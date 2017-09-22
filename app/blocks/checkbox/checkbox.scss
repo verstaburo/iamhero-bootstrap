@@ -1,8 +1,18 @@
 .checkbox {
   display: flex;
-  align-items: center;
   cursor: pointer;
   user-select: none;
+
+  & + & {
+    margin-top: 25px;
+  }
+
+  &_margin_more {
+
+    .checkbox__text {
+      margin-left: 20px;
+    }
+  }
 
   &:hover {
 
@@ -38,6 +48,7 @@
   }
 
   &__box {
+    flex-shrink: 0;
     display: inline-block;
     width: 20px;
     height: 20px;

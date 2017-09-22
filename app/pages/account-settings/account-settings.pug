@@ -1,0 +1,54 @@
+extends ../../layouts/inner-page
+include ../../blocks/page/page
+include ../../blocks/input/input
+include ../../blocks/button/button
+include ../../components/aside-filter/aside-filter
+include ../../blocks/settings-header/settings-header
+include ../../blocks/inner-plate/inner-plate
+
+block head
+  - var pageTitle = 'I Am Hero - Account settings'
+
+block aside-filter
+  +aside-filter._top-none
+    +aside-filter-item._no-side
+      +aside-filter-heading('menu-settings') Settings
+      +e.menu
+        a(href='#') Heroes to suggest
+        a(href='#').active Account settings
+        a(href='#') Finances
+        a(href='#') Notification options
+        a(href='#') Invite Friends
+      +button.btn-secondary-warning.btn-secondary-warning-medium.font-weight-medium.aside-filter__btn-edit Edit company page
+
+block content
+  +page._inner-medium
+    +settings-header
+      +settings-header-icon('menu-settings')
+      +settings-header-text ACCOUNT SETTINGS
+      +settings-header-info-text Your account main Settings
+      +settings-header-button Save
+    +e.section
+      .row
+        .col-md-12
+          +inner-plate
+            +e.H4.heading PERSONAL PAGE URL
+            +e.P.subheading This is the URL of your perosnal company page.
+            +e.FORM.form
+              +input('iamhero.io/GoogleInc').form-control-warning
+              +button.btn-secondary-warning Save
+          +inner-plate.page__section
+            +e.H4.heading E-MAIL ADRESS
+            +e.P.subheading this e-mail has been asociated with your account. You can change it any time
+            +e.form._between
+              +e.P.value-text esdesign.lv@gmail.com
+              +button.btn-secondary-warning Change
+        .col-md-12
+          +inner-plate
+            +e.H4.heading PASSWORD
+            +e.P.subheading This is your global account password. You can change it any time
+            +e.FORM.form._vertical
+              +input('Old pasword').form-control-warning
+              +input('New Password').form-control-warning
+              +input('New Password one more time').form-control-warning
+              +button.btn-secondary-warning Change password

@@ -1,0 +1,12 @@
+.notification-options {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 225px;
+
+  &__item {
+
+    &:nth-child(4n) {
+      margin-top: 0;
+    }
+  }
+}

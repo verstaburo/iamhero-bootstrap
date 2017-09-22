@@ -1,0 +1,106 @@
+.inner-plate {
+  display: block;
+  background-color: #fff;
+  padding: 50px;
+
+  &_padding_none {
+    padding: 0;
+  }
+
+  &__section {
+    padding: 50px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #e1e9ec;
+    }
+  }
+
+  &__heading {
+    font-size: 23px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &__subheading {
+    font-family: $font-family-museo-sans;
+    font-size: 16px;
+    margin-top: 0;
+    letter-spacing: -.04em;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+
+    .form-control {
+      height: 50px;
+    }
+
+    .btn {
+      margin-left: 15px;
+    }
+
+    &_margin_more {
+
+      .btn {
+        margin-left: 30px;
+      }
+    }
+
+    &_between {
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &_vertical {
+      flex-direction: column;
+
+      .form-control {
+        margin-bottom: 25px;
+      }
+
+      .btn {
+        margin-left: 0;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  &__form-first-item {
+    flex-grow: 1;
+  }
+
+  &__form-second-item {
+    flex-basis: 40%;
+    margin-left: 15px;
+    flex-shrink: 0;
+  }
+
+  &__value-text {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__tag-container {
+    margin-top: 30px;
+
+    .label {
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__control-container {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .checkbox, .radio {
+      margin-top: 20px;
+      margin-right: 40px;
+    }
+  }
+}

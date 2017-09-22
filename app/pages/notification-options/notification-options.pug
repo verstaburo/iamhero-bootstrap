@@ -1,0 +1,36 @@
+extends ../../layouts/inner-page
+include ../../blocks/page/page
+include ../../components/aside-filter/aside-filter
+include ../../blocks/settings-header/settings-header
+include ../../blocks/inner-plate/inner-plate
+include ../../blocks/checkbox/checkbox
+
+block head
+  - var pageTitle = 'I Am Hero - Notification options'
+
+block aside-filter
+  +aside-filter._top-none
+    +aside-filter-item._no-side
+      +aside-filter-heading('menu-settings') Settings
+      +e.menu
+        a(href='#') Heroes to suggest
+        a(href='#') Account settings
+        a(href='#') Finances
+        a(href='#').active Notification options
+        a(href='#') Invite Friends
+      +button.btn-secondary-warning.btn-secondary-warning-medium.font-weight-medium.aside-filter__btn-edit Edit company page
+
+block content
+  +page._inner-medium
+    +settings-header
+      +settings-header-icon('bell')
+      +settings-header-text NOTIFICATION OPTIONS
+      +settings-header-info-text You can choose what to be notified about
+      +settings-header-button Open notifications
+    +inner-plate.__section.notification-options
+      +checkbox(true)._margin_more.notification-options__item New message from employer
+      +checkbox(true)._margin_more.notification-options__item New suggested jobs
+      +checkbox(true)._margin_more.notification-options__item Statistic update
+      +checkbox(true)._margin_more.notification-options__item Someone viewed my profile
+      +checkbox(true)._margin_more.notification-options__item Notify me about profile imporvement suggestions
+      +checkbox(true)._margin_more.notification-options__item Friend joined Iamhero

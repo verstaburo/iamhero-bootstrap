@@ -1,0 +1,133 @@
+extends ../../layouts/inner-page
+include ../../blocks/page/page
+include ../../blocks/input/input
+include ../../blocks/button/button
+include ../../components/aside-filter/aside-filter
+include ../../blocks/settings-header/settings-header
+include ../../blocks/inner-plate/inner-plate
+include ../../blocks/select/select
+include ../../blocks/label/label
+include ../../blocks/icon-close/icon-close
+include ../../blocks/checkbox/checkbox
+include ../../blocks/radio/radio
+
+block head
+  - var pageTitle = 'I Am Hero - Account settings'
+
+block aside-filter
+  +aside-filter._top-none
+    +aside-filter-item._no-side
+      +aside-filter-heading('menu-settings') Settings
+      +e.menu
+        a(href='#').active Heroes to suggest
+        a(href='#') Account settings
+        a(href='#') Finances
+        a(href='#') Notification options
+        a(href='#') Invite Friends
+      +button.btn-secondary-warning.btn-secondary-warning-medium.font-weight-medium.aside-filter__btn-edit Edit company page
+
+block content
+  +page._inner-medium
+    +settings-header
+      +settings-header-icon('hero-to-suggest')
+      +settings-header-text HEROES TO SUGGEST
+      +settings-header-info-text Specify Parameters for system to suggest you Heroes
+      +settings-header-button Save
+    +e.section
+      .row
+        .col-xs-24.col-xxl-12
+          +inner-plate
+            +e.H4.heading WORKING FIELDS
+            +e.P.subheading This section allows you to choose working field of Heroes you are interested of.
+            +e.form
+              +select([{value: '1', text: 'Graphic Designer'}, {value: '2', text: 'Designer'}, {value: '3', text: 'Graphic Artist'}], 'Working field')._big._warning
+              +button.btn-secondary-warning Add to list
+            +e.tag-container
+              +label.label-bg-grey.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.label-close-warning.font-weight-medium
+                | Graphic Designer
+                a(href='#')
+                  +icon-close.icon-close_small
+              +label.label-bg-grey.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.label-close-warning.font-weight-medium
+                | Designer
+                a(href='#')
+                  +icon-close.icon-close_small
+              +label.label-bg-grey.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.label-close-warning.font-weight-medium
+                | Graphic Artist
+                a(href='#')
+                  +icon-close.icon-close_small
+              +label.label-bg-grey.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.label-close-warning.font-weight-medium
+                | Design
+                a(href='#')
+                  +icon-close.icon-close_small
+            +label.label-transparent.label-rounded.label-medium.label-close.label-bg-dark.label-font-white.label-close-rounded.label-close-warning.label-close-hover-warning
+              | Clear all search criteria
+              a(href='#')
+                +icon-close.icon-close_small
+          +inner-plate._padding_none.page__section
+            +e.section
+              +e.H4.heading Employment PARAMETERS
+              +e.control-container
+                +checkbox(true) Part time
+                +checkbox(true) Full time
+                +checkbox() Freelance
+                +checkbox() Season job
+            +e.section
+              +e.H4.heading WORKING GRAPHIC
+              +e.form
+                .form-group.form-group-with-addon.inner-plate__form-first-item
+                  +input('38').form-control-warning
+                  .input-group-addon h
+                +select([{value: '1', text: 'Weekly'}, {value: '2', text: 'Monthly'}, {value: '3', text: 'Daily'}])._big._warning.__form-second-item
+            +e.section
+              +e.H4.heading GEOGRAPHY
+              +e.control-container
+                +radio(true, 'geo')._warning Anywhere
+                +radio('', 'geo')._warning Specific radius from
+                +radio('', 'geo')._warning Specific locations
+        .col-xs-24.col-xxl-12
+          +inner-plate
+            +e.H4.heading PROFESSION
+            +e.P.subheading Specify the profession of the Hero
+            +e.form
+              +select([{value: '1', text: 'Graphic Designer'}, {value: '2', text: 'Designer'}, {value: '3', text: 'Graphic Artist'}], 'Choose profession')._big._warning
+              +button.btn-secondary-warning Add to list
+            +e.tag-container
+              +label.label-bg-grey.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.label-close-warning.font-weight-medium
+                | Graphic Designer
+                a(href='#')
+                  +icon-close.icon-close_small
+          +inner-plate.page__section
+            +e.H4.heading DESIRED SALARY
+            +e.P.subheading Specify maximal salary for your employer. If not specified shows everyone
+            +e.form
+              .form-group.form-group-with-addon.inner-plate__form-first-item
+                +input('Maximum amount').form-control-warning
+                .input-group-addon $
+              +select([{value: '1', text: 'Annual'}, {value: '2', text: 'test-1'}, {value: '3', text: 'test-2'}])._big._warning.__form-second-item
+          +inner-plate.page__section
+            +e.H4.heading TAGS
+            +e.P.subheading We’ll try to find something for you within specific tags.
+            +e.FORM.form
+              +input('Write tag')
+              +button.btn-secondary-warning Add to list
+            +e.tag-container
+              +label.label-bg-grey.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.label-close-warning.font-weight-medium
+                | Graphic Designer
+                a(href='#')
+                  +icon-close.icon-close_small
+              +label.label-bg-grey.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.label-close-warning.font-weight-medium
+                | Designer
+                a(href='#')
+                  +icon-close.icon-close_small
+              +label.label-bg-grey.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.label-close-warning.font-weight-medium
+                | Graphic Artist
+                a(href='#')
+                  +icon-close.icon-close_small
+              +label.label-bg-grey.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded.label-close-warning.font-weight-medium
+                | Design
+                a(href='#')
+                  +icon-close.icon-close_small
+            +label.label-transparent.label-rounded.label-medium.label-close.label-bg-dark.label-font-white.label-close-rounded.label-close-warning.label-close-hover-warning
+              | Clear all tags
+              a(href='#')
+                +icon-close.icon-close_small
