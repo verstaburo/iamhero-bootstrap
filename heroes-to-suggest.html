@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I Am Hero - Account settings</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="inner-header">
+        <div class="inner-header__col inner-header__logo">
+            <a href="#">
+                <svg><use xlink:href="assets/images/icon.svg#icon_logo-white"></use></svg>
+            </a>
+        </div>
+        <div class="inner-header__col inner-header__search">
+            <label class="search search_dark">
+                <input class="search__input" type="text" placeholder="Search for heroes..." />
+                <button class="search__icon" type="submit">
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+                </button>
+            </label>
+        </div>
+        <div class="inner-header__col inner-header__search-btn">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+        </div>
+        <div class="inner-header__notify-wrap">
+            <div class="inner-header__col inner-header__col_dropdown inner-header__col_hover inner-header__col_hover_dark inner-header__notification">
+                <button>
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    <span class="inner-header__notification-badge">1</span>
+                </button>
+                <div class="inner-header__dropdown-content">
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user2.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Jean Michianty</h4>Accepted your job attend</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+                            <span>05:07</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item inner-header__notify-item_padded" href="#">
+                        <span class="inner-header__notify-link">Open all notifications</span>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="inner-header__col inner-header__col_dropdown inner-header__col_hover inner-header__col_hover_dark inner-header__user">
+                <div class="media-secondary">
+                    <div class="media-left">
+                        <img class="img-circle media-object" src="assets/images/user/user.png" />
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Eugene Sheeleen</h4>Dezi Design Agency</div>
+                </div>
+                <svg><use xlink:href="assets/images/icon.svg#icon_caret-bold"></use></svg>
+                <div class="inner-header__dropdown-content">
+                    <a class="inner-header__user-nav" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-hero"></use></svg>Hero Account</a>
+                    <a class="inner-header__user-nav active" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>Dezi Design agency</a>
+                    <a class="inner-header__user-nav" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>Esdesign studio</a>
+                </div>
+            </div>
+        </div>
+        <div class="inner-header__col inner-header__col_hover inner-header__col_hover_yellow inner-header__promo">
+            <a href="#">Buy packages</a>
+        </div>
+        <div class="inner-header__col inner-header__burger">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-burger"></use></svg>
+        </div>
+    </header>
+    <ul class="inner-sidebar">
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-dashboard"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Dashboard</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-messages"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Messages</span>
+            <span class="inner-sidebar__badge">1</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Search</span>
+        </li>
+        <li class="inner-sidebar__item active">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Shortlists</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Job Offers</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-statistics"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Stats</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Settings</span>
+        </li>
+    </ul>
+    <aside class="aside-filter aside-filter_top-none">
+        <div class="aside-filter__item aside-filter__item_no-side">
+            <div class="aside-filter__heading">
+                <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
+                <h4>Settings</h4>
+            </div>
+            <div class="aside-filter__menu">
+                <a class="active" href="#">Heroes to suggest</a>
+                <a href="#">Account settings</a>
+                <a href="#">Finances</a>
+                <a href="#">Notification options</a>
+                <a href="#">Invite Friends</a>
+            </div>
+            <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-edit">Edit company page</button>
+        </div>
+    </aside>
+    <main class="page page_inner-medium" role="main">
+        <div class="settings-header">
+            <svg class="settings-header__icon"><use xlink:href="assets/images/icon.svg#icon_hero-to-suggest"></use></svg>
+            <h3 class="settings-header__text">HEROES TO SUGGEST</h3>
+            <span class="settings-header__info-text">Specify Parameters for system to suggest you Heroes</span>
+            <a class="btn btn-secondary-warning btn-secondary-warning-medium btn-font-white font-weight-medium" href="#">Save</a>
+        </div>
+        <div class="page__section">
+            <div class="row">
+                <div class="col-xs-24 col-xxl-12">
+                    <div class="inner-plate">
+                        <h4 class="inner-plate__heading">WORKING FIELDS</h4>
+                        <p class="inner-plate__subheading">This section allows you to choose working field of Heroes you are interested of.</p>
+                        <div class="inner-plate__form">
+                            <select class="js-select select select_big select_warning" placeholder="Working field">
+                                <option value="">Working field</option>
+                                <option value="1">Graphic Designer</option>
+                                <option value="2">Designer</option>
+                                <option value="3">Graphic Artist</option>
+                            </select>
+                            <button class="btn btn-secondary-warning">Add to list</button>
+                        </div>
+                        <div class="inner-plate__tag-container">
+                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Designer
+                                <a href="#">
+                                    <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
+                            </span>
+                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Designer
+                                <a href="#">
+                                    <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
+                            </span>
+                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Artist
+                                <a href="#">
+                                    <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
+                            </span>
+                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Design
+                                <a href="#">
+                                    <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
+                            </span>
+                        </div>
+                        <span class="label label-rounded label-medium label-close label-bg-dark label-font-white label-close-rounded label-close-warning label-close-hover-warning">Clear all search criteria
+                            <a href="#">
+                                <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="inner-plate inner-plate_padding_none page__section">
+                        <div class="inner-plate__section">
+                            <h4 class="inner-plate__heading">Employment PARAMETERS</h4>
+                            <div class="inner-plate__control-container">
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
+                                    <span class="checkbox__box">
+                                        <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                                    </span>
+                                    <span class="checkbox__text">Part time</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
+                                    <span class="checkbox__box">
+                                        <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                                    </span>
+                                    <span class="checkbox__text">Full time</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" value="" name="" />
+                                    <span class="checkbox__box">
+                                        <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                                    </span>
+                                    <span class="checkbox__text">Freelance</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input class="checkbox__input" type="checkbox" value="" name="" />
+                                    <span class="checkbox__box">
+                                        <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
+                                    </span>
+                                    <span class="checkbox__text">Season job</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inner-plate__section">
+                            <h4 class="inner-plate__heading">WORKING GRAPHIC</h4>
+                            <div class="inner-plate__form">
+                                <div class="form-group form-group-with-addon inner-plate__form-first-item">
+                                    <input class="form-control form-control-warning" type="text" placeholder="38" />
+                                    <div class="input-group-addon">h</div>
+                                </div>
+                                <select class="js-select select select_big select_warning inner-plate__form-second-item" placeholder="">
+                                    <option value="1">Weekly</option>
+                                    <option value="2">Monthly</option>
+                                    <option value="3">Daily</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inner-plate__section">
+                            <h4 class="inner-plate__heading">GEOGRAPHY</h4>
+                            <div class="inner-plate__control-container">
+                                <label class="radio radio_warning">
+                                    <input class="radio__input" type="radio" name="geo" value="" checked="checked" />
+                                    <span class="radio__box"></span>
+                                    <span class="radio__text">Anywhere</span>
+                                </label>
+                                <label class="radio radio_warning">
+                                    <input class="radio__input" type="radio" name="geo" value="" />
+                                    <span class="radio__box"></span>
+                                    <span class="radio__text">Specific radius from</span>
+                                </label>
+                                <label class="radio radio_warning">
+                                    <input class="radio__input" type="radio" name="geo" value="" />
+                                    <span class="radio__box"></span>
+                                    <span class="radio__text">Specific locations</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-24 col-xxl-12">
+                    <div class="inner-plate">
+                        <h4 class="inner-plate__heading">PROFESSION</h4>
+                        <p class="inner-plate__subheading">Specify the profession of the Hero</p>
+                        <div class="inner-plate__form">
+                            <select class="js-select select select_big select_warning" placeholder="Choose profession">
+                                <option value="">Choose profession</option>
+                                <option value="1">Graphic Designer</option>
+                                <option value="2">Designer</option>
+                                <option value="3">Graphic Artist</option>
+                            </select>
+                            <button class="btn btn-secondary-warning">Add to list</button>
+                        </div>
+                        <div class="inner-plate__tag-container">
+                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Designer
+                                <a href="#">
+                                    <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="inner-plate page__section">
+                        <h4 class="inner-plate__heading">DESIRED SALARY</h4>
+                        <p class="inner-plate__subheading">Specify maximal salary for your employer. If not specified shows everyone</p>
+                        <div class="inner-plate__form">
+                            <div class="form-group form-group-with-addon inner-plate__form-first-item">
+                                <input class="form-control form-control-warning" type="text" placeholder="Maximum amount" />
+                                <div class="input-group-addon">$</div>
+                            </div>
+                            <select class="js-select select select_big select_warning inner-plate__form-second-item" placeholder="">
+                                <option value="1">Annual</option>
+                                <option value="2">test-1</option>
+                                <option value="3">test-2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inner-plate page__section">
+                        <h4 class="inner-plate__heading">TAGS</h4>
+                        <p class="inner-plate__subheading">We’ll try to find something for you within specific tags.</p>
+                        <form class="inner-plate__form">
+                            <input class="form-control" type="text" placeholder="Write tag" />
+                            <button class="btn btn-secondary-warning">Add to list</button>
+                        </form>
+                        <div class="inner-plate__tag-container">
+                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Designer
+                                <a href="#">
+                                    <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
+                            </span>
+                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Designer
+                                <a href="#">
+                                    <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
+                            </span>
+                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Artist
+                                <a href="#">
+                                    <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
+                            </span>
+                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Design
+                                <a href="#">
+                                    <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </a>
+                            </span>
+                        </div>
+                        <span class="label label-rounded label-medium label-close label-bg-dark label-font-white label-close-rounded label-close-warning label-close-hover-warning">Clear all tags
+                            <a href="#">
+                                <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <a class="to-top" href="#">
+        <svg><use xlink:href="assets/images/icon.svg#icon_arrow-down-rounded"></use></svg>
+    </a>
+    <script src="assets/scripts/libs/bootstrap.min.js"></script>
+    <script src="assets/scripts/libs/bluebird.min.js"></script>
+    <script src="assets/scripts/libs/svg4everybody.min.js"></script>
+    <script src="assets/scripts/libs/ofi.min.js"></script>
+    <script src="assets/scripts/libs/sticky-kit.min.js"></script>
+    <script src="assets/scripts/libs/rangeslider.min.js"></script>
+    <script src="assets/scripts/libs/swiper.jquery.min.js"></script>
+    <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
+    <script src="assets/scripts/libs/scrollreveal.min.js"></script>
+    <script src="assets/scripts/libs/selectize.min.js"></script>
+    <script src="assets/scripts/libs/chartist.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>I Am Hero - Company listing</title>
+    <title>I Am Hero - Job listing</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
@@ -208,8 +208,8 @@
                 <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
                 <h4>filter</h4>
             </div>
-            <select class="js-select select select_big select_warning aside-filter__input" placeholder="Working field">
-                <option value="">Working field</option>
+            <select class="js-select select select_big select_warning aside-filter__input" placeholder="Job type">
+                <option value="">Job type</option>
                 <option value="1">Designer 2200</option>
                 <option value="2">Main office manager</option>
                 <option value="3">Search 31</option>
@@ -227,47 +227,38 @@
                 <option value="ru">Russia</option>
                 <option value="lv">Latvia</option>
             </select>
-            <span class="aside-filter__subheading">Amount of Employees:</span>
-            <label class="checkbox aside-filter__input">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">1-10</span>
-            </label>
-            <label class="checkbox aside-filter__input">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">11-100</span>
-            </label>
-            <label class="checkbox aside-filter__input">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">101-1000</span>
-            </label>
-            <label class="checkbox aside-filter__input">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">1000-10 0000</span>
-            </label>
-            <label class="checkbox aside-filter__input">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="true" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">Over 10 000 employees</span>
-            </label>
+            <select class="js-select select select_big select_warning aside-filter__input" placeholder="Location">
+                <option value="">Location</option>
+                <option value="us">USA</option>
+                <option value="ru">Russia</option>
+                <option value="lv">Latvia</option>
+            </select>
+        </div>
+        <div class="aside-filter__item aside-filter__item_no-side">
+            <div class="aside-filter__heading">
+                <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_saved"></use></svg>
+                <h4>saved searches</h4>
+            </div>
+            <a class="aside-filter__quick-link" href="#">Designer 2200
+                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+            </a>
+            <a class="aside-filter__quick-link" href="#">Main office manager
+                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+            </a>
+            <a class="aside-filter__quick-link" href="#">Search 31
+                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+            </a>
+            <a class="aside-filter__quick-link" href="#">Rage
+                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+            </a>
+            <a class="aside-filter__quick-link" href="#">Project management
+                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+            </a>
         </div>
     </aside>
     <main class="page page_inner-big page_faded" role="main">
         <div class="row">
-            <div class="col-sm-20">
+            <div class="col-xs-24">
                 <div class="inner-card">
                     <div class="bg-image inner-card__full-image">
                         <img src="assets/images/company-profile/full.jpg" />
@@ -279,8 +270,8 @@
                         <div class="inner-card__text-wrap">
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
-                                <h3 class="inner-card__title">BS Company</h3>
-                                <span class="inner-card__subtitle">Luxury alloy wheels</span>
+                                <h3 class="inner-card__title">Industrial Designer at BS Company</h3>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
@@ -308,7 +299,7 @@
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
                                 <h3 class="inner-card__title">Freedom Agency</h3>
-                                <span class="inner-card__subtitle">Freedom Agency</span>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
@@ -336,7 +327,7 @@
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
                                 <h3 class="inner-card__title">Maxdino</h3>
-                                <span class="inner-card__subtitle">Advertisement agency</span>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
@@ -364,7 +355,7 @@
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
                                 <h3 class="inner-card__title">Trade Plus</h3>
-                                <span class="inner-card__subtitle">Advertising</span>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
@@ -392,7 +383,7 @@
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
                                 <h3 class="inner-card__title">Monkey Logo designer Needed</h3>
-                                <span class="inner-card__subtitle">Graphic design studio</span>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
@@ -419,8 +410,8 @@
                         <div class="inner-card__text-wrap">
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
-                                <h3 class="inner-card__title">Arbo tech</h3>
-                                <span class="inner-card__subtitle">Design agency</span>
+                                <h3 class="inner-card__title">Arbo tech Logo designer Needed</h3>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
@@ -448,7 +439,7 @@
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
                                 <h3 class="inner-card__title">Maxdino</h3>
-                                <span class="inner-card__subtitle">Advertisement agency</span>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
@@ -476,7 +467,7 @@
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
                                 <h3 class="inner-card__title">Trade Plus</h3>
-                                <span class="inner-card__subtitle">Advertising</span>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
@@ -504,7 +495,7 @@
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
                                 <h3 class="inner-card__title">Monkey Logo designer Needed</h3>
-                                <span class="inner-card__subtitle">Graphic design studio</span>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
@@ -532,7 +523,7 @@
                             <div class="inner-card__tags"></div>
                             <div class="inner-card__text-content">
                                 <h3 class="inner-card__title">Monkey Logo designer Needed</h3>
-                                <span class="inner-card__subtitle">Graphic design studio</span>
+                                <span class="inner-card__subtitle">Designer</span>
                                 <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
                                 <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with
                                     his roommate Jason Germain and a few close friends in 1999.</p>
