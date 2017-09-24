@@ -111,6 +111,7 @@
   &__quick-link {
     padding: 15px 55px;
     display: flex;
+    position: relative;
     justify-content: space-between;
     color: #263240;
     font-size: 16px;
@@ -139,6 +140,58 @@
       & > svg {
         opacity: 1;
       }
+
+      .aside-filter__quick-link-controls {
+        pointer-events: all;
+        opacity: 1;
+      }
+    }
+
+    &_taller {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &_bordered {
+      border-top: 1px solid #e1e9ec;
+
+      &:last-of-type {
+        border-bottom: 1px solid #e1e9ec;
+      }
+    }
+  }
+
+  &__quick-link-controls {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    pointer-events: none;
+  }
+
+  &__quick-link-control {
+    border: 1px solid $brand-warning;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: relative;
+
+    svg {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      fill: $brand-warning;
+      stroke: $brand-warning;
+      width: 7px;
+      height: 7px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 8px;
     }
   }
 }

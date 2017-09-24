@@ -14,9 +14,16 @@ mixin aside-filter-search-item
     +icon('search')
 
 mixin aside-filter-shortlist-item(value)
-  +e.A(href='#').quick-link&attributes(attributes)
+  +e.quick-link._taller&attributes(attributes)
     block
     +e.SPAN.quick-link-value= value
+    +e.quick-link-controls
+      +e.A(href='#').quick-link-control
+        +icon('close')
+      +e.A(href='#').quick-link-control
+        +icon('pen')
+
+
 
 mixin aside-filter-heading(icon)
   +e.heading&attributes(attributes)

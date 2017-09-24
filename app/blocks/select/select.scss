@@ -148,6 +148,7 @@ select {
     padding-top: 15px;
     padding-bottom: 15px;
     z-index: 5;
+    left: 0;
 
     .option {
       letter-spacing: -.04em;
@@ -244,6 +245,25 @@ select {
       &::-webkit-scrollbar-thumb {
         border-radius: 1.5px;
         background-color: $brand-warning;
+      }
+    }
+  }
+
+  &_small {
+
+    .selectize-input {
+      min-height: initial;
+      padding-top: 4px;
+      padding-bottom: 3px;
+
+      &::before {
+        right: 15px;
+      }
+
+      &::after, &::before {
+        top: 13px;
+        width: 8px;
+        height: 2px;
       }
     }
   }

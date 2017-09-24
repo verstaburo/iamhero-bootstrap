@@ -1,7 +1,34 @@
-extends ../../layouts/default
+extends ../../layouts/inner-page
+include ../../blocks/page/page
+include ../../components/aside-filter/aside-filter
+include ../../components/search-form/search-form
+include ../../blocks/inner-plate/inner-plate
+include ../../blocks/inner-card/inner-card
 
 block head
-- var pageTitle = 'Versta Project Template'
+  - var pageTitle = 'I Am Hero - Shortlist'
+
+block aside-filter
+  +aside-filter._top-none
+    +aside-filter-item._no-side
+      +aside-filter-heading('menu-shortlists') SHORTLISTS
+      - for(var i=0;i<2;i++)
+        +aside-filter-shortlist-item('45')._bordered Designer 2200
+        +aside-filter-shortlist-item('12')._bordered Main office manager
+        +aside-filter-shortlist-item('4')._bordered Search 31
+        +aside-filter-shortlist-item('1')._bordered Rage
+        +aside-filter-shortlist-item('22')._bordered Project management
 
 block content
-  +b.shortlist
+  +page._inner-medium
+    +search-form
+    +hero('1.jpg', 'David Allandu', 'Singer, Producer, Interpreneur')
+    +hero('2.jpg', 'Alan Maier', 'Tv star')
+    +hero('3.jpg', 'Jamelia Freeman', 'Tv star')
+    +hero('4.jpg', 'Katy Moon', 'Tv star')
+    +hero('5.jpg', 'Adelina Mauer', 'Singer, Producer, Interpreneur')
+    +hero('6.jpg', 'Laura Benneton', 'Tv star')
+    +hero('7.jpg', 'James Malovich', 'Tv star')
+    +hero('8.svg', 'Andriano Colleti', 'Tv star')
+    +hero('9.jpg', 'Alexandr Benua', 'Singer, Producer, Interpreneur')
+    +hero('10.jpg', 'Jeremy Clarckson', 'Tv star')

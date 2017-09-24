@@ -1,0 +1,150 @@
+.search-form {
+  display: block;
+  background-color: #fff;
+
+  &__header {
+    padding: 30px 30px 30px 55px;
+    display: flex;
+    align-items: center;
+
+    .select {
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-size: 27px;
+    margin: 0;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+
+    svg {
+      flex-shrink: 0;
+      width: 22px;
+      height: 28px;
+      fill: none;
+      stroke: $brand-warning;
+      margin-right: 10px;
+    }
+  }
+
+  &__result {
+    margin-left: auto;
+  }
+
+  &__result-text {
+    font-size: 23px;
+    font-weight: 300;
+
+    &_uppercase {
+      text-transform: uppercase;
+    }
+
+    &_color {
+
+      &_grey {
+        color: #b1bdc6;
+      }
+
+      &_warning {
+        color: $brand-warning;
+      }
+    }
+
+    &_thin {
+      font-weight: 100;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+  }
+
+  &__control {
+    margin-left: 15px;
+  }
+
+  &__input-wrap {
+    height: 55px;
+    display: flex;
+  }
+
+  &__input {
+    font-size: 18px;
+    padding: 16px 15px;
+    border-width: 1px;
+    border-color: transparent;
+    border-top-color: #d8dfe4;
+    transition: border-color .25s ease-in-out;
+
+    &::placeholder {
+      color: #a6b4c1;
+    }
+
+    &:hover, &:focus {
+      border-color: #33414c;
+    }
+
+    &_first {
+      flex-grow: 4;
+      padding-left: 55px;
+    }
+
+    &_second {
+      flex-grow: 1;
+      border-left-color: #d8dfe4;
+    }
+  }
+
+  &__submit {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 45px 17px 35px;
+    background-color: #e9f0f4;
+    transition: background-color .25s ease-in-out;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1d2431;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      fill: $brand-warning;
+      stroke: $brand-warning;
+      transition: fill 25s ease-in-out, stroke .25s ease-in-out;
+    }
+
+    &:hover {
+      background-color: $brand-warning;
+      color: #1d2431;
+
+      svg {
+        fill: #fff;
+        stroke: #fff;
+      }
+    }
+  }
+
+  &__tag-wrap {
+    background-color: #d8dfe4;
+    padding: 10px 55px 0;
+
+    .label {
+      margin-right: 10px;
+      margin-bottom: 13px;
+    }
+
+    .label-transparent {
+      transition: background-color .25s ease-in-out;
+
+      &:hover {
+        background-color: #e9eef2;
+      }
+    }
+  }
+}

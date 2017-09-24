@@ -10,6 +10,14 @@
       width: 10px;
       height: 13px;
       fill: $brand-warning;
+      transition: fill .25s ease-in-out;
+    }
+
+    &:hover {
+
+      svg {
+        fill: #3b4d62;
+      }
     }
 
     &.disabled {
@@ -39,6 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color .25s ease-in-out;
 
     svg {
       width: 10px;
@@ -53,6 +62,10 @@
       svg {
         transform: rotate(180deg);
       }
+    }
+
+    &:hover {
+      background-color: $brand-warning;
     }
   }
 
@@ -73,7 +86,7 @@
     transition: background-color .25s ease-in-out;
 
     &:hover {
-      background-color: #e7ebee;
+      background-color: $brand-warning;
       color: #000;
     }
 

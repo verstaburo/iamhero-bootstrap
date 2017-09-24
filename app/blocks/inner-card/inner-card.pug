@@ -1,6 +1,8 @@
 include ../bg-image/bg-image
 include ../label/label
 include ../icon/icons
+include ../button/button
+include ../button-icon/button-icon
 include ../../components/card-popover/card-popover
 
 mixin inner-card(tag)
@@ -126,3 +128,22 @@ mixin hero(img, title, branch)
         +inner-card-button('check-1')(href='#')._darken.js-card-buy-contact Buy contacts
         +card-popover-buy.__card-popover
       +inner-card-button('dots', 'a')(href='#') Open profile
+
+mixin hero-to-shortlist
+  +inner-card(img, title, buy)._hero&attributes(attributes)
+    +inner-card-wrap
+      +inner-card-hero-image(img)
+      +inner-card-text-wrap
+        +e.controls
+          if buy
+            +button.btn-secondary-warning-small Buy contact
+          else
+            +button-icon.btn-secondary-warning
+              +button-icon-item('message')
+              +button-icon-text Start conversation
+        +inner-card-text-content
+          +inner-card-title= title
+          +inner-card-subtitle Tv star
+          +inner-card-subtitle._thin._inline Los Angeles, USA
+          +inner-card-text Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
+          +inner-card-expand-content

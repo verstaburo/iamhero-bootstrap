@@ -1,0 +1,47 @@
+include ../../blocks/icon/icons
+include ../../blocks/select/select
+include ../../blocks/button/button
+include ../../blocks/icon-close/icon-close
+include ../../blocks/label/label
+include ../../blocks/button-icon/button-icon
+
+mixin search-form()
+  +b.FORM.search-form&attributes(attributes)
+    +e.header
+      +e.H3.title
+        +icon('menu-shortlists')
+        | GRAPHIC DESIGNERS
+      +e.result
+        +e.SPAN.result-text._thin._color_grey._uppercase Heroes:
+        +e.SPAN.result-text 154 /
+        +e.SPAN.result-text._color_warning 15
+      +e.controls
+        +select([{value: '1', text: 'Show: All'}, {value: '2', text: 'Show: First'}, {value: '3', text: 'Show: None'}], 'Show: All')._small._warning.__control
+        +button.btn-secondary-warning-small.btn-hover-text-warning.font-weight-medium.__control Buy all contacts
+          b.btn-font-white 139
+        +button-icon.btn-secondary-warning.btn-secondary-warning-low.font-weight-medium.__control
+          +button-icon-item('mass-message')._fill_none._stroke_warning
+          +button-icon-text Mass message
+    +e.input-wrap
+      +e.INPUT(type='text' placeholder='Search GRAPHIC DESIGNER shortlist').input._first
+      +e.INPUT(type='text' placeholder='Location filter').input._second
+      +e.A(href='#').submit
+        +icon('header-search')
+        | Find heroes
+    +e.tag-wrap
+      +label.label-transparent.label-border-white.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded
+        a(href='#')
+          +icon-close.icon-close_small
+        | Graphic designer
+      +label.label-transparent.label-border-white.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded
+        a(href='#')
+          +icon-close.icon-close_small
+        | Riga
+      +label.label-transparent.label-border-white.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded
+        a(href='#')
+          +icon-close.icon-close_small
+        | Design
+      +label.label-rounded.label-medium.label-close.label-bg-dark.label-font-white.label-close-rounded.label-close-warning.label-close-hover-warning
+        a(href='#')
+          +icon-close.icon-close_small
+        | Clear all search criteria

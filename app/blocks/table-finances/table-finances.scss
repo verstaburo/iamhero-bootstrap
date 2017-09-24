@@ -81,7 +81,15 @@
 
     & > span {
       color: #96a9b3;
+      transition: color .25s ease-in-out;
       border-bottom: 1px solid $brand-warning;
+    }
+
+    &:hover {
+
+      & > span {
+        color: #3b4d62;
+      }
     }
   }
 

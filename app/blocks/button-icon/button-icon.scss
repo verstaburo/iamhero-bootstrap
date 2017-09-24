@@ -9,6 +9,10 @@
       fill: $gray;
     }
 
+    &_fill_none {
+      fill: none;
+    }
+
     &_stroke {
 
       &_white {
@@ -17,6 +21,10 @@
 
       &_grey {
         stroke: $gray;
+      }
+
+      &_warning {
+        stroke: $brand-warning;
       }
     }
 
