@@ -43,13 +43,7 @@ export default () => {
         scrollwheel: false,
       });
       const image = {
-        url: 'assets/images/icon/map-figure.svg',
-        // This marker is 20 pixels wide by 32 pixels high.
-        size: new google.maps.Size(52, 71),
-        // The origin for this image is (0, 0).
-        origin: new google.maps.Point(0, 0),
-        // The anchor for this image is the base of the flagpole at (0, 32).
-        anchor: new google.maps.Point(26, 71)
+        url: 'assets/images/icon/figure.png',
       };
       // eslint-disable-next-line
       const luxemburg = new google.maps.Marker({
@@ -87,5 +81,33 @@ export default () => {
         initBranchMap();
       }, 200);
     });
+
+    function initJobMap() {
+      const mapJobElement = document.getElementById('map-job');
+      if (!mapJobElement) {
+        return;
+      }
+      const jobCenter = {
+        lat: 47.8111474,
+        lng: 13.0503576,
+      };
+      const mapJob = new google.maps.Map(mapJobElement, {
+        zoom: 8,
+        center: jobCenter,
+        scrollwheel: false,
+      });
+      const image = {
+        url: 'assets/images/icon/figure.png',
+      };
+      // eslint-disable-next-line
+      var marker = new google.maps.Marker({
+        position: jobCenter,
+        map: mapJob,
+        icon: image,
+      });
+    }
+
+    initJobMap();
+
   }).catch(f => f);
 };

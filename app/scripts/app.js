@@ -18,6 +18,8 @@ import toTop from '../blocks/to-top/to-top';
 import jsProgress from '../blocks/js-progress/js-progress';
 import activityMeter from '../blocks/activity-meter/activity-meter';
 import messages from '../components/messages/messages';
+// import jobCard from '../blocks/job-card/job-card';
+import fullBtn from './common/fullBtn';
 
 /* eslint-disable*/
 $(() => {
@@ -43,4 +45,6 @@ $(() => {
   jsProgress();
   activityMeter();
   messages();
+  // jobCard();
+  fullBtn();
 });

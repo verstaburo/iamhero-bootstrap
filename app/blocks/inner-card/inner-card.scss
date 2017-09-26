@@ -170,8 +170,7 @@
     font-size: 22px;
     color: #fff;
     letter-spacing: -.04em;
-    padding-left: 18px;
-    padding-right: 40px;
+    padding: 15px 40px 14px 18px;
     display: flex;
     align-items: center;
     height: 100%;
@@ -180,6 +179,10 @@
 
     &_darken {
       background-color: #1e2d40;
+    }
+
+    &_centered {
+      justify-content: center;
     }
 
     &:hover {

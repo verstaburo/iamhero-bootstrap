@@ -14,15 +14,7 @@
   }
 
   &__logo {
-    height: 265px;
-
-    @media (max-width: $screen-md-max) {
-      height: 190px;
-    }
-
-    @media (max-width: $screen-sm-max) {
-      height: 120px;
-    }
+    @include ratio(1,1);
   }
 
   &__video {

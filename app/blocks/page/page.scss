@@ -136,21 +136,32 @@
         background-color: rgba(#263140, .35);
       }
     }
+
+    &_overlay_none {
+
+      &::after {
+        content: none;
+      }
+    }
   }
 
   &__sidebar-wrap {
     margin-top: 35px;
     position: static;
+
+    &_no-margin {
+      margin-top: 0;
+    }
   }
 
   &__company {
     padding-top: 270px;
 
-    @media (max-width: $screen-lg-max) {
-      padding-top: 135px;
+    @media (max-width: $screen-xl-max) {
+      padding-top: 100px;
     }
 
-    @media (max-width: $screen-md-max) {
+    @media (max-width: $screen-lg-max) {
       padding-top: 50px;
     }
   }
@@ -161,6 +172,10 @@
 
   &__section {
     margin-top: 40px;
+
+    &_big {
+      margin-top: 60px;
+    }
   }
 
   &__header {
