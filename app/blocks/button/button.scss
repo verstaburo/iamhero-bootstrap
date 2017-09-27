@@ -37,6 +37,25 @@
     }
   }
 
+  &-secondary-big {
+    @media (min-width: $screen-sm-min) {
+      padding-top: 12px;
+      padding-bottom: 11px;
+    }
+  }
+
+  &-secondary-text-dark {
+    color: inherit;
+
+    &:focus {
+      color: inherit;
+    }
+
+    &:active {
+      color: #fff;
+    }
+  }
+
   &-secondary-warning {
     border-width: 3px;
     border-color: $brand-warning;
@@ -113,10 +132,6 @@
 
   &-block {
     display: block;
-  }
-
-  &-color-inherit {
-    color: inherit;
   }
 
   &-font-white {

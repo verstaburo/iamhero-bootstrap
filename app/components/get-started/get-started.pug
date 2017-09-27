@@ -13,16 +13,16 @@ mixin get-started()
         +e.switcher.col-xl-5.col-lg-6.col-lg-offset-0.col-md-offset-4.col-md-8.col-sm-12.__input
           +switch('Job seeker', 'Employer')._big
         +e.input.col-xl-5.col-lg-6.col-md-8.col-sm-12
-          label
+          .form-group
             +input('Full name', 'name').form-control-secondary
             span.help-block
-        +e.input.col-xl-5.col-lg-6.col-lg-offset-0.col-md-offset-4.col-md-8.col-sm-12.has-success
-          label
+        +e.input.col-xl-5.col-lg-6.col-lg-offset-0.col-md-offset-4.col-md-8.col-sm-12
+          .form-group.has-success
             +input('E-mail adress', 'email').form-control-secondary
-            span.help-block
-        +e.input.col-xl-5.col-lg-6.col-md-8.col-sm-12.has-error
-          label
+            span.help-block Success!
+        +e.input.col-xl-5.col-lg-6.col-md-8.col-sm-12
+          .form-group.has-error
             +input('Create password', 'password').form-control-secondary
             span.help-block Password must be at least 8 symbols long
         +e.input.col-xl-4.col-lg-6.col-lg-offset-0.col-md-offset-4.col-md-16.col-xs-24
-          +button.btn-secondary Continue
+          +button.btn-secondary.btn-secondary-big Continue

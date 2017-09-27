@@ -46,16 +46,12 @@ label {
 }
 
 .help-block {
-  position: absolute;
   letter-spacing: -.04em;
   font-weight: 700;
-  color: #df4116;
   font-size: 14px;
-  width: 85%;
-  top: 105%;
   text-align: right;
-  right: 18px;
-  line-height: 1.2em;
+  padding: 0 20px;
+  margin-bottom: 5px;
 }
 
 h2, .h2 {
@@ -107,6 +103,79 @@ p {
 
     .form-control {
       padding-right: 30px;
+    }
+  }
+}
+
+.form-inline {
+  display: flex;
+  align-items: flex-start;
+
+  & + & {
+
+    &:not(:first-of-type) {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-group {
+    flex-grow: 1;
+    flex-basis: 100%;
+
+    .form-control {
+      width: 100%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-inline-btn {
+    margin-left: 20px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+
+    &-offset-top {
+      @media (min-width: $screen-sm-min) {
+        margin-top: 60px;
+      }
+    }
+
+    &-stretch {
+      min-width: 200px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+
+  .form-inline-text {
+    line-height: 2.85;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .form-inline-vertical-inputs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .form-group {
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
     }
   }
 }

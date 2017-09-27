@@ -75,11 +75,6 @@
       }
     }
   }
-
-  &__button {
-    margin-top: 40px;
-    margin-left: 20px;
-  }
 }
 
 .sidebar-wrap {
@@ -131,5 +126,14 @@
 
   &__menu {
     margin-top: -10px;
+  }
+
+  &__button {
+    margin-top: 40px;
+    margin-left: 20px;
+
+    @media (max-width: $screen-md-max) {
+      margin-top: 10px;
+    }
   }
 }

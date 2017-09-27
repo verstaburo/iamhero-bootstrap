@@ -19,8 +19,9 @@ block profile-header
 block sidebar-menu
   +sidebar-wrap
     +media('profile-edit/avatar-small.jpg', 'Name Surname').__media Vocation
-    +sidebar-menu(getData('sidebar-menu')).__menu
-      +button.__button.btn-secondary.btn-color-inherit Preview
+    +e.menu
+      +sidebar-menu(getData('sidebar-menu'))
+      +button('a')(href='#').__button.btn-secondary.btn-secondary-text-dark Preview
 
 block content
   +avatar-plate

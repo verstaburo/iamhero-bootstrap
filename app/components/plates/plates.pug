@@ -58,11 +58,11 @@ mixin skills-plate
     +rangeslider-label('Web Design', 'orange', '40').__top-60.sr-animate
     +rangeslider-label('Illustration', 'blue', '40').__top-60.sr-animate
     +rangeslider-label('Video Editing', 'red', '80').__top-60.sr-animate
-    +input-markup.__top-60
-      +input-markup-item._grow
+    +e.FORM.top-60.form-inline
+      .form-group.has-error
         +input('Write another')
-      +input-markup-item._margin_left
-        +button-add Add new skill
+        span.help-block Error
+      +button-add.form-inline-btn Add new skill
 
 mixin skills-plate-static
   +plate#skills
@@ -82,11 +82,11 @@ mixin talents-plate
       +label-talents-close Dancing
       +label-talents-close Song writing
       +label-talents-close Drawing amazing landscapes
-    +input-markup.__top-50
-      +input-markup-item._grow
+    +e.FORM.top-50.form-inline
+      .form-group.has-warning
         +input('Write another')
-      +input-markup-item._margin_left
-        +button-add Add new talent
+        span.help-block Warning!
+      +button-add.form-inline-btn Add new talent
 
 mixin talents-plate-static
   +plate#talents
@@ -146,15 +146,14 @@ mixin languages-plate
     +language-heading
     +language-sliders('Russian', 'red')
     +language-sliders('English', 'orange')
-    +input-markup._tablet_wrap.__top-30
-      +input-markup-item._grow._divide_40p
+    +e.FORM.top-30.form-inline
+      .form-group
         +select([{value: 'en', text: 'English'}, {value: 'ru', text: 'Русский'}], 'Select')
-      +input-markup-item._margin_both
-        span or
-      +input-markup-item._grow._divide_40p
+      span.form-inline-text or
+      .form-group.has-success
         +input('write another')
-      +input-markup-item._margin_left._tablet_full._tablet_right
-        +button-add Add new language
+        span.help-block Success
+      +button-add.form-inline-btn Add new language
 
 mixin languages-plate-static
   +plate#languages
@@ -234,12 +233,14 @@ mixin services-plate
         +service('tape', 'Video editing').sr-animate Adobe premier and After Effect mastery. Video filiming, color correction and Post production
       +e.service.col-md-8
         +service('brush', 'Illustration').sr-animate Drawing illustration and graphical images in various styles. Look for more in cases section
-    +input-markup.__top-40
-      +input-markup-item._vertical._grow
-        +select([{value: 'design', text: 'Design'}, {value: 'video', text: 'Video editing'}, {value: 'illustration', text: 'Illustration'}], 'Select')
-        +input('write about service')
-      +input-markup-item._margin_left._content_bottom
-        +button-add.__item_push_right Add new service
+    +e.FORM.top-40.form-inline
+      .form-inline-vertical-inputs
+        .form-group
+          +select([{value: 'design', text: 'Design'}, {value: 'video', text: 'Video editing'}, {value: 'illustration', text: 'Illustration'}], 'Select')
+        .form-group.has-error
+          +input('write about service')
+          span.help-block Error
+      +button-add.form-inline-btn.form-inline-btn-offset-top Add new service
 
 mixin services-plate-static
   +plate#services
@@ -282,17 +283,20 @@ mixin interests-plate(edit)
         else
           +thumbnail-interests('profile-edit/food-review.jpg', 'Street food review')
     if edit
-      +input-markup.__top-20
-        +input-markup-item._grow._vertical
-          +input('Write another')
-          +input('write about interest')
-        +input-markup-item._vertical._margin_left
-          +button-icon.btn-grey.btn-block
-            +button-icon-item('picture')._grey
-            +button-icon-text Upload image
-          +button-add.__item_push_right.btn-block Add new interest
-
-
+      +e.FORM.top-20
+        .form-inline
+          .form-group.has-warning
+            +input('Write another')
+            span.help-block Warning
+          +upload.form-inline-btn.form-inline-btn-stretch
+            +button-icon.btn-grey
+              +button-icon-item('picture')._grey
+              +button-icon-text Upload image
+        .form-inline
+          .form-group.has-success
+            +input('write about interest')
+            span.help-block Success
+          +button-add.form-inline-btn.form-inline-btn-stretch Add new interest
 
 mixin video-plate
   +plate._relative._ratio-container
@@ -319,10 +323,6 @@ mixin social-plate-static
         +icon('youtube', true).social-header__icon
       +tab('pinterest').social-header__item
         +icon('pinterest', true).social-header__icon
-      //- li.social-header__item.social-header__item_push_right.social-header__item_flexible.social-header__item_mobile-first
-      //-   +button-icon.__item_push_right.btn-success-transparent.social-header__button
-      //-     +button-icon-item('plus')._stroke_white._big
-      //-     +button-icon-text Add new social tab
 
     +tab-content.social-content
       +tab-pane.active.in#instagram

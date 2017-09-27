@@ -68,47 +68,47 @@
                             <div class="media-body">
                                 <h5 class="media-heading font-weight-medium">Name Surname</h5>Vocation</div>
                         </div>
-                        <ul class="sidebar-menu sidebar-wrap__menu">
-                            <li class="sidebar-menu__item active">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
-                                <a href="#summary">Summary</a>
-                            </li>
-                            <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
-                                <a href="#skills">Skills</a>
-                            </li>
-                            <li class="sidebar-menu__item disabled">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill-disabled"></use></svg>
-                                <a href="#talents">Talents</a>
-                            </li>
-                            <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
-                                <a href="#languages">Languages</a>
-                            </li>
-                            <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
-                                <a href="#resume">Resume</a>
-                            </li>
-                            <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
-                                <a href="#services">Services</a>
-                            </li>
-                            <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
-                                <a href="#interest">Interest</a>
-                            </li>
-                            <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
-                                <a href="#activities">My social activities</a>
-                            </li>
-                            <li class="sidebar-menu__item">
-                                <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
-                                <a href="#cases">Cases</a>
-                            </li>
-                            <li>
-                                <button class="btn sidebar-menu__button btn-secondary btn-color-inherit">Preview</button>
-                            </li>
-                        </ul>
+                        <div class="sidebar-wrap__menu">
+                            <ul class="sidebar-menu">
+                                <li class="sidebar-menu__item active">
+                                    <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                    <a href="#summary">Summary</a>
+                                </li>
+                                <li class="sidebar-menu__item">
+                                    <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                    <a href="#skills">Skills</a>
+                                </li>
+                                <li class="sidebar-menu__item disabled">
+                                    <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill-disabled"></use></svg>
+                                    <a href="#talents">Talents</a>
+                                </li>
+                                <li class="sidebar-menu__item">
+                                    <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                    <a href="#languages">Languages</a>
+                                </li>
+                                <li class="sidebar-menu__item">
+                                    <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                    <a href="#resume">Resume</a>
+                                </li>
+                                <li class="sidebar-menu__item">
+                                    <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                    <a href="#services">Services</a>
+                                </li>
+                                <li class="sidebar-menu__item">
+                                    <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                    <a href="#interest">Interest</a>
+                                </li>
+                                <li class="sidebar-menu__item">
+                                    <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                    <a href="#activities">My social activities</a>
+                                </li>
+                                <li class="sidebar-menu__item">
+                                    <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                    <a href="#cases">Cases</a>
+                                </li>
+                            </ul>
+                            <a class="btn sidebar-wrap__button btn-secondary btn-secondary-text-dark" href="#">Preview</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xxl-16 col-lg-19 col-xs-24">
@@ -178,17 +178,16 @@
                                 <svg class="icon-close rangeslider-wrap__icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                             </div>
                         </div>
-                        <div class="input-markup plate__top-60">
-                            <div class="input-markup__item input-markup__item_grow">
+                        <form class="plate__top-60 form-inline">
+                            <div class="form-group has-error">
                                 <input class="form-control" type="text" placeholder="Write another" />
+                                <span class="help-block">Error</span>
                             </div>
-                            <div class="input-markup__item input-markup__item_margin_left">
-                                <button class="button-icon btn btn-default">
-                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
-                                    <span class="button-icon__text">Add new skill</span>
-                                </button>
-                            </div>
-                        </div>
+                            <button class="button-icon btn btn-default form-inline-btn">
+                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                <span class="button-icon__text">Add new skill</span>
+                            </button>
+                        </form>
                     </div>
                     <div class="plate" id="talents">
                         <h2 class="plate__header">Talents</h2>
@@ -215,17 +214,16 @@
                                 </a>
                             </span>
                         </div>
-                        <div class="input-markup plate__top-50">
-                            <div class="input-markup__item input-markup__item_grow">
+                        <form class="plate__top-50 form-inline">
+                            <div class="form-group has-warning">
                                 <input class="form-control" type="text" placeholder="Write another" />
+                                <span class="help-block">Warning!</span>
                             </div>
-                            <div class="input-markup__item input-markup__item_margin_left">
-                                <button class="button-icon btn btn-default">
-                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
-                                    <span class="button-icon__text">Add new talent</span>
-                                </button>
-                            </div>
-                        </div>
+                            <button class="button-icon btn btn-default form-inline-btn">
+                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                <span class="button-icon__text">Add new talent</span>
+                            </button>
+                        </form>
                     </div>
                     <div class="plate" id="languages">
                         <h2 class="plate__header">Languages</h2>
@@ -318,27 +316,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="input-markup input-markup_tablet_wrap plate__top-30">
-                            <div class="input-markup__item input-markup__item_grow input-markup__item_divide_40p">
+                        <form class="plate__top-30 form-inline">
+                            <div class="form-group">
                                 <select class="js-select select" placeholder="Select">
                                     <option value="">Select</option>
                                     <option value="en">English</option>
                                     <option value="ru">Русский</option>
                                 </select>
                             </div>
-                            <div class="input-markup__item input-markup__item_margin_both">
-                                <span>or</span>
-                            </div>
-                            <div class="input-markup__item input-markup__item_grow input-markup__item_divide_40p">
+                            <span class="form-inline-text">or</span>
+                            <div class="form-group has-success">
                                 <input class="form-control" type="text" placeholder="write another" />
+                                <span class="help-block">Success</span>
                             </div>
-                            <div class="input-markup__item input-markup__item_margin_left input-markup__item_tablet_full input-markup__item_tablet_right">
-                                <button class="button-icon btn btn-default">
-                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
-                                    <span class="button-icon__text">Add new language</span>
-                                </button>
-                            </div>
-                        </div>
+                            <button class="button-icon btn btn-default form-inline-btn">
+                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                <span class="button-icon__text">Add new language</span>
+                            </button>
+                        </form>
                     </div>
                     <div class="plate" id="resume">
                         <h2 class="plate__header">Resume</h2>
@@ -487,23 +482,26 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="input-markup plate__top-40">
-                            <div class="input-markup__item input-markup__item_vertical input-markup__item_grow">
-                                <select class="js-select select" placeholder="Select">
-                                    <option value="">Select</option>
-                                    <option value="design">Design</option>
-                                    <option value="video">Video editing</option>
-                                    <option value="illustration">Illustration</option>
-                                </select>
-                                <input class="form-control" type="text" placeholder="write about service" />
+                        <form class="plate__top-40 form-inline">
+                            <div class="form-inline-vertical-inputs">
+                                <div class="form-group">
+                                    <select class="js-select select" placeholder="Select">
+                                        <option value="">Select</option>
+                                        <option value="design">Design</option>
+                                        <option value="video">Video editing</option>
+                                        <option value="illustration">Illustration</option>
+                                    </select>
+                                </div>
+                                <div class="form-group has-error">
+                                    <input class="form-control" type="text" placeholder="write about service" />
+                                    <span class="help-block">Error</span>
+                                </div>
                             </div>
-                            <div class="input-markup__item input-markup__item_margin_left input-markup__item_content_bottom">
-                                <button class="button-icon btn btn-default input-markup__item input-markup__item_push_right">
-                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
-                                    <span class="button-icon__text">Add new service</span>
-                                </button>
-                            </div>
-                        </div>
+                            <button class="button-icon btn btn-default form-inline-btn form-inline-btn-offset-top">
+                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                <span class="button-icon__text">Add new service</span>
+                            </button>
+                        </form>
                     </div>
                     <div class="plate" id="interest">
                         <h2 class="plate__header">Interests</h2>
@@ -609,22 +607,31 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="input-markup plate__top-20">
-                            <div class="input-markup__item input-markup__item_grow input-markup__item_vertical">
-                                <input class="form-control" type="text" placeholder="Write another" />
-                                <input class="form-control" type="text" placeholder="write about interest" />
+                        <form class="plate__top-20">
+                            <div class="form-inline">
+                                <div class="form-group has-warning">
+                                    <input class="form-control" type="text" placeholder="Write another" />
+                                    <span class="help-block">Warning</span>
+                                </div>
+                                <div class="upload form-inline-btn form-inline-btn-stretch">
+                                    <input class="upload__input" type="file" />
+                                    <button class="button-icon btn btn-grey">
+                                        <svg class="button-icon__item button-icon__item_grey"><use xlink:href="assets/images/icon.svg#icon_picture"></use></svg>
+                                        <span class="button-icon__text">Upload image</span>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="input-markup__item input-markup__item_vertical input-markup__item_margin_left">
-                                <button class="button-icon btn btn-grey btn-block">
-                                    <svg class="button-icon__item button-icon__item_grey"><use xlink:href="assets/images/icon.svg#icon_picture"></use></svg>
-                                    <span class="button-icon__text">Upload image</span>
-                                </button>
-                                <button class="button-icon btn btn-default input-markup__item input-markup__item_push_right btn-block">
+                            <div class="form-inline">
+                                <div class="form-group has-success">
+                                    <input class="form-control" type="text" placeholder="write about interest" />
+                                    <span class="help-block">Success</span>
+                                </div>
+                                <button class="button-icon btn btn-default form-inline-btn form-inline-btn-stretch">
                                     <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
                                     <span class="button-icon__text">Add new interest</span>
                                 </button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                     <div class="plate plate_no-padding plate_relative plate_mobile-flex" id="activities">
                         <ul class="social-header" role="tablist">
@@ -929,25 +936,25 @@
                         </label>
                     </div>
                     <div class="get-started__input col-xl-5 col-lg-6 col-md-8 col-sm-12">
-                        <label>
+                        <div class="form-group">
                             <input class="form-control form-control-secondary" type="name" placeholder="Full name" />
                             <span class="help-block"></span>
-                        </label>
+                        </div>
                     </div>
-                    <div class="get-started__input col-xl-5 col-lg-6 col-lg-offset-0 col-md-offset-4 col-md-8 col-sm-12 has-success">
-                        <label>
+                    <div class="get-started__input col-xl-5 col-lg-6 col-lg-offset-0 col-md-offset-4 col-md-8 col-sm-12">
+                        <div class="form-group has-success">
                             <input class="form-control form-control-secondary" type="email" placeholder="E-mail adress" />
-                            <span class="help-block"></span>
-                        </label>
+                            <span class="help-block">Success!</span>
+                        </div>
                     </div>
-                    <div class="get-started__input col-xl-5 col-lg-6 col-md-8 col-sm-12 has-error">
-                        <label>
+                    <div class="get-started__input col-xl-5 col-lg-6 col-md-8 col-sm-12">
+                        <div class="form-group has-error">
                             <input class="form-control form-control-secondary" type="password" placeholder="Create password" />
                             <span class="help-block">Password must be at least 8 symbols long</span>
-                        </label>
+                        </div>
                     </div>
                     <div class="get-started__input col-xl-4 col-lg-6 col-lg-offset-0 col-md-offset-4 col-md-16 col-xs-24">
-                        <button class="btn btn-secondary">Continue</button>
+                        <button class="btn btn-secondary btn-secondary-big">Continue</button>
                     </div>
                 </form>
             </div>
@@ -1092,8 +1099,14 @@
                         <form class="modal-form plate__top-30">
                             <div class="modal-form__wrap">
                                 <div class="modal-form__inputs">
-                                    <input class="form-control" type="text" placeholder="Header" />
-                                    <textarea class="form-control plate__top-30 form-control-area-static" rows="3" placeholder="Short description"></textarea>
+                                    <div class="form-group has-error">
+                                        <input class="form-control" type="text" placeholder="Header" />
+                                        <span class="help-block">error</span>
+                                    </div>
+                                    <div class="form-group plate__top-30 has-success">
+                                        <textarea class="form-control form-control-area-static form-control-border-straight" rows="3" placeholder="Short description"></textarea>
+                                        <span class="help-block">success</span>
+                                    </div>
                                     <div class="modal-form__tags plate__top-30">
                                         <span class="modal-form__text">Tags:</span>
                                         <span class="label label-bg-grey label-font-light label-font-black label-close label-close-small label-rounded">Design
@@ -1112,8 +1125,8 @@
                                             </a>
                                         </span>
                                     </div>
-                                    <div class="input-markup plate__top-20">
-                                        <div class="input-markup__item input-markup__item_divide_40p input-markup__item_grow">
+                                    <div class="form-inline plate__top-20">
+                                        <div class="form-group">
                                             <select class="js-select select" placeholder="Select">
                                                 <option value="">Select</option>
                                                 <option value="1">1</option>
@@ -1121,18 +1134,14 @@
                                                 <option value="3">3</option>
                                             </select>
                                         </div>
-                                        <div class="input-markup__item input-markup__item_margin_both">
-                                            <span>or</span>
-                                        </div>
-                                        <div class="input-markup__item input-markup__item_divide_40p input-markup__item_grow">
+                                        <div class="form-inline-text">or</div>
+                                        <div class="form-group">
                                             <input class="form-control" type="text" placeholder="write another" />
                                         </div>
-                                        <div class="input-markup__item input-markup__item_margin_left">
-                                            <button class="button-icon btn btn-grey">
-                                                <svg class="button-icon__item button-icon__item_big button-icon__item_stroke_grey"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
-                                                <span class="button-icon__text">Add tag</span>
-                                            </button>
-                                        </div>
+                                        <button class="button-icon btn btn-grey form-inline-btn">
+                                            <svg class="button-icon__item button-icon__item_big button-icon__item_stroke_grey"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                            <span class="button-icon__text">Add tag</span>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="modal-form__upload modal-form__upload_big">
@@ -1236,8 +1245,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <input class="form-control plate__top-40" type="text" placeholder="Header" />
-                                    <textarea class="form-control form-control-area-static plate__top-40" rows="4" placeholder="Description"></textarea>
+                                    <div class="form-group plate__top-40 has-warning">
+                                        <input class="form-control" type="text" placeholder="Header" />
+                                        <span class="help-block">warning</span>
+                                    </div>
+                                    <div class="form-group plate__top-40 has-error">
+                                        <textarea class="form-control form-control-area-static" rows="4" placeholder="Description"></textarea>
+                                        <span class="help-block">error</span>
+                                    </div>
                                 </div>
                                 <div class="modal-form__upload">
                                     <div class="upload">

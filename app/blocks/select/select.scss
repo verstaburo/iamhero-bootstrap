@@ -80,7 +80,7 @@ select {
   padding: 9px 30px 8px 16px;
 
   &.full {
-    border-color: #39d3a9;
+    border-color: $brand-success;
   }
 
   &:hover {
