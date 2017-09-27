@@ -13,6 +13,11 @@ mixin aside-filter-search-item
     block
     +icon('search')
 
+mixin aside-filter-quick-link(value)
+  +e.quick-link&attributes(attributes)
+    block
+    +e.SPAN.quick-link-value= value
+
 mixin aside-filter-shortlist-item(value)
   +e.quick-link._taller&attributes(attributes)
     block

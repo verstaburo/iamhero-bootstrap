@@ -1,6 +1,6 @@
 include ../../blocks/icon/icons
 include ../../blocks/js-progress/js-progress
-include ../../blocks/activity-meter/activity-meter
+include ../../components/activity-meter/activity-meter
 include ../../blocks/label/label
 //- include ../../blocks/rangesliders/rangesliders
 
@@ -18,14 +18,7 @@ mixin info-sidebar()
           p That means that 75% of your page visitors stay on it longer than 25 seconds. Heroes are interested in you. Keep it up
         +js-progress('75')
       h5 Profile complete
-    +e.section._meter
-      +e.heading._white
-        h3 Month activity meter
-        +e.A(href='#').icon-link
-          +icon('boost')
-          | BOOST ME UP
-      +activity-meter
-      p This graph is based on overall company profile view per day and shows amount of unique visitors
+    +activity-meter
     +e.section._padding-side-none
       +e.heading._padded_sides
         h3 Recent searches

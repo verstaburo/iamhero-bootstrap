@@ -1,0 +1,31 @@
+extends ../../layouts/inner-page
+include ../../blocks/page/page
+include ../../components/aside-filter/aside-filter
+include ../../components/activity-meter/activity-meter
+include ../../blocks/inner-plate/inner-plate
+
+block head
+  - var pageTitle = 'I Am Hero - Stats'
+
+block aside-filter
+  +aside-filter._top-none
+    +aside-filter-item._no-side
+      +aside-filter-heading('stats') STATS
+      +aside-filter-quick-link('29.06.2017')._bordered Registered since
+      +aside-filter-quick-link('4') Opened vacancies
+      +aside-filter-quick-link('145') Searches
+      +aside-filter-quick-link('81') Shortlisted heroes
+      +aside-filter-quick-link('10 853') Messages sent
+      +aside-filter-quick-link('18 345') Messages received
+      +aside-filter-quick-link('351') Opened conversations
+      +aside-filter-quick-link('54')._bordered_bottom Heroes suggested
+
+block content
+  +page._inner-medium
+    .row
+      .col-lg-12
+        +activity-meter._secondary
+        +inner-plate.__section
+          +e.H4.heading PAGE INFORMATION STATS
+          +e.P.subheading If you want to keep your potential employees informed about possibilities and opportunities of your company you need to focus on compliting your profile. Here’s your stats by now.
+      .col-lg-12

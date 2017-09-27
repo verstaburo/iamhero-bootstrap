@@ -1,0 +1,51 @@
+.activity-meter {
+  display: block;
+  padding: 35px 0 20px 55px;
+  background-image: linear-gradient(270deg, #1b202d 0, #465d75 55%, #59bba0);
+
+  &__header {
+    padding-right: 55px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-size: 35px;
+    margin: 0;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 15px;
+    font-family: $font-family-open-sans;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 17px;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      fill: #ffc425;
+      margin-right: 8px;
+    }
+  }
+
+  &__info {
+    padding-right: 55px;
+    margin: 0;
+    color: #90c8bf;
+  }
+
+  &_secondary {
+    padding: 45px 0 35px 60px;
+
+    .activity-meter__heading {
+      font-size: 23px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+}

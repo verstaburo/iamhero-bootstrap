@@ -1,5 +1,5 @@
 export default () => {
-  const ITEM_CLASS = '.activity-meter';
+  const ITEM_CLASS = '.activity-chart';
 // eslint-disable-next-line
   if ($(ITEM_CLASS).length) {
     let i = 1;
@@ -21,6 +21,6 @@ export default () => {
       onlyInteger: true,
     };
   // eslint-disable-next-line
-    new Chartist.Bar('.activity-meter', data, options);
+    new Chartist.Bar('.activity-chart', data, options);
   }
 };

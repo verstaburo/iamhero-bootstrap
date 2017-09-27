@@ -1,7 +1,7 @@
 import rangeSlider from '../blocks/rangeslider/rangeslider';
 import switchInit from '../blocks/switch/switch';
 import videoPlay from '../components/plates/video-play';
-import isotopeInit from './common/isotope';
+import isotope from './common/isotope';
 import stickyNavbar from '../blocks/sidebar-menu/sidebar-menu';
 import scrollRevealInit from './common/scrollreveal';
 import upload from '../blocks/upload/upload';
@@ -16,7 +16,7 @@ import fitText from './common/fitText';
 import header from '../components/header/header';
 import toTop from '../blocks/to-top/to-top';
 import jsProgress from '../blocks/js-progress/js-progress';
-import activityMeter from '../blocks/activity-meter/activity-meter';
+import activityChart from '../blocks/activity-chart/activity-chart';
 import messages from '../components/messages/messages';
 import fullBtn from './common/fullBtn';
 
@@ -30,7 +30,8 @@ $(() => {
   window.initRangeSlider = rangeSlider;
   switchInit();
   videoPlay();
-  isotopeInit();
+  isotope();
+  window.initIsotope = isotope;
   stickyNavbar();
   scrollRevealInit();
   upload();
@@ -44,7 +45,7 @@ $(() => {
   heroSlider();
   fitText();
   jsProgress();
-  activityMeter();
+  activityChart();
   messages();
   fullBtn();
 });

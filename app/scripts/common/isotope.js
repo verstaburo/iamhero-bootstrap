@@ -1,50 +1,30 @@
 /*eslint-disable*/
 export default () => {
-  const el = document.querySelector('.isotope');
+  const grid = $('.isotope');
+  const mobileFilterClass = '.js-case-filter-mobile';
+  const filterClass = '.js-case-filter';
 
-  if (!el) {
+  if (!grid.length) {
     return;
   }
 
-  const iso = new Isotope(el, {
+  grid.isotope({
     itemSelector: '.isotope-item',
     layoutMode: 'masonry',
   });
 
-  // Cases-filter
+  $(document).on('change', mobileFilterClass, function() {
+    grid.isotope({
+      filter: $(mobileFilterClass).val()
+    });
+  });
 
-  const filtersElem = document.querySelector('.plate__head-filters');
+  $(document).on('click', filterClass, function() {
+    $(filterClass).removeClass('active');
+    $(this).addClass('active');
 
-  filtersElem.addEventListener('click', function (event) {
-
-    if (!filtersElem) {
-      return;
-    }
-
-    var selectMobile = document.querySelector('.js-case-filter');
-
-    selectMobile.onchange = function () {
-      iso.arrange({
-        filter: selectMobile.value,
-      });
-    }
-
-    const filters = filtersElem.children;
-
-    for (let i = 0; i < filters.length; i++) {
-      filters[i].classList.remove('active');
-    }
-
-    event.target.classList.add('active');
-
-    var filterValue = event.target.getAttribute('data-filter');
-
-    if(!filterValue) {
-      return;
-    }
-
-    iso.arrange({
-      filter: filterValue,
+    grid.isotope({
+      filter: $(this).attr('data-filter')
     });
   });
 };

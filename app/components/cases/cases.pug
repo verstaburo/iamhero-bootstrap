@@ -12,11 +12,11 @@ mixin cases(edit)
       +e.header-container
         +e.H2.header Cases
         +e.head-filters
-          +label-default-medium(data-filter='*').hidden-xs.active All
-          +label-default-medium(data-filter='.design').hidden-xs Design
-          +label-default-medium(data-filter='.illustration').hidden-xs Illustration
-          +label-default-medium(data-filter='.retouching').hidden-xs Retouching
-          +select([{value: '*', text: 'All'},{value: '.design', text: 'Design'},{value: '.illustration', text: 'Illustration'},{value: '.retouching', text: 'Retouching'}]).js-case-filter
+          +label-default-medium(data-filter='*').hidden-xs.js-case-filter.active All
+          +label-default-medium(data-filter='.design').hidden-xs.js-case-filter Design
+          +label-default-medium(data-filter='.illustration').hidden-xs.js-case-filter Illustration
+          +label-default-medium(data-filter='.retouching').hidden-xs.js-case-filter Retouching
+          +select([{value: '*', text: 'All'},{value: '.design', text: 'Design'},{value: '.illustration', text: 'Illustration'},{value: '.retouching', text: 'Retouching'}]).js-case-filter-mobile
       if edit
         +input-markup.__top-30
           +input-markup-item._push_right
