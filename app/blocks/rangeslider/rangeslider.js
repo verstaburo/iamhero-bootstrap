@@ -1,6 +1,5 @@
 export default () => {
   /*eslint-disable*/
-  var $document = $(document);
   var $selector = $('input[type="range"]');
 
   $selector.rangeslider({

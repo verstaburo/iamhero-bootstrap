@@ -7,11 +7,25 @@
   border: 1px dashed $gray;
   border-radius: 20px;
   height: 100%;
+  transition: background-color .25s ease-in-out;
+
+  &.active {
+    background-color: $gray;
+
+    .upload-area__icon {
+      fill: #fff;
+    }
+
+    .upload-area__text {
+      color: #fff;
+    }
+  }
 
   &__icon {
     fill: $gray;
     width: 47px;
     height: 30px;
+    transition: fill .25s ease-in-out;
   }
 
   &__text {
@@ -21,6 +35,7 @@
     letter-spacing: -.04em;
     color: $gray;
     line-height: 1.2em;
+    transition: color .25s ease-in-out;
   }
 }
 
