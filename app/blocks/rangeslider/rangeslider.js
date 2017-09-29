@@ -1,3 +1,5 @@
+import { debounce } from 'throttle-debounce';
+
 export default () => {
   /*eslint-disable*/
   var $selector = $('input[type="range"]');
@@ -24,6 +26,21 @@ export default () => {
       var handlerPosition = outputCustom.siblings('.rangeslider').find('.rangeslider__handle').css('left');
       outputCustom.css('left', handlerPosition);
     }
+
+    var outputCustomPercent = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-custom-percent');
+    if (outputCustomPercent.length) {
+      var handlerPosition = outputCustomPercent.siblings('.rangeslider').find('.rangeslider__handle').css('left');
+      var outputCustomPercentLabel = outputCustomPercent.siblings('.rangeslider-wrap__label');
+
+      outputCustomPercent.html(value + '%');
+
+      if(parseInt(handlerPosition, 10) < outputCustomPercentLabel.outerWidth() + 15) {
+        outputCustomPercent.removeClass('moveable');
+      } else {
+        outputCustomPercent.addClass('moveable');
+        outputCustomPercent.css('left', handlerPosition);
+      }
+    }
   }
 
   $selector.each(function() {
@@ -33,4 +50,6 @@ export default () => {
   $selector.on('input', function() {
     valueOutput($(this));
   });
+
+  $(window).on('resize', debounce(300, false, valueOutput($selector)));
 };

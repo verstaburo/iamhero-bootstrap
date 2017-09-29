@@ -122,4 +122,24 @@
       }
     }
   }
+
+  &_warning {
+
+    & + .rangeslider {
+      border-color: transparent;
+      background-color: #e1e9ec;
+      height: 7px;
+
+      .rangeslider__fill {
+        background-color: $brand-warning;
+        height: 9px;
+        top: -2px;
+        border-radius: 3.5px;
+
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
 }

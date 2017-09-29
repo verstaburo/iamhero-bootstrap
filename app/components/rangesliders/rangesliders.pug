@@ -35,3 +35,9 @@ mixin rangeslider-gradient
       span 10
     +e.SPAN.output-custom
     +rangeslider-custom('0', '10', '0.05', '7.45').rangeslider_gradient
+
+mixin rangeslider-warning(label, value)
+  +b.rangeslider-wrap&attributes(attributes)
+    +e.SPAN.label= label
+    +e.SPAN.output-custom-percent
+    +rangeslider-custom('0', '100', '1', value).rangeslider_static.rangeslider_warning

@@ -2,6 +2,7 @@ extends ../../layouts/inner-page
 include ../../blocks/page/page
 include ../../components/aside-filter/aside-filter
 include ../../components/activity-meter/activity-meter
+include ../../components/rangesliders/rangesliders
 include ../../blocks/inner-plate/inner-plate
 
 block head
@@ -23,9 +24,16 @@ block aside-filter
 block content
   +page._inner-medium
     .row
-      .col-lg-12
+      .col-xxl-12
         +activity-meter._secondary
         +inner-plate.__section
           +e.H4.heading PAGE INFORMATION STATS
           +e.P.subheading If you want to keep your potential employees informed about possibilities and opportunities of your company you need to focus on compliting your profile. Here’s your stats by now.
-      .col-lg-12
+          +rangeslider-warning('Overal Profile complete', '50')._warning-big.__slider._big
+          +rangeslider-warning('Phylosophy', '100').__slider
+          +rangeslider-warning('Vacancies', '0').__slider
+          +rangeslider-warning('Branch', '45').__slider
+          +rangeslider-warning('Phylosophy', '100').__slider
+          +rangeslider-warning('Vacancies', '0').__slider
+          +rangeslider-warning('Branch', '45').__slider
+      .col-xxl-12

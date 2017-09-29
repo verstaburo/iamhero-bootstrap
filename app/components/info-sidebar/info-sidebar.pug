@@ -1,6 +1,7 @@
 include ../../blocks/icon/icons
 include ../../blocks/js-progress/js-progress
 include ../../components/activity-meter/activity-meter
+include ../../components/rangesliders/rangesliders
 include ../../blocks/label/label
 //- include ../../blocks/rangesliders/rangesliders
 
@@ -17,7 +18,7 @@ mixin info-sidebar()
           h5 Account effectivness Ratio
           p That means that 75% of your page visitors stay on it longer than 25 seconds. Heroes are interested in you. Keep it up
         +js-progress('75')
-      h5 Profile complete
+      +rangeslider-warning('Profile complete', '50')._warning-big.__slider
     +activity-meter
     +e.section._padding-side-none
       +e.heading._padded_sides
