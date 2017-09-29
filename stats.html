@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>I Am Hero - Notification options</title>
+    <title>I Am Hero - Stats</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
@@ -186,69 +186,88 @@
     <aside class="aside-filter aside-filter_top-none">
         <div class="aside-filter__item aside-filter__item_no-side">
             <div class="aside-filter__heading">
-                <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
-                <h4>Settings</h4>
+                <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_stats"></use></svg>
+                <h4>STATS</h4>
             </div>
-            <div class="aside-filter__menu">
-                <a href="#">Heroes to suggest</a>
-                <a href="#">Account settings</a>
-                <a href="#">Finances</a>
-                <a class="active" href="#">Notification options</a>
-                <a href="#">Invite Friends</a>
+            <div class="aside-filter__quick-link aside-filter__quick-link_bordered">Registered since
+                <span class="aside-filter__quick-link-value">29.06.2017</span>
             </div>
-            <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-edit">Edit company page</button>
+            <div class="aside-filter__quick-link">Opened vacancies
+                <span class="aside-filter__quick-link-value">4</span>
+            </div>
+            <div class="aside-filter__quick-link">Searches
+                <span class="aside-filter__quick-link-value">145</span>
+            </div>
+            <div class="aside-filter__quick-link">Shortlisted heroes
+                <span class="aside-filter__quick-link-value">81</span>
+            </div>
+            <div class="aside-filter__quick-link">Messages sent
+                <span class="aside-filter__quick-link-value">10 853</span>
+            </div>
+            <div class="aside-filter__quick-link">Messages received
+                <span class="aside-filter__quick-link-value">18 345</span>
+            </div>
+            <div class="aside-filter__quick-link">Opened conversations
+                <span class="aside-filter__quick-link-value">351</span>
+            </div>
+            <div class="aside-filter__quick-link aside-filter__quick-link_bordered_bottom">Heroes suggested
+                <span class="aside-filter__quick-link-value">54</span>
+            </div>
         </div>
     </aside>
     <main class="page page_inner-medium" role="main">
-        <div class="settings-header">
-            <svg class="settings-header__icon"><use xlink:href="assets/images/icon.svg#icon_bell"></use></svg>
-            <h3 class="settings-header__text">NOTIFICATION OPTIONS</h3>
-            <span class="settings-header__info-text">You can choose what to be notified about</span>
-            <a class="btn btn-secondary-warning btn-secondary-warning-medium btn-font-white font-weight-medium" href="#">Open notifications</a>
-        </div>
-        <div class="inner-plate page__section notification-options">
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">New message from employer</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">New suggested jobs</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">Statistic update</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">Someone viewed my profile</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">Notify me about profile imporvement suggestions</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">Friend joined Iamhero</span>
-            </label>
+        <div class="row">
+            <div class="col-xxl-12">
+                <div class="activity-meter activity-meter_secondary">
+                    <div class="activity-meter__header">
+                        <h3 class="activity-meter__heading">Month activity meter</h3>
+                        <a class="activity-meter__link" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_boost"></use></svg>BOOST ME UP</a>
+                    </div>
+                    <div class="activity-chart"></div>
+                    <p class="activity-meter__info">This graph is based on overall company profile view per day and shows amount of unique visitors</p>
+                </div>
+                <div class="inner-plate page__section">
+                    <h4 class="inner-plate__heading">PAGE INFORMATION STATS</h4>
+                    <p class="inner-plate__subheading">If you want to keep your potential employees informed about possibilities and opportunities of your company you need to focus on compliting your profile. Here’s your stats by now.</p>
+                    <div class="rangeslider-wrap rangeslider-wrap_warning-big inner-plate__slider inner-plate__slider_big">
+                        <span class="rangeslider-wrap__label">Overal Profile complete</span>
+                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="50" />
+                    </div>
+                    <div class="rangeslider-wrap inner-plate__slider">
+                        <span class="rangeslider-wrap__label">Phylosophy</span>
+                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="100" />
+                    </div>
+                    <div class="rangeslider-wrap inner-plate__slider">
+                        <span class="rangeslider-wrap__label">Vacancies</span>
+                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="0" />
+                    </div>
+                    <div class="rangeslider-wrap inner-plate__slider">
+                        <span class="rangeslider-wrap__label">Branch</span>
+                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="45" />
+                    </div>
+                    <div class="rangeslider-wrap inner-plate__slider">
+                        <span class="rangeslider-wrap__label">Phylosophy</span>
+                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="100" />
+                    </div>
+                    <div class="rangeslider-wrap inner-plate__slider">
+                        <span class="rangeslider-wrap__label">Vacancies</span>
+                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="0" />
+                    </div>
+                    <div class="rangeslider-wrap inner-plate__slider">
+                        <span class="rangeslider-wrap__label">Branch</span>
+                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="45" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-12"></div>
         </div>
     </main>
     <a class="to-top" href="#">
