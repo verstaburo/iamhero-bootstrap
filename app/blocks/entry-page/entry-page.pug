@@ -1,0 +1,11 @@
+mixin entry-page()
+  +b.entry-page&attributes(attributes)
+    block
+
+mixin entry-page-logo
+  +e.center-container
+    +e.A(href='#').logo&attributes(attributes)
+      img(src='assets/images/icon/entry-logo.svg')
+
+mixin entry-page-decoration
+  +e.IMG(src='assets/images/icon/entry-decoration.png').decoration&attributes(attributes)

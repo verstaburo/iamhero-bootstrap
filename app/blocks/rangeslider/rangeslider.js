@@ -4,6 +4,10 @@ export default () => {
   /*eslint-disable*/
   var $selector = $('input[type="range"]');
 
+  if(!$selector.length) {
+    return;
+  }
+
   $selector.rangeslider({
     polyfill: false,
     rangeClass: 'rangeslider',

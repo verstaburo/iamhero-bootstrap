@@ -1,0 +1,21 @@
+include ../../node_modules/bemto.pug/bemto
+include ../blocks/entry-page/entry-page
+include ../blocks/copyright/copyright
+
+doctype html
+html(lang='en')
+  include head
+  body
+    +entry-page
+      .container
+        .row
+          .col-xs-24.col-md-offset-3.col-md-18.col-lg-offset-6.col-lg-12
+            +entry-page-logo
+
+            block entry-form
+
+            +copyright.__copyright
+
+      +entry-page-decoration
+
+  include scripts

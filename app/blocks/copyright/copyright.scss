@@ -1,0 +1,23 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__item {
+    color: #fff;
+    letter-spacing: -.04em;
+    font-size: 24px;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 16px;
+    }
+
+    @media (min-width: $screen-xxl-min) {
+      font-size: 33px;
+    }
+
+    &:hover {
+      color: darken(#fff, 20%);
+    }
+  }
+}

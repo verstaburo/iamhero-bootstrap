@@ -1,0 +1,30 @@
+extends ../../layouts/entry
+include ../../blocks/switch/switch
+include ../../blocks/entry-form/entry-form
+include ../../blocks/input/input
+include ../../blocks/button/button
+include ../../blocks/social-secondary/social-secondary
+
+block head
+  - var pageTitle = 'I am hero - Sign UP'
+
+block entry-form
+  +entry-form.__form
+    +entry-form-header
+      +entry-form-title
+        | Log
+        span.entry-form__text-success in
+    .form-inline
+      .form-group
+        +input('E-mail Adress').form-control-secondary.form-control-secondary-white
+        span.help-block
+      .form-group.form-group-offset
+        +input('Password').form-control-secondary.form-control-secondary-white
+        span.help-block
+    +button.btn-secondary.btn-secondary-font-big.btn-block.__button Login
+    +entry-form-text Not a member yet?
+      +e.A(href='#').text-success Sign Up
+    +e.social-text.entry-page__center-container
+      +entry-form-text.text-center or login with
+    +e.social.entry-page__center-container
+      +social-secondary

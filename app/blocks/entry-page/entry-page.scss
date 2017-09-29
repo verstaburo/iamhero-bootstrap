@@ -1,0 +1,80 @@
+.entry-page {
+  display: block;
+  min-height: 100vh;
+  background-image: linear-gradient(135deg, #16232c 0%, #166a66 50%, rgba(43, 162, 136, 1) 100%);
+  padding-top: 20px;
+  position: relative;
+  overflow-x: hidden;
+
+  @media (min-width: $screen-md-min) {
+    padding-top: 35px;
+  }
+
+  @media (min-width: $screen-xxl-min) {
+    padding-top: 65px;
+  }
+
+  .col-xs-24 {
+    z-index: 1;
+  }
+
+  &__center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    width: 195px;
+    height: 138px;
+
+    @media (max-width: $screen-sm-max) {
+      width: 140px;
+      height: 100px;
+    }
+  }
+
+  &__form {
+    margin-top: 100px;
+
+    @media (min-width: $screen-xxl-min) {
+      margin-top: 260px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      margin-top: 60px;
+    }
+  }
+
+  &__copyright {
+    margin-top: 160px;
+  }
+
+  &__decoration {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+    pointer-events: none;
+    user-select: none;
+
+    @media (max-width: $screen-sm-max) {
+      bottom: 25px;
+    }
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      transform: translateX(50%);
+      right: 50%;
+      bottom: 35px;
+    }
+
+    @media (max-width: $screen-md-max) {
+      width: 150px;
+    }
+
+    @media (min-width: $screen-xxl-min) {
+      right: 90px;
+      bottom: 13px;
+    }
+  }
+}

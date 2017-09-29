@@ -1,0 +1,15 @@
+mixin entry-form()
+  +b.FORM.entry-form&attributes(attributes)
+    block
+
+mixin entry-form-header
+  +e.header&attributes(attributes)
+    block
+
+mixin entry-form-title
+  +e.H1.title&attributes(attributes)
+    block
+
+mixin entry-form-text
+  +e.SPAN.text&attributes(attributes)
+    block

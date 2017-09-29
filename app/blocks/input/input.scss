@@ -104,5 +104,13 @@
         color: $gray;
       }
     }
+
+    &-white {
+      border-color: #fff;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
   }
 }

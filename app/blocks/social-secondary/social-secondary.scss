@@ -1,0 +1,37 @@
+.social-secondary {
+  display: block;
+
+  &__item {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: opacity .25s ease-in-out;
+
+    @media (max-width: $screen-xs-max) {
+      width: 45px;
+      height: 45px;
+    }
+
+    @media (min-width: $screen-xxl-min) {
+      width: 77px;
+      height: 77px;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+
+    &:not(:first-child) {
+      margin-left: 25px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-left: 15px;
+      }
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
