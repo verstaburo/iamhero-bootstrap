@@ -1,4 +1,4 @@
-import { debounce } from 'throttle-debounce';
+// import { debounce } from 'throttle-debounce';
 
 export default () => {
   /*eslint-disable*/
@@ -33,17 +33,24 @@ export default () => {
 
     var outputCustomPercent = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-custom-percent');
     if (outputCustomPercent.length) {
-      var handlerPosition = outputCustomPercent.siblings('.rangeslider').find('.rangeslider__handle').css('left');
       var outputCustomPercentLabel = outputCustomPercent.siblings('.rangeslider-wrap__label');
 
       outputCustomPercent.html(value + '%');
 
-      if(parseInt(handlerPosition, 10) < outputCustomPercentLabel.outerWidth() + 15) {
-        outputCustomPercent.removeClass('moveable');
-      } else {
-        outputCustomPercent.addClass('moveable');
-        outputCustomPercent.css('left', handlerPosition);
+      function outputCustomRecalc() {
+        var handlerPosition = outputCustomPercent.siblings('.rangeslider').find('.rangeslider__handle').css('left');
+
+        if(parseInt(handlerPosition, 10) < outputCustomPercentLabel.outerWidth() + 15) {
+          outputCustomPercent.removeClass('moveable');
+        } else {
+          outputCustomPercent.addClass('moveable');
+          outputCustomPercent.css('left', handlerPosition);
+        }
       }
+
+      outputCustomRecalc();
+
+      $(window).on('resize', outputCustomRecalc);
     }
   }
 
@@ -54,6 +61,4 @@ export default () => {
   $selector.on('input', function() {
     valueOutput($(this));
   });
-
-  $(window).on('resize', debounce(300, false, valueOutput($selector)));
 };

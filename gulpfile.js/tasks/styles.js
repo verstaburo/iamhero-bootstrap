@@ -1,23 +1,23 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const errorHandler = require('gulp-plumber-error-handler');
-const gulpIf = require('gulp-if');
+// const gulpIf = require('gulp-if');
 const postcss = require('gulp-postcss');
 const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
 const cssimport = require('gulp-cssimport');
-const sourcemaps = require('gulp-sourcemaps');
+// const sourcemaps = require('gulp-sourcemaps');
 const bulkSass = require('gulp-sass-bulk-import');
 const rename = require('gulp-rename');
 const stylelint = require('stylelint');
 
-const isDebug = process.env.NODE_ENV !== 'production';
+// const isDebug = process.env.NODE_ENV !== 'production';
 
 /* eslint-disable global-require */
 gulp.task('styles', () => {
   gulp.src('app/styles/*.scss')
   .pipe(plumber({ errorHandler: errorHandler('Error in styles task') }))
-    .pipe(gulpIf(isDebug, sourcemaps.init()))
+    // .pipe(gulpIf(isDebug, sourcemaps.init()))
     .pipe(bulkSass())
     .pipe(sass())
     .pipe(postcss([
@@ -27,11 +27,11 @@ gulp.task('styles', () => {
     ]))
     .pipe(cssimport())
     .pipe(cssnano({ zIndex: false }))
-    .pipe(gulpIf(isDebug, sourcemaps.write()))
+    // .pipe(gulpIf(isDebug, sourcemaps.write()))
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('dist/assets/styles'));
 
-  gulp.start('styles:lint');
+  // gulp.start('styles:lint');
 });
 
 gulp.task('styles:lint', () => (

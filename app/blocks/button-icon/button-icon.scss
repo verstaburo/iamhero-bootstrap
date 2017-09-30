@@ -47,7 +47,8 @@
     }
   }
 
-  &__text {
+  &__text, {
     vertical-align: middle;
+    color: inherit;
   }
 }
