@@ -1,11 +1,15 @@
 .switch {
   font-size: 16px;
-  border-radius: 50px;
+  border-radius: 25px;
   border: 1px solid white;
   padding: 2px;
   user-select: none;
   display: flex;
   justify-content: center;
+  // stylelint-disable
+  -webkit-transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  // stylelint-enable
 
   &__item {
     display: inline-block;
@@ -13,12 +17,16 @@
     letter-spacing: -.04em;
     white-space: nowrap;
     flex-grow: 1;
-    border-radius: 50px;
+    border-radius: 25px;
     padding-left: 12px;
     padding-right: 12px;
     cursor: pointer;
     transition: background-color .25s ease-in-out;
     line-height: 1.375;
+    // stylelint-disable
+    -webkit-transform: translateZ(0);
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    // stylelint-enable
 
     &.active {
       background-color: #fff;
