@@ -29,9 +29,11 @@ block aside-filter
 block content
   +page._inner-medium
     +settings-header
-      +settings-header-icon('hero-to-suggest')
-      +settings-header-text HEROES TO SUGGEST
-      +settings-header-info-text Specify Parameters for system to suggest you Heroes
+      +settings-header-text-wrap
+        +settings-header-title-wrap
+          +settings-header-icon('hero-to-suggest')
+          h3 HEROES TO SUGGEST
+        span Specify Parameters for system to suggest you Heroes
       +settings-header-button Save
     +e.section
       .row

@@ -23,9 +23,11 @@ block aside-filter
 block content
   +page._inner-medium
     +settings-header
-      +settings-header-icon('bell')
-      +settings-header-text NOTIFICATION OPTIONS
-      +settings-header-info-text You can choose what to be notified about
+      +settings-header-text-wrap
+        +settings-header-title-wrap
+          +settings-header-icon('bell')
+          h3 NOTIFICATION OPTIONS
+        span You can choose what to be notified about
       +settings-header-button Open notifications
     +inner-plate.__section.notification-options
       +checkbox(true)._margin_more.notification-options__item New message from employer

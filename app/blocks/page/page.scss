@@ -24,6 +24,19 @@
 
   &_inner-medium {
     padding: 43px 55px 90px 440px;
+
+    @media (max-width: $screen-lg-max) {
+      padding-left: 110px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-top: 38px;
+    }
   }
 
   &_faded {
@@ -175,6 +188,10 @@
 
     &_big {
       margin-top: 60px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 35px;
     }
   }
 

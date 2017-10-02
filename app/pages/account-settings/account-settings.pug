@@ -22,33 +22,43 @@ block aside-filter
       +button.btn-secondary-warning.btn-secondary-warning-medium.font-weight-medium.aside-filter__btn-edit Edit company page
 
 block content
-  +page._inner-medium
+  +page._inner-medium.account-settings
     +settings-header
-      +settings-header-icon('menu-settings')
-      +settings-header-text ACCOUNT SETTINGS
-      +settings-header-info-text Your account main Settings
+      +settings-header-text-wrap
+        +settings-header-title-wrap
+          +settings-header-icon('menu-settings')
+          h3 ACCOUNT SETTINGS
+        span Your account main Settings
       +settings-header-button Save
     +e.section
       .row
-        .col-md-12
+        .col-lg-12
           +inner-plate
             +e.H4.heading PERSONAL PAGE URL
             +e.P.subheading This is the URL of your perosnal company page.
-            +e.FORM.form
-              +input('iamhero.io/GoogleInc').form-control-warning
-              +button.btn-secondary-warning Save
+            .form-inline
+              .form-group.form-group-lg
+                +input('iamhero.io/GoogleInc').form-control-warning
+                span.help-block
+              +button.btn-secondary-warning.form-inline-btn Save
           +inner-plate.page__section
             +e.H4.heading E-MAIL ADRESS
             +e.P.subheading this e-mail has been asociated with your account. You can change it any time
             +e.form._between
               +e.P.value-text esdesign.lv@gmail.com
               +button.btn-secondary-warning Change
-        .col-md-12
+        .col-lg-12.account-settings__laptop-section
           +inner-plate
             +e.H4.heading PASSWORD
             +e.P.subheading This is your global account password. You can change it any time
-            +e.FORM.form._vertical
-              +input('Old pasword').form-control-warning
-              +input('New Password').form-control-warning
-              +input('New Password one more time').form-control-warning
+            form.form-vertical
+              .form-group.form-group-lg
+                +input('Old pasword').form-control-warning
+                span.help-block
+              .form-group.form-group-lg
+                +input('New Password').form-control-warning
+                span.help-block Password must be at least 8 symbols long
+              .form-group.form-group-lg
+                +input('New Password one more time').form-control-warning
+                span.help-block
               +button.btn-secondary-warning Change password

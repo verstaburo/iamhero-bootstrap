@@ -23,8 +23,10 @@ block aside-filter
 block content
   +page._inner-medium
     +settings-header
-      +settings-header-icon('gears')
-      +settings-header-text finances
-      +settings-header-info-text Your account main Settings
+      +settings-header-text-wrap
+        +settings-header-title-wrap
+          +settings-header-icon('gears')
+          h3 finances
+        span Your account main Settings
       +settings-header-button Buy Contact Packages
     +table-finances.__section

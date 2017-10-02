@@ -9,6 +9,10 @@
   background-color: #fff;
   overflow-y: scroll;
 
+  @media (max-width: $screen-lg-max) {
+    display: none;
+  }
+
   &::-webkit-scrollbar {
     width: 0;
     background-color: transparent;

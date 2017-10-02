@@ -5,16 +5,16 @@ mixin settings-header
   +b.settings-header&attributes(attributes)
     block
 
+mixin settings-header-text-wrap
+  +e.text-wrap&attributes(attributes)
+    block
+
+mixin settings-header-title-wrap
+  +e.title-wrap&attributes(attributes)
+    block
+
 mixin settings-header-icon(icon)
   +icon(icon).__icon&attributes(attributes)
-
-mixin settings-header-text
-  +e.H3.text&attributes(attributes)
-    block
-
-mixin settings-header-info-text
-  +e.SPAN.info-text&attributes(attributes)
-    block
 
 mixin settings-header-button
   +button('a')(href='#').btn-secondary-warning.btn-secondary-warning-medium.btn-font-white.font-weight-medium&attributes(attributes)

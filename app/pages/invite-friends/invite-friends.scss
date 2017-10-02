@@ -1,3 +1,16 @@
 .invite-friends {
   display: block;
+
+  &__card {
+
+    &:not(:first-child) {
+      @media (max-width: $screen-sm-max) {
+        margin-top: 40px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 35px;
+      }
+    }
+  }
 }

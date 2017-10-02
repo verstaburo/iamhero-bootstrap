@@ -184,3 +184,24 @@ p {
     }
   }
 }
+
+.form-group-lg .form-control {
+  @media (max-width: $screen-xs-max) {
+    height: 40px;
+  }
+}
+
+.form-vertical {
+  display: flex;
+  flex-direction: column;
+
+  .form-group {
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    @media (min-width: $screen-sm-min) {
+      margin-left: auto;
+    }
+  }
+}
