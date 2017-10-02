@@ -4,6 +4,18 @@
   border: 1px solid rgb(236, 242, 244);
   box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .06);
 
+  &__map-navs {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .map-nav {
+
+      &:not(:first-child) {
+        margin-top: 60px;
+      }
+    }
+  }
+
   &__nav {
     padding-left: 65px;
     padding-right: 65px;
@@ -141,10 +153,11 @@
     }
   }
 
-  &__image {
+  img {
     margin-top: 35px;
     margin-bottom: 35px;
-    height: 630px;
+    max-width: 100%;
+    height: auto;
   }
 
   &__row {

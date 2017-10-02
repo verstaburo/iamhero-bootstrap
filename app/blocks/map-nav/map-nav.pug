@@ -1,0 +1,10 @@
+include ../icon/icons
+
+mixin map-nav()
+  +b.map-nav&attributes(attributes)
+    +e.IMG(src="assets/images/icon/map-figure.svg").icon
+    +e.text-wrap
+      address.font-weight-semibold
+        block
+      +e.A(href='mailto:#').mail laoffice@bscompany.com
+      a(href='tel:#') + 75 154 14124 5 23

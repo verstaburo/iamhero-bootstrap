@@ -1,0 +1,33 @@
+.map-nav {
+  display: block;
+  position: relative;
+  padding: 15px 70px;
+  background-color: #fff;
+  transition: background-color .25s ease-in-out;
+
+  &:hover {
+    background-color: #f3f6f8;
+  }
+
+  &__text-wrap {
+    font-family: $font-family-second;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 18px;
+    height: 25px;
+  }
+
+  &__mail {
+    text-decoration: underline;
+    text-decoration-color: $brand-warning;
+    margin-bottom: 5px;
+  }
+}
