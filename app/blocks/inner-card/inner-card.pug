@@ -72,7 +72,7 @@ mixin inner-card-expand-content
 
 
 mixin company(img, title, branch)
-  +inner-card&attributes(attributes)
+  +inner-card._expandable&attributes(attributes)
     +inner-card-full-image
     +inner-card-wrap
       +inner-card-image(img)

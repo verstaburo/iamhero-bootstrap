@@ -39,6 +39,24 @@
     box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .06);
   }
 
+  &_expandable {
+
+    .inner-card__text-wrap {
+      height: 160px;
+    }
+  }
+
+  &_expanded {
+
+    .inner-card__text-wrap {
+      height: 100%;
+    }
+
+    .inner-card__full-image {
+      height: 255px;
+    }
+  }
+
   &:hover {
     box-shadow: 0 0 32.66px 13.34px rgba(28, 40, 57, .34);
     z-index: 1;
@@ -51,7 +69,7 @@
 
   &__full-image {
     height: 0;
-    transition: height .5s ease-in-out;
+    transition: height 1s ease-in-out;
     width: 100%;
   }
 
@@ -62,17 +80,20 @@
 
   &__wrap {
     display: flex;
+    align-items: flex-start;
     background-color: #fff;
     transition: padding .5s ease-in-out, min-height .5s ease-in-out;
   }
 
   &__image {
     flex-basis: 160px;
+    height: 160px;
     flex-shrink: 0;
     transition: flex-basis .25s ease-in-out;
 
     &_big {
       flex-basis: 195px;
+      height: 195px;
     }
   }
 
@@ -81,8 +102,9 @@
     align-items: flex-start;
     flex-wrap: wrap;
     height: 100%;
-    padding: 15px 35px 25px 55px;
-    transition: padding .25s ease-in-out;
+    margin: 15px 35px 30px 55px;
+    overflow: hidden;
+    transition: margin .25s ease-in-out;
   }
 
   &__expand-content {
@@ -205,13 +227,6 @@
 
     &_push_right {
       margin-left: auto;
-    }
-  }
-
-  &_expanded {
-
-    .inner-card__full-image {
-      height: 255px;
     }
   }
 
