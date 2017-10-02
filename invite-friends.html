@@ -199,27 +199,31 @@
             <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-edit">Edit company page</button>
         </div>
     </aside>
-    <main class="page page_inner-medium" role="main">
+    <main class="page page_inner-medium invite-friends" role="main">
         <div class="settings-header">
-            <svg class="settings-header__icon"><use xlink:href="assets/images/icon.svg#icon_user-star"></use></svg>
-            <h3 class="settings-header__text">INVITE FRIENDS</h3>
-            <span class="settings-header__info-text">You can choose what to be notified about</span>
+            <div class="settings-header__text-wrap">
+                <div class="settings-header__title-wrap">
+                    <svg class="settings-header__icon"><use xlink:href="assets/images/icon.svg#icon_user-star"></use></svg>
+                    <h3>INVITE FRIENDS</h3>
+                </div>
+                <span>You can choose what to be notified about</span>
+            </div>
             <a class="btn btn-secondary-warning btn-secondary-warning-medium btn-font-white font-weight-medium" href="#">Open notifications</a>
         </div>
         <div class="page__section row">
-            <div class="col-sm-8">
+            <div class="col-sm-24 col-md-8 invite-friends__card">
                 <a class="social-card" href="#">
                     <p>Invite from:</p>
                     <img src="assets/images/invite-friends/google-contacts.png" />
                 </a>
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-24 col-md-8 invite-friends__card">
                 <a class="social-card" href="#">
                     <p>Invite from:</p>
                     <img src="assets/images/invite-friends/facebook.png" />
                 </a>
             </div>
-            <div class="col-sm-8">
+            <div class="col-sm-24 col-md-8 invite-friends__card">
                 <a class="social-card" href="#">
                     <p>Invite from:</p>
                     <img src="assets/images/invite-friends/linkedin.png" />
@@ -229,10 +233,13 @@
         <div class="inner-plate page__section">
             <h4 class="inner-plate__heading">Direct invitation</h4>
             <p class="inner-plate__subheading">Write down your frind E-mail adress and send invitation to join iamhero.io. You can also add multiple E-mail adresses separating them with coma “,”</p>
-            <form class="inner-plate__form inner-plate__form_margin_more">
-                <input class="form-control form-control-warning" type="text" placeholder="Your friend E-mail adress" />
-                <button class="btn btn-secondary-warning">Send invitation</button>
-            </form>
+            <div class="form-inline invite-friends__form">
+                <div class="form-group form-group-lg has-success">
+                    <input class="form-control form-control-warning" type="text" placeholder="Your friend E-mail adress" />
+                    <span class="help-block">Success!</span>
+                </div>
+                <button class="btn btn-secondary-warning form-inline-btn">Send invitation</button>
+            </div>
         </div>
     </main>
     <a class="to-top" href="#">
