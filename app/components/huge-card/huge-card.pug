@@ -1,0 +1,26 @@
+include ../../blocks/bg-image/bg-image
+include ../../blocks/map/map
+include ../../blocks/label/label
+
+mixin huge-card(bigImg, img, title)
+  +b.huge-card&attributes(attributes)
+    +bg-image(bigImg).__image
+    +e.tags
+      +label.label-primary <b>75%</b> match
+      +label.label-danger NEW
+    +b.company-profile-card
+      +e.content
+        .row
+          .col-sm-6.col-xs-18.col-xs-offset-3.col-sm-offset-0
+            +bg-image(img).__logo
+          .col-sm-18.col-xs-24
+            h2= title
+            +e.text
+              p Established with the intent to provide a superior product, today BS Company holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our commitment to excellence, extends into every facet of what we do. From engineering to design and manufacturing, BS Company is redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the world, our customers have come to expect nothing less than sheer quality and innovation.
+            h2 CONTACTS
+            +e.A(href='#').contact-link
+              | jobs@example.com
+            +e.A(href='#').contact-link
+              | example.com
+      +e.map
+        +map

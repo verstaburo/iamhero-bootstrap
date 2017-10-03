@@ -1,7 +1,6 @@
 .company-profile-card {
   display: block;
   background-color: #fff;
-  padding: 65px 65px 0;
   border: 1px solid rgb(236, 242, 244);
   box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .06);
 
@@ -25,6 +24,32 @@
     }
   }
 
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-sm-max) {
+      margin-top: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 34px;
+    }
+  }
+
+  &__contact-link {
+    margin-top: 20px;
+    display: block;
+    font-family: $font-family-base;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__content {
+    padding: 65px 65px 0;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -32,19 +57,6 @@
 
     @media (max-width: $screen-sm-max) {
       flex-direction: column;
-    }
-
-    h2 {
-      margin-top: 0;
-      margin-bottom: 0;
-
-      @media (max-width: $screen-sm-max) {
-        margin-top: 30px;
-      }
-
-      @media (max-width: $screen-xs-max) {
-        font-size: 34px;
-      }
     }
   }
 

@@ -1,0 +1,29 @@
+.list-group {
+  margin-bottom: 0;
+
+  &-item {
+    border: none;
+    border-radius: 0 !important;
+    font-family: $font-family-open-sans;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 40px;
+    position: relative;
+
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 7px;
+      transform: translateY(-50%);
+      top: 50%;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: 2px solid $brand-warning;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.huge-card {
+  display: block;
+  position: relative;
+
+  &__image {
+    height: 355px;
+  }
+
+  &__tags {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

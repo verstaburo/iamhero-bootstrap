@@ -1,0 +1,16 @@
+extends ../../layouts/inner-page
+include ../../components/huge-card/huge-card
+include ../../blocks/bg-image/bg-image
+include ../../blocks/label/label
+
+block head
+  - var pageTitle = 'I Am Hero - Suggested-jobs'
+
+
+block content
+  +page._inner-standart
+    .row
+      .col-xxl-17
+        +huge-card('suggested-jobs/1-big.jpg', 'suggested-jobs/1.jpg', 'GRAPHIC DESIGNER IN bs company ALLOYS. AUSTRIAN DESIGN BERAUE')
+        +huge-card('suggested-jobs/2-big.jpg', 'suggested-jobs/2.jpg', 'GRAPHIC DESIGN AT freedom agency').__section._big
+        +huge-card('suggested-jobs/3-big.jpg', 'suggested-jobs/3.jpg', 'vortech').__section._big

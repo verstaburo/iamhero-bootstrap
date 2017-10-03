@@ -34,23 +34,26 @@ block content
       .row
         .col-lg-12
           +inner-plate
-            +e.H4.heading PERSONAL PAGE URL
-            +e.P.subheading This is the URL of your perosnal company page.
+            +e.text
+              h4 PERSONAL PAGE URL
+              p This is the URL of your perosnal company page.
             .form-inline
               .form-group.form-group-lg
                 +input('iamhero.io/GoogleInc').form-control-warning
                 span.help-block
               +button.btn-secondary-warning.form-inline-btn Save
           +inner-plate.page__section
-            +e.H4.heading E-MAIL ADRESS
-            +e.P.subheading this e-mail has been asociated with your account. You can change it any time
+            +e.text
+              h4 E-MAIL ADRESS
+              p this e-mail has been asociated with your account. You can change it any time
             +e.form._between
               +e.P.value-text esdesign.lv@gmail.com
               +button.btn-secondary-warning Change
         .col-lg-12.account-settings__laptop-section
           +inner-plate
-            +e.H4.heading PASSWORD
-            +e.P.subheading This is your global account password. You can change it any time
+            +e.text
+              h4 PASSWORD
+              p This is your global account password. You can change it any time
             form.form-vertical
               .form-group.form-group-lg
                 +input('Old pasword').form-control-warning

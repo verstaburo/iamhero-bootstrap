@@ -15,4 +15,12 @@
     font-size: 40px;
     letter-spacing: -.04em;
   }
+
+  &_big {
+
+    .js-progress__output {
+      font-size: 64px;
+      top: 50%;
+    }
+  }
 }

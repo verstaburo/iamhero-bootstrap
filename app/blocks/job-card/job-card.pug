@@ -1,5 +1,6 @@
 include ../bg-image/bg-image
 include ../icon/icons
+include ../list-group/list-group
 
 mixin job-card()
   +b.job-card&attributes(attributes)
@@ -19,10 +20,10 @@ mixin job-card-left
       | Attend
 
 mixin job-card-list
-  +e.UL.list&attributes(attributes)
-    +e.LI.list-item Strong Portfolio
-    +e.LI.list-item 5 - 10 Years experience in car design or similar industry
-    +e.LI.list-item Skilled Sketching
-    +e.LI.list-item 3D Package knowledges
-    +e.LI.list-item Big amount of finished works
-    +e.LI.list-item Ready to Relocate
+  +list-group&attributes(attributes)
+    +list-group-item Strong Portfolio
+    +list-group-item 5 - 10 Years experience in car design or similar industry
+    +list-group-item Skilled Sketching
+    +list-group-item 3D Package knowledges
+    +list-group-item Big amount of finished works
+    +list-group-item Ready to Relocate

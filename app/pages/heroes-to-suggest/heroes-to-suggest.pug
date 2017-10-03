@@ -39,8 +39,9 @@ block content
       .row
         .col-xs-24.col-xxl-12
           +inner-plate
-            +e.H4.heading WORKING FIELDS
-            +e.P.subheading This section allows you to choose working field of Heroes you are interested of.
+            +e.text
+              h4 WORKING FIELDS
+              p This section allows you to choose working field of Heroes you are interested of.
             +e.form
               +select([{value: '1', text: 'Graphic Designer'}, {value: '2', text: 'Designer'}, {value: '3', text: 'Graphic Artist'}], 'Working field')._big._warning
               +button.btn-secondary-warning Add to list
@@ -67,29 +68,33 @@ block content
                 +icon-close.icon-close_small
           +inner-plate._padding_none.page__section
             +e.section
-              +e.H4.heading Employment PARAMETERS
+              +e.text
+                h4 Employment PARAMETERS
               +e.control-container
                 +checkbox(true) Part time
                 +checkbox(true) Full time
                 +checkbox() Freelance
                 +checkbox() Season job
             +e.section
-              +e.H4.heading WORKING GRAPHIC
+              +e.text
+                h4 WORKING GRAPHIC
               +e.form
                 .form-group.form-group-with-addon.inner-plate__form-first-item
                   +input('38').form-control-warning
                   .input-group-addon h
                 +select([{value: '1', text: 'Weekly'}, {value: '2', text: 'Monthly'}, {value: '3', text: 'Daily'}])._big._warning.__form-second-item
             +e.section
-              +e.H4.heading GEOGRAPHY
+              +e.text
+                h4 GEOGRAPHY
               +e.control-container
                 +radio(true, 'geo')._warning Anywhere
                 +radio('', 'geo')._warning Specific radius from
                 +radio('', 'geo')._warning Specific locations
         .col-xs-24.col-xxl-12
           +inner-plate
-            +e.H4.heading PROFESSION
-            +e.P.subheading Specify the profession of the Hero
+            +e.text
+              h4 PROFESSION
+              p Specify the profession of the Hero
             +e.form
               +select([{value: '1', text: 'Graphic Designer'}, {value: '2', text: 'Designer'}, {value: '3', text: 'Graphic Artist'}], 'Choose profession')._big._warning
               +button.btn-secondary-warning Add to list
@@ -99,16 +104,18 @@ block content
                 a(href='#')
                   +icon-close.icon-close_small
           +inner-plate.page__section
-            +e.H4.heading DESIRED SALARY
-            +e.P.subheading Specify maximal salary for your employer. If not specified shows everyone
+            +e.text
+              h4 DESIRED SALARY
+              p Specify maximal salary for your employer. If not specified shows everyone
             +e.form
               .form-group.form-group-with-addon.inner-plate__form-first-item
                 +input('Maximum amount').form-control-warning
                 .input-group-addon $
               +select([{value: '1', text: 'Annual'}, {value: '2', text: 'test-1'}, {value: '3', text: 'test-2'}])._big._warning.__form-second-item
           +inner-plate.page__section
-            +e.H4.heading TAGS
-            +e.P.subheading We’ll try to find something for you within specific tags.
+            +e.text
+              h4 TAGS
+              p We’ll try to find something for you within specific tags.
             +e.FORM.form
               +input('Write tag')
               +button.btn-secondary-warning Add to list

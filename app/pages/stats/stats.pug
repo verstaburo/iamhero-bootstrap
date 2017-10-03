@@ -3,7 +3,10 @@ include ../../blocks/page/page
 include ../../components/aside-filter/aside-filter
 include ../../components/activity-meter/activity-meter
 include ../../components/rangesliders/rangesliders
+include ../../components/effectiveness/effectiveness
 include ../../blocks/inner-plate/inner-plate
+include ../../blocks/list-group/list-group
+include ../../blocks/icon/icons
 
 block head
   - var pageTitle = 'I Am Hero - Stats'
@@ -27,8 +30,9 @@ block content
       .col-xxl-12
         +activity-meter._secondary
         +inner-plate.__section
-          +e.H4.heading PAGE INFORMATION STATS
-          +e.P.subheading If you want to keep your potential employees informed about possibilities and opportunities of your company you need to focus on compliting your profile. Here’s your stats by now.
+          +e.text
+            h4 PAGE INFORMATION STATS
+          p If you want to keep your potential employees informed about possibilities and opportunities of your company you need to focus on compliting your profile. Here’s your stats by now.
           +rangeslider-warning('Overal Profile complete', '50')._warning-big.__slider._big
           +rangeslider-warning('Phylosophy', '100').__slider
           +rangeslider-warning('Vacancies', '0').__slider
@@ -37,3 +41,39 @@ block content
           +rangeslider-warning('Vacancies', '0').__slider
           +rangeslider-warning('Branch', '45').__slider
       .col-xxl-12
+        +inner-plate
+          +e.text
+            h4 Account effectiveness
+          +effectiveness.__effectiveness
+          +e.text
+            h4 HOW TO EVALUATE?
+          p You can significantly increase your position by adding some information to your profile <br>Here’s some usefull tips:
+          +list-group.inner-plate__list
+            +list-group-item Add informations about your office structure
+            +list-group-item Add openede vacancies
+            +list-group-item Add life social media
+            +list-group-item Write something about your company phylosophy
+        +inner-plate._padding_none.__section
+          +e.text._padded
+            h4 OVERAL ACTIVITY STATS
+          +e.stats-icon
+            +e.stats-icon-item
+              +icon('eye-fill')
+              span Profile views
+              span 654
+            +e.stats-icon-item
+              +icon('clock')
+              span Time spent in your profile
+              span 1 h 32 m 14 sec
+            +e.stats-icon-item
+              +icon('bag')
+              span Overal profile views converted into converstation
+              span 1 of 32
+            +e.stats-icon-item
+              +icon('buy')
+              span Bought contacts
+              span 89
+            +e.stats-icon-item
+              +icon('mail')
+              span React to conversation time
+              span aprox 34 minutes

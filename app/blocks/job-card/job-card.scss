@@ -94,32 +94,4 @@
     width: 100%;
     height: 320px;
   }
-
-  &__list {
-    padding: 0;
-    margin: 0;
-  }
-
-  &__list-item {
-    font-family: $font-family-open-sans;
-    font-size: 16px;
-    font-weight: 400;
-    padding-left: 40px;
-    position: relative;
-
-    &:not(:first-child) {
-      margin-top: 24px;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 7px;
-      top: 3px;
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-      border: 2px solid $brand-warning;
-    }
-  }
 }
