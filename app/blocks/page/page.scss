@@ -69,7 +69,7 @@
     overflow-x: hidden;
     position: relative;
 
-    @media (max-width: 1720px) {
+    @media (min-width: $screen-xl-min) and (max-width: 1720px) {
 
       &::after {
         content: '';
@@ -84,9 +84,39 @@
       }
     }
 
-    .page__col-left > h2 {
+    h3 {
+      @media (max-width: $screen-xs-max) {
+        font-size: 25px;
+      }
+    }
+
+    .page__col-left h2 {
       margin-top: 75px;
       margin-bottom: 0;
+
+      @media (max-width: $screen-sm-max) {
+        padding-left: 20px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 30px;
+        font-size: 35px;
+        padding-left: 40px;
+      }
+    }
+
+    .page__header-custom {
+
+      h2 {
+        @media (max-width: $screen-xs-max) {
+          margin-top: 90px;
+          padding-left: 0;
+        }
+      }
+    }
+
+    .rate-form {
+      margin-top: 45px;
     }
   }
 
@@ -102,6 +132,20 @@
 
     @media (min-width: 1920px) {
       width: calc(100% - 720px);
+    }
+
+    @media (max-width: $screen-lg-max) {
+      padding-right: 55px;
+    }
+
+    @media (max-width: $screen-md-max) {
+      padding-bottom: 125px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 75px;
     }
   }
 
@@ -197,6 +241,10 @@
 
   &__card {
     margin-top: 50px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 25px;
+    }
   }
 
   &__section {

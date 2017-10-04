@@ -5,20 +5,25 @@
   overflow: hidden;
   z-index: 1;
 
+  &_bottom-smaller {
+    padding-bottom: 25px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding-top: 55px;
+    padding-bottom: 40px;
+    padding-right: 35px;
+  }
+
   &_faded {
 
     p {
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        height: 60px;
-        background-image: linear-gradient(to bottom, rgba(#000a23, .2) 0%, #000a23 100%);
-      }
+      -webkit-mask-image: linear-gradient(to bottom, #fff 40%, transparent 100%);
     }
   }
 
@@ -30,25 +35,45 @@
     }
   }
 
-  &_bottom-smaller {
-    padding-bottom: 25px;
-  }
-
   &_bordered {
     border: 1px solid #e1e9ec;
     box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .24);
+
+    @media (max-width: $screen-xs-max) {
+      padding-left: 30px;
+      padding-right: 17px;
+    }
   }
 
   &__text-container {
-    width: 42%;
+    width: 50%;
+
+    @media (max-width: $screen-md-max) {
+      width: 70%;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+    }
 
     p {
       font-size: 16px;
+
+      @media (max-width: $screen-xs-max) {
+        max-height: 100px;
+        overflow: hidden;
+        font-size: 14px;
+        -webkit-mask-image: linear-gradient(to bottom, #fff 20%, transparent 100%);
+      }
     }
 
     h2 {
       margin-top: 0;
       margin-bottom: 50px;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 30px;
+      }
     }
 
     h4 {
@@ -83,6 +108,10 @@
 
       &:not(:first-child) {
         margin-left: 12px;
+
+        @media (max-width: $screen-xs-max) {
+          margin-left: 5px;
+        }
       }
     }
   }

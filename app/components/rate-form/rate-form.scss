@@ -1,7 +1,12 @@
 .rate-form {
   display: block;
 
-  &__button {
+  .btn {
     margin-top: 45px;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 20px;
+      width: 100%;
+    }
   }
 }

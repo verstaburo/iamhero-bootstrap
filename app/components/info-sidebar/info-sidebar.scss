@@ -2,6 +2,10 @@
   display: block;
   background-color: #fff;
 
+  @media (max-width: $screen-lg-max) {
+    display: none;
+  }
+
   &__section {
     padding: 60px 55px 75px;
 
