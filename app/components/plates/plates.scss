@@ -399,7 +399,6 @@
     left: 0;
     top: 0;
     padding: 60px;
-    z-index: 1;
 
     &_overlay {
 
@@ -414,6 +413,10 @@
         pointer-events: none;
         z-index: -1;
       }
+    }
+
+    .btn {
+      z-index: 7;
     }
 
     @media (max-width: $screen-xs-max) {

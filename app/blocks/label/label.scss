@@ -185,4 +185,66 @@
       }
     }
   }
+
+  &-primary-close {
+    font-weight: 500;
+    position: relative;
+    background-color: #e2eaf0;
+    font-size: 16px;
+    padding: .38em 40px .38em .97em;
+    border-radius: 50px;
+
+    a {
+      display: inline-block;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      right: 8px;
+      transition: background-color .25s ease-in-out;
+      border-radius: 50%;
+      padding: 4px;
+      background-color: #fff;
+
+      svg {
+        stroke: $brand-warning;
+      }
+
+      &:hover {
+        background-color: $brand-warning;
+
+        svg {
+          stroke: #263240;
+        }
+      }
+    }
+
+    &-dark {
+      background-color: #7c8b97;
+      color: #fff;
+      font-weight: 300;
+
+      a {
+        background-color: transparent;
+
+        &:hover {
+          background-color: $brand-warning;
+        }
+      }
+    }
+
+    &-transparent {
+      border-color: #fff;
+      font-weight: 300;
+      color: #1d2532;
+      background-color: transparent;
+
+      a {
+        background-color: #fff;
+
+        svg {
+          stroke: #96aebd;
+        }
+      }
+    }
+  }
 }

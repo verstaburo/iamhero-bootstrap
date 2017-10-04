@@ -22,6 +22,15 @@
     &:not(:last-child) {
       border-bottom: 1px solid #e1e9ec;
     }
+
+    @media (max-width: $screen-sm-max) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 40px 20px;
+    }
   }
 
   &__text {
@@ -57,38 +66,14 @@
   &__form {
     display: flex;
 
-    .form-control {
-      height: 50px;
-    }
-
     .btn {
       margin-left: 15px;
-    }
-
-    &_margin_more {
-
-      .btn {
-        margin-left: 30px;
-      }
     }
 
     &_between {
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-    }
-
-    &_vertical {
-      flex-direction: column;
-
-      .form-control {
-        margin-bottom: 25px;
-      }
-
-      .btn {
-        margin-left: 0;
-        align-self: flex-end;
-      }
     }
 
     @media (max-width: $screen-xs-max) {
@@ -99,16 +84,6 @@
         margin-left: 0;
       }
     }
-  }
-
-  &__form-first-item {
-    flex-grow: 1;
-  }
-
-  &__form-second-item {
-    flex-basis: 40%;
-    margin-left: 15px;
-    flex-shrink: 0;
   }
 
   &__value-text {

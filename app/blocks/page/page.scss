@@ -83,6 +83,11 @@
         z-index: 2;
       }
     }
+
+    .page__col-left > h2 {
+      margin-top: 75px;
+      margin-bottom: 0;
+    }
   }
 
   &__col-left {
@@ -201,14 +206,17 @@
       margin-top: 60px;
     }
 
+    &_lg {
+      margin-top: 0;
+
+      @media (max-width: $screen-lg-max) {
+        margin-top: 40px;
+      }
+    }
+
     @media (max-width: $screen-xs-max) {
       margin-top: 35px;
     }
-  }
-
-  &__header {
-    margin-top: 75px;
-    margin-bottom: 0;
   }
 
   &__company-menu {
