@@ -13,12 +13,12 @@ mixin message-text
     block
 
 mixin message-time
-  +e.TIME.time&attributes(attributes)
+  time&attributes(attributes)
     | 13:50
 
 mixin message-file
-  +message._padded&attributes(attributes)
-    +message-text
+  +message._padded._stretch&attributes(attributes)
+    +message-text._center
       | File:
       +e.SPAN.download-text Investigation.pdf
     +e.A(href='#').download-link

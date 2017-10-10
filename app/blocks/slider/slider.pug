@@ -2,12 +2,12 @@ include ../icon/icons
 
 mixin slider()
   +b.slider&attributes(attributes).swiper-container
-    block nav
+    +slider-nav
     .swiper-wrapper
       block
 
 mixin slider-nav
-  +icon('slider-control').__control
+  +icon('slider-control').__control._prev
   +icon('slider-control').__control._next
 
 mixin slider-item

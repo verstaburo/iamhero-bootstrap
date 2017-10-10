@@ -6,6 +6,15 @@ mixin card-popover()
   +b.card-popover&attributes(attributes)
     block
 
+mixin card-popover-contact
+  +card-popover&attributes(attributes)
+    +e.section._vertical._bordered
+      h5 Contact has been unlocked
+      p Artemy Lebedev has been added to designers shortlist. You can now contact him
+    +e.section
+      +button('a')(href='#').btn-secondary-warning.btn-secondary-warning-low Start chat
+      +button('a')(href='#').btn-secondary-warning.btn-secondary-warning-low View profile
+
 mixin card-popover-buy
   +card-popover&attributes(attributes)
     +e.section

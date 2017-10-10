@@ -5,6 +5,22 @@
 
   table {
     margin-bottom: 0;
+
+    th:first-child, td:first-child {
+      padding-left: 45px !important;
+
+      @media (max-width: $screen-xl-max) {
+        padding-left: 30px !important;
+      }
+    }
+
+    th:last-child, td:last-child {
+      padding-right: 60px !important;
+
+      @media (max-width: $screen-xl-max) {
+        padding-right: 30px !important;
+      }
+    }
   }
 
   thead {
@@ -31,33 +47,6 @@
 
     &_price {
       width: 25%;
-    }
-
-    &_text {
-
-      &_center {
-        text-align: center;
-      }
-
-      &_right {
-        text-align: right;
-      }
-    }
-
-    &_first {
-      padding-left: 45px !important;
-
-      @media (max-width: $screen-xl-max) {
-        padding-left: 30px !important;
-      }
-    }
-
-    &_last {
-      padding-right: 60px !important;
-
-      @media (max-width: $screen-xl-max) {
-        padding-right: 30px !important;
-      }
     }
   }
 
@@ -96,7 +85,7 @@
   &__pagination {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 50px;
+    justify-content: center;
   }
 }

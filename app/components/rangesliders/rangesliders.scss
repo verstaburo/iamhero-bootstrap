@@ -14,6 +14,10 @@
     }
   }
 
+  &_tall {
+    padding-top: 10px;
+  }
+
   &_warning-big {
 
     .rangeslider-wrap__output-custom-percent {
@@ -87,6 +91,15 @@
     &.moveable {
       position: absolute;
     }
+  }
+
+  &__output-salary {
+    position: absolute;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 15px;
+    top: 0;
+    left: 50%;
   }
 
   &__label {

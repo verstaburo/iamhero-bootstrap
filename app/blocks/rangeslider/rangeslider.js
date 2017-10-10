@@ -24,6 +24,12 @@ export default () => {
     if (output.length) {
       output.html(value + '%');
     }
+
+    var outputSalary = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-salary');
+    if (outputSalary.length) {
+      outputSalary.html(value + ' $/h');
+    }
+
     var outputCustom = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-custom');
     if (outputCustom.length) {
       outputCustom.html(value);

@@ -16,6 +16,12 @@ export default () => {
     $(this).siblings('.inner-header__search').toggleClass('active');
   })
 
+  $(document).on('click', '.inner-header__burger', function (e) {
+    $(this).toggleClass('active');
+    e.preventDefault();
+    $('.inner-sidebar').toggleClass('active');
+  })
+
   $(document).on('click', function () {
     $('.inner-header__col_dropdown, .inner-header__search').removeClass('active');
   })

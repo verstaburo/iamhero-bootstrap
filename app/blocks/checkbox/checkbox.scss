@@ -2,12 +2,13 @@
   display: flex;
   cursor: pointer;
   user-select: none;
+  align-items: flex-start;
 
   & + & {
     margin-top: 25px;
   }
 
-  &_margin_more {
+  &-secondary {
 
     .checkbox__text {
       margin-left: 20px;
@@ -22,7 +23,7 @@
     }
 
     .checkbox__text {
-      border-bottom-color: $brand-warning;
+      text-decoration-color: $brand-warning;
     }
   }
 
@@ -41,7 +42,7 @@
       }
 
       & ~ .checkbox__text {
-        border-bottom-color: $brand-warning;
+        text-decoration-color: $brand-warning;
         color: #263240;
       }
     }
@@ -73,7 +74,8 @@
     font-weight: 400;
     font-size: 16px;
     margin-left: 9px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom-color .25s ease-in-out, color .25s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .25s ease-in-out, color .25s ease-in-out;
   }
 }

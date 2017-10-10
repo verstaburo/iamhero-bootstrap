@@ -3,8 +3,6 @@ include ../../blocks/slider/slider
 
 mixin hero-slider()
   +slider.hero-slider&attributes(attributes)
-    block nav
-      +slider-nav
     +slider-item
       +hero-card('dashboard/hero1.jpg')
         h4 Alexander Salikov

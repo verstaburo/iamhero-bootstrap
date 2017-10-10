@@ -148,4 +148,35 @@
   &-font-white {
     color: #fff;
   }
+
+  &-info {
+    padding: 10.5px 20px 14.5px;
+    border-radius: 0;
+    font-size: 22px;
+    font-weight: 300;
+
+    &-darken {
+      background-color: #1e2d40;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 16px;
+    }
+
+    svg {
+      width: 24px;
+      height: 20px;
+      stroke: $brand-warning;
+      margin-right: 20px;
+    }
+
+    &:hover, &:active, &.active, &.active:hover,  &.active:focus {
+      background-color: $brand-warning;
+      color: #263446;
+
+      svg {
+        stroke: #3b4d62;
+      }
+    }
+  }
 }

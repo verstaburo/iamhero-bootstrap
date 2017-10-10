@@ -109,6 +109,21 @@
         box-shadow: 1px 3px 1px 2px #c8cbd1;
       }
     }
+
+    &_inverse {
+
+      & + .rangeslider {
+        border-color: transparent;
+        background-color: #1b202d;
+        background-image: linear-gradient(to left, #1b202d 0%, #1c436c 55%, #647cc2 100%);
+
+        .rangeslider__fill {
+          left: -1px;
+          background-image: none;
+          background-color: $brand-warning;
+        }
+      }
+    }
   }
 
   &_warning {

@@ -11,6 +11,12 @@
     cursor: default;
   }
 
+  &-danger {
+    font-size: 16px;
+    color: #fff;
+    padding: .125em .3em;
+  }
+
   &-success {
     color: #191e28;
 
@@ -246,5 +252,12 @@
         }
       }
     }
+  }
+
+  &-primary, &-info {
+    font-family: $font-family-second;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
   }
 }

@@ -1,8 +1,8 @@
 .account-settings {
   display: block;
 
-  &__laptop-section {
-    @media (max-width: $screen-md-max) {
+  &__desktop-section {
+    @media (max-width: $screen-xl-max) {
       margin-top: 40px;
     }
 

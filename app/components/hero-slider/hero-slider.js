@@ -1,8 +1,8 @@
 export default () => {
   // eslint-disable-next-line
   const heroSlider = new Swiper('.hero-slider', {
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
+    nextButton: '.slider__control_next',
+    prevButton: '.slider__control_prev',
     slidesPerView: 4,
     spaceBetween: 35,
     breakpoints: {

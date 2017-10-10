@@ -4,6 +4,7 @@ include ../../blocks/select/select
 include ../../blocks/inner-card/inner-card
 include ../../components/top-filter/top-filter
 include ../../components/aside-filter/aside-filter
+include ../../components/rangesliders/rangesliders
 
 block head
   - var pageTitle = 'I Am Hero - Job listing'
@@ -18,6 +19,8 @@ block aside-filter
       +select([{value: '1', text: 'Designer 2200'}, {value: '2', text: 'Main office manager'}, {value: '3', text: 'Search 31'}, {value: '4', text: 'Rage'}, {value: '5', text: 'Project management'}, {value: '6', text: 'Graphic designer'}, {value: '7', text: 'Graphic designer'}, {value: '8', text: 'Graphic designer'}, {value: '9', text: 'Graphic designer'}, {value: '10', text: 'Graphic designer'}], 'Job type')._big._warning.__input
       +select([{value: 'us', text: 'USA'}, {value: 'ru', text: 'Russia'}, {value: 'lv', text: 'Latvia'}], 'Location')._big._warning.__input
       +select([{value: 'us', text: 'USA'}, {value: 'ru', text: 'Russia'}, {value: 'lv', text: 'Latvia'}], 'Location')._big._warning.__input
+      +rangeslider-salary.__input
+      +button.btn-secondary-warning.btn-secondary-warning-medium.font-weight-medium.__btn-submit Submit
     +aside-filter-item._no-side
       +aside-filter-heading('saved') saved searches
       +aside-filter-search-item Designer 2200
