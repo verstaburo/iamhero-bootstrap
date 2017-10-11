@@ -1,26 +1,111 @@
 export default () => {
-  const ITEM_CLASS = '.activity-chart';
-// eslint-disable-next-line
-  if ($(ITEM_CLASS).length) {
-    let i = 1;
-    const labelsData = [];
-  // eslint-disable-next-line
-    for (i = 1; i <= 30; i++) {
-      labelsData.push(i);
+  /*eslint-disable*/
+  var ctx = document.getElementById("activityChart").getContext('2d');
+
+  let i = 1;
+  const labelsData = [];
+  for (i = 1; i <= 30; i++) {
+    labelsData.push(i);
+  }
+
+  const dataSet = [48, 56, 66, 54, 36, 30, 56, 60, 60, 51, 51, 56];
+
+  var customTooltips = function(tooltip) {
+    $(this._chart.canvas).css("cursor", "pointer");
+
+    var positionY = this._chart.canvas.offsetTop;
+    var positionX = this._chart.canvas.offsetLeft;
+
+    $(".chartjs-tooltip").css({
+      opacity: 0,
+    });
+
+    if (!tooltip || !tooltip.opacity) {
+      return;
     }
 
-    const data = {
-      labels: labelsData,
-      series: [
-        [48, 56, 66, 54, 36, 30, 56, 60, 60, 51, 51, 56],
-      ],
-    };
+    if (tooltip.dataPoints.length > 0) {
+      tooltip.dataPoints.forEach(function(dataPoint) {
+        var content = dataPoint.yLabel;
+        var $tooltip = $("#tooltip-" + dataPoint.datasetIndex);
 
-    const options = {
-      low: 0,
-      onlyInteger: true,
-    };
-  // eslint-disable-next-line
-    new Chartist.Bar('.activity-chart', data, options);
-  }
+        $tooltip.html(content);
+        $tooltip.css({
+          opacity: 1,
+          top: positionY + dataPoint.y + "px",
+          left: positionX + dataPoint.x + "px",
+        });
+      });
+    }
+  };
+
+  var activityChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+
+      labels: labelsData,
+
+      datasets: [{
+        data: dataSet,
+        backgroundColor: 'rgba(255, 255, 255, .28)',
+        borderColor: 'rgba(255, 255, 255, .5)',
+        hoverBackgroundColor: '#fff',
+        hoverBorderColor: '#fff',
+        borderWidth: 1,
+        borderSkipped: 'bottom',
+      }],
+    },
+
+    options: {
+      // responsive: true,
+
+      title: {
+        display: false,
+      },
+
+      legend: {
+        display: false,
+      },
+
+      tooltips: {
+        enabled: false,
+        mode: 'index',
+        intersect: false,
+        custom: customTooltips,
+      },
+
+      scales: {
+
+        xAxes: [{
+          barThickness: '6',
+
+          barPercentage: '0',
+
+          categoryPercentage: '0',
+
+          gridLines: {
+            display: false,
+            color: 'rgba(255,255,255,.28)',
+          },
+
+          ticks: {
+            fontColor: '#fff',
+            fontSize: '9',
+            fontFamily: 'Open Sans, sans-serif',
+          },
+        }],
+
+        yAxes: [{
+          gridLines: {
+            display: false,
+            color: '#fff',
+          },
+          ticks: {
+            display: false,
+            beginAtZero: true,
+          },
+        }],
+      },
+    },
+  });
 };

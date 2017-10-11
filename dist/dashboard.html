@@ -477,12 +477,15 @@
             </div>
             <div class="activity-meter">
                 <div class="activity-meter__header">
-                    <h3 class="activity-meter__heading">Month activity meter</h3>
-                    <a class="activity-meter__link" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_boost"></use></svg>BOOST ME UP</a>
+                    <h3>Month activity meter</h3>
+                    <A href="#">
+                        <svg><use xlink:href="assets/images/icon.svg#icon_boost"></use></svg>BOOST ME UP</A>
                 </div>
-                <div class="activity-chart"></div>
-                <p class="activity-meter__info">This graph is based on overall company profile view per day and shows amount of unique visitors</p>
+                <div class="activity-chart">
+                    <canvas width="500" height="140" id="activityChart"></canvas>
+                    <div class="chartjs-tooltip" id="tooltip-0"></div>
+                </div>
+                <p>This graph is based on overall company profile view per day and shows amount of unique visitors</p>
             </div>
             <div class="info-sidebar__section info-sidebar__section_padding-side-none">
                 <div class="info-sidebar__heading info-sidebar__heading_padded_sides">
@@ -676,7 +679,7 @@
     <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
-    <script src="assets/scripts/libs/chartist.min.js"></script>
+    <script src="assets/scripts/libs/chart.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 
