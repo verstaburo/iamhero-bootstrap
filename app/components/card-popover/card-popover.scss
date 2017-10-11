@@ -28,6 +28,14 @@
     display: flex;
     align-items: flex-start;
 
+    .form-group {
+
+      input {
+        height: 32px;
+        padding-top: 7px;
+      }
+    }
+
     &_medium {
       padding-top: 15px;
       padding-bottom: 15px;

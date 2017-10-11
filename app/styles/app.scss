@@ -6,7 +6,6 @@
 @import '../blocks/**/*';
 @import '../components/**/*';
 @import '../pages/**/*';
-// @import '../../node_modules/selectize/dist/css/selectize';
 
 body {
   font-weight: 300;
@@ -30,11 +29,6 @@ input[type='range'] {
 }
 // stylelint-enable
 
-.checkbox, .radio {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -46,8 +40,6 @@ li {
 
 label {
   font-weight: inherit;
-  margin-bottom: 0;
-  position: relative;
 }
 
 .help-block {

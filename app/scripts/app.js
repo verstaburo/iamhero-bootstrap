@@ -19,6 +19,7 @@ import jsProgress from '../blocks/js-progress/js-progress';
 import activityChart from '../blocks/activity-chart/activity-chart';
 import messages from '../components/messages/messages';
 import fullBtn from './common/fullBtn';
+import checkbox from '../blocks/checkbox/checkbox';
 
 /* eslint-disable*/
 $(() => {
@@ -48,4 +49,6 @@ $(() => {
   activityChart();
   messages();
   fullBtn();
+  checkbox();
+  window.checkboxInit = checkbox;
 });

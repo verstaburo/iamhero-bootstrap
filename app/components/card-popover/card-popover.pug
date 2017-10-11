@@ -22,9 +22,11 @@ mixin card-popover-buy
     +e.section._medium._dark
       +icon('menu-shortlists').__description-icon
       +e.SPAN.description You should add Hero to any existing or new Shortlist, please choose an option below
-    +e.section._big._bordered
-      +input('New shortlist name').form-control-small.form-control-font-standart
-      +button.btn-secondary-warning-small.__inline-btn Save
+    +e.FORM.section._big._bordered.form-inline
+      .form-group
+        +input('New shortlist name').form-control-warning
+        span.help-block validation
+      +button.btn-secondary-warning-small.form-inline-btn Save
     +e.section._list
       h5 Existing shortlists:
       +e.list

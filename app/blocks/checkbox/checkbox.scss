@@ -1,81 +1,75 @@
-.checkbox {
-  display: flex;
-  cursor: pointer;
-  user-select: none;
-  align-items: flex-start;
+.checkbox, .checkbox-inline {
+  padding-left: 30px;
 
-  & + & {
-    margin-top: 25px;
+  label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 20px;
+    line-height: 1.1875;
+    font-family: $font-family-second;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 0;
   }
 
   &-secondary {
-
-    .checkbox__text {
-      margin-left: 20px;
-    }
+    padding-left: 40px;
   }
 
   &:hover {
 
-    .checkbox__box {
+    .checkbox-box {
       box-shadow: 12px 0 12px 0 rgba(65, 86, 108, .01), 12px 0 68px 0 rgba(65, 86, 108, .34);
       border-color: #33414c;
     }
 
-    .checkbox__text {
+    label {
       text-decoration-color: $brand-warning;
     }
   }
 
-  &__input {
+  input {
     display: none;
 
     &:checked {
 
-      & + .checkbox__box {
+      & + .checkbox-box {
         box-shadow: 12px 0 12px 0 rgba(65, 86, 108, .01), 12px 0 68px 0 rgba(65, 86, 108, .34);
         border-color: #33414c;
 
-        .checkbox__icon {
+        &::after {
           transform: scale(1);
         }
-      }
-
-      & ~ .checkbox__text {
-        text-decoration-color: $brand-warning;
-        color: #263240;
       }
     }
   }
 
-  &__box {
-    flex-shrink: 0;
-    display: inline-block;
+  &-box {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 20px;
     height: 20px;
     border: 1px solid #8897a3;
     transition: box-shadow .25s ease-in-out, border-color .25s ease-in-out;
-  }
 
-  &__icon {
-    transform: scale(0);
-    transition: transform .25s ease-in-out;
-    fill: $brand-warning;
-    width: 100%;
-    height: 100%;
-    padding-left: 1px;
-    padding-right: 1px;
+    &::after {
+      content: '';
+      background-image: url('../images/icon/check.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 16px;
+      height: 12px;
+      left: 2px;
+      top: 3px;
+      transform: scale(0);
+      transition: transform .25s ease-in-out;
+    }
   }
+}
 
-  &__text {
-    line-height: 1.1875;
-    display: inline-block;
-    font-family: $font-family-second;
-    font-weight: 400;
-    font-size: 16px;
-    margin-left: 9px;
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    transition: text-decoration-color .25s ease-in-out, color .25s ease-in-out;
-  }
+.checkbox-inline {
+  display: inline-block;
 }
