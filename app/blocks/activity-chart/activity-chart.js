@@ -1,6 +1,12 @@
 export default () => {
   /*eslint-disable*/
-  var ctx = document.getElementById("activityChart").getContext('2d');
+  var ctxEl = document.getElementById("activityChart");
+
+  if(!ctxEl) {
+    return;
+  }
+
+  var ctx = ctxEl.getContext('2d');
 
   let i = 1;
   const labelsData = [];
@@ -57,7 +63,7 @@ export default () => {
     },
 
     options: {
-      // responsive: true,
+      responsive: true,
 
       title: {
         display: false,

@@ -130,6 +130,7 @@ p {
 
     @media (max-width: $screen-xs-max) {
       margin-bottom: 20px;
+      flex-basis: auto;
     }
 
     &-offset {
@@ -137,6 +138,10 @@ p {
         margin-left: 25px;
       }
     }
+  }
+
+  .btn {
+    flex-shrink: 0;
   }
 
   .form-inline-btn {
@@ -166,6 +171,7 @@ p {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    flex-shrink: 0;
   }
 
   .form-inline-vertical-inputs {
@@ -174,6 +180,7 @@ p {
     flex-grow: 1;
 
     .form-group {
+      flex-basis: auto;
 
       &:not(:first-child) {
         margin-top: 20px;
@@ -205,4 +212,18 @@ p {
 
 address {
   margin-bottom: 20px;
+}
+
+.summary-btn {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+  @media (max-width: 639px) {
+
+    .btn {
+      width: 100%;
+    }
+  }
 }

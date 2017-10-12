@@ -14,11 +14,13 @@ mixin inner-sidebar()
     +e.LI.item
       a(href='#')
         +icon('menu-search').__icon
-      +e.SPAN.hint Search
+      +e.SPAN.hint Hero Search
     +e.LI.item.active
       a(href='#')
         +icon('menu-shortlists').__icon
-      +e.SPAN.hint Shortlists
+      span.inner-sidebar__hint Shortlists (
+        span.text-warning 14
+        |)
     +e.LI.item
       a(href='#')
         +icon('menu-offers').__icon

@@ -23,6 +23,6 @@ export default () => {
   })
 
   $(document).on('click', function () {
-    $('.inner-header__col_dropdown, .inner-header__search').removeClass('active');
+    $('.inner-header__col_dropdown').removeClass('active');
   })
 };

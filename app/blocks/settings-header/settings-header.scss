@@ -48,6 +48,7 @@
     @media (max-width: $screen-sm-max) {
       padding-right: 0;
       align-items: center;
+      flex-basis: auto;
     }
 
     @media (max-width: $screen-xs-max) {
@@ -82,6 +83,10 @@
   }
 
   .btn {
+    font-weight: 500;
+    color: #fff;
+    flex-shrink: 0;
+
     @media (max-width: $screen-sm-max) {
       margin-top: 15px;
     }
