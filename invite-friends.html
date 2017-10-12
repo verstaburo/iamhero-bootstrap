@@ -21,9 +21,9 @@
             </a>
         </div>
         <div class="inner-header__col inner-header__search">
-            <label class="search search_dark">
-                <input class="search__input" type="text" placeholder="Search for heroes..." />
-                <button class="search__icon" type="submit">
+            <label class="search">
+                <input type="text" placeholder="Search for heroes..." />
+                <button class="btn">
                     <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
                 </button>
             </label>
@@ -156,13 +156,14 @@
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Search</span>
+            <span class="inner-sidebar__hint">Hero Search</span>
         </li>
         <li class="inner-sidebar__item active">
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Shortlists</span>
+            <span class="inner-sidebar__hint">Shortlists (
+                <span class="text-warning">14</span>)</span>
         </li>
         <li class="inner-sidebar__item">
             <a href="#">
@@ -208,22 +209,22 @@
                 </div>
                 <span>You can choose what to be notified about</span>
             </div>
-            <a class="btn btn-secondary-warning btn-secondary-warning-medium btn-font-white font-weight-medium" href="#">Open notifications</a>
+            <a class="btn btn-secondary-warning btn-secondary-warning-medium" href="#">Open notifications</a>
         </div>
         <div class="page__section row">
-            <div class="col-sm-24 col-md-8 invite-friends__card">
+            <div class="col-sm-24 col-lg-8 invite-friends__card">
                 <a class="social-card" href="#">
                     <p>Invite from:</p>
                     <img src="assets/images/invite-friends/google-contacts.png" />
                 </a>
             </div>
-            <div class="col-sm-24 col-md-8 invite-friends__card">
+            <div class="col-sm-24 col-lg-8 invite-friends__card">
                 <a class="social-card" href="#">
                     <p>Invite from:</p>
                     <img src="assets/images/invite-friends/facebook.png" />
                 </a>
             </div>
-            <div class="col-sm-24 col-md-8 invite-friends__card">
+            <div class="col-sm-24 col-lg-8 invite-friends__card">
                 <a class="social-card" href="#">
                     <p>Invite from:</p>
                     <img src="assets/images/invite-friends/linkedin.png" />
@@ -231,8 +232,10 @@
             </div>
         </div>
         <div class="inner-plate page__section">
-            <h4 class="inner-plate__heading">Direct invitation</h4>
-            <p class="inner-plate__subheading">Write down your frind E-mail adress and send invitation to join iamhero.io. You can also add multiple E-mail adresses separating them with coma “,”</p>
+            <div class="inner-plate__text">
+                <h4>Direct invitation</h4>
+                <p>Write down your frind E-mail adress and send invitation to join iamhero.io. You can also add multiple E-mail adresses separating them with coma “,”</p>
+            </div>
             <div class="form-inline invite-friends__form">
                 <div class="form-group form-group-lg has-success">
                     <input class="form-control form-control-warning" type="text" placeholder="Your friend E-mail adress" />
@@ -255,7 +258,7 @@
     <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
-    <script src="assets/scripts/libs/chartist.min.js"></script>
+    <script src="assets/scripts/libs/chart.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 
