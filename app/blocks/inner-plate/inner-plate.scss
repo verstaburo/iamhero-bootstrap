@@ -3,6 +3,10 @@
   background-color: #fff;
   padding: 50px;
 
+  &_bottom_bigger {
+    padding-bottom: 60px;
+  }
+
   @media (max-width: $screen-sm-max) {
     padding-left: 35px;
     padding-right: 35px;
@@ -102,12 +106,14 @@
 
   &__control-container {
     margin-top: 25px;
-    display: flex;
-    flex-wrap: wrap;
 
-    .checkbox, .radio {
-      margin-top: 20px;
-      margin-right: 40px;
+    .checkbox-inline, .radio-inline, {
+      margin-left: 0 !important;
+      margin-right: 10px;
+
+      @media (min-width: $screen-md-min) {
+        margin-right: 40px;
+      }
     }
   }
 

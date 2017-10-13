@@ -15,7 +15,6 @@
   &_hero {
 
     &.inner-card_expanded {
-      margin-bottom: 50px;
 
       .inner-card__wrap {
         padding: 55px;
@@ -92,6 +91,9 @@
   }
 
   &_expanded {
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 50px;
+    }
 
     .inner-card__text-wrap {
       height: 100%;

@@ -3,3 +3,9 @@ mixin checkbox(checked, name)
     label
       input(type='checkbox' value='' name=name||'', checked=false||checked)
       block
+
+mixin checkbox-inline(checked, name)
+  +b.checkbox-inline&attributes(attributes)
+    label
+      input(type='checkbox' value='' name=name||'', checked=false||checked)
+      block

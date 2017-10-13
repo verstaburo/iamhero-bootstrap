@@ -72,10 +72,10 @@ block content
               +e.text
                 h4 Employment PARAMETERS
               +e.control-container
-                +checkbox(true) Part time
-                +checkbox(true) Full time
-                +checkbox() Freelance
-                +checkbox() Season job
+                +checkbox-inline(true) Part time
+                +checkbox-inline(true) Full time
+                +checkbox-inline() Freelance
+                +checkbox-inline() Season job
             +e.section
               +e.text
                 h4 WORKING GRAPHIC
@@ -89,9 +89,9 @@ block content
               +e.text
                 h4 GEOGRAPHY
               +e.control-container
-                +radio(true, 'geo')._warning Anywhere
-                +radio('', 'geo')._warning Specific radius from
-                +radio('', 'geo')._warning Specific locations
+                +radio-inline(true, 'geo')._warning Anywhere
+                +radio-inline('', 'geo')._warning Specific radius from
+                +radio-inline('', 'geo')._warning Specific locations
         .col-xs-24.col-xxl-12
           +inner-plate.page__section.page__section_lg
             +e.text

@@ -1,0 +1,7 @@
+include ../../blocks/map/map
+include ../../blocks/side-modal/side-modal
+
+mixin side-modal-map
+  +side-modal._down&attributes(attributes)
+    +side-modal-toggler._caret
+    +map#map-branch

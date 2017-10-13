@@ -78,7 +78,28 @@ mixin company(img, title, branch)
           +inner-card-text
             p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999. Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
     +inner-card-footer
-      +inner-card-button('dots', 'a')(href='#')._push_right Open company profile
+      +inner-card-button('dots', 'a')(href='#') Open company profile
+
+mixin company-to-attend(img, title, branch)
+  +inner-card&attributes(attributes)
+    +inner-card-full-image
+    +inner-card-wrap
+      +inner-card-image(img)
+      +inner-card-text-wrap
+        +inner-card-tags
+          time 26.06.2017
+          +label.label-primary
+            b Attented
+          +label.label-danger NEW
+        +inner-card-text-content
+          +inner-card-title= title
+          +inner-card-subtitle= branch
+          +inner-card-subtitle._thin._inline Los Angeles, USA
+          +inner-card-text
+            p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999. Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
+    +inner-card-footer
+      +inner-card-button('check-1')(href='#').btn-info-darken Attend
+      +inner-card-button('dots', 'a')(href='#') Open vacancy
 
 mixin vacancy(img, title)
   +inner-card('a')._border._shadow(href='#')&attributes(attributes)

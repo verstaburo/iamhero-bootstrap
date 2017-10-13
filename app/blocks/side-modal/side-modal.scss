@@ -1,3 +1,65 @@
 .side-modal {
   display: block;
+  position: fixed;
+  top: 55px;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform .25s ease-in-out, box-shadow .25s ease-in-out;
+  background-color: #fff;
+
+  &_down {
+    top: 110px;
+  }
+
+  &.active {
+    z-index: 5;
+    transform: translateX(0);
+    box-shadow: -1.618px 1.176px 109px 0 rgba(54, 70, 90, .83);
+  }
+
+  &__toggler {
+    cursor: pointer;
+    position: absolute;
+    left: -65px;
+    top: 0;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(#212a38, .53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_caret {
+
+      &.active {
+
+        &::before {
+          transform: translateX(-50%) rotate(45deg);
+        }
+
+        &::after {
+          transform: translateX(-50%) rotate(-45deg);
+        }
+      }
+
+      &::before, &::after {
+        content: '';
+        width: 10px;
+        height: 1px;
+        background-color: #fff;
+        left: 50%;
+        position: absolute;
+      }
+
+      &::before {
+        transform: translateX(-50%) rotate(-45deg);
+        top: 29px;
+      }
+
+      &::after {
+        transform: translateX(-50%) rotate(45deg);
+        bottom: 29px;
+      }
+    }
+  }
 }

@@ -20,6 +20,9 @@ import activityChart from '../blocks/activity-chart/activity-chart';
 import messages from '../components/messages/messages';
 import fullBtn from './common/fullBtn';
 import checkbox from '../blocks/checkbox/checkbox';
+import radio from '../blocks/radio/radio';
+import sideModal from '../blocks/side-modal/side-modal';
+import jobListing from '../pages/job-listing/job-listing';
 
 /* eslint-disable*/
 $(() => {
@@ -51,4 +54,8 @@ $(() => {
   fullBtn();
   checkbox();
   window.checkboxInit = checkbox;
+  radio();
+  window.radioInit = radio;
+  sideModal();
+  jobListing();
 });

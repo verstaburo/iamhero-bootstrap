@@ -2,6 +2,7 @@ extends ../../layouts/inner-page
 include ../../blocks/page/page
 include ../../blocks/select/select
 include ../../blocks/inner-card/inner-card
+include ../../components/side-modals/side-modals
 include ../../components/top-filter/top-filter
 include ../../components/aside-filter/aside-filter
 include ../../components/rangesliders/rangesliders
@@ -30,16 +31,16 @@ block aside-filter
       +aside-filter-search-item Project management
 
 block content
-  +page._inner-big._faded
-    .row
-      .col-xs-24
-        +company('1.jpg', 'Industrial Designer at BS Company', 'Designer')
-        +company('2.jpg', 'Freedom Agency', 'Designer')
-        +company('3.jpg', 'Maxdino', 'Designer')
-        +company('4.jpg', 'Trade Plus', 'Designer')
-        +company('5.jpg', 'Monkey Logo designer Needed', 'Designer')
-        +company('6.jpg', 'Arbo tech Logo designer Needed', 'Designer')
-        +company('3.jpg', 'Maxdino', 'Designer')
-        +company('4.jpg', 'Trade Plus', 'Designer')
-        +company('5.jpg', 'Monkey Logo designer Needed', 'Designer')
-        +company('5.jpg', 'Monkey Logo designer Needed', 'Designer')
+  +page._inner-big._faded.job-listing
+    .job-listing__content
+      +company-to-attend('1.jpg', 'Industrial Designer at BS Company', 'Designer')
+      +company-to-attend('2.jpg', 'Freedom Agency', 'Designer')
+      +company-to-attend('3.jpg', 'Maxdino', 'Designer')
+      +company-to-attend('4.jpg', 'Trade Plus', 'Designer')
+      +company-to-attend('5.jpg', 'Monkey Logo designer Needed', 'Designer')
+      +company-to-attend('6.jpg', 'Arbo tech Logo designer Needed', 'Designer')
+      +company-to-attend('3.jpg', 'Maxdino', 'Designer')
+      +company-to-attend('4.jpg', 'Trade Plus', 'Designer')
+      +company-to-attend('5.jpg', 'Monkey Logo designer Needed', 'Designer')
+      +company-to-attend('5.jpg', 'Monkey Logo designer Needed', 'Designer')
+    +side-modal-map.job-listing__map

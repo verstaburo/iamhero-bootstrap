@@ -166,18 +166,20 @@ select {
 .select {
 
   &_big {
+    @media (min-width: $screen-sm-min) {
 
-    .selectize-input {
-      padding-top: 14px;
-      padding-bottom: 15px;
+      .selectize-input {
+        padding-top: 14px;
+        padding-bottom: 15px;
 
-      &::before, &::after {
-        top: 25px;
-        right: 13px;
-      }
+        &::before, &::after {
+          top: 25px;
+          right: 13px;
+        }
 
-      &::before {
-        right: 21px;
+        &::before {
+          right: 21px;
+        }
       }
     }
   }

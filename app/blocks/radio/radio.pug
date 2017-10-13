@@ -1,7 +1,11 @@
 mixin radio(checked, name)
-  +b.LABEL.radio&attributes(attributes)
-    +e.INPUT(type='radio', name=name||'', value='', checked=checked||false).input
-    +e.SPAN.box
-    if block
-      +e.SPAN.text
-        block
+  +b.radio&attributes(attributes)
+    label
+      input(type='radio' name=name||'', value='', checked=checked||false)
+      block
+
+mixin radio-inline(checked, name)
+  +b.radio-inline&attributes(attributes)
+    label
+      input(type='radio' name=name||'', value='', checked=checked||false)
+      block
