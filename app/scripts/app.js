@@ -23,6 +23,7 @@ import checkbox from '../blocks/checkbox/checkbox';
 import radio from '../blocks/radio/radio';
 import sideModal from '../blocks/side-modal/side-modal';
 import jobListing from '../pages/job-listing/job-listing';
+import shortlist from '../pages/shortlist/shortlist';
 
 /* eslint-disable*/
 $(() => {
@@ -58,4 +59,5 @@ $(() => {
   window.radioInit = radio;
   sideModal();
   jobListing();
+  shortlist();
 });

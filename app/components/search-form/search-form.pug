@@ -8,40 +8,40 @@ include ../../blocks/button-icon/button-icon
 mixin search-form()
   +b.FORM.search-form&attributes(attributes)
     +e.header
-      +e.H3.title
+      h3
         +icon('menu-shortlists')
         | GRAPHIC DESIGNERS
       +e.result
-        +e.SPAN.result-text._thin._color_grey._uppercase Heroes:
-        +e.SPAN.result-text 154 /
-        +e.SPAN.result-text._color_warning 15
+        h5 Heroes:
+        span 154 /
+        span.text-warning 15
       +e.controls
-        +select([{value: '1', text: 'Show: All'}, {value: '2', text: 'Show: First'}, {value: '3', text: 'Show: None'}], 'Show: All')._small._warning.__control
-        +button.btn-secondary-warning-small.btn-hover-text-warning.font-weight-medium.__control Buy all contacts
+        +select([{value: '1', text: 'Show: All'}, {value: '2', text: 'Show: First'}, {value: '3', text: 'Show: None'}], 'Show: All')._small._warning
+        +button.btn-secondary-warning-small.btn-hover-text-warning.font-weight-medium Buy all contacts
           b.btn-font-white 139
-        +button-icon.btn-secondary-warning.btn-secondary-warning-low.font-weight-medium.__control
+        +button-icon('a')(href='#', data-side='#massMsg').btn-secondary-warning.btn-secondary-warning-low.font-weight-medium.js-pick
           +button-icon-item('mass-message')._fill_none._stroke_warning
           +button-icon-text Mass message
     +e.input-wrap
-      +e.INPUT(type='text' placeholder='Search GRAPHIC DESIGNER shortlist').input._first
-      +e.INPUT(type='text' placeholder='Location filter').input._second
+      input(type='text' placeholder='Search GRAPHIC DESIGNER shortlist')
+      input(type='text' placeholder='Location filter')
       +e.A(href='#').submit
         +icon('header-search')
         | Find heroes
     +e.tag-wrap
-      +label.label-transparent.label-border-white.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded
+      +label.label-primary-close.label-primary-close-transparent
         a(href='#')
           +icon-close.icon-close_small
         | Graphic designer
-      +label.label-transparent.label-border-white.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded
+      +label.label-primary-close.label-primary-close-transparent
         a(href='#')
           +icon-close.icon-close_small
         | Riga
-      +label.label-transparent.label-border-white.label-rounded.label-medium.label-close.label-close-bg-white.label-close-hover-warning.label-close-rounded
+      +label.label-primary-close.label-primary-close-transparent
         a(href='#')
           +icon-close.icon-close_small
         | Design
-      +label.label-rounded.label-medium.label-close.label-bg-dark.label-font-white.label-close-rounded.label-close-warning.label-close-hover-warning
+      +label.label-primary-close.label-primary-close-dark
         a(href='#')
           +icon-close.icon-close_small
         | Clear all search criteria

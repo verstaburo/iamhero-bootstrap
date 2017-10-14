@@ -1,7 +1,22 @@
 include ../../blocks/map/map
 include ../../blocks/side-modal/side-modal
+include ../../blocks/button/button
+include ../../blocks/button-icon/button-icon
+include ../../blocks/textarea/textarea
+include ../../blocks/inner-plate/inner-plate
 
 mixin side-modal-map
   +side-modal._down&attributes(attributes)
     +side-modal-toggler._caret
     +map#map-branch
+
+mixin side-modal-messages
+  +side-modal#massMsg&attributes(attributes)
+    +side-modal-toggler._close.js-pick-dismiss
+    +inner-plate
+      h5 Mass Message
+      p Using Mass message tool you can send message to multiple heroes.
+      +textarea('5')(placeholder='Text here').form-control-area-static.form-control-warning
+      +button-icon.button-icon_label.btn-secondary-warning
+        +button-icon-label 5
+        +button-icon-text Send Message
