@@ -164,6 +164,10 @@
       background-color: #1e2d40;
     }
 
+    &-lighten {
+      background-color: #465e75;
+    }
+
     @media (max-width: $screen-xs-max) {
       font-size: 16px;
     }
@@ -173,6 +177,7 @@
       height: 20px;
       stroke: $brand-warning;
       margin-right: 20px;
+      transition: stroke .25s ease-in-out;
     }
 
     &:hover, &:active, &.active, &.active:hover,  &.active:focus {

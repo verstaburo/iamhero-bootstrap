@@ -12,8 +12,5 @@
 
 .activity-chart {
   overflow-x: hidden;
-
-  canvas {
-    min-width: 500px;
-  }
+  position: relative;
 }

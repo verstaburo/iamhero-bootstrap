@@ -1,3 +1,10 @@
 .suggested-jobs {
-  display: block;
+  padding-top: 40px;
+  padding-left: 55px;
+  padding-right: 55px;
+
+  @media (max-width: $screen-sm-max) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }

@@ -184,10 +184,15 @@
             <span class="inner-sidebar__hint">Settings</span>
         </li>
     </ul>
-    <main class="page page_inner-standart" role="main">
+    <main class="page page_inner-standart suggested-jobs" role="main">
+        <div class="page__overlay"></div>
         <div class="row">
-            <div class="col-xxl-17">
-                <div class="huge-card">
+            <div class="col-lg-20 col-xxl-16">
+                <div class="page__header-custom">
+                    <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+                    <h3>SUGGESTED JOBS</h3>
+                </div>
+                <div class="huge-card page__section">
                     <div class="bg-image huge-card__image">
                         <img src="assets/images/suggested-jobs/1-big.jpg" />
                     </div>
@@ -199,7 +204,7 @@
                     <div class="company-profile-card">
                         <div class="company-profile-card__content">
                             <div class="row">
-                                <div class="col-sm-6 col-xs-18 col-xs-offset-3 col-sm-offset-0">
+                                <div class="col-sm-6 col-xs-24">
                                     <div class="bg-image company-profile-card__logo">
                                         <img src="assets/images/suggested-jobs/1.jpg" />
                                     </div>
@@ -221,6 +226,22 @@
                             <div class="map" id="map"></div>
                         </div>
                     </div>
+                    <div class="inner-card__footer">
+                        <div class="inner-card__footer-buttons">
+                            <button class="button-icon btn btn-info btn-info-lighten" href="#">
+                                <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                <span class="button-icon__text">Remove job from suggestions</span>
+                            </button>
+                            <button class="button-icon btn btn-info" href="#">
+                                <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>
+                                <span class="button-icon__text">Attend this job</span>
+                            </button>
+                            <button class="button-icon btn btn-info btn-info-darken js-vacancy" href="#" data-side="#vacancy">
+                                <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>
+                                <span class="button-icon__text">Read more</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div class="huge-card page__section page__section_big">
                     <div class="bg-image huge-card__image">
@@ -234,7 +255,7 @@
                     <div class="company-profile-card">
                         <div class="company-profile-card__content">
                             <div class="row">
-                                <div class="col-sm-6 col-xs-18 col-xs-offset-3 col-sm-offset-0">
+                                <div class="col-sm-6 col-xs-24">
                                     <div class="bg-image company-profile-card__logo">
                                         <img src="assets/images/suggested-jobs/2.jpg" />
                                     </div>
@@ -253,7 +274,23 @@
                             </div>
                         </div>
                         <div class="company-profile-card__map">
-                            <div class="map" id="map"></div>
+                            <div class="map" id="map-2"></div>
+                        </div>
+                    </div>
+                    <div class="inner-card__footer">
+                        <div class="inner-card__footer-buttons">
+                            <button class="button-icon btn btn-info btn-info-lighten" href="#">
+                                <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                <span class="button-icon__text">Remove job from suggestions</span>
+                            </button>
+                            <button class="button-icon btn btn-info" href="#">
+                                <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>
+                                <span class="button-icon__text">Attend this job</span>
+                            </button>
+                            <button class="button-icon btn btn-info btn-info-darken js-vacancy" href="#" data-side="#vacancy">
+                                <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>
+                                <span class="button-icon__text">Read more</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -269,7 +306,7 @@
                     <div class="company-profile-card">
                         <div class="company-profile-card__content">
                             <div class="row">
-                                <div class="col-sm-6 col-xs-18 col-xs-offset-3 col-sm-offset-0">
+                                <div class="col-sm-6 col-xs-24">
                                     <div class="bg-image company-profile-card__logo">
                                         <img src="assets/images/suggested-jobs/3.jpg" />
                                     </div>
@@ -288,7 +325,76 @@
                             </div>
                         </div>
                         <div class="company-profile-card__map">
-                            <div class="map" id="map"></div>
+                            <div class="map" id="map-3"></div>
+                        </div>
+                    </div>
+                    <div class="inner-card__footer">
+                        <div class="inner-card__footer-buttons">
+                            <button class="button-icon btn btn-info btn-info-lighten" href="#">
+                                <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                <span class="button-icon__text">Remove job from suggestions</span>
+                            </button>
+                            <button class="button-icon btn btn-info" href="#">
+                                <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>
+                                <span class="button-icon__text">Attend this job</span>
+                            </button>
+                            <button class="button-icon btn btn-info btn-info-darken js-vacancy" href="#" data-side="#vacancy">
+                                <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>
+                                <span class="button-icon__text">Read more</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-modal vacancy" id="vacancy">
+                    <div class="side-modal__toggler side-modal__toggler_close js-vacancy-close"></div>
+                    <div class="side-modal__content">
+                        <div class="vacancy__header">
+                            <time>June 14/2017</time>
+                            <h3>DESIGN AT freedom agency</h3>
+                            <span class="label label-info">
+                                <b>75%</b>match</span>
+                            <span class="label label-danger">NEW</span>
+                        </div>
+                        <a class="button-icon btn btn-info vacancy__btn vacancy__btn" href="#">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>
+                            <span class="button-icon__text">Attend this job</span>
+                        </a>
+                        <div class="bg-image huge-card__image">
+                            <img src="assets/images/suggested-jobs/2-big.jpg" />
+                        </div>
+                        <div class="vacancy__content">
+                            <div class="company-profile-card">
+                                <div class="company-profile-card__content">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-18 col-xs-offset-3 col-sm-offset-0">
+                                            <div class="bg-image company-profile-card__logo">
+                                                <img src="assets/images/suggested-jobs/2.jpg" />
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-18 col-xs-24">
+                                            <div class="company-profile-card__text company-profile-card__text_top_none">
+                                                <p>Established with the intent to provide a superior product, today Mark Scott holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our commitment to excellence, extends
+                                                    into every facet of what we do. From engineering to design and manufacturing, Mark Scottis redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution
+                                                    network of over 36 countries across the world, our customers have come to expect nothing less than sheer quality and innovation.</p>
+                                                <img src="assets/images/suggested-jobs/info.jpg" />
+                                                <p>Established with the intent to provide a superior product, today Mark Scott holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our comMark Scott is redefining the landscape
+                                                    of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the world, our customers have come to expect nothing less than sheer quality and
+                                                    innovation.</p>
+                                            </div>
+                                            <h2>CONTACTS</h2>
+                                            <a class="company-profile-card__contact-link" href="#">jobs@example.com</a>
+                                            <a class="company-profile-card__contact-link" href="#">example.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="button-icon btn btn-info vacancy__btn" href="#">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>
+                            <span class="button-icon__text">Attend this job</span>
+                        </a>
+                        <div class="vacancy__map">
+                            <div class="map" id="map-4"></div>
                         </div>
                     </div>
                 </div>

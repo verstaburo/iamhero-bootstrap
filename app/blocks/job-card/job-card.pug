@@ -1,23 +1,22 @@
 include ../bg-image/bg-image
 include ../icon/icons
 include ../list-group/list-group
+include ../inner-card/inner-card
 
 mixin job-card()
   +b.job-card&attributes(attributes)
     block
 
 mixin job-card-left
-  +job-card&attributes(attributes).js-sidebar
+  +plate._no-padding&attributes(attributes).js-sidebar
     +e.content
-      +bg-image('single-job/logo.jpg').__logo
-      +e.H3.title BS Company
-      +e.H6.subtitle Quality alloy car wheels
-      +e.H6.subtitle._offset Automotive and industrial design
-      +e.H6.subtitle._offset.font-weight-medium Job Description
+      +bg-image('single-job/logo.jpg').__job-logo
+      h3  BS Company
+      h6 Quality alloy car wheels
+      h6  Automotive and industrial design
+      h6.font-weight-medium Job Description
       p BS Company is dedicated to providing quality wheels and lifestyle products for those who value excellence.
-    a(href='#').inner-card__button.inner-card__button_centered
-      +icon('check-1')
-      | Attend
+    +inner-card-button('check-1')(href='#').btn-info-darken.btn-block Attend
 
 mixin job-card-list
   +list-group&attributes(attributes)

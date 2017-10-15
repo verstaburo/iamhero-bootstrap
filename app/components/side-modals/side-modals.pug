@@ -4,6 +4,9 @@ include ../../blocks/button/button
 include ../../blocks/button-icon/button-icon
 include ../../blocks/textarea/textarea
 include ../../blocks/inner-plate/inner-plate
+include ../../blocks/label/label
+include ../../blocks/inner-card/inner-card
+include ../../blocks/bg-image/bg-image
 
 mixin side-modal-map
   +side-modal._down&attributes(attributes)
@@ -13,10 +16,44 @@ mixin side-modal-map
 mixin side-modal-messages
   +side-modal#massMsg&attributes(attributes)
     +side-modal-toggler._close.js-pick-dismiss
-    +inner-plate
-      h5 Mass Message
-      p Using Mass message tool you can send message to multiple heroes.
-      +textarea('5')(placeholder='Text here').form-control-area-static.form-control-warning
-      +button-icon.button-icon_label.btn-secondary-warning
-        +button-icon-label 5
-        +button-icon-text Send Message
+    +e.content
+      +inner-plate
+        h5 Mass Message
+        p Using Mass message tool you can send message to multiple heroes.
+        +textarea('5')(placeholder='Text here').form-control-area-static.form-control-warning
+        +button-icon.button-icon_label.btn-secondary-warning
+          +button-icon-label 5
+          +button-icon-text Send Message
+
+mixin side-modal-vacancy
+  +side-modal.vacancy#vacancy&attributes(attributes)
+    +side-modal-toggler._close.js-vacancy-close
+    +e.content
+      .vacancy__header
+        time June 14/2017
+        h3 DESIGN AT freedom agency
+        +label.label-info
+          b 75%
+          | match
+        +label.label-danger NEW
+      +inner-card-button('check-1', 'a')(href='#').vacancy__btn.vacancy__btn Attend this job
+      +bg-image('suggested-jobs/2-big.jpg').huge-card__image
+      .vacancy__content
+        +b.company-profile-card
+          +e.content
+            .row
+              .col-sm-6.col-xs-18.col-xs-offset-3.col-sm-offset-0
+                +bg-image('suggested-jobs/2.jpg').__logo
+              .col-sm-18.col-xs-24
+                +e.text._top_none
+                  p Established with the intent to provide a superior product, today Mark Scott holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our commitment to excellence, extends into every facet of what we do. From engineering to design and manufacturing, Mark Scottis redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the world, our customers have come to expect nothing less than sheer quality and innovation.
+                  img(src='assets/images/suggested-jobs/info.jpg')
+                  p Established with the intent to provide a superior product, today Mark Scott holds a position as one of the trendsetting brands in the industry. Our passion, muchlike our comMark Scott is redefining the landscape of modern wheel craftsmanship. With three decades of experience and a distribution network of over 36 countries across the world, our customers have come to expect nothing less than sheer quality and innovation.
+                h2 CONTACTS
+                +e.A(href='#').contact-link
+                  | jobs@example.com
+                +e.A(href='#').contact-link
+                  | example.com
+      +inner-card-button('check-1', 'a')(href='#').vacancy__btn Attend this job
+      .vacancy__map
+        +b.map#map-4

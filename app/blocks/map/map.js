@@ -2,28 +2,47 @@ import map from '../../scripts/common/map';
 /*eslint-disable*/
 export default () => {
   map.then((googleMaps) => {
-    // eslint-disable-next-line
     function initSmallMap() {
       const mapElement = document.getElementById('map');
       if (!mapElement) {
         return;
       }
-      const mapFrame = new google.maps.Map(mapElement, {
+
+      const centerMark = {
+        lat: 25.793240,
+        lng: -80.351103,
+      };
+
+      const options = {
         zoom: 17,
-        center: {
-          lat: 25.793240,
-          lng: -80.351103,
-        },
+        center: centerMark,
         scrollwheel: false,
-      });
-      // eslint-disable-next-line
+      };
+
+      const mapFrame = new google.maps.Map(mapElement, options);
+
       var marker = new google.maps.Marker({
-        position: {
-          lat: 25.793240,
-          lng: -80.351103,
-        },
+        position: centerMark,
         map: mapFrame,
       });
+
+      if (document.getElementById('map-2')) {
+        const mapSecond = new google.maps.Map(document.getElementById('map-2'), options);
+        var markerSecond = new google.maps.Marker({
+          position: centerMark,
+          map: mapSecond,
+        });
+        const mapThird = new google.maps.Map(document.getElementById('map-3'), options);
+        var markerThird = new google.maps.Marker({
+          position: centerMark,
+          map: mapThird,
+        });
+        const mapFourth = new google.maps.Map(document.getElementById('map-4'), options);
+        var markerFourth = new google.maps.Marker({
+          position: centerMark,
+          map: mapFourth,
+        });
+      }
     }
 
     initSmallMap();

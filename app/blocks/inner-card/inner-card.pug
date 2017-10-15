@@ -60,6 +60,13 @@ mixin inner-card-footer
     +e.footer-buttons
       block
 
+mixin inner-card-footer-suggested
+  .inner-card__footer&attributes(attributes)
+    .inner-card__footer-buttons
+      +inner-card-button('close')(href='#').btn-info-lighten Remove job from suggestions
+      +inner-card-button('check-1')(href='#') Attend this job
+      +inner-card-button('dots')(href='#', data-side="#vacancy").btn-info-darken.js-vacancy Read more
+
 mixin inner-card-button(icon, tag)
   +button-icon(tag).btn-info&attributes(attributes)
     +button-icon-item(icon)

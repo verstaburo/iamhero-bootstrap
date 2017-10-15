@@ -20,12 +20,9 @@
 
   &_warning-big {
 
-    .rangeslider-wrap__output-custom-percent {
+    .rangeslider-wrap__output {
       font-size: 18px;
-
-      &.moveable {
-        top: 3px;
-      }
+      font-weight: 500;
     }
 
     .rangeslider-wrap__label {

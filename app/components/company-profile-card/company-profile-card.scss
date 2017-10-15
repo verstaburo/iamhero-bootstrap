@@ -6,6 +6,10 @@
 
   &__logo {
     @include ratio(1,1);
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 35px;
+    }
   }
 
   &__video {
@@ -20,10 +24,6 @@
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-
-    @media (max-width: $screen-sm-max) {
-      margin-top: 30px;
-    }
 
     @media (max-width: $screen-xs-max) {
       font-size: 34px;
@@ -74,12 +74,21 @@
     margin-top: 60px;
     margin-bottom: 50px;
 
+    &_top_none {
+      margin-top: 0;
+    }
+
     p {
       margin-bottom: 0;
 
       &:not(:first-child) {
         margin-top: 20px;
       }
+    }
+
+    img {
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
   }
 

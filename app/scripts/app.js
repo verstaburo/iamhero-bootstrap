@@ -18,12 +18,12 @@ import toTop from '../blocks/to-top/to-top';
 import jsProgress from '../blocks/js-progress/js-progress';
 import activityChart from '../blocks/activity-chart/activity-chart';
 import messages from '../components/messages/messages';
-import fullBtn from './common/fullBtn';
 import checkbox from '../blocks/checkbox/checkbox';
 import radio from '../blocks/radio/radio';
 import sideModal from '../blocks/side-modal/side-modal';
 import jobListing from '../pages/job-listing/job-listing';
 import shortlist from '../pages/shortlist/shortlist';
+import suggestedJobs from '../pages/suggested-jobs/suggested-jobs';
 
 /* eslint-disable*/
 $(() => {
@@ -52,7 +52,6 @@ $(() => {
   jsProgress();
   activityChart();
   messages();
-  fullBtn();
   checkbox();
   window.checkboxInit = checkbox;
   radio();
@@ -60,4 +59,5 @@ $(() => {
   sideModal();
   jobListing();
   shortlist();
+  suggestedJobs();
 });

@@ -4,11 +4,103 @@
 
   &__image {
     height: 355px;
+
+    @media (max-width: $screen-xs-max) {
+      height: 200px;
+    }
   }
 
   &__tags {
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  .company-profile-card__content {
+    @media (max-width: $screen-md-max) {
+      padding: 35px 35px 0;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 20px 15px 0;
+    }
+
+    h2 {
+      font-size: 35px;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 26px;
+      }
+    }
+
+    .company-profile-card__text {
+      margin-top: 40px;
+    }
+  }
+
+  .inner-card__footer {
+    padding-left: 0;
+    opacity: 1;
+    pointer-events: all;
+
+    .inner-card__footer-buttons {
+      flex-basis: 100%;
+
+      @media (max-width: $screen-sm-max) {
+        flex-wrap: wrap;
+
+        .btn {
+          text-align: left;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+      }
+
+      .btn:nth-child(1) {
+        padding-left: 65px;
+        flex-grow: 1;
+        text-align: left;
+        white-space: normal;
+
+        svg {
+          stroke: #ff754a;
+        }
+
+        @media (max-width: $screen-md-max) {
+          padding-left: 35px;
+        }
+
+        @media (max-width: $screen-sm-max) {
+          flex-basis: 100%;
+        }
+      }
+
+      .btn:nth-child(2) {
+        flex-grow: 1;
+        text-align: left;
+
+        @media (min-width: $screen-md-min) {
+          padding-left: 35px;
+        }
+
+        @media (max-width: $screen-sm-max) {
+          flex-basis: 50%;
+        }
+      }
+
+      .btn:nth-child(3) {
+        @media (min-width: $screen-lg-min) {
+          padding-right: 35px;
+        }
+
+        @media (min-width: $screen-xl-min) {
+          padding-right: 65px;
+        }
+
+        @media (max-width: $screen-sm-max) {
+          flex-basis: 50%;
+        }
+      }
+    }
   }
 }

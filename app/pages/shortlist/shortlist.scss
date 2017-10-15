@@ -18,15 +18,6 @@
   &__modal {
     width: 335px;
 
-    .side-modal__toggler {
-      @media (max-width: $screen-xs-max) {
-        right: 0;
-        left: auto;
-        width: 45px;
-        height: 45px;
-      }
-    }
-
     p {
       @media (max-width: $screen-xs-max) {
         display: none;

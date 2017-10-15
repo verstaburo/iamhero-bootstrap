@@ -124,6 +124,14 @@
         background-image: linear-gradient(to bottom, transparent 0%, #e7ebee 70%);
       }
     }
+
+    & > img {
+      margin-top: 35px;
+      margin-bottom: 35px;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
   }
 
   &__title {
@@ -154,14 +162,6 @@
     &:not(:first-of-type) {
       margin-top: 45px;
     }
-  }
-
-  &__content-img {
-    margin-top: 35px;
-    margin-bottom: 35px;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
   }
 
   &__row {
