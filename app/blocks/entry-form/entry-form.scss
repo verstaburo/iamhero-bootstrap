@@ -54,7 +54,7 @@
   }
 
   &__text {
-    display: inline-block;
+    display: block;
     font-weight: 500;
     font-size: 21px;
     letter-spacing: -.04em;
@@ -74,6 +74,10 @@
       &:hover {
         color: $brand-success;
       }
+
+      &.text-success {
+        color: $brand-success;
+      }
     }
 
     &_small {
@@ -84,10 +88,6 @@
         font-size: 14px;
       }
     }
-  }
-
-  &__text-success {
-    color: $brand-success !important;
   }
 
   &__button {

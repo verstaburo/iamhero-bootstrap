@@ -194,6 +194,10 @@
       font-size: 46px;
     }
 
+    @media (min-width: $screen-sm-min) {
+      margin-left: -5px;
+    }
+
     .label {
       vertical-align: middle;
       margin-left: 10px;

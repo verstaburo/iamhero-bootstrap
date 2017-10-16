@@ -21,6 +21,6 @@ mixin select-filter(data, placeholder)
 
 mixin select-date
   +b.select-group
-    +select([{value: '1', text: '1'}, {value: '2', text: '2'}, {value: '3', text: '3'}], '21').__item
-    +select([{value: 'feb', text: 'January'}, {value: 'feb', text: 'February'}, {value: 'mar', text: 'March'}], 'September').__item._wide
-    +select([{value: '2015', text: '2015'}, {value: '2016', text: '2016'}, {value: '2017', text: '2017'}], '2018').__item
+    +select([{value: '1', text: '1'}, {value: '2', text: '2'}, {value: '3', text: '3'}], 'Select day')
+    +select([{value: 'feb', text: 'January'}, {value: 'feb', text: 'February'}, {value: 'mar', text: 'March'}], 'Select month')
+    +select([{value: '2015', text: '2015'}, {value: '2016', text: '2016'}, {value: '2017', text: '2017'}], 'Select year')
