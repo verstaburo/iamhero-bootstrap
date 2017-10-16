@@ -4,7 +4,7 @@
   box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .24);
 
   &__image {
-    height: 235px;
+    @include ratio(1,1);
   }
 
   &__text {
@@ -13,6 +13,20 @@
     flex-direction: column;
     padding: 23px 60px 15px 20px;
     height: 210px;
+
+    @media (max-width: $screen-md-max) {
+      height: 230px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      height: 255px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-top: 35px;
+      padding-left: 35px;
+      padding-bottom: 35px;
+    }
 
     h4 {
       padding-right: 30%;
@@ -24,15 +38,15 @@
       font-family: $font-family-museo-sans;
       margin-top: auto;
       margin-bottom: 0;
-// stylelint-disable
-      &.text-grey {
-        color: #84959f;
-      }
+      color: #84959f;
 
+      // stylelint-disable
       &.text-success {
+        color: $brand-success;
         margin-top: 20px;
         letter-spacing: -.04em;
       }
+      // stylelint-enable
     }
   }
 }

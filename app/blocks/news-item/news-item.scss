@@ -2,6 +2,18 @@
   display: flex;
   height: 445px;
 
+  @media (max-width: $screen-md-max) {
+    height: 545px;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    height: 775px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    height: 385px;
+  }
+
   &:hover {
 
     & > img {
@@ -20,19 +32,53 @@
     margin-top: auto;
     width: 100%;
     min-height: 42.6%;
-  }
+    position: relative;
 
-  h3 {
-    margin-top: 0;
-    font-size: 27px;
-    color: #fff;
-    margin-bottom: 30px;
-  }
+    @media (max-width: $screen-sm-max) {
+      padding-top: 55px;
+      padding-bottom: 45px;
+    }
 
-  &__time {
-    font-size: 12px;
-    color: $brand-warning;
-    letter-spacing: -.04em;
-    font-weight: 100;
+    @media (max-width: $screen-xs-max) {
+      padding-top: 20px;
+      padding-bottom: 35px;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-size: 27px;
+      color: #fff;
+      margin-bottom: 30px;
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 50px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 24px;
+      }
+    }
+
+    time {
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      font-size: 12px;
+      color: $brand-warning;
+      letter-spacing: -.04em;
+      font-weight: 100;
+
+      @media (max-width: $screen-md-max) {
+        font-size: 14px;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 20px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 13px;
+      }
+    }
   }
 }

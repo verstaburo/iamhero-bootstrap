@@ -28,6 +28,14 @@ mixin rangeslider-nolabel-static(color)
     +e.SPAN.output._nolabel
     +rangeslider(class='rangeslider_static rangeslider_color_'+color)
 
+mixin rangeslider-salary
+  +b.rangeslider-wrap._tall&attributes(attributes)
+    +e.meter
+      span 0
+      span 250
+    +e.SPAN.output-salary
+    +rangeslider-custom('0', '250', '5', '100').rangeslider_gradient.rangeslider_gradient_inverse
+
 mixin rangeslider-gradient
   +b.rangeslider-wrap&attributes(attributes)
     +e.meter
@@ -39,5 +47,5 @@ mixin rangeslider-gradient
 mixin rangeslider-warning(label, value)
   +b.rangeslider-wrap&attributes(attributes)
     +e.SPAN.label= label
-    +e.SPAN.output-custom-percent
+    +e.SPAN.output
     +rangeslider-custom('0', '100', '1', value).rangeslider_static.rangeslider_warning

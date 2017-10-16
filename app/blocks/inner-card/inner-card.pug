@@ -3,6 +3,9 @@ include ../label/label
 include ../icon/icons
 include ../button/button
 include ../button-icon/button-icon
+include ../label/label
+include ../icon-close/icon-close
+include ../checkbox/checkbox
 include ../../components/card-popover/card-popover
 
 mixin inner-card(tag)
@@ -31,7 +34,7 @@ mixin inner-card-text-wrap
     block
 
 mixin inner-card-title
-  +e.H3.title&attributes(attributes)
+  h3&attributes(attributes)
     block
 
 mixin inner-card-tags
@@ -43,7 +46,7 @@ mixin inner-card-subtitle
     block
 
 mixin inner-card-text
-  +e.P.text&attributes(attributes)
+  +e.text&attributes(attributes)
     block
 
 mixin inner-card-footer
@@ -54,25 +57,24 @@ mixin inner-card-footer
     +e.BUTTON.toggle-btn.js-card-less
       +icon('minus-border')
       | Show less
-    block
+    +e.footer-buttons
+      block
+
+mixin inner-card-footer-suggested
+  .inner-card__footer&attributes(attributes)
+    .inner-card__footer-buttons
+      +inner-card-button('close')(href='#').btn-info-lighten Remove job from suggestions
+      +inner-card-button('check-1')(href='#') Attend this job
+      +inner-card-button('dots')(href='#', data-side="#vacancy").btn-info-darken.js-vacancy Read more
 
 mixin inner-card-button(icon, tag)
-  +e(tag||'button').button&attributes(attributes)
-    +icon(icon)
-    block
-
-mixin inner-card-expand-content
-  +e.expand-content&attributes(attributes)
-    h3 professional skills
-    +label.label-default.label-rounded.label-medium Graphic design
-    +label.label-default.label-rounded.label-medium Video design
-    +label.label-default.label-rounded.label-medium Websites
-    +label.label-default.label-rounded.label-medium Illustrations
-    +label.label-default.label-rounded.label-medium Full cycle design
-
+  +button-icon(tag).btn-info&attributes(attributes)
+    +button-icon-item(icon)
+    +button-icon-text
+      block
 
 mixin company(img, title, branch)
-  +inner-card._expandable&attributes(attributes)
+  +inner-card&attributes(attributes)
     +inner-card-full-image
     +inner-card-wrap
       +inner-card-image(img)
@@ -82,9 +84,31 @@ mixin company(img, title, branch)
           +inner-card-title= title
           +inner-card-subtitle= branch
           +inner-card-subtitle._thin._inline Los Angeles, USA
-          +inner-card-text Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999. Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
+          +inner-card-text
+            p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999. Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
     +inner-card-footer
-      +inner-card-button('dots', 'a')(href='#')._push_right Open company profile
+      +inner-card-button('dots', 'a')(href='#') Open company profile
+
+mixin company-to-attend(img, title, branch)
+  +inner-card&attributes(attributes)
+    +inner-card-full-image
+    +inner-card-wrap
+      +inner-card-image(img)
+      +inner-card-text-wrap
+        +inner-card-tags
+          time 26.06.2017
+          +label.label-primary
+            b Attented
+          +label.label-danger NEW
+        +inner-card-text-content
+          +inner-card-title= title
+          +inner-card-subtitle= branch
+          +inner-card-subtitle._thin._inline Los Angeles, USA
+          +inner-card-text
+            p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999. Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
+    +inner-card-footer
+      +inner-card-button('check-1')(href='#').btn-info-darken Attend
+      +inner-card-button('dots', 'a')(href='#') Open vacancy
 
 mixin vacancy(img, title)
   +inner-card('a')._border._shadow(href='#')&attributes(attributes)
@@ -92,22 +116,27 @@ mixin vacancy(img, title)
       +inner-card-image(img)
       +inner-card-text-wrap
         +inner-card-tags
+          time 26.06.2017
+          +label.label-danger NEW
         +inner-card-text-content
           +inner-card-title= title
           +inner-card-subtitle Designer
           +inner-card-subtitle._thin._inline Los Angeles, USA
-          +inner-card-text Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
+          +inner-card-text
+            p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
 
 mixin award(img, title, year, tag)
-  +inner-card('a')(href='#')._border._shadow&attributes(attributes)
+  +inner-card('a')(href='#')._border._shadow._free&attributes(attributes)
     +inner-card-wrap
       +inner-card-image(img)._big
       +inner-card-text-wrap
         +inner-card-tags
+          +label.label-danger NEW
         +inner-card-text-content._small
           +inner-card-title= title
           +inner-card-subtitle._thin= year
-          +inner-card-text Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
+          +inner-card-text
+            p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
 
 mixin hero(img, title, branch)
   +inner-card._hero&attributes(attributes)
@@ -115,35 +144,53 @@ mixin hero(img, title, branch)
       +inner-card-hero-image(img)
       +inner-card-text-wrap
         +inner-card-tags
+          +label.label-primary
+            b Shortlisted in:
+            | #{" "}Graphic Designers
+          +label.label-info
+            b Bought
+          +label.label-danger NEW
         +inner-card-text-content
           +inner-card-title= title
           +inner-card-subtitle= branch
           +inner-card-subtitle._thin._inline Los Angeles, USA
-          +inner-card-text Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
-          +inner-card-expand-content
+          +inner-card-text
+            p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
+            h3 professional skills
+            +label.label-rounded.label-medium Graphic design
+            +label.label-rounded.label-medium Video design
+            +label.label-rounded.label-medium Websites
+            +label.label-rounded.label-medium Illustrations
+            +label.label-rounded.label-medium Full cycle design
 
     +inner-card-footer
-      +inner-card-button('plus')(href='#')._push_right Add to shortlist
+      +inner-card-button('plus')(href='#') Add to shortlist
       +e.popover-wrap
-        +inner-card-button('check-1')(href='#')._darken.js-card-buy-contact Buy contacts
-        +card-popover-buy.__card-popover
+        +inner-card-button('check-1')(href='#').btn-info-darken.js-card-buy Buy contacts
+        +card-popover-buy.__card-popover.js-card-buy-target
+        +card-popover-contact.__card-popover
       +inner-card-button('dots', 'a')(href='#') Open profile
 
-mixin hero-to-shortlist
-  +inner-card(img, title, buy)._hero&attributes(attributes)
+mixin hero-to-shortlist(img, title, buy)
+  +inner-card&attributes(attributes)
     +inner-card-wrap
       +inner-card-hero-image(img)
       +inner-card-text-wrap
         +e.controls
           if buy
             +button.btn-secondary-warning-small Buy contact
+            a(href='#').inner-card__pick-hide
+              +icon-close
           else
-            +button-icon.btn-secondary-warning
+            +button-icon.btn-secondary-warning.btn-secondary-warning-low.__pick-hide
               +button-icon-item('message')
               +button-icon-text Start conversation
+            a(href='#').inner-card__pick-hide
+              +icon-close
+            +checkbox(true).__pick-show
         +inner-card-text-content
           +inner-card-title= title
           +inner-card-subtitle Tv star
           +inner-card-subtitle._thin._inline Los Angeles, USA
-          +inner-card-text Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
-          +inner-card-expand-content
+          +inner-card-text
+            p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.

@@ -1,7 +1,8 @@
 include ../icon/icons
+include ../button/button
 
 mixin search()
   +b.LABEL.search&attributes(attributes)
-    +e.INPUT(type='text', placeholder='Search for heroes...').input
-    +e.BUTTON(type='submit').icon
+    input(type='text', placeholder='Search for heroes...')
+    +button
       +icon('header-search')

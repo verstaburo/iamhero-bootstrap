@@ -6,18 +6,35 @@
     padding: 30px 30px 30px 55px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
+    @media (max-width: $screen-lg-max) {
+      padding: 20px 30px 30px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 15px;
+    }
 
     .select {
       width: auto;
     }
   }
 
-  &__title {
+  h3 {
     font-size: 27px;
-    margin: 0;
+    margin-top: 8px;
     font-weight: 300;
     display: flex;
     align-items: center;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: 24px;
+    }
 
     svg {
       flex-shrink: 0;
@@ -31,70 +48,89 @@
 
   &__result {
     margin-left: auto;
-  }
-
-  &__result-text {
     font-size: 23px;
     font-weight: 300;
+    margin-right: 15px;
 
-    &_uppercase {
+    h5 {
+      color: #b1bdc6;
       text-transform: uppercase;
+      font-size: 23px;
+      display: inline-block;
     }
 
-    &_color {
-
-      &_grey {
-        color: #b1bdc6;
-      }
-
-      &_warning {
-        color: $brand-warning;
-      }
-    }
-
-    &_thin {
-      font-weight: 100;
+    @media (max-width: $screen-xs-max) {
+      flex-basis: 100%;
+      margin-left: 0;
     }
   }
 
   &__controls {
     display: flex;
     align-items: center;
-  }
 
-  &__control {
-    margin-left: 15px;
+    .btn:not(:last-child), .select:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      flex-wrap: wrap;
+
+      .select, .btn {
+        margin-bottom: 10px;
+      }
+    }
   }
 
   &__input-wrap {
-    height: 55px;
     display: flex;
-  }
 
-  &__input {
-    font-size: 18px;
-    padding: 16px 15px;
-    border-width: 1px;
-    border-color: transparent;
-    border-top-color: #d8dfe4;
-    transition: border-color .25s ease-in-out;
-
-    &::placeholder {
-      color: #a6b4c1;
+    @media (max-width: $screen-md-max) {
+      flex-wrap: wrap;
     }
 
-    &:hover, &:focus {
-      border-color: #33414c;
-    }
+    input {
+      font-size: 18px;
+      padding: 16px 15px;
+      border-width: 1px;
+      border-color: transparent;
+      border-top-color: #d8dfe4;
+      transition: border-color .25s ease-in-out;
 
-    &_first {
-      flex-grow: 4;
-      padding-left: 55px;
-    }
+      @media (max-width: $screen-md-max) {
+        flex-basis: 50%;
+      }
 
-    &_second {
-      flex-grow: 1;
-      border-left-color: #d8dfe4;
+      @media (max-width: $screen-xs-max) {
+        border-left-color: #d8dfe4;
+        border-right-color: #d8dfe4;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex-basis: 100%;
+        font-size: 15px;
+      }
+
+      &::placeholder {
+        color: #a6b4c1;
+      }
+
+      &:first-of-type {
+        flex-grow: 4;
+        padding-left: 55px;
+
+        @media (max-width: $screen-lg-max) {
+          padding-left: 30px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          padding-left: 15px;
+        }
+      }
+
+      &:last-of-type {
+        flex-grow: 1;
+        border-left-color: #d8dfe4;
+      }
     }
   }
 
@@ -109,6 +145,10 @@
     font-weight: 700;
     font-size: 18px;
     color: #1d2431;
+
+    @media (max-width: $screen-md-max) {
+      flex-basis: 100%;
+    }
 
     svg {
       width: 20px;
@@ -133,6 +173,14 @@
   &__tag-wrap {
     background-color: #d8dfe4;
     padding: 10px 55px 0;
+
+    @media (max-width: $screen-lg-max) {
+      padding-left: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding-left: 15px;
+    }
 
     .label {
       margin-right: 10px;

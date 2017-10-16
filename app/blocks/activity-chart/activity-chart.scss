@@ -1,50 +1,16 @@
+.chartjs-tooltip {
+  opacity: 1;
+  position: absolute;
+  color: #ffc425;
+  font-weight: 600;
+  transition: all .1s ease;
+  pointer-events: none;
+  transform: translate(-50%, -25px);
+  padding: 4px;
+  font-family: $font-family-base;
+}
+
 .activity-chart {
-  display: block;
-  margin-left: -45px;
-
-  .ct-bar {
-    stroke-width: 5px;
-    stroke: rgba(255, 255, 255, .28);
-    transition: stroke .25s ease-in-out;
-    stroke-linecap: round;
-    transform: translateY(-2px);
-    cursor: pointer;
-
-    &:hover {
-      stroke: #fff;
-    }
-  }
-
-  .ct-grid.ct-horizontal {
-
-    &:first-of-type {
-      stroke-width: 1px;
-      stroke: #fff;
-    }
-
-    & + .ct-vertical {
-      stroke-width: 1px;
-      stroke: rgba(255, 255, 255, .18);
-    }
-  }
-
-  .ct-label.ct-vertical {
-    display: none;
-  }
-
-  .ct-label.ct-horizontal.ct-end {
-    font-family: $font-family-open-sans;
-    font-size: 9px;
-    color: #fff;
-    display: block;
-    text-align: center;
-  }
-
-  .ct-grids + g {
-    transform: translateX(-10px);
-
-    @media (min-width: $screen-xxl-min) {
-      transform: translateX(-16px);
-    }
-  }
+  overflow-x: hidden;
+  position: relative;
 }

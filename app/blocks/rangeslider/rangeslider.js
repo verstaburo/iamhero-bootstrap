@@ -24,33 +24,17 @@ export default () => {
     if (output.length) {
       output.html(value + '%');
     }
+
+    var outputSalary = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-salary');
+    if (outputSalary.length) {
+      outputSalary.html(value + ' $/h');
+    }
+
     var outputCustom = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-custom');
     if (outputCustom.length) {
       outputCustom.html(value);
       var handlerPosition = outputCustom.siblings('.rangeslider').find('.rangeslider__handle').css('left');
       outputCustom.css('left', handlerPosition);
-    }
-
-    var outputCustomPercent = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-custom-percent');
-    if (outputCustomPercent.length) {
-      var outputCustomPercentLabel = outputCustomPercent.siblings('.rangeslider-wrap__label');
-
-      outputCustomPercent.html(value + '%');
-
-      function outputCustomRecalc() {
-        var handlerPosition = outputCustomPercent.siblings('.rangeslider').find('.rangeslider__handle').css('left');
-
-        if(parseInt(handlerPosition, 10) < outputCustomPercentLabel.outerWidth() + 15) {
-          outputCustomPercent.removeClass('moveable');
-        } else {
-          outputCustomPercent.addClass('moveable');
-          outputCustomPercent.css('left', handlerPosition);
-        }
-      }
-
-      outputCustomRecalc();
-
-      $(window).on('resize', outputCustomRecalc);
     }
   }
 

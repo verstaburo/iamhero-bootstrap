@@ -15,7 +15,6 @@ include ../rangesliders/rangesliders
 include ../timeline/timeline
 include ../../blocks/service/service
 include ../../blocks/thumbnail/thumbnail
-include ../../blocks/input-markup/input-markup
 include ../../blocks/select/select
 
 mixin plate-avatar(src)
@@ -45,7 +44,7 @@ mixin avatar-plate-static
     +e.info-col
       +logo(true).__logo
       +e.hero-form
-        +e.H2.header Mark Marthell
+        +e.H2.header.responsive-font Mark Marthell
         h5 Los Angeles, USA
         h4 Singer, Producer, Interpreneur
         p Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate Jason Germain and a few close friends in 1999.
@@ -220,8 +219,8 @@ mixin resume-plate(edit)
           h4 Univercity Of Creative art Rocherster Great Britain
           p Graduated as a grapchic design bachelor
     if edit
-      +input-markup.__top-30
-        +button-add(data-toggle="modal", data-target="#resumeModal").__item_push_right Add new point
+      .summary-btn.plate__top-30
+        +button-add(data-toggle="modal", data-target="#resumeModal") Add new point
 
 mixin services-plate
   +plate#services
@@ -332,33 +331,29 @@ mixin social-plate-static
           h2 Instagram
             +icon-close.social-content__close
           p Link your profile with Instagram and upload photos!
-          +input-markup
-            +input-markup-item._push_right
-              +button-add Connect to Instagram
+          .summary-btn
+            +button-add Connect to Instagram
       +tab-pane#facebook
         +plate
           h2 Facebook
             +icon-close.social-content__close
           p Link your profile with Instagram and upload photos!
-          +input-markup
-            +input-markup-item._push_right
-              +button-add Connect to Facebook
+          .summary-btn
+            +button-add Connect to Facebook
       +tab-pane#youtube
         +plate
           h2 Youtube
             +icon-close.social-content__close
           p Link your profile with Instagram and upload photos!
-          +input-markup
-            +input-markup-item._push_right
-              +button-add Connect to Youtube
+          .summary-btn
+            +button-add Connect to Youtube
       +tab-pane#pinterest
         +plate
           h2 Pinterest
             +icon-close.social-content__close
           p Link your profile with Instagram and upload photos!
-          +input-markup
-            +input-markup-item._push_right
-              +button-add Connect to Pinterest
+          .summary-btn
+            +button-add Connect to Pinterest
 
 mixin social-plate
   +plate._no-padding._relative._mobile-flex#activities

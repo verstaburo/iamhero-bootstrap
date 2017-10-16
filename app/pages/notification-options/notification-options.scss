@@ -1,12 +1,18 @@
 .notification-options {
   display: flex;
-  flex-flow: column wrap;
-  max-height: 225px;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+
+  @media (max-width: $screen-md-max) {
+    flex-direction: column;
+  }
+
+  .checkbox + .checkbox {
+    margin-top: 0;
+  }
 
   &__item {
-
-    &:nth-child(4n) {
-      margin-top: 0;
-    }
+    flex-basis: 40%;
+    margin-bottom: 25px !important;
   }
 }

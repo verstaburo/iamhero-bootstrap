@@ -19,7 +19,7 @@ export default() => {
     }
   }
 
-  function shrinkToFill(input, fontSize, fontWeight, fontFamily) {
+  window.shrinkToFill =  function (input, fontSize, fontWeight, fontFamily) {
     if (!input.length) {
       return;
     }
@@ -47,9 +47,9 @@ export default() => {
     }
   }
 
-  shrinkToFill($('.responsive-font'), 53, "100", "Museo Sans, sans-serif");
+  shrinkToFill($('.responsive-font'), 53, 100, "Museo Sans, sans-serif");
 
   $(document).on('input', '.responsive-font', function () {
-    shrinkToFill($(this), 53, "100", "Museo Sans, sans-serif");
+    shrinkToFill($(this), 53, 100, "Museo Sans, sans-serif");
   });
 };

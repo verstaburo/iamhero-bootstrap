@@ -11,6 +11,10 @@ mixin button-icon-text
 mixin button-icon-item(icon)
   +icon(icon).__item&attributes(attributes)
 
+mixin button-icon-label
+  +e.SPAN.label&attributes(attributes)
+    block
+
 mixin button-add
   +button-icon.btn-default&attributes(attributes)
     +button-icon-item('plus')._stroke_white._big

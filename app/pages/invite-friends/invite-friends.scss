@@ -4,7 +4,7 @@
   &__card {
 
     &:not(:first-child) {
-      @media (max-width: $screen-sm-max) {
+      @media (max-width: $screen-md-max) {
         margin-top: 40px;
       }
 

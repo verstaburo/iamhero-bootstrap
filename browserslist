@@ -4,5 +4,5 @@ safari>=9
 ie>=11
 edge>=12
 opera>=45
-iOS>=8
+iOS>=6
 and_chr>=59

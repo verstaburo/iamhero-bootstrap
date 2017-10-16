@@ -21,9 +21,9 @@
             </a>
         </div>
         <div class="inner-header__col inner-header__search">
-            <label class="search search_dark">
-                <input class="search__input" type="text" placeholder="Search for heroes..." />
-                <button class="search__icon" type="submit">
+            <label class="search">
+                <input type="text" placeholder="Search for heroes..." />
+                <button class="btn">
                     <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
                 </button>
             </label>
@@ -156,13 +156,14 @@
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Search</span>
+            <span class="inner-sidebar__hint">Hero Search</span>
         </li>
         <li class="inner-sidebar__item active">
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Shortlists</span>
+            <span class="inner-sidebar__hint">Shortlists (
+                <span class="text-warning">14</span>)</span>
         </li>
         <li class="inner-sidebar__item">
             <a href="#">
@@ -208,7 +209,7 @@
                 </div>
                 <span>Specify Parameters for system to suggest you Heroes</span>
             </div>
-            <a class="btn btn-secondary-warning btn-secondary-warning-medium btn-font-white font-weight-medium" href="#">Save</a>
+            <a class="btn btn-secondary-warning btn-secondary-warning-medium" href="#">Save</a>
         </div>
         <div class="page__section">
             <div class="row">
@@ -218,38 +219,40 @@
                             <h4>WORKING FIELDS</h4>
                             <p>This section allows you to choose working field of Heroes you are interested of.</p>
                         </div>
-                        <div class="inner-plate__form">
-                            <select class="js-select select select_big select_warning" placeholder="Working field">
-                                <option value="">Working field</option>
-                                <option value="1">Graphic Designer</option>
-                                <option value="2">Designer</option>
-                                <option value="3">Graphic Artist</option>
-                            </select>
-                            <button class="btn btn-secondary-warning">Add to list</button>
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <select class="js-select2 select select_big select_warning" placeholder="Working field">
+                                    <option value="">Working field</option>
+                                    <option value="1">Graphic Designer</option>
+                                    <option value="2">Designer</option>
+                                    <option value="3">Graphic Artist</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-secondary-warning form-inline-btn">Add to list</button>
                         </div>
                         <div class="inner-plate__tag-container">
-                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Designer
+                            <span class="label label-primary-close">Graphic Designer
                                 <a href="#">
                                     <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </a>
                             </span>
-                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Designer
+                            <span class="label label-primary-close">Designer
                                 <a href="#">
                                     <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </a>
                             </span>
-                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Artist
+                            <span class="label label-primary-close">Graphic Artist
                                 <a href="#">
                                     <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </a>
                             </span>
-                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Design
+                            <span class="label label-primary-close">Design
                                 <a href="#">
                                     <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </a>
                             </span>
                         </div>
-                        <span class="label label-rounded label-medium label-close label-bg-dark label-font-white label-close-rounded label-close-warning label-close-hover-warning">Clear all search criteria
+                        <span class="label label-primary-close label-primary-close-dark">Clear all search criteria
                             <a href="#">
                                 <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                             </a>
@@ -261,50 +264,40 @@
                                 <h4>Employment PARAMETERS</h4>
                             </div>
                             <div class="inner-plate__control-container">
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                                    <span class="checkbox__box">
-                                        <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                                    </span>
-                                    <span class="checkbox__text">Part time</span>
-                                </label>
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                                    <span class="checkbox__box">
-                                        <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                                    </span>
-                                    <span class="checkbox__text">Full time</span>
-                                </label>
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" value="" name="" />
-                                    <span class="checkbox__box">
-                                        <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                                    </span>
-                                    <span class="checkbox__text">Freelance</span>
-                                </label>
-                                <label class="checkbox">
-                                    <input class="checkbox__input" type="checkbox" value="" name="" />
-                                    <span class="checkbox__box">
-                                        <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                                    </span>
-                                    <span class="checkbox__text">Season job</span>
-                                </label>
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" value="" name="" checked="checked" />Part time</label>
+                                </div>
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" value="" name="" checked="checked" />Full time</label>
+                                </div>
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" value="" name="" />Freelance</label>
+                                </div>
+                                <div class="checkbox-inline">
+                                    <label>
+                                        <input type="checkbox" value="" name="" />Season job</label>
+                                </div>
                             </div>
                         </div>
                         <div class="inner-plate__section">
                             <div class="inner-plate__text">
                                 <h4>WORKING GRAPHIC</h4>
                             </div>
-                            <div class="inner-plate__form">
-                                <div class="form-group form-group-with-addon inner-plate__form-first-item">
+                            <div class="form-inline">
+                                <div class="form-group form-group-with-addon form-group-lg">
                                     <input class="form-control form-control-warning" type="text" placeholder="38" />
                                     <div class="input-group-addon">h</div>
                                 </div>
-                                <select class="js-select select select_big select_warning inner-plate__form-second-item" placeholder="">
-                                    <option value="1">Weekly</option>
-                                    <option value="2">Monthly</option>
-                                    <option value="3">Daily</option>
-                                </select>
+                                <div class="form-group form-group-offset">
+                                    <select class="js-select select select_big select_warning" placeholder="">
+                                        <option value="1">Weekly</option>
+                                        <option value="2">Monthly</option>
+                                        <option value="3">Daily</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="inner-plate__section">
@@ -312,42 +305,41 @@
                                 <h4>GEOGRAPHY</h4>
                             </div>
                             <div class="inner-plate__control-container">
-                                <label class="radio radio_warning">
-                                    <input class="radio__input" type="radio" name="geo" value="" checked="checked" />
-                                    <span class="radio__box"></span>
-                                    <span class="radio__text">Anywhere</span>
-                                </label>
-                                <label class="radio radio_warning">
-                                    <input class="radio__input" type="radio" name="geo" value="" />
-                                    <span class="radio__box"></span>
-                                    <span class="radio__text">Specific radius from</span>
-                                </label>
-                                <label class="radio radio_warning">
-                                    <input class="radio__input" type="radio" name="geo" value="" />
-                                    <span class="radio__box"></span>
-                                    <span class="radio__text">Specific locations</span>
-                                </label>
+                                <div class="radio-inline radio-inline_warning">
+                                    <label>
+                                        <input type="radio" name="geo" value="" checked="checked" />Anywhere</label>
+                                </div>
+                                <div class="radio-inline radio-inline_warning">
+                                    <label>
+                                        <input type="radio" name="geo" value="" />Specific radius from</label>
+                                </div>
+                                <div class="radio-inline radio-inline_warning">
+                                    <label>
+                                        <input type="radio" name="geo" value="" />Specific locations</label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-24 col-xxl-12">
-                    <div class="inner-plate">
+                    <div class="inner-plate page__section page__section page__section_lg">
                         <div class="inner-plate__text">
                             <h4>PROFESSION</h4>
                             <p>Specify the profession of the Hero</p>
                         </div>
-                        <div class="inner-plate__form">
-                            <select class="js-select select select_big select_warning" placeholder="Choose profession">
-                                <option value="">Choose profession</option>
-                                <option value="1">Graphic Designer</option>
-                                <option value="2">Designer</option>
-                                <option value="3">Graphic Artist</option>
-                            </select>
-                            <button class="btn btn-secondary-warning">Add to list</button>
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <select class="js-select2 select select_big select_warning" placeholder="Choose profession">
+                                    <option value="">Choose profession</option>
+                                    <option value="1">Graphic Designer</option>
+                                    <option value="2">Designer</option>
+                                    <option value="3">Graphic Artist</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-secondary-warning form-inline-btn">Add to list</button>
                         </div>
                         <div class="inner-plate__tag-container">
-                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Designer
+                            <span class="label label-primary-close">Graphic Designer
                                 <a href="#">
                                     <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </a>
@@ -359,16 +351,18 @@
                             <h4>DESIRED SALARY</h4>
                             <p>Specify maximal salary for your employer. If not specified shows everyone</p>
                         </div>
-                        <div class="inner-plate__form">
-                            <div class="form-group form-group-with-addon inner-plate__form-first-item">
+                        <div class="form-inline">
+                            <div class="form-group form-group-with-addon form-group-lg">
                                 <input class="form-control form-control-warning" type="text" placeholder="Maximum amount" />
                                 <div class="input-group-addon">$</div>
                             </div>
-                            <select class="js-select select select_big select_warning inner-plate__form-second-item" placeholder="">
-                                <option value="1">Annual</option>
-                                <option value="2">test-1</option>
-                                <option value="3">test-2</option>
-                            </select>
+                            <div class="form-group form-group-offset">
+                                <select class="js-select select select_big select_warning inner-plate__form-second-item" placeholder="">
+                                    <option value="1">Annual</option>
+                                    <option value="2">test-1</option>
+                                    <option value="3">test-2</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="inner-plate page__section">
@@ -376,33 +370,35 @@
                             <h4>TAGS</h4>
                             <p>We’ll try to find something for you within specific tags.</p>
                         </div>
-                        <form class="inner-plate__form">
-                            <input class="form-control" type="text" placeholder="Write tag" />
-                            <button class="btn btn-secondary-warning">Add to list</button>
-                        </form>
+                        <div class="form-inline">
+                            <div class="form-group form-group-lg">
+                                <input class="form-control" type="text" placeholder="Write tag" />
+                            </div>
+                            <button class="btn btn-secondary-warning form-inline-btn">Add to list</button>
+                        </div>
                         <div class="inner-plate__tag-container">
-                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Designer
+                            <span class="label label-primary-close">Graphic Designer
                                 <a href="#">
                                     <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </a>
                             </span>
-                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Designer
+                            <span class="label label-primary-close">Designer
                                 <a href="#">
                                     <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </a>
                             </span>
-                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Graphic Artist
+                            <span class="label label-primary-close">Graphic Artist
                                 <a href="#">
                                     <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </a>
                             </span>
-                            <span class="label label-bg-grey label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded label-close-warning font-weight-medium">Design
+                            <span class="label label-primary-close">Design
                                 <a href="#">
                                     <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                 </a>
                             </span>
                         </div>
-                        <span class="label label-rounded label-medium label-close label-bg-dark label-font-white label-close-rounded label-close-warning label-close-hover-warning">Clear all tags
+                        <span class="label label-primary-close label-primary-close-dark">Clear all tags
                             <a href="#">
                                 <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                             </a>
@@ -425,7 +421,7 @@
     <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
-    <script src="assets/scripts/libs/chartist.min.js"></script>
+    <script src="assets/scripts/libs/chart.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

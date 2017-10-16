@@ -2,22 +2,59 @@
   display: block;
   padding: 35px 0 20px 55px;
   background-image: linear-gradient(270deg, #1b202d 0, #465d75 55%, #59bba0);
+  overflow-x: hidden;
+
+  .activity-chart {
+    min-width: 500px;
+  }
+
+  &_secondary {
+    padding: 45px 0 35px 60px;
+
+    h3 {
+      font-size: 23px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: 35px;
+    padding-left: 35px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    padding: 20px 0 20px 20px;
+  }
 
   &__header {
     padding-right: 55px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @media (max-width: $screen-sm-max) {
+      padding-right: 20px;
+      flex-direction: column;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+    }
   }
 
-  &__heading {
+  h3 {
     font-size: 35px;
     margin: 0;
     font-weight: 500;
     color: #fff;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 30px;
+    }
   }
 
-  &__link {
+  a {
     color: #fff;
     font-size: 15px;
     font-family: $font-family-open-sans;
@@ -31,21 +68,21 @@
       fill: #ffc425;
       margin-right: 8px;
     }
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: auto;
+    }
   }
 
-  &__info {
+  p {
     padding-right: 55px;
-    margin: 0;
+    margin-bottom: 0;
     color: #90c8bf;
-  }
+    margin-top: 20px;
+    margin-left: 10px;
 
-  &_secondary {
-    padding: 45px 0 35px 60px;
-
-    .activity-meter__heading {
-      font-size: 23px;
-      text-transform: uppercase;
-      font-weight: 300;
+    @media (max-width: $screen-sm-max) {
+      padding-right: 20px;
     }
   }
 }

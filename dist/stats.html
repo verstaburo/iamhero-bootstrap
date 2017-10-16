@@ -21,9 +21,9 @@
             </a>
         </div>
         <div class="inner-header__col inner-header__search">
-            <label class="search search_dark">
-                <input class="search__input" type="text" placeholder="Search for heroes..." />
-                <button class="search__icon" type="submit">
+            <label class="search">
+                <input type="text" placeholder="Search for heroes..." />
+                <button class="btn">
                     <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
                 </button>
             </label>
@@ -156,13 +156,14 @@
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Search</span>
+            <span class="inner-sidebar__hint">Hero Search</span>
         </li>
         <li class="inner-sidebar__item active">
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Shortlists</span>
+            <span class="inner-sidebar__hint">Shortlists (
+                <span class="text-warning">14</span>)</span>
         </li>
         <li class="inner-sidebar__item">
             <a href="#">
@@ -220,12 +221,15 @@
             <div class="col-xxl-12">
                 <div class="activity-meter activity-meter_secondary">
                     <div class="activity-meter__header">
-                        <h3 class="activity-meter__heading">Month activity meter</h3>
-                        <a class="activity-meter__link" href="#">
-                            <svg><use xlink:href="assets/images/icon.svg#icon_boost"></use></svg>BOOST ME UP</a>
+                        <h3>Month activity meter</h3>
+                        <A href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_boost"></use></svg>BOOST ME UP</A>
                     </div>
-                    <div class="activity-chart"></div>
-                    <p class="activity-meter__info">This graph is based on overall company profile view per day and shows amount of unique visitors</p>
+                    <div class="activity-chart">
+                        <canvas width="500" height="140" id="activityChart"></canvas>
+                        <div class="chartjs-tooltip" id="tooltip-0"></div>
+                    </div>
+                    <p>This graph is based on overall company profile view per day and shows amount of unique visitors</p>
                 </div>
                 <div class="inner-plate page__section">
                     <div class="inner-plate__text">
@@ -234,37 +238,37 @@
                     <p>If you want to keep your potential employees informed about possibilities and opportunities of your company you need to focus on compliting your profile. Here’s your stats by now.</p>
                     <div class="rangeslider-wrap rangeslider-wrap_warning-big inner-plate__slider inner-plate__slider_big">
                         <span class="rangeslider-wrap__label">Overal Profile complete</span>
-                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <span class="rangeslider-wrap__output"></span>
                         <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="50" />
                     </div>
                     <div class="rangeslider-wrap inner-plate__slider">
                         <span class="rangeslider-wrap__label">Phylosophy</span>
-                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <span class="rangeslider-wrap__output"></span>
                         <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="100" />
                     </div>
                     <div class="rangeslider-wrap inner-plate__slider">
                         <span class="rangeslider-wrap__label">Vacancies</span>
-                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <span class="rangeslider-wrap__output"></span>
                         <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="0" />
                     </div>
                     <div class="rangeslider-wrap inner-plate__slider">
                         <span class="rangeslider-wrap__label">Branch</span>
-                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <span class="rangeslider-wrap__output"></span>
                         <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="45" />
                     </div>
                     <div class="rangeslider-wrap inner-plate__slider">
                         <span class="rangeslider-wrap__label">Phylosophy</span>
-                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <span class="rangeslider-wrap__output"></span>
                         <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="100" />
                     </div>
                     <div class="rangeslider-wrap inner-plate__slider">
                         <span class="rangeslider-wrap__label">Vacancies</span>
-                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <span class="rangeslider-wrap__output"></span>
                         <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="0" />
                     </div>
                     <div class="rangeslider-wrap inner-plate__slider">
                         <span class="rangeslider-wrap__label">Branch</span>
-                        <span class="rangeslider-wrap__output-custom-percent"></span>
+                        <span class="rangeslider-wrap__output"></span>
                         <input class="rangeslider_static rangeslider_warning" type="range" min="0" max="100" step="1" value="45" />
                     </div>
                 </div>
@@ -353,7 +357,7 @@
     <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
-    <script src="assets/scripts/libs/chartist.min.js"></script>
+    <script src="assets/scripts/libs/chart.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

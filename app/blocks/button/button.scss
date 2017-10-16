@@ -95,6 +95,7 @@
     font-size: 16px;
     padding: 3px 20px;
     border-width: 2px;
+    background-color: #fff;
 
     svg {
       transition: stroke .25s ease-in-out;
@@ -105,6 +106,10 @@
       svg {
         stroke: #fff;
       }
+    }
+
+    &:focus {
+      color: inherit;
     }
   }
 
@@ -147,5 +152,41 @@
 
   &-font-white {
     color: #fff;
+  }
+
+  &-info {
+    padding: 10.5px 20px 14.5px;
+    border-radius: 0;
+    font-size: 22px;
+    font-weight: 300;
+
+    &-darken {
+      background-color: #1e2d40;
+    }
+
+    &-lighten {
+      background-color: #465e75;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 16px;
+    }
+
+    svg {
+      width: 24px;
+      height: 20px;
+      stroke: $brand-warning;
+      margin-right: 20px;
+      transition: stroke .25s ease-in-out;
+    }
+
+    &:hover, &:active, &.active, &.active:hover,  &.active:focus {
+      background-color: $brand-warning;
+      color: #263446;
+
+      svg {
+        stroke: #3b4d62;
+      }
+    }
   }
 }

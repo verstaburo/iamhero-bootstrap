@@ -4,9 +4,9 @@ include ../../blocks/icon/icons
 mixin activity-meter()
   +b.activity-meter&attributes(attributes)
     +e.header
-      +e.H3.heading Month activity meter
-      +e.A(href='#').link
+      h3 Month activity meter
+      A(href='#')
         +icon('boost')
         | BOOST ME UP
     +activity-chart
-    +e.P.info This graph is based on overall company profile view per day and shows amount of unique visitors
+    p This graph is based on overall company profile view per day and shows amount of unique visitors

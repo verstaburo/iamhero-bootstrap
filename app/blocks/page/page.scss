@@ -16,13 +16,47 @@
     }
   }
 
+  &__summary-btn {
+    width: 100%;
+
+    @media (min-width: $screen-lg-min) {
+      width: 70vw;
+      text-align: left;
+    }
+  }
+
+  &__header-custom {
+    display: flex;
+    align-items: flex-start;
+
+    svg {
+      width: 35px;
+      height: 28px;
+      stroke: #465d74;
+      margin-right: 25px;
+      fill: none;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 35px;
+      margin: 0;
+      line-height: 1;
+    }
+  }
+
   &_inner-big {
     padding-top: 103px;
     padding-left: 440px;
     padding-right: 55px;
 
     @media (max-width: $screen-lg-max) {
-      padding-left: 110px;
+      padding-left: 375px;
+      padding-right: 35px;
+    }
+
+    @media (max-width: $screen-md-max) {
+      padding-top: 90px;
     }
 
     @media (max-width: $screen-sm-max) {
@@ -37,7 +71,8 @@
     padding: 43px 55px 90px 440px;
 
     @media (max-width: $screen-lg-max) {
-      padding-left: 110px;
+      padding-left: 375px;
+      padding-right: 35px;
     }
 
     @media (max-width: $screen-sm-max) {
@@ -69,7 +104,7 @@
     overflow-x: hidden;
     position: relative;
 
-    @media (max-width: 1720px) {
+    @media (min-width: $screen-xl-min) and (max-width: 1720px) {
 
       &::after {
         content: '';
@@ -82,6 +117,42 @@
         pointer-events: none;
         z-index: 2;
       }
+    }
+
+    h3 {
+      @media (max-width: $screen-xs-max) {
+        font-size: 25px;
+      }
+    }
+
+    .page__col-left > h2, {
+      margin-top: 75px;
+      margin-bottom: 0;
+
+      @media (max-width: $screen-sm-max) {
+        padding-left: 20px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 30px;
+        font-size: 35px;
+        padding-left: 40px;
+      }
+    }
+
+    .page__header-custom {
+
+      h2 {
+        @media (max-width: $screen-xs-max) {
+          margin-top: 90px;
+          padding-left: 0;
+          font-size: 35px;
+        }
+      }
+    }
+
+    .rate-form {
+      margin-top: 45px;
     }
   }
 
@@ -97,6 +168,20 @@
 
     @media (min-width: 1920px) {
       width: calc(100% - 720px);
+    }
+
+    @media (max-width: $screen-lg-max) {
+      padding-right: 55px;
+    }
+
+    @media (max-width: $screen-md-max) {
+      padding-bottom: 125px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 75px;
     }
   }
 
@@ -192,6 +277,10 @@
 
   &__card {
     margin-top: 50px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 25px;
+    }
   }
 
   &__section {
@@ -201,17 +290,31 @@
       margin-top: 60px;
     }
 
+    &_lg {
+      margin-top: 0;
+
+      @media (max-width: $screen-lg-max) {
+        margin-top: 40px;
+      }
+    }
+
     @media (max-width: $screen-xs-max) {
       margin-top: 35px;
     }
   }
 
-  &__header {
-    margin-top: 75px;
-    margin-bottom: 0;
-  }
-
   &__company-menu {
     margin-top: 55px;
+  }
+
+  &__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#1d2430, .54);
+    display: none;
+    z-index: 3;
   }
 }

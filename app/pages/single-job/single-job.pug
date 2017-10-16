@@ -4,19 +4,20 @@ include ../../blocks/job-card/job-card
 include ../../components/plates/plates
 include ../../blocks/bg-image/bg-image
 include ../../blocks/icon/icons
+include ../../blocks/inner-card/inner-card
 
 block head
   - var pageTitle = 'I Am Hero - Single job'
 
 block content
-  +page._inner-standart
+  +page._inner-standart.single-job
     +bg-image('single-job/bg.jpg').__top-bg._overlay_none._inner
     +e.company.container
       .row
         .col-xxl-offset-3.col-xxl-7.col-lg-8.page__sidebar-wrap.page__sidebar-wrap_no-margin
           +job-card-left
         .col-xxl-11.col-lg-16
-          +job-card
+          +plate._no-padding
             +e.content
               h2 Industrial Designer at BS Company
 
@@ -26,33 +27,30 @@ block content
 
               p At BS Company, we place a high emphasis on design. Like our customers, we value the time and work that goes into creating and manufacturing products that are innovative and aesthetically pleasing. A commitment to providing our customers with the best has positioned BS Company at the forefront of our industry. From our events to our renowned world tours, our supporters feel a sense of pride in the standards we uphold.
 
-              +bg-image('company-profile/history.jpg').__media-item
+              img(src="assets/images/company-profile/history.jpg")
 
               p At BS Company, we place a high emphasis on design. Like our customers, we value the time and work that goes into creating and manufacturing products that are innovative and aesthetically pleasing. A commitment to providing our customers with the best has positioned BS Company at the forefront of our industry. From our events to our renowned world tours, our supporters feel a sense of pride in the standards we uphold.
 
-              +e.media-item
-                //- +e.media-video-control
+              +e.content-media
                 iframe(src="https://www.youtube.com/embed/S1LbZjGGiPo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
             +e.map#map-job
 
-          +job-card.__section._big
+          +plate._no-padding.__section._big
             +e.content
               h2 Challenges
               p BS Company is dedicated to providing quality wheels and lifestyle products for those who value excellence.
               p Our brand aims to reflect a passion for ingenuity and a desire to impact not only the automotive world, but culture at large.
               p At BS Company, we place a high emphasis on design. Like our customers, we value the time and work that goes into creating and manufacturing products that are innovative and aesthetically pleasing. A commitment to providing our customers with the best has positioned BS Company at the forefront of our industry. From our events to our renowned world tours, our supporters feel a sense of pride in the standards we uphold.
-          +job-card.__section._big
+          +plate._no-padding.__section._big
             +e.content
               h2 Required Skills
               +job-card-list
-          +job-card.__section._big
+          +plate._no-padding.__section._big
             +e.content
               h2 Duties
               +job-card-list
-          +job-card.__section._big
+          +plate._no-padding.__section._big
             +e.content
               h2 We offer
               +job-card-list
-          +e.A(href='#').summary-btn.__section._big.inner-card__button
-            +icon('check-1')
-            | Attend
+          +inner-card-button('check-1')(href='#').btn-info-darken.__summary-btn.__section._big Attend

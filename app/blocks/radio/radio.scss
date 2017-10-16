@@ -1,16 +1,22 @@
-.radio {
-  display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
+.radio, .radio-inline {
+  padding-left: 25px;
 
-  &__input {
+  label {
+    color: $gray;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: -.04em;
+    transition: color .25s ease-in-out;
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  input {
     display: none;
-    pointer-events: none;
 
     &:checked {
 
-      & + .radio__box {
+      & + .radio-box {
 
         &::before {
           transform: scale(1);
@@ -23,7 +29,11 @@
     }
   }
 
-  &__box {
+  &-box {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,18 +54,9 @@
     }
   }
 
-  &__text {
-    color: $gray;
-    display: inline-block;
-    margin-left: 9px;
-    font-size: 16px;
-    letter-spacing: -.04em;
-    transition: color .25s ease-in-out;
-  }
-
   &_warning {
 
-    .radio__box {
+    .radio-box {
       width: 20px;
       height: 20px;
 

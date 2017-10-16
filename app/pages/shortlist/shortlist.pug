@@ -4,6 +4,8 @@ include ../../components/aside-filter/aside-filter
 include ../../components/search-form/search-form
 include ../../blocks/inner-plate/inner-plate
 include ../../blocks/inner-card/inner-card
+include ../../blocks/checkbox/checkbox
+include ../../components/side-modals/side-modals
 
 block head
   - var pageTitle = 'I Am Hero - Shortlist'
@@ -20,15 +22,19 @@ block aside-filter
         +aside-filter-shortlist-item('22')._bordered Project management
 
 block content
-  +page._inner-medium
+  +page._inner-medium.shortlist
+    +e.overlay.shortlist__overlay
+      p Choose heroest you want to add to mass message
+      +checkbox-inline(true)
     +search-form
-    +hero('1.jpg', 'David Allandu', 'Singer, Producer, Interpreneur')
-    +hero('2.jpg', 'Alan Maier', 'Tv star')
-    +hero('3.jpg', 'Jamelia Freeman', 'Tv star')
-    +hero('4.jpg', 'Katy Moon', 'Tv star')
-    +hero('5.jpg', 'Adelina Mauer', 'Singer, Producer, Interpreneur')
-    +hero('6.jpg', 'Laura Benneton', 'Tv star')
-    +hero('7.jpg', 'James Malovich', 'Tv star')
-    +hero('8.svg', 'Andriano Colleti', 'Tv star')
-    +hero('9.jpg', 'Alexandr Benua', 'Singer, Producer, Interpreneur')
-    +hero('10.jpg', 'Jeremy Clarckson', 'Tv star')
+    +side-modal-messages.shortlist__modal
+    +hero-to-shortlist('1.jpg', 'David Allandu')
+    +hero-to-shortlist('2.jpg', 'Alan Maier', true)
+    +hero-to-shortlist('3.jpg', 'Jamelia Freeman')
+    +hero-to-shortlist('4.jpg', 'Katy Moon', true)
+    +hero-to-shortlist('5.jpg', 'Adelina Mauer')
+    +hero-to-shortlist('6.jpg', 'Laura Benneton')
+    +hero-to-shortlist('7.jpg', 'James Malovich')
+    +hero-to-shortlist('8.svg', 'Andriano Colleti')
+    +hero-to-shortlist('9.jpg', 'Alexandr Benua')
+    +hero-to-shortlist('10.jpg', 'Jeremy Clarckson')

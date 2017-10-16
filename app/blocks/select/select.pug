@@ -5,6 +5,13 @@ mixin select(data, placeholder)
     each option in data
       option(value=option.value||'')= option.text
 
+mixin select2(data, placeholder)
+  +b.SELECT(placeholder=placeholder||'').js-select2.select&attributes(attributes)
+    if placeholder
+      option(value='')= placeholder
+    each option in data
+      option(value=option.value||'')= option.text
+
 mixin select-filter(data, placeholder)
   +b.SELECT(placeholder=placeholder||'').js-select.select&attributes(attributes)
     if placeholder

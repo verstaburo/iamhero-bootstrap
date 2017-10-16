@@ -2,7 +2,6 @@ include ../plates/plates
 include ../../blocks/thumbnail/thumbnail
 include ../../blocks/label/label
 include ../../blocks/button/button
-include ../../blocks/input-markup/input-markup
 include ../../blocks/button-icon/button-icon
 include ../../blocks/select/select
 
@@ -18,9 +17,8 @@ mixin cases(edit)
           +label-default-medium(data-filter='.retouching').hidden-xs.js-case-filter Retouching
           +select([{value: '*', text: 'All'},{value: '.design', text: 'Design'},{value: '.illustration', text: 'Illustration'},{value: '.retouching', text: 'Retouching'}]).js-case-filter-mobile
       if edit
-        +input-markup.__top-30
-          +input-markup-item._push_right
-            +button-add(data-toggle="modal", data-target="#caseModal") Add new case
+        .summary-btn.plate__top-30
+          +button-add(data-toggle="modal", data-target="#caseModal") Add new case
     .row.isotope
       .col-md-8.col-sm-12.isotope-item.design.illustration
         +thumbnail.thumbnail-case.sr-animate

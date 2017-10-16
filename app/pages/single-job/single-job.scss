@@ -1,3 +1,10 @@
 .single-job {
   display: block;
+  overflow-x: hidden;
+
+  .plate:first-child {
+    @media (min-width: $screen-lg-min) {
+      margin-top: 0;
+    }
+  }
 }

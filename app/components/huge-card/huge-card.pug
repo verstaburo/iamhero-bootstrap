@@ -1,8 +1,9 @@
 include ../../blocks/bg-image/bg-image
 include ../../blocks/map/map
 include ../../blocks/label/label
+include ../../blocks/inner-card/inner-card
 
-mixin huge-card(bigImg, img, title)
+mixin huge-card(bigImg, img, title, mapId)
   +b.huge-card&attributes(attributes)
     +bg-image(bigImg).__image
     +e.tags
@@ -11,7 +12,7 @@ mixin huge-card(bigImg, img, title)
     +b.company-profile-card
       +e.content
         .row
-          .col-sm-6.col-xs-18.col-xs-offset-3.col-sm-offset-0
+          .col-sm-6.col-xs-24
             +bg-image(img).__logo
           .col-sm-18.col-xs-24
             h2= title
@@ -23,4 +24,5 @@ mixin huge-card(bigImg, img, title)
             +e.A(href='#').contact-link
               | example.com
       +e.map
-        +map
+        +b.map(id=mapId)
+    +inner-card-footer-suggested

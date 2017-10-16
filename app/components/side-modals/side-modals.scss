@@ -1,0 +1,78 @@
+.vacancy {
+  max-width: 1200px;
+  background-color: #fff;
+
+  @media (max-width: $screen-lg-max) {
+    margin-left: 120px;
+    max-width: 100%;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    margin-left: 65px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-left: 0;
+  }
+
+  .company-profile-card__content {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    @media (max-width: $screen-md-max) {
+      padding-top: 50px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding-top: 35px;
+    }
+  }
+
+  &__header {
+    padding: 40px 60px 30px;
+
+    @media (max-width: $screen-sm-max) {
+      padding: 35px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      padding: 15px;
+    }
+
+    time {
+      font-family: $font-family-second;
+      font-size: 14px;
+      color: #bbc8d5;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 35px;
+    }
+
+    .label {
+      margin-top: 15px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    text-align: left;
+    margin-left: 340px;
+
+    @media (max-width: $screen-md-max) {
+      margin-left: 29%;
+    }
+  }
+
+  &__map {
+    height: 395px;
+
+    @media (max-width: $screen-xs-max) {
+      height: 240px;
+    }
+  }
+}

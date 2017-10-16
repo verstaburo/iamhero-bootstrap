@@ -10,6 +10,10 @@
   overflow-y: scroll;
 
   @media (max-width: $screen-lg-max) {
+    width: 280px;
+  }
+
+  @media (max-width: $screen-sm-max) {
     display: none;
   }
 
@@ -30,9 +34,17 @@
     padding: 40px 55px;
     border-top: 1px solid #d8dfe6;
 
+    @media (max-width: $screen-lg-max) {
+      padding: 20px 35px;
+    }
+
     &:first-child {
       padding-top: 60px;
       border-top: none;
+
+      @media (max-width: $screen-lg-max) {
+        padding-top: 35px;
+      }
     }
 
     &_no-side {
@@ -42,6 +54,11 @@
       .aside-filter__heading {
         padding-left: 55px;
         padding-right: 55px;
+
+        @media (max-width: $screen-lg-max) {
+          padding-left: 35px;
+          padding-right: 35px;
+        }
       }
     }
   }
@@ -56,6 +73,11 @@
       font-weight: 700;
       transition: background-color .25s ease-in-out;
       border-top: 1px solid #e1e9ec;
+
+      @media (max-width: $screen-lg-max) {
+        padding-left: 35px;
+        padding-right: 35px;
+      }
 
       &:last-child {
         border-bottom: 1px solid #e1e9ec;
@@ -116,6 +138,15 @@
   &__btn-edit {
     margin-top: 40px;
     margin-left: 55px;
+
+    @media (max-width: $screen-lg-max) {
+      margin-left: 25px;
+    }
+  }
+
+  &__btn-submit {
+    margin-top: 40px;
+    width: 100%;
   }
 
   &__quick-link {
@@ -128,6 +159,11 @@
     font-family: $font-family-open-sans;
     font-weight: 400;
     transition: background-color .25s ease-in-out;
+
+    @media (max-width: $screen-lg-max) {
+      padding-left: 35px;
+      padding-right: 35px;
+    }
 
     & > svg {
       width: 16px;

@@ -1,3 +1,55 @@
 .job-listing {
-  display: block;
+  display: flex;
+  padding-right: 0;
+
+  .inner-card {
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__content {
+    width: calc(100% - 560px);
+    padding-right: 35px;
+
+    @media (max-width: $screen-xl-max) {
+      width: calc(100% - 330px);
+    }
+
+    @media (max-width: 1599px) {
+      width: 100%;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding-right: 25px;
+    }
+  }
+
+  &__map {
+    width: 560px;
+    height: 100vh;
+
+    @media (max-width: $screen-xl-max) {
+      width: 330px;
+    }
+
+    @media (max-width: 1599px) {
+      width: 560px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 300px;
+      pointer-events: none;
+      width: 100%;
+      background-image: linear-gradient(to bottom, transparent, #fff 60%);
+    }
+  }
 }

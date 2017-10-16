@@ -12,4 +12,12 @@ export default () => {
     $(this).hide();
     $(this).siblings('.js-card-more').show();
   });
+
+  $(document).on('click', '.js-card-buy', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).parents('.inner-card').toggleClass('active');
+    $(this).toggleClass('active');
+    $(this).siblings('.js-card-buy-target').toggle();
+  });
 };

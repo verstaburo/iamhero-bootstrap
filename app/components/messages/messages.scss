@@ -12,6 +12,16 @@
     left: 390px;
     width: calc(100% - 390px);
     border: 1px solid #e5e9ec;
+
+    @media (max-width: $screen-lg-max) {
+      left: 335px;
+      width: calc(100% - 335px);
+    }
+
+    @media (max-width: $screen-sm-max) {
+      left: 0;
+      width: 100%;
+    }
   }
 
   &__quickbar {

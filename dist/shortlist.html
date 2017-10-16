@@ -21,9 +21,9 @@
             </a>
         </div>
         <div class="inner-header__col inner-header__search">
-            <label class="search search_dark">
-                <input class="search__input" type="text" placeholder="Search for heroes..." />
-                <button class="search__icon" type="submit">
+            <label class="search">
+                <input type="text" placeholder="Search for heroes..." />
+                <button class="btn">
                     <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
                 </button>
             </label>
@@ -156,13 +156,14 @@
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Search</span>
+            <span class="inner-sidebar__hint">Hero Search</span>
         </li>
         <li class="inner-sidebar__item active">
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Shortlists</span>
+            <span class="inner-sidebar__hint">Shortlists (
+                <span class="text-warning">14</span>)</span>
         </li>
         <li class="inner-sidebar__item">
             <a href="#">
@@ -301,925 +302,381 @@
             </div>
         </div>
     </aside>
-    <main class="page page_inner-medium" role="main">
+    <main class="page page_inner-medium shortlist" role="main">
+        <div class="page__overlay shortlist__overlay">
+            <p>Choose heroest you want to add to mass message</p>
+            <div class="checkbox-inline">
+                <label>
+                    <input type="checkbox" value="" name="" checked="checked" />
+                </label>
+            </div>
+        </div>
         <form class="search-form">
             <div class="search-form__header">
-                <h3 class="search-form__title">
+                <h3>
                     <svg><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>GRAPHIC DESIGNERS</h3>
                 <div class="search-form__result">
-                    <span class="search-form__result-text search-form__result-text_thin search-form__result-text_color_grey search-form__result-text_uppercase">Heroes:</span>
-                    <span class="search-form__result-text">154 /</span>
-                    <span class="search-form__result-text search-form__result-text_color_warning">15</span>
+                    <h5>Heroes:</h5>
+                    <span>154 /</span>
+                    <span class="text-warning">15</span>
                 </div>
                 <div class="search-form__controls">
-                    <select class="js-select select select_small select_warning search-form__control" placeholder="Show: All">
+                    <select class="js-select select select_small select_warning" placeholder="Show: All">
                         <option value="">Show: All</option>
                         <option value="1">Show: All</option>
                         <option value="2">Show: First</option>
                         <option value="3">Show: None</option>
                     </select>
-                    <button class="btn btn-secondary-warning-small btn-hover-text-warning font-weight-medium search-form__control">Buy all contacts
+                    <button class="btn btn-secondary-warning-small btn-hover-text-warning font-weight-medium">Buy all contacts
                         <b class="btn-font-white">139</b>
                     </button>
-                    <button class="button-icon btn btn-secondary-warning btn-secondary-warning-low font-weight-medium search-form__control">
+                    <a class="button-icon btn btn-secondary-warning btn-secondary-warning-low font-weight-medium js-pick" href="#" data-side="#massMsg">
                         <svg class="button-icon__item button-icon__item_fill_none button-icon__item_stroke_warning"><use xlink:href="assets/images/icon.svg#icon_mass-message"></use></svg>
                         <span class="button-icon__text">Mass message</span>
-                    </button>
+                    </a>
                 </div>
             </div>
             <div class="search-form__input-wrap">
-                <input class="search-form__input search-form__input_first" type="text" placeholder="Search GRAPHIC DESIGNER shortlist" />
-                <input class="search-form__input search-form__input_second" type="text" placeholder="Location filter" />
+                <input type="text" placeholder="Search GRAPHIC DESIGNER shortlist" />
+                <input type="text" placeholder="Location filter" />
                 <a class="search-form__submit" href="#">
                     <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>Find heroes</a>
             </div>
             <div class="search-form__tag-wrap">
-                <span class="label label-transparent label-border-white label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded">
+                <span class="label label-primary-close label-primary-close-transparent">
                     <a href="#">
                         <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                     </a>Graphic designer</span>
-                <span class="label label-transparent label-border-white label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded">
+                <span class="label label-primary-close label-primary-close-transparent">
                     <a href="#">
                         <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                     </a>Riga</span>
-                <span class="label label-transparent label-border-white label-rounded label-medium label-close label-close-bg-white label-close-hover-warning label-close-rounded">
+                <span class="label label-primary-close label-primary-close-transparent">
                     <a href="#">
                         <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                     </a>Design</span>
-                <span class="label label-rounded label-medium label-close label-bg-dark label-font-white label-close-rounded label-close-warning label-close-hover-warning">
+                <span class="label label-primary-close label-primary-close-dark">
                     <a href="#">
                         <svg class="icon-close icon-close_small"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                     </a>Clear all search criteria</span>
             </div>
         </form>
-        <div class="inner-card inner-card_hero">
+        <div class="side-modal shortlist__modal" id="massMsg">
+            <div class="side-modal__toggler side-modal__toggler_close js-pick-dismiss"></div>
+            <div class="side-modal__content">
+                <div class="inner-plate">
+                    <h5>Mass Message</h5>
+                    <p>Using Mass message tool you can send message to multiple heroes.</p>
+                    <textarea class="form-control form-control-area-static form-control-warning" rows="5" placeholder="Text here"></textarea>
+                    <button class="button-icon btn button-icon button-icon_label btn-secondary-warning">
+                        <span class="button-icon__label">5</span>
+                        <span class="button-icon__text">Send Message</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/1.jpg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="button-icon btn btn-secondary-warning btn-secondary-warning-low inner-card__pick-hide">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_message"></use></svg>
+                            <span class="button-icon__text">Start conversation</span>
+                        </button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <div class="checkbox inner-card__pick-show">
+                            <label>
+                                <input type="checkbox" value="" name="" checked="checked" />
+                            </label>
+                        </div>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">David Allandu</h3>
-                        <span class="inner-card__subtitle">Singer, Producer, Interpreneur</span>
+                        <h3>David Allandu</h3>
+                        <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
-        <div class="inner-card inner-card_hero">
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/2.jpg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="btn btn-secondary-warning-small">Buy contact</button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">Alan Maier</h3>
+                        <h3>Alan Maier</h3>
                         <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
-        <div class="inner-card inner-card_hero">
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/3.jpg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="button-icon btn btn-secondary-warning btn-secondary-warning-low inner-card__pick-hide">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_message"></use></svg>
+                            <span class="button-icon__text">Start conversation</span>
+                        </button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <div class="checkbox inner-card__pick-show">
+                            <label>
+                                <input type="checkbox" value="" name="" checked="checked" />
+                            </label>
+                        </div>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">Jamelia Freeman</h3>
+                        <h3>Jamelia Freeman</h3>
                         <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
-        <div class="inner-card inner-card_hero">
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/4.jpg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="btn btn-secondary-warning-small">Buy contact</button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">Katy Moon</h3>
+                        <h3>Katy Moon</h3>
                         <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
-        <div class="inner-card inner-card_hero">
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/5.jpg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="button-icon btn btn-secondary-warning btn-secondary-warning-low inner-card__pick-hide">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_message"></use></svg>
+                            <span class="button-icon__text">Start conversation</span>
+                        </button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <div class="checkbox inner-card__pick-show">
+                            <label>
+                                <input type="checkbox" value="" name="" checked="checked" />
+                            </label>
+                        </div>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">Adelina Mauer</h3>
-                        <span class="inner-card__subtitle">Singer, Producer, Interpreneur</span>
+                        <h3>Adelina Mauer</h3>
+                        <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
-        <div class="inner-card inner-card_hero">
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/6.jpg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="button-icon btn btn-secondary-warning btn-secondary-warning-low inner-card__pick-hide">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_message"></use></svg>
+                            <span class="button-icon__text">Start conversation</span>
+                        </button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <div class="checkbox inner-card__pick-show">
+                            <label>
+                                <input type="checkbox" value="" name="" checked="checked" />
+                            </label>
+                        </div>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">Laura Benneton</h3>
+                        <h3>Laura Benneton</h3>
                         <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
-        <div class="inner-card inner-card_hero">
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/7.jpg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="button-icon btn btn-secondary-warning btn-secondary-warning-low inner-card__pick-hide">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_message"></use></svg>
+                            <span class="button-icon__text">Start conversation</span>
+                        </button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <div class="checkbox inner-card__pick-show">
+                            <label>
+                                <input type="checkbox" value="" name="" checked="checked" />
+                            </label>
+                        </div>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">James Malovich</h3>
+                        <h3>James Malovich</h3>
                         <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
-        <div class="inner-card inner-card_hero">
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/8.svg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="button-icon btn btn-secondary-warning btn-secondary-warning-low inner-card__pick-hide">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_message"></use></svg>
+                            <span class="button-icon__text">Start conversation</span>
+                        </button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <div class="checkbox inner-card__pick-show">
+                            <label>
+                                <input type="checkbox" value="" name="" checked="checked" />
+                            </label>
+                        </div>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">Andriano Colleti</h3>
+                        <h3>Andriano Colleti</h3>
                         <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
-        <div class="inner-card inner-card_hero">
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/9.jpg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="button-icon btn btn-secondary-warning btn-secondary-warning-low inner-card__pick-hide">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_message"></use></svg>
+                            <span class="button-icon__text">Start conversation</span>
+                        </button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <div class="checkbox inner-card__pick-show">
+                            <label>
+                                <input type="checkbox" value="" name="" checked="checked" />
+                            </label>
+                        </div>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">Alexandr Benua</h3>
-                        <span class="inner-card__subtitle">Singer, Producer, Interpreneur</span>
+                        <h3>Alexandr Benua</h3>
+                        <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
-        <div class="inner-card inner-card_hero">
+        <div class="inner-card">
             <div class="inner-card__wrap">
                 <div class="bg-image inner-card__image">
                     <img src="assets/images/hero-search/10.jpg" />
                 </div>
                 <div class="inner-card__text-wrap">
-                    <div class="inner-card__tags"></div>
+                    <div class="inner-card__controls">
+                        <button class="button-icon btn btn-secondary-warning btn-secondary-warning-low inner-card__pick-hide">
+                            <svg class="button-icon__item"><use xlink:href="assets/images/icon.svg#icon_message"></use></svg>
+                            <span class="button-icon__text">Start conversation</span>
+                        </button>
+                        <a class="inner-card__pick-hide" href="#">
+                            <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <div class="checkbox inner-card__pick-show">
+                            <label>
+                                <input type="checkbox" value="" name="" checked="checked" />
+                            </label>
+                        </div>
+                    </div>
                     <div class="inner-card__text-content">
-                        <h3 class="inner-card__title">Jeremy Clarckson</h3>
+                        <h3>Jeremy Clarckson</h3>
                         <span class="inner-card__subtitle">Tv star</span>
                         <span class="inner-card__subtitle inner-card__subtitle_thin inner-card__subtitle_inline">Los Angeles, USA</span>
-                        <p class="inner-card__text">Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his roommate
-                            Jason Germain and a few close friends in 1999.</p>
-                        <div class="inner-card__expand-content">
-                            <h3>professional skills</h3>
-                            <span class="label label-default label-rounded label-medium">Graphic design</span>
-                            <span class="label label-default label-rounded label-medium">Video design</span>
-                            <span class="label label-default label-rounded label-medium">Websites</span>
-                            <span class="label label-default label-rounded label-medium">Illustrations</span>
-                            <span class="label label-default label-rounded label-medium">Full cycle design</span>
+                        <div class="inner-card__text">
+                            <p>Martel was born in Montreal, Canada. His parents instilled a love for music in him that followed him throughout his childhood and to Briercrest College and Seminary in Saskatchewan, where he formed the band Downhere with his
+                                roommate Jason Germain and a few close friends in 1999.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="inner-card__footer">
-                <button class="inner-card__toggle-btn js-card-more">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus-border"></use></svg>Show more</button>
-                <button class="inner-card__toggle-btn js-card-less">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_minus-border"></use></svg>Show less</button>
-                <button class="inner-card__button inner-card__button_push_right" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>Add to shortlist</button>
-                <div class="inner-card__popover-wrap">
-                    <button class="inner-card__button inner-card__button_darken js-card-buy-contact" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_check-1"></use></svg>Buy contacts</button>
-                    <div class="card-popover inner-card__card-popover">
-                        <div class="card-popover__section">
-                            <h5>Buy Contact</h5>
-                        </div>
-                        <div class="card-popover__section card-popover__section_medium card-popover__section_dark">
-                            <svg class="card-popover__description-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                            <span class="card-popover__description">You should add Hero to any existing or new Shortlist, please choose an option below</span>
-                        </div>
-                        <div class="card-popover__section card-popover__section_big card-popover__section_bordered">
-                            <input class="form-control form-control-small form-control-font-standart" type="text" placeholder="New shortlist name" />
-                            <button class="btn btn-secondary-warning-small card-popover__inline-btn">Save</button>
-                        </div>
-                        <div class="card-popover__section card-popover__section_list">
-                            <h5>Existing shortlists:</h5>
-                            <div class="card-popover__list">
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Designer 2200
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Main office manager
-                                    <span class="card-popover__list-item-value">12</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Search 31
-                                    <span class="card-popover__list-item-value">4</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Rage
-                                    <span class="card-popover__list-item-value">1</span>
-                                </a>
-                                <a class="card-popover__list-item" href="#">Project management
-                                    <span class="card-popover__list-item-value">45</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="inner-card__button" href="#">
-                    <svg><use xlink:href="assets/images/icon.svg#icon_dots"></use></svg>Open profile</a>
             </div>
         </div>
     </main>
@@ -1236,7 +693,7 @@
     <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
-    <script src="assets/scripts/libs/chartist.min.js"></script>
+    <script src="assets/scripts/libs/chart.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

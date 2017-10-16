@@ -12,6 +12,10 @@
 
     &:not(:first-child) {
       margin-top: 24px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-top: 10px;
+      }
     }
 
     &::before {

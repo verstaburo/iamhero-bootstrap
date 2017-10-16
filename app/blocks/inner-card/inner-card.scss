@@ -4,25 +4,99 @@
   transition: box-shadow .25s ease-in-out, margin-bottom .25s ease-in-out;
   display: block;
 
+  &__pick-show {
+    display: none;
+  }
+
+  &_pick {
+    z-index: 3;
+
+    .inner-card__pick-hide {
+      display: none;
+    }
+
+    .inner-card__pick-show {
+      display: block;
+    }
+
+    &:hover {
+      z-index: 4 !important;
+    }
+
+    .inner-card__controls {
+      @media (max-width: $screen-lg-max) {
+        right: auto;
+        left: 10px;
+        top: 0;
+      }
+    }
+  }
+
+  &_free {
+
+    .inner-card__text-wrap {
+      height: auto;
+      align-self: stretch;
+    }
+  }
+
   &_hero {
 
     &.inner-card_expanded {
-      margin-bottom: 50px;
 
       .inner-card__wrap {
         padding: 55px;
         min-height: 250px;
         box-sizing: content-box;
+
+        @media (max-width: $screen-lg-max) {
+          padding: 35px;
+        }
       }
 
       .inner-card__image {
         flex-basis: 250px;
+        height: 250px;
       }
 
       .inner-card__text-content {
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-right: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    .inner-card__footer {
+      @media (max-width: $screen-lg-max) {
+        flex-direction: column;
+        padding-left: 0;
+
+        .inner-card__toggle-btn {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .inner-card__footer-buttons {
+          width: 100%;
+
+          & > .btn, .inner-card__popover-wrap {
+            flex-grow: 1;
+          }
+
+          .inner-card__popover-wrap > .btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .inner-card__footer-buttons {
+      @media (max-width: $screen-md-max) {
+        flex-wrap: wrap;
+
+        .inner-card__popover-wrap {
+          order: 1;
+        }
       }
     }
   }
@@ -33,20 +107,21 @@
 
   &_border {
     border: 1px solid #e7ebee;
+
+    .inner-card__tags {
+      top: -1px;
+      right: -1px;
+    }
   }
 
   &_shadow {
     box-shadow: 1.231px 1.576px 3px 0 rgba(54, 70, 90, .06);
   }
 
-  &_expandable {
-
-    .inner-card__text-wrap {
-      height: 160px;
-    }
-  }
-
   &_expanded {
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 50px;
+    }
 
     .inner-card__text-wrap {
       height: 100%;
@@ -55,16 +130,31 @@
     .inner-card__full-image {
       height: 255px;
     }
-  }
 
-  &:hover {
-    box-shadow: 0 0 32.66px 13.34px rgba(28, 40, 57, .34);
-    z-index: 1;
+    .inner-card__text-content {
+      -webkit-mask-image: none;
+    }
 
     .inner-card__footer {
       opacity: 1;
       pointer-events: all;
     }
+  }
+
+  &:hover, &.active {
+    @media (min-width: $screen-md-min) {
+      box-shadow: 0 0 32.66px 13.34px rgba(28, 40, 57, .34);
+      z-index: 1;
+
+      .inner-card__footer {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  &.active {
+    z-index: 3;
   }
 
   &__full-image {
@@ -84,9 +174,16 @@
     align-items: flex-start;
     background-color: #fff;
     transition: padding .5s ease-in-out, min-height .5s ease-in-out;
+
+    @media (max-width: $screen-sm-max) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
   }
 
   &__image {
+    width: 160px;
     flex-basis: 160px;
     height: 160px;
     flex-shrink: 0;
@@ -95,6 +192,11 @@
     &_big {
       flex-basis: 195px;
       height: 195px;
+      width: 195px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      align-self: center;
     }
   }
 
@@ -106,15 +208,52 @@
     margin: 20px 35px 25px 55px;
     overflow: hidden;
     transition: margin .25s ease-in-out;
+
+    > h3 {
+      flex-basis: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 500;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: $screen-md-max) {
+      margin-left: 30px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      margin: 20px;
+      -webkit-mask-image: linear-gradient(to bottom, #fff 60%, transparent 100%);
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin: 15px;
+    }
   }
 
-  &__expand-content {
-    margin-top: auto;
-    display: none;
-    margin-bottom: -10px;
+  &__subtitle {
+    font-size: 17px;
+    letter-spacing: -.04em;
+    margin-right: 20px;
+
+    &_thin {
+      font-weight: 100;
+    }
+
+    &_inline {
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    margin-bottom: 0;
+    margin-top: 25px;
 
     h3 {
-      margin-top: 0;
+      margin-top: 40px;
       margin-bottom: 10px;
       text-transform: uppercase;
     }
@@ -126,46 +265,44 @@
     }
   }
 
-  &__title {
-    flex-basis: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 500;
-  }
-
-  &__subtitle {
-    font-size: 17px;
-    letter-spacing: -.04em;
-
-    &_thin {
-      font-weight: 100;
-    }
-
-    &_inline {
-      margin-left: 20px;
-    }
-  }
-
-  &__text {
-    margin-bottom: 0;
-    margin-top: 25px;
-  }
-
   &__footer {
     padding-left: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 55px;
     width: 100%;
     background-color: #35475a;
     opacity: 0;
     pointer-events: none;
     transition: opacity .25s ease-in-out;
+
+    @media (max-width: $screen-sm-max) {
+      pointer-events: all;
+      opacity: 1;
+      flex-direction: column;
+      padding-left: 0;
+      align-items: stretch;
+    }
+  }
+
+  &__footer-buttons {
+    display: flex;
+
+    @media (max-width: $screen-sm-max) {
+
+      .btn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+    }
   }
 
   &__toggle-btn {
     font-size: 16px;
+    padding: 18px 0;
     border: none;
     background-color: transparent;
     color: #fff;
@@ -174,60 +311,24 @@
     align-items: center;
     outline: none;
 
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+    }
+
     svg {
       width: 25px;
       height: 15px;
       stroke: $brand-warning;
       margin-right: 12px;
       fill: transparent;
+      flex-shrink: 0;
     }
 
     &.js-company-less {
       display: none;
-    }
-  }
-
-  &__button {
-    background-color: #283649;
-    transition: background-color .25s ease-in-out, color .25s ease-in-out;
-    font-size: 22px;
-    color: #fff;
-    letter-spacing: -.04em;
-    padding: 15px 40px 14px 18px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    border: none;
-    outline: none;
-
-    &_darken {
-      background-color: #1e2d40;
-    }
-
-    &_centered {
-      justify-content: center;
-    }
-
-    &:hover {
-      background-color: $brand-warning;
-      color: #263446;
-
-      svg {
-        stroke: #3b4d62;
-      }
-    }
-
-    svg {
-      width: 25px;
-      height: 25px;
-      fill: transparent;
-      stroke: $brand-warning;
-      transition: stroke .25s ease-in-out;
-      margin-right: 20px;
-    }
-
-    &_push_right {
-      margin-left: auto;
     }
   }
 
@@ -238,35 +339,41 @@
 
   &__card-popover {
     position: absolute;
-    top: 130%;
+    top: calc(100% + 20px);
     transform: translateX(-50%);
     left: 50%;
+    display: none;
+    z-index: 1;
   }
 
   &__tags {
     position: absolute;
     right: 0;
     top: 0;
+
+    time {
+      font-family: $font-family-second;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 2px 10px;
+      color: #9dacb9;
+    }
   }
 
-  &__badge-red {
-    font-size: 16px;
-    background-color: #e2553e;
-    color: #fff;
-    text-transform: uppercase;
-  }
+  &__controls {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    display: flex;
+    align-items: center;
 
-  &__badge-darkblue {
-    font-family: $font-family-second;
-    font-weight: 700;
-    color: #fff;
-    background-color: #1c2938;
-  }
+    @media (max-width: $screen-md-max) {
+      top: 10px;
+      right: 10px;
+    }
 
-  &__badge-blue {
-    font-family: $font-family-second;
-    font-weight: 400;
-    color: #fff;
-    background-color: #3a4c60;
+    .icon-close {
+      margin-left: 20px;
+    }
   }
 }

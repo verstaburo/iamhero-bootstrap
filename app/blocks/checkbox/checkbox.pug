@@ -1,10 +1,11 @@
-include ../icon/icons
-
 mixin checkbox(checked, name)
-  +b.LABEL.checkbox&attributes(attributes)
-    +e.INPUT(type='checkbox' value='' name=name||'', checked=false||checked).input
-    +e.SPAN.box
-      +icon('check').__icon
-    if block
-      +e.SPAN.text
-        block
+  +b.checkbox&attributes(attributes)
+    label
+      input(type='checkbox' value='' name=name||'', checked=false||checked)
+      block
+
+mixin checkbox-inline(checked, name)
+  +b.checkbox-inline&attributes(attributes)
+    label
+      input(type='checkbox' value='' name=name||'', checked=false||checked)
+      block

@@ -3,8 +3,18 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  @media (max-width: $screen-xs-max) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
   &__text {
     flex-basis: 60%;
+
+    @media (max-width: $screen-xs-max) {
+      flex-basis: auto;
+      margin-top: 20px;
+    }
 
     p:first-child {
       margin-bottom: 40px;

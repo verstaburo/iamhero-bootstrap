@@ -21,9 +21,9 @@
             </a>
         </div>
         <div class="inner-header__col inner-header__search">
-            <label class="search search_dark">
-                <input class="search__input" type="text" placeholder="Search for heroes..." />
-                <button class="search__icon" type="submit">
+            <label class="search">
+                <input type="text" placeholder="Search for heroes..." />
+                <button class="btn">
                     <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
                 </button>
             </label>
@@ -156,13 +156,14 @@
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Search</span>
+            <span class="inner-sidebar__hint">Hero Search</span>
         </li>
         <li class="inner-sidebar__item active">
             <a href="#">
                 <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
             </a>
-            <span class="inner-sidebar__hint">Shortlists</span>
+            <span class="inner-sidebar__hint">Shortlists (
+                <span class="text-warning">14</span>)</span>
         </li>
         <li class="inner-sidebar__item">
             <a href="#">
@@ -208,51 +209,33 @@
                 </div>
                 <span>You can choose what to be notified about</span>
             </div>
-            <a class="btn btn-secondary-warning btn-secondary-warning-medium btn-font-white font-weight-medium" href="#">Open notifications</a>
+            <a class="btn btn-secondary-warning btn-secondary-warning-medium" href="#">Open notifications</a>
         </div>
         <div class="inner-plate page__section notification-options">
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">New message from employer</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">New suggested jobs</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">Statistic update</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">Someone viewed my profile</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">Notify me about profile imporvement suggestions</span>
-            </label>
-            <label class="checkbox checkbox_margin_more notification-options__item">
-                <input class="checkbox__input" type="checkbox" value="" name="" checked="checked" />
-                <span class="checkbox__box">
-                    <svg class="checkbox__icon"><use xlink:href="assets/images/icon.svg#icon_check"></use></svg>
-                </span>
-                <span class="checkbox__text">Friend joined Iamhero</span>
-            </label>
+            <div class="checkbox checkbox-secondary notification-options__item">
+                <label>
+                    <input type="checkbox" value="" name="" checked="checked" />New message from employer</label>
+            </div>
+            <div class="checkbox checkbox-secondary notification-options__item">
+                <label>
+                    <input type="checkbox" value="" name="" checked="checked" />Someone viewed my profile</label>
+            </div>
+            <div class="checkbox checkbox-secondary notification-options__item">
+                <label>
+                    <input type="checkbox" value="" name="" checked="checked" />New suggested jobs</label>
+            </div>
+            <div class="checkbox checkbox-secondary notification-options__item">
+                <label>
+                    <input type="checkbox" value="" name="" checked="checked" />Notify me about profile imporvement suggestions</label>
+            </div>
+            <div class="checkbox checkbox-secondary notification-options__item">
+                <label>
+                    <input type="checkbox" value="" name="" checked="checked" />Statistic update</label>
+            </div>
+            <div class="checkbox checkbox-secondary notification-options__item">
+                <label>
+                    <input type="checkbox" value="" name="" checked="checked" />Friend joined Iamhero</label>
+            </div>
         </div>
     </main>
     <a class="to-top" href="#">
@@ -268,7 +251,7 @@
     <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
-    <script src="assets/scripts/libs/chartist.min.js"></script>
+    <script src="assets/scripts/libs/chart.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 
