@@ -19,16 +19,18 @@ gulp.task('styles', () => {
   .pipe(plumber({ errorHandler: errorHandler('Error in styles task') }))
     // .pipe(gulpIf(isDebug, sourcemaps.init()))
     .pipe(bulkSass())
-    .pipe(sass())
+    .pipe(sass({
+      outputStyle: 'expanded',
+    }))
     .pipe(postcss([
       require('autoprefixer'),
       require('postcss-discard-comments'),
       // require('css-mqpacker'),
     ]))
     .pipe(cssimport())
-    .pipe(cssnano({ zIndex: false }))
+    // .pipe(cssnano({ zIndex: false }))
     // .pipe(gulpIf(isDebug, sourcemaps.write()))
-    .pipe(rename({ suffix: '.min' }))
+    // .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('dist/assets/styles'));
 
   // gulp.start('styles:lint');
