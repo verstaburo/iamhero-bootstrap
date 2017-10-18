@@ -7,12 +7,9 @@
     flex-direction: column;
   }
 
-  .checkbox + .checkbox {
-    margin-top: 0;
-  }
-
-  &__item {
+  .checkbox-inline {
     flex-basis: 40%;
     margin-bottom: 25px !important;
+    margin-left: 0;
   }
 }

@@ -1,14 +1,14 @@
 .radio, .radio-inline {
   padding-left: 25px;
+  color: $gray;
+  font-size: 16px;
+  letter-spacing: -.04em;
+  transition: color .25s ease-in-out;
+  font-weight: 300;
+  user-select: none;
 
   label {
-    color: $gray;
-    display: inline-block;
-    font-size: 16px;
-    letter-spacing: -.04em;
-    transition: color .25s ease-in-out;
-    font-weight: 300;
-    cursor: pointer;
+    padding-left: 0;
   }
 
   input {

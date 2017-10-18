@@ -5,7 +5,6 @@ mixin radio(checked, name)
       block
 
 mixin radio-inline(checked, name)
-  +b.radio-inline&attributes(attributes)
-    label
-      input(type='radio' name=name||'', value='', checked=checked||false)
-      block
+  +b.LABEL.radio-inline&attributes(attributes)
+    input(type='radio' name=name||'', value='', checked=checked||false)
+    block

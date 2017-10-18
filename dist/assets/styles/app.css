@@ -10162,37 +10162,52 @@ button.swiper-pagination-bullet{
 
 .checkbox, .checkbox-inline{
   padding-left:30px;
-}
-
-.checkbox label, .checkbox-inline label{
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:flex;
-  -webkit-box-align:center;
-  -webkit-align-items:center;
-          align-items:center;
-  -webkit-flex-wrap:wrap;
-          flex-wrap:wrap;
   min-height:20px;
   line-height:1.1875;
   font-family:"Open Sans", sans-serif;
   font-weight:400;
   font-size:16px;
+  text-decoration:underline;
+  -webkit-text-decoration-color:transparent;
+          text-decoration-color:transparent;
+  -webkit-transition:-webkit-text-decoration-color .25s ease-in-out;
+  transition:-webkit-text-decoration-color .25s ease-in-out;
+  transition:text-decoration-color .25s ease-in-out;
+  transition:text-decoration-color .25s ease-in-out, -webkit-text-decoration-color .25s ease-in-out;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+}
+
+.checkbox label, .checkbox-inline label{
   padding-left:0;
+  text-decoration:underline;
+  -webkit-text-decoration-color:transparent;
+          text-decoration-color:transparent;
+  -webkit-transition:-webkit-text-decoration-color .25s ease-in-out;
+  transition:-webkit-text-decoration-color .25s ease-in-out;
+  transition:text-decoration-color .25s ease-in-out;
+  transition:text-decoration-color .25s ease-in-out, -webkit-text-decoration-color .25s ease-in-out;
 }
 
 .checkbox-secondary, .checkbox-inline-secondary{
   padding-left:40px;
 }
 
-.checkbox:hover .checkbox-box, .checkbox-inline:hover .checkbox-box{
-  box-shadow:12px 0 12px 0 rgba(65, 86, 108, 0.01), 12px 0 68px 0 rgba(65, 86, 108, 0.34);
-  border-color:#33414c;
+.checkbox:hover, .checkbox-inline:hover{
+  -webkit-text-decoration-color:#ffc425;
+          text-decoration-color:#ffc425;
 }
 
 .checkbox:hover label, .checkbox-inline:hover label{
   -webkit-text-decoration-color:#ffc425;
           text-decoration-color:#ffc425;
+}
+
+.checkbox:hover .checkbox-box, .checkbox-inline:hover .checkbox-box{
+  box-shadow:12px 0 12px 0 rgba(65, 86, 108, 0.01), 12px 0 68px 0 rgba(65, 86, 108, 0.34);
+  border-color:#33414c;
 }
 
 .checkbox input, .checkbox-inline input{
@@ -10245,37 +10260,52 @@ button.swiper-pagination-bullet{
 
 .checkbox, .checkbox-inline{
   padding-left:30px;
-}
-
-.checkbox label, .checkbox-inline label{
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:flex;
-  -webkit-box-align:center;
-  -webkit-align-items:center;
-          align-items:center;
-  -webkit-flex-wrap:wrap;
-          flex-wrap:wrap;
   min-height:20px;
   line-height:1.1875;
   font-family:"Open Sans", sans-serif;
   font-weight:400;
   font-size:16px;
+  text-decoration:underline;
+  -webkit-text-decoration-color:transparent;
+          text-decoration-color:transparent;
+  -webkit-transition:-webkit-text-decoration-color .25s ease-in-out;
+  transition:-webkit-text-decoration-color .25s ease-in-out;
+  transition:text-decoration-color .25s ease-in-out;
+  transition:text-decoration-color .25s ease-in-out, -webkit-text-decoration-color .25s ease-in-out;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+}
+
+.checkbox label, .checkbox-inline label{
   padding-left:0;
+  text-decoration:underline;
+  -webkit-text-decoration-color:transparent;
+          text-decoration-color:transparent;
+  -webkit-transition:-webkit-text-decoration-color .25s ease-in-out;
+  transition:-webkit-text-decoration-color .25s ease-in-out;
+  transition:text-decoration-color .25s ease-in-out;
+  transition:text-decoration-color .25s ease-in-out, -webkit-text-decoration-color .25s ease-in-out;
 }
 
 .checkbox-secondary, .checkbox-inline-secondary{
   padding-left:40px;
 }
 
-.checkbox:hover .checkbox-box, .checkbox-inline:hover .checkbox-box{
-  box-shadow:12px 0 12px 0 rgba(65, 86, 108, 0.01), 12px 0 68px 0 rgba(65, 86, 108, 0.34);
-  border-color:#33414c;
+.checkbox:hover, .checkbox-inline:hover{
+  -webkit-text-decoration-color:#ffc425;
+          text-decoration-color:#ffc425;
 }
 
 .checkbox:hover label, .checkbox-inline:hover label{
   -webkit-text-decoration-color:#ffc425;
           text-decoration-color:#ffc425;
+}
+
+.checkbox:hover .checkbox-box, .checkbox-inline:hover .checkbox-box{
+  box-shadow:12px 0 12px 0 rgba(65, 86, 108, 0.01), 12px 0 68px 0 rgba(65, 86, 108, 0.34);
+  border-color:#33414c;
 }
 
 .checkbox input, .checkbox-inline input{
@@ -18222,17 +18252,20 @@ button.swiper-pagination-bullet{
 
 .radio, .radio-inline{
   padding-left:25px;
-}
-
-.radio label, .radio-inline label{
   color:#96aebd;
-  display:inline-block;
   font-size:16px;
   letter-spacing:-.04em;
   -webkit-transition:color .25s ease-in-out;
   transition:color .25s ease-in-out;
   font-weight:300;
-  cursor:pointer;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+}
+
+.radio label, .radio-inline label{
+  padding-left:0;
 }
 
 .radio input, .radio-inline input{
@@ -18295,17 +18328,20 @@ button.swiper-pagination-bullet{
 
 .radio, .radio-inline{
   padding-left:25px;
-}
-
-.radio label, .radio-inline label{
   color:#96aebd;
-  display:inline-block;
   font-size:16px;
   letter-spacing:-.04em;
   -webkit-transition:color .25s ease-in-out;
   transition:color .25s ease-in-out;
   font-weight:300;
-  cursor:pointer;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+}
+
+.radio label, .radio-inline label{
+  padding-left:0;
 }
 
 .radio input, .radio-inline input{
@@ -30374,14 +30410,11 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
-.notification-options .checkbox + .checkbox{
-  margin-top:0;
-}
-
-.notification-options__item{
+.notification-options .checkbox-inline{
   -webkit-flex-basis:40%;
           flex-basis:40%;
   margin-bottom:25px !important;
+  margin-left:0;
 }
 
 .notification-options{
@@ -30402,14 +30435,11 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
-.notification-options .checkbox + .checkbox{
-  margin-top:0;
-}
-
-.notification-options__item{
+.notification-options .checkbox-inline{
   -webkit-flex-basis:40%;
           flex-basis:40%;
   margin-bottom:25px !important;
+  margin-left:0;
 }
 
 .shortlist{

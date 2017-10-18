@@ -1,16 +1,20 @@
 .checkbox, .checkbox-inline {
   padding-left: 30px;
+  min-height: 20px;
+  line-height: 1.1875;
+  font-family: $font-family-second;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color .25s ease-in-out;
+  user-select: none;
 
   label {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    min-height: 20px;
-    line-height: 1.1875;
-    font-family: $font-family-second;
-    font-weight: 400;
-    font-size: 16px;
     padding-left: 0;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .25s ease-in-out;
   }
 
   &-secondary {
@@ -18,14 +22,15 @@
   }
 
   &:hover {
+    text-decoration-color: $brand-warning;
+
+    label {
+      text-decoration-color: $brand-warning;
+    }
 
     .checkbox-box {
       box-shadow: 12px 0 12px 0 rgba(65, 86, 108, .01), 12px 0 68px 0 rgba(65, 86, 108, .34);
       border-color: #33414c;
-    }
-
-    label {
-      text-decoration-color: $brand-warning;
     }
   }
 
