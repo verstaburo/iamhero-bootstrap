@@ -25,6 +25,7 @@ gulp.task('styles', () => {
     .pipe(postcss([
       require('autoprefixer'),
       require('postcss-discard-comments'),
+      require('postcss-discard-duplicates'),
       // require('css-mqpacker'),
     ]))
     .pipe(cssimport())

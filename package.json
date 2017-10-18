@@ -56,6 +56,7 @@
     "jade-get-data": "^1.0.1",
     "load-google-maps-api": "^1.0.0",
     "postcss-discard-comments": "^2.0.4",
+    "postcss-discard-duplicates": "^2.1.0",
     "postcss-reporter": "^3.0.0",
     "postcss-scss": "^0.4.1",
     "require-dir": "^0.3.1",
