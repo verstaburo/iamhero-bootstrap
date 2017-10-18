@@ -1,6 +1,7 @@
 .news-item {
   display: flex;
   height: 445px;
+  align-items: flex-end;
 
   @media (max-width: $screen-md-max) {
     height: 545px;
@@ -22,7 +23,6 @@
   }
 
   & > img {
-    z-index: -1;
     transition: transform 1.8s ease;
   }
 

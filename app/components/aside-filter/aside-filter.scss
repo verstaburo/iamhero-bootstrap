@@ -7,7 +7,7 @@
   width: 335px;
   height: 100%;
   background-color: #fff;
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media (max-width: $screen-lg-max) {
     width: 280px;
@@ -24,6 +24,11 @@
 
   &_top-none {
     top: 55px;
+    padding-bottom: 55px;
+
+    .aside-filter__item:last-child {
+      padding-bottom: 100px;
+    }
   }
 
   @media (max-width: $screen-sm-max) {
@@ -45,6 +50,10 @@
       @media (max-width: $screen-lg-max) {
         padding-top: 35px;
       }
+    }
+
+    &:last-child {
+      padding-bottom: 150px;
     }
 
     &_no-side {
@@ -177,7 +186,7 @@
 
     & > &-value {
       font-weight: 600;
-      margin-left: 10px;
+      margin-left: auto;
     }
 
     &:hover {

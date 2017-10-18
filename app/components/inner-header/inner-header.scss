@@ -345,6 +345,7 @@
 
   &__burger {
     padding: 13px 25px;
+    max-width: 75px;
     flex-basis: 75px;
 
     @media (min-width: $screen-md-min) {
@@ -352,6 +353,7 @@
     }
 
     @media (max-width: $screen-xs-max) {
+      max-width: 60px;
       flex-basis: 60px;
       padding: 13px 16px;
     }
@@ -369,6 +371,7 @@
 
   &__search-btn {
     padding: 13px;
+    max-width: 50px;
     flex-basis: 50px;
     margin-left: auto;
 

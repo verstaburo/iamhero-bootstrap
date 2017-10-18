@@ -166,6 +166,12 @@
     align-items: center;
     border-top: 1px solid #e1e9ec;
 
+    span:first-of-type {
+      @media (min-width: $screen-sm-min) {
+        margin-right: auto;
+      }
+    }
+
     @media (max-width: $screen-sm-max) {
       padding-left: 70px;
       padding-right: 35px;
