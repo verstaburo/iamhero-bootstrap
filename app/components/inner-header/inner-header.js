@@ -17,8 +17,8 @@ export default () => {
   })
 
   $(document).on('click', '.inner-header__burger', function (e) {
-    $(this).toggleClass('active');
     e.preventDefault();
+    $(this).toggleClass('active');
     $('.inner-sidebar').toggleClass('active');
   })
 

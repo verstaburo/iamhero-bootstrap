@@ -69,7 +69,7 @@
     flex-basis: 35%;
 
     @media (max-width: $screen-sm-max) {
-      flex-basis: 100%;
+      flex-basis: auto;
     }
 
     h2 {

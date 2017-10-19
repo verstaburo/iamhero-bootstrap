@@ -56,6 +56,14 @@
         }
       }
 
+      @media (max-width: $screen-xs-max) {
+        flex-basis: auto;
+
+        .btn {
+          flex-basis: auto !important;
+        }
+      }
+
       .btn:nth-child(1) {
         padding-left: 65px;
         flex-grow: 1;

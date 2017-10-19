@@ -45,6 +45,10 @@
       height: auto;
       top: auto;
       bottom: 0;
+
+      .side-modal__content {
+        padding-bottom: 0;
+      }
     }
 
     textarea {

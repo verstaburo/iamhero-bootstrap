@@ -10274,8 +10274,8 @@ button.swiper-pagination-bullet{
 
 @media (max-width: 1023px){
   .company-menu__col-half{
-    -webkit-flex-basis:100%;
-            flex-basis:100%;
+    -webkit-flex-basis:auto;
+            flex-basis:auto;
     padding-left:30px;
     padding-right:30px;
   }
@@ -10310,6 +10310,8 @@ button.swiper-pagination-bullet{
 @media (max-width: 1023px){
   .company-menu__col-side{
     padding-top:30px;
+    -webkit-flex-basis:auto;
+            flex-basis:auto;
   }
 }
 
@@ -11516,8 +11518,10 @@ button.swiper-pagination-bullet{
   height:auto;
 }
 
-.inner-card_expanded .inner-card__full-image{
-  height:255px;
+@media (min-width: 640px){
+  .inner-card_expanded .inner-card__full-image{
+    height:255px;
+  }
 }
 
 .inner-card_expanded .inner-card__text-content{
@@ -11770,12 +11774,7 @@ button.swiper-pagination-bullet{
 @media (max-width: 1023px){
   .inner-card__toggle-btn{
     width:100%;
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:flex;
-    -webkit-box-pack:center;
-    -webkit-justify-content:center;
-            justify-content:center;
+    display:inline-block;
     padding:12px 0;
   }
 }
@@ -11997,6 +11996,7 @@ button.swiper-pagination-bullet{
 .inner-plate__control-container .checkbox-inline, .inner-plate__control-container .radio-inline{
   margin-left:0 !important;
   margin-right:10px;
+  margin-bottom:10px;
 }
 
 @media (min-width: 1024px){
@@ -12073,6 +12073,7 @@ button.swiper-pagination-bullet{
     -webkit-box-align:center;
     -webkit-align-items:center;
             align-items:center;
+    text-align:center;
   }
   .inner-plate__stats-icon-item span{
     margin-top:5px;
@@ -15960,8 +15961,8 @@ textarea::-webkit-scrollbar-thumb{
 
 @media (max-width: 1023px){
   .activity-plate__text{
-    -webkit-flex-basis:100%;
-            flex-basis:100%;
+    -webkit-flex-basis:auto;
+            flex-basis:auto;
   }
 }
 
@@ -17118,6 +17119,17 @@ textarea::-webkit-scrollbar-thumb{
     text-align:left;
     padding-left:20px !important;
     padding-right:20px !important;
+  }
+}
+
+@media (max-width: 639px){
+  .huge-card .inner-card__footer .inner-card__footer-buttons{
+    -webkit-flex-basis:auto;
+            flex-basis:auto;
+  }
+  .huge-card .inner-card__footer .inner-card__footer-buttons .btn{
+    -webkit-flex-basis:auto !important;
+            flex-basis:auto !important;
   }
 }
 
@@ -20078,6 +20090,9 @@ textarea::-webkit-scrollbar-thumb{
     height:auto;
     top:auto;
     bottom:0;
+  }
+  .shortlist__modal .side-modal__content{
+    padding-bottom:0;
   }
 }
 

@@ -184,7 +184,7 @@
     }
 
     @media (max-width: $screen-sm-max) {
-      flex-basis: 100%;
+      flex-basis: auto;
       padding-left: 30px;
       padding-right: 30px;
     }
@@ -211,6 +211,7 @@
 
     @media (max-width: $screen-sm-max) {
       padding-top: 30px;
+      flex-basis: auto;
     }
   }
 
