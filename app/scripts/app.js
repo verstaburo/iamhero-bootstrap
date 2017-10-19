@@ -24,6 +24,7 @@ import sideModal from '../blocks/side-modal/side-modal';
 import jobListing from '../pages/job-listing/job-listing';
 import shortlist from '../pages/shortlist/shortlist';
 import suggestedJobs from '../pages/suggested-jobs/suggested-jobs';
+import magnificPopup from './common/magnificPopup';
 
 /* eslint-disable*/
 $(() => {
@@ -60,4 +61,5 @@ $(() => {
   jobListing();
   shortlist();
   suggestedJobs();
+  magnificPopup();
 });
