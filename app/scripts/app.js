@@ -62,4 +62,5 @@ $(() => {
   shortlist();
   suggestedJobs();
   magnificPopup();
+  window.initPopup = magnificPopup;
 });
