@@ -1,5 +1,5 @@
 import rangeSlider from '../blocks/rangeslider/rangeslider';
-import switchInit from '../blocks/switch/switch';
+import switchToggle from '../blocks/switch/switch';
 import videoPlay from '../components/plates/video-play';
 import isotope from './common/isotope';
 import stickyNavbar from '../blocks/sidebar-menu/sidebar-menu';
@@ -34,7 +34,8 @@ $(() => {
   toTop();
   rangeSlider();
   window.initRangeSlider = rangeSlider;
-  switchInit();
+  switchToggle();
+  window.initSwitch = switchToggle;
   videoPlay();
   isotope();
   window.initIsotope = isotope;
