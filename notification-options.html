@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
-    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <link href="assets/styles/app.css" rel="stylesheet">
     <script src="assets/scripts/libs/jquery.min.js"></script>
 </head>
 
@@ -23,7 +23,7 @@
         <div class="inner-header__col inner-header__search">
             <label class="search">
                 <input type="text" placeholder="Search for heroes..." />
-                <button class="btn">
+                <button>
                     <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
                 </button>
             </label>
@@ -195,7 +195,7 @@
                 <a href="#">Account settings</a>
                 <a href="#">Finances</a>
                 <a class="active" href="#">Notification options</a>
-                <a href="#">Invite Friends</a>
+                <span class="disabled" data-toggle="tooltip" data-placement="bottom" title="This link is under construction">Invite Friends</span>
             </div>
             <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-edit">Edit company page</button>
         </div>
@@ -212,30 +212,18 @@
             <a class="btn btn-secondary-warning btn-secondary-warning-medium" href="#">Open notifications</a>
         </div>
         <div class="inner-plate page__section notification-options">
-            <div class="checkbox checkbox-secondary notification-options__item">
-                <label>
-                    <input type="checkbox" value="" name="" checked="checked" />New message from employer</label>
-            </div>
-            <div class="checkbox checkbox-secondary notification-options__item">
-                <label>
-                    <input type="checkbox" value="" name="" checked="checked" />Someone viewed my profile</label>
-            </div>
-            <div class="checkbox checkbox-secondary notification-options__item">
-                <label>
-                    <input type="checkbox" value="" name="" checked="checked" />New suggested jobs</label>
-            </div>
-            <div class="checkbox checkbox-secondary notification-options__item">
-                <label>
-                    <input type="checkbox" value="" name="" checked="checked" />Notify me about profile imporvement suggestions</label>
-            </div>
-            <div class="checkbox checkbox-secondary notification-options__item">
-                <label>
-                    <input type="checkbox" value="" name="" checked="checked" />Statistic update</label>
-            </div>
-            <div class="checkbox checkbox-secondary notification-options__item">
-                <label>
-                    <input type="checkbox" value="" name="" checked="checked" />Friend joined Iamhero</label>
-            </div>
+            <label class="checkbox-inline checkbox-secondary">
+                <input type="checkbox" value="" name="" checked="checked" />New message from employer</label>
+            <label class="checkbox-inline checkbox-secondary">
+                <input type="checkbox" value="" name="" checked="checked" />Someone viewed my profile</label>
+            <label class="checkbox-inline checkbox-secondary">
+                <input type="checkbox" value="" name="" checked="checked" />New suggested jobs</label>
+            <label class="checkbox-inline checkbox-secondary">
+                <input type="checkbox" value="" name="" checked="checked" />Notify me about profile imporvement suggestions</label>
+            <label class="checkbox-inline checkbox-secondary">
+                <input type="checkbox" value="" name="" checked="checked" />Statistic update</label>
+            <label class="checkbox-inline checkbox-secondary">
+                <input type="checkbox" value="" name="" checked="checked" />Friend joined Iamhero</label>
         </div>
     </main>
     <a class="to-top" href="#">
@@ -252,6 +240,7 @@
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
     <script src="assets/scripts/libs/chart.min.js"></script>
+    <script src="assets/scripts/libs/magnific-popup.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

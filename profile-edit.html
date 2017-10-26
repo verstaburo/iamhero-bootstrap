@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
-    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <link href="assets/styles/app.css" rel="stylesheet">
     <script src="assets/scripts/libs/jquery.min.js"></script>
 </head>
 
@@ -41,7 +41,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-xxl-20 col-xxl-offset-1 col-xs-24">
+                <div class="col-xxl-21 col-xxl-offset-1 col-xs-24">
                     <div class="profile-header">
                         <label class="switch switch_transparent">
                             <input type="hidden" />
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="page__sidebar-wrap col-xxl-offset-1 col-xxl-4 col-lg-5">
+                <div class="page__sidebar-wrap col-xxl-offset-1 col-xxl-5 col-lg-6">
                     <div class="sidebar-wrap js-sidebar">
                         <div class="media media-vertical sidebar-wrap__media">
                             <div class="media-left">
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-16 col-lg-19 col-xs-24">
+                <div class="col-xxl-16 col-lg-18 col-xs-24">
                     <div class="plate plate_no-padding plate_flex plate_tablet-column" id="summary">
                         <div class="bg-image plate__avatar">
                             <img src="assets/images/profile-edit/avatar-placeholder.jpg" />
@@ -395,7 +395,7 @@
                                     </div>
                                     <h4>Proficiency in economics by ALAP</h4>
                                     <p>This sertificate gives me and ooportunity to work in financial sector for 2 years using my new knowledges in macroeconomy processes.</p>
-                                    <a class="timeline-item__control" href="#">
+                                    <a class="timeline-item__control popup-link" href="https://omextemplates.content.office.net/support/templates/en-us/lt04027254.png">
                                         <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
                                         <p>Show document</p>
                                     </a>
@@ -1161,40 +1161,31 @@
                         <svg class="icon-close modal-close" data-dismiss="modal"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                         <form class="modal-form plate__top-30">
                             <span class="modal-form__text">Select category:</span>
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="test" value="" checked="checked" />
-                                <span class="radio__box"></span>
-                                <span class="radio__text">Education</span>
-                            </label>
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="test" value="" />
-                                <span class="radio__box"></span>
-                                <span class="radio__text">Awards and certificates</span>
-                            </label>
-                            <label class="radio">
-                                <input class="radio__input" type="radio" name="test" value="" />
-                                <span class="radio__box"></span>
-                                <span class="radio__text">Work</span>
-                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="test" value="" checked="checked" />Education</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="test" value="" />Awards and certificates</label>
+                            <label class="radio-inline">
+                                <input type="radio" name="test" value="" />Work</label>
                             <div class="modal-form__wrap plate__top-30">
                                 <div class="modal-form__inputs">
                                     <div class="modal-form__datepick">
                                         <span>From</span>
                                         <div class="select-group">
-                                            <select class="js-select select select-group__item" placeholder="21">
-                                                <option value="">21</option>
+                                            <select class="js-select select" placeholder="Select day">
+                                                <option value="">Select day</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                             </select>
-                                            <select class="js-select select select-group__item select-group__item_wide" placeholder="September">
-                                                <option value="">September</option>
+                                            <select class="js-select select" placeholder="Select month">
+                                                <option value="">Select month</option>
                                                 <option value="feb">January</option>
                                                 <option value="feb">February</option>
                                                 <option value="mar">March</option>
                                             </select>
-                                            <select class="js-select select select-group__item" placeholder="2018">
-                                                <option value="">2018</option>
+                                            <select class="js-select select" placeholder="Select year">
+                                                <option value="">Select year</option>
                                                 <option value="2015">2015</option>
                                                 <option value="2016">2016</option>
                                                 <option value="2017">2017</option>
@@ -1202,20 +1193,20 @@
                                         </div>
                                         <span>to</span>
                                         <div class="select-group">
-                                            <select class="js-select select select-group__item" placeholder="21">
-                                                <option value="">21</option>
+                                            <select class="js-select select" placeholder="Select day">
+                                                <option value="">Select day</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                             </select>
-                                            <select class="js-select select select-group__item select-group__item_wide" placeholder="September">
-                                                <option value="">September</option>
+                                            <select class="js-select select" placeholder="Select month">
+                                                <option value="">Select month</option>
                                                 <option value="feb">January</option>
                                                 <option value="feb">February</option>
                                                 <option value="mar">March</option>
                                             </select>
-                                            <select class="js-select select select-group__item" placeholder="2018">
-                                                <option value="">2018</option>
+                                            <select class="js-select select" placeholder="Select year">
+                                                <option value="">Select year</option>
                                                 <option value="2015">2015</option>
                                                 <option value="2016">2016</option>
                                                 <option value="2017">2017</option>
@@ -1242,7 +1233,7 @@
                                 </div>
                             </div>
                             <div class="summary-btn plate__top-40">
-                                <button class="button-icon btn btn-default">
+                                <button class="button-icon btn btn-default modal-custom-btn">
                                     <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
                                     <span class="button-icon__text">Add point</span>
                                 </button>
@@ -1288,6 +1279,7 @@
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
     <script src="assets/scripts/libs/chart.min.js"></script>
+    <script src="assets/scripts/libs/magnific-popup.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

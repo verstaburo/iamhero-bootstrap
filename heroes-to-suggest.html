@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="favicon.ico" rel="shortcut icon">
-    <link href="assets/styles/app.min.css" rel="stylesheet">
+    <link href="assets/styles/app.css" rel="stylesheet">
     <script src="assets/scripts/libs/jquery.min.js"></script>
 </head>
 
@@ -23,7 +23,7 @@
         <div class="inner-header__col inner-header__search">
             <label class="search">
                 <input type="text" placeholder="Search for heroes..." />
-                <button class="btn">
+                <button>
                     <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
                 </button>
             </label>
@@ -195,7 +195,7 @@
                 <a href="#">Account settings</a>
                 <a href="#">Finances</a>
                 <a href="#">Notification options</a>
-                <a href="#">Invite Friends</a>
+                <span class="disabled" data-toggle="tooltip" data-placement="bottom" title="This link is under construction">Invite Friends</span>
             </div>
             <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-edit">Edit company page</button>
         </div>
@@ -264,22 +264,14 @@
                                 <h4>Employment PARAMETERS</h4>
                             </div>
                             <div class="inner-plate__control-container">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="" name="" checked="checked" />Part time</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="" name="" checked="checked" />Full time</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="" name="" />Freelance</label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="" name="" />Season job</label>
-                                </div>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="" name="" checked="checked" />Part time</label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="" name="" checked="checked" />Full time</label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="" name="" />Freelance</label>
+                                <label class="checkbox-inline">
+                                    <input type="checkbox" value="" name="" />Season job</label>
                             </div>
                         </div>
                         <div class="inner-plate__section">
@@ -305,21 +297,12 @@
                                 <h4>GEOGRAPHY</h4>
                             </div>
                             <div class="inner-plate__control-container">
-                                <label class="radio radio_warning">
-                                    <input class="radio__input" type="radio" name="geo" value="" checked="checked" />
-                                    <span class="radio__box"></span>
-                                    <span class="radio__text">Anywhere</span>
-                                </label>
-                                <label class="radio radio_warning">
-                                    <input class="radio__input" type="radio" name="geo" value="" />
-                                    <span class="radio__box"></span>
-                                    <span class="radio__text">Specific radius from</span>
-                                </label>
-                                <label class="radio radio_warning">
-                                    <input class="radio__input" type="radio" name="geo" value="" />
-                                    <span class="radio__box"></span>
-                                    <span class="radio__text">Specific locations</span>
-                                </label>
+                                <label class="radio-inline radio-inline_warning">
+                                    <input type="radio" name="geo" value="" checked="checked" />Anywhere</label>
+                                <label class="radio-inline radio-inline_warning">
+                                    <input type="radio" name="geo" value="" />Specific radius from</label>
+                                <label class="radio-inline radio-inline_warning">
+                                    <input type="radio" name="geo" value="" />Specific locations</label>
                             </div>
                         </div>
                     </div>
@@ -425,6 +408,7 @@
     <script src="assets/scripts/libs/scrollreveal.min.js"></script>
     <script src="assets/scripts/libs/selectize.min.js"></script>
     <script src="assets/scripts/libs/chart.min.js"></script>
+    <script src="assets/scripts/libs/magnific-popup.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 
