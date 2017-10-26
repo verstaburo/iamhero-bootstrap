@@ -1,12 +1,29 @@
 export default () => {
   /* eslint-disable */
-  $('.checkbox').each(function () {
-    const box = $('<span></span>').addClass('checkbox-box');
+  const checkbox = $('.checkbox'),
+    checkboxInline = $('.checkbox-inline');
+
+  if (!checkbox && !checkboxInline) {
+    return;
+  }
+
+  checkbox.each(function() {
+    const box = $('<span class="checkbox-box"></span>');
+
+    if ($(this).find($('.checkbox-box')).length) {
+      return;
+    }
+
     $(this).find('label').append(box);
   });
 
-  $('.checkbox-inline').each(function () {
-    const box = $('<span></span>').addClass('checkbox-box');
+  checkboxInline.each(function() {
+    const box = $('<span class="checkbox-box"></span>');
+
+    if ($(this).find($('.checkbox-box')).length) {
+      return;
+    }
+
     $(this).append(box);
   });
 };

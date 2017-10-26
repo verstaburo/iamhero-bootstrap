@@ -1,11 +1,29 @@
 export default () => { /*eslint-disable*/
-  $('.radio').each(function () {
-    const box = $('<span></span>').addClass('radio-box');
+
+  const radio = $('.radio'),
+    radioInline = $('.radio-inline');
+
+  if (!radio && !radioInline) {
+    return;
+  }
+
+  radio.each(function() {
+    const box = $('<span class="radio-box"></span>');
+
+    if ($(this).find($('.radio-box')).length) {
+      return;
+    }
+
     $(this).find('label').append(box);
   });
 
-  $('.radio-inline').each(function () {
-    const box = $('<span></span>').addClass('radio-box');
+  radioInline.each(function() {
+    const box = $('<span class="radio-box"></span>');
+
+    if ($(this).find($('.radio-box')).length) {
+      return;
+    }
+
     $(this).append(box);
   });
 };

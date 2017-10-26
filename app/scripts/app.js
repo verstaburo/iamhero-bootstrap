@@ -25,6 +25,7 @@ import jobListing from '../pages/job-listing/job-listing';
 import shortlist from '../pages/shortlist/shortlist';
 import suggestedJobs from '../pages/suggested-jobs/suggested-jobs';
 import magnificPopup from './common/magnificPopup';
+import tooltip from './common/tooltip';
 
 /* eslint-disable*/
 $(() => {
@@ -64,4 +65,6 @@ $(() => {
   suggestedJobs();
   magnificPopup();
   window.initPopup = magnificPopup;
+  tooltip();
+  window.initTooltip = tooltip;
 });

@@ -1,5 +1,3 @@
-// import { debounce } from 'throttle-debounce';
-
 export default () => {
   /*eslint-disable*/
   var $selector = $('input[type="range"]');
@@ -18,19 +16,19 @@ export default () => {
     handleClass: 'rangeslider__handle',
   });
 
-  function valueOutput(el) {
-    var value = el.val();
-    var output = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output');
+  function valueOutput() {
+    var value = $(this).val();
+    var output = $(this).parents('.rangeslider-wrap').find('.rangeslider-wrap__output');
     if (output.length) {
       output.html(value + '%');
     }
 
-    var outputSalary = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-salary');
+    var outputSalary = $(this).parents('.rangeslider-wrap').find('.rangeslider-wrap__output-salary');
     if (outputSalary.length) {
       outputSalary.html(value + ' $/h');
     }
 
-    var outputCustom = el.parents('.rangeslider-wrap').find('.rangeslider-wrap__output-custom');
+    var outputCustom = $(this).parents('.rangeslider-wrap').find('.rangeslider-wrap__output-custom');
     if (outputCustom.length) {
       outputCustom.html(value);
       var handlerPosition = outputCustom.siblings('.rangeslider').find('.rangeslider__handle').css('left');
@@ -38,11 +36,7 @@ export default () => {
     }
   }
 
-  $selector.each(function() {
-    valueOutput($(this));
-  })
+  $selector.each(valueOutput);
 
-  $selector.on('input', function() {
-    valueOutput($(this));
-  });
+  $(document).on('input', 'input[type="range"]', valueOutput);
 };

@@ -75,7 +75,7 @@ export default () => {
   };
 
   scrollSpyInit();
-  $(window).resize(debounce(300, false, scrollSpyInit));
+  // $(window).resize(debounce(300, false, scrollSpyInit));
 
   $(document).on('click', '.sidebar-menu__item', function() {
     if ($(window).width() < 1280) {

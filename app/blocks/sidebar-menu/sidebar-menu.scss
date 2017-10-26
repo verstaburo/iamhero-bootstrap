@@ -82,6 +82,7 @@
   padding: 0 15px 30px;
   transition: opacity .5s ease-in-out, top .5s ease-in-out;
   position: relative;
+  z-index: 3;
 
   @media (max-width: $screen-md-max) {
     display: flex;

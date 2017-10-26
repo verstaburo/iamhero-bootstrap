@@ -96,6 +96,7 @@
   }
 
   &__nav {
+    display: flex;
     margin-left: 45px;
 
     @media (max-width: $screen-xs-max) {

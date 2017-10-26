@@ -1,7 +1,7 @@
 export default () => {
   /*eslint-disable*/
   const btnClass = '.to-top',
-    w = $(window)
+    w = $(window);
 
   w.on('scroll', function() {
     if (w.scrollTop() - w.innerHeight() > 0) {

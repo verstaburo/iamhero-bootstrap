@@ -74,22 +74,22 @@
 
   &__menu {
 
-    a {
+    a, span {
       display: block;
       padding: 20px 55px;
       color: #263240;
       font-size: 18px;
       font-weight: 700;
       transition: background-color .25s ease-in-out;
-      border-top: 1px solid #e1e9ec;
+      border-bottom: 1px solid #e1e9ec;
 
       @media (max-width: $screen-lg-max) {
         padding-left: 35px;
         padding-right: 35px;
       }
 
-      &:last-child {
-        border-bottom: 1px solid #e1e9ec;
+      &:first-child {
+        border-top: 1px solid #e1e9ec;
       }
 
       &:hover {
@@ -104,6 +104,15 @@
           background-color: darken(#e9eff4, 5%);
         }
       }
+      // stylelint-disable
+      &.disabled {
+        color: lighten(#263240, 50%);
+
+        &:hover {
+          background-color: #fff;
+        }
+      }
+      // stylelint-enable
     }
   }
 

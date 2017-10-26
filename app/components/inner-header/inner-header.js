@@ -12,7 +12,6 @@ export default () => {
   $(document).on('click', '.inner-header__search-btn', function (e) {
     e.preventDefault();
     e.stopPropagation();
-    $(this).siblings('.inner-header__notify-wrap').find('.inner-header__col_dropdown').removeClass('active');
     $(this).siblings('.inner-header__search').toggleClass('active');
   })
 

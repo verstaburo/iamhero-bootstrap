@@ -13636,6 +13636,10 @@ img.mfp-img{
   padding-top:35px;
 }
 
+.page_profile .container{
+  padding-bottom:85px;
+}
+
 .page_inner-standart{
   margin-top:55px;
   margin-left:55px;
@@ -15285,6 +15289,7 @@ select{
   -webkit-transition:opacity .5s ease-in-out, top .5s ease-in-out;
   transition:opacity .5s ease-in-out, top .5s ease-in-out;
   position:relative;
+  z-index:3;
 }
 
 @media (max-width: 1279px){
@@ -16505,7 +16510,7 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
-.aside-filter__menu a{
+.aside-filter__menu a, .aside-filter__menu span{
   display:block;
   padding:20px 55px;
   color:#263240;
@@ -16513,30 +16518,38 @@ textarea::-webkit-scrollbar-thumb{
   font-weight:700;
   -webkit-transition:background-color .25s ease-in-out;
   transition:background-color .25s ease-in-out;
-  border-top:1px solid #e1e9ec;
+  border-bottom:1px solid #e1e9ec;
 }
 
 @media (max-width: 1439px){
-  .aside-filter__menu a{
+  .aside-filter__menu a, .aside-filter__menu span{
     padding-left:35px;
     padding-right:35px;
   }
 }
 
-.aside-filter__menu a:last-child{
-  border-bottom:1px solid #e1e9ec;
+.aside-filter__menu a:first-child, .aside-filter__menu span:first-child{
+  border-top:1px solid #e1e9ec;
 }
 
-.aside-filter__menu a:hover{
+.aside-filter__menu a:hover, .aside-filter__menu span:hover{
   background-color:#e9eff4;
 }
 
-.aside-filter__menu a.active{
+.aside-filter__menu a.active, .aside-filter__menu span.active{
   background-color:#e9eff4;
 }
 
-.aside-filter__menu a.active:hover{
+.aside-filter__menu a.active:hover, .aside-filter__menu span.active:hover{
   background-color:#d8e3ec;
+}
+
+.aside-filter__menu a.disabled, .aside-filter__menu span.disabled{
+  color:#9fb1c6;
+}
+
+.aside-filter__menu a.disabled:hover, .aside-filter__menu span.disabled:hover{
+  background-color:#fff;
 }
 
 .aside-filter__input:not(:first-of-type){
@@ -16880,7 +16893,6 @@ textarea::-webkit-scrollbar-thumb{
 
 .cases{
   display:block;
-  padding-bottom:85px;
 }
 
 .cases .thumbnail{
@@ -17457,6 +17469,9 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 .header__nav{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
   margin-left:45px;
 }
 
