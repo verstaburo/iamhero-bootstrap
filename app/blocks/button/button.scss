@@ -35,6 +35,13 @@
       color: #fff;
       background-color: $text-color;
     }
+
+    &-lg {
+      padding-top: 3px;
+      padding-bottom: 2px;
+      font-size: 33px;
+      font-weight: 300;
+    }
   }
 
   &-secondary-big {

@@ -16,7 +16,7 @@
   }
 
   .nav-link {
-    padding: 17px 5px 12px;
+    padding: 15px 5px 12px;
   }
 
   &__burger {
@@ -96,7 +96,6 @@
   }
 
   &__nav {
-    display: flex;
     margin-left: 45px;
 
     @media (max-width: $screen-xs-max) {

@@ -26,6 +26,7 @@ import shortlist from '../pages/shortlist/shortlist';
 import suggestedJobs from '../pages/suggested-jobs/suggested-jobs';
 import magnificPopup from './common/magnificPopup';
 import tooltip from './common/tooltip';
+import countdown from '../blocks/countdown/countdown';
 
 /* eslint-disable*/
 $(() => {
@@ -67,4 +68,5 @@ $(() => {
   window.initPopup = magnificPopup;
   tooltip();
   window.initTooltip = tooltip;
+  countdown();
 });

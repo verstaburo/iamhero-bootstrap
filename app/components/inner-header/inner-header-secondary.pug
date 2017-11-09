@@ -1,0 +1,14 @@
+include ../../blocks/logo/logo
+include ../../blocks/icon/icons
+include ../../blocks/nav/nav
+
+mixin inner-header-secondary()
+  +b.HEADER.inner-header_secondary&attributes(attributes).header
+    .container
+      +e.logo
+        a(href='#')
+          +icon('logo-white')
+      +nav(['Project', 'Whitepaper', 'Roadmap', 'Team'])
+      ul.nav
+        li
+          a(href='#').nav-link.nav-link-border-success Sign up now

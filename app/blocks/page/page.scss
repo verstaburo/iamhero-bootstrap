@@ -1,9 +1,8 @@
 .page {
-  margin-top: 52px;
+  margin-top: 55px;
   position: relative;
 
   &_profile {
-    margin-top: 57px;
     padding-top: 35px;
 
     .container {
@@ -12,7 +11,6 @@
   }
 
   &_inner-standart {
-    margin-top: 55px;
     margin-left: 55px;
 
     @media (max-width: $screen-sm-max) {

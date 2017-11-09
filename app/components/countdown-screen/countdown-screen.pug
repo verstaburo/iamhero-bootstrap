@@ -1,0 +1,38 @@
+include ../../blocks/input/input
+include ../../blocks/button/button
+include ../../blocks/icon/icons
+include ../../blocks/countdown/countdown
+
+mixin countdown-screen()
+  +b.countdown-screen&attributes(attributes).bg-image
+    img(src='assets/images/ico/main.jpg')
+    .container
+      .row
+        +e.text.col-md-12
+          h2 IAMHERO ICO
+          p Together, we are all Heroes. In the modern world there is a lack of responsible and talented professionals. Together, we can revolt and transform society.
+          span Stay tuned for upcoming ICO updates! Download the
+            a(href='#') WhitePaper
+
+        +e.controls.col-md-12
+          +countdown
+          form.form-inline
+            .form-group.has-success
+              +input('Enter your email').form-control-secondary.form-control-secondary-white
+              span.help-block Success!
+            +button.btn-secondary.btn-secondary-lg.form-inline-btn Join now
+          +e.links
+            a(href='#', target='_blank')
+              +icon('wt-social-bitcoin')
+            a(href='#', target='_blank')
+              +icon('wt-social-github')
+            a(href='#', target='_blank')
+              +icon('wt-social-medium')
+            a(href='#', target='_blank')
+              +icon('wt-social-reddit')
+            a(href='#', target='_blank')
+              +icon('wt-social-rocketchat')
+            a(href='#', target='_blank')
+              +icon('wt-social-telegram')
+            a(href='#', target='_blank')
+              +icon('wt-social-twitter')

@@ -1,0 +1,31 @@
+.countdown {
+  margin-bottom: 35px;
+}
+
+.time_circles {
+  color: #fff;
+
+  > div {
+    transform: translateY(-50%);
+    top: 50% !important;
+
+    > span {
+      font-family: $font-family-museo-sans;
+      font-weight: 100;
+      font-size: 40px !important;
+      letter-spacing: -.04em;
+    }
+
+    > h4 {
+      font-family: $font-family-museo-sans;
+      font-size: 25px !important;
+      font-weight: 100;
+      letter-spacing: -.04em;
+      text-transform: none;
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      bottom: -90px;
+    }
+  }
+}

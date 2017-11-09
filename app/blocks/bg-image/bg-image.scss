@@ -4,7 +4,7 @@
   overflow: hidden;
   user-select: none;
 
-  img {
+  & > img {
     @include fill-img();
   }
 }

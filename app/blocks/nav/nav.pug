@@ -6,3 +6,9 @@ mixin nav-success(data)
           a(href='#').nav-link.nav-link-border-success.nav-link-hover-success= item.text
         else
           a(href='#').nav-link.nav-link-hover-success= item.text
+
+mixin nav(data)
+  +b.UL.nav&attributes(attributes)
+    each item in data
+      li
+        a(href='#').nav-link= item
