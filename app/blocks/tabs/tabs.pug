@@ -7,6 +7,11 @@ mixin tab(href)
     a(data-toggle='tab', role='tab', href='#'+href, aria-controls=href)
       block
 
+mixin tab-custom(href, customClass)
+  li(role='presentation')&attributes(attributes)
+    a(data-toggle='tab', role='tab', href='#'+href, aria-controls=href, class=customClass)
+      block
+
 mixin tab-content
   .tab-content&attributes(attributes)
     block

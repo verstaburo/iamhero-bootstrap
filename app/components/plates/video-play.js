@@ -4,7 +4,7 @@ export default () => {
   $(document).on('click', '.js-video-play', function(e) {
     e.preventDefault();
 
-    var mediaElement = $(this).siblings('.plate__video-placeholder').find('.plate__video');
+    var mediaElement = $(this).siblings('.js-video-placeholder').children();
 
     $(this).fadeOut();
 

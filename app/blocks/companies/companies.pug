@@ -1,0 +1,11 @@
+mixin companies()
+  +b.companies&attributes(attributes)
+    .container
+      +e.row
+        - for(var i=1;i<=6;i++)
+          a(href='#')
+            img(src='assets/images/ico/company'+i+'.jpg')
+      +e.row
+        - for(var i=6;i>=1;i--)
+          a(href='#')
+            img(src='assets/images/ico/company'+i+'.jpg')

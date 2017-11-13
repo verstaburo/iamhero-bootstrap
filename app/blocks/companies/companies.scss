@@ -1,0 +1,20 @@
+.companies {
+  display: block;
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & + & {
+      margin-top: 40px;
+    }
+
+    a:hover {
+      opacity: .7;
+    }
+  }
+}

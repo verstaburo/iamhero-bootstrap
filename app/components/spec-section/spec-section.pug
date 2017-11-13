@@ -1,0 +1,35 @@
+include ../../blocks/inner-plate/inner-plate
+include ../../blocks/tabs/tabs
+include ../../blocks/icon/icons
+
+mixin spec-section()
+  +b.spec-section&attributes(attributes)
+    .container
+      .row
+        .col-md-8
+          +inner-plate._padding_none
+            +e.text._padded
+              h4 Specifications
+            +tabs.inner-plate__stats-icon.inner-plate__stats-icon_secondary
+              +tab-custom('overview', 'inner-plate__stats-icon-item').active
+                +icon('eye-fill')
+                span Overview
+              +tab-custom('docs', 'inner-plate__stats-icon-item')
+                +icon('clock')
+                span Documentation
+              +tab-custom('pricing', 'inner-plate__stats-icon-item')
+                +icon('bag')
+                span Pricing and plans
+              +tab-custom('reviews', 'inner-plate__stats-icon-item')
+                +icon('buy')
+                span Reviews
+              +tab-custom('howto', 'inner-plate__stats-icon-item')
+                +icon('mail')
+                span How to
+        .col-md-16
+          +tab-content
+            +tab-pane#overview.active.in
+            +tab-pane#docs
+            +tab-pane#pricing
+            +tab-pane#reviews
+            +tab-pane#howto

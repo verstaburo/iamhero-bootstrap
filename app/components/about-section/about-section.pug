@@ -1,0 +1,32 @@
+include ../../blocks/video-default/video-default
+
+mixin about-section()
+  +b.about-section&attributes(attributes)
+    .container
+      +e.intro.row
+        .col-md-12
+          img(src='assets/images/ico/imac.jpg')
+        +e.text.col-md-12
+          .ico-landing__text
+            h2 What is Iamhero
+
+            p We give an internal score to each user. All information about the person and online statistics (access to profiles, number of contact purchases, etc.) are included in the score calculation.
+
+            p The exact factors that influence the score will not be published. It is comparable to the Google principle the more appropriate results we deliver to companies the more valuable the service is <br>We give an internal score to each user. All information about the person and online statistics (access to profiles, number of contact purchases, etc.) are included in the score calculation.
+
+            p The exact factors that influence the score will not be
+      +e.media._first.row
+        .col-md-12.ico-landing__text.ico-landing__align.ico-landing__align_end
+          h2 Videos about
+          p We give an internal score to each user. All information about the person and online statistics (access to profiles, number of contact purchases, etc.) are included in the score calculation.
+        .col-md-12
+          +video-default
+            iframe(type="text/html", src="https://www.youtube.com/embed/dREKkAk628I?enablejsapi=1&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3", frameborder="0", allowfullscreen='')
+      +e.media._reverse.row
+        .col-md-12.ico-landing__text.ico-landing__align
+          h2 Videos about
+          p We give an internal score to each user. All information about the person and online statistics (access to profiles, number of contact purchases, etc.) are included in the score calculation.
+        .col-md-12
+          +video-default
+            video(controls='')
+              source(src="assets/videos/shutterstock.mp4" type="video/mp4")

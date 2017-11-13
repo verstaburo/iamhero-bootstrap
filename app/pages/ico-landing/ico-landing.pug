@@ -1,12 +1,22 @@
 extends ../../layouts/default
 include ../../components/inner-header/inner-header-secondary
 include ../../blocks/page/page
+include ../../blocks/companies/companies
+include ../../components/services-section/services-section
 include ../../components/countdown-screen/countdown-screen
+include ../../components/about-section/about-section
+include ../../components/spec-section/spec-section
+include ../../blocks/brand-section/brand-section
 
 block head
   - var pageTitle = 'I Am Hero - ICO Landing'
 
 block content
   +inner-header-secondary
-  +page
+  +page.ico-landing
     +countdown-screen
+    +companies
+    +about-section
+    +services-section
+    +spec-section
+    +brand-section

@@ -1,0 +1,20 @@
+.about-section {
+  display: block;
+  background-color: #fff;
+
+  &__text {
+    padding-top: 140px;
+    padding-right: 50px;
+    padding-left: 70px;
+  }
+
+  &__media {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+
+    &_reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}

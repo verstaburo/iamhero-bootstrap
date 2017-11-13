@@ -1,0 +1,19 @@
+include ../../blocks/service/service
+
+mixin services-section()
+  +b.services-section&attributes(attributes)
+    .container
+      +e.text.ico-landing__text
+        h2 Features available with IAMHERO
+        p We give an internal score to each user. All information about the person and online <br> statistics (access to profiles, number of contact purchases, etc.) are included in the score
+      +e.items.row
+        .plate__service.col-md-4
+          +service-static('tape', 'Video editing').sr-animate Adobe premier and After Effect mastery. Video filiming, color correction and Post production
+        .plate__service.col-md-4
+          +service-static('brush', 'Illustration').sr-animate Drawing illustration and graphical images in various styles. Look for more in cases section
+        .plate__service.col-md-4
+          +service-static('tape', 'Video editing').sr-animate Adobe premier and After Effect mastery. Video filiming, color correction and Post production
+        .plate__service.col-md-4
+          +service-static('brush', 'Illustration').sr-animate Drawing illustration and graphical images in various styles. Look for more in cases section
+        .plate__service.col-md-4
+          +service-static('tape', 'Video editing').sr-animate Adobe premier and After Effect mastery. Video filiming, color correction and Post production

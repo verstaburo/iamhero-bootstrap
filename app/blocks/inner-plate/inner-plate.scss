@@ -154,6 +154,28 @@
   &__stats-icon {
     padding-top: 30px;
     padding-bottom: 75px;
+
+    &_secondary {
+      padding-bottom: 0;
+    }
+
+    // stylelint-disable
+    li {
+      transition: background-color .25s ease-in-out;
+
+      &.active {
+        background-color: #e7ebee;
+      }
+    }
+    // stylelint-enable
+
+    .inner-plate__stats-icon-item {
+      font-size: 16px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
 
   &__stats-icon-item {

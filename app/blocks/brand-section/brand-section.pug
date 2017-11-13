@@ -1,0 +1,14 @@
+mixin brand-section()
+  +b.brand-section&attributes(attributes)
+    .container
+      .row
+        +e.content.col-md-20
+          .ico-landing__text
+            h2 Trademark and coin
+          div
+            +e.coin
+              img(src='assets/images/ico/coin.png')
+            +e.coin._secondary
+              img(src='assets/images/ico/coin.png')
+          img(src='assets/images/icon/entry-logo.svg')
+    block

@@ -1,0 +1,24 @@
+.services-section {
+  display: block;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 75px;
+
+  &__text {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 20px !important;
+    }
+  }
+
+  &__items {
+    margin-top: 75px;
+
+    .col-md-4 {
+      @media (min-width: $screen-md-min) {
+        width: 20%;
+      }
+    }
+  }
+}

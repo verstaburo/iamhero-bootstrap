@@ -1,3 +1,35 @@
 .ico-landing {
   display: block;
+
+  &__text {
+
+    h2 {
+      font-size: 50px;
+      margin-top: 0;
+      margin-bottom: 80px;
+    }
+
+    p {
+      font-family: $font-family-museo-sans;
+      font-size: 25px;
+      font-weight: 100;
+      letter-spacing: -.04em;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      + p {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  &__align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &_end {
+      justify-content: flex-end;
+    }
+  }
 }
