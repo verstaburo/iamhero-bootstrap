@@ -1,14 +1,26 @@
+include ../button/button
+
+
 mixin brand-section()
   +b.brand-section&attributes(attributes)
     .container
       .row
-        +e.content.col-md-20
+        .col-md-11
           .ico-landing__text
             h2 Trademark and coin
-          div
-            +e.coin
-              img(src='assets/images/ico/coin.png')
-            +e.coin._secondary
-              img(src='assets/images/ico/coin.png')
+        .col-md-4
+          img(src='assets/images/ico/coins.png')
+        .col-md-4.col-md-offset-2
           img(src='assets/images/icon/entry-logo.svg')
-    block
+
+mixin brand-section-second
+  +b.brand-section._secondary&attributes(attributes)
+    .container
+      .row
+        .col-md-7
+          .ico-landing__text
+            h2 Smart contract
+        .col-md-5
+          +button.btn-secondary View smart contact on github
+        .col-md-12
+          img(src='assets/images/ico/code.jpg')

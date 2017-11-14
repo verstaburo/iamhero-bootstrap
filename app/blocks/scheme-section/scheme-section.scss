@@ -1,0 +1,26 @@
+.scheme-section {
+  display: block;
+  padding-top: 105px;
+  padding-bottom: 35px;
+
+  .container {
+    position: relative;
+
+    .ico-landing__text {
+      max-width: 40%;
+      position: relative;
+    }
+
+    & > img {
+      margin-top: -135px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      font-family: 'object-fit: contain;';
+      user-select: none;
+    }
+  }
+}

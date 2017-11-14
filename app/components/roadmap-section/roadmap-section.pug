@@ -1,0 +1,26 @@
+include ../timeline/timeline
+
+mixin roadmap-section()
+  +b.roadmap-section&attributes(attributes)
+    .container
+      +e.flex-wrap.row
+        .col-md-12
+          +e.screen-wrap
+            +e.screen
+              +timeline
+                +e.years
+                  +e.P.year 2017
+                  +e.P.year 2016
+                  +e.P.year 2015
+                +e.items
+                  +e.holder
+                  - for (var i=0; i<15; i++)
+                    +timeline-item.__item
+                      +timeline-item-header('work', '17/06/2016')._red
+                      h4 Frontend Design Complete
+        .col-md-12.ico-landing__text.ico-landing__align
+          h2 Roadmap
+          p A little text about the projects or gerenral things A little text about the projects or gerenral things A little text about the projects or gerenral things A little text about the projects or gerenral things
+          p A little text about the projects or gerenral things A little text about the projects or gerenral things A little text about the projects or gerenral things
+
+    block

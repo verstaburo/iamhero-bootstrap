@@ -1,0 +1,45 @@
+include ../../blocks/member/member
+
+mixin team-section()
+  +b.team-section&attributes(attributes)
+    .container
+      .ico-landing__text
+        h2 The team
+        p Here we are! We’re the guys standing behind service <br> philosophy, managing, developing and promoting.
+      +e.members.row
+        .col-md-6
+          +member
+            +member-img
+              img(src='assets/images/ico/mihael.jpg')
+            h3 Mihael Berlant
+            h5 Chief Executive Officel, Project founder
+        .col-md-6.col-md-offset-3
+          +member
+            +member-img
+              img(src='assets/images/ico/sophia.jpg')
+            h3 Sophia Erik
+            h5 Project Manager
+        .col-md-6.col-md-offset-3
+          +member
+            +member-img
+              img(src='assets/images/ico/uwe.jpg')
+            h3 Uwe Uwe
+            h5 Lead Developer
+        .col-md-6
+          +member
+            +member-img
+              img(src='assets/images/ico/mihael.jpg')
+            h3 Mihael Berlant
+            h5 Chief Executive Officel, Project founder
+        .col-md-6.col-md-offset-3
+          +member
+            +member-img
+              img(src='assets/images/ico/mihael.jpg')
+            h3 Mihael Berlant
+            h5 Chief Executive Officel, Project founder
+        .col-md-6.col-md-offset-3
+          +member
+            +member-img
+              img(src='assets/images/ico/mihael.jpg')
+            h3 Mihael Berlant
+            h5 Chief Executive Officel, Project founder

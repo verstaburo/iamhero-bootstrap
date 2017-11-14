@@ -1,0 +1,14 @@
+include ../link/link
+
+mixin member()
+  +b.member&attributes(attributes)
+    block
+    p Who is, description about the person working in project and so on and so on
+    +link-success
+      | iamhero.io/MihaelBerland
+    +link
+      | www.linkedin.com/in/Mihael-Berland-741852b4/
+
+mixin member-img
+  +e.img.bg-image&attributes(attributes)
+    block

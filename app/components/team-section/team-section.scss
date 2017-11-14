@@ -1,0 +1,15 @@
+.team-section {
+  display: block;
+  background-color: #fff;
+  padding-top: 70px;
+
+  &__members {
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .member {
+      margin-bottom: 100px;
+    }
+  }
+}

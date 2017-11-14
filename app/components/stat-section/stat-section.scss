@@ -1,0 +1,45 @@
+.stat-section {
+  display: block;
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 90px;
+
+  &__text {
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 45px;
+    }
+
+    h6 {
+      font-family: $font-family-open-sans;
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 25px;
+      letter-spacing: 0;
+    }
+
+    ul {
+      margin-top: 45px;
+      margin-bottom: 45px;
+
+      .list-group-item:not(:first-child) {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 20px;
+      max-width: 40%;
+    }
+
+    img {
+      max-width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: block;
+    }
+  }
+}

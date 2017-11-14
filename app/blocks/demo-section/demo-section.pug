@@ -1,0 +1,46 @@
+include ../link/link
+
+mixin demo-section()
+  +b.demo-section&attributes(attributes)
+    .container
+      .row
+        +e.mockups.col-md-16
+          .mockup-1
+            img(src='assets/images/ico/mockup-1.png')
+          .mockup-2
+            img(src='assets/images/ico/mockup-2.png')
+          .mockup-3
+            img(src='assets/images/ico/mockup-3.png')
+          .mockup-4
+            img(src='assets/images/ico/mockup-4.png')
+          .mockup-5
+            img(src='assets/images/ico/mockup-5.png')
+        +e.text.col-md-offset-16.col-md-8
+          h2 Links for pages
+          +link-success Profile3x2
+          +link-success Profile3x2_edit3
+          +link-success Company listing
+          +link-success Company profile2
+          +link-success Dashboard
+          +link-success Finances
+          +link-success Hero search
+          +link-success Invite friends
+          +link-success Job listing
+          +link-success Messages
+          +link-success Notification options
+          +link-success Settings Account settings
+          +link-success Settings Heroes to suggest
+          +link-success Shortlist2 + Shortlist mass message
+          +link-success Single job
+          +link-success Stats
+          +link-success Suggested jobs + vacancies
+          +link-success Sign UP
+          h6 Examples of resume
+          +link-success
+            | iamhero.io/heroes/dmitrijs-procvetovs
+          +link-success
+            | iamhero.io/MihaelBerland
+          +link-success
+            | iamhero.io/heroes/dmitrijs-procvetovs
+
+    block

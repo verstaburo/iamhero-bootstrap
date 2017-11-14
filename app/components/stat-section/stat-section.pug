@@ -1,0 +1,25 @@
+include ../../blocks/list-group/list-group
+include ../../blocks/js-progress/js-progress
+
+mixin stat-section()
+  +b.stat-section&attributes(attributes)
+    .container
+      .row
+        .col-md-12
+          +e.text
+            h2 Distribution of tokens
+            h6 Characteristics
+            +list-group
+              +list-group-item Symbol: DRT
+              +list-group-item Total amount: 1 billion
+              +list-group-item Type: ERC20
+              +list-group-item Sales total: 35 M
+              +list-group-item Token price: 0,10
+            h6 Exchanges
+            p DRT will be traadable on exchanges. We are currently in discussion with Bittrex, Coinone and ElterDelta
+            img(src='assets/images/ico/exchange.jpg')
+        .col-md-12
+          +js-progress-big('35')
+          +js-progress-big('50')
+          +js-progress-big('15')
+    block
