@@ -13,7 +13,8 @@ mixin brand-section()
 mixin brand-section-second
   +b.brand-section._secondary&attributes(attributes)
     .container
-      .ico-landing__text
-        h2 Smart contract
-      +button.btn-secondary View smart contact on github
-      img(src='assets/images/ico/code.jpg')
+      +e.wrap
+        .ico-landing__text
+          h2 Smart contract
+        +button.btn-secondary View smart contact on github
+        img(src='assets/images/ico/code.jpg')

@@ -7,12 +7,15 @@
     position: relative;
 
     .ico-landing__text {
-      max-width: 40%;
+      @media (min-width: $screen-lg-max) {
+        max-width: 40%;
+      }
+
       position: relative;
     }
 
     & > img {
-      margin-top: -135px;
+      margin-top: 20px;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -21,6 +24,10 @@
       object-fit: contain;
       font-family: 'object-fit: contain;';
       user-select: none;
+
+      @media (min-width: $screen-xl-min) {
+        margin-top: -70px;
+      }
     }
   }
 }

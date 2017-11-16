@@ -7,37 +7,38 @@ mixin contact-section()
   +b.contact-section&attributes(attributes)
     .container
       +e.text.row
-        .col-md-4
+        .col-xl-4.col-xs-24
           h2 Contacts
-        .col-md-5
+        .col-xl-5.col-lg-6.col-sm-8
           h4 USA<br>I AM HERO LLC.<br>751 Pine Ridge Road,<br>Golden, CO 80403
-        .col-md-5
+        .col-xl-5.col-lg-6.col-sm-8
           h4 Germany<br>I AM HERO LLC.<br>Gustav-Heinemann Ufer 116c<br>50968 Cologne
-        .col-md-5
+        .col-xl-5.col-lg-6.col-sm-8
           h4 Plus one adress<br>I AM HERO LLC.<br>Gustav-Heinemann Ufer 116c<br>50968 Cologne
-        .col-md-4
+        .col-xl-4.col-lg-6.col-sm-8
           +link-icon('messages-multi').link-success Chat with us
           +link-icon('apetail').link-success support@iamhero.io
           +link-icon('question').link-success Read FAQ
-      +e.IMG.map(src='assets/images/ico/map.jpg')
-      +e.FORM.form.row
-        .col-md-8
-          .form-group.form-group-lg
-            +input('Name')
-            span.help-block Help text
-        .col-md-8
-          .form-group.form-group-lg.form-group-offset
-            +input('E-mail Adress')
-            span.help-block Help text
-        .col-md-8
-          .form-group.form-group-lg.form-group-offset
-            +input('Subject')
-            span.help-block Help text
-        .col-md-24
-          .form-group
-            +textarea('4')(placeholder='Message').form-control-area-static.form-control-border-straight
-            span.help-block Help text
-        .col-md-8.col-md-offset-8
-          +button.btn-secondary.btn-secondary-text-dark.btn-block Send Message
+      img(src='assets/images/ico/map.jpg')
+      +e.FORM.form
+        .row
+          .col-md-8
+            .form-group.form-group-lg
+              +input('Name')
+              span.help-block Help text
+          .col-md-8
+            .form-group.form-group-lg.form-group-offset
+              +input('E-mail Adress')
+              span.help-block Help text
+          .col-md-8
+            .form-group.form-group-lg.form-group-offset
+              +input('Subject')
+              span.help-block Help text
+          .col-md-24
+            .form-group
+              +textarea('4')(placeholder='Message').form-control-area-static.form-control-border-straight
+              span.help-block Help text
+          .col-md-8.col-md-offset-8
+            +button.btn-secondary.btn-secondary-text-dark.btn-block Send Message
 
     block

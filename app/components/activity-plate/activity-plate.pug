@@ -7,6 +7,9 @@ mixin activity-plate()
       h2 Recent Activity
       p Here’s what happened since your last visit. Besides the fact that we missed you a lot
     +e.items
-      +circle-icon-item('eye-thin', '156').__item Company profile views
-      +circle-icon-item('messages-thin', '2').__item Private Messages
-      +circle-icon-item('heroes-thin', '893').__item New Heroes for you
+      +circle-icon-item('eye-thin', '156').__item
+        h6.font-weight-medium Company profile views
+      +circle-icon-item('messages-thin', '2').__item
+        h6.font-weight-medium Private Messages
+      +circle-icon-item('heroes-thin', '893').__item
+        h6.font-weight-medium New Heroes for you

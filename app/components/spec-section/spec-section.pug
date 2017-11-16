@@ -1,12 +1,13 @@
 include ../../blocks/inner-plate/inner-plate
 include ../../blocks/tabs/tabs
 include ../../blocks/icon/icons
+include ../../blocks/circle-icon-item/circle-icon-item
 
 mixin spec-section()
   +b.spec-section&attributes(attributes)
     .container
       .row
-        .col-md-8
+        .col-lg-8.col-xs-24
           +inner-plate._padding_none
             +e.text._padded
               h4 Specifications
@@ -26,9 +27,21 @@ mixin spec-section()
               +tab-custom('howto', 'inner-plate__stats-icon-item')
                 +icon('mail')
                 span How to
-        .col-md-16
+        .col-lg-16.col-xs-24
           +tab-content
-            +tab-pane#overview.active.in
+            +tab-pane.spec-section__circles#overview.active.in
+              +circle-icon-item('eye-thin', '156')._horizontal
+                h6 Easy title
+                p DRT will be traadable on exchanges. We are currently in discussion with Bittrex, Coinone and ElterDelta
+              +circle-icon-item('heroes-thin', '893')._horizontal
+                h6 Easy title
+                p DRT will be traadable on exchanges. We are currently in discussion with Bittrex, Coinone and ElterDelta
+              +circle-icon-item('messages-thin', '2')._horizontal
+                h6 Easy title
+                p DRT will be traadable on exchanges. We are currently in discussion with Bittrex, Coinone and ElterDelta
+              +circle-icon-item('eye-thin', '156')._horizontal
+                h6 Easy title
+                p DRT will be traadable on exchanges. We are currently in discussion with Bittrex, Coinone and ElterDelta
             +tab-pane#docs
             +tab-pane#pricing
             +tab-pane#reviews

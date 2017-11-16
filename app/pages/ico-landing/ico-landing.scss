@@ -6,10 +6,18 @@
     h2 {
       font-size: 50px;
       margin-top: 0;
-      margin-bottom: 80px;
+      margin-bottom: 0;
 
-      @media (max-width: $screen-md-max) {
-        margin-bottom: 50px;
+      @media (max-width: $screen-xs-max) {
+        font-size: 40px;
+      }
+
+      + p {
+        margin-top: 80px;
+
+        @media (max-width: $screen-md-max) {
+          margin-top: 50px;
+        }
       }
     }
 

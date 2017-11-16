@@ -4,7 +4,7 @@ mixin demo-section()
   +b.demo-section&attributes(attributes)
     .container
       .row
-        +e.mockups.col-md-16
+        +e.mockups.col-lg-16.col-xs-24
           .mockup-1
             img(src='assets/images/ico/mockup-1.png')
           .mockup-2
@@ -15,7 +15,7 @@ mixin demo-section()
             img(src='assets/images/ico/mockup-4.png')
           .mockup-5
             img(src='assets/images/ico/mockup-5.png')
-        +e.text.col-md-offset-16.col-md-8
+        +e.text.col-lg-offset-16.col-lg-8.col-xs-24
           h2 Links for pages
           +link-success Profile3x2
           +link-success Profile3x2_edit3

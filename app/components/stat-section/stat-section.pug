@@ -5,7 +5,7 @@ mixin stat-section()
   +b.stat-section&attributes(attributes)
     .container
       .row
-        .col-md-12
+        .col-lg-10.col-xl-12
           +e.text
             h2 Distribution of tokens
             h6 Characteristics
@@ -18,7 +18,7 @@ mixin stat-section()
             h6 Exchanges
             p DRT will be traadable on exchanges. We are currently in discussion with Bittrex, Coinone and ElterDelta
             img(src='assets/images/ico/exchange.jpg')
-        +e.circles.col-md-12
+        +e.circles.col-lg-14.col-xl-12
           +e.circle.ico-landing__text
             +circle-lazy('0.35', '175')
             p Sold during the ICO

@@ -4,7 +4,11 @@ mixin roadmap-section()
   +b.roadmap-section&attributes(attributes)
     .container
       +e.flex-wrap.row
-        .col-md-12
+        .col-md-12.ico-landing__text.ico-landing__align
+          h2 Roadmap
+          p A little text about the projects or gerenral things A little text about the projects or gerenral things A little text about the projects or gerenral things A little text about the projects or gerenral things
+          p A little text about the projects or gerenral things A little text about the projects or gerenral things A little text about the projects or gerenral things
+        .col-md-12.col-xs-24
           +e.screen-wrap
             +e.screen
               +timeline
@@ -18,9 +22,3 @@ mixin roadmap-section()
                     +timeline-item.__item
                       +timeline-item-header('work', '17/06/2016')._red
                       h4 Frontend Design Complete
-        .col-md-12.ico-landing__text.ico-landing__align
-          h2 Roadmap
-          p A little text about the projects or gerenral things A little text about the projects or gerenral things A little text about the projects or gerenral things A little text about the projects or gerenral things
-          p A little text about the projects or gerenral things A little text about the projects or gerenral things A little text about the projects or gerenral things
-
-    block

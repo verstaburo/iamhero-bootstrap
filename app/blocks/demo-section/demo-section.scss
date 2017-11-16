@@ -1,11 +1,37 @@
 .demo-section {
   display: block;
-  background-color: #fff;
-  padding-top: 45px;
-  padding-bottom: 60px;
   overflow: hidden;
+  background-color: #fff;
+
+  .container {
+    @media (max-width: $screen-md-max) {
+      overflow: hidden;
+    }
+  }
 
   &__text {
+    background-color: #fff;
+    z-index: 5;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 60px;
+
+    @media (max-width: $screen-md-max) {
+      background-color: rgba(#fff, .8);
+    }
+
+    @media (min-width: $screen-lg-min) {
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 200px;
+        height: 100%;
+        background-image: linear-gradient(to right, transparent, #fff);
+      }
+    }
 
     h2 {
       margin-top: 0;
@@ -29,11 +55,24 @@
   &__mockups {
     position: relative;
 
+    img {
+      min-width: 900px;
+    }
+
     .mockup-1 {
       position: absolute;
       z-index: 1;
       left: 0;
       top: -100px;
+
+      @media (max-width: $screen-md-max) {
+        top: 0;
+        left: 200px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        left: 50px;
+      }
     }
 
     .mockup-2 {
@@ -41,6 +80,15 @@
       z-index: 2;
       left: -110px;
       top: 140px;
+
+      @media (max-width: $screen-md-max) {
+        left: 200px;
+        top: 70px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        left: 50px;
+      }
     }
 
     .mockup-3 {
@@ -48,6 +96,15 @@
       z-index: 3;
       left: 0;
       top: 450px;
+
+      @media (max-width: $screen-md-max) {
+        top: 200px;
+        left: 200px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        left: 50px;
+      }
     }
 
     .mockup-4 {
@@ -55,6 +112,15 @@
       z-index: 4;
       left: 220px;
       top: 170px;
+
+      @media (max-width: $screen-md-max) {
+        left: 200px;
+        top: 340px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        left: 50px;
+      }
     }
 
     .mockup-5 {
@@ -62,6 +128,15 @@
       z-index: 5;
       left: 320px;
       top: -80px;
+
+      @media (max-width: $screen-md-max) {
+        left: 200px;
+        top: 440px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        left: 50px;
+      }
     }
   }
 }

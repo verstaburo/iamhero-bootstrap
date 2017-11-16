@@ -10,6 +10,10 @@
 
     .member {
       margin-bottom: 100px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 65px;
+      }
     }
   }
 }

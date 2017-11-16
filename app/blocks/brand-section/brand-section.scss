@@ -5,6 +5,27 @@
   padding-top: 45px;
   padding-bottom: 45px;
 
+  &_secondary {
+
+    .brand-section__wrap {
+      width: 100%;
+    }
+
+    img {
+      max-width: 40%;
+
+      @media (max-width: $screen-md-max) {
+        display: none;
+      }
+    }
+
+    .ico-landing__text h2 {
+      @media (max-width: $screen-xl-max) {
+        font-size: 40px;
+      }
+    }
+  }
+
   img {
     object-fit: contain;
     max-height: 150px;
@@ -21,8 +42,18 @@
     justify-content: space-between;
     align-items: center;
 
-    @media (min-width: $screen-md-min) {
+    @media (min-width: $screen-lg-min) {
       width: 85%;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+      text-align: center;
+
+      img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
     }
   }
 

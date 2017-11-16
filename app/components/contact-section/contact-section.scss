@@ -7,26 +7,28 @@
   &__text {
 
     h2 {
-      margin-top: 0;
-      margin-bottom: 0;
       font-size: 50px;
-    }
 
-    h4 {
-      margin-top: 0;
-      margin-bottom: 0;
+      @media (min-width: $screen-xl-min) {
+        margin-top: 0;
+      }
     }
   }
 
-  &__map {
-    margin-top: -80px;
+  .container > img {
+    @media (min-width: $screen-md-min) {
+      margin-top: -80px;
+    }
   }
 
   &__form {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
+
+    @media (min-width: $screen-sm-min) {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     .btn {
       font-size: 20px;
