@@ -26,6 +26,14 @@
       transform: translateX(-50%);
       left: 50%;
       bottom: -90px;
+
+      @media (max-width: $screen-sm-max) {
+        bottom: -110px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        bottom: -80px;
+      }
     }
   }
 }

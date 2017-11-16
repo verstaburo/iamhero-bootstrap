@@ -1,0 +1,30 @@
+.circle, .circle-lazy {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 38px;
+
+  span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: calc(50% - 19px);
+    left: 50%;
+    font-size: 64px;
+    font-weight: 100;
+    letter-spacing: -.04em;
+  }
+
+  &_small {
+
+    span {
+      font-size: 40px;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    pointer-events: none;
+  }
+}

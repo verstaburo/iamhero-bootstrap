@@ -42,4 +42,19 @@
       display: block;
     }
   }
+
+  &__circles {
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__circle {
+    max-width: 230px;
+    text-align: center;
+
+    p {
+      margin-top: 20px !important;
+    }
+  }
 }

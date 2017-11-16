@@ -15,9 +15,17 @@
   &__items {
     margin-top: 75px;
 
-    .col-md-4 {
-      @media (min-width: $screen-md-min) {
+    .col-lg-4 {
+      @media (min-width: $screen-lg-min) {
         width: 20%;
+      }
+
+      @media (max-width: $screen-lg-max) {
+
+        .service, .service__heading {
+          text-align: left;
+          justify-content: flex-start;
+        }
       }
     }
   }

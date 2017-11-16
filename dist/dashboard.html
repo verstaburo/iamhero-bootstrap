@@ -461,13 +461,9 @@
                         <h5>Account effectivness Ratio</h5>
                         <p>That means that 75% of your page visitors stay on it longer than 25 seconds. Heroes are interested in you. Keep it up</p>
                     </div>
-                    <div class="js-progress">
-                        <svg class="js-progress__circle" width="112" height="112" viewBox="0 0 112 112">
-                            <circle cx="56" cy="56" r="52" fill="none" stroke="#e1e9ec" stroke-width="8"></circle>
-                            <circle class="js-progress__value" cx="56" cy="56" r="52" fill="none" stroke="#ffc425" stroke-width="8" stroke-dashoffset="326.56" stroke-dasharray="326.56"></circle>
-                        </svg>
-                        <input class="js-progress__control" type="hidden" value="75" />
-                        <span class="js-progress__output"></span>
+                    <div class="circle circle_small" data-value="0.75" data-size="110">
+                        <span></span>
+                        <img class="circle__decor" src="assets/images/icon/decor.png" alt="" role="presentation" />
                     </div>
                 </div>
                 <div class="rangeslider-wrap rangeslider-wrap_warning-big info-sidebar__slider">
@@ -683,6 +679,8 @@
     <script src="assets/scripts/libs/chart.min.js"></script>
     <script src="assets/scripts/libs/magnific-popup.min.js"></script>
     <script src="assets/scripts/libs/TimeCircles.js"></script>
+    <script src="assets/scripts/libs/jquery.appear.js"></script>
+    <script src="assets/scripts/libs/circle-progress.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

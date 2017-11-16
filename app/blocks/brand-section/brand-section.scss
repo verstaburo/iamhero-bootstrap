@@ -5,8 +5,36 @@
   padding-top: 45px;
   padding-bottom: 45px;
 
+  img {
+    object-fit: contain;
+    max-height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    @media (max-width: $screen-sm-max) {
+      max-height: 100px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $screen-md-min) {
+      width: 85%;
+    }
+  }
+
+  &__coins {
+    width: 233px;
+  }
+
+  &__logo {
+    width: 208px;
+  }
+
   .ico-landing__text {
-    margin-top: 45px;
 
     h2 {
       margin-bottom: 0;

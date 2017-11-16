@@ -13,3 +13,16 @@
     text-decoration-color: $brand-success;
   }
 }
+
+.link-icon {
+
+  svg {
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    fill: none;
+    stroke: #000;
+    margin-right: 15px;
+  }
+}

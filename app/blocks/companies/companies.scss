@@ -5,12 +5,22 @@
   padding-bottom: 60px;
 
   &__row {
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
     align-items: center;
 
+    @media (max-width: $screen-sm-max) {
+      flex-direction: column;
+
+      a {
+        margin-bottom: 20px;
+      }
+    }
+
     & + & {
-      margin-top: 40px;
+      @media (min-width: $screen-md-min) {
+        margin-top: 40px;
+      }
     }
 
     a:hover {

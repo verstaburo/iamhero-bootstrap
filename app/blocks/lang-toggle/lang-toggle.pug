@@ -1,0 +1,10 @@
+mixin lang-toggle()
+  +b.lang-toggle&attributes(attributes)
+    .dropdown-toggle(data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+      | EN
+      span.caret
+    ul.dropdown-menu
+      li
+        a(href='#') RU
+      li
+        a(href="#") LV

@@ -21,6 +21,9 @@
                     <svg><use xlink:href="assets/images/icon.svg#icon_logo-white"></use></svg>
                 </a>
             </div>
+            <div class="inner-header__burger">
+                <svg><use xlink:href="assets/images/icon.svg#icon_header-burger"></use></svg>
+            </div>
             <ul class="nav">
                 <li>
                     <a class="nav-link" href="#">Project</a>
@@ -35,11 +38,26 @@
                     <a class="nav-link" href="#">Team</a>
                 </li>
             </ul>
-            <ul class="nav">
+        </div>
+        <div class="inner-header__pushed-nav">
+            <ul class="nav hidden-sm hidden-xs">
                 <li>
                     <a class="nav-link nav-link-border-success" href="#">Sign up now</a>
                 </li>
             </ul>
+            <div class="lang-toggle">
+                <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN
+                    <span class="caret"></span>
+                </div>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">RU</a>
+                    </li>
+                    <li>
+                        <a href="#">LV</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main class="page ico-landing" role="main">
@@ -92,7 +110,7 @@
         </div>
         <div class="companies">
             <div class="container">
-                <div class="companies__row">
+                <div class="companies__row col-sm-12 col-xs-12">
                     <a href="#">
                         <img src="assets/images/ico/company1.jpg" />
                     </a>
@@ -112,7 +130,7 @@
                         <img src="assets/images/ico/company6.jpg" />
                     </a>
                 </div>
-                <div class="companies__row">
+                <div class="companies__row col-sm-12 col-xs-12">
                     <a href="#">
                         <img src="assets/images/ico/company6.jpg" />
                     </a>
@@ -190,7 +208,7 @@
                         <br> statistics (access to profiles, number of contact purchases, etc.) are included in the score</p>
                 </div>
                 <div class="services-section__items row">
-                    <div class="plate__service col-md-4">
+                    <div class="plate__service col-lg-4">
                         <div class="service sr-animate">
                             <div class="service__heading">
                                 <img class="service__icon" src="assets/images/profile-edit/services/tape.svg" alt="" role="presentation" />
@@ -199,7 +217,7 @@
                             <p class="service__description">Adobe premier and After Effect mastery. Video filiming, color correction and Post production</p>
                         </div>
                     </div>
-                    <div class="plate__service col-md-4">
+                    <div class="plate__service col-lg-4">
                         <div class="service sr-animate">
                             <div class="service__heading">
                                 <img class="service__icon" src="assets/images/profile-edit/services/brush.svg" alt="" role="presentation" />
@@ -208,7 +226,7 @@
                             <p class="service__description">Drawing illustration and graphical images in various styles. Look for more in cases section</p>
                         </div>
                     </div>
-                    <div class="plate__service col-md-4">
+                    <div class="plate__service col-lg-4">
                         <div class="service sr-animate">
                             <div class="service__heading">
                                 <img class="service__icon" src="assets/images/profile-edit/services/tape.svg" alt="" role="presentation" />
@@ -217,7 +235,7 @@
                             <p class="service__description">Adobe premier and After Effect mastery. Video filiming, color correction and Post production</p>
                         </div>
                     </div>
-                    <div class="plate__service col-md-4">
+                    <div class="plate__service col-lg-4">
                         <div class="service sr-animate">
                             <div class="service__heading">
                                 <img class="service__icon" src="assets/images/profile-edit/services/brush.svg" alt="" role="presentation" />
@@ -226,7 +244,7 @@
                             <p class="service__description">Drawing illustration and graphical images in various styles. Look for more in cases section</p>
                         </div>
                     </div>
-                    <div class="plate__service col-md-4">
+                    <div class="plate__service col-lg-4">
                         <div class="service sr-animate">
                             <div class="service__heading">
                                 <img class="service__icon" src="assets/images/profile-edit/services/tape.svg" alt="" role="presentation" />
@@ -294,18 +312,12 @@
         </div>
         <div class="brand-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-11">
-                        <div class="ico-landing__text">
-                            <h2>Trademark and coin</h2>
-                        </div>
+                <div class="brand-section__wrap">
+                    <div class="ico-landing__text">
+                        <h2>Trademark and coin</h2>
                     </div>
-                    <div class="col-md-4">
-                        <img src="assets/images/ico/coins.png" />
-                    </div>
-                    <div class="col-md-4 col-md-offset-2">
-                        <img src="assets/images/icon/entry-logo.svg" />
-                    </div>
+                    <img class="brand-section__coins" src="assets/images/ico/coins.png" alt="" role="presentation" />
+                    <img class="brand-section__logo" src="assets/images/icon/entry-logo.svg" alt="" role="presentation" />
                 </div>
             </div>
         </div>
@@ -328,30 +340,27 @@
                             <img src="assets/images/ico/exchange.jpg" />
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="js-progress js-progress_big">
-                            <svg class="js-progress__circle" width="165" height="165" viewBox="0 0 165 165">
-                                <circle cx="82.5" cy="82.5" r="77.5" fill="none" stroke="#e1e9ec" stroke-width="10"></circle>
-                                <circle class="js-progress__value" cx="82.5" cy="82.5" r="77.5" fill="none" stroke="#ffc425" stroke-width="10" stroke-dashoffset="486.7" stroke-dasharray="486.7"></circle>
-                            </svg>
-                            <input class="js-progress__control" type="hidden" value="35" />
-                            <span class="js-progress__output"></span>
+                    <div class="stat-section__circles col-md-12">
+                        <div class="stat-section__circle ico-landing__text">
+                            <div class="circle-lazy" data-value="0.35" data-size="175">
+                                <span></span>
+                                <img class="circle-lazy__decor" src="assets/images/icon/decor.png" alt="" role="presentation" />
+                            </div>
+                            <p>Sold during the ICO</p>
                         </div>
-                        <div class="js-progress js-progress_big">
-                            <svg class="js-progress__circle" width="165" height="165" viewBox="0 0 165 165">
-                                <circle cx="82.5" cy="82.5" r="77.5" fill="none" stroke="#e1e9ec" stroke-width="10"></circle>
-                                <circle class="js-progress__value" cx="82.5" cy="82.5" r="77.5" fill="none" stroke="#ffc425" stroke-width="10" stroke-dashoffset="486.7" stroke-dasharray="486.7"></circle>
-                            </svg>
-                            <input class="js-progress__control" type="hidden" value="50" />
-                            <span class="js-progress__output"></span>
+                        <div class="stat-section__circle ico-landing__text">
+                            <div class="circle-lazy" data-value="0.50" data-size="175">
+                                <span></span>
+                                <img class="circle-lazy__decor" src="assets/images/icon/decor.png" alt="" role="presentation" />
+                            </div>
+                            <p>For distribution to incentivize the ecosystem</p>
                         </div>
-                        <div class="js-progress js-progress_big">
-                            <svg class="js-progress__circle" width="165" height="165" viewBox="0 0 165 165">
-                                <circle cx="82.5" cy="82.5" r="77.5" fill="none" stroke="#e1e9ec" stroke-width="10"></circle>
-                                <circle class="js-progress__value" cx="82.5" cy="82.5" r="77.5" fill="none" stroke="#ffc425" stroke-width="10" stroke-dashoffset="486.7" stroke-dasharray="486.7"></circle>
-                            </svg>
-                            <input class="js-progress__control" type="hidden" value="15" />
-                            <span class="js-progress__output"></span>
+                        <div class="stat-section__circle ico-landing__text">
+                            <div class="circle-lazy" data-value="0.15" data-size="175">
+                                <span></span>
+                                <img class="circle-lazy__decor" src="assets/images/icon/decor.png" alt="" role="presentation" />
+                            </div>
+                            <p>Allocated to stakeholders (advisors, the community, the teaam)</p>
                         </div>
                     </div>
                 </div>
@@ -416,19 +425,11 @@
         </div>
         <div class="brand-section brand-section_secondary">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="ico-landing__text">
-                            <h2>Smart contract</h2>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <button class="btn btn-secondary">View smart contact on github</button>
-                    </div>
-                    <div class="col-md-12">
-                        <img src="assets/images/ico/code.jpg" />
-                    </div>
+                <div class="ico-landing__text">
+                    <h2>Smart contract</h2>
                 </div>
+                <button class="btn btn-secondary">View smart contact on github</button>
+                <img src="assets/images/ico/code.jpg" />
             </div>
         </div>
         <div class="roadmap-section">
@@ -646,6 +647,76 @@
                 </div>
             </div>
         </div>
+        <div class="contact-section">
+            <div class="container">
+                <div class="contact-section__text row">
+                    <div class="col-md-4">
+                        <h2>Contacts</h2>
+                    </div>
+                    <div class="col-md-5">
+                        <h4>USA
+                            <br>I AM HERO LLC.
+                            <br>751 Pine Ridge Road,
+                            <br>Golden, CO 80403</h4>
+                    </div>
+                    <div class="col-md-5">
+                        <h4>Germany
+                            <br>I AM HERO LLC.
+                            <br>Gustav-Heinemann Ufer 116c
+                            <br>50968 Cologne</h4>
+                    </div>
+                    <div class="col-md-5">
+                        <h4>Plus one adress
+                            <br>I AM HERO LLC.
+                            <br>Gustav-Heinemann Ufer 116c
+                            <br>50968 Cologne</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="link link-icon link-success">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_messages-multi"></use></svg>Chat with us</div>
+                        <div class="link link-icon link-success">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_apetail"></use></svg>support@iamhero.io</div>
+                        <div class="link link-icon link-success">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_question"></use></svg>Read FAQ</div>
+                    </div>
+                </div>
+                <img class="contact-section__map" src="assets/images/ico/map.jpg" alt="" role="presentation" />
+                <form class="contact-section__form row">
+                    <div class="col-md-8">
+                        <div class="form-group form-group-lg">
+                            <input class="form-control" type="text" placeholder="Name" />
+                            <span class="help-block">Help text</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group form-group-lg form-group-offset">
+                            <input class="form-control" type="text" placeholder="E-mail Adress" />
+                            <span class="help-block">Help text</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group form-group-lg form-group-offset">
+                            <input class="form-control" type="text" placeholder="Subject" />
+                            <span class="help-block">Help text</span>
+                        </div>
+                    </div>
+                    <div class="col-md-24">
+                        <div class="form-group">
+                            <textarea class="form-control form-control-area-static form-control-border-straight" rows="4" placeholder="Message"></textarea>
+                            <span class="help-block">Help text</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-md-offset-8">
+                        <button class="btn btn-secondary btn-secondary-text-dark btn-block">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <div class="container">
+                <h5>@copywrite IAMHERO</h5>
+            </div>
+        </div>
     </main>
 </body>
 <script src="assets/scripts/libs/bootstrap.min.js"></script>
@@ -661,6 +732,8 @@
 <script src="assets/scripts/libs/chart.min.js"></script>
 <script src="assets/scripts/libs/magnific-popup.min.js"></script>
 <script src="assets/scripts/libs/TimeCircles.js"></script>
+<script src="assets/scripts/libs/jquery.appear.js"></script>
+<script src="assets/scripts/libs/circle-progress.min.js"></script>
 <script src="assets/scripts/app.min.js"></script>
 
 </html>

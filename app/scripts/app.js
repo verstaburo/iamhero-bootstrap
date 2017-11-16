@@ -15,7 +15,6 @@ import heroSlider from '../components/hero-slider/hero-slider';
 import fitText from './common/fitText';
 import header from '../components/header/header';
 import toTop from '../blocks/to-top/to-top';
-import jsProgress from '../blocks/js-progress/js-progress';
 import activityChart from '../blocks/activity-chart/activity-chart';
 import messages from '../components/messages/messages';
 import checkbox from '../blocks/checkbox/checkbox';
@@ -27,6 +26,7 @@ import suggestedJobs from '../pages/suggested-jobs/suggested-jobs';
 import magnificPopup from './common/magnificPopup';
 import tooltip from './common/tooltip';
 import countdown from '../blocks/countdown/countdown';
+import circle from '../blocks/circle/circle';
 
 /* eslint-disable*/
 $(() => {
@@ -53,7 +53,6 @@ $(() => {
   newsSlider();
   heroSlider();
   fitText();
-  jsProgress();
   activityChart();
   messages();
   checkbox();
@@ -69,4 +68,5 @@ $(() => {
   tooltip();
   window.initTooltip = tooltip;
   countdown();
+  circle();
 });

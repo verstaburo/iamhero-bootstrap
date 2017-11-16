@@ -1,0 +1,36 @@
+.contact-section {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-color: #fff;
+
+  &__text {
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 50px;
+    }
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__map {
+    margin-top: -80px;
+  }
+
+  &__form {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    .btn {
+      font-size: 20px;
+      font-weight: 500;
+    }
+  }
+}

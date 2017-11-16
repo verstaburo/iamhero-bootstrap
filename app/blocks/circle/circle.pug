@@ -1,0 +1,9 @@
+mixin circle(value, size, thickness)
+  +b.circle(data-value=value, data-size=size, data-thickness=thickness)&attributes(attributes)
+    span
+    +e.IMG(src='assets/images/icon/decor.png').decor
+
+mixin circle-lazy(value, size, thickness)
+  +b.circle-lazy(data-value=value, data-size=size, data-thickness=thickness)&attributes(attributes)
+    span
+    +e.IMG(src='assets/images/icon/decor.png').decor

@@ -1,7 +1,14 @@
+include ../icon/icons
+
 mixin link()
   +b.A(href='#').link&attributes(attributes)
     block
 
 mixin link-success()
   +b.A(href='#').link.link-success&attributes(attributes)
+    block
+
+mixin link-icon(icon)
+  +b.link.link-icon&attributes(attributes)
+    +icon(icon)
     block

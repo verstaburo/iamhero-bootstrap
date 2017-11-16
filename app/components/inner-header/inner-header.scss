@@ -14,17 +14,77 @@
   &_secondary {
     background-image: linear-gradient(to right, #465c74, #1b202d);
 
-    .container {
-      display: flex;
-      justify-content: space-between;
+    .inner-header__burger {
+      @media (max-width: $screen-sm-max) {
+        display: inline-block;
+      }
 
-      &::before, &::after {
-        content: none;
+      svg {
+        fill: #fff;
+      }
+
+      &.active {
+
+        + .nav {
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+    }
+
+    .container {
+
+      .nav {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 0;
+        transition: opacity .25s ease-in-out;
+
+        a:focus {
+          background-color: #17202c;
+        }
+
+        @media (max-width: $screen-sm-max) {
+          opacity: 0;
+          pointer-events: none;
+          transform: none;
+          top: 100%;
+          left: 0;
+          flex-direction: column;
+          text-align: center;
+          width: 100%;
+          background-color: #465e75;
+          background-image: linear-gradient(to right, #465c74, #1b202d);
+
+          li:not(:first-child) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .inner-header__pushed-nav {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      display: flex;
+
+      .lang-toggle {
+        margin-left: 20px;
       }
     }
 
     .inner-header__logo {
-      flex-basis: auto;
+      display: inline-block;
+      height: 100%;
+
+      @media (max-width: $screen-sm-max) {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+      }
 
       a {
         padding-right: 7px;
