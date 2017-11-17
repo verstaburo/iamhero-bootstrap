@@ -11427,8 +11427,8 @@ img.mfp-img{
     right:100%;
     width:200px;
     height:100%;
-    background-image:-webkit-linear-gradient(left, transparent, #fff);
-    background-image:linear-gradient(to right, transparent, #fff);
+    background-image:-webkit-linear-gradient(left, rgba(255, 255, 255, 0), #fff);
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0), #fff);
   }
 }
 
@@ -13674,6 +13674,7 @@ img.mfp-img{
 .lang-toggle{
   position:relative;
   border-left:1px solid #2f3c4e;
+  height:100%;
 }
 
 .lang-toggle .dropdown-toggle{
@@ -16682,6 +16683,7 @@ textarea::-webkit-scrollbar-thumb{
   position:relative;
   border-radius:25px;
   overflow:hidden;
+  z-index:1;
   padding-top:75%;
 }
 
@@ -19282,6 +19284,7 @@ textarea::-webkit-scrollbar-thumb{
   max-width:75px;
   -webkit-flex-basis:75px;
           flex-basis:75px;
+  cursor:pointer;
 }
 
 @media (min-width: 1024px){
@@ -19300,6 +19303,7 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 .inner-header__burger svg{
+  pointer-events:none;
   fill:#ffc425;
   width:24px;
   height:29px;
@@ -20446,6 +20450,10 @@ textarea::-webkit-scrollbar-thumb{
   vertical-align:middle;
 }
 
+.js-video-play{
+  cursor:pointer;
+}
+
 .profile-header{
   display:-webkit-box;
   display:-webkit-flex;
@@ -20723,6 +20731,10 @@ textarea::-webkit-scrollbar-thumb{
           flex-flow:row-reverse wrap;
 }
 
+.roadmap-section__flex-wrap::before, .roadmap-section__flex-wrap::after{
+  content:none;
+}
+
 .roadmap-section__screen-wrap{
   background-color:#fff;
   padding:20px 20px 20px 35px;
@@ -20744,15 +20756,15 @@ textarea::-webkit-scrollbar-thumb{
   height:100px;
   z-index:1;
   pointer-events:none;
-  background-image:-webkit-linear-gradient(top, #fff, transparent);
-  background-image:linear-gradient(to bottom, #fff, transparent);
+  background-image:-webkit-linear-gradient(top, #fff, rgba(255, 255, 255, 0));
+  background-image:linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0));
 }
 
 .roadmap-section__screen-wrap::after{
   top:auto;
   bottom:0;
-  background-image:-webkit-linear-gradient(bottom, #fff, transparent);
-  background-image:linear-gradient(to top, #fff, transparent);
+  background-image:-webkit-linear-gradient(bottom, #fff, rgba(255, 255, 255, 0));
+  background-image:linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
 }
 
 .roadmap-section__screen{
@@ -21267,6 +21279,10 @@ textarea::-webkit-scrollbar-thumb{
           flex-wrap:wrap;
 }
 
+.spec-section .row::before, .spec-section .row::after{
+  content:none;
+}
+
 .spec-section .circle-icon-item{
   max-width:365px;
   margin-bottom:20px;
@@ -21391,11 +21407,6 @@ textarea::-webkit-scrollbar-thumb{
 
 .team-section__members{
   padding-top:80px;
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:flex;
-  -webkit-flex-wrap:wrap;
-          flex-wrap:wrap;
 }
 
 .team-section__members .member{

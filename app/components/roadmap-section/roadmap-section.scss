@@ -6,6 +6,10 @@
   &__flex-wrap {
     display: flex;
     flex-flow: row-reverse wrap;
+
+    &::before, &::after {
+      content: none;
+    }
   }
 
   &__screen-wrap {
@@ -26,13 +30,13 @@
       height: 100px;
       z-index: 1;
       pointer-events: none;
-      background-image: linear-gradient(to bottom, #fff, transparent);
+      background-image: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0));
     }
 
     &::after {
       top: auto;
       bottom: 0;
-      background-image: linear-gradient(to top, #fff, transparent);
+      background-image: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
     }
   }
 

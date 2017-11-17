@@ -31,6 +31,10 @@
   .row {
     display: flex;
     flex-wrap: wrap;
+
+    &::before, &::after {
+      content: none;
+    }
   }
 
   .circle-icon-item {

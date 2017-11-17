@@ -446,6 +446,7 @@
     padding: 13px 25px;
     max-width: 75px;
     flex-basis: 75px;
+    cursor: pointer;
 
     @media (min-width: $screen-md-min) {
       display: none;
@@ -458,6 +459,7 @@
     }
 
     svg {
+      pointer-events: none;
       fill: $brand-warning;
       width: 24px;
       height: 29px;
