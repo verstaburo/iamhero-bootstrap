@@ -30,6 +30,11 @@
 
     @media (min-width: $screen-md-min) {
       display: flex;
+      flex-wrap: wrap;
+
+      &::before, &::after {
+        content: none;
+      }
     }
 
     &_reverse {

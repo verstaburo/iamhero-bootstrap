@@ -16701,6 +16701,9 @@ textarea::-webkit-scrollbar-thumb{
   top:0;
   width:100%;
   height:100%;
+}
+
+.video-default__placeholder video{
   object-fit:cover;
 }
 
@@ -16921,6 +16924,11 @@ textarea::-webkit-scrollbar-thumb{
     display:-webkit-box;
     display:-webkit-flex;
     display:flex;
+    -webkit-flex-wrap:wrap;
+            flex-wrap:wrap;
+  }
+  .about-section__media::before, .about-section__media::after{
+    content:none;
   }
 }
 
