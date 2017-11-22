@@ -25,6 +25,7 @@ import shortlist from '../pages/shortlist/shortlist';
 import suggestedJobs from '../pages/suggested-jobs/suggested-jobs';
 import magnificPopup from './common/magnificPopup';
 import tooltip from './common/tooltip';
+import pdf from './common/pdf';
 import countdown from '../blocks/countdown/countdown';
 import circle from '../blocks/circle/circle';
 
@@ -69,4 +70,6 @@ $(() => {
   window.initTooltip = tooltip;
   countdown();
   circle();
+  pdf();
+  window.initPdf = pdf;
 });
