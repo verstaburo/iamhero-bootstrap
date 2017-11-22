@@ -19,6 +19,24 @@
     padding: 15px 5px 12px;
   }
 
+  &__user-menu {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 13px 0 12px;
+    display: none;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: #688595;
+    }
+
+    @media (max-width: $screen-md-max) {
+      display: block;
+    }
+  }
+
   &__burger {
     border: none;
     padding: 0;
@@ -95,16 +113,42 @@
     margin-left: auto;
   }
 
-  &__nav {
-    margin-left: 45px;
+  &__nav-mobile {
+    @media (max-width: $screen-md-max) {
+      background-color: #fff;
+      opacity: 0;
+      pointer-events: none;
+      position: fixed;
+      left: 0;
+      top: 75px;
+      width: 100%;
+      transition: opacity .5s ease-in-out, top .5s ease-in-out;
+      flex-direction: column;
+      text-align: center;
+      height: calc(100% - 55px);
+    }
 
-    @media (max-width: $screen-xs-max) {
-      margin-left: 10px;
+    &.active {
+      top: 55px;
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  &__nav {
+    @media (min-width: $screen-lg-min) {
+      margin-left: 45px;
     }
 
     &_push-right {
       @media (min-width: $screen-lg-max) {
         margin-left: auto;
+      }
+    }
+
+    &_hide {
+      @media (max-width: $screen-md-max) {
+        display: none;
       }
     }
   }

@@ -86,13 +86,18 @@ p {
   font-weight: 600;
   position: absolute;
   right: 15px;
-  transform: translateY(-50%);
-  top: 50%;
+  top: 10px;
   color: $brand-warning;
   border: none;
   background-color: transparent;
   padding: 0;
   width: auto;
+
+  .form-group-lg & {
+    @media (min-width: $screen-sm-min) {
+      top: 15px;
+    }
+  }
 }
 
 .form-group {

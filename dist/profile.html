@@ -22,15 +22,21 @@
             <a class="header__burger" href="#">
                 <button></button>
             </a>
+            <a class="header__user-menu" href="#">
+                <svg><use xlink:href="assets/images/icon.svg#icon_header-hero"></use></svg>
+            </a>
             <span class="header__text hidden-md hidden-sm hidden-xs">Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!</span>
-            <ul class="nav header__nav">
+            <ul class="nav header__nav header__nav_hide">
                 <li>
-                    <a class="nav-link nav-link-border-success nav-link-hover-success" href="#">Sign up now</a>
+                    <a class="nav-link nav-link-border-success nav-link-hover-success" href="#">Home</a>
                 </li>
             </ul>
-            <ul class="nav header__nav header__nav_push-right">
+            <ul class="nav header__nav header__nav_push-right header__nav-mobile">
                 <li>
-                    <a class="nav-link nav-link-hover-success" href="#">Login</a>
+                    <a class="nav-link nav-link-hover-success" href="#">Account</a>
+                </li>
+                <li>
+                    <a class="nav-link nav-link-hover-success" href="#">Log out</a>
                 </li>
             </ul>
         </div>
@@ -639,7 +645,7 @@
                     </div>
                     <div class="plate plate_relative plate_ratio-container">
                         <div class="plate__video-placeholder js-video-placeholder">
-                            <iframe class="plate__video" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/dREKkAk628I?enablejsapi=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/dREKkAk628I?enablejsapi=1&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;iv_load_policy=3" frameborder="0" allowfullscreen=""></iframe>
                         </div>
                         <div class="plate__video-controls plate__video-controls_overlay js-video-play">
                             <h2 class="plate__header plate__header_white plate__header_mobile-smaller">Video represent</h2>
@@ -837,7 +843,7 @@
                     <ul class="footer-menu">
                         <li class="footer-menu__item footer-menu__item_heading">Information</li>
                         <li class="footer-menu__item">
-                            <a href="#">About amhero</a>
+                            <a href="#">News</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#">Help & Support</a>
@@ -846,7 +852,16 @@
                             <a href="#">Jobs</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#">Join The — iamhero</a>
+                            <a href="#">Join Iamhero</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Contacts</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">ICO</a>
                         </li>
                     </ul>
                 </div>
@@ -854,10 +869,10 @@
                     <ul class="footer-menu">
                         <li class="footer-menu__item footer-menu__item_heading">Employer</li>
                         <li class="footer-menu__item">
-                            <a href="#">Hire the Heros</a>
+                            <a href="#">Hire the Heroes</a>
                         </li>
                         <li class="footer-menu__item">
-                            <a href="#">Create Company Page</a>
+                            <a href="#">Create a Company Page</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#">Post a Job</a>
@@ -877,7 +892,7 @@
                     <ul class="footer-menu">
                         <li class="footer-menu__item footer-menu__item_heading">I am hero</li>
                         <li class="footer-menu__item">
-                            <a href="#">Functions</a>
+                            <a href="#">Take a tour</a>
                         </li>
                         <li class="footer-menu__item">
                             <a href="#">Resume</a>

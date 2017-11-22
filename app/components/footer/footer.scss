@@ -6,6 +6,25 @@
   padding-bottom: 90px;
   background-color: $body-bg;
 
+  .row {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      display: flex;
+      flex-wrap: wrap;
+
+      &::before, &::after {
+        content: none;
+      }
+
+      .footer__text-menu {
+        margin-bottom: 35px;
+      }
+
+      .footer__social-wrap {
+        margin-top: 0;
+      }
+    }
+  }
+
   @media (max-width: $screen-md-max) {
     padding-top: 60px;
   }

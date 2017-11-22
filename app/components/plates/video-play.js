@@ -9,7 +9,7 @@ export default () => {
     $(this).fadeOut();
 
     if (mediaElement.prop('tagName') === 'IFRAME') {
-      mediaElement[0].src += '&autoplay=1';
+      mediaElement[0].src += '?autoplay=1';
     } else if (mediaElement.prop('tagName') === 'VIDEO') {
       mediaElement[0].play();
     } else {

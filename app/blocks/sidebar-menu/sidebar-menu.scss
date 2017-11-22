@@ -91,10 +91,11 @@
     top: 75px;
     left: 0;
     z-index: 10;
-    padding: 75px 35px;
+    padding: 75px 35px 0;
     justify-content: center;
     pointer-events: none;
     opacity: 0;
+    height: calc(100% - 55px);
   }
 
   @media (max-width: $screen-xs-max) {
@@ -103,7 +104,7 @@
   }
 
   &.active {
-    top: 57px;
+    top: 55px;
     opacity: 1;
     pointer-events: all;
   }
