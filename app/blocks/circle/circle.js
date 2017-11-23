@@ -1,6 +1,11 @@
 export default () => { /*eslint-disable*/
   const circle = $('.circle');
   const lazyCircle = $('.circle-lazy');
+
+  if(!circle.length && !lazyCircle.length) {
+    return;
+  }
+
   let inited = false;
 
   circle.circleProgress({
