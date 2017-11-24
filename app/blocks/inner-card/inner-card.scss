@@ -144,14 +144,19 @@
   }
 
   &:hover, &.active {
+
+    .inner-card__footer {
+      opacity: 1;
+      pointer-events: all;
+
+      @media (max-width: $screen-sm-max) {
+        display: block;
+      }
+    }
+
     @media (min-width: $screen-md-min) {
       box-shadow: 0 0 32.66px 13.34px rgba(28, 40, 57, .34);
       z-index: 1;
-
-      .inner-card__footer {
-        opacity: 1;
-        pointer-events: all;
-      }
     }
   }
 
@@ -280,8 +285,8 @@
     transition: opacity .25s ease-in-out;
 
     @media (max-width: $screen-sm-max) {
+      display: none;
       pointer-events: all;
-      opacity: 1;
       flex-direction: column;
       padding-left: 0;
       align-items: stretch;

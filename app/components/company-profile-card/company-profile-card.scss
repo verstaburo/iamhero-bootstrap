@@ -58,6 +58,12 @@
     @media (max-width: $screen-sm-max) {
       flex-direction: column;
     }
+
+    h2 {
+      @media (min-width: 640px){
+        margin-left: -5px;
+      }
+    }
   }
 
   h3 {

@@ -73,6 +73,10 @@
         font-size: 23px;
       }
     }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 10px;
+    }
   }
 
   &__icon {
@@ -80,6 +84,7 @@
     height: 23px;
     fill: none;
     stroke: $brand-warning;
+    margin-right: 5px;
   }
 
   .btn {
