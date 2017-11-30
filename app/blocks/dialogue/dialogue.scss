@@ -14,14 +14,14 @@
     height: 100%;
     width: 25%;
     pointer-events: none;
-    background-image: linear-gradient(to right, transparent 0%, #fff 50%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #fff 50%);
   }
 
   &.active, &:hover {
     background-color: #e9eff4;
 
     &::after {
-      background-image: linear-gradient(to right, transparent 0%, #e9eff4 50%);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #e9eff4 50%);
     }
   }
 
@@ -29,7 +29,7 @@
     background-color: #f2f5f9;
 
     &::after {
-      background-image: linear-gradient(to right, transparent 0%, #f2f5f9 50%);
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #f2f5f9 50%);
     }
   }
 

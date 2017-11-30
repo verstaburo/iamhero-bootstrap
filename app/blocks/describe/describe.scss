@@ -20,6 +20,18 @@
     padding-right: 35px;
   }
 
+  &_app {
+    @media (max-width: $screen-xs-max) {
+      padding-top: 150px;
+    }
+
+    h2 {
+      @media (max-width: $screen-sm-max) {
+        font-size: 35px;
+      }
+    }
+  }
+
   &_faded {
 
     p {
