@@ -17,5 +17,9 @@
 
   &__img {
     padding-top: 100%;
+
+    img {
+      filter: grayscale(1);
+    }
   }
 }

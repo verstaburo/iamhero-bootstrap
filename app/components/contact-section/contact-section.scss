@@ -15,6 +15,12 @@
     }
   }
 
+  .link-icon {
+    @media (min-width: $screen-lg-min) {
+      white-space: nowrap;
+    }
+  }
+
   .container > img {
     @media (min-width: $screen-md-min) {
       margin-top: -80px;

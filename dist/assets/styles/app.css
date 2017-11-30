@@ -13925,6 +13925,11 @@ img.mfp-img{
   padding-top:100%;
 }
 
+.member__img img{
+  -webkit-filter:grayscale(1);
+          filter:grayscale(1);
+}
+
 .message{
   display:-webkit-box;
   display:-webkit-flex;
@@ -17904,6 +17909,12 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
+@media (min-width: 1280px){
+  .contact-section .link-icon{
+    white-space:nowrap;
+  }
+}
+
 @media (min-width: 1024px){
   .contact-section .container > img{
     margin-top:-80px;
@@ -21537,6 +21548,15 @@ textarea::-webkit-scrollbar-thumb{
 
 .team-section__members{
   padding-top:80px;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-wrap:wrap;
+          flex-wrap:wrap;
+}
+
+.team-section__members::before, .team-section__members::after{
+  content:none;
 }
 
 .team-section__members .member{
