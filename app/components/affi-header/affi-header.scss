@@ -1,8 +1,9 @@
-.affi-intro {
+.affi-header {
   display: block;
-  padding-top: 50px;
+  padding-top: 183px;
   padding-bottom: 170px;
   color: #fff;
+  position: relative;
 
   @media (max-width: $screen-md-max) {
     padding-bottom: 100px;
@@ -12,20 +13,60 @@
     padding-bottom: 50px;
   }
 
-  &__logo {
-    width: 116px;
-    height: 78px;
-    display: block;
-    margin-bottom: 55px;
+  .container {
+    position: relative;
+    z-index: 1;
+  }
 
-    @media (max-width: $screen-xs-max) {
-      margin-bottom: 20px;
+  &__fixed {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+
+    .btn {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s ease-in-out;
     }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &::before, &::after {
+        content: none;
+      }
+    }
+
+    &.active {
+      padding: 6px 0 7px;
+      position: fixed;
+      top: 0;
+      background-color: rgba(0, 0, 0, .85);
+      z-index: 10;
+
+      .btn {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .affi-header__logo svg {
+        width: 40px;
+        height: 27px;
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
 
     svg {
       fill: #fff;
       width: 116px;
       height: 78px;
+      transition: width .25s ease-in-out, height .25s ease-in-out;
     }
   }
 
@@ -49,11 +90,6 @@
         font-size: 25px;
       }
     }
-  }
-
-  .container {
-    position: relative;
-    z-index: 1;
   }
 
   &__controls {

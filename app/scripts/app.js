@@ -28,6 +28,7 @@ import tooltip from './common/tooltip';
 import pdf from './common/pdf';
 import countdown from '../blocks/countdown/countdown';
 import circle from '../blocks/circle/circle';
+import affiHeader from '../components/affi-header/affi-header';
 
 /* eslint-disable*/
 $(() => {
@@ -72,4 +73,5 @@ $(() => {
   circle();
   pdf();
   window.initPdf = pdf;
+  affiHeader();
 });

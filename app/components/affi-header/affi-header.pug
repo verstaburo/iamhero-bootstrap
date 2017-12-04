@@ -2,12 +2,15 @@ include ../../blocks/logo/logo
 include ../../blocks/icon/icons
 include ../../blocks/button/button
 
-mixin affi-intro()
-  +b.affi-intro.bg-image&attributes(attributes)
+mixin affi-header()
+  +b.HEADER.affi-header.bg-image&attributes(attributes)
     img(src='assets/images/affi/bg_intro.jpg')
+    +e.fixed
+      .container
+        +e.A(href='#').logo
+          +icon('logo')
+        +button.btn-secondary.btn-danger Join now
     .container
-      +e.A(href='#').logo
-        +icon('logo')
       .affiliate__text
         h1 Grow your income with the iamhero Affiliate Program
         h2 Es ist ganz einfach an die IAMHERO Coins zu kommen

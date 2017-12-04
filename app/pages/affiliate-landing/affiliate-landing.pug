@@ -1,5 +1,5 @@
 extends ../../layouts/default
-include ../../components/affi-intro/affi-intro
+include ../../components/affi-header/affi-header
 include ../../components/affi-scheme/affi-scheme
 include ../../components/affi-reffs/affi-reffs
 include ../../components/affi-example/affi-example
@@ -9,8 +9,8 @@ block head
   - var pageTitle = 'Affiliate - I Am Hero'
 
 block content
+  +affi-header
   +b.MAIN.affiliate
-    +affi-intro
     +affi-scheme
     +affi-reffs
     +affi-example
