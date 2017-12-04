@@ -46,6 +46,14 @@
         font-size: 25px;
       }
     }
+
+    &.btn-danger {
+      border-color: red;
+
+      &:hover {
+        background-color: red;
+      }
+    }
   }
 
   &-secondary-big {

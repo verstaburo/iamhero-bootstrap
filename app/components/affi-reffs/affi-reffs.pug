@@ -1,0 +1,56 @@
+mixin affi-reffs()
+  +b.affi-reffs.affiliate__text&attributes(attributes)
+    .container
+      .row
+        .col-md-8
+          +e.card
+            h3
+              b Until the first 25 Mio. tokens are issued you will receive:
+            +reffs-text
+        .col-md-8
+          +e.card
+            h3
+              b For the next 25 Mio. tokens being issued you will receive:
+            +reffs-text
+        .col-md-8
+          +e.card
+            h3
+              b For the next 50 Mio. tokens being issued you will receive:
+            +reffs-text
+      +e.text.row
+        .col-md-12
+          h1 For those that are referring a lot of people directly we have the following increasing token commission structure for first tier referrals:
+        .col-md-12
+          +e.UL.list
+            li
+              h3 <b>1 — 5 Refferals</b>
+              h3 <b>800</b> Tokens
+            li
+              h3 <b>6 — 10 Refferals</b>
+              h3 <b>800</b> Tokens
+            li
+              h3 <b>11— 15  Refferals</b>
+              h3 <b>800</b> Tokens
+            li
+              h3 <b>16 — 25 Refferals</b>
+              h3 <b>800</b> Tokens
+            li
+              h3 <b>26 — 50 Refferals</b>
+              h3 <b>800</b> Tokens
+            li
+              h3 <b>51 — 100 Refferals</b>
+              h3 <b>800</b> Tokens
+            li
+              h3 <b>101 — 500 Refferals</b>
+              h3 <b>800</b> Tokens
+            li
+              h3 <b>500+ Refferals</b>
+              h3 <b>800</b> Tokens
+
+
+
+
+mixin reffs-text
+  p <b>800 tokens</b> for first tier referrals
+  p <b>300 tokens</b> for second tier referrals
+  p <b>100 tokens</b> for third tier referrals

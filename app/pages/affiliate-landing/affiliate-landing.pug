@@ -1,0 +1,17 @@
+extends ../../layouts/default
+include ../../components/affi-intro/affi-intro
+include ../../components/affi-scheme/affi-scheme
+include ../../components/affi-reffs/affi-reffs
+include ../../components/affi-example/affi-example
+include ../../components/affi-footer/affi-footer
+
+block head
+  - var pageTitle = 'Affiliate - I Am Hero'
+
+block content
+  +b.MAIN.affiliate
+    +affi-intro
+    +affi-scheme
+    +affi-reffs
+    +affi-example
+  +affi-footer

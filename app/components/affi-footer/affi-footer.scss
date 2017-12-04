@@ -1,0 +1,43 @@
+.affi-footer {
+  display: block;
+  background-color: #fff;
+  padding-top: 90px;
+  padding-bottom: 70px;
+
+  @media (max-width: $screen-xs-max) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    width: 125px;
+    height: 80px;
+
+    svg {
+      width: 125px;
+      height: 80px;
+      fill: #8d3f95;
+    }
+  }
+
+  h4 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 0;
+      margin-left: 35px;
+      font-size: 25px;
+    }
+  }
+}
