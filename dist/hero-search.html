@@ -204,127 +204,132 @@
         <button class="btn btn-secondary-warning-small top-filter__item">Save search</button>
     </div>
     <aside class="aside-filter">
-        <div class="aside-filter__item">
-            <div class="aside-filter__heading">
-                <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
-                <h4>filter</h4>
-            </div>
-            <select class="js-select select select_big select_warning aside-filter__input" placeholder="Job type">
-                <option value="">Job type</option>
-                <option value="1">Designer 2200</option>
-                <option value="2">Main office manager</option>
-                <option value="3">Search 31</option>
-                <option value="4">Rage</option>
-                <option value="5">Project management</option>
-                <option value="6">Graphic designer</option>
-                <option value="7">Graphic designer</option>
-                <option value="8">Graphic designer</option>
-                <option value="9">Graphic designer</option>
-                <option value="10">Graphic designer</option>
-            </select>
-            <select class="js-select select select_big select_warning aside-filter__input" placeholder="Location">
-                <option value="">Location</option>
-                <option value="us">USA</option>
-                <option value="ru">Russia</option>
-                <option value="lv">Latvia</option>
-            </select>
-            <select class="js-select select select_big select_warning aside-filter__input" placeholder="Location">
-                <option value="">Location</option>
-                <option value="us">USA</option>
-                <option value="ru">Russia</option>
-                <option value="lv">Latvia</option>
-            </select>
-            <div class="rangeslider-wrap rangeslider-wrap_tall aside-filter__input">
-                <div class="rangeslider-wrap__meter">
-                    <span>0</span>
-                    <span>250</span>
+        <div class="aside-filter__content">
+            <div class="aside-filter__item">
+                <div class="aside-filter__heading">
+                    <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
+                    <h4>filter</h4>
                 </div>
-                <span class="rangeslider-wrap__output-salary"></span>
-                <input class="rangeslider_gradient rangeslider_gradient_inverse" type="range" min="0" max="250" step="5" value="100" />
+                <select class="js-select select select_big select_warning aside-filter__input" placeholder="Job type">
+                    <option value="">Job type</option>
+                    <option value="1">Designer 2200</option>
+                    <option value="2">Main office manager</option>
+                    <option value="3">Search 31</option>
+                    <option value="4">Rage</option>
+                    <option value="5">Project management</option>
+                    <option value="6">Graphic designer</option>
+                    <option value="7">Graphic designer</option>
+                    <option value="8">Graphic designer</option>
+                    <option value="9">Graphic designer</option>
+                    <option value="10">Graphic designer</option>
+                </select>
+                <select class="js-select select select_big select_warning aside-filter__input" placeholder="Location">
+                    <option value="">Location</option>
+                    <option value="us">USA</option>
+                    <option value="ru">Russia</option>
+                    <option value="lv">Latvia</option>
+                </select>
+                <select class="js-select select select_big select_warning aside-filter__input" placeholder="Location">
+                    <option value="">Location</option>
+                    <option value="us">USA</option>
+                    <option value="ru">Russia</option>
+                    <option value="lv">Latvia</option>
+                </select>
+                <div class="rangeslider-wrap rangeslider-wrap_tall aside-filter__input">
+                    <div class="rangeslider-wrap__meter">
+                        <span>0</span>
+                        <span>250</span>
+                    </div>
+                    <span class="rangeslider-wrap__output-salary"></span>
+                    <input class="rangeslider_gradient rangeslider_gradient_inverse" type="range" min="0" max="250" step="5" value="100" />
+                </div>
+                <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-submit">Submit</button>
             </div>
-            <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-submit">Submit</button>
+            <div class="aside-filter__item aside-filter__item_no-side">
+                <div class="aside-filter__heading">
+                    <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_saved"></use></svg>
+                    <h4>saved searches</h4>
+                </div>
+                <a class="aside-filter__quick-link" href="#">Designer 2200
+                    <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+                </a>
+                <a class="aside-filter__quick-link" href="#">Main office manager
+                    <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+                </a>
+                <a class="aside-filter__quick-link" href="#">Search 31
+                    <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+                </a>
+                <a class="aside-filter__quick-link" href="#">Rage
+                    <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+                </a>
+                <a class="aside-filter__quick-link" href="#">Project management
+                    <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+                </a>
+            </div>
+            <div class="aside-filter__item aside-filter__item_no-side">
+                <div class="aside-filter__heading">
+                    <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
+                    <h4>SHORTLISTS</h4>
+                </div>
+                <div class="aside-filter__quick-link aside-filter__quick-link_taller">Designer 2200
+                    <span class="aside-filter__quick-link-value">45</span>
+                    <div class="aside-filter__quick-link-controls">
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="aside-filter__quick-link aside-filter__quick-link_taller">Main office manager
+                    <span class="aside-filter__quick-link-value">12</span>
+                    <div class="aside-filter__quick-link-controls">
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="aside-filter__quick-link aside-filter__quick-link_taller">Search 31
+                    <span class="aside-filter__quick-link-value">4</span>
+                    <div class="aside-filter__quick-link-controls">
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="aside-filter__quick-link aside-filter__quick-link_taller">Rage
+                    <span class="aside-filter__quick-link-value">1</span>
+                    <div class="aside-filter__quick-link-controls">
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="aside-filter__quick-link aside-filter__quick-link_taller">Project management
+                    <span class="aside-filter__quick-link-value">22</span>
+                    <div class="aside-filter__quick-link-controls">
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                        </a>
+                        <a class="aside-filter__quick-link-control" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="aside-filter__item aside-filter__item_no-side">
-            <div class="aside-filter__heading">
-                <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_saved"></use></svg>
-                <h4>saved searches</h4>
-            </div>
-            <a class="aside-filter__quick-link" href="#">Designer 2200
-                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
-            </a>
-            <a class="aside-filter__quick-link" href="#">Main office manager
-                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
-            </a>
-            <a class="aside-filter__quick-link" href="#">Search 31
-                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
-            </a>
-            <a class="aside-filter__quick-link" href="#">Rage
-                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
-            </a>
-            <a class="aside-filter__quick-link" href="#">Project management
-                <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
-            </a>
-        </div>
-        <div class="aside-filter__item aside-filter__item_no-side">
-            <div class="aside-filter__heading">
-                <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
-                <h4>SHORTLISTS</h4>
-            </div>
-            <div class="aside-filter__quick-link aside-filter__quick-link_taller">Designer 2200
-                <span class="aside-filter__quick-link-value">45</span>
-                <div class="aside-filter__quick-link-controls">
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                    </a>
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="aside-filter__quick-link aside-filter__quick-link_taller">Main office manager
-                <span class="aside-filter__quick-link-value">12</span>
-                <div class="aside-filter__quick-link-controls">
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                    </a>
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="aside-filter__quick-link aside-filter__quick-link_taller">Search 31
-                <span class="aside-filter__quick-link-value">4</span>
-                <div class="aside-filter__quick-link-controls">
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                    </a>
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="aside-filter__quick-link aside-filter__quick-link_taller">Rage
-                <span class="aside-filter__quick-link-value">1</span>
-                <div class="aside-filter__quick-link-controls">
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                    </a>
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="aside-filter__quick-link aside-filter__quick-link_taller">Project management
-                <span class="aside-filter__quick-link-value">22</span>
-                <div class="aside-filter__quick-link-controls">
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
-                    </a>
-                    <a class="aside-filter__quick-link-control" href="#">
-                        <svg><use xlink:href="assets/images/icon.svg#icon_pen"></use></svg>
-                    </a>
-                </div>
-            </div>
+        <div class="aside-filter__toggler">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-burger"></use></svg>
         </div>
     </aside>
     <main class="page page_inner-big page_faded hero-search" role="main">
@@ -1501,6 +1506,7 @@
     <script src="assets/scripts/libs/TimeCircles.js"></script>
     <script src="assets/scripts/libs/jquery.appear.js"></script>
     <script src="assets/scripts/libs/circle-progress.min.js"></script>
+    <script src="assets/scripts/libs/jquery.touchSwipe.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

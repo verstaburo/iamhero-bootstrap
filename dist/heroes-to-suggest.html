@@ -185,19 +185,24 @@
         </li>
     </ul>
     <aside class="aside-filter aside-filter_top-none">
-        <div class="aside-filter__item aside-filter__item_no-side">
-            <div class="aside-filter__heading">
-                <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
-                <h4>Settings</h4>
+        <div class="aside-filter__content">
+            <div class="aside-filter__item aside-filter__item_no-side">
+                <div class="aside-filter__heading">
+                    <svg class="aside-filter__heading-icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
+                    <h4>Settings</h4>
+                </div>
+                <div class="aside-filter__menu">
+                    <a class="active" href="#">Heroes to suggest</a>
+                    <a href="#">Account settings</a>
+                    <a href="#">Finances</a>
+                    <a href="#">Notification options</a>
+                    <span class="disabled" data-toggle="tooltip" data-placement="bottom" title="This link is under construction">Invite Friends</span>
+                </div>
+                <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-edit">Edit company page</button>
             </div>
-            <div class="aside-filter__menu">
-                <a class="active" href="#">Heroes to suggest</a>
-                <a href="#">Account settings</a>
-                <a href="#">Finances</a>
-                <a href="#">Notification options</a>
-                <span class="disabled" data-toggle="tooltip" data-placement="bottom" title="This link is under construction">Invite Friends</span>
-            </div>
-            <button class="btn btn-secondary-warning btn-secondary-warning-medium font-weight-medium aside-filter__btn-edit">Edit company page</button>
+        </div>
+        <div class="aside-filter__toggler">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-burger"></use></svg>
         </div>
     </aside>
     <main class="page page_inner-medium" role="main">
@@ -413,6 +418,7 @@
     <script src="assets/scripts/libs/TimeCircles.js"></script>
     <script src="assets/scripts/libs/jquery.appear.js"></script>
     <script src="assets/scripts/libs/circle-progress.min.js"></script>
+    <script src="assets/scripts/libs/jquery.touchSwipe.min.js"></script>
     <script src="assets/scripts/app.min.js"></script>
 </body>
 

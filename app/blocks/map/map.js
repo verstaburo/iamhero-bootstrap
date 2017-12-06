@@ -1,7 +1,13 @@
-import map from '../../scripts/common/map';
+import loadGoogleMapsAPI from 'load-google-maps-api';
+
 /*eslint-disable*/
 export default () => {
-  map.then((googleMaps) => {
+
+  if (!$('.map').length) {
+    return;
+  }
+
+  loadGoogleMapsAPI({ key: 'AIzaSyAhTmgtMtEDorDsQwyrkrLPjAie8g7IV34' }).then((googleMaps) => {
     function initSmallMap() {
       const mapElement = document.getElementById('map');
       if (!mapElement) {

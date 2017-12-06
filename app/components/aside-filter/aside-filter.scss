@@ -1,25 +1,65 @@
 .aside-filter {
   position: fixed;
   transform: translateZ(0);
-  z-index: 3;
+  z-index: 5;
   top: 110px;
   left: 55px;
   width: 335px;
   height: 100%;
   background-color: #fff;
-  overflow-y: auto;
+  transition: transform .5s;
 
   @media (max-width: $screen-lg-max) {
     width: 280px;
   }
 
   @media (max-width: $screen-sm-max) {
-    display: none;
+    top: 55px;
+    width: 100%;
+    left: 0;
+    transform: translateX(calc(-100% + 30px));
+    padding-bottom: 35px;
+    overflow-y: visible;
   }
 
-  &::-webkit-scrollbar {
-    width: 0;
-    background-color: transparent;
+  &.opened {
+    transform: translateX(0);
+  }
+
+  &__content {
+    overflow-y: auto;
+    height: 100%;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background-color: transparent;
+    }
+  }
+
+  &__toggler {
+    top: 0;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #465e75;
+    transform: translateX(0);
+    z-index: 10;
+
+    svg {
+      fill: #fff;
+      position: absolute;
+      transform: translateY(-50%) rotate(90deg);
+      left: 5px;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      display: none;
+      pointer-events: none;
+    }
   }
 
   &_top-none {
@@ -29,10 +69,6 @@
     .aside-filter__item:last-child {
       padding-bottom: 100px;
     }
-  }
-
-  @media (max-width: $screen-sm-max) {
-    left: 0;
   }
 
   &__item {

@@ -2,7 +2,10 @@ include ../../blocks/icon/icons
 
 mixin aside-filter()
   +b.ASIDE.aside-filter&attributes(attributes)
-    block
+    +e.content
+      block
+    +e.toggler
+      +icon('header-burger')
 
 mixin aside-filter-item
   +e.item&attributes(attributes)

@@ -43,6 +43,10 @@
     background-color: #e2553e;
     padding: 1px 5px;
     margin: 0;
+
+    @media (max-width: $screen-sm-max) {
+      right: 35px;
+    }
   }
 
   &__image {

@@ -29,6 +29,7 @@ import pdf from './common/pdf';
 import countdown from '../blocks/countdown/countdown';
 import circle from '../blocks/circle/circle';
 import affiHeader from '../components/affi-header/affi-header';
+import asideFilter from '../components/aside-filter/aside-filter';
 
 /* eslint-disable*/
 $(() => {
@@ -74,4 +75,5 @@ $(() => {
   pdf();
   window.initPdf = pdf;
   affiHeader();
+  asideFilter();
 });
