@@ -1,0 +1,31 @@
+.affi-levels {
+  display: block;
+
+  &__text {
+    margin-bottom: 125px;
+
+    @media (max-width: $screen-xl-max) {
+      margin-bottom: 75px;
+    }
+
+    h1 {
+      font-weight: 300 !important;
+    }
+  }
+
+  .level {
+    @media (min-width: $screen-xxl-min) {
+      padding-left: 90px;
+      padding-right: 90px;
+    }
+
+    @media (min-width: $screen-xl-max) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 35px;
+    }
+  }
+}

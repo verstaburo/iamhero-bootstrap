@@ -1,0 +1,40 @@
+.page-section {
+  display: block;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: #fff;
+
+  @media (max-width: $screen-xl-max) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &_small {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &_medium {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media (max-width: $screen-lg-max) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &_dark {
+    color: #fff;
+    background-color: #070824;
+  }
+
+  &_grey {
+    background-color: #edf1f3;
+  }
+}

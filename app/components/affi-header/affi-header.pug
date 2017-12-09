@@ -2,33 +2,38 @@ include ../../blocks/logo/logo
 include ../../blocks/icon/icons
 include ../../blocks/button/button
 
-mixin affi-header()
+mixin affi-header-fixed
+  +e.fixed&attributes(attributes)
+    .container
+      +e.A(href='#').logo
+        +icon('logo')
+      +button.btn-secondary.btn-danger Join now
+
+mixin affi-header-links
+  +e.controls&attributes(attributes)
+    +button.btn-secondary.btn-secondary-lg.btn-danger Join now
+    .countdown-screen__links
+      a(href='#', target='_blank')
+        +icon('wt-social-bitcoin')
+      a(href='#', target='_blank')
+        +icon('wt-social-github')
+      a(href='#', target='_blank')
+        +icon('wt-social-medium')
+      a(href='#', target='_blank')
+        +icon('wt-social-reddit')
+      a(href='#', target='_blank')
+        +icon('wt-social-rocketchat')
+      a(href='#', target='_blank')
+        +icon('wt-social-telegram')
+      a(href='#', target='_blank')
+        +icon('wt-social-twitter')
+
+
+mixin affi-header(img)
   +b.HEADER.affi-header.bg-image&attributes(attributes)
-    img(src='assets/images/affi/bg_intro.jpg')
-    +e.fixed
-      .container
-        +e.A(href='#').logo
-          +icon('logo')
-        +button.btn-secondary.btn-danger Join now
+    img(src='assets/images/'+img)
+    +affi-header-fixed
     .container
       .affiliate__text
-        h1 Grow your income with the iamhero Affiliate Program
-        h2 Es ist ganz einfach an die IAMHERO Coins zu kommen
-        h3 Es ist ganz einfach an die IAMHERO Coins zu kommen.Es ist ganz einfach an die IAMHERO Coins zu kommen.Es ist ganz einfach an die IAMHERO Coins zu kommen.
-      +e.controls
-        +button.btn-secondary.btn-secondary-lg.btn-danger Join now
-        .countdown-screen__links
-          a(href='#', target='_blank')
-            +icon('wt-social-bitcoin')
-          a(href='#', target='_blank')
-            +icon('wt-social-github')
-          a(href='#', target='_blank')
-            +icon('wt-social-medium')
-          a(href='#', target='_blank')
-            +icon('wt-social-reddit')
-          a(href='#', target='_blank')
-            +icon('wt-social-rocketchat')
-          a(href='#', target='_blank')
-            +icon('wt-social-telegram')
-          a(href='#', target='_blank')
-            +icon('wt-social-twitter')
+        block
+      +affi-header-links

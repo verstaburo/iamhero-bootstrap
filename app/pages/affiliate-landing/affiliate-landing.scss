@@ -2,10 +2,49 @@
   display: block;
   color: #111e29;
 
-  .affi-reffs__card {
-    @media (min-width: $screen-md-min) {
-      margin-top: -75px;
+  &__pink {
+    color: #c0186f;
+  }
+
+  .page-section_small {
+
+    h3 {
+      font-weight: 700;
+      margin-top: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 70px;
+
+        @media (max-width: $screen-lg-max) {
+          margin-bottom: 45px;
+        }
+
+        @media (max-width: $screen-md-max) {
+          margin-bottom: 30px;
+        }
+      }
     }
+
+    p {
+      font-family: $font-family-museo-sans;
+      font-weight: 100;
+      font-size: 30px;
+      margin-top: 0;
+
+      @media (max-width: $screen-xl-max) {
+        font-size: 25px;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__gradient {
+    background-color: #84138c;
+    background-image: radial-gradient(circle at 0% 0%, #c0186f 0%, #84138c 100%);
+    color: #fff;
   }
 
   &__text {
@@ -18,16 +57,20 @@
       &:not(:last-child) {
         margin-bottom: 60px;
 
+        @media (max-width: $screen-lg-max) {
+          margin-bottom: 45px;
+        }
+
         @media (max-width: $screen-md-max) {
           margin-bottom: 30px;
         }
       }
 
-      @media (max-width: $screen-md-max) {
+      @media (max-width: $screen-xl-max) {
         font-size: 53px;
       }
 
-      @media (max-width: $screen-xs-max) {
+      @media (max-width: $screen-sm-max) {
         font-size: 30px;
       }
     }
@@ -59,8 +102,12 @@
       font-size: 32px;
       letter-spacing: 0;
 
-      @media (max-width: $screen-md-max) {
+      @media (max-width: $screen-xl-max) {
         font-size: 25px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 20px;
       }
     }
 
@@ -79,8 +126,43 @@
         }
       }
 
-      @media (max-width: $screen-md-max) {
-        font-size: 18px;
+      @media (max-width: $screen-xl-max) {
+        font-size: 20px;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        font-size: 16px;
+      }
+    }
+
+    &_second {
+
+      p {
+        letter-spacing: 0;
+
+        &:not(:last-child) {
+          margin-bottom: 60px;
+
+          @media (max-width: $screen-xl-max) {
+            margin-bottom: 40px;
+          }
+
+          @media (max-width: $screen-md-max) {
+            margin-bottom: 20px;
+          }
+        }
+
+        @media (min-width: $screen-xxl-min) {
+          font-size: 40px;
+        }
+
+        @media (max-width: $screen-xl-max) {
+          font-size: 25px;
+        }
+
+        @media (max-width: $screen-sm-max) {
+          font-size: 16px;
+        }
       }
     }
   }

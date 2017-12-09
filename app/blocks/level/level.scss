@@ -1,0 +1,107 @@
+.level {
+  display: block;
+  color: #fff;
+
+  @media (max-width: $screen-sm-max) {
+    text-align: center;
+  }
+
+  h3 {
+    @media (max-width: $screen-xl-max) {
+      font-size: 25px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 20px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border-style: dashed;
+    border-width: 7px;
+    border-color: #84138c;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-xl-max) {
+      width: 200px;
+      height: 200px;
+    }
+
+    span {
+      font-size: 100px;
+      font-weight: 700;
+      letter-spacing: 0;
+
+      @media (max-width: $screen-xl-max) {
+        font-size: 70px;
+      }
+    }
+
+    p {
+      font-family: $font-family-museo-sans;
+      font-weight: 700;
+      font-size: 40px;
+
+      @media (max-width: $screen-xl-max) {
+        font-size: 35px;
+      }
+    }
+  }
+
+  &__heading {
+    margin-top: 65px;
+    padding-bottom: 30px;
+
+    @media (min-width: $screen-md-min) {
+      min-height: 235px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-top: 30px;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+
+    h3 {
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 50px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 30px;
+      }
+    }
+
+    p {
+      font-family: $font-family-museo-sans;
+      font-size: 30px;
+      color: #ef5c97;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 100;
+
+      @media (max-width: $screen-xl-max) {
+        font-size: 22px;
+      }
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.affi-value {
+  display: block;
+
+  img {
+    margin-bottom: 50px;
+    width: 100%;
+    object-fit: contain;
+
+    @media (min-width: $screen-xxl-min) {
+      margin-top: 20px;
+      margin-bottom: 120px;
+    }
+  }
+}

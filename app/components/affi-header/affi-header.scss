@@ -11,6 +11,7 @@
 
   @media (max-width: $screen-xs-max) {
     padding-bottom: 50px;
+    padding-top: 150px;
   }
 
   .container {
@@ -84,10 +85,19 @@
     }
 
     h3 {
-      font-size: 33px;
+      @media (min-width: $screen-xxl-min) {
+        font-size: 33px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
 
       @media (max-width: $screen-xs-max) {
-        font-size: 25px;
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
       }
     }
   }

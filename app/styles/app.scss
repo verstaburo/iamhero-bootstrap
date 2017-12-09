@@ -241,3 +241,12 @@ address {
     }
   }
 }
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  &::before, &::after {
+    content: none;
+  }
+}

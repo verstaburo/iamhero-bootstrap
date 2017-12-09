@@ -1,0 +1,35 @@
+include ../../blocks/present-thumb/present-thumb
+
+mixin affi-cards()
+  +b.affi-cards&attributes(attributes).page-section.affiliate__gradient
+    .container
+      .row.flex-wrap
+        .col-xs-24
+          +e.text.affiliate__text.affiliate__text_second
+            h1 Here’s how it works:
+            h3 “Our Affiliates earn rewards in multiple ways, so let’s begin with the first way which is the <b>3 tier referral system</b>”
+        .col-lg-8.col-xs-24
+          +present-thumb
+            +present-thumb-bg
+              img(src='assets/images/affi-2/gradient_bg-1.jpg')
+              h1 HERO
+            +present-thumb-content
+              h3 The Basic Hero Status
+              p Everyone who creates a profile in the Iamhero service is considered a ‘Hero Status’ user. As a Basic Hero User, you can invite your friends and family to join the platform and create their resumes, however when they do this, you do not earn any commissions on them or their purchases once they have joined the IAH Platform and become Users of the service. By using the “Refer a Friend Program”, Basic Hero Users can receive certain limited benefits prior to referring their friends and family and obtain these benefits once they have joined. See the ‘Refer a Friend Program’ details further down.
+        .col-lg-8.col-xs-24
+          +present-thumb
+            +present-thumb-bg
+              img(src='assets/images/affi-2/gradient_bg-2.jpg')
+              h1 SUPERHERO
+            +present-thumb-content
+              h3 The SUPERHERO Status
+              p When a Basic Hero User upgrades to the Superhero status, they benefit from all the features offered in the IAH service. See the details on the IAH service Features in the service section of this website. Only Superhero Users can qualify to become affiliates and earn commissions for referrals.
+        .col-lg-8.col-xs-24
+          +present-thumb
+            +present-thumb-bg
+              img(src='assets/images/affi-2/gradient_bg-3.jpg')
+              h1 SUPERHERO
+              p AFFILIATE
+            +present-thumb-content
+              h3 The AFFILIATE SUPERHERO Status
+              p This Status is for those who are serious about making Iamhero one of their income streams. To become an AFFILIATE SUPERHERO, Superheroes must first agree to the special terms of service agreement to activate their Affiliate Account. Once all steps are fulfilled, Affiliates benefit from commissions paid out to them on 3 referral levels.

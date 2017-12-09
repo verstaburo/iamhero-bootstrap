@@ -13,6 +13,12 @@
     padding-bottom: 50px;
   }
 
+  .affi-reffs__card {
+    @media (min-width: $screen-md-min) {
+      margin-top: -75px;
+    }
+  }
+
   &__card {
     background-color: #fff;
     padding: 60px;
@@ -26,6 +32,10 @@
       padding: 40px;
     }
 
+    @media (max-width: $screen-xs-max) {
+      padding: 30px;
+    }
+
     h3 {
       margin-bottom: 65px;
 
@@ -33,7 +43,7 @@
         font-size: 25px !important;
       }
 
-      @media (max-width: $screen-xs-max) {
+      @media (max-width: $screen-sm-max) {
         margin-bottom: 30px;
       }
     }

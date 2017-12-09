@@ -1,0 +1,18 @@
+mixin level()
+  +b.level&attributes(attributes)
+    block
+
+mixin level-title()
+  +e.title&attributes(attributes)
+    span
+      block
+    p level
+
+mixin level-heading()
+  +e.heading&attributes(attributes)
+    h3
+      block
+
+mixin level-content()
+  +e.content&attributes(attributes)
+    block

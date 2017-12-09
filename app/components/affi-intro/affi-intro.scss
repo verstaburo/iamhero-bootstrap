@@ -1,0 +1,30 @@
+.affi-intro {
+  display: block;
+
+  .affiliate__text {
+    text-align: center;
+    margin-bottom: 70px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    padding-top: 100%;
+  }
+
+  &__text {
+
+    p {
+      font-family: $font-family-museo-sans;
+      font-weight: 100;
+      margin-top: 25px;
+      font-size: 21px;
+
+      @media (max-width: $screen-xs-max) {
+        font-size: 16px;
+      }
+    }
+  }
+}

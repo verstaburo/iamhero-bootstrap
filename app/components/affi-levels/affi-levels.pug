@@ -1,0 +1,30 @@
+include ../../blocks/level/level
+
+mixin affi-levels()
+  +b.affi-levels&attributes(attributes).page-section_dark
+    .container
+      .row
+        .col-xs-24
+          +e.text.affiliate__text
+            h1 The regular upgrade from Hero to Superhero status is <b>$79.99 USD per year</b>; therefore we will base the examples on this regular upgrade price.
+        .col-md-8
+          +level
+            +level-title 1
+            +level-heading 35% commission is paid out to you on Direct Referrals when that referral becomes a Superhero.
+            +level-content
+              h3 Example 1
+              p You refer John, John becomes a superhero; you receive 35% commission ($27.99) every year for as long as you and John both remain Active Superheroes.
+        .col-md-8
+          +level
+            +level-title 2
+            +level-heading 10% commission is paid out to you on the referral of one of your Direct Referrals when that referral becomes a Superhero.
+            +level-content
+              h3 Example 2
+              p Your direct referral John refers Anna, Anna becomes a superhero; If John became an Affiliate, he receives 35% commission from Anna’s upgrade ($27.99); and you receive 10% commission ($7.99) every year for as long as you and Anna both remain Active Superheroes.
+        .col-md-8
+          +level
+            +level-title 3
+            +level-heading 5% commission is paid out to you when a referral of one of the referrals of your Direct Referrals becomes a Superhero.
+            +level-content
+              h3 Example 3
+              p Your indirect referral Anna refers Nancy, Nancy becomes a superhero; If Anna has become an Affiliate, she receives 35% commission from Nancy’s upgrade ($27.99); Affiliate John receives 10% commission for Nancy ($7.99), and you receive 5% commission ($3.99) every year for as long as you and Nancy remain Active Superheroes.

@@ -1,0 +1,22 @@
+.affi-bg {
+  display: block;
+  color: #fff;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .affiliate__text {
+
+    h1 {
+      font-weight: 300;
+
+      &:not(:last-child) {
+        @media (min-width: $screen-lg-min) {
+          margin-bottom: 90px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+extends ../../layouts/default
+include ../../blocks/bg-image/bg-image
+include ../../components/affi-header/affi-header
+include ../../components/affi-footer/affi-footer
+include ../../components/affi-intro/affi-intro
+include ../../components/affi-cards/affi-cards
+include ../../components/affi-promo/affi-promo
+include ../../components/affi-levels/affi-levels
+include ../../components/affi-bg/affi-bg
+include ../../components/affi-value/affi-value
+
+block head
+  - var pageTitle = 'Affiliate - I Am Hero'
+
+block content
+  +affi-header('affi-2/bg_intro.jpg')
+    h1 Welcome to Our Affiliate Program
+    h3 Here at IAH, we value team spirit more than anything else! ... and since we do, we also Give back Great value to those who help us grow by promoting our services.
+    h3 Most Affiliate programs are geared towards the companies they serve, however here at IAMHERO, we have tailored our Affiliate program to serve <b>YOU</b>, the Affiliate.... Why?, Because this is what will allow us to grow rapidly and expand globally!
+  +b.MAIN.affiliate
+    +affi-intro
+    +affi-cards
+    +affi-promo
+    +affi-levels
+
+    +e.gradient.page-section_small
+      .container
+        h3 IMPORTANT NOTE for clarity:
+        p Those who have activated their Affiliate Superhero status earn commissions, whereas those who haven’t do not. Affiliates earn commissions on upgrades whether or not the person who upgrades becomes an affiliate or not. Superheroes MUST activate their Affiliate status to earn referral commissions, otherwise they will not earn commissions.... the Affiliate status is not an automatic process when a User Upgrades from Hero to Superhero!
+
+    +affi-bg
+
+    +e.text._second.page-section._medium
+      .container
+        h1 Other ways Active Affiliates earn commissions.
+        p IAHC Coins: During upgrade promotions, IAH will be rewarding Affiliate Superheroes with Double the Amount of their commissions in IAHC COIN Value.
+
+    +e.text._second.page-section._small._grey
+      .container
+        p
+          b Example; (promo upgrade price is set to <span class="affiliate__pink">$39.99</span> USD):
+        p <b>35% of $39.99 = $13.99 USD.</b> Affiliates will earn <b>$13.99 USD</b> Plus an equivalent of <b>$27.99 (2 X 13.99)</b> in IAHC Coins. The <b>35%</b> commission is doubled in IAHC COIN Value. This also applies to the 2nd and 3rd tier commissions of <b>10% and 5%</b> respectively.
+
+    +e.text._second.page-section._medium
+      .container
+        h1 The Hiring of a Referral:
+        p When a referral is hired by an employer through the system, there is a time period which expires once the person is officially accepted by the hiring Employer. Once this period has expired and the hiring is official, the Affiliate who referred this person is paid a Bonus by IAH.
+
+    +affi-value
+
+    +e.gradient.page-section_small
+      .container
+        h3 Hiring of a User/Candidate
+        p When a User/Candidate gets hired, <b>15%</b> of the employee’s yearly salary is required to be paid to IAH by the company hiring after the trial period is over. <b>33%</b> of this <b>15%</b>, is reinjected in the IAHC Coin pool which increases the Coin’s value and benefits all holders.
+
+  +affi-footer._dark
