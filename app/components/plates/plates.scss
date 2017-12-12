@@ -175,13 +175,10 @@
   &__avatar {
     flex-shrink: 0;
     width: 100%;
-    min-height: 280px;
-
-    @media (min-width: $screen-sm-min) {
-      min-height: 600px;
-    }
+    padding-top: 100%;
 
     @media (min-width: $screen-md-min) {
+      padding-top: 0;
       width: 450px;
       min-height: 450px;
     }
