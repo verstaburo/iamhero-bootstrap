@@ -14421,6 +14421,7 @@ img.mfp-img{
 
 .page_profile{
   padding-top:35px;
+  overflow-x:hidden;
 }
 
 .page_profile .container{
@@ -14787,6 +14788,17 @@ img.mfp-img{
   background-color:rgba(29, 36, 48, 0.54);
   display:none;
   z-index:3;
+}
+
+@media (max-width: 639px){
+  .page_messages{
+    padding-left:40px;
+    padding-right:10px;
+  }
+}
+
+.page_messages ~ .to-top{
+  bottom:95px;
 }
 
 .pagination{
@@ -16775,9 +16787,12 @@ textarea::-webkit-scrollbar-thumb{
     -webkit-flex-direction:row;
             flex-direction:row;
   }
-  .thumbnail-interests img{
-    margin-left:0;
-    margin-right:0;
+  .thumbnail-interests .thumbnail-img{
+    width:265px;
+    height:265px;
+    padding-top:0;
+    -webkit-flex-shrink:0;
+            flex-shrink:0;
   }
   .thumbnail-interests .caption{
     padding:0 30px;
@@ -16798,9 +16813,8 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 .thumbnail-img{
-  max-width:265px;
   width:100%;
-  height:165px;
+  padding-top:100%;
 }
 
 .thumbnail-case-img{
@@ -18337,6 +18351,13 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
+@media (max-width: 1023px){
+  .aside-filter__item{
+    padding-left:20px;
+    padding-right:50px;
+  }
+}
+
 .aside-filter__item:first-child{
   padding-top:60px;
   border-top:none;
@@ -18350,6 +18371,12 @@ textarea::-webkit-scrollbar-thumb{
 
 .aside-filter__item:last-child{
   padding-bottom:150px;
+}
+
+@media (max-width: 1023px){
+  .aside-filter__item:last-child{
+    padding-bottom:50px;
+  }
 }
 
 .aside-filter__item_no-side{
@@ -18369,6 +18396,13 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
+@media (max-width: 1023px){
+  .aside-filter__item_no-side .aside-filter__heading{
+    padding-left:20px;
+    padding-right:50px;
+  }
+}
+
 .aside-filter__menu a, .aside-filter__menu span{
   display:block;
   padding:20px 55px;
@@ -18384,6 +18418,13 @@ textarea::-webkit-scrollbar-thumb{
   .aside-filter__menu a, .aside-filter__menu span{
     padding-left:35px;
     padding-right:35px;
+  }
+}
+
+@media (max-width: 1023px){
+  .aside-filter__menu a, .aside-filter__menu span{
+    padding-left:25px;
+    padding-right:50px;
   }
 }
 
@@ -18486,6 +18527,13 @@ textarea::-webkit-scrollbar-thumb{
   .aside-filter__quick-link{
     padding-left:35px;
     padding-right:35px;
+  }
+}
+
+@media (max-width: 1023px){
+  .aside-filter__quick-link{
+    padding-left:25px;
+    padding-right:50px;
   }
 }
 
@@ -18754,7 +18802,7 @@ textarea::-webkit-scrollbar-thumb{
   display:block;
 }
 
-.cases .thumbnail{
+.cases .isotope-item{
   margin-top:40px;
 }
 
@@ -20549,11 +20597,17 @@ textarea::-webkit-scrollbar-thumb{
 @media (max-width: 1023px){
   .messages__input-container{
     left:30px;
-    width:100%;
+    width:-webkit-calc(100% - 30px);
+    width:calc(100% - 30px);
   }
 }
 
 .messages__quickbar{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-wrap:wrap;
+          flex-wrap:wrap;
   background-color:#eff3f6;
   padding-top:6px;
   padding-bottom:4px;
@@ -20563,6 +20617,12 @@ textarea::-webkit-scrollbar-thumb{
   margin-left:25px;
   color:#80909d;
   font-weight:500;
+}
+
+@media (max-width: 639px){
+  .messages__quickbar-link{
+    margin-left:9px;
+  }
 }
 
 .messages__quickbar-link svg{
@@ -20984,6 +21044,14 @@ textarea::-webkit-scrollbar-thumb{
 @media (max-width: 639px){
   .plate__avatar-button .btn{
     font-size:14px;
+  }
+}
+
+@media (max-width: 1279px){
+  .plate__avatar-button{
+    position:absolute;
+    top:0;
+    left:0;
   }
 }
 
@@ -22164,12 +22232,6 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
-.search-form__input-wrap{
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:flex;
-}
-
 @media (max-width: 1279px){
   .search-form__input-wrap{
     -webkit-flex-wrap:wrap;
@@ -22177,14 +22239,33 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
-.search-form__input-wrap input{
-  font-size:18px;
-  padding:16px 15px;
-  border-width:1px;
-  border-color:transparent;
-  border-top-color:#d8dfe4;
-  -webkit-transition:border-color .25s ease-in-out;
-  transition:border-color .25s ease-in-out;
+@media (min-width: 1280px){
+  .search-form__input-wrap .form-group:first-child input{
+    padding-left:35px;
+  }
+}
+
+@media (max-width: 1279px){
+  .search-form__input-wrap .form-group{
+    padding-left:30px;
+    padding-right:30px;
+    margin-bottom:20px;
+  }
+}
+
+@media (max-width: 639px){
+  .search-form__input-wrap .form-group{
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+
+@media (min-width: 1280px){
+  .search-form__input-wrap input{
+    border-radius:0;
+    height:57px;
+    font-size:18px;
+  }
 }
 
 @media (max-width: 1279px){
@@ -22196,56 +22277,12 @@ textarea::-webkit-scrollbar-thumb{
 
 @media (max-width: 639px){
   .search-form__input-wrap input{
-    border-left-color:#d8dfe4;
-    border-right-color:#d8dfe4;
     padding-top:10px;
     padding-bottom:10px;
     -webkit-flex-basis:100%;
             flex-basis:100%;
     font-size:15px;
   }
-}
-
-.search-form__input-wrap input::-webkit-input-placeholder{
-  color:#a6b4c1;
-}
-
-.search-form__input-wrap input::-moz-placeholder{
-  color:#a6b4c1;
-}
-
-.search-form__input-wrap input:-ms-input-placeholder{
-  color:#a6b4c1;
-}
-
-.search-form__input-wrap input::placeholder{
-  color:#a6b4c1;
-}
-
-.search-form__input-wrap input:first-of-type{
-  -webkit-box-flex:4;
-  -webkit-flex-grow:4;
-          flex-grow:4;
-  padding-left:55px;
-}
-
-@media (max-width: 1439px){
-  .search-form__input-wrap input:first-of-type{
-    padding-left:30px;
-  }
-}
-
-@media (max-width: 639px){
-  .search-form__input-wrap input:first-of-type{
-    padding-left:15px;
-  }
-}
-
-.search-form__input-wrap input:last-of-type{
-  -webkit-box-flex:1;
-  -webkit-flex-grow:1;
-          flex-grow:1;
-  border-left-color:#d8dfe4;
 }
 
 .search-form__submit{
@@ -22260,7 +22297,7 @@ textarea::-webkit-scrollbar-thumb{
   -webkit-box-pack:center;
   -webkit-justify-content:center;
           justify-content:center;
-  padding:17px 45px 17px 35px;
+  padding:18px 45px 18px 35px;
   background-color:#e9f0f4;
   -webkit-transition:background-color .25s ease-in-out;
   transition:background-color .25s ease-in-out;

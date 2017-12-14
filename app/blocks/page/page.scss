@@ -4,6 +4,7 @@
 
   &_profile {
     padding-top: 35px;
+    overflow-x: hidden;
 
     .container {
       padding-bottom: 85px;
@@ -318,5 +319,16 @@
     background-color: rgba(#1d2430, .54);
     display: none;
     z-index: 3;
+  }
+
+  &_messages {
+    @media (max-width: $screen-xs-max) {
+      padding-left: 40px;
+      padding-right: 10px;
+    }
+
+    & ~ .to-top {
+      bottom: 95px;
+    }
   }
 }

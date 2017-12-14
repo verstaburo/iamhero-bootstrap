@@ -194,6 +194,12 @@
         font-size: 14px;
       }
     }
+
+    @media (max-width: $screen-md-max) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
   &__header {

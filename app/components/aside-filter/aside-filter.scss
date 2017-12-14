@@ -79,6 +79,11 @@
       padding: 20px 35px;
     }
 
+    @media (max-width: $screen-sm-max) {
+      padding-left: 20px;
+      padding-right: 50px;
+    }
+
     &:first-child {
       padding-top: 60px;
       border-top: none;
@@ -90,6 +95,10 @@
 
     &:last-child {
       padding-bottom: 150px;
+
+      @media (max-width: $screen-sm-max) {
+        padding-bottom: 50px;
+      }
     }
 
     &_no-side {
@@ -103,6 +112,11 @@
         @media (max-width: $screen-lg-max) {
           padding-left: 35px;
           padding-right: 35px;
+        }
+
+        @media (max-width: $screen-sm-max) {
+          padding-left: 20px;
+          padding-right: 50px;
         }
       }
     }
@@ -122,6 +136,11 @@
       @media (max-width: $screen-lg-max) {
         padding-left: 35px;
         padding-right: 35px;
+      }
+
+      @media (max-width: $screen-sm-max) {
+        padding-left: 25px;
+        padding-right: 50px;
       }
 
       &:first-child {
@@ -217,6 +236,11 @@
     @media (max-width: $screen-lg-max) {
       padding-left: 35px;
       padding-right: 35px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      padding-left: 25px;
+      padding-right: 50px;
     }
 
     & > svg {

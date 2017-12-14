@@ -22,9 +22,11 @@ mixin search-form()
         +button-icon('a')(href='#', data-side='#massMsg').btn-secondary-warning.btn-secondary-warning-low.font-weight-medium.js-pick
           +button-icon-item('mass-message')._fill_none._stroke_warning
           +button-icon-text Mass message
-    +e.input-wrap
-      input(type='text' placeholder='Search GRAPHIC DESIGNER shortlist')
-      input(type='text' placeholder='Location filter')
+    +e.input-wrap.form-inline
+      .form-group
+        input(type='text' placeholder='Search GRAPHIC DESIGNER shortlist').form-control
+      .form-group
+        input(type='text' placeholder='Location filter').form-control
       +e.A(href='#').submit
         +icon('header-search')
         | Find heroes

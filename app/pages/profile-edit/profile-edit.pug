@@ -1,22 +1,23 @@
-extends ../../layouts/profile
+extends ../../layouts/inner-page
 include ../../components/profile-header/profile-header
 include ../../blocks/sidebar-menu/sidebar-menu
 include ../../blocks/media/media
 include ../../components/plates/plates
 include ../../components/cases/cases
 include ../../components/modals/modals
+include ../../components/get-started/get-started
 
 
 block head
   - var pageTitle = 'I Am Hero - Profile edit'
 
-block background
+//- block background
   +bg-image('profile-edit/background.jpg').__top-bg
 
-block profile-header
+//- block profile-header
   +profile-header
 
-block sidebar-menu
+//- lock sidebar-menu
   +sidebar-wrap
     +media('profile-edit/avatar-small.jpg', 'Name Surname').__media Vocation
     +e.menu
@@ -24,16 +25,31 @@ block sidebar-menu
       +button('a')(href='#').__button.btn-secondary.btn-secondary-text-dark Preview
 
 block content
-  +avatar-plate
-  +skills-plate
-  +talents-plate
-  +languages-plate
-  +resume-plate(true)
-  +services-plate(true)
-  +interests-plate(true)
-  +social-plate-static
-  +video-plate
-  +cases(true)
+  +page._inner-standart._profile
+    +bg-image('profile-edit/background.jpg').__top-bg._overlay_blue._inner
+    .container
+      .row
+        .col-xxl-21.col-xxl-offset-1.col-xs-24
+          +profile-header
+        +e.sidebar-wrap.col-xxl-offset-1.col-xxl-5.col-lg-6
+          +sidebar-wrap
+            +media('profile-edit/avatar-small.jpg', 'Name Surname').__media Vocation
+            +e.menu
+              +sidebar-menu(getData('sidebar-menu'))
+              +button('a')(href='#').__button.btn-secondary.btn-secondary-text-dark Preview
+        .col-xxl-16.col-lg-18.col-xs-24
+          +avatar-plate
+          +skills-plate
+          +talents-plate
+          +languages-plate
+          +resume-plate(true)
+          +services-plate(true)
+          +interests-plate(true)
+          +social-plate-static
+          +video-plate
+          +cases(true)
+    +get-started
+    +footer
 
 block modals
   +video-modal

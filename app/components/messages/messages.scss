@@ -20,11 +20,13 @@
 
     @media (max-width: $screen-sm-max) {
       left: 30px;
-      width: 100%;
+      width: calc(100% - 30px);
     }
   }
 
   &__quickbar {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #eff3f6;
     padding-top: 6px;
     padding-bottom: 4px;
@@ -34,6 +36,10 @@
     margin-left: 25px;
     color: #80909d;
     font-weight: 500;
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: 9px;
+    }
 
     svg {
       margin-top: 2px;

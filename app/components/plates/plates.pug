@@ -225,7 +225,7 @@ mixin resume-plate(edit)
 mixin services-plate
   +plate#services
     +e.H2.header Services
-    +e.top-40.row
+    +e.top-40.row.flex-wrap
       +e.service.col-md-8
         +service('palette', 'Graphic design').sr-animate Website, logo and company identity graphical design. Print, pre-print, digital design
       +e.service.col-md-8
@@ -244,7 +244,7 @@ mixin services-plate
 mixin services-plate-static
   +plate#services
     +e.H2.header Services
-    +e.top-40.row
+    +e.top-40.row.flex-wrap
       +e.service.col-md-8
         +service-static('palette', 'Graphic design').sr-animate Website, logo and company identity graphical design. Print, pre-print, digital design
       +e.service.col-md-8
@@ -255,7 +255,7 @@ mixin services-plate-static
 mixin interests-plate(edit)
   +plate#interest
     +e.H2.header Interests
-    .row.plate__top-60
+    .row.plate__top-60.flex-wrap
       .col-md-8.col-xs-24
         if edit
           +thumbnail-interests-edit('profile-edit/design.jpg', 'Graphic design')

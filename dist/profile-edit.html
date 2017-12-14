@@ -14,35 +14,178 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__content container-fluid">
-            <a class="logo" href="#">
-                <img src="assets/images/icon/iamhero_logo_grey.svg" />
+    <header class="inner-header">
+        <div class="inner-header__col inner-header__logo">
+            <a href="#">
+                <svg><use xlink:href="assets/images/icon.svg#icon_logo-white"></use></svg>
             </a>
-            <a class="header__burger" href="#">
-                <button></button>
-            </a>
-            <a class="header__user-menu" href="#">
-                <svg><use xlink:href="assets/images/icon.svg#icon_header-hero"></use></svg>
-            </a>
-            <span class="header__text hidden-md hidden-sm hidden-xs">Join the huge network of brilliant professionals at iamhero.com, make most outstanding resume, be a hero today!</span>
-            <ul class="nav header__nav header__nav_hide">
-                <li>
-                    <a class="nav-link nav-link-border-success nav-link-hover-success" href="#">Home</a>
-                </li>
-            </ul>
-            <ul class="nav header__nav header__nav_push-right header__nav-mobile">
-                <li>
-                    <a class="nav-link nav-link-hover-success" href="#">Account</a>
-                </li>
-                <li>
-                    <a class="nav-link nav-link-hover-success" href="#">Log out</a>
-                </li>
-            </ul>
+        </div>
+        <div class="inner-header__col inner-header__search">
+            <label class="search">
+                <input type="text" placeholder="Search for heroes..." />
+                <button>
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+                </button>
+            </label>
+        </div>
+        <div class="inner-header__col inner-header__search-btn">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+        </div>
+        <div class="inner-header__notify-wrap">
+            <div class="inner-header__col inner-header__col_dropdown inner-header__col_hover inner-header__col_hover_dark inner-header__notification">
+                <button>
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    <span class="inner-header__notification-badge">1</span>
+                </button>
+                <div class="inner-header__dropdown-content">
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user2.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Jean Michianty</h4>Accepted your job attend</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+                            <span>05:07</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item inner-header__notify-item_padded" href="#">
+                        <span class="inner-header__notify-link">Open all notifications</span>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="inner-header__col inner-header__col_dropdown inner-header__col_hover inner-header__col_hover_dark inner-header__user">
+                <div class="media-secondary">
+                    <div class="media-left">
+                        <img class="img-circle media-object" src="assets/images/user/user.png" />
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Mihail Berlant</h4>iamhero.io</div>
+                </div>
+                <svg><use xlink:href="assets/images/icon.svg#icon_caret-bold"></use></svg>
+                <div class="inner-header__dropdown-content">
+                    <a class="inner-header__user-nav" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-hero"></use></svg>Hero Account</a>
+                    <a class="inner-header__user-nav active" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>Maxdino</a>
+                    <a class="inner-header__user-nav" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>Freedom Agency</a>
+                </div>
+            </div>
+        </div>
+        <div class="inner-header__col inner-header__col_hover inner-header__col_hover_yellow inner-header__promo">
+            <a href="#">Buy packages</a>
+        </div>
+        <div class="inner-header__col inner-header__burger">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-burger"></use></svg>
         </div>
     </header>
-    <main class="page page_profile" role="main">
-        <div class="bg-image page__top-bg">
+    <ul class="inner-sidebar">
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-dashboard"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Dashboard</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-messages"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Messages</span>
+            <span class="inner-sidebar__badge">1</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Hero Search</span>
+        </li>
+        <li class="inner-sidebar__item active">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Shortlists (
+                <span class="text-warning">14</span>)</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Job Offers</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-statistics"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Stats</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Settings</span>
+        </li>
+    </ul>
+    <main class="page page_inner-standart page_profile" role="main">
+        <div class="bg-image page__top-bg page__top-bg_overlay_blue page__top-bg_inner">
             <img src="assets/images/profile-edit/background.jpg" />
         </div>
         <div class="container">
@@ -452,7 +595,7 @@
                     </div>
                     <div class="plate" id="services">
                         <h2 class="plate__header">Services</h2>
-                        <div class="plate__top-40 row">
+                        <div class="plate__top-40 row flex-wrap">
                             <div class="plate__service col-md-8">
                                 <div class="service service_edit sr-animate">
                                     <div class="service__heading">
@@ -513,7 +656,7 @@
                     </div>
                     <div class="plate" id="interest">
                         <h2 class="plate__header">Interests</h2>
-                        <div class="row plate__top-60">
+                        <div class="row plate__top-60 flex-wrap">
                             <div class="col-md-8 col-xs-24">
                                 <div class="thumbnail thumbnail-border-none thumbnail-interests">
                                     <div class="bg-image thumbnail-img">
@@ -777,7 +920,7 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </a>
                                     </div>
-                                    <div class="bg-image thumbnail-case-img">
+                                    <div class="bg-image thumbnail-img">
                                         <img src="assets/images/profile-edit/cases/1.jpg" />
                                     </div>
                                     <div class="caption">
@@ -802,7 +945,7 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </a>
                                     </div>
-                                    <div class="bg-image thumbnail-case-img">
+                                    <div class="bg-image thumbnail-img">
                                         <img src="assets/images/profile-edit/cases/2.jpg" />
                                     </div>
                                     <div class="caption">
@@ -827,7 +970,7 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </a>
                                     </div>
-                                    <div class="bg-image thumbnail-case-img">
+                                    <div class="bg-image thumbnail-img">
                                         <img src="assets/images/profile-edit/cases/3.jpg" />
                                     </div>
                                     <div class="caption">
@@ -853,7 +996,7 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </a>
                                     </div>
-                                    <div class="bg-image thumbnail-case-img">
+                                    <div class="bg-image thumbnail-img">
                                         <img src="assets/images/profile-edit/cases/2.jpg" />
                                     </div>
                                     <div class="caption">
@@ -878,7 +1021,7 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </a>
                                     </div>
-                                    <div class="bg-image thumbnail-case-img">
+                                    <div class="bg-image thumbnail-img">
                                         <img src="assets/images/profile-edit/cases/5.jpg" />
                                     </div>
                                     <div class="caption">
@@ -902,7 +1045,7 @@
                                             <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
                                         </a>
                                     </div>
-                                    <div class="bg-image thumbnail-case-img">
+                                    <div class="bg-image thumbnail-img">
                                         <img src="assets/images/profile-edit/cases/4.jpg" />
                                     </div>
                                     <div class="caption">
@@ -963,106 +1106,106 @@
                 </form>
             </div>
         </div>
-    </main>
-    <footer class="footer">
-        <div class="container container-mobile-padded">
-            <div class="row">
-                <div class="footer__logo-wrap col-xxl-3 col-xl-5 col-lg-4 col-xs-24">
-                    <a class="logo logo_big logo_inline" href="#">
-                        <img src="assets/images/icon/iamhero_logo_grey.svg" />
-                    </a>
-                </div>
-                <div class="footer__text-menu col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-12 col-xs-24">
-                    <ul class="footer-menu">
-                        <li class="footer-menu__item footer-menu__item_heading">Information</li>
-                        <li class="footer-menu__item">
-                            <a href="#">News</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Help & Support</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Jobs</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Join Iamhero</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">About us</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Contacts</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">ICO</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__text-menu col-xxl-5 col-xl-5 col-lg-7 col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
-                    <ul class="footer-menu">
-                        <li class="footer-menu__item footer-menu__item_heading">Employer</li>
-                        <li class="footer-menu__item">
-                            <a href="#">Hire the Heroes</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Create a Company Page</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Post a Job</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__text-menu col-xxl-4 col-xl-5 col-lg-7 col-md-8 col-sm-12 col-xs-24">
-                    <ul class="footer-menu">
-                        <li class="footer-menu__item footer-menu__item_heading">I am hero</li>
-                        <li class="footer-menu__item">
-                            <a href="#">Take a tour</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Resume</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li class="footer-menu__item">
-                            <a href="#">Privacy Policy</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__social-wrap col-xxl-6 col-xxl-offset-1 col-xl-4 col-xl-offset-0 col-lg-20 col-lg-offset-4 col-md-24 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
-                    <ul class="footer-menu">
-                        <li class="footer-menu__item footer-menu__item_heading">Social</li>
-                    </ul>
-                    <div class="social footer__social">
-                        <a class="social__item" href="#">
-                            <svg><use xlink:href="assets/images/icon.svg#icon_facebook-social"></use></svg>
+        <footer class="footer">
+            <div class="container container-mobile-padded">
+                <div class="row">
+                    <div class="footer__logo-wrap col-xxl-3 col-xl-5 col-lg-4 col-xs-24">
+                        <a class="logo logo_big logo_inline" href="#">
+                            <img src="assets/images/icon/iamhero_logo_grey.svg" />
                         </a>
-                        <a class="social__item" href="#">
-                            <svg><use xlink:href="assets/images/icon.svg#icon_twitter-social"></use></svg>
-                        </a>
-                        <a class="social__item" href="#">
-                            <svg><use xlink:href="assets/images/icon.svg#icon_youtube-social"></use></svg>
-                        </a>
-                        <a class="social__item social__item_insta" href="#">
-                            <svg><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
-                        </a>
+                    </div>
+                    <div class="footer__text-menu col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-12 col-xs-24">
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item footer-menu__item_heading">Information</li>
+                            <li class="footer-menu__item">
+                                <a href="#">News</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Help & Support</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Jobs</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Join Iamhero</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Contacts</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">ICO</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__text-menu col-xxl-5 col-xl-5 col-lg-7 col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item footer-menu__item_heading">Employer</li>
+                            <li class="footer-menu__item">
+                                <a href="#">Hire the Heroes</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Create a Company Page</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Post a Job</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__text-menu col-xxl-4 col-xl-5 col-lg-7 col-md-8 col-sm-12 col-xs-24">
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item footer-menu__item_heading">I am hero</li>
+                            <li class="footer-menu__item">
+                                <a href="#">Take a tour</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Resume</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__social-wrap col-xxl-6 col-xxl-offset-1 col-xl-4 col-xl-offset-0 col-lg-20 col-lg-offset-4 col-md-24 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
+                        <ul class="footer-menu">
+                            <li class="footer-menu__item footer-menu__item_heading">Social</li>
+                        </ul>
+                        <div class="social footer__social">
+                            <a class="social__item" href="#">
+                                <svg><use xlink:href="assets/images/icon.svg#icon_facebook-social"></use></svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg><use xlink:href="assets/images/icon.svg#icon_twitter-social"></use></svg>
+                            </a>
+                            <a class="social__item" href="#">
+                                <svg><use xlink:href="assets/images/icon.svg#icon_youtube-social"></use></svg>
+                            </a>
+                            <a class="social__item social__item_insta" href="#">
+                                <svg><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
     <a class="to-top" href="#">
         <svg><use xlink:href="assets/images/icon.svg#icon_arrow-down-rounded"></use></svg>
     </a>
