@@ -742,25 +742,10 @@
   }
 
   &__img {
+    width: 100%;
+    padding-top: 100%;
     margin-top: 30px;
-    height: 210px;
     border: 1px solid #ccc;
-
-    @media (max-width: $screen-sm-max) {
-      height: 150px;
-    }
-
-    @media (max-width: $screen-xs-max) {
-      height: 330px;
-    }
-
-    &_big {
-      height: 450px;
-
-      @media (max-width: $screen-sm-max) {
-        height: 330px;
-      }
-    }
   }
 
   &__close {

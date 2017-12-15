@@ -42,8 +42,6 @@
   }
 
   &-interests {
-    display: flex;
-    flex-direction: column;
 
     .caption {
 
@@ -54,7 +52,7 @@
     }
 
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-      flex-direction: row;
+      display: flex;
 
       .thumbnail-img {
         width: 265px;

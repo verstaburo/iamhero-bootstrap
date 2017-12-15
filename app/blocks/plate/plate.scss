@@ -31,7 +31,7 @@
 
   &_tablet-column {
     @media (max-width: $screen-sm-max) {
-      flex-direction: column;
+      display: block;
     }
   }
 

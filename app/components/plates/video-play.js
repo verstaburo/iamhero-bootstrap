@@ -1,17 +1,20 @@
-/*eslint-disable*/
-
 export default () => {
-  $(document).on('click', '.js-video-play', function(e) {
+  const $ = window.$;
+
+  $(document).on('click', '.js-video-play', function (e) {
     e.preventDefault();
 
-    var mediaElement = $(this).siblings('.js-video-placeholder').children();
+    const placeholder = $(this).siblings('.js-video-placeholder');
 
     $(this).fadeOut();
 
-    if (mediaElement.prop('tagName') === 'IFRAME') {
-      mediaElement[0].src += '?autoplay=1';
-    } else if (mediaElement.prop('tagName') === 'VIDEO') {
-      mediaElement[0].play();
+    const video = placeholder.find('video');
+    const iframe = placeholder.find('iframe');
+
+    if (video.length) {
+      video[0].play();
+    } else if (iframe.length) {
+      iframe[0].src += '?autoplay=1';
     } else {
       console.log("Can't find video in placeholder");
     }
