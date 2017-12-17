@@ -16611,6 +16611,23 @@ select{
   background-color:#fff;
 }
 
+.table-finances th, .table-finances td{
+  border-top:none !important;
+  border-bottom:1px solid #e1e9ec !important;
+  font-weight:500;
+  font-size:18px;
+  letter-spacing:-.04em;
+  vertical-align:middle !important;
+}
+
+@media (max-width: 639px){
+  .table-finances th, .table-finances td{
+    font-size:15px;
+    padding-left:10px !important;
+    padding-right:10px !important;
+  }
+}
+
 .table-finances table{
   margin-bottom:0;
 }
@@ -16625,6 +16642,12 @@ select{
   }
 }
 
+@media (max-width: 1919px){
+  .table-finances table th:first-child, .table-finances table td:first-child{
+    padding-left:15px !important;
+  }
+}
+
 .table-finances table th:last-child, .table-finances table td:last-child{
   padding-right:60px !important;
 }
@@ -16635,32 +16658,31 @@ select{
   }
 }
 
+@media (max-width: 1919px){
+  .table-finances table th:last-child, .table-finances table td:last-child{
+    padding-right:15px !important;
+  }
+}
+
 .table-finances thead th{
   text-transform:uppercase;
   font-weight:300;
 }
 
+@media (max-width: 639px){
+  .table-finances thead th:nth-child(2){
+    display:none;
+  }
+}
+
+@media (max-width: 639px){
+  .table-finances tbody td:nth-child(2){
+    display:none;
+  }
+}
+
 .table-finances__text-warning{
   color:#ffc425;
-}
-
-.table-finances__col_date{
-  width:17%;
-}
-
-.table-finances__col_cost{
-  width:17%;
-}
-
-.table-finances__col_price{
-  width:25%;
-}
-
-.table-finances th, .table-finances td{
-  border-bottom:1px solid #e1e9ec !important;
-  font-weight:500;
-  font-size:18px;
-  letter-spacing:-.04em;
 }
 
 .table-finances__download-link{
@@ -16679,11 +16701,25 @@ select{
   margin-right:15px;
 }
 
+@media (max-width: 639px){
+  .table-finances__download-link > svg{
+    margin-right:0;
+    width:15px;
+    height:15px;
+  }
+}
+
 .table-finances__download-link > span{
   color:#96a9b3;
   -webkit-transition:color .25s ease-in-out;
   transition:color .25s ease-in-out;
   border-bottom:1px solid #ffc425;
+}
+
+@media (max-width: 639px){
+  .table-finances__download-link > span{
+    display:none;
+  }
 }
 
 .table-finances__download-link:hover > span{

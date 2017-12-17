@@ -3,6 +3,21 @@
   padding-bottom: 50px;
   background-color: #fff;
 
+  th, td {
+    border-top: none !important;
+    border-bottom: 1px solid #e1e9ec !important;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -.04em;
+    vertical-align: middle !important;
+
+    @media (max-width: $screen-xs-max) {
+      font-size: 15px;
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }
+
   table {
     margin-bottom: 0;
 
@@ -12,6 +27,10 @@
       @media (max-width: $screen-xl-max) {
         padding-left: 30px !important;
       }
+
+      @media (max-width: $screen-xl-max) {
+        padding-left: 15px !important;
+      }
     }
 
     th:last-child, td:last-child {
@@ -19,6 +38,10 @@
 
       @media (max-width: $screen-xl-max) {
         padding-right: 30px !important;
+      }
+
+      @media (max-width: $screen-xl-max) {
+        padding-right: 15px !important;
       }
     }
   }
@@ -28,33 +51,26 @@
     th {
       text-transform: uppercase;
       font-weight: 300;
+
+      &:nth-child(2) {
+        @media (max-width: $screen-xs-max) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  tbody {
+
+    td:nth-child(2) {
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
     }
   }
 
   &__text-warning {
     color: $brand-warning;
-  }
-
-  &__col {
-
-    &_date {
-      width: 17%;
-    }
-
-    &_cost {
-      width: 17%;
-    }
-
-    &_price {
-      width: 25%;
-    }
-  }
-
-  th, td {
-    border-bottom: 1px solid #e1e9ec !important;
-    font-weight: 500;
-    font-size: 18px;
-    letter-spacing: -.04em;
   }
 
   &__download-link {
@@ -66,12 +82,22 @@
       height: 8px;
       fill: $brand-warning;
       margin-right: 15px;
+
+      @media (max-width: $screen-xs-max) {
+        margin-right: 0;
+        width: 15px;
+        height: 15px;
+      }
     }
 
     & > span {
       color: #96a9b3;
       transition: color .25s ease-in-out;
       border-bottom: 1px solid $brand-warning;
+
+      @media (max-width: $screen-xs-max) {
+        display: none;
+      }
     }
 
     &:hover {

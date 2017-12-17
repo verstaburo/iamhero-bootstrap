@@ -2,14 +2,14 @@ include ../icon/icons
 include ../pagination/pagination
 
 mixin table-finances
-  +b.table-finances&attributes(attributes).table-responsive
+  +b.table-finances&attributes(attributes)
     table.table
       thead
         tr
           th PRODUCT
-          +e.TH.col_date Date & TIME
-          +e.TH.col_cost.text-center COST
-          +e.TH.col_price.text-right INVOICE
+          th Date & TIME
+          th.text-center COST
+          th.text-right INVOICE
       tbody
         tr
           td 50 contacts Package
