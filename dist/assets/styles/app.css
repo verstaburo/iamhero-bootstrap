@@ -14883,6 +14883,12 @@ img.mfp-img{
   }
 }
 
+@media (max-width: 639px){
+  .pagination__next{
+    width:35px;
+  }
+}
+
 .pagination__next svg{
   width:10px;
   height:17px;
@@ -14921,7 +14927,7 @@ img.mfp-img{
 
 @media (max-width: 639px){
   .pagination__bar{
-    max-width:80px;
+    max-width:65px;
   }
 }
 
@@ -14942,6 +14948,14 @@ img.mfp-img{
     line-height:2;
     padding-left:15px;
     padding-right:15px;
+  }
+}
+
+@media (max-width: 639px){
+  .pagination__item{
+    padding-left:10px;
+    padding-right:10px;
+    line-height:1.5;
   }
 }
 
