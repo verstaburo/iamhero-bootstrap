@@ -14244,6 +14244,7 @@ img.mfp-img{
 }
 
 .nav-link{
+  max-height:100%;
   display:block;
   color:#688595;
   border-bottom:7px solid transparent;
@@ -20080,6 +20081,7 @@ textarea::-webkit-scrollbar-thumb{
   top:0;
   -webkit-transition:opacity .25s ease-in-out;
   transition:opacity .25s ease-in-out;
+  max-height:100%;
 }
 
 .inner-header_secondary .container .nav a:focus{
@@ -20103,6 +20105,7 @@ textarea::-webkit-scrollbar-thumb{
     background-color:#465e75;
     background-image:-webkit-linear-gradient(left, #465c74, #1b202d);
     background-image:linear-gradient(to right, #465c74, #1b202d);
+    max-height:initial;
   }
   .inner-header_secondary .container .nav li:not(:first-child){
     margin-left:0;

@@ -42,6 +42,7 @@
         left: 50%;
         top: 0;
         transition: opacity .25s ease-in-out;
+        max-height: 100%;
 
         a:focus {
           background-color: #17202c;
@@ -58,6 +59,7 @@
           width: 100%;
           background-color: #465e75;
           background-image: linear-gradient(to right, #465c74, #1b202d);
+          max-height: initial;
 
           li:not(:first-child) {
             margin-left: 0;
