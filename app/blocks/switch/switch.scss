@@ -7,8 +7,8 @@
   display: flex;
   justify-content: center;
   // stylelint-disable
-  -webkit-transform: translateZ(0);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+  // -webkit-transform: translateZ(0);
+  // -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
   // stylelint-enable
 
   &__item {
@@ -24,8 +24,8 @@
     transition: background-color .25s ease-in-out;
     line-height: 1.375;
     // stylelint-disable
-    -webkit-transform: translateZ(0);
-    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    // -webkit-transform: translateZ(0);
+    // -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
     // stylelint-enable
 
     &.active {

@@ -16548,8 +16548,6 @@ select{
   -webkit-box-pack:center;
   -webkit-justify-content:center;
           justify-content:center;
-  -webkit-transform:translateZ(0);
-  -webkit-mask-image:-webkit-radial-gradient(circle, white 100%, black 100%);
 }
 
 .switch__item{
@@ -16567,8 +16565,6 @@ select{
   -webkit-transition:background-color .25s ease-in-out;
   transition:background-color .25s ease-in-out;
   line-height:1.375;
-  -webkit-transform:translateZ(0);
-  -webkit-mask-image:-webkit-radial-gradient(circle, white 100%, black 100%);
 }
 
 .switch__item.active{
