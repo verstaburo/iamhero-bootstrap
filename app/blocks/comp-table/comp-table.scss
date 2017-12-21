@@ -1,0 +1,59 @@
+.comp-table {
+  display: block;
+  font-size: 25px;
+
+  @media (max-width: $screen-md-max) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 14px;
+  }
+
+  > thead {
+
+    > tr {
+
+      > th {
+        vertical-align: middle;
+        font-weight: 500;
+        border-bottom: 1px solid #e8eaeb;
+
+        @media (max-width: $screen-xs-max) {
+          padding: 10px 5px;
+        }
+
+        &:first-child {
+          width: 47%;
+
+          @media (max-width: $screen-xs-max) {
+            width: 49%;
+          }
+        }
+
+        &:not(:first-child) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  > tbody {
+
+    > tr {
+
+      > td {
+        border: none;
+        vertical-align: middle;
+
+        &:not(:first-child) {
+          text-align: center;
+        }
+
+        @media (max-width: $screen-xs-max) {
+          padding: 10px 5px;
+        }
+      }
+    }
+  }
+}

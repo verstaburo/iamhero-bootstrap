@@ -5,6 +5,7 @@
 
   &_modal {
     padding: 40px 60px 65px;
+    overflow: hidden;
   }
 
   @media (max-width: $screen-sm-max) {
@@ -37,6 +38,7 @@
 
   &_relative {
     position: relative;
+    z-index: 1;
   }
 
   &_ratio-container {

@@ -1,0 +1,9 @@
+include ../icon/icons
+
+mixin state-check()
+  +b.state-icon&attributes(attributes)
+    +icon('state-check')
+
+mixin state-cancel()
+  +b.state-icon._red&attributes(attributes)
+    +icon('state-cancel')

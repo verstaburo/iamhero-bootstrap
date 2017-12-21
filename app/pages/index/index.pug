@@ -1,14 +1,19 @@
 extends ../../layouts/default
+include ../../components/modals/modals
 
 block head
   - var pageTitle = 'I Am Hero - Demo page'
 
-block content
-  mixin demo-link(title, path)
-    +e.link&attributes(attributes)
-      a(href=path+'.html', target='_blank').h3= title
-      span= '('+path+'.html)'
+mixin demo-link(title, path)
+  +e.link&attributes(attributes)
+    a(href=path+'.html', target='_blank').h3= title
+    span= '('+path+'.html)'
 
+mixin demo-popup(title, target)
+  +e.link&attributes(attributes)
+    a(href='#', target='_blank', data-toggle="modal", data-target='#'+target).h3= title
+
+block content
   +b.demo
     +demo-link('Profile3x2', 'profile')
     +demo-link('Profile3x2_edit3', 'profile-edit')
@@ -32,3 +37,6 @@ block content
     +demo-link('ICO Landing', 'ico-landing')
     +demo-link('Affiliate Landing', 'affiliate-landing')
     +demo-link('Affiliate Landing 2', 'affiliate-landing-2')
+    +demo-popup('Vip modal', 'vip-modal')
+
+    +vip-modal

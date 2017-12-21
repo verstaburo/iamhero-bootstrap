@@ -1,0 +1,22 @@
+.state-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #c1d977;
+  position: relative;
+
+  &_red {
+    background-color: #ee7b7e;
+  }
+
+  svg {
+    fill: #fff;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+}

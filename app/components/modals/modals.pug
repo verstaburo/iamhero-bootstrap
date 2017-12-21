@@ -1,6 +1,7 @@
 include ../../blocks/input/input
 include ../../blocks/textarea/textarea
 include ../../blocks/button-icon/button-icon
+include ../../blocks/button/button
 include ../../blocks/radio/radio
 include ../../blocks/label/label
 include ../../blocks/icon-close/icon-close
@@ -9,6 +10,7 @@ include ../../blocks/upload-area/upload-area
 include ../../blocks/select/select
 include ../../blocks/bg-image/bg-image
 include ../../blocks/upload/upload
+include ../../blocks/comp-table/comp-table
 
 
 mixin modal
@@ -18,6 +20,12 @@ mixin modal
         .col-xxl-16.col-lg-offset-5.col-lg-19.col-xs-24.modal-area
           +plate._modal._relative
             block
+
+mixin modal-custom
+  .modal.fade&attributes(attributes)
+    .container
+      .row
+        block
 
 mixin modal-close
   +icon-close(data-dismiss="modal").modal-close
@@ -109,3 +117,13 @@ mixin case-open-modal
     +e.P.modal-text A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an allthrough romantic view. Meanwhile the world is changing, but nature romanticism is nowadays again our hidden shelter where the mind escapes from the upheavals of the reality. Locations: Germany, from the coast to the Alps.
     +bg-image('profile-edit/cases/big-1.jpg').__case-big-img
     +bg-image('profile-edit/cases/big-2.jpg').__case-big-img
+
+mixin vip-modal
+  +modal-custom.vip-modal#vip-modal
+    .col-xxl-16.col-xxl-offset-4.col-lg-24.col-xs-24.modal-area
+      +plate._modal._relative
+        +modal-close
+        +e.H2.header Upgrade to Superhero now !<br>for only 4,99 $ /month
+        +comp-table
+        +button.btn-secondary.btn-secondary-text-dark Get it!
+        img(src='assets/images/icon/hero-decor.jpg').vip-modal__decor

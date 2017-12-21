@@ -10709,6 +10709,64 @@ img.mfp-img{
   pointer-events:none;
 }
 
+.comp-table{
+  display:block;
+  font-size:25px;
+}
+
+@media (max-width: 1279px){
+  .comp-table{
+    font-size:20px;
+  }
+}
+
+@media (max-width: 639px){
+  .comp-table{
+    font-size:14px;
+  }
+}
+
+.comp-table > thead > tr > th{
+  vertical-align:middle;
+  font-weight:500;
+  border-bottom:1px solid #e8eaeb;
+}
+
+@media (max-width: 639px){
+  .comp-table > thead > tr > th{
+    padding:10px 5px;
+  }
+}
+
+.comp-table > thead > tr > th:first-child{
+  width:47%;
+}
+
+@media (max-width: 639px){
+  .comp-table > thead > tr > th:first-child{
+    width:49%;
+  }
+}
+
+.comp-table > thead > tr > th:not(:first-child){
+  text-align:center;
+}
+
+.comp-table > tbody > tr > td{
+  border:none;
+  vertical-align:middle;
+}
+
+.comp-table > tbody > tr > td:not(:first-child){
+  text-align:center;
+}
+
+@media (max-width: 639px){
+  .comp-table > tbody > tr > td{
+    padding:10px 5px;
+  }
+}
+
 .companies{
   display:block;
   background-color:#fff;
@@ -14977,6 +15035,7 @@ img.mfp-img{
 
 .plate_modal{
   padding:40px 60px 65px;
+  overflow:hidden;
 }
 
 @media (max-width: 1023px){
@@ -15017,6 +15076,7 @@ img.mfp-img{
 
 .plate_relative{
   position:relative;
+  z-index:1;
 }
 
 .plate_ratio-container{
@@ -16531,6 +16591,30 @@ select{
 .social__item_insta svg{
   fill:transparent;
   stroke:#394b60;
+}
+
+.state-icon{
+  display:inline-block;
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  background-color:#c1d977;
+  position:relative;
+}
+
+.state-icon_red{
+  background-color:#ee7b7e;
+}
+
+.state-icon svg{
+  fill:#fff;
+  width:10px;
+  height:10px;
+  position:absolute;
+  -webkit-transform:translate(-50%, -50%);
+          transform:translate(-50%, -50%);
+  left:50%;
+  top:50%;
 }
 
 .switch{
@@ -20848,6 +20932,57 @@ textarea::-webkit-scrollbar-thumb{
 .modal-form__datepick .select-group{
   margin-top:10px;
   margin-bottom:20px;
+}
+
+.vip-modal .plate{
+  border-bottom:9px solid #000;
+}
+
+.vip-modal .btn{
+  margin-top:25px;
+}
+
+@media (min-width: 1024px){
+  .vip-modal .btn{
+    margin-top:50px;
+    font-size:26px;
+    padding:10px 80px;
+  }
+}
+
+.vip-modal__decor{
+  position:absolute;
+  right:0;
+  bottom:0;
+  z-index:-1;
+  -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+  pointer-events:none;
+}
+
+@media (max-width: 1023px){
+  .vip-modal__decor{
+    height:220px;
+  }
+}
+
+@media (max-width: 639px){
+  .vip-modal__decor{
+    height:110px;
+  }
+}
+
+.vip-modal .comp-table{
+  margin-top:35px;
+}
+
+@media (min-width: 1024px){
+  .vip-modal .comp-table{
+    width:70%;
+    margin-top:65px;
+  }
 }
 
 .plate__content-media{

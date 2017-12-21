@@ -1,0 +1,37 @@
+include ../state-icon/state-icon
+
+mixin comp-table()
+  table.table.comp-table&attributes(attributes)
+    thead
+      tr
+        th Options
+        th Free version
+        th Super hero
+    tbody
+      tr
+        td
+          b Making resume
+      tr
+        td Official data, experience, edu, skills, etc.
+        td
+          +state-check
+        td
+          +state-check
+      tr
+        td Video represent
+        td
+          +state-cancel
+        td
+          +state-check
+      tr
+        td Case studies
+        td
+          +state-cancel
+        td
+          +state-check
+      tr
+        td Link / pdf using
+        td
+          +state-cancel
+        td
+          +state-check

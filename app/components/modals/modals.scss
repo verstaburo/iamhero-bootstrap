@@ -95,3 +95,46 @@
     }
   }
 }
+
+.vip-modal {
+
+  .plate {
+    border-bottom: 9px solid #000;
+  }
+
+  .btn {
+    margin-top: 25px;
+
+    @media (min-width: $screen-md-min) {
+      margin-top: 50px;
+      font-size: 26px;
+      padding: 10px 80px;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+
+    @media (max-width: $screen-sm-max) {
+      height: 220px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      height: 110px;
+    }
+  }
+
+  .comp-table {
+    margin-top: 35px;
+
+    @media (min-width: $screen-md-min) {
+      width: 70%;
+      margin-top: 65px;
+    }
+  }
+}
