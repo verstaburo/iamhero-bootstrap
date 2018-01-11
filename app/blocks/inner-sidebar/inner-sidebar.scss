@@ -26,7 +26,7 @@
     background-color: rgba(#212a37, .93);
     width: 100%;
     max-height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 
     &::-webkit-scrollbar {
       width: 4px;
@@ -196,6 +196,7 @@
   &__icon {
     fill: transparent;
     stroke: #c6d2d6;
+    stroke-width: 2px;
     transition: stroke .25s ease-in-out;
     width: 100%;
     height: 100%;
