@@ -1,0 +1,79 @@
+extends ../../layouts/inner-page
+include ../../components/profile-header/profile-header
+include ../../blocks/sidebar-menu/sidebar-menu
+include ../../blocks/media/media
+include ../../blocks/page-section/page-section
+include ../../blocks/button/button
+include ../../blocks/advice/advice
+include ../../components/plates/plates
+include ../../components/cases/cases
+include ../../components/modals/modals
+include ../../components/get-started/get-started
+include ../../components/resume-section/resume-section
+
+block head
+  - var pageTitle = 'I Am Hero - Resume builder'
+
+block content
+  +page._inner-standart.resume-builder
+    +resume-section
+    .resume-builder__text
+      .container
+        h2 Try the world's most powerful resume builder
+    .resume-builder__demo
+      +bg-image('profile-edit/background.jpg').__top-bg._overlay_blue._static
+      .container
+        .row
+          .col-xxl-21.col-xxl-offset-1.col-xs-24
+            +profile-header
+          +e.sidebar-wrap.col-xxl-offset-1.col-xxl-5.col-lg-6
+            +sidebar-wrap
+              +media('profile-edit/avatar-small.jpg', 'Name Surname').__media Vocation
+              +e.menu
+                +sidebar-menu(getData('sidebar-menu'))
+                +button('a')(href='#').__button.btn-secondary.btn-secondary-text-dark Preview
+          .col-xxl-16.col-lg-18.col-xs-24
+            +avatar-plate
+            +skills-plate
+              +advice
+                p This feature allows you to add and rate your skills! Just click the “Add new Skill” button and rate your skill level on a percentage scale by moving the slider..... It’s that easy!
+            +talents-plate
+              +advice
+                p
+                  b Talents:<br>
+                  | Do you have several Talents? ... Add them here by Clicking the "add new talent" button and move the slider to rate your ability level on a percentage scale. Your Talents can be anything you’re good at and they need not be professional skills but simply abilities that describe or demonstrate your qualities, your character or your personality. Potential employers are often looking for specific talents in their choices of new hires!
+            +languages-plate
+              +advice
+                p
+                  b Languages:<br>
+                  | Your mother language should come first. There are 4 scalable categories for each language which are usually crucial for a potential employer. Be rock solid honest and as accurate as you can when scaling yourself on these aspects since being precise is in your own interest
+            +resume-plate(true)
+              +advice
+                p
+                  b Resume:<br>
+                  | Your resume timeline is one of the most important categories of your profile. Here you can showcase events, education, awards, certificates, work history and experience, as well as Higher Education Levels and further acquired professional abilities etc. You can upload and add a file in support of each item you add, while determining the access permissions to them by potential Employers at your own discretion.
+            +services-plate(true)
+              +advice
+                p
+                  b Services:<br>
+                  | Do you offer Freelance Services? ... Select or Add them here!
+            +interests-plate(true)
+              +advice
+                p
+                  b Your interests:<br>
+                  | If you decide to describe your interests in a visual manner, upload an image file that portrays what you're truly passionate about and what gets you going in life. This allows for great insight into your abilities and passions as a person.
+            +social-plate-static
+              +advice
+                p
+                  b Social Media Channels:<br>
+                  | This feature enables you to showcase your personality and passions via your existing social media accounts! If you would like to present existing, or even set up new social media channels for the purpose of describing yourself to potential employers, or promoting freelance services you offer, you can do that here. Most employers are looking for potential hires on social media today, it’s a new trend! However this can be a daunting job considering the dense jungle of potentials out there. Connect the channels you want to be found with and be aware that for certain jobs, the impression of your social presence could turn out to be a very important if not crucial factor.
+            +video-plate
+              +advice
+                p Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro b
+            +cases(true)
+              +advice
+                p
+                  b Projects:<br>
+                  | This section enables you to showcase your creative and/or crafty achievements. It could be designs, print material or things like a wooden table etc. Show off what you’ve got inside you by uploading an image file and using the tags to categorize the respective project.
+  +get-started
+  +footer

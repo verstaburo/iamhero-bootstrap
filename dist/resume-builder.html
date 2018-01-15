@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I Am Hero - Resume builder</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/styles/app.css" rel="stylesheet">
+    <script src="assets/scripts/libs/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="inner-header">
+        <div class="inner-header__col inner-header__logo">
+            <a href="#">
+                <svg><use xlink:href="assets/images/icon.svg#icon_logo-white"></use></svg>
+            </a>
+        </div>
+        <div class="inner-header__col inner-header__search">
+            <label class="search">
+                <input type="text" placeholder="Search for heroes..." />
+                <button>
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+                </button>
+            </label>
+        </div>
+        <div class="inner-header__col inner-header__search-btn">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-search"></use></svg>
+        </div>
+        <div class="inner-header__notify-wrap">
+            <div class="inner-header__col inner-header__col_dropdown inner-header__col_hover inner-header__col_hover_dark inner-header__notification">
+                <button>
+                    <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    <span class="inner-header__notification-badge">1</span>
+                </button>
+                <div class="inner-header__dropdown-content">
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user2.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Jean Michianty</h4>Accepted your job attend</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+                            <span>05:07</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item" href="#">
+                        <span class="media-secondary">
+                            <div class="media-left">
+                                <img class="img-circle media-object" src="assets/images/user/user.png" />
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">Marchello Mutti</h4>sent you a message</div>
+                        </span>
+                        <span class="inner-header__notify-item-type">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_header-message"></use></svg>
+                            <span>17 min ago</span>
+                        </span>
+                    </a>
+                    <a class="inner-header__notify-item inner-header__notify-item_padded" href="#">
+                        <span class="inner-header__notify-link">Open all notifications</span>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-notification"></use></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="inner-header__col inner-header__col_dropdown inner-header__col_hover inner-header__col_hover_dark inner-header__user">
+                <div class="media-secondary">
+                    <div class="media-left">
+                        <img class="img-circle media-object" src="assets/images/user/user.png" />
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Mihail Berlant</h4>iamhero.io</div>
+                </div>
+                <svg><use xlink:href="assets/images/icon.svg#icon_caret-bold"></use></svg>
+                <div class="inner-header__dropdown-content">
+                    <a class="inner-header__user-nav" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_header-hero"></use></svg>Hero Account</a>
+                    <a class="inner-header__user-nav active" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>Maxdino</a>
+                    <a class="inner-header__user-nav" href="#">
+                        <b class="inner-header__user-nav-badge">current</b>
+                        <svg><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>Freedom Agency</a>
+                </div>
+            </div>
+        </div>
+        <div class="inner-header__col inner-header__col_hover inner-header__col_hover_yellow inner-header__promo">
+            <a href="#">Buy packages</a>
+        </div>
+        <div class="inner-header__col inner-header__burger">
+            <svg><use xlink:href="assets/images/icon.svg#icon_header-burger"></use></svg>
+        </div>
+    </header>
+    <ul class="inner-sidebar">
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-dashboard"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Dashboard</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-messages"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Messages</span>
+            <span class="inner-sidebar__badge">1</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-search"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Hero Search</span>
+        </li>
+        <li class="inner-sidebar__item active">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-shortlists"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Shortlists (
+                <span class="text-warning">14</span>)</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-offers"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Job Offers</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-statistics"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Stats</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-settings"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Settings</span>
+        </li>
+        <li class="inner-sidebar__item">
+            <a href="#">
+                <svg class="inner-sidebar__icon"><use xlink:href="assets/images/icon.svg#icon_menu-coin"></use></svg>
+            </a>
+            <span class="inner-sidebar__hint">Coin</span>
+        </li>
+    </ul>
+    <main class="page page_inner-standart resume-builder" role="main">
+        <div class="page-section page-section_small resume-section">
+            <div class="container">
+                <div class="col-xs-24 col-xl-11">
+                    <h2 class="text-success">RESUME BUILDER</h2>
+                    <h2>Create a perfect resume in minutes
+                        <br> and land your dream job</h2>
+                    <h4>Start wit the creativfull Resum on the market its
+                        <b>Free</b>
+                    </h4>
+                    <button class="btn btn-secondary btn-secondary-lg">START NOW</button>
+                </div>
+            </div>
+            <div class="resume-section__collage">
+                <img class="mockup-1" src="assets/images/resume-builder/1.png" />
+                <img class="mockup-2" src="assets/images/resume-builder/2.png" />
+                <img class="mockup-3" src="assets/images/resume-builder/3.png" />
+                <img class="mockup-4" src="assets/images/resume-builder/4.png" />
+            </div>
+        </div>
+        <div class="resume-builder__text">
+            <div class="container">
+                <h2>Try the world's most powerful resume builder</h2>
+            </div>
+        </div>
+        <div class="resume-builder__demo">
+            <div class="bg-image page__top-bg page__top-bg_overlay_blue page__top-bg_static">
+                <img src="assets/images/profile-edit/background.jpg" />
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-21 col-xxl-offset-1 col-xs-24">
+                        <div class="profile-header">
+                            <label class="switch switch_transparent">
+                                <input type="hidden" />
+                                <span class="switch__item active">
+                                    <span class="switch__text">Full version</span>
+                                </span>
+                                <span class="switch__item">
+                                    <span class="switch__text">Print version</span>
+                                </span>
+                            </label>
+                            <div class="upload profile-header__upload">
+                                <input class="upload__input" type="file" />
+                                <button class="button-icon btn btn-success-transparent">
+                                    <span class="button-icon__text">Change background picture/video</span>
+                                    <svg class="button-icon__item button-icon__item_white button-icon__item_after"><use xlink:href="assets/images/icon.svg#icon_camera"></use></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__sidebar-wrap col-xxl-offset-1 col-xxl-5 col-lg-6">
+                        <div class="sidebar-wrap js-sidebar">
+                            <div class="media media-vertical sidebar-wrap__media">
+                                <div class="media-left">
+                                    <img class="img-circle media-object" src="assets/images/profile-edit/avatar-small.jpg" />
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading font-weight-medium">Name Surname</h5>Vocation</div>
+                            </div>
+                            <div class="sidebar-wrap__menu">
+                                <ul class="sidebar-menu">
+                                    <li class="sidebar-menu__item active">
+                                        <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                        <a href="#summary">Summary</a>
+                                    </li>
+                                    <li class="sidebar-menu__item">
+                                        <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                        <a href="#skills">Skills</a>
+                                    </li>
+                                    <li class="sidebar-menu__item disabled">
+                                        <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill-disabled"></use></svg>
+                                        <a href="#talents">Talents</a>
+                                    </li>
+                                    <li class="sidebar-menu__item">
+                                        <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                        <a href="#languages">Languages</a>
+                                    </li>
+                                    <li class="sidebar-menu__item">
+                                        <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                        <a href="#resume">Resume</a>
+                                    </li>
+                                    <li class="sidebar-menu__item">
+                                        <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                        <a href="#services">Services</a>
+                                    </li>
+                                    <li class="sidebar-menu__item">
+                                        <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                        <a href="#interest">Interest</a>
+                                    </li>
+                                    <li class="sidebar-menu__item">
+                                        <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                        <a href="#activities">My social activities</a>
+                                    </li>
+                                    <li class="sidebar-menu__item">
+                                        <svg class="sidebar-menu__icon"><use xlink:href="assets/images/icon.svg#icon_eye-fill"></use></svg>
+                                        <a href="#cases">Cases</a>
+                                    </li>
+                                </ul>
+                                <a class="btn sidebar-wrap__button btn-secondary btn-secondary-text-dark" href="#">Preview</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-16 col-lg-18 col-xs-24">
+                        <div class="plate plate_no-padding plate_flex plate_tablet-column" id="summary">
+                            <div class="bg-image plate__avatar">
+                                <img src="assets/images/profile-edit/avatar-placeholder.jpg" />
+                                <div class="upload plate__avatar-button">
+                                    <input class="upload__input" type="file" />
+                                    <button class="button-icon btn btn-success-transparent">
+                                        <svg class="button-icon__item button-icon__item_white button-icon__item_before"><use xlink:href="assets/images/icon.svg#icon_camera"></use></svg>
+                                        <span class="button-icon__text">Change profile picture</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="plate__info-col plate__info-col_form">
+                                <div class="logo plate__logo">
+                                    <img src="assets/images/icon/iamhero_logo_grey.svg" />
+                                </div>
+                                <form class="plate__hero-form">
+                                    <input class="form-control form-control-border-bottom form-control-border-big plate__header responsive-font" type="text" placeholder="Name Surname" />
+                                    <input class="form-control form-control-border-bottom form-control-small" type="text" placeholder="Vocation/position" />
+                                    <input class="form-control form-control-border-bottom form-control-smaller" type="text" placeholder="Lacation" />
+                                    <textarea class="form-control form-control-area-static form-control-border-straight" rows="5" placeholder="A few words about yourself"></textarea>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="plate" id="skills">
+                            <h2 class="plate__header">Professional Skills</h2>
+                            <p>The list of my professional skills which describes my strongest sides</p>
+                            <div class="advice">
+                                <p>This feature allows you to add and rate your skills! Just click the “Add new Skill” button and rate your skill level on a percentage scale by moving the slider..... It’s that easy!</p>
+                            </div>
+                            <div class="rangeslider-wrap plate__top-60 sr-animate">
+                                <div class="rangeslider-wrap__header">
+                                    <h4>Graphic design</h4>
+                                    <h4 class="rangeslider-wrap__output"></h4>
+                                </div>
+                                <div class="rangeslider-wrap__controls">
+                                    <input class="rangeslider_color_lightgreen" type="range" min="0" max="100" step="1" value="60" />
+                                    <svg class="icon-close rangeslider-wrap__icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                            </div>
+                            <div class="rangeslider-wrap plate__top-60 sr-animate">
+                                <div class="rangeslider-wrap__header">
+                                    <h4>Web Design</h4>
+                                    <h4 class="rangeslider-wrap__output"></h4>
+                                </div>
+                                <div class="rangeslider-wrap__controls">
+                                    <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="40" />
+                                    <svg class="icon-close rangeslider-wrap__icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                            </div>
+                            <div class="rangeslider-wrap plate__top-60 sr-animate">
+                                <div class="rangeslider-wrap__header">
+                                    <h4>Illustration</h4>
+                                    <h4 class="rangeslider-wrap__output"></h4>
+                                </div>
+                                <div class="rangeslider-wrap__controls">
+                                    <input class="rangeslider_color_blue" type="range" min="0" max="100" step="1" value="40" />
+                                    <svg class="icon-close rangeslider-wrap__icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                            </div>
+                            <div class="rangeslider-wrap plate__top-60 sr-animate">
+                                <div class="rangeslider-wrap__header">
+                                    <h4>Video Editing</h4>
+                                    <h4 class="rangeslider-wrap__output"></h4>
+                                </div>
+                                <div class="rangeslider-wrap__controls">
+                                    <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="80" />
+                                    <svg class="icon-close rangeslider-wrap__icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                </div>
+                            </div>
+                            <form class="plate__top-60 form-inline">
+                                <div class="form-group has-error">
+                                    <input class="form-control" type="text" placeholder="Write another" />
+                                    <span class="help-block">Error</span>
+                                </div>
+                                <button class="button-icon btn btn-default form-inline-btn">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new skill</span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="plate" id="talents">
+                            <h2 class="plate__header">Talents</h2>
+                            <p>The list of my professional skills which describes my strongest sides</p>
+                            <div class="advice">
+                                <p>
+                                    <b>Talents:
+                                        <br>
+                                    </b>Do you have several Talents? ... Add them here by Clicking the "add new talent" button and move the slider to rate your ability level on a percentage scale. Your Talents can be anything you’re good at and they need
+                                    not be professional skills but simply abilities that describe or demonstrate your qualities, your character or your personality. Potential employers are often looking for specific talents in their choices of new hires!</p>
+                            </div>
+                            <div class="plate__tag-container plate__top-50">
+                                <span class="label label-default label-rounded label-bordered label-larger label-hover-success label-close">Singing
+                                    <a href="#">
+                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </a>
+                                </span>
+                                <span class="label label-default label-rounded label-bordered label-larger label-hover-success label-close">Dancing
+                                    <a href="#">
+                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </a>
+                                </span>
+                                <span class="label label-default label-rounded label-bordered label-larger label-hover-success label-close">Song writing
+                                    <a href="#">
+                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </a>
+                                </span>
+                                <span class="label label-default label-rounded label-bordered label-larger label-hover-success label-close">Drawing amazing landscapes
+                                    <a href="#">
+                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </a>
+                                </span>
+                            </div>
+                            <form class="plate__top-50 form-inline">
+                                <div class="form-group has-warning">
+                                    <input class="form-control" type="text" placeholder="Write another" />
+                                    <span class="help-block">Warning!</span>
+                                </div>
+                                <button class="button-icon btn btn-default form-inline-btn">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new talent</span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="plate" id="languages">
+                            <h2 class="plate__header">Languages</h2>
+                            <div class="advice">
+                                <p>
+                                    <b>Languages:
+                                        <br>
+                                    </b>Your mother language should come first. There are 4 scalable categories for each language which are usually crucial for a potential employer. Be rock solid honest and as accurate as you can when scaling yourself on
+                                    these aspects since being precise is in your own interest</p>
+                            </div>
+                            <div class="plate__lang-row hidden-xs hidden-sm">
+                                <div class="plate__lang-col">
+                                    <h5>Language</h5>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h5>Reading</h5>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h5>Speaking</h5>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h5>Writing</h5>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h5>Understanding</h5>
+                                </div>
+                            </div>
+                            <div class="plate__lang-row sr-animate">
+                                <div class="plate__lang-col">
+                                    <h4 class="font-weight-medium">Russian</h4>
+                                    <a class="plate__lang-close" href="#">
+                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </a>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h4 class="visible-xs visible-sm">Reading</h4>
+                                    <div class="rangeslider-wrap">
+                                        <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                        <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                    </div>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h4 class="visible-xs visible-sm">Speaking</h4>
+                                    <div class="rangeslider-wrap">
+                                        <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                        <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                    </div>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h4 class="visible-xs visible-sm">Writing</h4>
+                                    <div class="rangeslider-wrap">
+                                        <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                        <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                    </div>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h4 class="visible-xs visible-sm">Understanding</h4>
+                                    <div class="rangeslider-wrap">
+                                        <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                        <input class="rangeslider_color_red" type="range" min="0" max="100" step="1" value="50" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plate__lang-row sr-animate">
+                                <div class="plate__lang-col">
+                                    <h4 class="font-weight-medium">English</h4>
+                                    <a class="plate__lang-close" href="#">
+                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                    </a>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h4 class="visible-xs visible-sm">Reading</h4>
+                                    <div class="rangeslider-wrap">
+                                        <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                        <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                    </div>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h4 class="visible-xs visible-sm">Speaking</h4>
+                                    <div class="rangeslider-wrap">
+                                        <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                        <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                    </div>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h4 class="visible-xs visible-sm">Writing</h4>
+                                    <div class="rangeslider-wrap">
+                                        <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                        <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                    </div>
+                                </div>
+                                <div class="plate__lang-col">
+                                    <h4 class="visible-xs visible-sm">Understanding</h4>
+                                    <div class="rangeslider-wrap">
+                                        <span class="rangeslider-wrap__output rangeslider-wrap__output_nolabel"></span>
+                                        <input class="rangeslider_color_orange" type="range" min="0" max="100" step="1" value="50" />
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="plate__top-30 form-inline">
+                                <div class="form-group">
+                                    <select class="js-select select" placeholder="Select">
+                                        <option value="">Select</option>
+                                        <option value="en">English</option>
+                                        <option value="ru">Русский</option>
+                                    </select>
+                                </div>
+                                <span class="form-inline-text">or</span>
+                                <div class="form-group has-success">
+                                    <input class="form-control" type="text" placeholder="write another" />
+                                    <span class="help-block">Success</span>
+                                </div>
+                                <button class="button-icon btn btn-default form-inline-btn">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new language</span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="plate" id="resume">
+                            <h2 class="plate__header">Resume</h2>
+                            <p>Here is my professional goals in informative and simple timeline</p>
+                            <div class="advice">
+                                <p>
+                                    <b>Resume:
+                                        <br>
+                                    </b>Your resume timeline is one of the most important categories of your profile. Here you can showcase events, education, awards, certificates, work history and experience, as well as Higher Education Levels and further
+                                    acquired professional abilities etc. You can upload and add a file in support of each item you add, while determining the access permissions to them by potential Employers at your own discretion.</p>
+                            </div>
+                            <div class="timeline plate__top-60">
+                                <div class="timeline__years">
+                                    <p class="timeline__year">2017</p>
+                                    <p class="timeline__year">2016</p>
+                                    <p class="timeline__year">2015</p>
+                                </div>
+                                <div class="timeline__items">
+                                    <div class="timeline__holder"></div>
+                                    <div class="timeline-item timeline__item sr-animate">
+                                        <div class="timeline-item__header timeline-item__header_red">
+                                            <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">work</span>
+                                            <p class="timeline-item__date timeline-item__left-8">17/06/2016 — 17/06/2018</p>
+                                            <div class="timeline-item__edits">
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                </a>
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h4>DEZI Design</h4>
+                                        <p>Stated o work as a junior Designer at DEZI</p>
+                                    </div>
+                                    <div class="timeline-item timeline__item sr-animate">
+                                        <div class="timeline-item__header timeline-item__header_lightgreen">
+                                            <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">education</span>
+                                            <p class="timeline-item__date timeline-item__left-8">17/02/2016 — 17/06/2016</p>
+                                            <div class="timeline-item__edits">
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                </a>
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h4>Univercity Of Creative art Rocherster Great Britain</h4>
+                                        <p>Graduated as a grapchic design bachelor</p>
+                                    </div>
+                                    <div class="timeline-item timeline__item sr-animate">
+                                        <div class="timeline-item__header timeline-item__header_violet">
+                                            <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">AWARDS AND CERTIFICATES</span>
+                                            <p class="timeline-item__date timeline-item__left-8">17/02/2016</p>
+                                            <div class="timeline-item__edits">
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                </a>
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h4>Proficiency in economics by ALAP</h4>
+                                        <p>This sertificate gives me and ooportunity to work in financial sector for 2 years using my new knowledges in macroeconomy processes.</p>
+                                        <a class="timeline-item__control js-pdf" href="assets/docs/google.pdf" target="_blank">
+                                            <svg><use xlink:href="assets/images/icon.svg#icon_search"></use></svg>
+                                            <p>Show document</p>
+                                        </a>
+                                        <a class="timeline-item__control" href="#">
+                                            <svg><use xlink:href="assets/images/icon.svg#icon_save"></use></svg>
+                                        </a>
+                                    </div>
+                                    <div class="timeline-item timeline__item sr-animate">
+                                        <div class="timeline-item__header timeline-item__header_red">
+                                            <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">work</span>
+                                            <p class="timeline-item__date timeline-item__left-8">17/02/2015 — 17/06/2016</p>
+                                            <div class="timeline-item__edits">
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                </a>
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h4>McDonalds Berlin</h4>
+                                        <p>Stated work at local McDonalds restaurant as a cashier</p>
+                                    </div>
+                                    <div class="timeline-item timeline__item sr-animate">
+                                        <div class="timeline-item__header timeline-item__header_lightgreen">
+                                            <span class="label label-rounded label-uppercase label-font-second label-font-regular label-font-white label-smaller">EDUCATION</span>
+                                            <p class="timeline-item__date timeline-item__left-8">17/02/2016 — 17/06/2016</p>
+                                            <div class="timeline-item__edits">
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="timeline-item__icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                </a>
+                                                <a class="timeline-item__left-8" href="#">
+                                                    <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <h4>Univercity Of Creative art Rocherster Great Britain</h4>
+                                        <p>Graduated as a grapchic design bachelor</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="summary-btn plate__top-30">
+                                <button class="button-icon btn btn-default" data-toggle="modal" data-target="#resumeModal">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new point</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="plate" id="services">
+                            <h2 class="plate__header">Services</h2>
+                            <div class="advice">
+                                <p>
+                                    <b>Services:
+                                        <br>
+                                    </b>Do you offer Freelance Services? ... Select or Add them here!</p>
+                            </div>
+                            <div class="plate__top-40 row flex-wrap">
+                                <div class="plate__service col-md-8">
+                                    <div class="service service_edit sr-animate">
+                                        <div class="service__heading">
+                                            <img class="service__icon" src="assets/images/profile-edit/services/palette.svg" alt="" role="presentation" />
+                                            <h4 class="font-weight-medium">Graphic design</h4>
+                                            <a class="service__close" href="#">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
+                                        </div>
+                                        <p class="service__description">Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                    </div>
+                                </div>
+                                <div class="plate__service col-md-8">
+                                    <div class="service service_edit sr-animate">
+                                        <div class="service__heading">
+                                            <img class="service__icon" src="assets/images/profile-edit/services/tape.svg" alt="" role="presentation" />
+                                            <h4 class="font-weight-medium">Video editing</h4>
+                                            <a class="service__close" href="#">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
+                                        </div>
+                                        <p class="service__description">Adobe premier and After Effect mastery. Video filiming, color correction and Post production</p>
+                                    </div>
+                                </div>
+                                <div class="plate__service col-md-8">
+                                    <div class="service service_edit sr-animate">
+                                        <div class="service__heading">
+                                            <img class="service__icon" src="assets/images/profile-edit/services/brush.svg" alt="" role="presentation" />
+                                            <h4 class="font-weight-medium">Illustration</h4>
+                                            <a class="service__close" href="#">
+                                                <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
+                                        </div>
+                                        <p class="service__description">Drawing illustration and graphical images in various styles. Look for more in cases section</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="plate__top-40 form-inline">
+                                <div class="form-inline-vertical-inputs">
+                                    <div class="form-group">
+                                        <select class="js-select select" placeholder="Select">
+                                            <option value="">Select</option>
+                                            <option value="design">Design</option>
+                                            <option value="video">Video editing</option>
+                                            <option value="illustration">Illustration</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group has-error">
+                                        <input class="form-control" type="text" placeholder="write about service" />
+                                        <span class="help-block">Error</span>
+                                    </div>
+                                </div>
+                                <button class="button-icon btn btn-default form-inline-btn form-inline-btn-offset-top">
+                                    <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                    <span class="button-icon__text">Add new service</span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="plate" id="interest">
+                            <h2 class="plate__header">Interests</h2>
+                            <div class="advice">
+                                <p>
+                                    <b>Your interests:
+                                        <br>
+                                    </b>If you decide to describe your interests in a visual manner, upload an image file that portrays what you're truly passionate about and what gets you going in life. This allows for great insight into your abilities and
+                                    passions as a person.</p>
+                            </div>
+                            <div class="row plate__top-60 flex-wrap">
+                                <div class="col-md-8 col-xs-24">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-interests">
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/design.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h4 class="font-weight-medium">Graphic design
+                                                <div class="thumbnail-edit">
+                                                    <a href="#">
+                                                        <svg><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                    </a>
+                                                    <a href="#">
+                                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                    </a>
+                                                </div>
+                                            </h4>
+                                            <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-xs-24">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-interests">
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/travel.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h4 class="font-weight-medium">Travel
+                                                <div class="thumbnail-edit">
+                                                    <a href="#">
+                                                        <svg><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                    </a>
+                                                    <a href="#">
+                                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                    </a>
+                                                </div>
+                                            </h4>
+                                            <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-xs-24">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-interests">
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/chess.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h4 class="font-weight-medium">Chess
+                                                <div class="thumbnail-edit">
+                                                    <a href="#">
+                                                        <svg><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                    </a>
+                                                    <a href="#">
+                                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                    </a>
+                                                </div>
+                                            </h4>
+                                            <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-xs-24">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-interests">
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/car.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h4 class="font-weight-medium">Car sketching
+                                                <div class="thumbnail-edit">
+                                                    <a href="#">
+                                                        <svg><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                    </a>
+                                                    <a href="#">
+                                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                    </a>
+                                                </div>
+                                            </h4>
+                                            <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-xs-24">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-interests">
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/food-review.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h4 class="font-weight-medium">Street food review
+                                                <div class="thumbnail-edit">
+                                                    <a href="#">
+                                                        <svg><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                                    </a>
+                                                    <a href="#">
+                                                        <svg class="icon-close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                                    </a>
+                                                </div>
+                                            </h4>
+                                            <p>Website, logo and company identity graphical design. Print, pre-print, digital design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="plate__top-20">
+                                <div class="form-inline">
+                                    <div class="form-group has-warning">
+                                        <input class="form-control" type="text" placeholder="Write another" />
+                                        <span class="help-block">Warning</span>
+                                    </div>
+                                    <div class="upload form-inline-btn form-inline-btn-stretch">
+                                        <input class="upload__input" type="file" />
+                                        <button class="button-icon btn btn-grey">
+                                            <svg class="button-icon__item button-icon__item_grey"><use xlink:href="assets/images/icon.svg#icon_picture"></use></svg>
+                                            <span class="button-icon__text">Upload image</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="form-group has-success">
+                                        <input class="form-control" type="text" placeholder="write about interest" />
+                                        <span class="help-block">Success</span>
+                                    </div>
+                                    <button class="button-icon btn btn-default form-inline-btn form-inline-btn-stretch">
+                                        <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                        <span class="button-icon__text">Add new interest</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="plate plate_no-padding plate_relative plate_mobile-flex" id="activities">
+                            <ul class="social-header" role="tablist">
+                                <li class="social-header__item active" role="presentation">
+                                    <a data-toggle="tab" role="tab" href="#instagram" aria-controls="instagram">
+                                        <svg class="social-header__icon social-header__icon_insta"><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
+                                    </a>
+                                </li>
+                                <li class="social-header__item" role="presentation">
+                                    <a data-toggle="tab" role="tab" href="#facebook" aria-controls="facebook">
+                                        <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_facebook"></use></svg>
+                                    </a>
+                                </li>
+                                <li class="social-header__item" role="presentation">
+                                    <a data-toggle="tab" role="tab" href="#youtube" aria-controls="youtube">
+                                        <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_youtube"></use></svg>
+                                    </a>
+                                </li>
+                                <li class="social-header__item" role="presentation">
+                                    <a data-toggle="tab" role="tab" href="#pinterest" aria-controls="pinterest">
+                                        <svg class="social-header__icon"><use xlink:href="assets/images/icon.svg#icon_pinterest"></use></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content social-content">
+                                <div class="tab-pane fade active in" role="tabpanel" id="instagram">
+                                    <div class="plate">
+                                        <h2>Instagram
+                                            <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </h2>
+                                        <p>Link your profile with Instagram and upload photos!</p>
+                                        <div class="summary-btn">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Instagram</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" role="tabpanel" id="facebook">
+                                    <div class="plate">
+                                        <h2>Facebook
+                                            <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </h2>
+                                        <p>Link your profile with Instagram and upload photos!</p>
+                                        <div class="summary-btn">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Facebook</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" role="tabpanel" id="youtube">
+                                    <div class="plate">
+                                        <h2>Youtube
+                                            <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </h2>
+                                        <p>Link your profile with Instagram and upload photos!</p>
+                                        <div class="summary-btn">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Youtube</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" role="tabpanel" id="pinterest">
+                                    <div class="plate">
+                                        <h2>Pinterest
+                                            <svg class="icon-close social-content__close"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                        </h2>
+                                        <p>Link your profile with Instagram and upload photos!</p>
+                                        <div class="summary-btn">
+                                            <button class="button-icon btn btn-default">
+                                                <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                                <span class="button-icon__text">Connect to Pinterest</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plate plate_relative plate_ratio-container">
+                            <div class="advice">
+                                <p>Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video Intro Video
+                                    Intro Video Intro Video Intro b</p>
+                            </div>
+                            <div class="bg-image plate__video-placeholder">
+                                <img src="assets/images/profile-edit/video-placeholder.jpg" />
+                            </div>
+                            <div class="plate__video-controls">
+                                <div class="plate__header-container plate__header-container_tablet_column">
+                                    <h2 class="plate__header plate__header_white plate__header_mobile-smaller">Video Represent</h2>
+                                    <button class="button-icon btn btn-default" data-toggle="modal" data-target="#videoModal">
+                                        <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                        <span class="button-icon__text">Upload video</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cases" id="cases">
+                            <div class="plate">
+                                <div class="plate__filter-container">
+                                    <h2 class="plate__header">Cases</h2>
+                                    <div class="plate__head-filters">
+                                        <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs js-case-filter active" data-filter="*">All</span>
+                                        <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs js-case-filter" data-filter=".design">Design</span>
+                                        <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs js-case-filter" data-filter=".illustration">Illustration</span>
+                                        <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs js-case-filter" data-filter=".illustration">Art-directing</span>
+                                        <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs js-case-filter" data-filter=".illustration">Pre-production</span>
+                                        <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs js-case-filter" data-filter=".retouching">Retouching</span>
+                                        <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs js-case-filter" data-filter=".retouching">Develop</span>
+                                        <span class="label label-default label-rounded label-bordered label-hover-success label-medium hidden-xs js-case-filter" data-filter=".retouching">Project</span>
+                                        <select class="js-select select js-case-filter-mobile" placeholder="">
+                                            <option value="*">All</option>
+                                            <option value=".design">Design</option>
+                                            <option value=".illustration">Illustration</option>
+                                            <option value=".retouching">Retouching</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="advice">
+                                    <p>
+                                        <b>Projects:
+                                            <br>
+                                        </b>This section enables you to showcase your creative and/or crafty achievements. It could be designs, print material or things like a wooden table etc. Show off what you’ve got inside you by uploading an image file
+                                        and using the tags to categorize the respective project.</p>
+                                </div>
+                                <div class="summary-btn plate__top-30">
+                                    <button class="button-icon btn btn-default" data-toggle="modal" data-target="#caseModal">
+                                        <svg class="button-icon__item button-icon__item_stroke_white button-icon__item_big"><use xlink:href="assets/images/icon.svg#icon_plus"></use></svg>
+                                        <span class="button-icon__text">Add new case</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row isotope">
+                                <div class="col-md-8 col-sm-12 isotope-item design illustration">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-case sr-animate">
+                                        <a class="thumbnail-link-popup" href="#" data-toggle="modal" data-target="#openCase"></a>
+                                        <div class="thumbnail-controls">
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                            </a>
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
+                                        </div>
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/cases/1.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h3>Information Anomalies</h3>
+                                            <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
+                                        </div>
+                                        <div class="thumbnail-tag-container">
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Design</span>
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Illustration</span>
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Art-directing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 isotope-item retouching">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-case sr-animate">
+                                        <a class="thumbnail-link-popup" href="#" data-toggle="modal" data-target="#openCase"></a>
+                                        <div class="thumbnail-controls">
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                            </a>
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
+                                        </div>
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/cases/2.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h3>Winter In Squares</h3>
+                                            <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
+                                                occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                        </div>
+                                        <div class="thumbnail-tag-container">
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Pre-Production</span>
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Retouching</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 isotope-item design illustration">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-case sr-animate">
+                                        <a class="thumbnail-link-popup" href="#" data-toggle="modal" data-target="#openCase"></a>
+                                        <div class="thumbnail-controls">
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                            </a>
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
+                                        </div>
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/cases/3.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h3>Ripple Support Network</h3>
+                                            <p>Ripple wanted to create a lightning fast response system to address help for students, recently living on their own. Pearl created the strategy, product, brand, and system that makes getting support on the phone
+                                                one click away.</p>
+                                        </div>
+                                        <div class="thumbnail-tag-container">
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Design</span>
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Illustration</span>
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Art-directing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 isotope-item retouching">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-case sr-animate">
+                                        <a class="thumbnail-link-popup" href="#" data-toggle="modal" data-target="#openCase"></a>
+                                        <div class="thumbnail-controls">
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                            </a>
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
+                                        </div>
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/cases/2.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h3>Winter In Squares</h3>
+                                            <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink drawing. The colors are fading, contrasts between dark and light dominate the visual
+                                                occurance. A concatenation of quiet and vast scenes, a trip with many stopovers, discovering the new and the known. Nature seems to stagnate during winter, an</p>
+                                        </div>
+                                        <div class="thumbnail-tag-container">
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Pre-Production</span>
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Retouching</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 isotope-item retouching">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-case sr-animate">
+                                        <a class="thumbnail-link-popup" href="#" data-toggle="modal" data-target="#openCase"></a>
+                                        <div class="thumbnail-controls">
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                            </a>
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
+                                        </div>
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/cases/5.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h3>Opera</h3>
+                                            <p>A winter trip through rural Central Europe. Snow, frost and ice have transformed the landscape, everything appears like an ink</p>
+                                        </div>
+                                        <div class="thumbnail-tag-container">
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Pre-Production</span>
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Retouching</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-sm-12 isotope-item design illustration">
+                                    <div class="thumbnail thumbnail-border-none thumbnail-case sr-animate">
+                                        <a class="thumbnail-link-popup" href="#" data-toggle="modal" data-target="#openCase"></a>
+                                        <div class="thumbnail-controls">
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-edit"><use xlink:href="assets/images/icon.svg#icon_pencil"></use></svg>
+                                            </a>
+                                            <a class="thumbnail-controls-item" href="#">
+                                                <svg class="icon-close icon-close_white"><use xlink:href="assets/images/icon.svg#icon_close"></use></svg>
+                                            </a>
+                                        </div>
+                                        <div class="bg-image thumbnail-img">
+                                            <img src="assets/images/profile-edit/cases/4.jpg" />
+                                        </div>
+                                        <div class="caption">
+                                            <h3>Lorod Company Identity</h3>
+                                            <p>Chongqing - major city in Southwest China. Chongqing's population as of 2016 is just over 32 million. It is the most populous Chinese municipality.</p>
+                                        </div>
+                                        <div class="thumbnail-tag-container">
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Design</span>
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Illustration</span>
+                                            <span class="label label-bg-grey label-font-light label-font-black label-rounded label-font-standart">Art-directing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="get-started">
+        <div class="container container-mobile-padded">
+            <h1 class="get-started__heading">Get started now!
+                <span class="get-started__heading get-started__heading_colored">For Free</span>
+            </h1>
+            <h3 class="get-started__subheading">Over 500 000 heroes can’t be wrong...</h3>
+            <form class="row">
+                <div class="get-started__switcher col-xl-5 col-lg-6 col-lg-offset-0 col-md-offset-4 col-md-8 col-sm-12 get-started__input">
+                    <label class="switch switch_big">
+                        <input type="hidden" />
+                        <span class="switch__item active">
+                            <span class="switch__text">Job seeker</span>
+                        </span>
+                        <span class="switch__item">
+                            <span class="switch__text">Employer</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="get-started__input col-xl-5 col-lg-6 col-md-8 col-sm-12">
+                    <div class="form-group">
+                        <input class="form-control form-control-secondary" type="name" placeholder="Full name" />
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="get-started__input col-xl-5 col-lg-6 col-lg-offset-0 col-md-offset-4 col-md-8 col-sm-12">
+                    <div class="form-group has-success">
+                        <input class="form-control form-control-secondary" type="email" placeholder="E-mail adress" />
+                        <span class="help-block">Success!</span>
+                    </div>
+                </div>
+                <div class="get-started__input col-xl-5 col-lg-6 col-md-8 col-sm-12">
+                    <div class="form-group has-error">
+                        <input class="form-control form-control-secondary" type="password" placeholder="Create password" />
+                        <span class="help-block">Password must be at least 8 symbols long</span>
+                    </div>
+                </div>
+                <div class="get-started__input col-xl-4 col-lg-6 col-lg-offset-0 col-md-offset-4 col-md-16 col-xs-24">
+                    <button class="btn btn-secondary btn-secondary-big">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container container-mobile-padded">
+            <div class="row">
+                <div class="footer__logo-wrap col-xxl-3 col-xl-5 col-lg-4 col-xs-24">
+                    <a class="logo logo_big logo_inline" href="#">
+                        <img src="assets/images/icon/iamhero_logo_grey.svg" />
+                    </a>
+                </div>
+                <div class="footer__text-menu col-xxl-5 col-xl-5 col-lg-6 col-md-8 col-sm-12 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Information</li>
+                        <li class="footer-menu__item">
+                            <a href="#">News</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Help & Support</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Join Iamhero</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Contacts</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">ICO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__text-menu col-xxl-5 col-xl-5 col-lg-7 col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Employer</li>
+                        <li class="footer-menu__item">
+                            <a href="#">Hire the Heroes</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Create a Company Page</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Post a Job</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__text-menu col-xxl-4 col-xl-5 col-lg-7 col-md-8 col-sm-12 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">I am hero</li>
+                        <li class="footer-menu__item">
+                            <a href="#">Take a tour</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Resume</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-menu__item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__social-wrap col-xxl-6 col-xxl-offset-1 col-xl-4 col-xl-offset-0 col-lg-20 col-lg-offset-4 col-md-24 col-md-offset-0 col-sm-10 col-sm-offset-2 col-xs-24">
+                    <ul class="footer-menu">
+                        <li class="footer-menu__item footer-menu__item_heading">Social</li>
+                    </ul>
+                    <div class="social footer__social">
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_facebook-social"></use></svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_twitter-social"></use></svg>
+                        </a>
+                        <a class="social__item" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_youtube-social"></use></svg>
+                        </a>
+                        <a class="social__item social__item_insta" href="#">
+                            <svg><use xlink:href="assets/images/icon.svg#icon_instagram"></use></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a class="to-top" href="#">
+        <svg><use xlink:href="assets/images/icon.svg#icon_arrow-down-rounded"></use></svg>
+    </a>
+    <script src="assets/scripts/libs/bootstrap.min.js"></script>
+    <script src="assets/scripts/libs/bluebird.min.js"></script>
+    <script src="assets/scripts/libs/svg4everybody.min.js"></script>
+    <script src="assets/scripts/libs/ofi.min.js"></script>
+    <script src="assets/scripts/libs/sticky-kit.min.js"></script>
+    <script src="assets/scripts/libs/rangeslider.min.js"></script>
+    <script src="assets/scripts/libs/swiper.jquery.min.js"></script>
+    <script src="assets/scripts/libs/isotope.pkgd.min.js"></script>
+    <script src="assets/scripts/libs/scrollreveal.min.js"></script>
+    <script src="assets/scripts/libs/selectize.min.js"></script>
+    <script src="assets/scripts/libs/chart.min.js"></script>
+    <script src="assets/scripts/libs/magnific-popup.min.js"></script>
+    <script src="assets/scripts/libs/TimeCircles.js"></script>
+    <script src="assets/scripts/libs/jquery.appear.js"></script>
+    <script src="assets/scripts/libs/circle-progress.min.js"></script>
+    <script src="assets/scripts/libs/jquery.touchSwipe.min.js"></script>
+    <script src="assets/scripts/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.resume-builder {
+  display: block;
+
+  &__demo {
+    position: relative;
+    padding-top: 55px;
+  }
+
+  &__text {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+
+    @media (min-width: $screen-xxl-min) {
+      padding-top: 90px;
+    }
+  }
+}

@@ -20,6 +20,7 @@ mixin cases(edit)
           +label-default-medium(data-filter='.retouching').hidden-xs.js-case-filter Develop
           +label-default-medium(data-filter='.retouching').hidden-xs.js-case-filter Project
           +select([{value: '*', text: 'All'},{value: '.design', text: 'Design'},{value: '.illustration', text: 'Illustration'},{value: '.retouching', text: 'Retouching'}]).js-case-filter-mobile
+      block
       if edit
         .summary-btn.plate__top-30
           +button-add(data-toggle="modal", data-target="#caseModal") Add new case

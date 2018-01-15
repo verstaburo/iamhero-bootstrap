@@ -48,6 +48,15 @@
 
     @include ratio(16,9);
 
+    .advice {
+      position: absolute;
+      z-index: 10;
+      background-color: rgba(255, 255, 255, .9);
+      left: 0;
+      transform: translateY(-50%);
+      top: 50%;
+    }
+
     .plate__header-container {
       position: absolute;
       left: 0;

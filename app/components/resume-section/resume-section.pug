@@ -1,0 +1,17 @@
+include ../../blocks/page-section/page-section
+include ../../blocks/button/button
+
+mixin resume-section()
+  +page-section._small.resume-section
+    .container
+      .col-xs-24.col-xl-11
+        h2.text-success RESUME BUILDER
+        h2 Create a perfect resume in minutes <br> and land your dream job
+        h4 Start wit the creativfull Resum on the market its
+          b Free
+        +button.btn-secondary.btn-secondary-lg START NOW
+    .resume-section__collage
+      img(src='assets/images/resume-builder/1.png').mockup-1
+      img(src='assets/images/resume-builder/2.png').mockup-2
+      img(src='assets/images/resume-builder/3.png').mockup-3
+      img(src='assets/images/resume-builder/4.png').mockup-4

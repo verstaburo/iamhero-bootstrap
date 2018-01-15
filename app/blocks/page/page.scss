@@ -255,6 +255,10 @@
         content: none;
       }
     }
+
+    &_static {
+      position: absolute;
+    }
   }
 
   &__sidebar-wrap {

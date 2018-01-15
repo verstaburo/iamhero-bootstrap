@@ -53,6 +53,7 @@ mixin skills-plate
   +plate#skills
     +e.H2.header Professional Skills
     p The list of my professional skills which describes my strongest sides
+    block
     +rangeslider-label('Graphic design', 'lightgreen', '60').__top-60.sr-animate
     +rangeslider-label('Web Design', 'orange', '40').__top-60.sr-animate
     +rangeslider-label('Illustration', 'blue', '40').__top-60.sr-animate
@@ -76,6 +77,7 @@ mixin talents-plate
   +plate#talents
     +e.H2.header Talents
     p The list of my professional skills which describes my strongest sides
+    block
     +e.tag-container.__top-50
       +label-talents-close Singing
       +label-talents-close Dancing
@@ -142,6 +144,7 @@ mixin language-sliders-static(title, color)
 mixin languages-plate
   +plate#languages
     +e.H2.header Languages
+    block
     +language-heading
     +language-sliders('Russian', 'red')
     +language-sliders('English', 'orange')
@@ -171,6 +174,7 @@ mixin resume-plate(edit)
       +e.lang-show-container
         p Here is my professional goals in informative and simple timeline
         +timeline-show
+    block
     +timeline.__top-60
       +e.years
         +e.P.year 2017
@@ -225,6 +229,7 @@ mixin resume-plate(edit)
 mixin services-plate
   +plate#services
     +e.H2.header Services
+    block
     +e.top-40.row.flex-wrap
       +e.service.col-md-8
         +service('palette', 'Graphic design').sr-animate Website, logo and company identity graphical design. Print, pre-print, digital design
@@ -255,6 +260,7 @@ mixin services-plate-static
 mixin interests-plate(edit)
   +plate#interest
     +e.H2.header Interests
+    block
     .row.plate__top-60.flex-wrap
       .col-md-8.col-xs-24
         if edit
@@ -299,6 +305,7 @@ mixin interests-plate(edit)
 
 mixin video-plate
   +plate._relative._ratio-container
+    block
     +bg-image('profile-edit/video-placeholder.jpg').__video-placeholder
     +e.video-controls
       +e.header-container._tablet_column
@@ -370,6 +377,7 @@ mixin social-plate
       +tab-pane.active.in#instagram
         +plate
           +e.H2.header Instagram
+          block
           .row
             .col-md-12.col-xs-24
               +bg-image('profile-edit/social/1.jpg').social-content__img
