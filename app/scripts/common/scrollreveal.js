@@ -57,10 +57,17 @@ export default () => {
     duration: 1000,
     viewFactor: 0.1,
   };
+  const animateLeft = {
+    origin: 'left',
+    distance: '50px',
+    viewFactor: 0.2,
+    duration: 1000,
+  };
 
   sr.reveal('.mockup-1', mockup1);
   sr.reveal('.mockup-2', mockup2);
   sr.reveal('.mockup-3', mockup3);
   sr.reveal('.mockup-4', mockup4);
   sr.reveal('.mockup-5', mockup5);
+  sr.reveal('.sr-animate-left', animateLeft);
 };

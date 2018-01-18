@@ -15155,9 +15155,15 @@ img.mfp-img{
     z-index:10;
     background-color:rgba(255, 255, 255, 0.9);
     left:0;
-    -webkit-transform:translateY(-50%);
-            transform:translateY(-50%);
+    -webkit-transform:translateY(-50%) !important;
+            transform:translateY(-50%) !important;
     top:50%;
+  }
+}
+
+@media (max-width: 639px){
+  .plate_ratio-container .advice{
+    display:none;
   }
 }
 
