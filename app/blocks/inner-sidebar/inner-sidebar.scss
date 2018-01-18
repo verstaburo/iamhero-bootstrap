@@ -47,10 +47,15 @@
         padding-left: 25px;
         padding-right: 25px;
 
-        svg {
+        .inner-sidebar__icon {
           width: 30px;
           height: 30px;
           stroke: $brand-warning;
+
+          &_white {
+            fill: $brand-warning;
+            stroke: transparent;
+          }
         }
       }
 
@@ -137,6 +142,11 @@
 
       .inner-sidebar__icon {
         stroke: #fff;
+
+        &_white {
+          stroke: transparent;
+          fill: #c6d2d6;
+        }
       }
 
       .inner-sidebar__hint {
@@ -197,9 +207,14 @@
     fill: transparent;
     stroke: #c6d2d6;
     stroke-width: 2px;
-    transition: stroke .25s ease-in-out;
+    transition: stroke .25s ease-in-out, fill .25s ease-in-out;
     width: 100%;
     height: 100%;
     display: block;
+
+    &_white {
+      fill: #fff;
+      stroke: transparent;
+    }
   }
 }

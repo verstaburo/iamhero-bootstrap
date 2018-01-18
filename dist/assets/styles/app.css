@@ -13239,10 +13239,14 @@ img.mfp-img{
     padding-left:25px;
     padding-right:25px;
   }
-  .inner-sidebar .inner-sidebar__item a svg{
+  .inner-sidebar .inner-sidebar__item a .inner-sidebar__icon{
     width:30px;
     height:30px;
     stroke:#ffc425;
+  }
+  .inner-sidebar .inner-sidebar__item a .inner-sidebar__icon_white{
+    fill:#ffc425;
+    stroke:transparent;
   }
   .inner-sidebar .inner-sidebar__item.active .inner-sidebar__hint{
     color:#000;
@@ -13323,6 +13327,11 @@ img.mfp-img{
   stroke:#fff;
 }
 
+.inner-sidebar__item:hover .inner-sidebar__icon_white{
+  stroke:transparent;
+  fill:#c6d2d6;
+}
+
 .inner-sidebar__item:hover .inner-sidebar__hint{
   opacity:1;
   pointer-events:all;
@@ -13379,11 +13388,16 @@ img.mfp-img{
   fill:transparent;
   stroke:#c6d2d6;
   stroke-width:2px;
-  -webkit-transition:stroke .25s ease-in-out;
-  transition:stroke .25s ease-in-out;
+  -webkit-transition:stroke .25s ease-in-out, fill .25s ease-in-out;
+  transition:stroke .25s ease-in-out, fill .25s ease-in-out;
   width:100%;
   height:100%;
   display:block;
+}
+
+.inner-sidebar__icon_white{
+  fill:#fff;
+  stroke:transparent;
 }
 
 .form-control{
