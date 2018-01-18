@@ -10017,6 +10017,46 @@ img.mfp-img{
   font-size:20px;
   background-color:#fff;
   padding:40px;
+  position:relative;
+}
+
+@media (max-width: 1279px){
+  .advice{
+    border-width:4px;
+  }
+}
+
+@media (max-width: 639px){
+  .advice{
+    padding:20px;
+  }
+}
+
+.advice::before, .advice::after{
+  content:'';
+  position:absolute;
+  top:20px;
+  width:0;
+  height:0;
+  right:-40px;
+  border-style:solid;
+}
+
+@media (max-width: 1279px){
+  .advice::before, .advice::after{
+    content:none;
+  }
+}
+
+.advice::before{
+  border-color:transparent transparent transparent #25ffc4;
+  border-width:20px;
+}
+
+.advice::after{
+  top:17px;
+  border-color:transparent transparent transparent white;
+  border-width:23px;
 }
 
 .advice p{
@@ -15109,14 +15149,16 @@ img.mfp-img{
   padding-top:56.25%;
 }
 
-.plate_ratio-container .advice{
-  position:absolute;
-  z-index:10;
-  background-color:rgba(255, 255, 255, 0.9);
-  left:0;
-  -webkit-transform:translateY(-50%);
-          transform:translateY(-50%);
-  top:50%;
+@media (max-width: 1279px){
+  .plate_ratio-container .advice{
+    position:absolute;
+    z-index:10;
+    background-color:rgba(255, 255, 255, 0.9);
+    left:0;
+    -webkit-transform:translateY(-50%);
+            transform:translateY(-50%);
+    top:50%;
+  }
 }
 
 .plate_ratio-container .plate__header-container{
@@ -22210,6 +22252,12 @@ textarea::-webkit-scrollbar-thumb{
   z-index:1;
 }
 
+@media (max-width: 1023px){
+  .resume-section h2{
+    font-size:40px;
+  }
+}
+
 .resume-section .text-success{
   letter-spacing:.1em;
 }
@@ -22218,8 +22266,20 @@ textarea::-webkit-scrollbar-thumb{
   margin-bottom:90px;
 }
 
+@media (max-width: 1023px){
+  .resume-section h2:first-of-type, .resume-section h2:last-of-type{
+    margin-bottom:45px;
+  }
+}
+
 .resume-section button{
   margin-top:65px;
+}
+
+@media (max-width: 1023px){
+  .resume-section button{
+    margin-top:33px;
+  }
 }
 
 .resume-section__collage{
@@ -23663,11 +23723,35 @@ textarea::-webkit-scrollbar-thumb{
 
 .resume-builder{
   display:block;
+  margin:0;
 }
 
 .resume-builder__demo{
   position:relative;
   padding-top:55px;
+}
+
+.resume-builder__demo > .container{
+  padding-bottom:85px;
+}
+
+.resume-builder__demo .plate{
+  position:relative;
+}
+
+.resume-builder__demo .plate .advice{
+  margin:5px 0;
+}
+
+@media (min-width: 1280px){
+  .resume-builder__demo .plate .advice{
+    position:absolute;
+    right:97%;
+    width:335px;
+    z-index:5;
+    top:50px;
+    margin:0;
+  }
 }
 
 .resume-builder__text{

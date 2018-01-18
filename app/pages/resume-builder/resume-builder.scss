@@ -1,9 +1,31 @@
 .resume-builder {
   display: block;
+  margin: 0;
 
   &__demo {
     position: relative;
     padding-top: 55px;
+
+    & > .container {
+      padding-bottom: 85px;
+    }
+
+    .plate {
+      position: relative;
+
+      .advice {
+        margin: 5px 0;
+
+        @media (min-width: $screen-lg-min) {
+          position: absolute;
+          right: 97%;
+          width: 335px;
+          z-index: 5;
+          top: 50px;
+          margin: 0;
+        }
+      }
+    }
   }
 
   &__text {

@@ -12,16 +12,30 @@
     z-index: 1;
   }
 
+  h2 {
+    @media (max-width: $screen-sm-max) {
+      font-size: 40px;
+    }
+  }
+
   .text-success {
     letter-spacing: .1em;
   }
 
   h2:first-of-type, h2:last-of-type {
     margin-bottom: 90px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 45px;
+    }
   }
 
   button {
     margin-top: 65px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-top: 33px;
+    }
   }
 
   &__collage {

@@ -1,11 +1,13 @@
-extends ../../layouts/inner-page
+extends ../../layouts/default
 include ../../components/profile-header/profile-header
 include ../../blocks/sidebar-menu/sidebar-menu
 include ../../blocks/media/media
 include ../../blocks/page-section/page-section
+include ../../blocks/page/page
 include ../../blocks/button/button
 include ../../blocks/advice/advice
 include ../../components/plates/plates
+include ../../components/footer/footer
 include ../../components/cases/cases
 include ../../components/modals/modals
 include ../../components/get-started/get-started
@@ -15,7 +17,7 @@ block head
   - var pageTitle = 'I Am Hero - Resume builder'
 
 block content
-  +page._inner-standart.resume-builder
+  +page.resume-builder
     +resume-section
     .resume-builder__text
       .container
@@ -27,7 +29,7 @@ block content
           .col-xxl-21.col-xxl-offset-1.col-xs-24
             +profile-header
           +e.sidebar-wrap.col-xxl-offset-1.col-xxl-5.col-lg-6
-            +sidebar-wrap
+            +sidebar-wrap-no-js
               +media('profile-edit/avatar-small.jpg', 'Name Surname').__media Vocation
               +e.menu
                 +sidebar-menu(getData('sidebar-menu'))
@@ -62,7 +64,7 @@ block content
                 p
                   b Your interests:<br>
                   | If you decide to describe your interests in a visual manner, upload an image file that portrays what you're truly passionate about and what gets you going in life. This allows for great insight into your abilities and passions as a person.
-            +social-plate-static
+            +social-plate
               +advice
                 p
                   b Social Media Channels:<br>

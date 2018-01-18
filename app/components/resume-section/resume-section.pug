@@ -4,12 +4,13 @@ include ../../blocks/button/button
 mixin resume-section()
   +page-section._small.resume-section
     .container
-      .col-xs-24.col-xl-11
-        h2.text-success RESUME BUILDER
-        h2 Create a perfect resume in minutes <br> and land your dream job
-        h4 Start wit the creativfull Resum on the market its
-          b Free
-        +button.btn-secondary.btn-secondary-lg START NOW
+      .row
+        .col-xs-24.col-xl-11
+          h2.text-success RESUME BUILDER
+          h2 Create a perfect resume in minutes <br> and land your dream job
+          h4 Start wit the creativfull Resum on the market its
+            b Free
+          +button.btn-secondary.btn-secondary-lg START NOW
     .resume-section__collage
       img(src='assets/images/resume-builder/1.png').mockup-1
       img(src='assets/images/resume-builder/2.png').mockup-2
