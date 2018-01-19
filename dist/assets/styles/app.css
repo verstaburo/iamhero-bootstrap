@@ -17963,8 +17963,8 @@ textarea::-webkit-scrollbar-thumb{
 .affi-header__fixed .btn{
   opacity:0;
   pointer-events:none;
-  -webkit-transition:opacity .25s ease-in-out;
-  transition:opacity .25s ease-in-out;
+  -webkit-transition:all .25s ease-in-out;
+  transition:all .25s ease-in-out;
 }
 
 .affi-header__fixed .container{
@@ -22259,6 +22259,7 @@ textarea::-webkit-scrollbar-thumb{
   background-image:linear-gradient(25deg, #1b202d 0%, #465d75 55%, #59bba0 100%);
   color:#fff;
   position:relative;
+  padding-bottom:60px;
 }
 
 @media (max-width: 1919px){
@@ -22267,37 +22268,37 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
-.resume-section .container{
+.resume-section > .container{
   position:relative;
   z-index:1;
 }
 
 @media (max-width: 1023px){
-  .resume-section h2{
+  .resume-section > .container h2{
     font-size:40px;
   }
 }
 
-.resume-section .text-success{
+.resume-section > .container .text-success{
   letter-spacing:.1em;
 }
 
-.resume-section h2:first-of-type, .resume-section h2:last-of-type{
+.resume-section > .container h2:first-of-type, .resume-section > .container h2:last-of-type{
   margin-bottom:90px;
 }
 
 @media (max-width: 1023px){
-  .resume-section h2:first-of-type, .resume-section h2:last-of-type{
+  .resume-section > .container h2:first-of-type, .resume-section > .container h2:last-of-type{
     margin-bottom:45px;
   }
 }
 
-.resume-section button{
+.resume-section > .container button{
   margin-top:65px;
 }
 
 @media (max-width: 1023px){
-  .resume-section button{
+  .resume-section > .container button{
     margin-top:33px;
   }
 }

@@ -2,7 +2,12 @@ include ../../blocks/page-section/page-section
 include ../../blocks/button/button
 
 mixin resume-section()
-  +page-section._small.resume-section
+  .affi-header.resume-section
+    .affi-header__fixed
+      .container
+        a(href='#').affi-header__logo
+          +icon('logo')
+        +button.btn-secondary Start now
     .container
       .row
         .col-xs-24.col-xl-11
