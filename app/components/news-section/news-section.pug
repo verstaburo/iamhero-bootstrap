@@ -1,0 +1,11 @@
+include ../../blocks/news-item/news-item
+include ../../blocks/page-section/page-section
+include ../../components/news-slider/news-slider
+
+mixin news-section()
+  .news-section&attributes(attributes)
+    .container
+      +news-item-big('ico/news-big.png').sr-animate
+        h3 The I AM HERO Matching System is poised to revolutionize the Job Search Industry
+        h4 by Rick McGrath The upcoming and NEW I AM HERO MATCHING SYSTEM (IAH) for “dream-job” seekers is on its way to hit the Job search market with a bang! After over a year in development, it is finally...
+      +news-slider-ico.news-section__slider
