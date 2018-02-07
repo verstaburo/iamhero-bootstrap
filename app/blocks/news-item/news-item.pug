@@ -1,7 +1,8 @@
 include ../../blocks/icon/icons
 
 mixin news-item(img)
-  +b.A(href='#').news-item&attributes(attributes).bg-image
+  +b.news-item&attributes(attributes).bg-image
+    a(href='#')
     img(src='assets/images/'+img)
     +e.text-container
       h3
@@ -9,7 +10,8 @@ mixin news-item(img)
       time 27 / 12 / 2016
 
 mixin news-item-big(img)
-  +b.A(href='#').news-item._big&attributes(attributes).bg-image
+  +b.news-item._big&attributes(attributes).bg-image
+    a(href='#')
     img(src='assets/images/'+img)
     +e.text-container
       block
