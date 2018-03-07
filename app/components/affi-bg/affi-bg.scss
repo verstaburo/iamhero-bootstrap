@@ -2,6 +2,23 @@
   display: block;
   color: #fff;
 
+  &.page-section_huge {
+
+    .affiliate__text h2 {
+      font-weight: 300;
+
+      @media (min-width: $screen-xxl-min) {
+        font-size: 66px;
+      }
+    }
+
+    .btn-danger {
+      @media (min-width: $screen-xxl-min) {
+        margin-top: 180px;
+      }
+    }
+  }
+
   .container {
     position: relative;
     z-index: 1;

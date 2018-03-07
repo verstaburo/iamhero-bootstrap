@@ -28,3 +28,26 @@ mixin affi-levels()
             +level-content
               h3 Example 3
               p Your indirect referral Anna refers Nancy, Nancy becomes a superhero; If Anna has become an Affiliate, she receives 35% commission from Nancy’s upgrade ($27.99); Affiliate John receives 10% commission for Nancy ($7.99), and you receive 5% commission ($3.99) every year for as long as you and Nancy remain Active Superheroes.
+
+mixin affi-levels-handicap()
+  +b.affi-levels&attributes(attributes).page-section_dark
+    .container
+      .row
+        .col-xs-24
+          +e.text.affiliate__text
+            h2 In addition to that, IAMHERO will waive the fees that are due on the part of the employer in case a hire occurs,<br>in support of not only the employee but also the employer who decides to integrate such a disabled person into their existing business.
+        .col-md-8
+          +level
+            +level-title(true) 1
+            +level-heading
+              | Register here <a class="text-success" href='#'>now</a> and create your resume in minutes
+        .col-md-8
+          +level
+            +level-title(true) 2
+            +level-heading
+              <a class="text-success" href='#'>Send us an email</a> with your personal story or send us a document stating your diagnosed condition for us to upgrade you to Superhero status.
+        .col-md-8
+          +level
+            +level-title(true) 3
+            +level-heading
+              | Receive job offers. Hiring you is completely free for potential employers.

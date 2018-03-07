@@ -9,3 +9,14 @@ mixin affi-bg()
             p <b>30%</b> is then injected into the IAHC Coin holder pool to the benefit of all IAHC Coin holders, and the left over <b>20%</b> is channeled towards administrative and development costs.
             p
               b This Affiliate Program actually gives out 80% of the Sales which are generated through it. At IAMHERO, we have set our main focus on Expansion and Growth!
+
+mixin affi-bg-handicap()
+  +b.affi-bg.bg-image.page-section_huge&attributes(attributes)
+    img(src='assets/images/handicap/big-bg.jpg')
+    .container
+      .row
+        .col-md-24
+          +e.text.affiliate__text_second
+            h2 If you are or know of any other organization that is supporting people with a medical or psychological diagnosis,
+            h2 we encourage you to contact us so we can discuss how you could enable your members to be provided with free access to our services as well.
+            +button.btn-secondary.btn-secondary-lg.btn-danger Contact

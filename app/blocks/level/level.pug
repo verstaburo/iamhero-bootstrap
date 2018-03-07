@@ -2,11 +2,14 @@ mixin level()
   +b.level&attributes(attributes)
     block
 
-mixin level-title()
+mixin level-title(step)
   +e.title&attributes(attributes)
     span
       block
-    p level
+    if step
+      p step
+    else
+      p level
 
 mixin level-heading()
   +e.heading&attributes(attributes)

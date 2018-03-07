@@ -29,11 +29,12 @@ mixin affi-header-links
         +icon('wt-social-twitter')
 
 
-mixin affi-header(img)
-  +b.HEADER.affi-header.bg-image&attributes(attributes)
+mixin affi-header(img, links)
+  +b.HEADER.affi-header&attributes(attributes).bg-image
     img(src='assets/images/'+img)
     +affi-header-fixed
     .container
       .affiliate__text
         block
-      +affi-header-links
+      if links
+        +affi-header-links

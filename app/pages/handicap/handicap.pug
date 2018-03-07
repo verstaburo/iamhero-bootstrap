@@ -1,0 +1,35 @@
+extends ../../layouts/default
+include ../../blocks/bg-image/bg-image
+include ../../components/affi-header/affi-header
+include ../../components/affi-intro/affi-intro
+include ../../components/affi-levels/affi-levels
+include ../../components/affi-bg/affi-bg
+
+block head
+  - var pageTitle = 'Handicap landing - I Am Hero'
+
+block content
+  +affi-header('handicap/main.jpg').affi-header_sm
+    h1 Welcome to the IAH Superhero Booster Initiative
+    h3 Each one of us carries a unique creative potential!
+    h3 There are times in which some of us are challenged by nature, circumstances or otherwise<br>in the ways we are able to express ourselves<br>or contribute to society with our unique talents.
+    h3 However no circumstance or environment is able to suppress our inert talents or our willpower to self-express.
+    +e.controls
+      +button.btn-secondary.btn-secondary-lg.btn-danger Join now
+      a(href="#details" class="js-anchor").affi-header__scroll
+        img(src="assets/images/handicap/scroll.png")
+  +b.MAIN.affiliate
+    +affi-intro-handicap#details
+
+    +e.gradient.page-section
+      .container.affiliate__text
+        h1 Here is IAH's commitment for Superheros with Disabilities
+        h2 People who are diagnosed with Autism, Down Syndrome, Blindness or any other medical or psychological condition which would constitute a severe impact in their ability to nurture or execute their superpowers, will be able to use all IAMHERO services for the lifetime of their diagnosed condition for zero cost to them.
+        h2 IAH’s complete pallet of services will be absolutely free for them to benefit from while they are in such a state of disability.
+
+    +affi-levels-handicap
+    +affi-bg-handicap
+
+    +e.gradient.page-section_small
+      .container
+        p We are looking forward to contribute to a world where anyone can be matched with their ideal energy exchange environment, being inspired and empowered to develop and unleash their full potential and thus, their own superpowers.

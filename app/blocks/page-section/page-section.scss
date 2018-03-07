@@ -29,6 +29,13 @@
     padding-bottom: 40px;
   }
 
+  &_huge {
+    @media (min-width: $screen-xxl-min) {
+      padding-top: 420px;
+      padding-bottom: 350px;
+    }
+  }
+
   &_dark {
     color: #fff;
     background-color: #070824;
